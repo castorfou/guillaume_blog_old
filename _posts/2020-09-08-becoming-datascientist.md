@@ -1,4 +1,12 @@
-# Why becoming a datascientist
+---
+title: "Becoming a datascientist"
+description: Overall resume and why I have turned as a datascientist
+toc: true
+comments: true
+layout: post
+categories: [me]
+image: images/fastpages_posts/actions/actions_logo.png
+---
 
 ## March 2019
 This journey has started about 1 year ago.
