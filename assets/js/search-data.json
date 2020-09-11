@@ -38,6 +38,17 @@
   
 
   
+      ,"page1": {
+          "title": "About Me",
+          "content": "About . This blog . This is more a journal where I am adding entries about my (baby steps) learnings. It is likely to be centered around python, git, data-science, … I have been strongly inspired by Rachel Thomas explaining why I should blog. Specially when starting such a journey to turn a datascientist. . My intent would be to regularly add entries to this blog. Ideally at least once a week. Maybe only short ones, the point being to stick on this frequent activity. If it takes days to write posts I am pretty sure I won’t do it. Those entries are personnal thoughts and not those of my employer Michelin. . Me . I am 44 (in 2020). Father of 3. Working for a French tire company. I am French and for sure English is not my mother tongue. .",
+          "url": "https://castorfou.github.io/guillaume_blog/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -59,7 +70,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://castorfou.github.io/guillaume_blog/robots.txt",
