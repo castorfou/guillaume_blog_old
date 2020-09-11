@@ -1,3 +1,13 @@
+---
+title: "Blogging from github"
+description: A Tutorial on GitHub <a href="https://github.com/features/actions">Actions</a> For Data Scientists
+toc: true
+comments: true
+layout: post
+categories: [blog, fastpages, git]
+image: images/fastpages_posts/actions/actions_logo.png
+---
+
 # Blogging from github
 
 ## fastai and fastpages
