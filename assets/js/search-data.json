@@ -14,9 +14,9 @@
     
         ,"post1": {
             "title": "Fast read Excel files with pandas",
-            "content": "Problem description . initial settings . measure_time decorator . from functools import wraps from time import time def measure_time(func): @wraps(func) def _time_it(*args, **kwargs): start = int(round(time() * 1000)) try: return func(*args, **kwargs) finally: end_ = int(round(time() * 1000)) - start print(f&quot;Total execution time: {end_ if end_ &gt; 0 else 0} ms&quot;) return _time_it . read big excel file with pandas . big_excel_file = root_data+&#39;/pandas-caching/big_excel_file.xlsx&#39; . @measure_time def load_excel(file): dataframe = pd.read_excel(file) return dataframe .",
-            "url": "https://castorfou.github.io/guillaume_blog/pandas/2020/09/14/fast-read-excel-pandas-Copy2.html",
-            "relUrl": "/pandas/2020/09/14/fast-read-excel-pandas-Copy2.html",
+            "content": "Problem description . initial settings . measure_time decorator . from functools import wraps from time import time def measure_time(func): @wraps(func) def _time_it(*args, **kwargs): start = int(round(time() * 1000)) try: return func(*args, **kwargs) finally: end_ = int(round(time() * 1000)) - start print(f&quot;Total execution time: {end_ if end_ &gt; 0 else 0} ms&quot;) return _time_it . read big excel file with pandas . big_excel_file = root_data+&#39;/pandas-caching/big_excel_file.xlsx&#39; . @measure_time def load_excel(file): dataframe = pd.read_excel(file) return dataframe . dataframe = load_excel(big_excel_file) . Total execution time: 36196 ms . . Waouh, 36 sec to read this file! . read converted csv file (turned to csv from excel using excel) . csv_file = root_data+&#39;/pandas-caching/big_csv_file_turned_from_excel.csv&#39; . @measure_time def load_csv(file): dataframe = pd.read_csv(file, sep=&#39;;&#39;, decimal=&#39;,&#39;) return dataframe . df_csv = load_csv(csv_file) . Total execution time: 836 ms . . Much better, 0.8 sec! .",
+            "url": "https://castorfou.github.io/guillaume_blog/pandas/2020/09/14/fast-read-excel-pandas-Copy1.html",
+            "relUrl": "/pandas/2020/09/14/fast-read-excel-pandas-Copy1.html",
             "date": " • Sep 14, 2020"
         }
         
