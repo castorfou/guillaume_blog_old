@@ -116,6 +116,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#install-of-nvidia-drivers-under-ubuntu">install of nvidia drivers under ubuntu </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#cuda-for-WSL">cuda for WSL </a></li>
+<li class="toc-entry toc-h3"><a href="#install-a-new-distro-(ubuntu-20.04)">install a new distro (ubuntu 20.04) </a></li>
 </ul>
 </li>
 </ul><!--
@@ -400,6 +401,14 @@ CUDA error at ../../common/inc/helper_cuda.h:777 code=35(cudaErrorInsufficientDr
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>I have posted on nvidia (cuda+wsl) forum: <a href="https://forums.developer.nvidia.com/t/cuda-sample-throwing-error/142537/18">https://forums.developer.nvidia.com/t/cuda-sample-throwing-error/142537/18</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="cuda-for-WSL">
 <a class="anchor" href="#cuda-for-WSL" aria-hidden="true"><span class="octicon octicon-link"></span></a>cuda for WSL<a class="anchor-link" href="#cuda-for-WSL"> </a>
 </h3>
@@ -461,6 +470,37 @@ Build cuda_11.0_bu.TC445_37.28845127_0
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="install-a-new-distro-(ubuntu-20.04)">
+<a class="anchor" href="#install-a-new-distro-(ubuntu-20.04)" aria-hidden="true"><span class="octicon octicon-link"></span></a>install a new distro (ubuntu 20.04)<a class="anchor-link" href="#install-a-new-distro-(ubuntu-20.04)"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Because I cannot use windows store, I have to manually install <a href="https://docs.microsoft.com/fr-fr/windows/wsl/install-manual">https://docs.microsoft.com/fr-fr/windows/wsl/install-manual</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Installation by just launching Ubuntu_2004.2020.424.0_x64.appx.</p>
+<p>I have now 2 distros,</p>
+
+<pre><code>PS C:\WINDOWS\system32&gt; wsl --list -v
+  NAME            STATE           VERSION
+* Ubuntu-18.04    Running         2
+  Ubuntu-20.04    Running         2</code></pre>
+
+</div>
+</div>
+</div>
 </div>
 
 
