@@ -107,6 +107,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Test-fastai-installation-(valid-for-v1)">Test fastai installation (valid for v1) </a></li>
 <li class="toc-entry toc-h2"><a href="#get-git-repo-to-learn-from-fastai">get git repo to learn from fastai </a></li>
 <li class="toc-entry toc-h2"><a href="#Test-fastai-v2-installation">Test fastai v2 installation </a></li>
+<li class="toc-entry toc-h2"><a href="#Install-nvidia-drivers-for-ubuntu">Install nvidia drivers for ubuntu </a></li>
 <li class="toc-entry toc-h2"><a href="#Run-courses-from-fastai-github-repo">Run courses from fastai github repo </a></li>
 </ul><!--
 #################################################
@@ -255,34 +256,57 @@ python -m fastai.utils.show_install
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-1-5635efd54484&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-green-intense-fg ansi-bold">from</span> fastai<span class="ansi-yellow-intense-fg ansi-bold">.</span>vision<span class="ansi-yellow-intense-fg ansi-bold">.</span>all <span class="ansi-green-intense-fg ansi-bold">import</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span>
-
-<span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>: No module named 'fastai'</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Install-nvidia-drivers-for-ubuntu">
+<a class="anchor" href="#Install-nvidia-drivers-for-ubuntu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install nvidia drivers for ubuntu<a class="anchor-link" href="#Install-nvidia-drivers-for-ubuntu"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I tried by downloading a driver from nvidia website. But I was unable to install it (<code>nvidia-drm-drv.c:662:44: error: 'DRIVER_PRIME' undeclared here (not in a function); did you mean 'DRIVER_PCI_DMA'?</code>)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>sudo ubuntu-drivers autoinstall</code></p>
+<p>then rebooting fixed the issue.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Run-courses-from-fastai-github-repo">
 <a class="anchor" href="#Run-courses-from-fastai-github-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run courses from fastai github repo<a class="anchor-link" href="#Run-courses-from-fastai-github-repo"> </a>
 </h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>just run <code>fastai/dev_nbs/course/lesson1-pets.ipynb</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And everything is just fined ;)</p>
+
 </div>
 </div>
 </div>
