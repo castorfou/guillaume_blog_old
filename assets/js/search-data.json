@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Fastai book Deep Learning for Corders with fastai and Pytorch",
-            "content": "Paper version of fastai book . Of course the 1st tep is to purchase this great book: . . I have liked what Jeremy Howard said about why this is important to purchase it (in video 1). Fastai is offering full access to the book as notebooks. So that we can run all codes from them. . Get notebook version of fastai book . ~/git/guillaume$ git clone https://github.com/fastai/fastbook.git . . I have now a perfect combo between paper book and notebooks. .",
+            "content": "Paper version of fastai book . Of course the 1st tep is to purchase this great book: . . I have liked what Jeremy Howard said about why this is important to purchase it (in video 1). Fastai is offering full access to the book as notebooks. So that we can run all codes from them. . Get notebook version of fastai book . ~/git/guillaume$ git clone https://github.com/fastai/fastbook.git . . I have now a perfect combo between paper book and notebooks. . Personal git organization . ~/git/guillaume$ ll fastai/ &lt;-- from https://github.com/fastai/fastai fastai_experiments/ &lt;-- I will keep all experiments I will do here fastbook/ &lt;-- from https://github.com/fastai/fastbook.git guillaume_blog/ &lt;-- from git@github.com:castorfou/guillaume_blog.git . fastai_experiments likely to have 1 notebook per chapter or video. .",
             "url": "https://castorfou.github.io/guillaume_blog/fastai/jupyter/fastbook/2020/09/24/fastai-book.html",
             "relUrl": "/fastai/jupyter/fastbook/2020/09/24/fastai-book.html",
             "date": " • Sep 24, 2020"
