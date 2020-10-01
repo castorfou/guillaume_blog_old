@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Generative Adversarial Networks (GANs) Specialization from Coursera",
-            "content": "env installation . conda create -n gan python=3.7 conda activate gan conda install -c pytorch pytorch=1.4.0 . Coursera . Here is the course: [coursera](https://www.coursera.org/learn/build-basic-generative-adversarial-networks-gans/home/welcome= .",
+            "content": "Coursera . Here is the course: Coursera: Gan Specialization . env installation . conda create -n gan python=3.7 conda activate gan conda install -c pytorch pytorch=1.4.0 .",
             "url": "https://castorfou.github.io/guillaume_blog/gan/pytorch/2020/10/01/gan-pytorch-coursera.html",
             "relUrl": "/gan/pytorch/2020/10/01/gan-pytorch-coursera.html",
             "date": " • Oct 1, 2020"
