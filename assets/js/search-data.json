@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "GAN Specialization week 4 - conditional generation, controllable generation",
+            "title": "GAN Specialization course 1 week 4 - conditional generation, controllable generation",
             "content": "Conditional generation, controllable generation, disentanglement of Z-space . .",
             "url": "https://castorfou.github.io/guillaume_blog/gan/pytorch/2020/10/07/gan-specialization-week4-conditional_generation-controllable-generation.html",
             "relUrl": "/gan/pytorch/2020/10/07/gan-specialization-week4-conditional_generation-controllable-generation.html",
@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "GAN Specialization week 3 - mode collapse, vanishing gradient, wasserstein loss",
+            "title": "GAN Specialization course 1 week 3 - mode collapse, vanishing gradient, wasserstein loss",
             "content": "Mode collapse, Vanishing gradient . Very good explanation about why it happens. Flat region when discriminator is learning faster (it has an easier job) than generator. . . Earth mover&#39;s distance. Wasserstein loss. 1-L continuous condition . .",
             "url": "https://castorfou.github.io/guillaume_blog/gan/pytorch/2020/10/07/gan-specialization-week3-mode_collapse-W_loss.html",
             "relUrl": "/gan/pytorch/2020/10/07/gan-specialization-week3-mode_collapse-W_loss.html",
