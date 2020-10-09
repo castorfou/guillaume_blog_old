@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "GAN Specialization course 2 week 1 - features extraction, FID Frechet Inception Distance",
+            "title": "GAN Specialization course 2 week 1 - evaluations on GANs",
             "content": "Features extraction, inception v3, embeddings, FID (Fr&#233;chet Inception Distance), Sampling and Truncation, Precision and Recall . .",
-            "url": "https://castorfou.github.io/guillaume_blog/gan/pytorch/2020/10/09/gan-course2-week1-frechet-inceotion-distance.html",
-            "relUrl": "/gan/pytorch/2020/10/09/gan-course2-week1-frechet-inceotion-distance.html",
+            "url": "https://castorfou.github.io/guillaume_blog/gan/pytorch/2020/10/09/gan-course2-week1-evaluations-on-gans.html",
+            "relUrl": "/gan/pytorch/2020/10/09/gan-course2-week1-evaluations-on-gans.html",
             "date": " • Oct 9, 2020"
         }
         
