@@ -175,6 +175,27 @@ Branch <span class="s1">'master'</span> <span class="nb">set</span> up to track 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And I want to have same names for same remotes: <code>git remote rename origin github</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So now it is quite easy to update from different remote repo:</p>
+<div class="highlight"><pre><span></span>cat refresh_from_github.sh 
+<span class="c1">#!/bin/bash</span>
+git fetch github
+git pull
+</pre></div>
+
+</div>
+</div>
+</div>
 </div>
 
 
