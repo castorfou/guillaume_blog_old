@@ -1,6 +1,6 @@
 NOW=`date '+%F_%H:%M'`;
 
-# cd ~/git/guillaume/guillaume_blog
+# cd ~/git/guillaume/blog
 git fetch
 git pull
 git add .
