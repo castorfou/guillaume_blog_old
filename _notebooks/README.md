@@ -40,3 +40,17 @@ Saisir l'article
 ### Publier
 
 Publier en appelant: `~/git/guillaume/blog/publish.sh`
+
+### Inserer une image
+
+```markdown
+ ![voila](../images/export_py.png "voila!")
+```
+
+### Inserer un lien
+
+```markdown
+[text](https://<url>)
+```
+
+ 
