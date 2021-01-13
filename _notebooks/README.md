@@ -53,4 +53,10 @@ Publier en appelant: `~/git/guillaume/blog/publish.sh`
 [text](https://<url>)
 ```
 
- 
+###  Insérer une note
+
+```
+<div class="alert alert-info">Note<p>when the 2 differs, boom!</p></div>
+```
+
+![image-20210113094053724](/home/explore/.config/Typora/typora-user-images/image-20210113094053724.png)
