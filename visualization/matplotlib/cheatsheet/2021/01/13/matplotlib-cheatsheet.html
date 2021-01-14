@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -117,6 +117,21 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Annotating-time-series-data">Annotating time-series data </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#Quantitative-comparisons-and-statistical-visualizations">Quantitative comparisons and statistical visualizations </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Quantitative-comparisons:-bar-charts">Quantitative comparisons: bar-charts </a></li>
+<li class="toc-entry toc-h3"><a href="#Quantitative-comparisons:-histograms">Quantitative comparisons: histograms </a></li>
+<li class="toc-entry toc-h3"><a href="#Statistical-plotting">Statistical plotting </a></li>
+<li class="toc-entry toc-h3"><a href="#Quantitative-comparisons:-scatter-plots">Quantitative comparisons: scatter plots </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Sharing-visualizations-with-others">Sharing visualizations with others </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Preparing-your-figures-to-share-with-others">Preparing your figures to share with others </a></li>
+<li class="toc-entry toc-h3"><a href="#Saving-your-visualizations">Saving your visualizations </a></li>
+<li class="toc-entry toc-h3"><a href="#Automating-figures-from-data">Automating figures from data </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -135,6 +150,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#Introduction-to-Data-Visualization-with-Matplotlib" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction to Data Visualization with Matplotlib<a class="anchor-link" href="#Introduction-to-Data-Visualization-with-Matplotlib"> </a>
 </h1>
 <p><a href="../files/matplotlib_cheatsheet.pdf">matplotlib cheatsheet</a> in pdf</p>
+<p><a href="https://github.com/castorfou/data-scientist-skills/tree/master/04%20-%20data-scientist-with-python%20new-track/Introduction%20to%20Data%20Visualization%20with%20Matplotlib">pdf lecture in github</a></p>
 
 </div>
 </div>
@@ -415,6 +431,307 @@ window.onload = wrap_img;
 <span class="n">arrowprops</span><span class="o">=</span><span class="p">{</span><span class="s2">"arrowstyle"</span><span class="p">:</span><span class="s2">"-&gt;"</span><span class="p">,</span> <span class="s2">"color"</span><span class="p">:</span><span class="s2">"gray"</span><span class="p">})</span>
 </pre></div>
 <p><a href="https://matplotlib.org/tutorials/text/annotations.html">Customizing annotations</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Quantitative-comparisons-and-statistical-visualizations">
+<a class="anchor" href="#Quantitative-comparisons-and-statistical-visualizations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quantitative comparisons and statistical visualizations<a class="anchor-link" href="#Quantitative-comparisons-and-statistical-visualizations"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quantitative-comparisons:-bar-charts">
+<a class="anchor" href="#Quantitative-comparisons:-bar-charts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quantitative comparisons: bar-charts<a class="anchor-link" href="#Quantitative-comparisons:-bar-charts"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Olympic medals: visualizing the data</span>
+<span class="n">medals</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'medals_by_country_2016.csv'</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Interlude: rotate the tick labels</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Number of medals"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Olympic medals: visualizing the other medals : stacked bar chart</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Silver"</span><span class="p">],</span> <span class="n">bottom</span><span class="o">=</span><span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Number of medals"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Olympic medals: visualizing all three</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Silver"</span><span class="p">],</span> <span class="n">bottom</span><span class="o">=</span><span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Bronze"</span><span class="p">],</span>
+<span class="n">bottom</span><span class="o">=</span><span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">]</span> <span class="o">+</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Silver"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Number of medals"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Adding a legend</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Gold"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Silver"</span><span class="p">],</span> <span class="n">bottom</span><span class="o">=</span><span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">],</span>
+<span class="n">label</span><span class="o">=</span><span class="s2">"Silver"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Bronze"</span><span class="p">],</span>
+<span class="n">bottom</span><span class="o">=</span><span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">]</span> <span class="o">+</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Silver"</span><span class="p">],</span>
+<span class="n">label</span><span class="o">=</span><span class="s2">"Bronze"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Number of medals"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quantitative-comparisons:-histograms">
+<a class="anchor" href="#Quantitative-comparisons:-histograms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quantitative comparisons: histograms<a class="anchor-link" href="#Quantitative-comparisons:-histograms"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Introducing histograms</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_gymnastic</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"# of observations"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Labels are needed</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Rowing"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_gymnastic</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Gymnastics"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"# of observations"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Customizing histograms: setting the number of bins</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Rowing"</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_gymnastic</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Gymnastics"</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"# of observations"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Customizing histograms: setting bin boundaries</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Rowing"</span><span class="p">,</span>
+<span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">170</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">190</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">210</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_gymnastic</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Gymnastics"</span><span class="p">,</span>
+<span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">170</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">190</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">210</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"# of observations"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Customizing histograms: transparency</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Rowing"</span><span class="p">,</span>
+<span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">170</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">190</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">210</span><span class="p">],</span>
+<span class="n">histtype</span><span class="o">=</span><span class="s2">"step"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mens_gymnastic</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Gymnastics"</span><span class="p">,</span>
+<span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">170</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">190</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">210</span><span class="p">],</span>
+<span class="n">histtype</span><span class="o">=</span><span class="s2">"step"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"# of observations"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Statistical-plotting">
+<a class="anchor" href="#Statistical-plotting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Statistical plotting<a class="anchor-link" href="#Statistical-plotting"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Adding error bars to bar charts</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="s2">"Rowing"</span><span class="p">,</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+<span class="n">yerr</span><span class="o">=</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="s2">"Gymnastics"</span><span class="p">,</span><span class="n">mens_gymnastics</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+<span class="n">yerr</span><span class="o">=</span><span class="n">mens_gymnastics</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Adding error bars to plots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span>
+<span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span><span class="p">],</span>
+<span class="n">yerr</span><span class="o">=</span><span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-STDDEV"</span><span class="p">])</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span>
+<span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span><span class="p">],</span>
+<span class="n">yerr</span><span class="o">=</span><span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-STDDEV"</span><span class="p">])</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Temperature (Fahrenheit)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Adding boxplots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">boxplot</span><span class="p">([</span><span class="n">mens_rowing</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">],</span>
+<span class="n">mens_gymnastics</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s2">"Rowing"</span><span class="p">,</span> <span class="s2">"Gymnastics"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quantitative-comparisons:-scatter-plots">
+<a class="anchor" href="#Quantitative-comparisons:-scatter-plots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quantitative comparisons: scatter plots<a class="anchor-link" href="#Quantitative-comparisons:-scatter-plots"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Introducing scatter plots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">climate_change</span><span class="p">[</span><span class="s2">"co2"</span><span class="p">],</span> <span class="n">climate_change</span><span class="p">[</span><span class="s2">"relative_temp"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"CO2 (ppm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Relative temperature (Celsius)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Customizing scatter plots</span>
+<span class="n">eighties</span> <span class="o">=</span> <span class="n">climate_change</span><span class="p">[</span><span class="s2">"1980-01-01"</span><span class="p">:</span><span class="s2">"1989-12-31"</span><span class="p">]</span>
+<span class="n">nineties</span> <span class="o">=</span> <span class="n">climate_change</span><span class="p">[</span><span class="s2">"1990-01-01"</span><span class="p">:</span><span class="s2">"1999-12-31"</span><span class="p">]</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">eighties</span><span class="p">[</span><span class="s2">"co2"</span><span class="p">],</span> <span class="n">eighties</span><span class="p">[</span><span class="s2">"relative_temp"</span><span class="p">],</span>
+<span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"eighties"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">nineties</span><span class="p">[</span><span class="s2">"co2"</span><span class="p">],</span> <span class="n">nineties</span><span class="p">[</span><span class="s2">"relative_temp"</span><span class="p">],</span>
+<span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"nineties"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"CO2 (ppm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Relative temperature (Celsius)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Encoding a third variable by color</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">climate_change</span><span class="p">[</span><span class="s2">"co2"</span><span class="p">],</span> <span class="n">climate_change</span><span class="p">[</span><span class="s2">"relative_temp"</span><span class="p">],</span>
+<span class="n">c</span><span class="o">=</span><span class="n">climate_change</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"CO2 (ppm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Relative temperature (Celsius)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sharing-visualizations-with-others">
+<a class="anchor" href="#Sharing-visualizations-with-others" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sharing visualizations with others<a class="anchor-link" href="#Sharing-visualizations-with-others"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Preparing-your-figures-to-share-with-others">
+<a class="anchor" href="#Preparing-your-figures-to-share-with-others" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preparing your figures to share with others<a class="anchor-link" href="#Preparing-your-figures-to-share-with-others"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Choosing a style</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"ggplot"</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span> <span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span> <span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Time (months)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Average temperature (Fahrenheit degrees)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Back to the default</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"default"</span><span class="p">)</span>
+</pre></div>
+<p><a href="https://matplotlib.org/gallery/style_sheets/style_sheets_reference.html">available styles</a></p>
+<div class="highlight"><pre><span></span><span class="c1"># The "bmh" style</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"bmh"</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span> <span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span> <span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Time (months)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Average temperature (Fahrenheit degrees)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Seaborn styles</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"seaborn-colorblind"</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span> <span class="n">seattle_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">],</span> <span class="n">austin_weather</span><span class="p">[</span><span class="s2">"MLY-TAVG-NORMAL"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Time (months)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Average temperature (Fahrenheit degrees)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Saving-your-visualizations">
+<a class="anchor" href="#Saving-your-visualizations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saving your visualizations<a class="anchor-link" href="#Saving-your-visualizations"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Saving the figure to file</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">medals</span><span class="p">[</span><span class="s2">"Gold"</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">medals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Number of medals"</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"gold_medals.png"</span><span class="p">)</span>
+
+<span class="c1"># Different file formats</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"gold_medals.jpg"</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"gold_medals.jpg"</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"gold_medals.svg"</span><span class="p">)</span>
+
+<span class="c1"># Resolution</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"gold_medals.png"</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="c1"># Size</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Another aspect ratio</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Automating-figures-from-data">
+<a class="anchor" href="#Automating-figures-from-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automating figures from data<a class="anchor-link" href="#Automating-figures-from-data"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Getting unique values of a column</span>
+<span class="n">sports</span> <span class="o">=</span> <span class="n">summer_2016_medals</span><span class="p">[</span><span class="s2">"Sport"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+
+<span class="c1"># Bar-chart of heights for all sports</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">sport</span> <span class="ow">in</span> <span class="n">sports</span><span class="p">:</span>
+<span class="n">sport_df</span> <span class="o">=</span> <span class="n">summer_2016_medals</span><span class="p">[</span><span class="n">summer_2016_medals</span><span class="p">[</span><span class="s2">"Sport"</span><span class="p">]</span> <span class="o">==</span> <span class="n">spor</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">sport</span><span class="p">,</span> <span class="n">sport_df</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+<span class="n">yerr</span><span class="o">=</span><span class="n">sport_df</span><span class="p">[</span><span class="s2">"Height"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Height (cm)"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">sports</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
 
 </div>
 </div>
