@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -117,7 +117,20 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Introduction-to-line-plots">Introduction to line plots </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#Visualizing-a-Categorical-and-a-Quantitative-Variable">Visualizing a Categorical and a Quantitative Variable </a></li>
+<li class="toc-entry toc-h2"><a href="#Visualizing-a-Categorical-and-a-Quantitative-Variable">Visualizing a Categorical and a Quantitative Variable </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Count-plots-and-bar-plots">Count plots and bar plots </a></li>
+<li class="toc-entry toc-h3"><a href="#Box-plots">Box plots </a></li>
+<li class="toc-entry toc-h3"><a href="#Point-plots">Point plots </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Customizing-Seaborn-Plots">Customizing Seaborn Plots </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Changing-plot-style-and-color">Changing plot style and color </a></li>
+<li class="toc-entry toc-h3"><a href="#Adding-titles-and-labels:-Part-1">Adding titles and labels: Part 1 </a></li>
+<li class="toc-entry toc-h3"><a href="#Adding-titles-and-labels:-Part-2">Adding titles and labels: Part 2 </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -397,6 +410,218 @@ window.onload = wrap_img;
 <h2 id="Visualizing-a-Categorical-and-a-Quantitative-Variable">
 <a class="anchor" href="#Visualizing-a-Categorical-and-a-Quantitative-Variable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Visualizing a Categorical and a Quantitative Variable<a class="anchor-link" href="#Visualizing-a-Categorical-and-a-Quantitative-Variable"> </a>
 </h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Count-plots-and-bar-plots">
+<a class="anchor" href="#Count-plots-and-bar-plots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Count plots and bar plots<a class="anchor-link" href="#Count-plots-and-bar-plots"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># countplot() vs. catplot()</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"how_masculine"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">masculinity_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"count"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Changing the order</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">category_order</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"No answer"</span><span class="p">,</span><span class="s2">"Not at all"</span><span class="p">,</span><span class="s2">"Not very"</span><span class="p">,</span><span class="s2">"Somewhat"</span><span class="p">,</span><span class="s2">"Very"</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"how_masculine"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">masculinity_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"count"</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="n">category_order</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Bar plots</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"day"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"bar"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Turning off confidence intervals</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"day"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"bar"</span><span class="p">,</span><span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Changing the orientation</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"day"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"bar"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Box-plots">
+<a class="anchor" href="#Box-plots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Box plots<a class="anchor-link" href="#Box-plots"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># How to create a box plot</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"time"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Change the order of categories</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"time"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="p">[</span><span class="s2">"Dinner"</span><span class="p">,</span><span class="s2">"Lunch"</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Omitting the outliers using `sym`</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"time"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">,</span><span class="n">sym</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Changing the whiskers using `whis`</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"time"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">,</span><span class="n">whis</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Point-plots">
+<a class="anchor" href="#Point-plots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Point plots<a class="anchor-link" href="#Point-plots"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Creating a point plot</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"age"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"masculinity_important"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">masculinity_data</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">"feel_masculine"</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"point"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Disconnecting the points</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"age"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"masculinity_important"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">masculinity_data</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">"feel_masculine"</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"point"</span><span class="p">,</span><span class="n">join</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Displaying the median</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">median</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"smoker"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"point"</span><span class="p">,</span><span class="n">estimator</span><span class="o">=</span><span class="n">median</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Customizing the confidence intervals</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"smoker"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"point"</span><span class="p">,</span><span class="n">capsize</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Turning off confidence intervals</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"smoker"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"total_bill"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"point"</span><span class="p">,</span><span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Customizing-Seaborn-Plots">
+<a class="anchor" href="#Customizing-Seaborn-Plots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customizing Seaborn Plots<a class="anchor-link" href="#Customizing-Seaborn-Plots"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Changing-plot-style-and-color">
+<a class="anchor" href="#Changing-plot-style-and-color" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changing plot style and color<a class="anchor-link" href="#Changing-plot-style-and-color"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Figure style: "whitegrid"</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"whitegrid"</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"age"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"masculinity_important"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">masculinity_data</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">"feel_masculine"</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"point"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Other styles:</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"ticks"</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"dark"</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"darkgrid"</span><span class="p">)</span>
+
+<span class="c1"># Example (diverging palette)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="s2">"RdBu"</span><span class="p">)</span>
+<span class="n">category_order</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"No answer"</span><span class="p">,</span><span class="s2">"Not at all"</span><span class="p">,</span><span class="s2">"Not very"</span><span class="p">,</span><span class="s2">"Somewhat"</span><span class="p">,</span><span class="s2">"Very"</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"how_masculine"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">masculinity_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"count"</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="n">category_order</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Custom palettes</span>
+<span class="n">custom_palette</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span><span class="s2">"yellow"</span><span class="p">,</span> <span class="s2">"purple"</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">custom_palette</span><span class="p">)</span>
+
+<span class="c1"># Custom palettes</span>
+<span class="n">custom_palette</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#FBB4AE'</span><span class="p">,</span> <span class="s1">'#B3CDE3'</span><span class="p">,</span> <span class="s1">'#CCEBC5'</span><span class="p">,</span><span class="s1">'#DECBE4'</span><span class="p">,</span> <span class="s1">'#FED9A6'</span><span class="p">,</span> <span class="s1">'#FFFFCC'</span><span class="p">,</span><span class="s1">'#E5D8BD'</span><span class="p">,</span> <span class="s1">'#FDDAEC'</span><span class="p">,</span> <span class="s1">'#F2F2F2'</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">custom_palette</span><span class="p">)</span>
+
+<span class="c1"># Larger context: "talk"</span>
+<span class="c1">#Smallest to largest: "paper", "notebook", "talk", "poster"</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">"talk"</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Adding-titles-and-labels:-Part-1">
+<a class="anchor" href="#Adding-titles-and-labels:-Part-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding titles and labels: Part 1<a class="anchor-link" href="#Adding-titles-and-labels:-Part-1"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Adding a title to FacetGrid</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"Region"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"Birthrate"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gdp_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">"New Title"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Adjusting height of title in FacetGrid</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"Region"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"Birthrate"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gdp_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">"New Title"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Adding-titles-and-labels:-Part-2">
+<a class="anchor" href="#Adding-titles-and-labels:-Part-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding titles and labels: Part 2<a class="anchor-link" href="#Adding-titles-and-labels:-Part-2"> </a>
+</h3>
+<div class="highlight"><pre><span></span><span class="c1"># Adding a title to AxesSubplot</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"Region"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"Birthrate"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gdp_data</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"New Title"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">)</span>
+
+<span class="c1"># Titles for subplots</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"Region"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"Birthrate"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gdp_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="s2">"Group"</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">"New Title"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">"This is </span><span class="si">{col_name}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Adding axis labels</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"Region"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"Birthrate"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gdp_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">"New X Label"</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="s2">"New Y Label"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Rotating x-axis tick labels</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">"Region"</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">"Birthrate"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gdp_data</span><span class="p">,</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
 </div>
 </div>
 </div>
