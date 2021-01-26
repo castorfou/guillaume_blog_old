@@ -15,7 +15,7 @@ image: images/fastpages_posts/actions/actions_logo.png
 from https://www.youtube.com/watch?v=Obek04C8L5E&feature=youtu.be
 
 at 26' idea that you can tackle over-optimism models by using ensemble models.
-See paper at 2018 Model-Ensemble Trust-Region Policy Optimization
+See paper at [2018 Model-Ensemble Trust-Region Policy Optimization](https://github.com/castorfou/datascience-papers/raw/main/RL/2018%20Model-Ensemble%20Trust-Region%20Policy%20Optimization/model_ensemble_trust_region_policy_optimization.pdf)
 
 
 
