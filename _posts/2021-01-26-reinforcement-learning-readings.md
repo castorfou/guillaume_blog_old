@@ -40,5 +40,29 @@ There is a reference to a blog article [[2] Steeve Huang. “Introduction to Var
 
 And the paper for OpenAI Gym [[3] Greg Brockman, Vicki Cheung, Ludwig Pettersson, Jonas Schneider, John Schulman, Jie Tang, Wojciech Zaremba. “OpenAI Gym”. (2016)](https://github.com/castorfou/datascience-papers/blob/main/RL/2016%20OpenAI%20Gym/1606.01540.pdf)
 
+## 1/27/21 - Reinforcement learning : an introduction
 
+as a ref. from Reinforcement learning, partie 1 : introduction (in French)
+
+I like this summary about RL
+
+> Reinforcement learning is a computational approach to understanding and au-
+> tomating goal-directed learning and decision-making. It is distinguished from
+> other computational approaches by its emphasis on learning by an agent from
+> direct interaction with its environment, without relying on exemplary super-
+> vision or complete models of the environment. In our opinion, reinforcement
+> learning is the first field to seriously address the computational issues that
+> arise when learning from interaction with an environment in order to achieve16
+> CHAPTER 1. THE REINFORCEMENT LEARNING PROBLEM
+> long-term goals.
+> Reinforcement learning uses a formal framework defining the interaction
+> between a learning agent and its environment in terms of states, actions, and
+> rewards. This framework is intended to be a simple way of representing es-
+> sential features of the artificial intelligence problem. These features include a
+> sense of cause and effect, a sense of uncertainty and nondeterminism, and the
+> existence of explicit goals.
+
+There is some history about RL. Bellman equation and dynamic programming are at the beginning of RL.
+
+I have read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf) from Huyên PHAM (in French)
 
