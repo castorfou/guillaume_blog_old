@@ -64,5 +64,7 @@ I like this summary about RL
 
 There is some history about RL. Bellman equation and dynamic programming are at the beginning of RL.
 
-I have read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf) from Huyên PHAM (in French)
+I have read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf) from Huyên PHAM (from a French Math magazine)
+
+
 
