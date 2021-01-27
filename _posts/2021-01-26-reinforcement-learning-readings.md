@@ -64,7 +64,17 @@ I like this summary about RL
 
 There is some history about RL. Bellman equation and dynamic programming are at the beginning of RL.
 
-I have read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf) from Huyên PHAM (from a French Math magazine)
+I read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf) from Huyên PHAM (from a French Math magazine). It is funny to see why dynamic programming has been named that way, and how to deal with management.
+
+> The class of methods for solving optimal control problems by
+> solving this equation came to be known as dynamic programming (Bellman,
+> 1957a). Bellman (1957b) also introduced the discrete stochastic version of the
+> optimal control problem known as Markovian decision processes (MDPs), and
+> Ronald Howard (1960) devised the policy iteration method for MDPs. All of
+> these are essential elements underlying the theory and algorithms of modern
+> reinforcement learning.
+
+ 
 
 
 
