@@ -80,3 +80,19 @@ I read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangent
 
 >   ![](../../../../images/wikipedia_mdp.png)
 
+Interesting to read that the famous cart pole experiment (learning to balance a pole hinged to a movable cart) came from Michie and Chambers in 1968, 53 years ago! (and derived from tic-tac-toe experiment)
+
+I don' understand the subtlety behind the move from "learning with a teacher" to "learning with a critic" following the modified Least-Mean-Square (LMS) algorithm; Widrow and Hoff (1973)
+
+And some explanations about temporal-difference. I have just understood that a convergence effort happened (in 1989) by Chris Watkin who brought together temporal-difference and optimal control by developing Q-learning.
+
+After this introduction, here is the content:
+
+The first chapter of this part of the book describes solution methods for the special of the reinforcement learning problem in which there is only a **single state**, called bandit problems. The second chapter describes the general problem formulation that we treat throughout the rest of the book—**finite markov decision processes**—and its main ideas including Bellman equations and value functions.
+
+The next three chapters describe three fundamental classes of methods for **solving finite Markov decision problems: dynamic programming, Monte Carlo methods, and temporal-difference learning**. Each class of methods has its strengths and weaknesses. **Dynamic programming** methods are well developed mathematically, but require a complete and accurate model of the environment. **Monte Carlo** methods don’t require a model and are conceptually simple, but are not suited for step-by-step incremental computation. Finally, **temporal-difference** methods require no model and are fully incremental, but are more complex to analyze. The methods also differ in several ways with respect to their efficiency and speed of convergence.
+
+The remaining two chapters describe how these three classes of methods can be combined to obtain the best features of each of them. In one chapter we describe how the strengths of Monte Carlo methods can be combined with the strengths of temporal-difference methods via the use of eligibility traces. In the final chapter of this part of the book we show these two learning methods can be combined with model learning and planning methods (such as dynamic programming) for a **complete and unified solution to the tabular reinforcement learning problem**.
+
+
+
