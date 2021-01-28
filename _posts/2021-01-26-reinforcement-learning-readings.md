@@ -78,5 +78,5 @@ I read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangent
 
 [Markov decision process - Wikipedia](https://en.wikipedia.org/wiki/Markov_decision_process)
 
->   ![](../images/wikipedia_mdp.png)
+>   ![](../../../../images/wikipedia_mdp.png)
 
