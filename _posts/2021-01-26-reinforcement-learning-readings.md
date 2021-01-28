@@ -78,10 +78,5 @@ I read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangent
 
 [Markov decision process - Wikipedia](https://en.wikipedia.org/wiki/Markov_decision_process)
 
-> A Markov decision process is a 4-[tuple](https://en.wikipedia.org/wiki/Tuple)   ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4087b8e195d2e67af8b20e9ed556b697653500c), where
->
-> -  ![S](https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2) is a set of states called the *state space*,
-> - ![A](https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3) is a set of actions called the *action space* (alternatively, ![A_s](https://wikimedia.org/api/rest_v1/media/math/render/svg/5cc9b664ef7e1dca131e7f345b4321bd3a07a7d8) is the set of actions available from state ![s](https://wikimedia.org/api/rest_v1/media/math/render/svg/01d131dfd7673938b947072a13a9744fe997e632)),
-> -  ![{\displaystyle P_{a}(s,s')=\Pr(s_{t+1}=s'\mid s_{t}=s,a_{t}=a)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/9f46bb2846b8b20a08220507fa105540f34850e7) is the probability that action  ![a](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc) in state                       ![s](https://wikimedia.org/api/rest_v1/media/math/render/svg/01d131dfd7673938b947072a13a9744fe997e632) at time     ![t](https://wikimedia.org/api/rest_v1/media/math/render/svg/65658b7b223af9e1acc877d848888ecdb4466560) will lead to state  ![s'](https://wikimedia.org/api/rest_v1/media/math/render/svg/5136680c63706cfd17ceddb4acddbfdd0ba5ef2d) at time    ![t+1](https://wikimedia.org/api/rest_v1/media/math/render/svg/ab2785d8415d6902b0c93efe1419c4bc3ce4643d),
-> -  ![{\displaystyle R_{a}(s,s')}](https://wikimedia.org/api/rest_v1/media/math/render/svg/5f842d4a4b1340e194d8014d63163e5e27f94215) is the immediate reward (or expected immediate reward) received after transitioning from state   ![s](https://wikimedia.org/api/rest_v1/media/math/render/svg/01d131dfd7673938b947072a13a9744fe997e632) to state     ![s'](https://wikimedia.org/api/rest_v1/media/math/render/svg/5136680c63706cfd17ceddb4acddbfdd0ba5ef2d), due to action     ![a](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)
+>   ![](../images/wikipedia_mdp.png)
 
