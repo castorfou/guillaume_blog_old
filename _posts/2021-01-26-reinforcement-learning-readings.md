@@ -94,5 +94,9 @@ After this introduction, here is the content:
 
 3rd part is about combining these methods to offer a **complete and unified solution to the tabular reinforcement learning problem**.
 
+We can think of terms agent, environment, and action as engineers’ terms controller, controlled system (or plant), and control signal.
+
+![](../../../../images/agent–environment_interaction.png)
+
 
 
