@@ -96,7 +96,9 @@ After this introduction, here is the content:
 
 We can think of terms agent, environment, and action as engineers’ terms controller, controlled system (or plant), and control signal.
 
-![](../../../../images/agent–environment_interaction.png)
+![The agent–environment interaction in reinforcement learning.](../../../../images/agent–environment_interaction.png)
 
+Explanation about agent vs environment. Often not the same as physical boundaries of a robot: this boundary represents the limit of the agent's absolute control, not of its knowledge. Many different agents can be operated at once.
 
+The agent's goal is to maximize the total mount of reward it receives.
 
