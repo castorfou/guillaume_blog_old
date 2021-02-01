@@ -102,3 +102,4 @@ Explanation about agent vs environment. Often not the same as physical boundarie
 
 The agent's goal is to maximize the total mount of reward it receives.
 
+I should re-read the full chapter3 because a lot of concepts coming from MDP is exposed, and their links to RL. At the end I should be able to answer most of end-of-chapter exercises. Have clearer view about how to define what are my agents/environment in my case; how to define actions (low-level definition (e.g. V in level1 electrical grid vs high level decision)); everything related to q* and Q-learning.
