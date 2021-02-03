@@ -85,3 +85,12 @@ Explanation about agent vs environment. Often not the same as physical boundarie
 The agent's goal is to maximize the total mount of reward it receives.
 
 I should re-read the full chapter3 because a lot of concepts coming from MDP is exposed, and their links to RL. At the end I should be able to answer most of end-of-chapter exercises. Have clearer view about how to define what are my agents/environment in my case; how to define actions (low-level definition (e.g. V in level1 electrical grid vs high level decision)); everything related to q* and Q-learning.
+
+#### dynamic programming (chap4 - 103-126)
+
+What is key here is to have an exact way to describe your environment. Which is not always feasible. And we need computer power to go through all states, compute value function. There is a balance between policy evaluation and policy improvement but this is not crystal clear to me. And I don't understand asynchronous DP. I haven't developed enough intuitions behind DP, and I am unable to answer exercises. I understand though that reinforcement learning can solve some problems by approximating part of it (evaluation, environment, ...)
+
+#### monte carlo methods (chap3 - 127-156)
+
+
+
