@@ -98,7 +98,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#12621---reinforcement-learning-for-real-world-robotics">1/26/21 - Reinforcement learning for real-world robotics</a></li>
 <li class="toc-entry toc-h2"><a href="#12621---reinforcement-learning-algorithms--an-intuitive-overview">1/26/21 - Reinforcement Learning algorithms — an intuitive overview</a></li>
 <li class="toc-entry toc-h2"><a href="#12621---reinforcement-learning-partie-1--introduction-in-french">1/26/21 - Reinforcement learning, partie 1 : introduction (in French)</a></li>
-<li class="toc-entry toc-h2"><a href="#12721---reinforcement-learning--an-introduction">1/27/21 - Reinforcement learning : an introduction</a></li>
+<li class="toc-entry toc-h2"><a href="#12721---reinforcement-learning--an-introduction">1/27/21 - Reinforcement learning : an introduction</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#dynamic-programming-chap4---103-126">dynamic programming (chap4 - 103-126)</a></li>
+<li class="toc-entry toc-h4"><a href="#monte-carlo-methods-chap3---127-156">monte carlo methods (chap3 - 127-156)</a></li>
+</ul>
+</li>
 </ul><h2 id="12621---reinforcement-learning-for-real-world-robotics">
 <a class="anchor" href="#12621---reinforcement-learning-for-real-world-robotics" aria-hidden="true"><span class="octicon octicon-link"></span></a>1/26/21 - Reinforcement learning for real-world robotics</h2>
 
@@ -180,6 +185,15 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 <p>The agent’s goal is to maximize the total mount of reward it receives.</p>
 
 <p>I should re-read the full chapter3 because a lot of concepts coming from MDP is exposed, and their links to RL. At the end I should be able to answer most of end-of-chapter exercises. Have clearer view about how to define what are my agents/environment in my case; how to define actions (low-level definition (e.g. V in level1 electrical grid vs high level decision)); everything related to q* and Q-learning.</p>
+
+<h4 id="dynamic-programming-chap4---103-126">
+<a class="anchor" href="#dynamic-programming-chap4---103-126" aria-hidden="true"><span class="octicon octicon-link"></span></a>dynamic programming (chap4 - 103-126)</h4>
+
+<p>What is key here is to have an exact way to describe your environment. Which is not always feasible. And we need computer power to go through all states, compute value function. There is a balance between policy evaluation and policy improvement but this is not crystal clear to me. And I don’t understand asynchronous DP. I haven’t developed enough intuitions behind DP, and I am unable to answer exercises. I understand though that reinforcement learning can solve some problems by approximating part of it (evaluation, environment, …)</p>
+
+<h4 id="monte-carlo-methods-chap3---127-156">
+<a class="anchor" href="#monte-carlo-methods-chap3---127-156" aria-hidden="true"><span class="octicon octicon-link"></span></a>monte carlo methods (chap3 - 127-156)</h4>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
