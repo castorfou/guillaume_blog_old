@@ -46,33 +46,15 @@ as a ref. from Reinforcement learning, partie 1 : introduction (in French)
 
 I like this summary about RL
 
-> Reinforcement learning is a computational approach to understanding and au-
-> tomating goal-directed learning and decision-making. It is distinguished from
-> other computational approaches by its emphasis on learning by an agent from
-> direct interaction with its environment, without relying on exemplary super-
-> vision or complete models of the environment. In our opinion, reinforcement
-> learning is the first field to seriously address the computational issues that
-> arise when learning from interaction with an environment in order to achieve16
-> CHAPTER 1. THE REINFORCEMENT LEARNING PROBLEM
-> long-term goals.
-> Reinforcement learning uses a formal framework defining the interaction
-> between a learning agent and its environment in terms of states, actions, and
-> rewards. This framework is intended to be a simple way of representing es-
-> sential features of the artificial intelligence problem. These features include a
-> sense of cause and effect, a sense of uncertainty and nondeterminism, and the
-> existence of explicit goals.
+> Reinforcement learning is a computational approach to understanding and automating goal-directed learning and decision-making. It is distinguished from other computational approaches by its emphasis on learning by an agent from direct interaction with its environment, without relying on exemplary supervision or complete models of the environment. In our opinion, reinforcement learning is the first field to seriously address the computational issues that arise when learning from interaction with an environment in order to achieve long-term goals.
+> Reinforcement learning uses a formal framework defining the interaction between a learning agent and its environment in terms of states, actions, and rewards. This framework is intended to be a simple way of representing essential features of the artificial intelligence problem. These features include a sense of cause and effect, a sense of uncertainty and nondeterminism, and the existence of explicit goals.
 
 There is some history about RL. Bellman equation and dynamic programming are at the beginning of RL.
 
 I read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf) from Huyên PHAM (from a French Math magazine). It is funny to see why dynamic programming has been named that way, and how to deal with management.
 
-> The class of methods for solving optimal control problems by
-> solving this equation came to be known as dynamic programming (Bellman,
-> 1957a). Bellman (1957b) also introduced the discrete stochastic version of the
-> optimal control problem known as Markovian decision processes (MDPs), and
-> Ronald Howard (1960) devised the policy iteration method for MDPs. All of
-> these are essential elements underlying the theory and algorithms of modern
-> reinforcement learning.
+> The class of methods for solving optimal control problems by solving this equation came to be known as dynamic programming (Bellman, 1957a). Bellman (1957b) also introduced the discrete stochastic version of the optimal control problem known as Markovian decision processes (MDPs), and
+> Ronald Howard (1960) devised the policy iteration method for MDPs. All of these are essential elements underlying the theory and algorithms of modern reinforcement learning.
 
  All the vocabulary around RL is coming from dynamic programming and MDP. 
 
