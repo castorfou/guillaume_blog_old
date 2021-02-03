@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-01T09:48:54-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement learning readings</title><link href="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/01/26/reinforcement-learning-readings.html" rel="alternate" type="text/html" title="Reinforcement learning readings" /><published>2021-01-26T00:00:00-06:00</published><updated>2021-01-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/01/26/reinforcement-learning-readings</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/01/26/reinforcement-learning-readings.html">&lt;h2 id=&quot;12621---reinforcement-learning-for-real-world-robotics&quot;&gt;1/26/21 - Reinforcement learning for real-world robotics&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-03T06:55:59-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement learning readings</title><link href="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/01/26/reinforcement-learning-readings.html" rel="alternate" type="text/html" title="Reinforcement learning readings" /><published>2021-01-26T00:00:00-06:00</published><updated>2021-01-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/01/26/reinforcement-learning-readings</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/01/26/reinforcement-learning-readings.html">&lt;h2 id=&quot;12621---reinforcement-learning-for-real-world-robotics&quot;&gt;1/26/21 - Reinforcement learning for real-world robotics&lt;/h2&gt;
 
 &lt;p&gt;from &lt;a href=&quot;https://www.youtube.com/watch?v=Obek04C8L5E&amp;amp;feature=youtu.be&quot;&gt;https://www.youtube.com/watch?v=Obek04C8L5E&amp;amp;feature=youtu.be&lt;/a&gt;&lt;/p&gt;
 
@@ -31,21 +31,8 @@ from Sutton, Richard S., and Andrew G. Barto &lt;a href=&quot;https://github.com
 &lt;p&gt;I like this summary about RL&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Reinforcement learning is a computational approach to understanding and au-
-tomating goal-directed learning and decision-making. It is distinguished from
-other computational approaches by its emphasis on learning by an agent from
-direct interaction with its environment, without relying on exemplary super-
-vision or complete models of the environment. In our opinion, reinforcement
-learning is the first field to seriously address the computational issues that
-arise when learning from interaction with an environment in order to achieve16
-CHAPTER 1. THE REINFORCEMENT LEARNING PROBLEM
-long-term goals.
-Reinforcement learning uses a formal framework defining the interaction
-between a learning agent and its environment in terms of states, actions, and
-rewards. This framework is intended to be a simple way of representing es-
-sential features of the artificial intelligence problem. These features include a
-sense of cause and effect, a sense of uncertainty and nondeterminism, and the
-existence of explicit goals.&lt;/p&gt;
+  &lt;p&gt;Reinforcement learning is a computational approach to understanding and automating goal-directed learning and decision-making. It is distinguished from other computational approaches by its emphasis on learning by an agent from direct interaction with its environment, without relying on exemplary supervision or complete models of the environment. In our opinion, reinforcement learning is the first field to seriously address the computational issues that arise when learning from interaction with an environment in order to achieve long-term goals.
+Reinforcement learning uses a formal framework defining the interaction between a learning agent and its environment in terms of states, actions, and rewards. This framework is intended to be a simple way of representing essential features of the artificial intelligence problem. These features include a sense of cause and effect, a sense of uncertainty and nondeterminism, and the existence of explicit goals.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;There is some history about RL. Bellman equation and dynamic programming are at the beginning of RL.&lt;/p&gt;
@@ -53,13 +40,8 @@ existence of explicit goals.&lt;/p&gt;
 &lt;p&gt;I read about &lt;a href=&quot;http://felix.proba.jussieu.fr/pageperso/pham/Tangente.pdf&quot;&gt;HJB equation&lt;/a&gt; from Huyên PHAM (from a French Math magazine). It is funny to see why dynamic programming has been named that way, and how to deal with management.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;The class of methods for solving optimal control problems by
-solving this equation came to be known as dynamic programming (Bellman,
-1957a). Bellman (1957b) also introduced the discrete stochastic version of the
-optimal control problem known as Markovian decision processes (MDPs), and
-Ronald Howard (1960) devised the policy iteration method for MDPs. All of
-these are essential elements underlying the theory and algorithms of modern
-reinforcement learning.&lt;/p&gt;
+  &lt;p&gt;The class of methods for solving optimal control problems by solving this equation came to be known as dynamic programming (Bellman, 1957a). Bellman (1957b) also introduced the discrete stochastic version of the optimal control problem known as Markovian decision processes (MDPs), and
+Ronald Howard (1960) devised the policy iteration method for MDPs. All of these are essential elements underlying the theory and algorithms of modern reinforcement learning.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;All the vocabulary around RL is coming from dynamic programming and MDP.&lt;/p&gt;
