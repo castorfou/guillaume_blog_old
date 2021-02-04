@@ -92,5 +92,7 @@ What is key here is to have an exact way to describe your environment. Which is 
 
 #### monte carlo methods (chap3 - 127-156)
 
+first-visit vs every-visit methods. First-visit has been wideky studied. Blackjack example. Explanation of Mone Carle ES (exploratoring starts); both with on-policy and off-policy.
+
 
 
