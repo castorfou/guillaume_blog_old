@@ -194,8 +194,11 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 <h4 id="monte-carlo-methods-chap3---127-156">
 <a class="anchor" href="#monte-carlo-methods-chap3---127-156" aria-hidden="true"><span class="octicon octicon-link"></span></a>monte carlo methods (chap3 - 127-156)</h4>
 
-<p>first-visit vs every-visit methods. First-visit has been wideky studied. Blackjack example. Explanation of Monte Carlo ES (exploratoring starts); and how to avoid this unlikely assumption thanks to on-policy or off-policy methods (on-policy estimate the value of a policy while using it for control. In off-policy methods these two functions are separated (behaviour and target)).</p>
+<p>first-visit vs every-visit methods. First-visit has been widely studied. Blackjack example. Explanation of Monte Carlo ES (exploratory starts); and how to avoid this unlikely assumption thanks to on-policy or off-policy methods (on-policy estimate the value of a policy while using it for control. In off-policy methods these two functions are separated (behavior and target)).</p>
 
+<p>One issue with MC methods is to ensure sufficient exploration. One approach is to start with a random state-action pair, could work with simulated episodes but unlikely to learn from real experience.</p>
+
+<p>MC methods do not bootstrap (i.e. they don’t update their value estimates based on other value estimates) (TODO learn more about bootstrapping)</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
