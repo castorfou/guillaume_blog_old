@@ -92,7 +92,8 @@ What is key here is to have an exact way to describe your environment. Which is 
 
 #### monte carlo methods (chap3 - 127-156)
 
-first-visit vs every-visit methods. First-visit has been wideky studied. Blackjack example. Explanation of Monte Carlo ES (exploratoring starts); and how to avoid this unlikely assumption thanks to on-policy or off-policy methods (on-policy estimate the value of a policy while using it for control. In off-policy methods these two functions are separated (behaviour and target)).
+first-visit vs every-visit methods. First-visit has been widely studied. Blackjack example. Explanation of Monte Carlo ES (exploratory starts); and how to avoid this unlikely assumption thanks to on-policy or off-policy methods (on-policy estimate the value of a policy while using it for control. In off-policy methods these two functions are separated (behavior and target)).
 
+One issue with MC methods is to ensure sufficient exploration. One approach is to start with a random state-action pair, could work with simulated episodes but unlikely to learn from real experience. 
 
-
+MC methods do not bootstrap (i.e. they don't update their value estimates based on other value estimates) (TODO learn more about bootstrapping)
