@@ -23,7 +23,7 @@ See paper at [2018 Model-Ensemble Trust-Region Policy Optimization](https://gith
 
 from [https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc](https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc)
 
-![](../../../../images/RL_taxonomy.jpg)
+![](../../../../images/RL_taxonomy.png)
 
 
 
