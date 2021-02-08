@@ -208,6 +208,10 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 
 <p>If you consider optimization as a 2 phases approach: prediction problem (ie policy evaluation) and control problem (ie optimal policy), DP, TD, MC differences are at the prediction problem. On control problem they use variations of generalized policy iteration (GPI).</p>
 
+<p>TD methods combine the sampling of Monte Carlo with the bootstrapping of DP.</p>
+
+<p>Example based on Driving Home. In TD you update prediction at each step, not waiting for the final return as in MC.</p>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="castorfou/guillaume_blog"
