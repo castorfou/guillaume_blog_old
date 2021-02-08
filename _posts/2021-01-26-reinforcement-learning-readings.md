@@ -103,3 +103,7 @@ MC methods do not bootstrap (i.e. they don't update their value estimates based 
 TD learning is a combination of Monte Carlo ideas and dynamic programming (DP) ideas. Like DP, TD methods update estimates based in part on other learned estimates, without waiting for a final outcome (they bootstrap).
 
 If you consider optimization as a 2 phases approach: prediction problem (ie policy evaluation) and control problem (ie optimal policy), DP, TD, MC differences are at the prediction problem. On control problem they use variations of generalized policy iteration (GPI).
+
+TD methods combine the sampling of Monte Carlo with the bootstrapping of DP.
+
+Example based on Driving Home. In TD you update prediction at each step, not waiting for the final return as in MC.
