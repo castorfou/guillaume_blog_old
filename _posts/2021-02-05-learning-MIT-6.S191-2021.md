@@ -20,6 +20,8 @@ This is done with google contribution, and therefore all examples are in tensorf
 
 ## 2/5/21 - Intro to Deep Learning - lecture 1
 
+Lecturer: Alexander Amini
+
 Intro is just jaw-dropping!
 
 [2020 intro](https://youtu.be/5tvmMX8r_OM?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&t=40) was top. 
@@ -37,6 +39,25 @@ It is a standard overview of simple deep learning concepts: Perceptron, multi-pe
 New lecturer: Ava Soleimany
 
 Nice introduction to sequence modeling with Many-to-One, One-to-Many, Many-to-Many.
+
+RNN and implementation in TensorFlow. And NLP examples: next word problem. (and NLP concepts such as Vocabulary, Indexing, Embedding)
+
+And what we need for sequeence modeling:
+
+* handle variable-length sequences
+* track long-term dependencies
+* maintain information about order
+* share parameters accross the sequence
+
+Backpropagation through time and problem of exploding/vanishing gradients.
+
+Against exploding: gradient clipping. Against vanishing: 3 ways explained - activation functions, weight init, network arch.
+
+Gated cell: to control what information is passed through. Ex: LSTM Long Short Term Memory. They support something closed to Forget Store Update Output. Ava explains graphically which part of LSTM cells is providing which function.
+
+And then examples: Music generation (to generate 4th movement of last symphony from Schubert!), sentiment classification, machine translation.
+
+And something about Attention mechanisms which provide learnable memory access.
 
 
 
