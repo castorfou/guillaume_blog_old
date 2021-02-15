@@ -112,6 +112,8 @@ window.onload = wrap_img;
 <h2 id="2521---intro-to-deep-learning---lecture-1">
 <a class="anchor" href="#2521---intro-to-deep-learning---lecture-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/5/21 - Intro to Deep Learning - lecture 1</h2>
 
+<p>Lecturer: Alexander Amini</p>
+
 <p>Intro is just jaw-dropping!</p>
 
 <p><a href="https://youtu.be/5tvmMX8r_OM?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&amp;t=40">2020 intro</a> was top.</p>
@@ -128,6 +130,27 @@ window.onload = wrap_img;
 <p>New lecturer: Ava Soleimany</p>
 
 <p>Nice introduction to sequence modeling with Many-to-One, One-to-Many, Many-to-Many.</p>
+
+<p>RNN and implementation in TensorFlow. And NLP examples: next word problem. (and NLP concepts such as Vocabulary, Indexing, Embedding)</p>
+
+<p>And what we need for sequeence modeling:</p>
+
+<ul>
+  <li>handle variable-length sequences</li>
+  <li>track long-term dependencies</li>
+  <li>maintain information about order</li>
+  <li>share parameters accross the sequence</li>
+</ul>
+
+<p>Backpropagation through time and problem of exploding/vanishing gradients.</p>
+
+<p>Against exploding: gradient clipping. Against vanishing: 3 ways explained - activation functions, weight init, network arch.</p>
+
+<p>Gated cell: to control what information is passed through. Ex: LSTM Long Short Term Memory. They support something closed to Forget Store Update Output. Ava explains graphically which part of LSTM cells is providing which function.</p>
+
+<p>And then examples: Music generation (to generate 4th movement of last symphony from Schubert!), sentiment classification, machine translation.</p>
+
+<p>And something about Attention mechanisms which provide learnable memory access.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
