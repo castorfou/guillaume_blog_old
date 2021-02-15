@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Learning: MIT 6.S191 Introduction to Deep Learning - 2021",
-            "content": "From http://introtodeeplearning.com/ . I keep all content (lectures, notebooks) in https://github.com/castorfou/mit_6s191 . 2/5/21 - Intro to Deep Learning - lecture 1 . Intro is just jaw-dropping! . 2020 was top: https://youtu.be/5tvmMX8r_OM?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&amp;t=40 . 2021 is awesome: https://youtu.be/5tvmMX8r_OM?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&amp;t=149 .",
-            "url": "https://castorfou.github.io/guillaume_blog/deep%20learning/mit/2021/02/05/learning-MIT-6.S191-2021.html",
-            "relUrl": "/deep%20learning/mit/2021/02/05/learning-MIT-6.S191-2021.html",
+            "content": "From http://introtodeeplearning.com/ . I keep all content (lectures, notebooks) in github . This is done with google contribution, and therefore all examples are in tensorflow. I will try to adapt notebooks in PyTorch. . 2/5/21 - Intro to Deep Learning - lecture 1 . Intro is just jaw-dropping! . 2020 intro was top. . 2021 intro is just awesome. . It is a standard overview of simple deep learning concepts: Perceptron, multi-perceptron, dense layers, loss, gradient-descent, backprop, SGD, regularization, dropout, early stoppping . (to continue to adapt labs (notebooks) to Pytorch) . 2/15/21 - Deep Sequence Modeling - lecture 2 . New lecturer: Ava Soleimany . Nice introduction to sequence modeling with Many-to-One, One-to-Many, Many-to-Many. .",
+            "url": "https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html",
+            "relUrl": "/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html",
             "date": " • Feb 5, 2021"
         }
         
