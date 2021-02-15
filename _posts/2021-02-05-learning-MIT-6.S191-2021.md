@@ -42,12 +42,12 @@ Nice introduction to sequence modeling with Many-to-One, One-to-Many, Many-to-Ma
 
 RNN and implementation in TensorFlow. And NLP examples: next word problem. (and NLP concepts such as Vocabulary, Indexing, Embedding)
 
-And what we need for sequeence modeling:
+And what we need for sequence modeling:
 
 * handle variable-length sequences
 * track long-term dependencies
 * maintain information about order
-* share parameters accross the sequence
+* share parameters across the sequence
 
 Backpropagation through time and problem of exploding/vanishing gradients.
 
@@ -55,9 +55,9 @@ Against exploding: gradient clipping. Against vanishing: 3 ways explained - acti
 
 Gated cell: to control what information is passed through. Ex: LSTM Long Short Term Memory. They support something closed to Forget Store Update Output. Ava explains graphically which part of LSTM cells is providing which function.
 
-And then examples: Music generation (to generate 4th movement of last symphony from Schubert!), sentiment classification, machine translation.
+And then examples: Music generation (to generate 4th movement of last symphony from Schubert!), sentiment classification, machine translation (with Attention mechanisms which provide learnable memory access to solve Not long memory), trajectory prediction, environmental modeling.
 
-And something about Attention mechanisms which provide learnable memory access.
+
 
 
 
