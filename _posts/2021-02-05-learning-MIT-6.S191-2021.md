@@ -67,7 +67,8 @@ With LSTM, I ran into this error: ```UnknownError: Fail to find the dnn implemen
 
 Which is solved by calling [`tf.config.experimental.set_memory_growth`](https://www.tensorflow.org/api_docs/python/tf/config/experimental/set_memory_growth). 
 
-```pythonimport tensorflow as tf 
+```python
+import tensorflow as tf 
 gpus = tf.config.list_physical_devices('GPU')
 if gpus:
   try:
