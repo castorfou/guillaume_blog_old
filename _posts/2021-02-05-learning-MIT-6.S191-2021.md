@@ -30,8 +30,6 @@ Intro is just jaw-dropping!
 
 It is a standard overview of simple deep learning concepts: Perceptron, multi-perceptron, dense layers, loss, gradient-descent, backprop, SGD, regularization, dropout, early stoppping
 
-As an exercise I have completed labs in TensorFlow and adapted them in [PyTorch](https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab1/Part1_TensorFlow_transposed%20to%20PyTorch.ipynb).
-
 
 
 ## 2/15/21 - Deep Sequence Modeling - lecture 2
@@ -59,5 +57,28 @@ And then examples: Music generation (to generate 4th movement of last symphony f
 
 
 
+## 2/16/21 - Intro to TensorFlow;  Music Generation - software lab 1
 
 
+
+As an exercise I have completed labs in TensorFlow and adapted them in [PyTorch](https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab1/Part1_TensorFlow_transposed%20to%20PyTorch.ipynb).
+
+With LSTM, I ran into this error: ```UnknownError: Fail to find the dnn implementation. [Op:CudnnRNN]```
+
+Which is solved by calling [`tf.config.experimental.set_memory_growth`](https://www.tensorflow.org/api_docs/python/tf/config/experimental/set_memory_growth). 
+
+```pythonimport tensorflow as tf 
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+  try:
+    # Currently, memory growth needs to be the same across GPUs
+    for gpu in gpus:
+      tf.config.experimental.set_memory_growth(gpu, True)
+    logical_gpus = tf.config.experimental.list_logical_devices('GPU')
+    print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
+  except RuntimeError as e:
+    # Memory growth must be set before GPUs have been initialized
+    print(e)
+```
+
+Music lab is nice to play with. I am not sure I would be able to convert to PyTorch. It would require time!
