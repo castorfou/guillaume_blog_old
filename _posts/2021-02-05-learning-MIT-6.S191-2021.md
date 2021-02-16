@@ -30,7 +30,7 @@ Intro is just jaw-dropping!
 
 It is a standard overview of simple deep learning concepts: Perceptron, multi-perceptron, dense layers, loss, gradient-descent, backprop, SGD, regularization, dropout, early stoppping
 
-(to continue to adapt labs (notebooks) to Pytorch)
+As an exercise I have completed labs in TensorFlow and adapted them in [PyTorch](https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab1/Part1_TensorFlow_transposed%20to%20PyTorch.ipynb).
 
 
 

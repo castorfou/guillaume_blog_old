@@ -17,5 +17,5 @@ Those entries are personnal thoughts and not those of my employer [Michelin](htt
 ## Me
 
 <img src="/guillaume_blog/images/IMG_0338_guillaume.JPG" width="200" align="left"/>
-I am 44 (in 2020). Father of 3. Working for a French tire company.
-I am French and for sure English is not my mother tongue.
+I am Guillaume Ramelet. I am 44 (in 2020). Father of 3. And have been working for a French tire company for 15+ years.
+I am French and as you can read English is not my mother tongue (but using English is a good exercise, isn't it)
