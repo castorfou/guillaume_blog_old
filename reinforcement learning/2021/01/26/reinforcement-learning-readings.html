@@ -78,7 +78,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -105,6 +105,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#temporal-difference-td-learning-chap6---157-180">temporal-difference (TD) learning (chap6 - 157-180)</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#21821---from-a-deep-reinforcement-learning-based-multi-criteria-decision-support-system-for-optimizing-textile-chemical-process">2/18/21 - from A Deep Reinforcement Learning Based Multi-Criteria Decision Support System for Optimizing Textile Chemical Process</a></li>
+<li class="toc-entry toc-h2"><a href="#21821---the-complete-reinforcement-learning-dictionary">2/18/21 - The Complete Reinforcement Learning Dictionary</a></li>
 </ul><h2 id="12621---reinforcement-learning-for-real-world-robotics">
 <a class="anchor" href="#12621---reinforcement-learning-for-real-world-robotics" aria-hidden="true"><span class="octicon octicon-link"></span></a>1/26/21 - Reinforcement learning for real-world robotics</h2>
 
@@ -211,6 +213,62 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 <p>TD methods combine the sampling of Monte Carlo with the bootstrapping of DP.</p>
 
 <p>Example based on Driving Home. In TD you update prediction at each step, not waiting for the final return as in MC.</p>
+
+<h2 id="21821---from-a-deep-reinforcement-learning-based-multi-criteria-decision-support-system-for-optimizing-textile-chemical-process">
+<a class="anchor" href="#21821---from-a-deep-reinforcement-learning-based-multi-criteria-decision-support-system-for-optimizing-textile-chemical-process" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/18/21 - from <a href="https://www.researchgate.net/publication/346426718_A_Deep_Reinforcement_Learning_Based_Multi-Criteria_Decision_Support_System_for_Optimizing_Textile_Chemical_Process">A Deep Reinforcement Learning Based Multi-Criteria Decision Support System for Optimizing Textile Chemical Process</a>
+</h2>
+
+<p>This is a more practical paper and should help to figure out what could be our own implementation.</p>
+
+<p>Overall MDP (markov decision process) structure is quite interesting with 3 blocks:</p>
+
+<ul>
+  <li>RF (random forest) models (one per objective)</li>
+  <li>AHP (analytic hierarchy process) which is a MCDM (Multiple criteria decision-making) method</li>
+  <li>DQN which is the reinforcement learning part to approximate the Q function</li>
+</ul>
+
+<p><img src="../../../../images/mdp_structure.png" alt=""></p>
+
+<p>there are interesting references.</p>
+
+<p>[2] K. Suzuki, ARTIFICIAL NEURAL NETWORKS - INDUSTRIAL AND CONTROL ENGINEERING APPLICATIONS. 2011.</p>
+
+<blockquote>
+  <p>It is nearly impossible to upgrade the textile chemical manufacturing processes directly by only following the cases from other industries without considering the detailed characteristics of this sector and specific investigations in the applicable advanced technologies. To this end, the construction of accurate models for simulating manufacturing processes using intelligent techniques is rather necessary[2]</p>
+</blockquote>
+
+<p>[4]A. Ghosh, P. Mal, and A. Majumdar, Advanced Optimization and Decision-Making Techniques in Textile Manufacturing.2019.</p>
+
+<blockquote>
+  <p>[..] Therefore, production decision-makers cannot effectively control the processes in order to obtain desired product functionalities [4]</p>
+</blockquote>
+
+<p>[53] T.L. Saaty, “What is the analytic hierarchy process?” Mathematical models for decision support, Springer, 1988, pp.109 121.</p>
+
+<blockquote>
+  <p>The AHP is a MCDM method introduced by Saaty [53]</p>
+</blockquote>
+
+<p>[54]R. S. Sutton and A. G. Barto, Introduction to reinforcement learning, vol. 135. MIT press Cambridge, 1998.</p>
+
+<blockquote>
+  <p>The Markov property indicates that the state transitions are only dependent on the current state and current action is taken, but independent to all prior states and actions[54].</p>
+</blockquote>
+
+<h2 id="21821---the-complete-reinforcement-learning-dictionary">
+<a class="anchor" href="#21821---the-complete-reinforcement-learning-dictionary" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/18/21 - <a href="https://towardsdatascience.com/the-complete-reinforcement-learning-dictionary-e16230b7d24e">The Complete Reinforcement Learning Dictionary</a>
+</h2>
+
+<p>recommandations:</p>
+
+<blockquote>
+  <ul>
+    <li>If you’re looking for a quick, 10-minutes crash course into RL with code examples, checkout my <em>Qrash Course</em> series: <a href="https://medium.com/@shakedzy/qrash-course-deep-q-networks-from-the-ground-up-1bbda41d3677">Introduction to RL and Q-Learning</a> and <a href="https://medium.com/@shakedzy/qrash-course-ii-from-q-learning-to-gradient-policy-actor-critic-in-12-minutes-8e8b47129c8c">Policy Gradients and Actor-Critics</a>.</li>
+    <li>I you’re into something deeper, and would like to learn and code several  different RL algorithms and gain more intuition, I can recommend <a href="https://medium.com/freecodecamp/an-introduction-to-reinforcement-learning-4339519de419">this series</a> by <a href="https://medium.com/@thomassimonini">Thomas Simonini</a> and <a href="https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0">this series</a> by <a href="https://medium.com/@awjuliani">Arthur Juliani</a>.</li>
+    <li>If you’re ready to master RL, I will direct you to the “bible” of Reinforcement Learning — <em>“Reinforcement Learning, an introduction”</em> by Richard Sutton and Andrew Barto. The second edition (from 2018) is available for free (legally) as a <a href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf">PDF file</a>.</li>
+  </ul>
+</blockquote>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
