@@ -142,6 +142,10 @@ there are interesting references.
 
 > The Markov property indicates that the state transitions are only dependent on the current state and current action is taken, but independent to all prior states and actions[54].
 
+[66] Z. Chourabi, F.Khedher, A. Babay and M. Cheikhrouhou, "Multi-criteria decision making in workforce choice using AHP, WSM and WPM", J.Text.Inst., 2018
+
+> However, it is worth remarking that certain features of this framework may hinder the massive promotion and application of it. The AHP has been successfully implemented in MCDM problems [41], [66]
+
 
 
 ## 2/18/21 - [The Complete Reinforcement Learning Dictionary](https://towardsdatascience.com/the-complete-reinforcement-learning-dictionary-e16230b7d24e)
