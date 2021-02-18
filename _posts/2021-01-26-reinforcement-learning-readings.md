@@ -107,3 +107,47 @@ If you consider optimization as a 2 phases approach: prediction problem (ie poli
 TD methods combine the sampling of Monte Carlo with the bootstrapping of DP.
 
 Example based on Driving Home. In TD you update prediction at each step, not waiting for the final return as in MC.
+
+
+
+## 2/18/21 - from [A Deep Reinforcement Learning Based Multi-Criteria Decision Support System for Optimizing Textile Chemical Process](https://www.researchgate.net/publication/346426718_A_Deep_Reinforcement_Learning_Based_Multi-Criteria_Decision_Support_System_for_Optimizing_Textile_Chemical_Process)
+
+This is a more practical paper and should help to figure out what could be our own implementation.
+
+Overall MDP (markov decision process) structure is quite interesting with 3 blocks:
+
+- RF (random forest) models (one per objective)
+- AHP (analytic hierarchy process) which is a MCDM (Multiple criteria decision-making) method
+- DQN which is the reinforcement learning part to approximate the Q function
+
+![](../../../../images/mdp_structure.png)
+
+
+
+there are interesting references.
+
+[2] K. Suzuki, ARTIFICIAL NEURAL NETWORKS - INDUSTRIAL AND CONTROL ENGINEERING APPLICATIONS. 2011.
+
+> It is nearly impossible to upgrade the textile chemical manufacturing processes directly by only following the cases from other industries without considering the detailed characteristics of this sector and specific investigations in the applicable advanced technologies. To this end, the construction of accurate models for simulating manufacturing processes using intelligent techniques is rather necessary[2]
+
+[4]A. Ghosh, P. Mal, and A. Majumdar, Advanced Optimization and Decision-Making Techniques in Textile Manufacturing.2019.
+
+> [..] Therefore, production decision-makers cannot effectively control the processes in order to obtain desired product functionalities [4]
+
+[53] T.L. Saaty, "What is the analytic hierarchy process?" Mathematical models for decision support, Springer, 1988, pp.109 121.
+
+> The AHP is a MCDM method introduced by Saaty [53]
+
+[54]R. S. Sutton and A. G. Barto, Introduction to reinforcement learning, vol. 135. MIT press Cambridge, 1998.
+
+> The Markov property indicates that the state transitions are only dependent on the current state and current action is taken, but independent to all prior states and actions[54].
+
+
+
+## 2/18/21 - [The Complete Reinforcement Learning Dictionary](https://towardsdatascience.com/the-complete-reinforcement-learning-dictionary-e16230b7d24e)
+
+recommandations:
+
+> - If you’re looking for a quick, 10-minutes crash course into RL with code examples, checkout my *Qrash Course* series: [Introduction to RL and Q-Learning](https://medium.com/@shakedzy/qrash-course-deep-q-networks-from-the-ground-up-1bbda41d3677) and [Policy Gradients and Actor-Critics](https://medium.com/@shakedzy/qrash-course-ii-from-q-learning-to-gradient-policy-actor-critic-in-12-minutes-8e8b47129c8c).
+> - I you’re into something deeper, and would like to learn and code several  different RL algorithms and gain more intuition, I can recommend [this series](https://medium.com/freecodecamp/an-introduction-to-reinforcement-learning-4339519de419) by [Thomas Simonini](https://medium.com/@thomassimonini) and [this series](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0) by [Arthur Juliani](https://medium.com/@awjuliani).
+> - If you’re ready to master RL, I will direct you to the “bible” of Reinforcement Learning — *“Reinforcement Learning, an introduction”* by Richard Sutton and Andrew Barto. The second edition (from 2018) is available for free (legally) as a [PDF file](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf).
