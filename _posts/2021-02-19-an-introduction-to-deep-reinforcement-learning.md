@@ -22,7 +22,17 @@ I appreciate the effort to update examples, and some 2018 implementations became
 
 ## (2/19/21) - Step 1 - An Introduction to Deep Reinforcement Learning?
 
-Previous version from [2018: What is Deep Reinforcement Learning?](https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419) is quite interesting. 
+Previous version from [2018: What is Deep Reinforcement Learning?](https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419) is quite interesting. With 3 parts:
+
+- What Reinforcement Learning is, and how rewards are the central idea
+- The three approaches of Reinforcement Learning
+- What the “Deep” in Deep Reinforcement Learning means
+
+![](https://cdn-media-1.freecodecamp.org/images/1*aKYFRoEmmKkybqJOvLt2JQ.png)
+
+
+
+
 
 [Updated version](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) from 2020
 
