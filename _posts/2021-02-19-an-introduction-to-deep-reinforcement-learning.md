@@ -102,3 +102,19 @@ Some explanations about **observations** (partial description) vs **states** (fu
 Action space where we can distinguish **discrete** (e.g. fire, up) actions from **continuous** (e.g. turn 23deg) ones.
 
 **Reward** part is the same as the one from 2018. With cheese, mouse, maze example.
+
+**Episodic** and **continuous** tasks part is the same as the one from 2018.
+
+**Exploration/Exploitation trade-off** is explained the same way + an additional example taken from [berkley - CS 294-112](http://rail.eecs.berkeley.edu/deeprlcourse-fa18/) - Deep Reinforcement Learning course. I want to learn more about this course!
+
+About **solving RL problems**, it is now presented as 2 main approaches:
+
+* **policy-based** methods
+* **value-based** methods
+
+And bedore to explain that, nice presentation of what is a **policy $\pi$**. Solving RL problem is to find that optimum policy: directly with policy-based method, indirectly (through value function) with value-based method.
+
+There is an explanation about different types of policy: **deterministic** and **stochastic**.
+
+ 
+
