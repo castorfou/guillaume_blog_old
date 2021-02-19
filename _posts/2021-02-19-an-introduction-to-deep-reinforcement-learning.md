@@ -132,19 +132,23 @@ Here in Step 2 we focus on a value-based method: Q-learning. And what is seen in
 
 
 
+#### Value-based method
+
 Remember what we mean in value-based method
 
 ![](https://miro.medium.com/max/700/1*jfUUaZuHUa1h61oD6O18KA.png)
 
 you don't train your policy, you define a simple function such as greedy function to select the best association State-Action, so the best action.
 
-Practical explanation of **Bellman equation**:
+#### **Bellman equation**
 
 each value as the sum of the expected return, **which is a long process.** This is equivalent **to the sum of immediate reward + the discounted value of the state that follows.**
 
 ![](https://miro.medium.com/max/700/1*FMjoVEELvz0oKcIfmcvGPQ.png)
 
 
+
+#### Monte Carlo vs Temporal Difference
 
 And then an explanation about 2 types of method to learn a policy or a value-function: 
 
