@@ -32,7 +32,52 @@ Previous version from [2018: What is Deep Reinforcement Learning?](https://mediu
 
 
 
+Rewards, long-term future reward, discount rate.
 
+![](https://cdn-media-1.freecodecamp.org/images/1*zrzRTXt8rtWF5fX__kZ-yQ.png)
+
+Episodic (starting and ending point) vs Continuous (e.g. stock trading) tasks.
+
+Way of learning: Monte Carlo (MC: rewards collected at the end of an episode) vs Temporal Difference (TD: estimate rewards at each step)
+
+![](https://cdn-media-1.freecodecamp.org/images/1*LLfj11fivpkKZkwQ8uPi3A.png)
+
+Exploration/Exploitation trade off. Will see later different ways to handle that trade-off.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*APLmZ8CVgu0oY3sQBVYIuw.png)
+
+
+
+### Three approaches to Reinforcement Learning
+
+These are value-based, policy-based, and model-based.
+
+#### Value Based
+
+In value-based RL, the goal is to optimize the value function *V(s)*.
+
+The value function is a function that tells us the maximum expected future reward the agent will get at each state.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*2_JRk-4O523bcOcSy1u31g.png)
+
+#### Policy Based
+
+In policy-based RL, we want to directly optimize the policy function *π(s)* without using a value function.
+
+The policy is what defines the agent behavior at a given time.
+
+We have two types of policy:
+
+- Deterministic: a policy at a given state will always return the same action.
+- Stochastic: output a distribution probability over actions.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*fii7Z01laRGateAJDvloAQ.png)
+
+#### Model Based
+
+In model-based RL, we model the environment. This means we create a model of the behavior of the environment. Not addressed in this course.
+
+And expl
 
 [Updated version](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) from 2020
 
