@@ -20,7 +20,7 @@ I appreciate the effort to update examples, and some 2018 implementations became
 
 
 
-## (2/19/21) - Step 1 - An Introduction to Deep Reinforcement Learning?
+## (2/19/21) - [Step 1](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) - An Introduction to Deep Reinforcement Learning?
 
 Previous version from [2018: What is Deep Reinforcement Learning?](https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419) is quite interesting. With 3 parts:
 
@@ -117,4 +117,8 @@ And bedore to explain that, nice presentation of what is a **policy $\pi$**. Sol
 There is an explanation about different types of policy: **deterministic** and **stochastic**.
 
 And that we use deep neural networks to estimate the action to take (policy based) or to estimate the value of a state (value based). Thomas suggests to go further with deep learning with MIT 6.S191, which is the [one](https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html) (version 2021) I follow these days.
+
+
+
+## (2/19/21) - [Step 2 - part 1/2](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358) - Q-Learning, let’s create an autonomous Taxi
 
