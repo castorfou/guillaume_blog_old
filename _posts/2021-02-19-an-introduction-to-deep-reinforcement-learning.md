@@ -10,9 +10,9 @@ image: images/fastpages_posts/actions/actions_logo.png
 
 A course by [Thomas Simonini](https://www.simoninithomas.com/)
 
-[Syllabus (from 2018)](https://simoninithomas.github.io/Deep_reinforcement_learning_Course/) WARNING - this is not an updated version
+[Syllabus (from 2018)](https://simoninithomas.github.io/Deep_reinforcement_learning_Course/) 
 
-[Updated version](https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc)
+[kind of syllabus (from 2020)](https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc)
 
 Everything available in [github](https://github.com/simoninithomas/Deep_reinforcement_learning_Course)
 
