@@ -116,5 +116,5 @@ And bedore to explain that, nice presentation of what is a **policy $\pi$**. Sol
 
 There is an explanation about different types of policy: **deterministic** and **stochastic**.
 
- 
+And that we use deep neural networks to estimate the action to take (policy based) or to estimate the value of a state (value based). Thomas suggests to go further with deep learning with MIT 6.S191, which is the [one](https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html) (version 2021) I follow these days.
 
