@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-19T06:51:18-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-19T07:06:52-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/Deep_reinforcement_learning_Course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
 
@@ -19,6 +19,53 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*aKYFRoEmmKkybqJOvLt2JQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rewards, long-term future reward, discount rate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*zrzRTXt8rtWF5fX__kZ-yQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Episodic (starting and ending point) vs Continuous (e.g. stock trading) tasks.&lt;/p&gt;
+
+&lt;p&gt;Way of learning: Monte Carlo (MC: rewards collected at the end of an episode) vs Temporal Difference (TD: estimate rewards at each step)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*LLfj11fivpkKZkwQ8uPi3A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Exploration/Exploitation trade off. Will see later different ways to handle that trade-off.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*APLmZ8CVgu0oY3sQBVYIuw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;three-approaches-to-reinforcement-learning&quot;&gt;Three approaches to Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;These are value-based, policy-based, and model-based.&lt;/p&gt;
+
+&lt;h4 id=&quot;value-based&quot;&gt;Value Based&lt;/h4&gt;
+
+&lt;p&gt;In value-based RL, the goal is to optimize the value function &lt;em&gt;V(s)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The value function is a function that tells us the maximum expected future reward the agent will get at each state.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*2_JRk-4O523bcOcSy1u31g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;policy-based&quot;&gt;Policy Based&lt;/h4&gt;
+
+&lt;p&gt;In policy-based RL, we want to directly optimize the policy function &lt;em&gt;π(s)&lt;/em&gt; without using a value function.&lt;/p&gt;
+
+&lt;p&gt;The policy is what defines the agent behavior at a given time.&lt;/p&gt;
+
+&lt;p&gt;We have two types of policy:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Deterministic: a policy at a given state will always return the same action.&lt;/li&gt;
+  &lt;li&gt;Stochastic: output a distribution probability over actions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*fii7Z01laRGateAJDvloAQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;model-based&quot;&gt;Model Based&lt;/h4&gt;
+
+&lt;p&gt;In model-based RL, we model the environment. This means we create a model of the behavior of the environment. Not addressed in this course.&lt;/p&gt;
+
+&lt;p&gt;And expl&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c&quot;&gt;Updated version&lt;/a&gt; from 2020&lt;/p&gt;
 

@@ -95,7 +95,17 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#21921---step-1---an-introduction-to-deep-reinforcement-learning">(2/19/21) - Step 1 - An Introduction to Deep Reinforcement Learning?</a></li>
+<li class="toc-entry toc-h2"><a href="#21921---step-1---an-introduction-to-deep-reinforcement-learning">(2/19/21) - Step 1 - An Introduction to Deep Reinforcement Learning?</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#three-approaches-to-reinforcement-learning">Three approaches to Reinforcement Learning</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#value-based">Value Based</a></li>
+<li class="toc-entry toc-h4"><a href="#policy-based">Policy Based</a></li>
+<li class="toc-entry toc-h4"><a href="#model-based">Model Based</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -118,6 +128,57 @@ window.onload = wrap_img;
 </ul>
 
 <p><img src="https://cdn-media-1.freecodecamp.org/images/1*aKYFRoEmmKkybqJOvLt2JQ.png" alt=""></p>
+
+<p>Rewards, long-term future reward, discount rate.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*zrzRTXt8rtWF5fX__kZ-yQ.png" alt=""></p>
+
+<p>Episodic (starting and ending point) vs Continuous (e.g. stock trading) tasks.</p>
+
+<p>Way of learning: Monte Carlo (MC: rewards collected at the end of an episode) vs Temporal Difference (TD: estimate rewards at each step)</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*LLfj11fivpkKZkwQ8uPi3A.png" alt=""></p>
+
+<p>Exploration/Exploitation trade off. Will see later different ways to handle that trade-off.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*APLmZ8CVgu0oY3sQBVYIuw.png" alt=""></p>
+
+<h3 id="three-approaches-to-reinforcement-learning">
+<a class="anchor" href="#three-approaches-to-reinforcement-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Three approaches to Reinforcement Learning</h3>
+
+<p>These are value-based, policy-based, and model-based.</p>
+
+<h4 id="value-based">
+<a class="anchor" href="#value-based" aria-hidden="true"><span class="octicon octicon-link"></span></a>Value Based</h4>
+
+<p>In value-based RL, the goal is to optimize the value function <em>V(s)</em>.</p>
+
+<p>The value function is a function that tells us the maximum expected future reward the agent will get at each state.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*2_JRk-4O523bcOcSy1u31g.png" alt=""></p>
+
+<h4 id="policy-based">
+<a class="anchor" href="#policy-based" aria-hidden="true"><span class="octicon octicon-link"></span></a>Policy Based</h4>
+
+<p>In policy-based RL, we want to directly optimize the policy function <em>π(s)</em> without using a value function.</p>
+
+<p>The policy is what defines the agent behavior at a given time.</p>
+
+<p>We have two types of policy:</p>
+
+<ul>
+  <li>Deterministic: a policy at a given state will always return the same action.</li>
+  <li>Stochastic: output a distribution probability over actions.</li>
+</ul>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*fii7Z01laRGateAJDvloAQ.png" alt=""></p>
+
+<h4 id="model-based">
+<a class="anchor" href="#model-based" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model Based</h4>
+
+<p>In model-based RL, we model the environment. This means we create a model of the behavior of the environment. Not addressed in this course.</p>
+
+<p>And expl</p>
 
 <p><a href="https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c">Updated version</a> from 2020</p>
 
