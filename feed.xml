@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-19T09:44:53-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-19T10:18:51-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/Deep_reinforcement_learning_Course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
 
@@ -102,13 +102,44 @@
   &lt;li&gt;&lt;strong&gt;value-based&lt;/strong&gt; methods&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;And bedore to explain that, nice presentation of what is a &lt;strong&gt;policy $\pi$&lt;/strong&gt;. Solving RL problem is to find that optimum policy: directly with policy-based method, indirectly (through value function) with value-based method.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*Vujmmyswrg2wIjmpvSUBfg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And bedore to explain that, nice presentation of what is a &lt;strong&gt;policy $\pi$&lt;/strong&gt;. Solving RL problem is to find that optimal policy: directly with policy-based method, indirectly (through value function) with value-based method.&lt;/p&gt;
 
 &lt;p&gt;There is an explanation about different types of policy: &lt;strong&gt;deterministic&lt;/strong&gt; and &lt;strong&gt;stochastic&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;And that we use deep neural networks to estimate the action to take (policy based) or to estimate the value of a state (value based). Thomas suggests to go further with deep learning with MIT 6.S191, which is the &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html&quot;&gt;one&lt;/a&gt; (version 2021) I follow these days.&lt;/p&gt;
 
-&lt;h2 id=&quot;21921---step-2---part-12---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358&quot;&gt;Step 2 - part 1/2&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/conda/jupyter/2021/02/16/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/conda/jupyter/2021/02/16/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/conda/jupyter/2021/02/16/conda-and-jupyter-tips.html">&lt;!--
+&lt;h2 id=&quot;21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358&quot;&gt;Step 2 - part 1&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
+
+&lt;p&gt;And in &lt;a href=&quot;https://www.youtube.com/watch?v=230bR2DrbdE&amp;amp;feature=emb_logo&quot;&gt;video&lt;/a&gt; (I like to read + watch the video at the same time)&lt;/p&gt;
+
+&lt;p&gt;Here in Step 2 we focus on a value-based method: Q-learning. And what is seen in part 1 and 2:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*2yYWVAXJh4FI2lpsL0ajwQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Remember what we mean in value-based method&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*jfUUaZuHUa1h61oD6O18KA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;you don’t train your policy, you define a simple function such as greedy function to select the best association State-Action, so the best action.&lt;/p&gt;
+
+&lt;p&gt;Practical explanation of &lt;strong&gt;Bellman equation&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;each value as the sum of the expected return, &lt;strong&gt;which is a long process.&lt;/strong&gt; This is equivalent &lt;strong&gt;to the sum of immediate reward + the discounted value of the state that follows.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*FMjoVEELvz0oKcIfmcvGPQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then an explanation about 2 types of method to learn a policy or a value-function:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Monte Carlo&lt;/em&gt;: learning at the end of the episode. With &lt;em&gt;Monte Carlo&lt;/em&gt;, we update the value function from a complete episode and so we &lt;strong&gt;use the actual accurate discounted return of this episode.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;TD learning&lt;/em&gt;: learning at each step. With &lt;em&gt;TD learning&lt;/em&gt;, we update the value function from a step, so we replace Gt that we don’t have with &lt;strong&gt;an estimated return called TD target.&lt;/strong&gt; (chich is the immediate reward + the discounted value of the next state)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*c8nfnXRu8n1h78bWPEK5vg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was not clear to me that these methods could be used for policy-based approach. It is now!&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/conda/jupyter/2021/02/16/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/conda/jupyter/2021/02/16/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/conda/jupyter/2021/02/16/conda-and-jupyter-tips.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################

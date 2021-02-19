@@ -78,7 +78,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -107,7 +107,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#deep-reinforcement-learning">Deep Reinforcement Learning</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#21921---step-2---part-12---q-learning-lets-create-an-autonomous-taxi">(2/19/21) - Step 2 - part 1/2 - Q-Learning, let’s create an autonomous Taxi</a></li>
+<li class="toc-entry toc-h2"><a href="#21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi">(2/19/21) - Step 2 - part 1 - Q-Learning, let’s create an autonomous Taxi</a></li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -220,15 +220,48 @@ window.onload = wrap_img;
 <strong>value-based</strong> methods</li>
 </ul>
 
-<p>And bedore to explain that, nice presentation of what is a <strong>policy $\pi$</strong>. Solving RL problem is to find that optimum policy: directly with policy-based method, indirectly (through value function) with value-based method.</p>
+<p><img src="https://miro.medium.com/max/700/1*Vujmmyswrg2wIjmpvSUBfg.png" alt=""></p>
+
+<p>And bedore to explain that, nice presentation of what is a <strong>policy $\pi$</strong>. Solving RL problem is to find that optimal policy: directly with policy-based method, indirectly (through value function) with value-based method.</p>
 
 <p>There is an explanation about different types of policy: <strong>deterministic</strong> and <strong>stochastic</strong>.</p>
 
 <p>And that we use deep neural networks to estimate the action to take (policy based) or to estimate the value of a state (value based). Thomas suggests to go further with deep learning with MIT 6.S191, which is the <a href="https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html">one</a> (version 2021) I follow these days.</p>
 
-<h2 id="21921---step-2---part-12---q-learning-lets-create-an-autonomous-taxi">
-<a class="anchor" href="#21921---step-2---part-12---q-learning-lets-create-an-autonomous-taxi" aria-hidden="true"><span class="octicon octicon-link"></span></a>(2/19/21) - <a href="https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358">Step 2 - part 1/2</a> - Q-Learning, let’s create an autonomous Taxi</h2>
+<h2 id="21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi">
+<a class="anchor" href="#21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi" aria-hidden="true"><span class="octicon octicon-link"></span></a>(2/19/21) - <a href="https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358">Step 2 - part 1</a> - Q-Learning, let’s create an autonomous Taxi</h2>
 
+<p>And in <a href="https://www.youtube.com/watch?v=230bR2DrbdE&amp;feature=emb_logo">video</a> (I like to read + watch the video at the same time)</p>
+
+<p>Here in Step 2 we focus on a value-based method: Q-learning. And what is seen in part 1 and 2:</p>
+
+<p><img src="https://miro.medium.com/max/700/1*2yYWVAXJh4FI2lpsL0ajwQ.png" alt=""></p>
+
+<p>Remember what we mean in value-based method</p>
+
+<p><img src="https://miro.medium.com/max/700/1*jfUUaZuHUa1h61oD6O18KA.png" alt=""></p>
+
+<p>you don’t train your policy, you define a simple function such as greedy function to select the best association State-Action, so the best action.</p>
+
+<p>Practical explanation of <strong>Bellman equation</strong>:</p>
+
+<p>each value as the sum of the expected return, <strong>which is a long process.</strong> This is equivalent <strong>to the sum of immediate reward + the discounted value of the state that follows.</strong></p>
+
+<p><img src="https://miro.medium.com/max/700/1*FMjoVEELvz0oKcIfmcvGPQ.png" alt=""></p>
+
+<p>And then an explanation about 2 types of method to learn a policy or a value-function:</p>
+
+<ul>
+  <li>
+<em>Monte Carlo</em>: learning at the end of the episode. With <em>Monte Carlo</em>, we update the value function from a complete episode and so we <strong>use the actual accurate discounted return of this episode.</strong>
+</li>
+  <li>
+<em>TD learning</em>: learning at each step. With <em>TD learning</em>, we update the value function from a step, so we replace Gt that we don’t have with <strong>an estimated return called TD target.</strong> (chich is the immediate reward + the discounted value of the next state)</li>
+</ul>
+
+<p><img src="https://miro.medium.com/max/700/1*c8nfnXRu8n1h78bWPEK5vg.png" alt=""></p>
+
+<p>It was not clear to me that these methods could be used for policy-based approach. It is now!</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
