@@ -87,7 +87,18 @@ Deep Learning allows to approximate this Q function.
 
 
 
-[Updated version](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) from 2020
+[Updated version](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) from 2020 (and [video](https://www.youtube.com/watch?v=q0BiUn5LiBc) version)
 
 This is a good starting point, well explained.
 
+Reinforcement Learning is just a **computational approach of learning from action.**
+
+**A formal definition**
+
+> Reinforcement learning is a framework for solving control tasks (also called decision problems) by building agents that **learn from the environment** by **interacting with it** through trial and error and **receiving rewards** (positive or negative) **as unique feedback.**
+
+Some explanations about **observations** (partial description) vs **states** (fully observed envt). Only differs in implementation, all theoretical background stays the same.
+
+Action space where we can distinguish **discrete** (e.g. fire, up) actions from **continuous** (e.g. turn 23deg) ones.
+
+**Reward** part is the same as the one from 2018. With cheese, mouse, maze example.
