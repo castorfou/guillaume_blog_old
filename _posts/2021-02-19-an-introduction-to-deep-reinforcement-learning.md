@@ -112,7 +112,9 @@ About **solving RL problems**, it is now presented as 2 main approaches:
 * **policy-based** methods
 * **value-based** methods
 
-And bedore to explain that, nice presentation of what is a **policy $\pi$**. Solving RL problem is to find that optimum policy: directly with policy-based method, indirectly (through value function) with value-based method.
+![](https://miro.medium.com/max/700/1*Vujmmyswrg2wIjmpvSUBfg.png)
+
+And bedore to explain that, nice presentation of what is a **policy $\pi$**. Solving RL problem is to find that optimal policy: directly with policy-based method, indirectly (through value function) with value-based method.
 
 There is an explanation about different types of policy: **deterministic** and **stochastic**.
 
@@ -120,5 +122,35 @@ And that we use deep neural networks to estimate the action to take (policy base
 
 
 
-## (2/19/21) - [Step 2 - part 1/2](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358) - Q-Learning, let’s create an autonomous Taxi
+## (2/19/21) - [Step 2 - part 1](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358) - Q-Learning, let’s create an autonomous Taxi
 
+And in [video](https://www.youtube.com/watch?v=230bR2DrbdE&feature=emb_logo) (I like to read + watch the video at the same time)
+
+Here in Step 2 we focus on a value-based method: Q-learning. And what is seen in part 1 and 2:
+
+![](https://miro.medium.com/max/700/1*2yYWVAXJh4FI2lpsL0ajwQ.png)
+
+
+
+Remember what we mean in value-based method
+
+![](https://miro.medium.com/max/700/1*jfUUaZuHUa1h61oD6O18KA.png)
+
+you don't train your policy, you define a simple function such as greedy function to select the best association State-Action, so the best action.
+
+Practical explanation of **Bellman equation**:
+
+each value as the sum of the expected return, **which is a long process.** This is equivalent **to the sum of immediate reward + the discounted value of the state that follows.**
+
+![](https://miro.medium.com/max/700/1*FMjoVEELvz0oKcIfmcvGPQ.png)
+
+
+
+And then an explanation about 2 types of method to learn a policy or a value-function: 
+
+- *Monte Carlo*: learning at the end of the episode. With *Monte Carlo*, we update the value function from a complete episode and so we **use the actual accurate discounted return of this episode.**
+- *TD learning*: learning at each step. With *TD learning*, we update the value function from a step, so we replace Gt that we don’t have with **an estimated return called TD target.** (chich is the immediate reward + the discounted value of the next state)
+
+![](https://miro.medium.com/max/700/1*c8nfnXRu8n1h78bWPEK5vg.png)
+
+It was not clear to me that these methods could be used for policy-based approach. It is now!
