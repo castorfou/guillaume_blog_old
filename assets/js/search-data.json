@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Practicing: Deep Reinforcement Learning Course by Thomas Simonini",
-            "content": "A course by Thomas Simonini . Syllabus (from 2018) WARNING - this is not an updated version . Updated version . Everything available in github . (2/19/21) - Step 1 - What is Deep Reinforcement Learning? . 1st article from 2018 . Updated version from 2020 . I appreciate the effort to update examples. Historical Atari VC2600 games are now Starcraft 2 or minecraft. . This is a good starting point, well explained. .",
+            "content": "A course by Thomas Simonini . Syllabus (from 2018) . kind of syllabus (from 2020) . Everything available in github . (2/19/21) - Step 1 - What is Deep Reinforcement Learning? . 1st article from 2018 . Updated version from 2020 . I appreciate the effort to update examples. Historical Atari VC2600 games are now Starcraft 2 or minecraft. . This is a good starting point, well explained. .",
             "url": "https://castorfou.github.io/guillaume_blog/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html",
             "relUrl": "/reinforcement%20learning/2021/02/19/an-introduction-to-deep-reinforcement-learning.html",
             "date": " • Feb 19, 2021"
