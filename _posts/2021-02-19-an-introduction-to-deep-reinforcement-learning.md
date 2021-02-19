@@ -77,7 +77,15 @@ We have two types of policy:
 
 In model-based RL, we model the environment. This means we create a model of the behavior of the environment. Not addressed in this course.
 
-And expl
+### Deep Reinforcement Learning
+
+In Q-learning, we keep a table of actions to take for each state (based on reward). This can be huge.
+
+Deep Learning allows to approximate this Q function.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*w5GuxedZ9ivRYqM_MLUxOQ.png)
+
+
 
 [Updated version](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) from 2020
 
