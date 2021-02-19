@@ -107,7 +107,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#deep-reinforcement-learning">Deep Reinforcement Learning</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi">(2/19/21) - Step 2 - part 1 - Q-Learning, let’s create an autonomous Taxi</a></li>
+<li class="toc-entry toc-h2"><a href="#21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi">(2/19/21) - Step 2 - part 1 - Q-Learning, let’s create an autonomous Taxi</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#value-based-method">Value-based method</a></li>
+<li class="toc-entry toc-h4"><a href="#bellman-equation">Bellman equation</a></li>
+<li class="toc-entry toc-h4"><a href="#monte-carlo-vs-temporal-difference">Monte Carlo vs Temporal Difference</a></li>
+</ul>
+</li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -237,17 +243,25 @@ window.onload = wrap_img;
 
 <p><img src="https://miro.medium.com/max/700/1*2yYWVAXJh4FI2lpsL0ajwQ.png" alt=""></p>
 
+<h4 id="value-based-method">
+<a class="anchor" href="#value-based-method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Value-based method</h4>
+
 <p>Remember what we mean in value-based method</p>
 
 <p><img src="https://miro.medium.com/max/700/1*jfUUaZuHUa1h61oD6O18KA.png" alt=""></p>
 
 <p>you don’t train your policy, you define a simple function such as greedy function to select the best association State-Action, so the best action.</p>
 
-<p>Practical explanation of <strong>Bellman equation</strong>:</p>
+<h4 id="bellman-equation">
+<a class="anchor" href="#bellman-equation" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Bellman equation</strong>
+</h4>
 
 <p>each value as the sum of the expected return, <strong>which is a long process.</strong> This is equivalent <strong>to the sum of immediate reward + the discounted value of the state that follows.</strong></p>
 
 <p><img src="https://miro.medium.com/max/700/1*FMjoVEELvz0oKcIfmcvGPQ.png" alt=""></p>
+
+<h4 id="monte-carlo-vs-temporal-difference">
+<a class="anchor" href="#monte-carlo-vs-temporal-difference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monte Carlo vs Temporal Difference</h4>
 
 <p>And then an explanation about 2 types of method to learn a policy or a value-function:</p>
 
