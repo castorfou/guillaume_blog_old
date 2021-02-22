@@ -100,5 +100,6 @@ I like the way classification problems are broken down between feature learning 
 
 The second part (task learning part) can be anything: classification, object detection, segmentation, probabilistic control, ...
 
-![](../../../../images/mit_6S191_lec3_cnn_architectures.png)
+![](/guillaume_blog/images/mit_6S191_lec3_cnn_architectures.png)
 
+Nice explanation of R-CNN to learn region proposals.
