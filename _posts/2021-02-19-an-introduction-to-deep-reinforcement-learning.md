@@ -1,6 +1,6 @@
 ---
 title: "Practicing: Deep Reinforcement Learning Course by Thomas Simonini"
-description: A Free course in Deep Reinforcement Learning from beginner to expert.
+description: A Free course in Deep Reinforcement Learning from beginner to expert. My notes
 toc: true
 comments: true
 layout: post

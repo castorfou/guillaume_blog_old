@@ -83,3 +83,11 @@ if gpus:
 ```
 
 Music lab is nice to play with. I am not sure I would be able to convert to PyTorch. It would require time!
+
+## 2/22/21 - Deep Computer Vision - lecture 3
+
+I have never been a big fan of computer vision.
+
+I like the idea developed by Alexander Amini about **hierarchy of features**. (low level: edges, spots; mid level: eyes, noses)
+
+And how he explains limitation of FC layers for visual detection, and introduction of spatial structure (feature extraction with convolution)
