@@ -96,9 +96,9 @@ Some nice examples of hand-engineered convolution filters for different needs: s
 
 Then classic explanations of CNN with convolution, max pooling.
 
-I like the way classification problems are broken down between feature learning (convolution+relu, pooling, repeated several times) and classification (flatten, FC, softmax)
+I like the way classification problems are broken down between feature learning (convolution+relu, pooling, repeated several times) and classification (flatten, FC, softmax) which is a task learning part.
 
 The second part (task learning part) can be anything: classification, object detection, segmentation, probabilistic control, ...
 
-![](../../../../mit_6S191_lec3_cnn_architectures.png)
+![](../../../../images/mit_6S191_lec3_cnn_architectures.png)
 
