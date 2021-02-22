@@ -90,4 +90,15 @@ I have never been a big fan of computer vision.
 
 I like the idea developed by Alexander Amini about **hierarchy of features**. (low level: edges, spots; mid level: eyes, noses)
 
-And how he explains limitation of FC layers for visual detection, and introduction of spatial structure (feature extraction with convolution)
+And how he explains limitation of FC layers for visual detection, and introduction of spatial structure (feature extraction with convolutions)
+
+Some nice examples of hand-engineered convolution filters for different needs: sharpen, edge detect, strong edge detect.
+
+Then classic explanations of CNN with convolution, max pooling.
+
+I like the way classification problems are broken down between feature learning (convolution+relu, pooling, repeated several times) and classification (flatten, FC, softmax)
+
+The second part (task learning part) can be anything: classification, object detection, segmentation, probabilistic control, ...
+
+![](../../../../mit_6S191_lec3_cnn_architectures.png)
+
