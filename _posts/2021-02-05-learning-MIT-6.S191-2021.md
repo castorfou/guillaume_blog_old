@@ -103,3 +103,5 @@ The second part (task learning part) can be anything: classification, object det
 ![](/guillaume_blog/images/mit_6S191_lec3_cnn_architectures.png)
 
 Nice explanation of R-CNN to learn region proposals.
+
+Introduction to Software lab2: de-biaising facial recognition systems. 
