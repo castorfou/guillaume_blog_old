@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-23T07:51:03-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-23T08:09:18-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/Deep_reinforcement_learning_Course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
 
@@ -576,7 +576,7 @@ conda env export --from-history &amp;gt; env_`echo $CONDA_DEFAULT_ENV`.yml
 
 &lt;p&gt;The second part (task learning part) can be anything: classification, object detection, segmentation, probabilistic control, …&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/mit_6S191_lec3_cnn_architectures.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec3_cnn_architectures.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nice explanation of R-CNN to learn region proposals.&lt;/p&gt;
 
@@ -591,7 +591,7 @@ See paper at &lt;a href=&quot;https://github.com/castorfou/datascience-papers/bl
 
 &lt;p&gt;from &lt;a href=&quot;https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc&quot;&gt;https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/RL_taxonomy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/RL_taxonomy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;give an overview of various RL models. Model-based vs model-free.&lt;/p&gt;
 
@@ -631,7 +631,7 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Markov_decision_process&quot;&gt;Markov decision process - Wikipedia&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;images/wikipedia_mdp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;../images/wikipedia_mdp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Interesting to read that the famous cart pole experiment (learning to balance a pole hinged to a movable cart) came from Michie and Chambers in 1968, 53 years ago! (and derived from tic-tac-toe experiment)&lt;/p&gt;
@@ -650,7 +650,7 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 
 &lt;p&gt;We can think of terms agent, environment, and action as engineers’ terms controller, controlled system (or plant), and control signal.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/agent–environment_interaction.png&quot; alt=&quot;The agent–environment interaction in reinforcement learning.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/agent–environment_interaction.png&quot; alt=&quot;The agent–environment interaction in reinforcement learning.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Explanation about agent vs environment. Often not the same as physical boundaries of a robot: this boundary represents the limit of the agent’s absolute control, not of its knowledge. Many different agents can be operated at once.&lt;/p&gt;
 
@@ -692,7 +692,7 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
   &lt;li&gt;DQN which is the reinforcement learning part to approximate the Q function&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/mdp_structure.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/mdp_structure.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;there are interesting references.&lt;/p&gt;
 
