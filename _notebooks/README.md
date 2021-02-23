@@ -44,7 +44,7 @@ Publier en appelant: `~/git/guillaume/blog/publish.sh`
 ### Inserer une image
 
 ```markdown
- ![voila](images/export_py.png "voila!")
+ ![voila](../images/export_py.png "voila!")
 ```
 
 ### Inserer un lien
