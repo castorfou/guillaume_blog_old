@@ -115,3 +115,6 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+  
+# https://jekyllrb.com/docs/permalinks/
+permalink: /:title:output_ext
