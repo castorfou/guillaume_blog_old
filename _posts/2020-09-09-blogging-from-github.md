@@ -32,7 +32,7 @@ I want this platform to be as easy as possible.
 For the moment it cannot be easier. I have setup the `about` page. And each blog entry is just a new markdown page into `_posts`.
 github _posts:
 
-![github _posts](/images/2020-09-09.jpg "github _posts")
+![github _posts](images/2020-09-09.jpg "github _posts")
 
 
 By commiting this page, there are internal actions being run automatically (through github actions magic) and after a couple of minutes the new blog pages are generated (using Jekyl and ruby if I am not wrong).

@@ -23,7 +23,7 @@ See paper at [2018 Model-Ensemble Trust-Region Policy Optimization](https://gith
 
 from [https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc](https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc)
 
-![](../../../../images/RL_taxonomy.png)
+![](images/RL_taxonomy.png)
 
 
 
@@ -60,7 +60,7 @@ I read about [HJB equation](http://felix.proba.jussieu.fr/pageperso/pham/Tangent
 
 [Markov decision process - Wikipedia](https://en.wikipedia.org/wiki/Markov_decision_process)
 
->   ![](../../../../images/wikipedia_mdp.png)
+>   ![](images/wikipedia_mdp.png)
 
 Interesting to read that the famous cart pole experiment (learning to balance a pole hinged to a movable cart) came from Michie and Chambers in 1968, 53 years ago! (and derived from tic-tac-toe experiment)
 
@@ -78,7 +78,7 @@ After this introduction, here is the content:
 
 We can think of terms agent, environment, and action as engineers’ terms controller, controlled system (or plant), and control signal.
 
-![The agent–environment interaction in reinforcement learning.](../../../../images/agent–environment_interaction.png)
+![The agent–environment interaction in reinforcement learning.](images/agent–environment_interaction.png)
 
 Explanation about agent vs environment. Often not the same as physical boundaries of a robot: this boundary represents the limit of the agent's absolute control, not of its knowledge. Many different agents can be operated at once.
 
@@ -120,7 +120,7 @@ Overall MDP (markov decision process) structure is quite interesting with 3 bloc
 - AHP (analytic hierarchy process) which is a MCDM (Multiple criteria decision-making) method
 - DQN which is the reinforcement learning part to approximate the Q function
 
-![](../../../../images/mdp_structure.png)
+![](images/mdp_structure.png)
 
 
 
