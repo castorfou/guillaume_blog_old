@@ -119,4 +119,4 @@ kramdown:
 # added feb/23 2021  
 # https://jekyllrb.com/docs/permalinks/
 # to have a consistent way of rendering _posts and _notebooks (useful to link images)
-permalink: /:title:output_ext
+permalink: /blog/:title:output_ext
