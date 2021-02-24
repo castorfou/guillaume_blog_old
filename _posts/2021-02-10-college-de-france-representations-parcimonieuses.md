@@ -14,11 +14,21 @@ Un cours au collège de France de Stéphane Mallat sur les [représentations par
 
 Cela donne envie d'aller voir ses autres cours:
 
-* 2018: L'apprentissage face à la malédiction de la grande dimension
-* 2019: L'apprentissage par réseaux de neurones profonds
-* 2020: Modèles multi-échelles et réseaux de neurones convolutifs
+* [2018](https://www.college-de-france.fr/site/stephane-mallat/course-2017-2018.htm): L'apprentissage face à la malédiction de la grande dimension
+* [2019](https://www.college-de-france.fr/site/stephane-mallat/course-2018-2019.htm): L'apprentissage par réseaux de neurones profonds
+* [2020](https://www.college-de-france.fr/site/stephane-mallat/course-2019-2020.htm): Modèles multi-échelles et réseaux de neurones convolutifs
 
 A peu près 16 vidéos de 1h30 par cours. Et des notes de cours en pdf.
+
+
+
+## 2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)
+
+C'est l'introduction du cours. J'apprécie les références historiques et philosphiques partant du rasoir d'Ockam. C'est le principe d'économie ou de parcimonie: le beau, le vrai viendrait du simple.
+
+La 1ere fois que j'entends une référence précise sur l'opposition entre biais (erreur sur modèle) et variance (erreur sur données ou mesures)
+
+Et une invitation à consulter une [méthodologie d'analyse de données](https://www.college-de-france.fr/site/stephane-mallat/seminar-2018-02-21-11h15.htm) par Pierre Courtiol en utilisant Kaggle. L'idée d'une approche simple linéaire pour bien comprendre quelles étapes successives à emprunter pour améliorer son approche. Me semble assez orthogonal à ce que peut proposer Jeremy Howard: commencer tôt, overfitting n'est pas un probleme, pas de early stopping, etc.
 
 
 
@@ -42,11 +52,25 @@ Je crois bien que je vais me faire toute la session, et sans doute les autres an
 
 
 
-## 2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)
+## 2/23/21 - Grande dimension et composantes principales (lecture 3)
 
-C'est l'introduction du cours. J'apprécie les références historiques et philosphiques partant du rasoir d'Ockam. C'est le principe d'économie ou de parcimonie: le beau, le vrai viendrait du simple.
+Dans ce cadre linéaire grande dimension, quelle meilleure base - approche PCA et base Karhunen-Loeve.
 
-La 1ere fois que j'entends une référence précise sur l'opposition entre biais (erreur sur modèle) et variance (erreur sur données ou mesures)
+Quid quand on passe en non linéaire.
 
-Et une invitation à consulter une [méthodologie d'analyse de données](https://www.college-de-france.fr/site/stephane-mallat/seminar-2018-02-21-11h15.htm) par Pierre Courtiol en utilisant Kaggle. L'idée d'une approche simple linéaire pour bien comprendre quelles étapes successives à emprunter pour améliorer son approche. Me semble assez orthogonal à ce que peut proposer Jeremy Howard: commencer tôt, overfitting n'est pas un probleme, pas de early stopping, etc.
+Réseau neurone à 1 couche cachée, théoreme de representation universel.
+
+Retour sur les bases de L²[0,1] qui sont les bases de Fourier en variables complexes. 
+
+Pour un passage en dimension q, on remplace n par (n1, ..., nq) et la multiplication n*u par le produit scalaire <n, u>.
+
+En travaillant sur les équivalences du triangle, il montre pourquoi on est très limité en approximation lineaire quand la dimension augmente.
+
+En approximation lineaire, il suffit de prendre les 1ers vecteurs (se limiter à une dimension q) (en base de fourier par exemple) pour avoir une assez bonne approximation. Dans des signaux plus perturbés (avec des singularités) on perd plus d'énergie: il faudrait échantilloner plus fin dans ces zones de singularités et si on dispose d'une base orthonormée il s'agirait non plus de prendre les q 1ers vecteurs mais de prendre ceux d'intéret.
+
+
+
+
+
+
 
