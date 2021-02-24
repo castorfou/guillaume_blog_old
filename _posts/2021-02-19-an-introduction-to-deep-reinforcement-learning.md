@@ -158,3 +158,48 @@ And then an explanation about 2 types of method to learn a policy or a value-fun
 ![](https://miro.medium.com/max/700/1*c8nfnXRu8n1h78bWPEK5vg.png)
 
 It was not clear to me that these methods could be used for policy-based approach. It is now!
+
+
+
+## (2/24/21) - [Step 2 - part 2](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5) - Q-Learning, let’s create an autonomous Taxi
+
+But the video is not yet available.
+
+**What is Q-Learning?**
+
+Q-Learning is an **off-policy value-based method that uses a TD approach to train its action-value function:**
+
+- *“Off-policy”*: we’ll talk about that at the end of this chapter.
+- *“Value-based method”*: it means that it finds its optimal policy indirectly by training a  value-function or action-value function that will tell us what’s **the value of each state or each state-action pair.**
+- *“Uses a TD approach”*: **updates its action-value function at each step.**
+
+Q stands for quality (quality of action). After training we'll get the optimal Q-function.
+
+When choosing an action, we have to balance between exploration and exploitation with $$\epsilon$$ - greedy:
+
+![](https://miro.medium.com/max/700/1*AYz65tJDERsWTg2DGEJ35g.png)
+
+But at beginning Q table is not trained yet so we have to increase exploitation. It is done with some decreasing $$\epsilon$$.
+
+![](https://miro.medium.com/max/700/1*1J2lJN48gdjeuoRBqsO_CA.png)
+
+
+
+The Q-learning algorithm is a 4-step process:
+
+* step1: Q-Table init
+* step2: Choose action ($$\epsilon$$ - greedy strategy)
+* step3: Perform action A<sub>t</sub> and get R<sub>t+1</sub> and S<sub>t+1</sub>
+* step4: Update Q(S<sub>t</sub>, A<sub>t</sub>)
+
+![Update Q(S<sub>t</sub>, A<sub>t</sub>)](https://miro.medium.com/max/700/1*teZ5KRfvYjMKZnmhaWTUXg.png)
+
+Why it is called **off-policy**? Because we don't have the same logic to select action ($$\epsilon$$ - greedy) and update Q (greedy).
+
+With *On-policy:* we use the **same policy for acting and updating.** Sarsa is such an algorithm.
+
+![](https://miro.medium.com/max/700/1*gVl6V-wbX_hOoNQATx081Q.png)
+
+Nice and simple manual example with mouse, cheese in a maze. We run Q-learning and make all calculation by hands.
+
+![](https://miro.medium.com/max/500/1*GMuThIF7aNj-V_d6hTRN8A.png)
