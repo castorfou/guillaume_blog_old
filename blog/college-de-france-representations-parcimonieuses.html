@@ -78,7 +78,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -98,19 +98,32 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#21021---approximations-linéaires-et-analyse-de-fourier-lecture-2">2/10/21 - Approximations linéaires et analyse de Fourier (lecture 2)</a></li>
 <li class="toc-entry toc-h2"><a href="#21521---le-triangle--régularité-approximation-parcimonie--lecture-1">2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)</a></li>
+<li class="toc-entry toc-h2"><a href="#21021---approximations-linéaires-et-analyse-de-fourier-lecture-2">2/10/21 - Approximations linéaires et analyse de Fourier (lecture 2)</a></li>
+<li class="toc-entry toc-h2"><a href="#22321---grande-dimension-et-composantes-principales-lecture-3">2/23/21 - Grande dimension et composantes principales (lecture 3)</a></li>
 </ul><p>Un cours au collège de France de Stéphane Mallat sur les <a href="https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm">représentations parcimonieuses - 2021</a>.</p>
 
 <p>Cela donne envie d’aller voir ses autres cours:</p>
 
 <ul>
-  <li>2018: L’apprentissage face à la malédiction de la grande dimension</li>
-  <li>2019: L’apprentissage par réseaux de neurones profonds</li>
-  <li>2020: Modèles multi-échelles et réseaux de neurones convolutifs</li>
+  <li>
+<a href="https://www.college-de-france.fr/site/stephane-mallat/course-2017-2018.htm">2018</a>: L’apprentissage face à la malédiction de la grande dimension</li>
+  <li>
+<a href="https://www.college-de-france.fr/site/stephane-mallat/course-2018-2019.htm">2019</a>: L’apprentissage par réseaux de neurones profonds</li>
+  <li>
+<a href="https://www.college-de-france.fr/site/stephane-mallat/course-2019-2020.htm">2020</a>: Modèles multi-échelles et réseaux de neurones convolutifs</li>
 </ul>
 
 <p>A peu près 16 vidéos de 1h30 par cours. Et des notes de cours en pdf.</p>
+
+<h2 id="21521---le-triangle--régularité-approximation-parcimonie--lecture-1">
+<a class="anchor" href="#21521---le-triangle--r%C3%A9gularit%C3%A9-approximation-parcimonie--lecture-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)</h2>
+
+<p>C’est l’introduction du cours. J’apprécie les références historiques et philosphiques partant du rasoir d’Ockam. C’est le principe d’économie ou de parcimonie: le beau, le vrai viendrait du simple.</p>
+
+<p>La 1ere fois que j’entends une référence précise sur l’opposition entre biais (erreur sur modèle) et variance (erreur sur données ou mesures)</p>
+
+<p>Et une invitation à consulter une <a href="https://www.college-de-france.fr/site/stephane-mallat/seminar-2018-02-21-11h15.htm">méthodologie d’analyse de données</a> par Pierre Courtiol en utilisant Kaggle. L’idée d’une approche simple linéaire pour bien comprendre quelles étapes successives à emprunter pour améliorer son approche. Me semble assez orthogonal à ce que peut proposer Jeremy Howard: commencer tôt, overfitting n’est pas un probleme, pas de early stopping, etc.</p>
 
 <h2 id="21021---approximations-linéaires-et-analyse-de-fourier-lecture-2">
 <a class="anchor" href="#21021---approximations-lin%C3%A9aires-et-analyse-de-fourier-lecture-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/10/21 - Approximations linéaires et analyse de Fourier (lecture 2)</h2>
@@ -131,14 +144,22 @@ window.onload = wrap_img;
 
 <p>Je crois bien que je vais me faire toute la session, et sans doute les autres années.</p>
 
-<h2 id="21521---le-triangle--régularité-approximation-parcimonie--lecture-1">
-<a class="anchor" href="#21521---le-triangle--r%C3%A9gularit%C3%A9-approximation-parcimonie--lecture-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)</h2>
+<h2 id="22321---grande-dimension-et-composantes-principales-lecture-3">
+<a class="anchor" href="#22321---grande-dimension-et-composantes-principales-lecture-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>2/23/21 - Grande dimension et composantes principales (lecture 3)</h2>
 
-<p>C’est l’introduction du cours. J’apprécie les références historiques et philosphiques partant du rasoir d’Ockam. C’est le principe d’économie ou de parcimonie: le beau, le vrai viendrait du simple.</p>
+<p>Dans ce cadre linéaire grande dimension, quelle meilleure base - approche PCA et base Karhunen-Loeve.</p>
 
-<p>La 1ere fois que j’entends une référence précise sur l’opposition entre biais (erreur sur modèle) et variance (erreur sur données ou mesures)</p>
+<p>Quid quand on passe en non linéaire.</p>
 
-<p>Et une invitation à consulter une <a href="https://www.college-de-france.fr/site/stephane-mallat/seminar-2018-02-21-11h15.htm">méthodologie d’analyse de données</a> par Pierre Courtiol en utilisant Kaggle. L’idée d’une approche simple linéaire pour bien comprendre quelles étapes successives à emprunter pour améliorer son approche. Me semble assez orthogonal à ce que peut proposer Jeremy Howard: commencer tôt, overfitting n’est pas un probleme, pas de early stopping, etc.</p>
+<p>Réseau neurone à 1 couche cachée, théoreme de representation universel.</p>
+
+<p>Retour sur les bases de L²[0,1] qui sont les bases de Fourier en variables complexes.</p>
+
+<p>Pour un passage en dimension q, on remplace n par (n1, …, nq) et la multiplication n*u par le produit scalaire &lt;n, u&gt;.</p>
+
+<p>En travaillant sur les équivalences du triangle, il montre pourquoi on est très limité en approximation lineaire quand la dimension augmente.</p>
+
+<p>En approximation lineaire, il suffit de prendre les 1ers vecteurs (se limiter à une dimension q) (en base de fourier par exemple) pour avoir une assez bonne approximation. Dans des signaux plus perturbés (avec des singularités) on perd plus d’énergie: il faudrait échantilloner plus fin dans ces zones de singularités et si on dispose d’une base orthonormée il s’agirait non plus de prendre les q 1ers vecteurs mais de prendre ceux d’intéret.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->

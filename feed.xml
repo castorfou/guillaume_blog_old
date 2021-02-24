@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-23T08:09:18-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-02-24T01:08:19-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/Deep_reinforcement_learning_Course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
 
@@ -462,12 +462,20 @@ conda env export --from-history &amp;gt; env_`echo $CONDA_DEFAULT_ENV`.yml
 &lt;p&gt;Cela donne envie d’aller voir ses autres cours:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;2018: L’apprentissage face à la malédiction de la grande dimension&lt;/li&gt;
-  &lt;li&gt;2019: L’apprentissage par réseaux de neurones profonds&lt;/li&gt;
-  &lt;li&gt;2020: Modèles multi-échelles et réseaux de neurones convolutifs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.college-de-france.fr/site/stephane-mallat/course-2017-2018.htm&quot;&gt;2018&lt;/a&gt;: L’apprentissage face à la malédiction de la grande dimension&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.college-de-france.fr/site/stephane-mallat/course-2018-2019.htm&quot;&gt;2019&lt;/a&gt;: L’apprentissage par réseaux de neurones profonds&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.college-de-france.fr/site/stephane-mallat/course-2019-2020.htm&quot;&gt;2020&lt;/a&gt;: Modèles multi-échelles et réseaux de neurones convolutifs&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;A peu près 16 vidéos de 1h30 par cours. Et des notes de cours en pdf.&lt;/p&gt;
+
+&lt;h2 id=&quot;21521---le-triangle--régularité-approximation-parcimonie--lecture-1&quot;&gt;2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)&lt;/h2&gt;
+
+&lt;p&gt;C’est l’introduction du cours. J’apprécie les références historiques et philosphiques partant du rasoir d’Ockam. C’est le principe d’économie ou de parcimonie: le beau, le vrai viendrait du simple.&lt;/p&gt;
+
+&lt;p&gt;La 1ere fois que j’entends une référence précise sur l’opposition entre biais (erreur sur modèle) et variance (erreur sur données ou mesures)&lt;/p&gt;
+
+&lt;p&gt;Et une invitation à consulter une &lt;a href=&quot;https://www.college-de-france.fr/site/stephane-mallat/seminar-2018-02-21-11h15.htm&quot;&gt;méthodologie d’analyse de données&lt;/a&gt; par Pierre Courtiol en utilisant Kaggle. L’idée d’une approche simple linéaire pour bien comprendre quelles étapes successives à emprunter pour améliorer son approche. Me semble assez orthogonal à ce que peut proposer Jeremy Howard: commencer tôt, overfitting n’est pas un probleme, pas de early stopping, etc.&lt;/p&gt;
 
 &lt;h2 id=&quot;21021---approximations-linéaires-et-analyse-de-fourier-lecture-2&quot;&gt;2/10/21 - Approximations linéaires et analyse de Fourier (lecture 2)&lt;/h2&gt;
 
@@ -487,13 +495,21 @@ conda env export --from-history &amp;gt; env_`echo $CONDA_DEFAULT_ENV`.yml
 
 &lt;p&gt;Je crois bien que je vais me faire toute la session, et sans doute les autres années.&lt;/p&gt;
 
-&lt;h2 id=&quot;21521---le-triangle--régularité-approximation-parcimonie--lecture-1&quot;&gt;2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)&lt;/h2&gt;
+&lt;h2 id=&quot;22321---grande-dimension-et-composantes-principales-lecture-3&quot;&gt;2/23/21 - Grande dimension et composantes principales (lecture 3)&lt;/h2&gt;
 
-&lt;p&gt;C’est l’introduction du cours. J’apprécie les références historiques et philosphiques partant du rasoir d’Ockam. C’est le principe d’économie ou de parcimonie: le beau, le vrai viendrait du simple.&lt;/p&gt;
+&lt;p&gt;Dans ce cadre linéaire grande dimension, quelle meilleure base - approche PCA et base Karhunen-Loeve.&lt;/p&gt;
 
-&lt;p&gt;La 1ere fois que j’entends une référence précise sur l’opposition entre biais (erreur sur modèle) et variance (erreur sur données ou mesures)&lt;/p&gt;
+&lt;p&gt;Quid quand on passe en non linéaire.&lt;/p&gt;
 
-&lt;p&gt;Et une invitation à consulter une &lt;a href=&quot;https://www.college-de-france.fr/site/stephane-mallat/seminar-2018-02-21-11h15.htm&quot;&gt;méthodologie d’analyse de données&lt;/a&gt; par Pierre Courtiol en utilisant Kaggle. L’idée d’une approche simple linéaire pour bien comprendre quelles étapes successives à emprunter pour améliorer son approche. Me semble assez orthogonal à ce que peut proposer Jeremy Howard: commencer tôt, overfitting n’est pas un probleme, pas de early stopping, etc.&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="math" /><summary type="html">Un cours au collège de France de Stéphane Mallat sur les représentations parcimonieuses - 2021.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Learning: MIT 6.S191 Introduction to Deep Learning - 2021</title><link href="https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021.html" rel="alternate" type="text/html" title="Learning: MIT 6.S191 Introduction to Deep Learning - 2021" /><published>2021-02-05T00:00:00-06:00</published><updated>2021-02-05T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021.html">&lt;p&gt;From &lt;a href=&quot;http://introtodeeplearning.com/&quot;&gt;http://introtodeeplearning.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Réseau neurone à 1 couche cachée, théoreme de representation universel.&lt;/p&gt;
+
+&lt;p&gt;Retour sur les bases de L²[0,1] qui sont les bases de Fourier en variables complexes.&lt;/p&gt;
+
+&lt;p&gt;Pour un passage en dimension q, on remplace n par (n1, …, nq) et la multiplication n*u par le produit scalaire &amp;lt;n, u&amp;gt;.&lt;/p&gt;
+
+&lt;p&gt;En travaillant sur les équivalences du triangle, il montre pourquoi on est très limité en approximation lineaire quand la dimension augmente.&lt;/p&gt;
+
+&lt;p&gt;En approximation lineaire, il suffit de prendre les 1ers vecteurs (se limiter à une dimension q) (en base de fourier par exemple) pour avoir une assez bonne approximation. Dans des signaux plus perturbés (avec des singularités) on perd plus d’énergie: il faudrait échantilloner plus fin dans ces zones de singularités et si on dispose d’une base orthonormée il s’agirait non plus de prendre les q 1ers vecteurs mais de prendre ceux d’intéret.&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="math" /><summary type="html">Un cours au collège de France de Stéphane Mallat sur les représentations parcimonieuses - 2021.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/fastpages_posts/actions/actions_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Learning: MIT 6.S191 Introduction to Deep Learning - 2021</title><link href="https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021.html" rel="alternate" type="text/html" title="Learning: MIT 6.S191 Introduction to Deep Learning - 2021" /><published>2021-02-05T00:00:00-06:00</published><updated>2021-02-05T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021.html">&lt;p&gt;From &lt;a href=&quot;http://introtodeeplearning.com/&quot;&gt;http://introtodeeplearning.com/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I keep all content (lectures, notebooks) in &lt;a href=&quot;https://github.com/castorfou/mit_6s191&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 
