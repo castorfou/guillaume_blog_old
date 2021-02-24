@@ -78,7 +78,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -114,6 +114,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#monte-carlo-vs-temporal-difference">Monte Carlo vs Temporal Difference</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi">(2/24/21) - Step 2 - part 2 - Q-Learning, let’s create an autonomous Taxi</a></li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -276,6 +277,58 @@ window.onload = wrap_img;
 <p><img src="https://miro.medium.com/max/700/1*c8nfnXRu8n1h78bWPEK5vg.png" alt=""></p>
 
 <p>It was not clear to me that these methods could be used for policy-based approach. It is now!</p>
+
+<h2 id="22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi">
+<a class="anchor" href="#22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi" aria-hidden="true"><span class="octicon octicon-link"></span></a>(2/24/21) - <a href="https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5">Step 2 - part 2</a> - Q-Learning, let’s create an autonomous Taxi</h2>
+
+<p>But the video is not yet available.</p>
+
+<p><strong>What is Q-Learning?</strong></p>
+
+<p>Q-Learning is an <strong>off-policy value-based method that uses a TD approach to train its action-value function:</strong></p>
+
+<ul>
+  <li>
+<em>“Off-policy”</em>: we’ll talk about that at the end of this chapter.</li>
+  <li>
+<em>“Value-based method”</em>: it means that it finds its optimal policy indirectly by training a  value-function or action-value function that will tell us what’s <strong>the value of each state or each state-action pair.</strong>
+</li>
+  <li>
+<em>“Uses a TD approach”</em>: <strong>updates its action-value function at each step.</strong>
+</li>
+</ul>
+
+<p>Q stands for quality (quality of action). After training we’ll get the optimal Q-function.</p>
+
+<p>When choosing an action, we have to balance between exploration and exploitation with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> - greedy:</p>
+
+<p><img src="https://miro.medium.com/max/700/1*AYz65tJDERsWTg2DGEJ35g.png" alt=""></p>
+
+<p>But at beginning Q table is not trained yet so we have to increase exploitation. It is done with some decreasing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span>.</p>
+
+<p><img src="https://miro.medium.com/max/700/1*1J2lJN48gdjeuoRBqsO_CA.png" alt=""></p>
+
+<p>The Q-learning algorithm is a 4-step process:</p>
+
+<ul>
+  <li>step1: Q-Table init</li>
+  <li>step2: Choose action (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> - greedy strategy)</li>
+  <li>step3: Perform action A<sub>t</sub> and get R<sub>t+1</sub> and S<sub>t+1</sub>
+</li>
+  <li>step4: Update Q(S<sub>t</sub>, A<sub>t</sub>)</li>
+</ul>
+
+<p><img src="https://miro.medium.com/max/700/1*teZ5KRfvYjMKZnmhaWTUXg.png" alt="Update Q(S&lt;sub&gt;t&lt;/sub&gt;, A&lt;sub&gt;t&lt;/sub&gt;)"></p>
+
+<p>Why it is called <strong>off-policy</strong>? Because we don’t have the same logic to select action (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> - greedy) and update Q (greedy).</p>
+
+<p>With <em>On-policy:</em> we use the <strong>same policy for acting and updating.</strong> Sarsa is such an algorithm.</p>
+
+<p><img src="https://miro.medium.com/max/700/1*gVl6V-wbX_hOoNQATx081Q.png" alt=""></p>
+
+<p>Nice and simple manual example with mouse, cheese in a maze. We run Q-learning and make all calculation by hands.</p>
+
+<p><img src="https://miro.medium.com/max/500/1*GMuThIF7aNj-V_d6hTRN8A.png" alt=""></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
