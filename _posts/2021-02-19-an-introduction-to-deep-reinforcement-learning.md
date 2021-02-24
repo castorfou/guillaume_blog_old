@@ -203,3 +203,5 @@ With *On-policy:* we use the **same policy for acting and updating.** Sarsa is s
 Nice and simple manual example with mouse, cheese in a maze. We run Q-learning and make all calculation by hands.
 
 ![](https://miro.medium.com/max/500/1*GMuThIF7aNj-V_d6hTRN8A.png)
+
+<todo> implement with numpy this algorithm should be a nice exercise.
