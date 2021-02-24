@@ -60,3 +60,26 @@ Publier en appelant: `~/git/guillaume/blog/publish.sh`
 ```
 
 ![image-20210113094053724](/home/explore/.config/Typora/typora-user-images/image-20210113094053724.png)
+
+### Notation mathématiques
+
+
+
+**Lettres grecques**
+
+```markdown
+$$\alpha$$
+$$\epsilon$$
+```
+
+$$\alpha$$ $$\epsilon$$
+
+**Exposants, indices**
+
+```markdown
+E=MC<sup>2</sup>
+Q(S<sub>t</sub>, A<sub>t</sub>)
+```
+
+E=MC<sup>2</sup>
+Q(S<sub>t</sub>, A<sub>t</sub>)
