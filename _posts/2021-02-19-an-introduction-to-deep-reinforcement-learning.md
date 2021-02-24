@@ -204,6 +204,6 @@ Nice and simple manual example with mouse, cheese in a maze. We run Q-learning a
 
 ![](https://miro.medium.com/max/500/1*GMuThIF7aNj-V_d6hTRN8A.png)
 
-<todo> implement with numpy+gym this algorithm should be a nice exercise.
+<todo> implement with numpy+gym this algorithm should be a nice exercise.</todo>
 
 There is an exercise to implement a taxi, within this [notebook](https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H) at colab google. Taxi V3 is an env from opengym.
