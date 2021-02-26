@@ -25,6 +25,6 @@ toc: true
 comments: true
 layout: post
 categories: [reinforcement learning]
-image: images/fastpages_posts/actions/actions_logo.png
+image: images/<my_image_preview>.png
 ```
 

@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [deep learning, math]
-image: images/fastpages_posts/actions/actions_logo.png
+image: images/math.jpeg
 ---
 
 Un cours au collège de France de Stéphane Mallat sur les [représentations parcimonieuses - 2021](https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm).

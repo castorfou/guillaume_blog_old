@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [deep learning, MIT, tensorflow]
-image: images/fastpages_posts/actions/actions_logo.png
+image: images/DL.jpg
 ---
 
 

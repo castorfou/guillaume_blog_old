@@ -20,13 +20,13 @@ This is a test. I will try to keep words on a monthly (this page), weekly (per h
 
 To develop knowledge about RL, here is my learning process on a weekly basis.
 
-Monday MIT 6S191
+Monday [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html)
 
-Tuesday College de France
+Tuesday [College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html)
 
-Wednesday Deep Reinforcement Learning by Thomas Simonini
+Wednesday [Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html)
 
-Friday RL readings: papers, books, ...
+Friday [RL readings](https://github.com/castorfou/datascience-papers): papers, books, ...
 
 
 
@@ -34,5 +34,5 @@ Friday RL readings: papers, books, ...
 
 blog fastpages - setup automated upgrade (instructions from `_fastpages_docs`) v2.1.42
 
-blog fastpages - display image preview
+blog fastpages - display image preview (update of _config.yml)
 
