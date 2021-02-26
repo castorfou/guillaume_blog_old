@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [logbook]
-image: ../images/logbook.jpg
+image: images/logbook.jpg
 ---
 
 
@@ -15,6 +15,18 @@ This is a test. I will try to keep words on a monthly (this page), weekly (per h
 
 
 ## Week 8 - Feb 21
+
+**Monday 2/22**
+
+To develop knowledge about RL, here is my learning process on a weekly basis.
+
+Monday MIT 6S191
+
+Tuesday College de France
+
+Wednesday Deep Reinforcement Learning by Thomas Simonini
+
+Friday RL readings: papers, books, ...
 
 
 
