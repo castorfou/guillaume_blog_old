@@ -38,3 +38,4 @@ blog fastpages - display image preview (update of `_config.yml`)
 
 RL - understood differences between Q-learning and Sarsa algorithms in [end of step2 part2](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html)
 
+RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p200-220) - eligibility traces, and start of planning vs learning
