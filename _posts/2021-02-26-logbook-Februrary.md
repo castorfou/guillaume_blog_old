@@ -10,7 +10,7 @@ image: ../images/logbook.jpg
 
 
 
-This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with links to more detailed materials.
+This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.
 
 
 
@@ -20,4 +20,7 @@ This is a test. I will try to keep words on a monthly (this page), weekly (per h
 
 **Friday 2/26**
 
-blog fastpages - setup automated upgrade (instructions from `_fastpages_docs`)
+blog fastpages - setup automated upgrade (instructions from `_fastpages_docs`) v2.1.42
+
+blog fastpages - display image preview
+
