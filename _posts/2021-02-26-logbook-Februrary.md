@@ -36,5 +36,5 @@ blog fastpages - setup automated upgrade (instructions from `_fastpages_docs`) v
 
 blog fastpages - display image preview (update of `_config.yml`)
 
-
+RL - understood differences between Q-learning and Sarsa algorithms in [end of step2 part2](/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html)
 
