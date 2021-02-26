@@ -34,5 +34,7 @@ Friday [RL readings](https://github.com/castorfou/datascience-papers): papers, b
 
 blog fastpages - setup automated upgrade (instructions from `_fastpages_docs`) v2.1.42
 
-blog fastpages - display image preview (update of _config.yml)
+blog fastpages - display image preview (update of `_config.yml`)
+
+
 
