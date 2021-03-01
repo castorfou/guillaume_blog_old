@@ -105,3 +105,44 @@ The second part (task learning part) can be anything: classification, object det
 Nice explanation of R-CNN to learn region proposals.
 
 Introduction to Software lab2: de-biaising facial recognition systems. 
+
+
+
+## 3/1/21 - Deep Generative Modeling - lecture 4
+
+From pattern discovered from data (underlying structure of the data), generate examples following these patterns.
+
+**Autoencoder**: foundational generative model which builds up latent variable representation by self-encoding the input. To train such network, we create a decoder to go from latent variable to generated output, and then compare input to generated output.
+
+![](../images/mit_6S191_lec4_autoencoders.png)
+
+
+
+**Variational autoencoder (vae)**: with vae we try to encode inputs as distributions defined by mean $$\mu$$ and variance $$\sigma$$. And we want to achieve continuity and completeness:
+
+- continuity: points that are close in latent space --> similar content after decoding
+- completeness: sampling from latent space --> 'meaningful' content after decoding
+
+Regularization is pushing to get these properties.
+
+![](../images/mit_6S191_lec4_vae_regularization.png)
+
+And the learning process is about minimizing reconstruction loss + a regularization term:
+
+![](../images/mit_6S191_lec4_vae_loss.png)
+
+Ava is then explaining the smart trick to allow backpropagation to happen. Indeed by introducing stochastic term in the sampling layer, we are breaking the backpropagation logic.
+
+We are moving z from a normal distribution to $$\mu$$+$$\sigma$$.$$\epsilon$$ where $$\epsilon$$ follow a normal distribution of mean 0, std 1.
+
+Explanation then of space disentanglement via $$\beta$$-VAEs. It allows latent variables to be independent.
+
+![](../images/mit_6S191_lec4_vae_beta.png)
+
+
+
+And then some introduction about **GANs* (Generative Adversarial Network) which are a way to make a generative model by having 2 neural networks (generator and discriminator) compete with each other.
+
+And share some recent advances on GAN such as StyleGAN(2), conditional GAN, CycleGAN. CycleGAN is famous for turning horses in zebras, but it can be used to transform speech as well (used in the synthesis of Obama's voice)
+
+![](../images/mit_6S191_lec4_generative_summary.png)
