@@ -159,7 +159,21 @@ then move to a CNN architecture. I ran into [gpu issues](https://github.com/tens
 
 I didn't manage to make the last part working. (using tape.gradient)
 
+[Part 2 Debiasing](https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab2/Part2_Debiasing.ipynb)
 
+Fit a CNN model to classify faces based on celebA dataset. And see the bias effect by predicting on Fitzpatrick scale skin type classification system.
+
+Use VAE to learn latent structure.
+
+![The concept of a VAE](https://i.ibb.co/3s4S6Gc/vae.jpg)
+
+To then debias using DB-VAE model.
+
+![DB-VAE](https://raw.githubusercontent.com/aamini/introtodeeplearning/2019/lab2/img/DB-VAE.png)
+
+There is a lack of progressive unit tests to validate each step. Cannot go to the end.
+
+Would be interested to see how to apply to non computer vision problems.
 
 
 

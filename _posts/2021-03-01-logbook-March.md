@@ -16,4 +16,4 @@ image: images/logbook.jpg
 
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Deep Generative Modeling (lecture 4) - vaes and gans.
 
-[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) De-biasing Facial Recognition Systems (lab 2)
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) De-biasing Facial Recognition Systems (lab 2): CNN, VAE, DB-VAE
