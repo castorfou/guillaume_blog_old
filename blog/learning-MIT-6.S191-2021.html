@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -121,6 +121,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#21521---deep-sequence-modeling---lecture-2">2/15/21 - Deep Sequence Modeling - lecture 2</a></li>
 <li class="toc-entry toc-h2"><a href="#21621---intro-to-tensorflow--music-generation---software-lab-1">2/16/21 - Intro to TensorFlow;  Music Generation - software lab 1</a></li>
 <li class="toc-entry toc-h2"><a href="#22221---deep-computer-vision---lecture-3">2/22/21 - Deep Computer Vision - lecture 3</a></li>
+<li class="toc-entry toc-h2"><a href="#3121---deep-generative-modeling---lecture-4">3/1/21 - Deep Generative Modeling - lecture 4</a></li>
+<li class="toc-entry toc-h2"><a href="#1321---de-biasing-facial-recognition-systems---software-lab-2">1/3/21 - De-biasing Facial Recognition Systems - Software Lab 2</a></li>
 </ul><p>From <a href="http://introtodeeplearning.com/">http://introtodeeplearning.com/</a></p>
 
 <p>I keep all content (lectures, notebooks) in <a href="https://github.com/castorfou/mit_6s191">github</a></p>
@@ -213,6 +215,56 @@ window.onload = wrap_img;
 <p>Nice explanation of R-CNN to learn region proposals.</p>
 
 <p>Introduction to Software lab2: de-biaising facial recognition systems.</p>
+
+<h2 id="3121---deep-generative-modeling---lecture-4">
+<a class="anchor" href="#3121---deep-generative-modeling---lecture-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/1/21 - Deep Generative Modeling - lecture 4</h2>
+
+<p>From pattern discovered from data (underlying structure of the data), generate examples following these patterns.</p>
+
+<p><strong>Autoencoder</strong>: foundational generative model which builds up latent variable representation by self-encoding the input. To train such network, we create a decoder to go from latent variable to generated output, and then compare input to generated output.</p>
+
+<p><img src="../images/mit_6S191_lec4_autoencoders.png" alt=""></p>
+
+<p><strong>Variational autoencoder (vae)</strong>: with vae we try to encode inputs as distributions defined by mean <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span> and variance <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span></span>. And we want to achieve continuity and completeness:</p>
+
+<ul>
+  <li>continuity: points that are close in latent space –&gt; similar content after decoding</li>
+  <li>completeness: sampling from latent space –&gt; ‘meaningful’ content after decoding</li>
+</ul>
+
+<p>Regularization is pushing to get these properties.</p>
+
+<p><img src="../images/mit_6S191_lec4_vae_regularization.png" alt=""></p>
+
+<p>And the learning process is about minimizing reconstruction loss + a regularization term:</p>
+
+<p><img src="../images/mit_6S191_lec4_vae_loss.png" alt=""></p>
+
+<p>Ava is then explaining the smart trick to allow backpropagation to happen. Indeed by introducing stochastic term in the sampling layer, we are breaking the backpropagation logic.</p>
+
+<p>We are moving z from a normal distribution to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span>+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span></span>.<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> follow a normal distribution of mean 0, std 1.</p>
+
+<p>Explanation then of space disentanglement via <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span></span></span></span>-VAEs. It allows latent variables to be independent.</p>
+
+<p><img src="../images/mit_6S191_lec4_vae_beta.png" alt=""></p>
+
+<p>And then some introduction about <em>*GANs</em> (Generative Adversarial Network) which are a way to make a generative model by having 2 neural networks (generator and discriminator) compete with each other.</p>
+
+<p>And share some recent advances on GAN such as StyleGAN(2), conditional GAN, CycleGAN. CycleGAN is famous for turning horses in zebras, but it can be used to transform speech as well (used in the synthesis of Obama’s voice)</p>
+
+<p><img src="../images/mit_6S191_lec4_generative_summary.png" alt=""></p>
+
+<h2 id="1321---de-biasing-facial-recognition-systems---software-lab-2">
+<a class="anchor" href="#1321---de-biasing-facial-recognition-systems---software-lab-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>1/3/21 - De-biasing Facial Recognition Systems - Software Lab 2</h2>
+
+<p><a href="https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab2/Part1_MNIST.ipynb">Part 1 MNIST</a></p>
+
+<p>starts with FC layers. With some overfitting but a good accuracy of 96%.</p>
+
+<p>then move to a CNN architecture. I ran into <a href="https://github.com/tensorflow/tensorflow/issues/24828">gpu issues</a>.  Accuracy is now 99%.</p>
+
+<p>I didn’t manage to make the last part working. (using tape.gradient)</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
