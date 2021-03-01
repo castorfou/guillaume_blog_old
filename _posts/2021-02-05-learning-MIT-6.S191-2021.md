@@ -146,3 +146,20 @@ And then some introduction about **GANs* (Generative Adversarial Network) which 
 And share some recent advances on GAN such as StyleGAN(2), conditional GAN, CycleGAN. CycleGAN is famous for turning horses in zebras, but it can be used to transform speech as well (used in the synthesis of Obama's voice)
 
 ![](../images/mit_6S191_lec4_generative_summary.png)
+
+
+
+## 1/3/21 - De-biasing Facial Recognition Systems - Software Lab 2
+
+[Part 1 MNIST](https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab2/Part1_MNIST.ipynb)
+
+starts with FC layers. With some overfitting but a good accuracy of 96%.
+
+then move to a CNN architecture. I ran into [gpu issues](https://github.com/tensorflow/tensorflow/issues/24828).  Accuracy is now 99%.
+
+I didn't manage to make the last part working. (using tape.gradient)
+
+
+
+
+
