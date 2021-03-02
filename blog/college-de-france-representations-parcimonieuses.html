@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      6 min read
     
 </span></p>
 
@@ -117,6 +117,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#21521---le-triangle--régularité-approximation-parcimonie--lecture-1">2/15/21 - Le triangle « Régularité, Approximation, Parcimonie » (lecture 1)</a></li>
 <li class="toc-entry toc-h2"><a href="#21021---approximations-linéaires-et-analyse-de-fourier-lecture-2">2/10/21 - Approximations linéaires et analyse de Fourier (lecture 2)</a></li>
 <li class="toc-entry toc-h2"><a href="#22321---grande-dimension-et-composantes-principales-lecture-3">2/23/21 - Grande dimension et composantes principales (lecture 3)</a></li>
+<li class="toc-entry toc-h2"><a href="#3221---approximations-non-linéaires-et-réseaux-de-neurones-lecture-4">3/2/21 - Approximations non linéaires et réseaux de neurones (lecture 4)</a></li>
 </ul><p>Un cours au collège de France de Stéphane Mallat sur les <a href="https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm">représentations parcimonieuses - 2021</a>.</p>
 
 <p>Cela donne envie d’aller voir ses autres cours:</p>
@@ -176,6 +177,41 @@ window.onload = wrap_img;
 <p>En travaillant sur les équivalences du triangle, il montre pourquoi on est très limité en approximation lineaire quand la dimension augmente.</p>
 
 <p>En approximation lineaire, il suffit de prendre les 1ers vecteurs (se limiter à une dimension q) (en base de fourier par exemple) pour avoir une assez bonne approximation. Dans des signaux plus perturbés (avec des singularités) on perd plus d’énergie: il faudrait échantilloner plus fin dans ces zones de singularités et si on dispose d’une base orthonormée il s’agirait non plus de prendre les q 1ers vecteurs mais de prendre ceux d’intéret.</p>
+
+<h2 id="3221---approximations-non-linéaires-et-réseaux-de-neurones-lecture-4">
+<a class="anchor" href="#3221---approximations-non-lin%C3%A9aires-et-r%C3%A9seaux-de-neurones-lecture-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/2/21 - Approximations non linéaires et réseaux de neurones (lecture 4)</h2>
+
+<p>Le triangle (approximation basse dimensions, représentation parcimonieuse, régularité) d’un point de vue non linéaire.</p>
+
+<p>Ici plutôt qu’approximer un signal en prenant les M 1ers coefficients de Fourier (basses dimensions), on va prendre M coefficients mais dépendamment de x. C’est ici qu’on introduit la non-linéarité. L’erreur est alors la queue de distribution des coefficients ordonnés. On veut que l’énergie des plus petits coefficients soit négligeable.</p>
+
+<p>Pas facile d’obtenir cet ordre, on cherche une façon de limiter les coefficients non ordonnés nous donnant une représentation parcimonieuse. En utilisant la nome l<sub>$\alpha$</sub> avec <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span> petit (inférieur à 2 et proche de 0), on introduit cette décroissance mais cette fois-ci sur les coefficients non ordonnés.</p>
+
+<p>Intéressant d’avoir des normes convexes, et dans ce cas on ne peut prendre que <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>=1. C’est pour ça qu’on voit apparaître partout les normes l<sub>1</sub> dans les algorithmes d’apprentissage (norme convexe garantissant une forme de sparsité).</p>
+
+<p>On passe aux réseaux de neurones à 1 couche cachée. Et on va basculer dans les notations de x(u) à f(x)., avec x <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> [0, 1]<sup>d</sup>.</p>
+
+<p><img src="../images/rep_par_lecture4.png" alt=""></p>
+
+<p>Ici on projette f dans l’espace engendré par ces vecteurs { <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">ρ</span></span></span></span>(x.w<sub>m</sub>+b<sub>m</sub>) }<sub>n&lt;=M</sub>.</p>
+
+<p>On peut facilement calculer l’erreur quadratique comme l’intégrale sur les x <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> [0, 1]<sup>d</sup> de la norme l² ( f(x)-f<sub>tilde</sub>(x) ) et il y a un belle démonstration qui est le <strong>théorème d’approximation universelle</strong> (démontrée entre 1988 et 1992) qui montre que l’erreur tend vers 0 quand M tend vers l’infini.</p>
+
+<p>La démonstration avec <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">ρ</span></span></span></span> = e<sup>ia</sup> revient à une décomposition d’en Fourier. Et pour d’autres non régularité comme reLu ou sigmoid, il s’agit d’un changement de base.</p>
+
+<p>Et là on arrive à la malédiction de la dimensionnalité car quand d est grand (disons 1M), les coefficients baissent à une faible vitesse. Que faut-il faire pour battre cette malédiction?</p>
+
+<p>Baron en 1993 introduit une hypothèse de regularité qui permet de borner l’erreur par un terme qui ne dépend pas de la dimension. C’est donc gagné sauf que l’hypothèse de régularité n’est généralement pas valide dans les cas qui nous intéressent.</p>
+
+<p>Stéphane Mallat, de façon brillante mais est-ce étonnant, explique pourquoi l’approche des mathématiciens est une impasse et pourquoi ce qu’on cherche à faire se ramène à un problème bayésien. Car les problèmes qui nous intéressent (par exemple la classification d’objets, ne va solliciter qu’un minuscule espace (même si de grande dimension) parmi toutes les images possibles). On va donc chercher à caractériser x pour chaque y (classe). (revoir vidéo entre 49’ et 1h03)</p>
+
+<p>L’enjeu est de caractériser le support qui est beaucoup plus concentré que [0,1]<sup>d</sup>.</p>
+
+<p>Donc on va retravailler sur les approximations non linéaires de x, le signal lui-même (et non plus f), et d’essayer de comprendre pourquoi on peut faire beaucoup mieux que la transformée de Fourier et quelle genre de bases vont nous permettre de faire bcp mieux. Une des applications va être la compression, qui va nous amener à étudier la théorie de l’information et la théorie de l’information c’est exactement la théorie probabiliste qui explique ces phénomènes de concentration et les mesure avec l’entropie.</p>
+
+<p>Introduction des bases d’ondelettes qui vont permettre de représenter les singularités locales. Les ondelettes sont à la fois localisées (paramètre v) et dilatées (paramètre s). Il faudra à partir de ces ondelettes construire des bases orthogonales pour arriver à des approximations basses dimensions (et garder les grands coefficients)</p>
+
+<p>On introduit la notion de régularité locale exprimée avec lipchitz <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>. Avec <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span> &lt;1 pour exprimer les singularités.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
