@@ -70,6 +70,48 @@ En approximation lineaire, il suffit de prendre les 1ers vecteurs (se limiter à
 
 
 
+## 3/2/21 - Approximations non linéaires et réseaux de neurones (lecture 4)
+
+Le triangle (approximation basse dimensions, représentation parcimonieuse, régularité) d'un point de vue non linéaire.
+
+Ici plutôt qu'approximer un signal en prenant les M 1ers coefficients de Fourier (basses dimensions), on va prendre M coefficients mais dépendamment de x. C'est ici qu'on introduit la non-linéarité. L'erreur est alors la queue de distribution des coefficients ordonnés. On veut que l'énergie des plus petits coefficients soit négligeable.
+
+Pas facile d'obtenir cet ordre, on cherche une façon de limiter les coefficients non ordonnés nous donnant une représentation parcimonieuse. En utilisant la nome l<sub>$\alpha$</sub> avec $$\alpha$$ petit (inférieur à 2 et proche de 0), on introduit cette décroissance mais cette fois-ci sur les coefficients non ordonnés.
+
+Intéressant d'avoir des normes convexes, et dans ce cas on ne peut prendre que $$\alpha$$=1. C'est pour ça qu'on voit apparaître partout les normes l<sub>1</sub> dans les algorithmes d'apprentissage (norme convexe garantissant une forme de sparsité).
+
+On passe aux réseaux de neurones à 1 couche cachée. Et on va basculer dans les notations de x(u) à f(x)., avec x $$\epsilon$$ [0, 1]<sup>d</sup>.
+
+![](../images/rep_par_lecture4.png)
+
+Ici on projette f dans l'espace engendré par ces vecteurs { $$\rho$$(x.w<sub>m</sub>+b<sub>m</sub>) }<sub>n<=M</sub>.
+
+On peut facilement calculer l'erreur quadratique comme l'intégrale sur les x $$\epsilon$$ [0, 1]<sup>d</sup> de la norme l² ( f(x)-f<sub>tilde</sub>(x) ) et il y a un belle démonstration qui est le **théorème d'approximation universelle** (démontrée entre 1988 et 1992) qui montre que l'erreur tend vers 0 quand M tend vers l'infini.
+
+La démonstration avec $$\rho$$ = e<sup>ia</sup> revient à une décomposition d'en Fourier. Et pour d'autres non régularité comme reLu ou sigmoid, il s'agit d'un changement de base.
+
+Et là on arrive à la malédiction de la dimensionnalité car quand d est grand (disons 1M), les coefficients baissent à une faible vitesse. Que faut-il faire pour battre cette malédiction?
+
+Baron en 1993 introduit une hypothèse de regularité qui permet de borner l'erreur par un terme qui ne dépend pas de la dimension. C'est donc gagné sauf que l'hypothèse de régularité n'est généralement pas valide dans les cas qui nous intéressent.
+
+Stéphane Mallat, de façon brillante mais est-ce étonnant, explique pourquoi l'approche des mathématiciens est une impasse et pourquoi ce qu'on cherche à faire se ramène à un problème bayésien. Car les problèmes qui nous intéressent (par exemple la classification d'objets, ne va solliciter qu'un minuscule espace (même si de grande dimension) parmi toutes les images possibles). On va donc chercher à caractériser x pour chaque y (classe). (revoir vidéo entre 49' et 1h03) 
+
+L'enjeu est de caractériser le support qui est beaucoup plus concentré que [0,1]<sup>d</sup>.
+
+Donc on va retravailler sur les approximations non linéaires de x, le signal lui-même (et non plus f), et d'essayer de comprendre pourquoi on peut faire beaucoup mieux que la transformée de Fourier et quelle genre de bases vont nous permettre de faire bcp mieux. Une des applications va être la compression, qui va nous amener à étudier la théorie de l'information et la théorie de l'information c'est exactement la théorie probabiliste qui explique ces phénomènes de concentration et les mesure avec l'entropie.
+
+Introduction des bases d'ondelettes qui vont permettre de représenter les singularités locales. Les ondelettes sont à la fois localisées (paramètre v) et dilatées (paramètre s). Il faudra à partir de ces ondelettes construire des bases orthogonales pour arriver à des approximations basses dimensions (et garder les grands coefficients)
+
+On introduit la notion de régularité locale exprimée avec lipchitz $$\alpha$$. Avec $$\alpha$$ <1 pour exprimer les singularités. 
+
+
+
+
+
+
+
+
+
 
 
 
