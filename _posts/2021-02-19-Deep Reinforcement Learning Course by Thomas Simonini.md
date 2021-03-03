@@ -209,3 +209,27 @@ Nice and simple manual example with mouse, cheese in a maze. We run Q-learning a
 <div class="alert alert-info">implement with numpy+gym this algorithm should be a nice exercise.</div>
 
 There is an exercise to implement a taxi, within this [notebook](https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H) at colab google. Taxi V3 is an env from opengym.
+
+## (3/3/21) - back to 2018 - Deep Q-learning with Doom
+
+[Article](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb), [Video](https://youtu.be/gCJyVX98KJ4)
+
+We’ll create an agent that learns to play Doom. Doom is a big  environment with a gigantic state space (millions of different states).  Creating and updating a Q-table for that environment would not be  efficient at all.
+
+The best idea in this case is to create a [neural network](http://neuralnetworksanddeeplearning.com/) that will approximate, given a state, the different Q-values for each action.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*w5GuxedZ9ivRYqM_MLUxOQ.png)
+
+![](https://cdn-media-1.freecodecamp.org/images/1*LglEewHrVsuEGpBun8_KTg.png)
+
+Addresses pb of temporal limitation: get multiple frames to have sense of motion.
+
+Video is nice because it goes from start and follows closely all steps.
+
+I wil try to implement in my own by creating an environment and running under a clone of Deep_reinforcement_learning_Course [Thomas's repo](https://github.com/simoninithomas/Deep_reinforcement_learning_Course)
+
+Here at [Deep Q learning with Doom.ipynb](https://github.com/castorfou/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb)
+
+I had to switch to tensorflow-gpu 1.13. Manage some cuda memory issue. But then was able to run it.
+
+However as Thomas says, I should do it step by step on my own.

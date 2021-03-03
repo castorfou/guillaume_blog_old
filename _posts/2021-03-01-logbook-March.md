@@ -31,6 +31,6 @@ image: images/logbook.jpg
 
 [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [LIME](https://christophm.github.io/interpretable-ml-book/lime.html#lime) reading to understand context of local surrogate models. [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) chapter using Janus data.
 
-
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html)
 
 
