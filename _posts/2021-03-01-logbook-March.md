@@ -22,4 +22,9 @@ image: images/logbook.jpg
 
 [College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Approximations non linéaires et réseaux de neurones (lecture 4)
 
+**Wednesday 3/3**
+
+[Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) chapter using Janus data.
+
+
  
