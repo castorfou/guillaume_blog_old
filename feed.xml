@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-03T01:59:30-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for March 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html" rel="alternate" type="text/html" title="Logbook for March 21" /><published>2021-03-01T00:00:00-06:00</published><updated>2021-03-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-March</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html">&lt;h2 id=&quot;week-9---mar-21&quot;&gt;Week 9 - Mar 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-03T06:34:13-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for March 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html" rel="alternate" type="text/html" title="Logbook for March 21" /><published>2021-03-01T00:00:00-06:00</published><updated>2021-03-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-March</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html">&lt;h2 id=&quot;week-9---mar-21&quot;&gt;Week 9 - Mar 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 3/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -9,6 +9,10 @@
 &lt;p&gt;&lt;strong&gt;Tuesday 3/2&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Approximations non linéaires et réseaux de neurones (lecture 4)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;RL Course by David Silver&lt;/a&gt; lecture 1 - intro (22’/88’)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ilp.mit.edu/attend/future-manufacturing-mit?utm_medium=email&amp;amp;utm_campaign=Future%20of%20Manu%2032-3-4%20day%20of&amp;amp;utm_content=Future%20of%20Manu%2032-3-4%20day%20of+CID_523e5a27df7d82b6ebf742ac50bdef62&amp;amp;utm_source=Email%20campaign&amp;amp;utm_term=SEE%20THE%20AGENDA&quot;&gt;Future of Manufacturing@MIT&lt;/a&gt; - interesting landscape about Manufacturing and AI&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Wednesday 3/3&lt;/strong&gt;&lt;/p&gt;
 
