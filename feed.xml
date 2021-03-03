@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-03T09:49:15-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for March 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html" rel="alternate" type="text/html" title="Logbook for March 21" /><published>2021-03-01T00:00:00-06:00</published><updated>2021-03-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-March</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html">&lt;h2 id=&quot;week-9---mar-21&quot;&gt;Week 9 - Mar 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-03T11:44:48-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setup-the-key&quot;&gt;setup the key&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg &lt;span class=&quot;nt&quot;&gt;--gen-key&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and enter a strong passphrase.&lt;/p&gt;
+
+&lt;h2 id=&quot;export-public-key&quot;&gt;export public key&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg &lt;span class=&quot;nt&quot;&gt;--armor&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; mypubkey.gpg &lt;span class=&quot;nt&quot;&gt;--export&lt;/span&gt; &amp;lt;E-mail that you registered&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;import-from-windows-box&quot;&gt;import from windows box&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg &lt;span class=&quot;nt&quot;&gt;--import&lt;/span&gt; mypubkey.gpg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;encrypt-files-from-windows-box&quot;&gt;encrypt files from windows box&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; test.txt.gpg &lt;span class=&quot;nt&quot;&gt;--encrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--recipient&lt;/span&gt; &amp;lt;Receiver&lt;span class=&quot;s1&quot;&gt;'s E-Mail ID&amp;gt; test.txt
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;decrypt-files-on-linux-box&quot;&gt;decrypt files on linux box&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; test.txt &lt;span class=&quot;nt&quot;&gt;--decrypt&lt;/span&gt; test.txt.gpg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="gpg" /><summary type="html">from best ways to encrypt files on linux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/secure.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/secure.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for March 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html" rel="alternate" type="text/html" title="Logbook for March 21" /><published>2021-03-01T00:00:00-06:00</published><updated>2021-03-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-March</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-March.html">&lt;h2 id=&quot;week-9---mar-21&quot;&gt;Week 9 - Mar 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 3/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -1777,141 +1804,4 @@ The sign of this knowledge is that it can be taught; now men of art can teach. H
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="visualization" /><category term="seaborn" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Java installation on Ubuntu 20.04</title><link href="https://castorfou.github.io/guillaume_blog/blog/java-installation-on-ubuntu-20.04.html" rel="alternate" type="text/html" title="Java installation on Ubuntu 20.04" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/java-installation-on-ubuntu-20.04</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/java-installation-on-ubuntu-20.04.html">&lt;!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2021-01-14-java-installation-on-ubuntu-20.04.ipynb
---&gt;
-
-&lt;div class=&quot;container&quot; id=&quot;notebook-container&quot;&gt;
-        
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;Following these instructions: &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-fr&quot;&gt;https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-fr&lt;/a&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Current-configuration&quot;&gt;Current configuration&lt;a class=&quot;anchor-link&quot; href=&quot;#Current-configuration&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;java --version
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;openjdk 11.0.9.1 2020-11-04
-OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.20.04)
-OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.20.04, mixed mode, sharing)
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Download-Oracle-JDK-11&quot;&gt;Download Oracle JDK 11&lt;a class=&quot;anchor-link&quot; href=&quot;#Download-Oracle-JDK-11&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;From &lt;a href=&quot;https://launchpad.net/~linuxuprising/+archive/ubuntu/java/+packages&quot;&gt;https://launchpad.net/~linuxuprising/+archive/ubuntu/java/+packages&lt;/a&gt;, I can identify the focal version:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;oracle-java11-installer-local - 11.0.9-1~linuxuprising0    (changes file)  logix2  2020-10-22  Published   Focal   Java&lt;/code&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;I download the given version from Oracle website: &lt;a href=&quot;https://www.oracle.com/java/technologies/javase-jdk11-downloads.html&quot;&gt;https://www.oracle.com/java/technologies/javase-jdk11-downloads.html&lt;/a&gt;. &lt;strong&gt;Java SE Development Kit 11.0.9&lt;/strong&gt; &lt;strong&gt;Linux x64 Compressed Archive&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;And yes you have to login with an oracle account to download it.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Installation-via-linuxuprising/java&quot;&gt;Installation via linuxuprising/java&lt;a class=&quot;anchor-link&quot; href=&quot;#Installation-via-linuxuprising/java&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:linuxuprising/java
-sudo apt update
-sudo mkdir -p /var/cache/oracle-jdk11-installer-local/
-sudo cp ~/Downloads/jdk-11.0.9_linux-x64_bin.tar.gz /var/cache/oracle-jdk11-installer-local/
-sudo apt install oracle-java11-installer-local
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;After accepting the license agreement, installation is running&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Check&quot;&gt;Check&lt;a class=&quot;anchor-link&quot; href=&quot;#Check&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo update-alternatives --config java
-There are &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; choices &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; the alternative java &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;providing /usr/bin/java&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
-
-  Selection    Path                                         Priority   Status
-------------------------------------------------------------
-  &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   &lt;span class=&quot;m&quot;&gt;1111&lt;/span&gt;      auto mode
-  &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   &lt;span class=&quot;m&quot;&gt;1111&lt;/span&gt;      manual mode
-* &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;            /usr/lib/jvm/java-11-oracle/bin/java          &lt;span class=&quot;m&quot;&gt;1091&lt;/span&gt;      manual mode
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Environment-variable&quot;&gt;Environment variable&lt;a class=&quot;anchor-link&quot; href=&quot;#Environment-variable&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;Enter &lt;code&gt;/usr/lib/jvm/java-11-oracle&lt;/code&gt; as your JAVA_HOME variable in &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat /etc/environment
-&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/usr/lib/jvm/java-11-oracle&amp;quot;&lt;/span&gt;
-$ &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /etc/environment
-$ &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$JAVA_HOME&lt;/span&gt;
-/usr/lib/jvm/java-11-oracle
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="ubuntu" /><category term="java" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="visualization" /><category term="seaborn" /><category term="cheatsheet" /><summary type="html"></summary></entry></feed>
