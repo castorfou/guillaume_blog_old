@@ -131,6 +131,7 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi">(2/24/21) - Step 2 - part 2 - Q-Learning, let’s create an autonomous Taxi</a></li>
+<li class="toc-entry toc-h2"><a href="#3321---back-to-2018---deep-q-learning-with-doom">(3/3/21) - back to 2018 - Deep Q-learning with Doom</a></li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -351,6 +352,31 @@ window.onload = wrap_img;
 <div class="alert alert-info">implement with numpy+gym this algorithm should be a nice exercise.</div>
 
 <p>There is an exercise to implement a taxi, within this <a href="https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H">notebook</a> at colab google. Taxi V3 is an env from opengym.</p>
+
+<h2 id="3321---back-to-2018---deep-q-learning-with-doom">
+<a class="anchor" href="#3321---back-to-2018---deep-q-learning-with-doom" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/3/21) - back to 2018 - Deep Q-learning with Doom</h2>
+
+<p><a href="https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8">Article</a>, <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb">Notebook</a>, <a href="https://youtu.be/gCJyVX98KJ4">Video</a></p>
+
+<p>We’ll create an agent that learns to play Doom. Doom is a big  environment with a gigantic state space (millions of different states).  Creating and updating a Q-table for that environment would not be  efficient at all.</p>
+
+<p>The best idea in this case is to create a <a href="http://neuralnetworksanddeeplearning.com/">neural network</a> that will approximate, given a state, the different Q-values for each action.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*w5GuxedZ9ivRYqM_MLUxOQ.png" alt=""></p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*LglEewHrVsuEGpBun8_KTg.png" alt=""></p>
+
+<p>Addresses pb of temporal limitation: get multiple frames to have sense of motion.</p>
+
+<p>Video is nice because it goes from start and follows closely all steps.</p>
+
+<p>I wil try to implement in my own by creating an environment and running under a clone of Deep_reinforcement_learning_Course <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course">Thomas’s repo</a></p>
+
+<p>Here at <a href="https://github.com/castorfou/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb">Deep Q learning with Doom.ipynb</a></p>
+
+<p>I had to switch to tensorflow-gpu 1.13. Manage some cuda memory issue. But then was able to run it.</p>
+
+<p>However as Thomas says, I should do it step by step on my own.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
