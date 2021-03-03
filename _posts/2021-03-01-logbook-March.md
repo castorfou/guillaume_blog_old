@@ -29,7 +29,7 @@ image: images/logbook.jpg
 
 **Wednesday 3/3**
 
-[Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) chapter using Janus data.
+[Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [LIME](https://christophm.github.io/interpretable-ml-book/lime.html#lime) reading to understand context of local surrogate models. [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) chapter using Janus data.
 
 
 
