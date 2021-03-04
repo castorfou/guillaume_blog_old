@@ -111,43 +111,102 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#setup-the-key">setup the key</a></li>
-<li class="toc-entry toc-h2"><a href="#export-public-key">export public key</a></li>
-<li class="toc-entry toc-h2"><a href="#import-from-windows-box">import from windows box</a></li>
-<li class="toc-entry toc-h2"><a href="#encrypt-files-from-windows-box">encrypt files from windows box</a></li>
-<li class="toc-entry toc-h2"><a href="#decrypt-files-on-linux-box">decrypt files on linux box</a></li>
+<li class="toc-entry toc-h2"><a href="#gpg">gpg</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup-the-key">setup the key</a></li>
+<li class="toc-entry toc-h4"><a href="#export-public-key">export public key</a></li>
+<li class="toc-entry toc-h4"><a href="#import-from-windows-box">import from windows box</a></li>
+<li class="toc-entry toc-h4"><a href="#encrypt-files-from-windows-box">encrypt files from windows box</a></li>
+<li class="toc-entry toc-h4"><a href="#decrypt-files-on-linux-box">decrypt files on linux box</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#find--gpg--tmpfs">find + gpg + tmpfs</a></li>
 </ul><p>from <a href="https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm">best ways to encrypt files on linux</a></p>
 
-<h2 id="setup-the-key">
-<a class="anchor" href="#setup-the-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>setup the key</h2>
+<h2 id="gpg">
+<a class="anchor" href="#gpg" aria-hidden="true"><span class="octicon octicon-link"></span></a>gpg</h2>
+
+<h4 id="setup-the-key">
+<a class="anchor" href="#setup-the-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>setup the key</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--gen-key</span>
 </code></pre></div></div>
 
 <p>and enter a strong passphrase.</p>
 
-<h2 id="export-public-key">
-<a class="anchor" href="#export-public-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>export public key</h2>
+<h4 id="export-public-key">
+<a class="anchor" href="#export-public-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>export public key</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--armor</span> <span class="nt">--output</span> mypubkey.gpg <span class="nt">--export</span> &lt;E-mail that you registered&gt;
 </code></pre></div></div>
 
-<h2 id="import-from-windows-box">
-<a class="anchor" href="#import-from-windows-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>import from windows box</h2>
+<h4 id="import-from-windows-box">
+<a class="anchor" href="#import-from-windows-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>import from windows box</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--import</span> mypubkey.gpg
 </code></pre></div></div>
 
-<h2 id="encrypt-files-from-windows-box">
-<a class="anchor" href="#encrypt-files-from-windows-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>encrypt files from windows box</h2>
+<h4 id="encrypt-files-from-windows-box">
+<a class="anchor" href="#encrypt-files-from-windows-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>encrypt files from windows box</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--output</span> test.txt.gpg <span class="nt">--encrypt</span> <span class="nt">--recipient</span> &lt;Receiver<span class="s1">'s E-Mail ID&gt; test.txt
 </span></code></pre></div></div>
 
-<h2 id="decrypt-files-on-linux-box">
-<a class="anchor" href="#decrypt-files-on-linux-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>decrypt files on linux box</h2>
+<h4 id="decrypt-files-on-linux-box">
+<a class="anchor" href="#decrypt-files-on-linux-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>decrypt files on linux box</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--output</span> test.txt <span class="nt">--decrypt</span> test.txt.gpg
+</code></pre></div></div>
+
+<h2 id="find--gpg--tmpfs">
+<a class="anchor" href="#find--gpg--tmpfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>find + gpg + tmpfs</h2>
+
+<p><strong>encrypt from Windows</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="nt">-name</span> <span class="s1">'df_76*.csv'</span> <span class="nt">-exec</span> gpg <span class="nt">--output</span> <span class="o">{}</span>.gpg <span class="nt">--encrypt</span> <span class="nt">--recipient</span> guillaume.ramelet@michelin.com <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div></div>
+
+<p><strong>decrypt from Linux</strong></p>
+
+<p>There should be better ways to do it.</p>
+
+<p>Here is my process:</p>
+
+<ol>
+  <li>Before starting: call <code class="language-plaintext highlighter-rouge">mount_decrypt.sh</code>. It mounts a tmpfs in <code class="language-plaintext highlighter-rouge">secured_data/data</code>, and decrypt all gpg files to this directory</li>
+  <li>
+    <work>
+</work>
+  </li>
+  <li>After work is done: call <code class="language-plaintext highlighter-rouge">umount_decrypt.sh</code>
+</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">gpg_decrypt.sh</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">gpg_name</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="nv">src_name</span><span class="o">=</span><span class="k">${</span><span class="nv">gpg_name</span><span class="p">%.*</span><span class="k">}</span>
+<span class="nv">TARGET_DATA</span><span class="o">=</span>/home/explore/git/guillaume/d059/secured_data/data
+<span class="nb">echo</span> <span class="s2">"gpg decrypt </span><span class="nv">$gpg_name</span><span class="s2"> -&gt; </span><span class="nv">$src_name</span><span class="s2">"</span>
+gpg <span class="nt">--output</span> <span class="nv">$TARGET_DATA</span>/<span class="nv">$src_name</span> <span class="nt">--decrypt</span> <span class="nv">$gpg_name</span><span class="o">(</span>base<span class="o">)</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">mount_decrypt.sh</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">GPG_DEC_CMD</span><span class="o">=</span>/home/explore/git/guillaume/d059/secured_data/gpg_decrypt.sh
+<span class="nv">TARGET_DATA</span><span class="o">=</span>/home/explore/git/guillaume/d059/secured_data/data
+<span class="nb">sudo </span>mount <span class="nt">-t</span> tmpfs <span class="nt">-o</span> <span class="nv">size</span><span class="o">=</span>1G tmpfs <span class="nv">$TARGET_DATA</span>
+<span class="nb">cd</span> /media/explore/CHACLEF/janus
+find <span class="nb">.</span> <span class="nt">-name</span> <span class="s1">'df_76*.csv.gpg'</span> <span class="nt">-exec</span> <span class="nv">$GPG_DEC_CMD</span> <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">umount_decrypt.sh</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">TARGET_DATA</span><span class="o">=</span>/home/explore/git/guillaume/d059/secured_data/data
+<span class="nb">sudo </span>umount <span class="nv">$TARGET_DATA</span>
 </code></pre></div></div>
 
 
