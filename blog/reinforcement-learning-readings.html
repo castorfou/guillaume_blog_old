@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -114,7 +114,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#12621---reinforcement-learning-for-real-world-robotics">1/26/21 - Reinforcement learning for real-world robotics</a></li>
 <li class="toc-entry toc-h2"><a href="#12621---reinforcement-learning-algorithms--an-intuitive-overview">1/26/21 - Reinforcement Learning algorithms — an intuitive overview</a></li>
 <li class="toc-entry toc-h2"><a href="#12621---reinforcement-learning-partie-1--introduction-in-french">1/26/21 - Reinforcement learning, partie 1 : introduction (in French)</a></li>
-<li class="toc-entry toc-h2"><a href="#12721---reinforcement-learning--an-introduction">1/27/21 - Reinforcement learning : an introduction</a>
+<li class="toc-entry toc-h2"><a href="#12721---reinforcement-learning--an-introduction---i-tabular-solution-methods">1/27/21 - Reinforcement learning : an introduction - I tabular solution methods</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#dynamic-programming-dp-chap4---103-126">dynamic programming (DP) (chap4 - 103-126)</a></li>
 <li class="toc-entry toc-h4"><a href="#monte-carlo-mc-methods-chap5---127-156">monte carlo (MC) methods (chap5 - 127-156)</a></li>
@@ -125,6 +125,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#21821---from-a-deep-reinforcement-learning-based-multi-criteria-decision-support-system-for-optimizing-textile-chemical-process">2/18/21 - from A Deep Reinforcement Learning Based Multi-Criteria Decision Support System for Optimizing Textile Chemical Process</a></li>
 <li class="toc-entry toc-h2"><a href="#21821---the-complete-reinforcement-learning-dictionary">2/18/21 - The Complete Reinforcement Learning Dictionary</a></li>
+<li class="toc-entry toc-h2"><a href="#3521---reinforcement-learning--an-introduction---ii-approximate-solution-methods">3/5/21 - Reinforcement learning : an introduction - II Approximate Solution Methods</a></li>
 </ul><h2 id="12621---reinforcement-learning-for-real-world-robotics">
 <a class="anchor" href="#12621---reinforcement-learning-for-real-world-robotics" aria-hidden="true"><span class="octicon octicon-link"></span></a>1/26/21 - Reinforcement learning for real-world robotics</h2>
 
@@ -154,8 +155,8 @@ from Sutton, Richard S., and Andrew G. Barto <a href="https://github.com/castorf
 
 <p>And the paper for OpenAI Gym <a href="https://github.com/castorfou/datascience-papers/blob/main/RL/2016%20OpenAI%20Gym/1606.01540.pdf">[3] Greg Brockman, Vicki Cheung, Ludwig Pettersson, Jonas Schneider, John Schulman, Jie Tang, Wojciech Zaremba. “OpenAI Gym”. (2016)</a></p>
 
-<h2 id="12721---reinforcement-learning--an-introduction">
-<a class="anchor" href="#12721---reinforcement-learning--an-introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>1/27/21 - Reinforcement learning : an introduction</h2>
+<h2 id="12721---reinforcement-learning--an-introduction---i-tabular-solution-methods">
+<a class="anchor" href="#12721---reinforcement-learning--an-introduction---i-tabular-solution-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>1/27/21 - Reinforcement learning : an introduction - I tabular solution methods</h2>
 
 <p>as a ref. from Reinforcement learning, partie 1 : introduction (in French)</p>
 
@@ -311,6 +312,20 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
     <li>If you’re ready to master RL, I will direct you to the “bible” of Reinforcement Learning — <em>“Reinforcement Learning, an introduction”</em> by Richard Sutton and Andrew Barto. The second edition (from 2018) is available for free (legally) as a <a href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf">PDF file</a>.</li>
   </ul>
 </blockquote>
+
+<h2 id="3521---reinforcement-learning--an-introduction---ii-approximate-solution-methods">
+<a class="anchor" href="#3521---reinforcement-learning--an-introduction---ii-approximate-solution-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/5/21 - Reinforcement learning : an introduction - II Approximate Solution Methods</h2>
+
+<p>This is the 2nd part of the book.</p>
+
+<p><strong>On-policy Approximation of Action Values</strong></p>
+
+<p>As mentioned in introduction of part II, what is developed in part I (our estimates of value functions are represented as a table with one entry for each state or for each state–action pair) is instructive, but of course it is limited to tasks with small numbers of states and actions.</p>
+
+<p>How can experience with a limited subset of the state space be usefully generalized to produce a good approximation over a much larger subset?</p>
+
+<p>This is a generalization issue (or <em>function approximation</em>) one could consider as an instance of supervised learning, where we use the s-&gt;v of each backup as a training example, and then interpret the approximate function produced as an estimated value function.</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
