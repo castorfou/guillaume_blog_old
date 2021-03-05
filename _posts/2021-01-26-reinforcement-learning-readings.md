@@ -190,3 +190,9 @@ How can experience with a limited subset of the state space be usefully generali
 
 This is a generalization issue (or *function approximation*) one could consider as an instance of supervised learning, where we use the s->v of each backup as a training example, and then interpret the approximate function produced as an estimated value function.
 
+Bertsekas and Tsitsiklis (1996) present the state of the art in function approximation in reinforcement learning.
+
+**Policy approximation**
+
+Actor-Critic: The policy structure is known as the actor, because it is used to select actions, and the
+estimated value function is known as the critic, because it criticizes the actions made by the actor.
