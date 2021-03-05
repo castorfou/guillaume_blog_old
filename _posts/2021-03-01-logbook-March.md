@@ -33,4 +33,12 @@ image: images/logbook.jpg
 
 [Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)
 
+**Thursday 3/4**
 
+[Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [PDP](https://christophm.github.io/interpretable-ml-book/pdp.html) chapter using Janus data.
+
+**Friday 3/5**
+
+RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p220-223) - full vs sample backups, trajectory sampling, heuristic search
+
+RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p223+) - start of Approximate Solution Methods, why to use NN.
