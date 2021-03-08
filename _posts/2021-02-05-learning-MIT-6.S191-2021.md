@@ -202,3 +202,11 @@ Let's see how to do it with policy learning:
 ![](../images/mit_6S191_lec5_pg_key_idea.png)
 
 ![](../images/mit_6S191_lec5_pg_training.png)
+
+Alexanders ends the lecture by discussing about Deepmind progress:
+
+- alphaGo - 2016: with a pretrain in supervised mode then standard DRL
+- alphaGo Zero - 2017: standard DRL without pretraining
+- alphaZero - 2018: standard DRL without pretraining and applied to several games (Go, Chess, Shogi)
+- MuZero - 2020: learns the rules of the game by itself, create unknown dynamics
+
