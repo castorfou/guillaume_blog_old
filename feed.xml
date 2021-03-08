@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-08T01:11:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-08T04:40:36-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -908,7 +908,29 @@ conda env export --from-history &amp;gt; env_`echo $CONDA_DEFAULT_ENV`.yml
 
 &lt;p&gt;Would be interested to see how to apply to non computer vision problems.&lt;/p&gt;
 
-&lt;h2 id=&quot;3821---deep-reinforcement-learning---lecture-5&quot;&gt;3/8/21 - Deep Reinforcement Learning - lecture 5&lt;/h2&gt;</content><author><name></name></author><category term="deep learning" /><category term="MIT" /><category term="tensorflow" /><summary type="html">From http://introtodeeplearning.com/</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/DL.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/DL.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement learning readings</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-readings.html" rel="alternate" type="text/html" title="Reinforcement learning readings" /><published>2021-01-26T00:00:00-06:00</published><updated>2021-01-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-readings</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-readings.html">&lt;h2 id=&quot;12621---reinforcement-learning-for-real-world-robotics&quot;&gt;1/26/21 - Reinforcement learning for real-world robotics&lt;/h2&gt;
+&lt;h2 id=&quot;3821---deep-reinforcement-learning---lecture-5&quot;&gt;3/8/21 - Deep Reinforcement Learning - lecture 5&lt;/h2&gt;
+
+&lt;p&gt;Q-function captures the expected total future reward an agent in state &lt;em&gt;s&lt;/em&gt; can receive by executing a certain action &lt;em&gt;a&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Distinction between &lt;strong&gt;Value Learning&lt;/strong&gt; (learn Q function) and &lt;strong&gt;Policy Learning&lt;/strong&gt; (find directly &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(s)).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_pg_dqn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Value Learning or DQN&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_dqn_summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_dqn_downsides.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The key thing is about handling of continuous actions.&lt;/p&gt;
+
+&lt;p&gt;Let’s see how to do it with policy learning:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Policy learning or Policy Gradient (PG)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_pg_key_idea.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_pg_training.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="MIT" /><category term="tensorflow" /><summary type="html">From http://introtodeeplearning.com/</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/DL.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/DL.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement learning readings</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-readings.html" rel="alternate" type="text/html" title="Reinforcement learning readings" /><published>2021-01-26T00:00:00-06:00</published><updated>2021-01-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-readings</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-readings.html">&lt;h2 id=&quot;12621---reinforcement-learning-for-real-world-robotics&quot;&gt;1/26/21 - Reinforcement learning for real-world robotics&lt;/h2&gt;
 
 &lt;p&gt;from &lt;a href=&quot;https://www.youtube.com/watch?v=Obek04C8L5E&amp;amp;feature=youtu.be&quot;&gt;https://www.youtube.com/watch?v=Obek04C8L5E&amp;amp;feature=youtu.be&lt;/a&gt;&lt;/p&gt;
 

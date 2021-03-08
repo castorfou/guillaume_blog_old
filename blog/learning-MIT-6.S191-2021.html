@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -284,6 +284,28 @@ window.onload = wrap_img;
 
 <h2 id="3821---deep-reinforcement-learning---lecture-5">
 <a class="anchor" href="#3821---deep-reinforcement-learning---lecture-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/8/21 - Deep Reinforcement Learning - lecture 5</h2>
+
+<p>Q-function captures the expected total future reward an agent in state <em>s</em> can receive by executing a certain action <em>a</em>.</p>
+
+<p>Distinction between <strong>Value Learning</strong> (learn Q function) and <strong>Policy Learning</strong> (find directly <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>(s)).</p>
+
+<p><img src="../images/mit_6S191_lec5_pg_dqn.png" alt=""></p>
+
+<p><strong>Value Learning or DQN</strong></p>
+
+<p><img src="../images/mit_6S191_lec5_dqn_summary.png" alt=""></p>
+
+<p><img src="../images/mit_6S191_lec5_dqn_downsides.png" alt=""></p>
+
+<p>The key thing is about handling of continuous actions.</p>
+
+<p>Let’s see how to do it with policy learning:</p>
+
+<p><strong>Policy learning or Policy Gradient (PG)</strong></p>
+
+<p><img src="../images/mit_6S191_lec5_pg_key_idea.png" alt=""></p>
+
+<p><img src="../images/mit_6S191_lec5_pg_training.png" alt=""></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
