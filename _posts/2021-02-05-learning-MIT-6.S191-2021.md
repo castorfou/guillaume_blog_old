@@ -178,3 +178,27 @@ Would be interested to see how to apply to non computer vision problems.
 
 
 ## 3/8/21 - Deep Reinforcement Learning - lecture 5
+
+Q-function captures the expected total future reward an agent in state *s* can receive by executing a certain action *a*.
+
+Distinction between **Value Learning** (learn Q function) and **Policy Learning** (find directly $$\pi$$(s)).
+
+![](../images/mit_6S191_lec5_pg_dqn.png)
+
+
+
+**Value Learning or DQN**
+
+![](../images/mit_6S191_lec5_dqn_summary.png)
+
+![](../images/mit_6S191_lec5_dqn_downsides.png)
+
+The key thing is about handling of continuous actions.
+
+Let's see how to do it with policy learning:
+
+**Policy learning or Policy Gradient (PG)**
+
+![](../images/mit_6S191_lec5_pg_key_idea.png)
+
+![](../images/mit_6S191_lec5_pg_training.png)
