@@ -75,6 +75,28 @@ Done
 
 
 
+**clustergit status (less detailed: hide Clean)**
+
+```bash
+$ clustergit -H
+Scanning sub directories of .
+./d059                                  : On branch main, Changes
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+```
+
+
+
+
+
+
+
 **Clean** vs **On branch main, No Changes**
 
 seems related to branch name. If branch is named master, then clean is displayed.
@@ -84,3 +106,24 @@ seems related to branch name. If branch is named master, then clean is displayed
 **Git pull, push**
 
 I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)
+
+
+
+## Rename branches from *main* to *master*
+
+[Renaming a branch](https://docs.github.com/en/github/administering-a-repository/renaming-a-branch) from github website.
+
+Rename branch main to master from github website 
+
+![](https://docs.github.com/assets/images/help/branches/branches-link.png)
+
+Update local clones
+
+```bash
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+```
+
+
+
