@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-09T04:01:12-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-09T04:34:21-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
+git clone git@github.com:mnagel/clustergit.git
+&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+./Deep_reinforcement_learning_Course    : Changes
+./ReinforcementLearning_references      : On branch main, Untracked files
+./blog                                  : Untracked files
+./d059                                  : On branch main, Changes
+./data-scientist-skills                 : Clean
+./deeplearning_specialization           : Clean
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./gan_specialization                    : Clean
+./hello_nbdev                           : Clean
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
+On branch main
+Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+nothing to commit, working tree clean
+
+./squeezebox                            : On branch main, No Changes
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
@@ -1200,43 +1263,4 @@ Ronald Howard (1960) devised the policy iteration method for MDPs. All of these 
 &lt;p&gt;&lt;strong&gt;Policy approximation&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Actor-Critic: The policy structure is known as the actor, because it is used to select actions, and the
-estimated value function is known as the critic, because it criticizes the actions made by the actor.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">1/26/21 - Reinforcement learning for real-world robotics</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Aristotle and Deep learning</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aristotle-and-deep-learning.html" rel="alternate" type="text/html" title="Aristotle and Deep learning" /><published>2021-01-21T00:00:00-06:00</published><updated>2021-01-21T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aristotle-and-deep-learning</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aristotle-and-deep-learning.html">&lt;!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2021-01-21-Aristotle-and-deep-learning.ipynb
---&gt;
-
-&lt;div class=&quot;container&quot; id=&quot;notebook-container&quot;&gt;
-        
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;By reading some references in recent paper, I have started to read “artificial intelligence structures and strategies for complex problem solving” by &lt;a href=&quot;https://www.cs.unm.edu/~luger/&quot;&gt;George Luger&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/51nHNl+xfjL._SX258_BO1,204,203,200_.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;This is a massive book from 2005 in its 6th edition. I don’t think it has been updated since that.
-And the author starts a writing of AI history.&lt;/p&gt;
-&lt;p&gt;I have been intrigued by the use of the opening sentence from Aristotle in the Metaphysics: “All men by nature desire to know…”. I remembered that sentence (without knowing it was from Aristotle), and I jumped to The Metaphysics &lt;em&gt; Aristotle’s [wikipedia page](&lt;a href=&quot;https://fr.wikipedia.org/wiki/M%C3%A9taphysique&quot;&gt;https://fr.wikipedia.org/wiki/M%C3%A9taphysique&lt;/a&gt;&lt;/em&gt;%28Aristote%29) (the French one). There is a nice presentation of The MetaPhysics and some extracts that I have found quite interesting. One of them following “All men by nature desire to know” is detailing what is art and science; and for art: one need to be able to recognize similar cases and be able to generalize to an (more) universal rule.&lt;/p&gt;
-&lt;p&gt;I cannot not see a link with what is happening in what we do on a daily basis in AI and deep learning. I had been surprised by Jeremy Howard’s curriculum (if I am not wrong he has a major) in Philosophy, and I better understand why he is so good in what he does.&lt;/p&gt;
-&lt;p&gt;Should have studied Philosophy and ancient Greek!&lt;/p&gt;
-&lt;p&gt;Would love to know your thoughts about that. (and if anyone can ask Jeremy’s without directly @ him)&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;Here is a more detailed analysis of Aristotle thought: (again from wikipedia, not my own ;))&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;By nature, all animals are sentient; but sensation is not yet sufficient to produce knowledge: indeed, remarks Aristotle, sensation engenders memory or not. But animals endowed with memory are the most intelligent and the best able to learn. However, man “lives on art and reasoning.” To learn, you have to feel, remember, but man has the capacity to draw experience from these simple images and from a multitude of experimental notions emerges a single judgment that is universal in all similar cases: it is what constitutes art: “Science and art arise for men through experience” 10. Art therefore presupposes: the ability to recognize similar cases and the ability to apply a universal rule to these cases.
-
-Of experience and art, which is more perfect? In practical life, experience seems superior to art, because it is knowledge of the particular, of the individual: sensations, the foundation of knowledge of the particular, are not science and do not teach us the why ( διότι). Art, for its part, knows the universal and goes beyond individual things, it is to art that knowledge and the faculty of understanding belong: men of art know the why and the cause. The wisest are wise not by practical skill, but by theory (λόγος) and knowledge of the causes. This explains the superiority of the architect over the maneuver.
-
-The sign of this knowledge is that it can be taught; now men of art can teach. However, among the arts some relate to the necessities of life and others come from “leisure” which is knowledge sought for itself, as in mathematics. And through these appears the highest knowledge, wisdom, which has for its object the first causes and the first principles of what-is; therefore the theoretical sciences are superior to the practical sciences.
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;From observations (rows of data) we can recognize similar cases (patterns or embeddings) and identify universal rules (models?)&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+estimated value function is known as the critic, because it criticizes the actions made by the actor.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">1/26/21 - Reinforcement learning for real-world robotics</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
