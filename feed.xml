@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-09T04:51:08-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-09T05:19:35-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
 
@@ -12,7 +12,7 @@ git clone git@github.com:mnagel/clustergit.git
 &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
 
@@ -91,7 +91,22 @@ Done
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
 git fetch origin
 git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
+
+&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?)&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
