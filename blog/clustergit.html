@@ -112,6 +112,7 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#installation">Installation</a></li>
 <li class="toc-entry toc-h2"><a href="#usage">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#rename-branches-from-main-to-master">Rename branches from main to master</a></li>
 </ul><p>Very basic question to help keep my repo clean.</p>
 
 <h2 id="installation">
@@ -171,6 +172,21 @@ nothing to commit, working tree clean
 Done
 </code></pre></div></div>
 
+<p><strong>clustergit status (less detailed: hide Clean)</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>clustergit <span class="nt">-H</span>
+Scanning sub directories of <span class="nb">.</span>
+./d059                                  : On branch main, Changes
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+</code></pre></div></div>
+
 <p><strong>Clean</strong> vs <strong>On branch main, No Changes</strong></p>
 
 <p>seems related to branch name. If branch is named master, then clean is displayed.</p>
@@ -178,6 +194,24 @@ Done
 <p><strong>Git pull, push</strong></p>
 
 <p>I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)</p>
+
+<h2 id="rename-branches-from-main-to-master">
+<a class="anchor" href="#rename-branches-from-main-to-master" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rename branches from <em>main</em> to <em>master</em>
+</h2>
+
+<p><a href="https://docs.github.com/en/github/administering-a-repository/renaming-a-branch">Renaming a branch</a> from github website.</p>
+
+<p>Rename branch main to master from github website</p>
+
+<p><img src="https://docs.github.com/assets/images/help/branches/branches-link.png" alt=""></p>
+
+<p>Update local clones</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-m</span> main master
+git fetch origin
+git branch <span class="nt">-u</span> origin/master master
+</code></pre></div></div>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
