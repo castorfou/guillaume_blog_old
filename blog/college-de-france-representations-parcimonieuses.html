@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -118,6 +118,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#21021---approximations-linéaires-et-analyse-de-fourier-lecture-2">2/10/21 - Approximations linéaires et analyse de Fourier (lecture 2)</a></li>
 <li class="toc-entry toc-h2"><a href="#22321---grande-dimension-et-composantes-principales-lecture-3">2/23/21 - Grande dimension et composantes principales (lecture 3)</a></li>
 <li class="toc-entry toc-h2"><a href="#3221---approximations-non-linéaires-et-réseaux-de-neurones-lecture-4">3/2/21 - Approximations non linéaires et réseaux de neurones (lecture 4)</a></li>
+<li class="toc-entry toc-h2"><a href="#3921---ondelettes-et-échantillonnage-lecture-5">3/9/21 - Ondelettes et échantillonnage (lecture 5)</a></li>
 </ul><p>Un cours au collège de France de Stéphane Mallat sur les <a href="https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm">représentations parcimonieuses - 2021</a>.</p>
 
 <p>Cela donne envie d’aller voir ses autres cours:</p>
@@ -212,6 +213,17 @@ window.onload = wrap_img;
 <p>Introduction des bases d’ondelettes qui vont permettre de représenter les singularités locales. Les ondelettes sont à la fois localisées (paramètre v) et dilatées (paramètre s). Il faudra à partir de ces ondelettes construire des bases orthogonales pour arriver à des approximations basses dimensions (et garder les grands coefficients)</p>
 
 <p>On introduit la notion de régularité locale exprimée avec lipchitz <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>. Avec <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span> &lt;1 pour exprimer les singularités.</p>
+
+<h2 id="3921---ondelettes-et-échantillonnage-lecture-5">
+<a class="anchor" href="#3921---ondelettes-et-%C3%A9chantillonnage-lecture-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/9/21 - Ondelettes et échantillonnage (lecture 5)</h2>
+
+<p>On était resté sur une représentation de signaux qui ne présentent pas de régularité uniforme mais qui présentent des singularités que nous voulons capter, ces singularités étant porteuses d’informations importantes (par exemple les contours dans une image). Ces singularités n’étant pas très nombreuses, on peut toujours parler de <strong>régularité locale</strong>.</p>
+
+<p>On va donc utiliser des ondelettes pour décomposer ces signaux, d’où la notion de <strong>représentation parcimonieuse</strong>, exprimée sur la base d’ondelettes orthonormales. Et enfin en en sélectionnant un petit nombre nous revenons sur nos <strong>approximations en basse dimension</strong>.</p>
+
+<p>Le produit scalaire du signal x(u) par l’ondelette <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ψ</span></span></span></span><sub>v,s</sub> revient à un produit de convolution de x par l’ondelette conjuguée. Ca veut dire que sur les points de singularités les produits scalaires vont être maximisés.</p>
+
+<p>Stéphane Mallat passe un long moment pour nous amener à la construction de ces bases d’ondelettes orthonormales. Il part des bases de Haar puis de Shannon et arrive à une construction plus récente par Yves Meyer en 1986.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
