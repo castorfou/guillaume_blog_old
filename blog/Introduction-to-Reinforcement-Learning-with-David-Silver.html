@@ -121,8 +121,57 @@ window.onload = wrap_img;
 
 <p><a href="https://github.com/castorfou/introduction-reinforcement-learning-david-silver">My repo with slides</a></p>
 
+<p><img src="../images/deepmind_sylabus.png" alt=""></p>
+
 <h2 id="3921---lecture-1-introduction-to-reinforcement-learning">
 <a class="anchor" href="#3921---lecture-1-introduction-to-reinforcement-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/9/21 - Lecture 1: Introduction to Reinforcement Learning</h2>
+
+<p>This introduction is essentially about giving examples of RL to have a good intuition about this field and to provide definitions or context:</p>
+
+<ul>
+  <li>Definitions: rewards, actions, agent, environment, state (and history)</li>
+  <li>Major components: policy, value function, model</li>
+  <li>Categorizing RL agents (taxonomy): value based, policy based, actor critic, model free, model based</li>
+  <li>Learning and planning</li>
+  <li>Prediction and control</li>
+</ul>
+
+<p>And David gives 2 references:</p>
+
+<ul>
+  <li>
+<a href="/guillaume_blog/blog/reinforcement-learning-readings.html">well known</a> Introduction to Reinforcement Learning, Sutton and Barto, 1998</li>
+  <li>Algorithms for Reinforcement Learning, Szepesvari. Available <a href="http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf">online</a>.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>(s): essentially a map from state to action. Can be deterministic <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>(s) or stochastic <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>(a</td>
+      <td>s).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Value function v<sub>$\pi$</sub>(s): is a prediction of expected future reward.</p>
+
+<p>Model: it is not the environment itself but useful to predict what the environment will do next. 2 types of models: transitions model and rewards model. Transition model predicts the next state (e.g. based on dynamics). Reward model predicts the next immediate reward.</p>
+
+<p>A lot of algorithms are model-free and doesn’t require these models. It is a fundamental distinctions in RL.</p>
+
+<p><img src="../images/deepmind_lec1_taxonomy.png" alt=""></p>
+
+<p>And then David explains 2 fundamental different problems with Learning vs Planning.</p>
+
+<p>With Learning, environment is unknown, agent interacts directly with the environment and improves its policy.</p>
+
+<p>With Planning, a model of environment is known, and agent “plays” with this model and improves its policy.</p>
+
+<p>These 2 problems may be linked where you start to learn from the environment and apply planning then.</p>
+
+<p>2 examples based on atari games.</p>
+
+<p>Another topic is exploration vs exploitation then prediction and control.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"

@@ -1,10 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-09T03:01:39-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-09T04:01:12-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/introduction-reinforcement-learning-david-silver&quot;&gt;My repo with slides&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;3921---lecture-1-introduction-to-reinforcement-learning&quot;&gt;3/9/21 - Lecture 1: Introduction to Reinforcement Learning&lt;/h2&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_sylabus.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3921---lecture-1-introduction-to-reinforcement-learning&quot;&gt;3/9/21 - Lecture 1: Introduction to Reinforcement Learning&lt;/h2&gt;
+
+&lt;p&gt;This introduction is essentially about giving examples of RL to have a good intuition about this field and to provide definitions or context:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Definitions: rewards, actions, agent, environment, state (and history)&lt;/li&gt;
+  &lt;li&gt;Major components: policy, value function, model&lt;/li&gt;
+  &lt;li&gt;Categorizing RL agents (taxonomy): value based, policy based, actor critic, model free, model based&lt;/li&gt;
+  &lt;li&gt;Learning and planning&lt;/li&gt;
+  &lt;li&gt;Prediction and control&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And David gives 2 references:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;well known&lt;/a&gt; Introduction to Reinforcement Learning, Sutton and Barto, 1998&lt;/li&gt;
+  &lt;li&gt;Algorithms for Reinforcement Learning, Szepesvari. Available &lt;a href=&quot;http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf&quot;&gt;online&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(s): essentially a map from state to action. Can be deterministic &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(s) or stochastic &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(a&lt;/td&gt;
+      &lt;td&gt;s).&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Value function v&lt;sub&gt;$\pi$&lt;/sub&gt;(s): is a prediction of expected future reward.&lt;/p&gt;
+
+&lt;p&gt;Model: it is not the environment itself but useful to predict what the environment will do next. 2 types of models: transitions model and rewards model. Transition model predicts the next state (e.g. based on dynamics). Reward model predicts the next immediate reward.&lt;/p&gt;
+
+&lt;p&gt;A lot of algorithms are model-free and doesn’t require these models. It is a fundamental distinctions in RL.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec1_taxonomy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then David explains 2 fundamental different problems with Learning vs Planning.&lt;/p&gt;
+
+&lt;p&gt;With Learning, environment is unknown, agent interacts directly with the environment and improves its policy.&lt;/p&gt;
+
+&lt;p&gt;With Planning, a model of environment is known, and agent “plays” with this model and improves its policy.&lt;/p&gt;
+
+&lt;p&gt;These 2 problems may be linked where you start to learn from the environment and apply planning then.&lt;/p&gt;
+
+&lt;p&gt;2 examples based on atari games.&lt;/p&gt;
+
+&lt;p&gt;Another topic is exploration vs exploitation then prediction and control.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -122,7 +170,9 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Tuesday 3/9&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Ondelettes et échantillonnage (lecture 5)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Ondelettes et échantillonnage (lecture 5)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Introduction to Reinforcement Learning (lecture 1)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 
