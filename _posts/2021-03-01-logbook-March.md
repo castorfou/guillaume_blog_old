@@ -56,3 +56,4 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Introduction to Reinforcement Learning (lecture 1)
 
+Installation of [clustergit](/guillaume_blog/blog/clustergit.html) to detect local (=uncommited  or unpushed) changes in repo
