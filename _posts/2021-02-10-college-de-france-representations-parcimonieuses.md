@@ -106,11 +106,15 @@ On introduit la notion de régularité locale exprimée avec lipchitz $$\alpha$$
 
 
 
+## 3/9/21 - Ondelettes et échantillonnage (lecture 5)
 
+On était resté sur une représentation de signaux qui ne présentent pas de régularité uniforme mais qui présentent des singularités que nous voulons capter, ces singularités étant porteuses d'informations importantes (par exemple les contours dans une image). Ces singularités n'étant pas très nombreuses, on peut toujours parler de **régularité locale**.
 
+On va donc utiliser des ondelettes pour décomposer ces signaux, d'où la notion de **représentation parcimonieuse**, exprimée sur la base d'ondelettes orthonormales. Et enfin en en sélectionnant un petit nombre nous revenons sur nos **approximations en basse dimension**.
 
+Le produit scalaire du signal x(u) par l'ondelette $$\psi$$<sub>v,s</sub> revient à un produit de convolution de x par l'ondelette conjuguée. Ca veut dire que sur les points de singularités les produits scalaires vont être maximisés.
 
-
+Stéphane Mallat passe un long moment pour nous amener à la construction de ces bases d'ondelettes orthonormales. Il part des bases de Haar puis de Shannon et arrive à une construction plus récente par Yves Meyer en 1986.
 
 
 

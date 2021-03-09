@@ -49,4 +49,8 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 
 **Monday 3/8**
 
-[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Deep Reinforcement Learning.
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Deep Reinforcement Learning. Q-learning vs Policy Gradient.
+
+**Tuesday 3/9**
+
+[College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Ondelettes et échantillonnage (lecture 5)
