@@ -1,6 +1,6 @@
 ---
 title: "Git - How to find all *unpushed* commits for all projects in a directory?"
-description: gitcluster - installation and usage
+description: clustergit, RabbitVCS - installation and usage
 toc: true
 comments: true
 layout: post
@@ -11,7 +11,7 @@ Very basic question to help keep my repo clean.
 
 
 
-## Installation
+## Installation clustergit
 
 [clustergit](https://github.com/mnagel/clustergit) seems a good candidate
 
@@ -28,7 +28,7 @@ source ~.bashrc
 
 
 
-## Usage
+## Usage clustergit
 
 **clustergit status**
 
@@ -127,3 +127,18 @@ git branch -u origin/master master
 
 
 
+## RabbitVCS
+
+From this [page](https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/)
+
+*Installation*
+
+```bash
+sudo apt install rabbitvcs-nautilus
+```
+
+*Result*
+
+![](https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png)
+
+These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?)
