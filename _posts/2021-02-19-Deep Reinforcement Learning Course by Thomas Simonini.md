@@ -310,5 +310,15 @@ I have to see full implementation in the notebook to fully understand the logic.
 
 
 
+About the **video**
+
+Thomas has insisted about the importance to master these architecture (DQN then DDQN, etc) before going further with state of the art architectures (Policy Gradient, PPO...)
+
+Approach in videos is now different. In previous videos it was about explaining articles. Now it is more turned to implementation details based on notebooks. 
+
+Thomas has given a reference to Arthur Juliani who is a senior ML engineer at [Unity](https://unity.com/fr/products/machine-learning-agents). I would like to browse though this reference and see what can be done.
+
+Should follow video and run/update notebook in //.
+
 
 
