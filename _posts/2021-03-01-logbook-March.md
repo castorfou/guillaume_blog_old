@@ -30,7 +30,7 @@ image: images/logbook.jpg
 
 [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [LIME](https://christophm.github.io/interpretable-ml-book/lime.html#lime) reading to understand context of local surrogate models. [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) chapter using Janus data.
 
-[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter 3) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)
 
 **Thursday 3/4**
 
@@ -57,3 +57,9 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Introduction to Reinforcement Learning (lecture 1)
 
 Installation of [clustergit](/guillaume_blog/blog/clustergit.html) to detect local (=uncommited  or unpushed) changes in repo
+
+**Wednesday 3/10**
+
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter4) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))
+
+t-SNE using Janus data.

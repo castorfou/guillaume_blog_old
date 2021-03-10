@@ -12,7 +12,7 @@ A course by [Thomas Simonini](https://www.simoninithomas.com/)
 
 [Syllabus (from 2018)](https://simoninithomas.github.io/Deep_reinforcement_learning_Course/) 
 
-[kind of syllabus (from 2020)](https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc)
+[Course introduction (from 2020)](https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc) 
 
 Everything available in [github](https://github.com/simoninithomas/Deep_reinforcement_learning_Course)
 
@@ -233,3 +233,82 @@ Here at [Deep Q learning with Doom.ipynb](https://github.com/castorfou/Deep_rein
 I had to switch to tensorflow-gpu 1.13. Manage some cuda memory issue. But then was able to run it.
 
 However as Thomas says, I should do it step by step on my own.
+
+## (3/10/21) - Chapter 4: Improvements in Deep Q Learning V1
+
+[Article](https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb), [Video](https://www.youtube.com/watch?v=-Ynjw0Vl3i4&feature=emb_title)
+
+four strategies that improve — dramatically — the training and the results of our DQN agents:
+
+- fixed Q-targets
+- double DQNs
+- dueling DQN (aka DDQN)
+- Prioritized Experience Replay (aka PER)
+
+**fixed Q-targets** to avoid chasing a moving target
+
+- Using a separate network with a fixed parameter (let’s call it w-) for estimating the TD target.
+- At every $$\Tau$$ step, we copy the parameters from our DQN network to update the target network.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*D9i0I2EO7LKL2aAb2HLfTg.png)
+
+[Improvements in Deep Q Learning: Dueling Double DQN, Prioritized Experience Replay, and fixed…](https://www.freecodecamp.org/news/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682/)
+
+*Implementation*
+
+Implementing fixed q-targets is pretty straightforward:
+
+-   First, we create two networks (`DQNetwork`, `TargetNetwork`)
+
+-   Then, we create a function that will take our `DQNetwork` parameters and copy them to our `TargetNetwork`
+
+-   Finally, during the training, we calculate the TD target using our target network. We update the target network with the `DQNetwork` every $$\Tau$$ step ($$\Tau$$ is an hyper-parameter that we define).
+
+**double DQNs** to handle overestimating of Q-values (at the beginning of training, taking the maximum q value (which is noisy) as the best action to take can lead to false positives)
+
+we move from this TD target logic
+
+![](https://cdn-media-1.freecodecamp.org/images/1*KsQ46R8zyTQlKGv91xi6ww.png)
+
+to the use of 2 networks
+
+- use our DQN network to select what is the best action to take for the next state (the action with the highest Q value).
+- use our target network to calculate the target Q value of taking that action at the next state.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*g5l4q162gDRZAAsFWtX7Nw.png)
+
+
+
+*Implementation*
+
+![](https://cdn-media-1.freecodecamp.org/images/1*oyGR6gJ4WyqeKOfq0Cd8iQ.png)
+
+
+
+**Dueling DQN (aka DDQN)**
+
+based on this paper [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/pdf/1511.06581.pdf).
+
+With DDQN, we want to separate the estimator of these two elements, using two new streams:
+
+- one that estimates the **state value V(s)**
+- one that estimates the **advantage for each action A(s,a)**
+
+![](https://cdn-media-1.freecodecamp.org/images/1*FkHqwA2eSGixdS-3dvVoMA.png)
+
+
+
+and this can be combined with **Prioritized experience replay**.
+
+This is nicely explained in this [article](https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/). DDQN explanation is clearer than Thomas'.
+
+The key here is to deal efficiently with experiences. When treating all samples the same,  we are not using the fact that we can learn more from some transitions than from others. Prioritized Experience Replay (PER) is one strategy that tries to leverage this fact by changing the sampling distribution.
+
+I guess there are several options to manage this prioritization (we would prefer transitions that do not fit well to our current estimate of Q function). And a key aspect is the performance of this selection. One implementation is SumTree.
+
+I have to see full implementation in the notebook to fully understand the logic.
+
+
+
+
+
