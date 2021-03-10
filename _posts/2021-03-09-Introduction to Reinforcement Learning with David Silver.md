@@ -35,7 +35,7 @@ And David gives 2 references:
 
 
 
-Policy $$\pi$$(s): essentially a map from state to action. Can be deterministic $$\pi$$(s) or stochastic $$\pi$$(a|s).
+Policy $$\pi$$(s): essentially a map from state to action. Can be deterministic $$\pi$$(s) or stochastic $$\pi$$(a&#124;s).
 
 Value function v<sub>$\pi$</sub>(s): is a prediction of expected future reward.
 
