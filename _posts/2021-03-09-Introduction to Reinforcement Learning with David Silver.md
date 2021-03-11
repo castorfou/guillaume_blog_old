@@ -58,3 +58,98 @@ These 2 problems may be linked where you start to learn from the environment and
 
 
 Another topic is exploration vs exploitation then prediction and control.
+
+## 3/10/21 - Lecture 2: Markov Decision Processes
+
+***Markov decision processes*** formally describe an environment for reinforcement learning.
+
+***Markov property***: the future is independent of the past given the present.
+
+***Markov Process*** (or ***Markov Chain***) is the tuple (S, P)
+
+![](../images/deepmind_lec2_markovchain.png)
+
+We can take sample episodes from this chain. (e.g. C1 FB FB C1 C2 C3 Pub C1 FB FB FB C1 C2 C3 Pub C2 Sleep)
+
+We can formalize the transition matrix from s to s'.
+
+When you add reward you get ***Markov reward process*** (S, P, R, $$\gamma$$)
+
+Reward here is a function to map for each state the immediate reward.
+
+$$\gamma$$ is the discounted factor, $$\epsilon$$ [0,1]. David explains why we could need such discount.
+
+***Return*** Gt is the total discounted reward at time-step t for a given sample.
+
+![](../images/deepmind_lec2_return.png)
+
+***Value function*** v(s) is really what we care about, it is the long-term value of state s.
+
+![](../images/deepmind_lec2_valuefunction.png)
+
+
+
+***Bellman Equation for MRPs***
+
+The value function can be decomposed into two parts:
+- immediate reward R<sub>t+1</sub>
+- discounted value of next state $$\gamma$$.v (S<sub>t+1</sub>)
+
+![](../images/deepmind_lec2_bellman.png)
+
+We use that to calculate value function with $$\gamma$$ $\neq$ 0.
+
+And calculating value function can be seen as the resolution of this linear equation:
+
+![](../images/deepmind_lec2_bellman_solving.png)
+
+And now we introduce actions and it gives ***Markov Decision Process***
+
+![](../images/deepmind_lec2_mdp.png)
+
+And we introduce policy
+
+![](../images/deepmind_lec2_policy.png)
+
+Then we can define the *state-value function* v<sub>$\pi$</sub>(s,a) for a given policy $$\pi$$
+
+![](../images/deepmind_lec2_statevaluefunction.png)
+
+and *action-value function* q<sub>$\pi$</sub>(s,a) for a given policy $$\pi$$
+
+![](../images/deepmind_lec2_actionvaluefunction.png)
+
+
+
+And impact on Bellman Equation ends like that:
+
+![](../images/deepmind_lec2_bellman_mdp.png)
+
+v is giving us how good it is to be in a state. q is giving us how good is it to take an action.
+
+And then we have the Bellman equation expressed with v and q.
+
+We don't care much about a given v<sub>$\pi$</sub>, we want to get the best policy. And ultimately to get q<sub>*</sub> which is the **optimal action value function**.
+
+![](/home/explore/git/guillaume/blog/images/deepmind_lec2_optimal_value_function.png)
+
+The optimal value function specifies the best possible performance in the MDP.
+A MDP is “solved” when we know the optimal value function q<sub>*</sub>.
+
+What we really care about is **optimal policy** $$\pi$$<sub>*</sub>. There is a partial ordering about policies. And a theorem saying that for any MDP, there exists at least one optimal policy.
+
+So the optimal value function calculation is similar to what we did earlier when we averaged the value of the next state but now we take the max instead of average.
+
+
+
+So no we can write the **Bellman Optimality Equation**. Unfortunately this is non-linear.
+
+There are many approaches such as iterative ones. 
+
+- Value Iteration
+- Policy Iteration
+- Q-learning
+- Sarsa
+
+
+

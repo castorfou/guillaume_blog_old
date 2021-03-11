@@ -63,3 +63,6 @@ Installation of [clustergit](/guillaume_blog/blog/clustergit.html) to detect loc
 [Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter4) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))
 
 t-SNE using Janus data.
+
+[RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Markov Decision Processes (lecture 2)
+
