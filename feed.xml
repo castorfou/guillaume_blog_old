@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-10T07:57:36-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-11T08:00:13-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
@@ -153,7 +153,97 @@ git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
 
 &lt;p&gt;2 examples based on atari games.&lt;/p&gt;
 
-&lt;p&gt;Another topic is exploration vs exploitation then prediction and control.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another topic is exploration vs exploitation then prediction and control.&lt;/p&gt;
+
+&lt;h2 id=&quot;31021---lecture-2-markov-decision-processes&quot;&gt;3/10/21 - Lecture 2: Markov Decision Processes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Markov decision processes&lt;/em&gt;&lt;/strong&gt; formally describe an environment for reinforcement learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Markov property&lt;/em&gt;&lt;/strong&gt;: the future is independent of the past given the present.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Markov Process&lt;/em&gt;&lt;/strong&gt; (or &lt;strong&gt;&lt;em&gt;Markov Chain&lt;/em&gt;&lt;/strong&gt;) is the tuple (S, P)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_markovchain.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can take sample episodes from this chain. (e.g. C1 FB FB C1 C2 C3 Pub C1 FB FB FB C1 C2 C3 Pub C2 Sleep)&lt;/p&gt;
+
+&lt;p&gt;We can formalize the transition matrix from s to s’.&lt;/p&gt;
+
+&lt;p&gt;When you add reward you get &lt;strong&gt;&lt;em&gt;Markov reward process&lt;/em&gt;&lt;/strong&gt; (S, P, R, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;γ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\gamma&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05556em;&quot;&gt;γ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/p&gt;
+
+&lt;p&gt;Reward here is a function to map for each state the immediate reward.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;γ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\gamma&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05556em;&quot;&gt;γ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; is the discounted factor, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; [0,1]. David explains why we could need such discount.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Return&lt;/em&gt;&lt;/strong&gt; Gt is the total discounted reward at time-step t for a given sample.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_return.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Value function&lt;/em&gt;&lt;/strong&gt; v(s) is really what we care about, it is the long-term value of state s.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_valuefunction.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Bellman Equation for MRPs&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The value function can be decomposed into two parts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;immediate reward R&lt;sub&gt;t+1&lt;/sub&gt;&lt;/li&gt;
+  &lt;li&gt;discounted value of next state &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;γ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\gamma&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05556em;&quot;&gt;γ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.v (S&lt;sub&gt;t+1&lt;/sub&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_bellman.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We use that to calculate value function with &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;γ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\gamma&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05556em;&quot;&gt;γ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; $\neq$ 0.&lt;/p&gt;
+
+&lt;p&gt;And calculating value function can be seen as the resolution of this linear equation:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_bellman_solving.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And now we introduce actions and it gives &lt;strong&gt;&lt;em&gt;Markov Decision Process&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_mdp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And we introduce policy&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_policy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we can define the &lt;em&gt;state-value function&lt;/em&gt; v&lt;sub&gt;$\pi$&lt;/sub&gt;(s,a) for a given policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_statevaluefunction.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and &lt;em&gt;action-value function&lt;/em&gt; q&lt;sub&gt;$\pi$&lt;/sub&gt;(s,a) for a given policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_actionvaluefunction.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And impact on Bellman Equation ends like that:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/deepmind_lec2_bellman_mdp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;v is giving us how good it is to be in a state. q is giving us how good is it to take an action.&lt;/p&gt;
+
+&lt;p&gt;And then we have the Bellman equation expressed with v and q.&lt;/p&gt;
+
+&lt;p&gt;We don’t care much about a given v&lt;sub&gt;$\pi$&lt;/sub&gt;, we want to get the best policy. And ultimately to get q&lt;sub&gt;*&lt;/sub&gt; which is the &lt;strong&gt;optimal action value function&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/home/explore/git/guillaume/blog/images/deepmind_lec2_optimal_value_function.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The optimal value function specifies the best possible performance in the MDP.
+A MDP is “solved” when we know the optimal value function q&lt;sub&gt;*&lt;/sub&gt;.&lt;/p&gt;
+
+&lt;p&gt;What we really care about is &lt;strong&gt;optimal policy&lt;/strong&gt; &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;sub&gt;*&lt;/sub&gt;. There is a partial ordering about policies. And a theorem saying that for any MDP, there exists at least one optimal policy.&lt;/p&gt;
+
+&lt;p&gt;So the optimal value function calculation is similar to what we did earlier when we averaged the value of the next state but now we take the max instead of average.&lt;/p&gt;
+
+&lt;p&gt;So no we can write the &lt;strong&gt;Bellman Optimality Equation&lt;/strong&gt;. Unfortunately this is non-linear.&lt;/p&gt;
+
+&lt;p&gt;There are many approaches such as iterative ones.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Value Iteration&lt;/li&gt;
+  &lt;li&gt;Policy Iteration&lt;/li&gt;
+  &lt;li&gt;Q-learning&lt;/li&gt;
+  &lt;li&gt;Sarsa&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -281,7 +371,9 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 chapter4) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))&lt;/p&gt;
 
-&lt;p&gt;t-SNE using Janus data.&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;t-SNE using Janus data.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Markov Decision Processes (lecture 2)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 
