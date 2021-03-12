@@ -68,4 +68,4 @@ t-SNE using Janus data.
 
 **Friday 3/12**
 
-RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p287+) - Applications and case studies
+RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p287-352) - Applications and case studies, end of the book

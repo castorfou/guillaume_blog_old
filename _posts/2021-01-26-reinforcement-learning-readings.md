@@ -212,4 +212,18 @@ Acrobot (1993). Use of Sarsa($$\lambda$$). Interesting to see that an exploratio
 
 Elevator dispatching (1996). With a reward being the negative of the sum of the squared waiting times of all waiting passengers. (squared to push the system to avoid big waiting times). We use an extension of Q-learning to semi-Markov decision problems. For function approximation, a nonlinear neural network trained by back-propagation was used to represent the action-value function.
 
-Dynamic Channel Allocation (1997). 
+Dynamic Channel Allocation (1997). The channel assignment problem can be formulated as a semi-Markov decision process much as the elevator dispatching problem was in the previous section. 
+
+Job-Shop Scheduling (1996). Zhang and Dietterich’s job-shop scheduling system is the first successful instance of which we are aware in which reinforcement learning was applied in plan-space, that is, in which states are complete plans (job-shop schedules in this case), and actions are plan modifications. This is a more abstract application of reinforcement learning than we are used to thinking about.
+
+**Chapter 15 - Prospects**
+
+![](../images/sutton_spaceRL.png)
+
+This is a map to distinguish where to use different techniques. And considerations of a 3rd dimension regarding function approximation, or on/off-policy.
+
+And then opening to non markov case such as the theory of partially observable MDPs (POMDPs). (StarCraft!)
+
+**References**
+
+25 pages of references! Woawww.
