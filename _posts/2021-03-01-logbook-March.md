@@ -69,3 +69,5 @@ t-SNE using Janus data.
 **Friday 3/12**
 
 RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p287-352) - Applications and case studies, end of the book
+
+[RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Planning by Dynamic Programming (lecture 3)

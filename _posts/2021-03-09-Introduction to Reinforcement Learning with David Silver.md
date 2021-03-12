@@ -153,3 +153,59 @@ There are many approaches such as iterative ones.
 
 
 
+## 3/12/21 - Lecture 3: Planning by Dynamic Programming
+
+Will discuss from the agent side: how to solve these MDP problems.
+
+David starts with general ideas on dynamic programming. (programming in a sense of policy)
+
+Value function is an important idea for RL because it sotres valuable information that you can later reuse (it embeds solutions). And Bellman equation gives the recursive decomposition.
+
+
+
+**Planning by Dynamic Programming**
+
+We assume full knowledge of the MDP. Dynamic programming is used for planning in an MDP. With 2 usages:
+
+* prediction: given MDP and policy $$\pi$$, we predict the value of this policy v<sub>$\pi$</sub>.
+* control: given MDP, we get optimal value function v<sub>&ast;</sub> and optimal policy $\pi$<sub>&ast;</sub>.
+
+And by full MDP it would mean for an atari game to have access to internal code to calculate everything.
+
+We need the 2 aspects to solve MDP: prediction to value policy, and control to get the best one.
+
+
+
+**Policy Evaluation**
+
+Problem: evaluate a given policy π
+Solution: iterative application of Bellman expectation backup
+
+(Bellman expectation is used in prediction, Bellman optimality is used in control)
+
+David takes an example with a small grid-world and calculates iteratively (k=0, 1, 2, ...) v(s) for a uniform random policy (north, south, east, west with prob 0.25) (left column). And then we follow policy greedily using v function. (right column)
+
+**Policy Iteration**
+
+In small grid-world example, just by evaluating the policy and act greedily were sufficient to get the optimal policy. This is not generally the case. In general, need more iterations of  evaluation (iterative policy evaluation) / improvement (greedy policy).
+But this process of policy iteration always converges to π∗
+
+David uses Jack's Car Rental where it needs 4 steps to get the optimal policy.  And explains why acting greedy improves the policy.       And if improvement stops, Bellman optimality equation is satisfied, we have our optimal policy.
+
+Some question then about convergence of v<sub>$\pi$</sub> . Why not update policy at each step of evaluation -> this is value iteration.
+
+**Value Iteration**
+
+Problem: find optimal policy π
+Solution: iterative application of Bellman optimality backup
+
+**Extensions to dynamic programming**
+
+DP uses full-width backups. It is effective for medium-sized problems. Curse of dimensionality for large problems. Even one backup can be too expensive.
+
+One solution is to **sample backups**.
+
+Advantages:
+Model-free: no advance knowledge of MDP required
+Breaks the curse of dimensionality through sampling
+Cost of backup is constant, independent of n = |S|
