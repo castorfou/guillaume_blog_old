@@ -141,4 +141,10 @@ sudo apt install rabbitvcs-nautilus
 
 ![](https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png)
 
-These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?)
+These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn't know that overlay icon should be changed because file was not touched.
+
+## git-nautilus-icons
+
+Just to check if it works better than RabbitVCS regarding overlay icon cache issue.
+
+No I didn't manage to make it work. Back to RabbitVCS.
