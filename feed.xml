@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-12T03:59:18-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-12T07:43:34-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
@@ -249,7 +249,62 @@ A MDP is “solved” when we know the optimal value function q&lt;sub&gt;*&lt;/
   &lt;li&gt;Policy Iteration&lt;/li&gt;
   &lt;li&gt;Q-learning&lt;/li&gt;
   &lt;li&gt;Sarsa&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;31221---lecture-3-planning-by-dynamic-programming&quot;&gt;3/12/21 - Lecture 3: Planning by Dynamic Programming&lt;/h2&gt;
+
+&lt;p&gt;Will discuss from the agent side: how to solve these MDP problems.&lt;/p&gt;
+
+&lt;p&gt;David starts with general ideas on dynamic programming. (programming in a sense of policy)&lt;/p&gt;
+
+&lt;p&gt;Value function is an important idea for RL because it sotres valuable information that you can later reuse (it embeds solutions). And Bellman equation gives the recursive decomposition.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Planning by Dynamic Programming&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We assume full knowledge of the MDP. Dynamic programming is used for planning in an MDP. With 2 usages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;prediction: given MDP and policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, we predict the value of this policy v&lt;sub&gt;$\pi$&lt;/sub&gt;.&lt;/li&gt;
+  &lt;li&gt;control: given MDP, we get optimal value function v&lt;sub&gt;&amp;amp;ast;&lt;/sub&gt; and optimal policy $\pi$&lt;sub&gt;&amp;amp;ast;&lt;/sub&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And by full MDP it would mean for an atari game to have access to internal code to calculate everything.&lt;/p&gt;
+
+&lt;p&gt;We need the 2 aspects to solve MDP: prediction to value policy, and control to get the best one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Policy Evaluation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Problem: evaluate a given policy π
+Solution: iterative application of Bellman expectation backup&lt;/p&gt;
+
+&lt;p&gt;(Bellman expectation is used in prediction, Bellman optimality is used in control)&lt;/p&gt;
+
+&lt;p&gt;David takes an example with a small grid-world and calculates iteratively (k=0, 1, 2, …) v(s) for a uniform random policy (north, south, east, west with prob 0.25) (left column). And then we follow policy greedily using v function. (right column)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Policy Iteration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In small grid-world example, just by evaluating the policy and act greedily were sufficient to get the optimal policy. This is not generally the case. In general, need more iterations of  evaluation (iterative policy evaluation) / improvement (greedy policy).
+But this process of policy iteration always converges to π∗&lt;/p&gt;
+
+&lt;p&gt;David uses Jack’s Car Rental where it needs 4 steps to get the optimal policy.  And explains why acting greedy improves the policy.       And if improvement stops, Bellman optimality equation is satisfied, we have our optimal policy.&lt;/p&gt;
+
+&lt;p&gt;Some question then about convergence of v&lt;sub&gt;$\pi$&lt;/sub&gt; . Why not update policy at each step of evaluation -&amp;gt; this is value iteration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Value Iteration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Problem: find optimal policy π
+Solution: iterative application of Bellman optimality backup&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Extensions to dynamic programming&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DP uses full-width backups. It is effective for medium-sized problems. Curse of dimensionality for large problems. Even one backup can be too expensive.&lt;/p&gt;
+
+&lt;p&gt;One solution is to &lt;strong&gt;sample backups&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Advantages:
+Model-free: no advance knowledge of MDP required
+Breaks the curse of dimensionality through sampling
+Cost of backup is constant, independent of n = |S|&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -383,7 +438,9 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Friday 3/12&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;RL - &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;Sutton&lt;/a&gt; book (p287-352) - Applications and case studies, end of the book&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;RL - &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;Sutton&lt;/a&gt; book (p287-352) - Applications and case studies, end of the book&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Planning by Dynamic Programming (lecture 3)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 

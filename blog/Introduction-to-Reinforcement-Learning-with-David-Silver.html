@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      6 min read
     
 </span></p>
 
@@ -116,6 +116,7 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#3921---lecture-1-introduction-to-reinforcement-learning">3/9/21 - Lecture 1: Introduction to Reinforcement Learning</a></li>
 <li class="toc-entry toc-h2"><a href="#31021---lecture-2-markov-decision-processes">3/10/21 - Lecture 2: Markov Decision Processes</a></li>
+<li class="toc-entry toc-h2"><a href="#31221---lecture-3-planning-by-dynamic-programming">3/12/21 - Lecture 3: Planning by Dynamic Programming</a></li>
 </ul><p>This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</p>
 
 <p><a href="https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver">Website with 10 lectures: videos and slides</a></p>
@@ -259,6 +260,61 @@ A MDP is “solved” when we know the optimal value function q<sub>*</sub>.</p>
   <li>Sarsa</li>
 </ul>
 
+<h2 id="31221---lecture-3-planning-by-dynamic-programming">
+<a class="anchor" href="#31221---lecture-3-planning-by-dynamic-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/12/21 - Lecture 3: Planning by Dynamic Programming</h2>
+
+<p>Will discuss from the agent side: how to solve these MDP problems.</p>
+
+<p>David starts with general ideas on dynamic programming. (programming in a sense of policy)</p>
+
+<p>Value function is an important idea for RL because it sotres valuable information that you can later reuse (it embeds solutions). And Bellman equation gives the recursive decomposition.</p>
+
+<p><strong>Planning by Dynamic Programming</strong></p>
+
+<p>We assume full knowledge of the MDP. Dynamic programming is used for planning in an MDP. With 2 usages:</p>
+
+<ul>
+  <li>prediction: given MDP and policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>, we predict the value of this policy v<sub>$\pi$</sub>.</li>
+  <li>control: given MDP, we get optimal value function v<sub>&amp;ast;</sub> and optimal policy $\pi$<sub>&amp;ast;</sub>.</li>
+</ul>
+
+<p>And by full MDP it would mean for an atari game to have access to internal code to calculate everything.</p>
+
+<p>We need the 2 aspects to solve MDP: prediction to value policy, and control to get the best one.</p>
+
+<p><strong>Policy Evaluation</strong></p>
+
+<p>Problem: evaluate a given policy π
+Solution: iterative application of Bellman expectation backup</p>
+
+<p>(Bellman expectation is used in prediction, Bellman optimality is used in control)</p>
+
+<p>David takes an example with a small grid-world and calculates iteratively (k=0, 1, 2, …) v(s) for a uniform random policy (north, south, east, west with prob 0.25) (left column). And then we follow policy greedily using v function. (right column)</p>
+
+<p><strong>Policy Iteration</strong></p>
+
+<p>In small grid-world example, just by evaluating the policy and act greedily were sufficient to get the optimal policy. This is not generally the case. In general, need more iterations of  evaluation (iterative policy evaluation) / improvement (greedy policy).
+But this process of policy iteration always converges to π∗</p>
+
+<p>David uses Jack’s Car Rental where it needs 4 steps to get the optimal policy.  And explains why acting greedy improves the policy.       And if improvement stops, Bellman optimality equation is satisfied, we have our optimal policy.</p>
+
+<p>Some question then about convergence of v<sub>$\pi$</sub> . Why not update policy at each step of evaluation -&gt; this is value iteration.</p>
+
+<p><strong>Value Iteration</strong></p>
+
+<p>Problem: find optimal policy π
+Solution: iterative application of Bellman optimality backup</p>
+
+<p><strong>Extensions to dynamic programming</strong></p>
+
+<p>DP uses full-width backups. It is effective for medium-sized problems. Curse of dimensionality for large problems. Even one backup can be too expensive.</p>
+
+<p>One solution is to <strong>sample backups</strong>.</p>
+
+<p>Advantages:
+Model-free: no advance knowledge of MDP required
+Breaks the curse of dimensionality through sampling
+Cost of backup is constant, independent of n = |S|</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
