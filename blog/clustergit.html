@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -114,6 +114,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#usage-clustergit">Usage clustergit</a></li>
 <li class="toc-entry toc-h2"><a href="#rename-branches-from-main-to-master">Rename branches from main to master</a></li>
 <li class="toc-entry toc-h2"><a href="#rabbitvcs">RabbitVCS</a></li>
+<li class="toc-entry toc-h2"><a href="#git-nautilus-icons">git-nautilus-icons</a></li>
 </ul><p>Very basic question to help keep my repo clean.</p>
 
 <h2 id="installation-clustergit">
@@ -227,7 +228,14 @@ git branch <span class="nt">-u</span> origin/master master
 
 <p><img src="https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png" alt=""></p>
 
-<p>These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?)</p>
+<p>These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.</p>
+
+<h2 id="git-nautilus-icons">
+<a class="anchor" href="#git-nautilus-icons" aria-hidden="true"><span class="octicon octicon-link"></span></a>git-nautilus-icons</h2>
+
+<p>Just to check if it works better than RabbitVCS regarding overlay icon cache issue.</p>
+
+<p>No I didn’t manage to make it work. Back to RabbitVCS.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
