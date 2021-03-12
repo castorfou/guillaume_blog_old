@@ -66,3 +66,6 @@ t-SNE using Janus data.
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Markov Decision Processes (lecture 2)
 
+**Friday 3/12**
+
+RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p287+) - Applications and case studies

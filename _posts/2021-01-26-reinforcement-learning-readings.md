@@ -196,3 +196,20 @@ Bertsekas and Tsitsiklis (1996) present the state of the art in function approxi
 
 Actor-Critic: The policy structure is known as the actor, because it is used to select actions, and the
 estimated value function is known as the critic, because it criticizes the actions made by the actor.
+
+**(3/12/21) end of book. Chapter 14 - Applications and case studies.**
+
+I like this statement: 
+
+> Applications of reinforcement learning are still far from routine and typically require as much
+> art as science. Making applications easier and more straightforward is one of the goals of current research in reinforcement learning.
+
+TD backgammon (1995). It uses a neural net (1 hidden layer, from 40 to 80 units) to approximate the predicted probability of winning v(s) for a given state. In later version, some domain features were used but still using self-play TD learning method. (I don't know specifics for these domain features). And last versions give an interest to opponent reactions (possible dice rolls and moves)
+
+Samuel's Checkers Player (~1960). (Checkers c'est le jeu de dames). It is based on *minimax* procedure to find the best move from current position. 1st learning used was rote learning (storing position(s value). 2nd learning used alpha-beta (linked to minimax procedure) and hierarchical lookup tables instead of linear function approximation.
+
+Acrobot (1993). Use of Sarsa($$\lambda$$). Interesting to see that an exploration step can spoil a whole sequence of good actions. This is why greedy policy is used ($$\epsilon$$=0).
+
+Elevator dispatching (1996). With a reward being the negative of the sum of the squared waiting times of all waiting passengers. (squared to push the system to avoid big waiting times). We use an extension of Q-learning to semi-Markov decision problems. For function approximation, a nonlinear neural network trained by back-propagation was used to represent the action-value function.
+
+Dynamic Channel Allocation (1997). 
