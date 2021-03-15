@@ -209,3 +209,38 @@ Advantages:
 Model-free: no advance knowledge of MDP required
 Breaks the curse of dimensionality through sampling
 Cost of backup is constant, independent of n = |S|
+
+## 3/15/21 - Lecture 4: Model-Free Prediction
+
+Model-Free: no-one gives us the MDP. And we still want to solve it.
+
+* **Monte-Carlo learning**: basically methods which goes all the way to the end of trajectory and estimates value by looking at sample returns.
+
+* **Temporal-Difference learning**: goes one step ahead and estimates after one step
+* **TD($$\lambda$$)**: unify both approaches
+
+We give up the assumption giving how the environment works (which is highly unrealistic for interesting problems). We break it down in 2 pieces (as with previous lecture with planning):
+
+* policy evaluation case (this lecture) - how much reward we get from that policy (in model-free envt)
+* control (next lecture) - find the optimum value function and then optimum policy
+
+
+
+**Monte-Carlo Reinforcement Learning**
+
+We go all the way through the episodes and we take sample returns. So the estimated value function can be the average of all returns. You have to terminate to perform this mean.
+
+It means we use the *empirical mean return* in place of *expected return*. (by *law of large numbers*, this average returns will converge to value function as the number of episodes for that state tends to infinity)
+
+**Temporal-Difference Reinforcement Learning**
+
+TD learns from incomplete episodes, by bootstrapping
+
+David takes an example from Sutton about predicting time to commute home, comparing MC and TD.
+
+TD target (R<sub>t+1</sub>+$$\gamma$$V<sub>t+1</sub>) is biased estimate of v<sub>$\pi$</sub>(S<sub>t</sub>), but has lower variance than the return G<sub>t</sub>.
+
+
+
+David compares perf of MC, TD(0), ... using Random Walk example and different values of $$\alpha$$.
+
