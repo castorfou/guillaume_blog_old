@@ -149,7 +149,7 @@ And share some recent advances on GAN such as StyleGAN(2), conditional GAN, Cycl
 
 
 
-## 1/3/21 - De-biasing Facial Recognition Systems - Software Lab 2
+## 3/1/21 - De-biasing Facial Recognition Systems - Software Lab 2
 
 [Part 1 MNIST](https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab2/Part1_MNIST.ipynb)
 
@@ -209,4 +209,71 @@ Alexanders ends the lecture by discussing about Deepmind progress:
 - alphaGo Zero - 2017: standard DRL without pretraining
 - alphaZero - 2018: standard DRL without pretraining and applied to several games (Go, Chess, Shogi)
 - MuZero - 2020: learns the rules of the game by itself, create unknown dynamics
+
+
+
+## 3/15/21 - Limitations and New Frontiers - lecture 6
+
+**Universal Approximation Theorem**: A feedforward network with a single layer is sufficient to approximate, to an arbitrary precision, any continuous function.
+
+Ava emphasizes importance of training data (e.g. for generalization) and mentions a paper called "[Understanding Deep Neural Networks Requires Rethinking Generalization](https://arxiv.org/abs/1611.03530)".
+
+Some fail examples with dogs colorization (BW -> colors) creating pink zone under the mouth.
+
+And another one with Tesla autopilot. It motivates working on **uncertainty in Deep Learning**.
+
+* we need uncertainty metrics to assess the noise inherent to the data: *aleatoric uncertainty*
+* we need uncertainty metrics to assess the network's confidence in its predictions: *epistemic uncertainty*
+
+Ava cites an example of a real 3D printed turtle designed to fool a classifier from turtle to rifle.
+
+**New frontier: Encoding Structure into Deep Learning.**
+
+CNN is a nice way to extract features from an image. But not all kind of data can express features in an euclidean way. Graphs is used as a structure for representing data in a lot of cases.
+
+It drives us to **Graph Convolutional Networks** (GCNs). The graph convolutional operator is going to associate weights with each of the edges and apply the weights across the graph and then the kernel is going to be moved to the next node in the graph extracting information about its local connectivity. That local information is going to be aggregated and the NN is going to then learn a function that encodes that local information into a higher level representation.
+
+**New frontier: Automated Machine Learning & AI.**
+
+Using a neural architecture search algorithm. At each step the model samples a brand new network. For each layer, defines number of fileters, filet height, width, stride height, width, nbr of fileters, etc. Update RNN controller based on the accuracy of the child network after training.
+
+From autoML to autoAI: an automated complete pipeline for designing and deploying ML and AI models.
+
+## 3/15/21 - Pixels-to-Control Learning - Software Lab 3
+
+This is about reinforcement learning.
+
+![alt text](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)
+
+We install (apt) xvfb and python-opengl.
+
+And will learn with cartpole and pong.
+
+Still this issue 
+
+>UnknownError:  Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+>	 [[node sequential_8/conv2d_4/Conv2D (defined at <ipython-input-21-f109a85f869a>:19) ]] [Op:__inference_distributed_function_2442603]
+
+Solved by running 
+
+```python
+import tensorflow as tf
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+    try:
+        # Currently, memory growth needs to be the same across GPUs
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
+        logical_gpus = tf.config.experimental.list_logical_devices('GPU')
+        print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
+    except RuntimeError as e:
+        # Memory growth must be set before GPUs have been initialized
+        print(e)
+```
+
+I couldn't go through the training of Pong agent due to GPU limitation?
+
+```bash
+2021-03-15 10:54:19.479775: W tensorflow/core/framework/op_kernel.cc:1655] OP_REQUIRES failed at conv_grad_input_ops.cc:1254 : Resource exhausted: OOM when allocating tensor with shape[3944,48,10,10] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfcbash
+```
 

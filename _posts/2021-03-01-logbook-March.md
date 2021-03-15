@@ -71,3 +71,14 @@ t-SNE using Janus data.
 RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p287-352) - Applications and case studies, end of the book
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Planning by Dynamic Programming (lecture 3)
+
+
+
+## Week 11 - Mar 21
+
+**Monday 3/15**
+
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Limitations and New Frontiers.
+
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Pixels-to-Control Learning (lab 3): Cartpole and Pong
+
