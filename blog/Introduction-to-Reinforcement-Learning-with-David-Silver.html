@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -117,6 +117,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#3921---lecture-1-introduction-to-reinforcement-learning">3/9/21 - Lecture 1: Introduction to Reinforcement Learning</a></li>
 <li class="toc-entry toc-h2"><a href="#31021---lecture-2-markov-decision-processes">3/10/21 - Lecture 2: Markov Decision Processes</a></li>
 <li class="toc-entry toc-h2"><a href="#31221---lecture-3-planning-by-dynamic-programming">3/12/21 - Lecture 3: Planning by Dynamic Programming</a></li>
+<li class="toc-entry toc-h2"><a href="#31521---lecture-4-model-free-prediction">3/15/21 - Lecture 4: Model-Free Prediction</a></li>
 </ul><p>This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</p>
 
 <p><a href="https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver">Website with 10 lectures: videos and slides</a></p>
@@ -315,6 +316,45 @@ Solution: iterative application of Bellman optimality backup</p>
 Model-free: no advance knowledge of MDP required
 Breaks the curse of dimensionality through sampling
 Cost of backup is constant, independent of n = |S|</p>
+
+<h2 id="31521---lecture-4-model-free-prediction">
+<a class="anchor" href="#31521---lecture-4-model-free-prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/15/21 - Lecture 4: Model-Free Prediction</h2>
+
+<p>Model-Free: no-one gives us the MDP. And we still want to solve it.</p>
+
+<ul>
+  <li>
+    <p><strong>Monte-Carlo learning</strong>: basically methods which goes all the way to the end of trajectory and estimates value by looking at sample returns.</p>
+  </li>
+  <li>
+<strong>Temporal-Difference learning</strong>: goes one step ahead and estimates after one step</li>
+  <li>
+<strong>TD(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span>)</strong>: unify both approaches</li>
+</ul>
+
+<p>We give up the assumption giving how the environment works (which is highly unrealistic for interesting problems). We break it down in 2 pieces (as with previous lecture with planning):</p>
+
+<ul>
+  <li>policy evaluation case (this lecture) - how much reward we get from that policy (in model-free envt)</li>
+  <li>control (next lecture) - find the optimum value function and then optimum policy</li>
+</ul>
+
+<p><strong>Monte-Carlo Reinforcement Learning</strong></p>
+
+<p>We go all the way through the episodes and we take sample returns. So the estimated value function can be the average of all returns. You have to terminate to perform this mean.</p>
+
+<p>It means we use the <em>empirical mean return</em> in place of <em>expected return</em>. (by <em>law of large numbers</em>, this average returns will converge to value function as the number of episodes for that state tends to infinity)</p>
+
+<p><strong>Temporal-Difference Reinforcement Learning</strong></p>
+
+<p>TD learns from incomplete episodes, by bootstrapping</p>
+
+<p>David takes an example from Sutton about predicting time to commute home, comparing MC and TD.</p>
+
+<p>TD target (R<sub>t+1</sub>+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi></mrow><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05556em;">γ</span></span></span></span>V<sub>t+1</sub>) is biased estimate of v<sub>$\pi$</sub>(S<sub>t</sub>), but has lower variance than the return G<sub>t</sub>.</p>
+
+<p>David compares perf of MC, TD(0), … using Random Walk example and different values of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>.</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
