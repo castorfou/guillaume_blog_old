@@ -8,7 +8,7 @@ categories: [deep learning, math]
 image: images/math.jpeg
 ---
 
-Un cours au collège de France de Stéphane Mallat sur les [représentations parcimonieuses - 2021](https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm).
+Un exposé en 8 cours au collège de France de Stéphane Mallat sur les [représentations parcimonieuses - 2021](https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm).
 
 
 
@@ -118,5 +118,18 @@ Stéphane Mallat passe un long moment pour nous amener à la construction de ces
 
 
 
+## 3/16/21 - Multirésolutions (lecture 6)
 
+ On a vu la dernière fois qu'on pouvait construire une base d'ondelette le long des indices de dilatations en 2<sup>j</sup>. 
 
+On va voir maintenant qu'on peut translater les ondelettes par des facteurs 2<sup>j</sup>.n.
+
+Donc quand j est grand, les échelles sont de plus en plus grande. Et j petit va amener un échantillonnage  de plus en plus fin.
+
+$$
+\begin{align*}
+\left\{ \Psi_{(j,n)}(u)=\frac{1}{\sqrt{2^j}}\Psi \left( \frac{u-2^jn}{2^j} \right) \right\}_{(j, n) \epsilon \Z^2}
+\end{align*}
+$$
+
+sont-elles des bases orthonormales. Ensuite on appliquerait les techniques d'approximations consistant à éliminer les petits coefficients.

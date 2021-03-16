@@ -83,3 +83,7 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Pixels-to-Control Learning (lab 3): Cartpole and Pong
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Model-Free Prediction (lecture 4)
+
+**Tuesday 3/16**
+
+[College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Multirésolutions (lecture 6)
