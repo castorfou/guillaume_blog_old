@@ -127,9 +127,7 @@ On va voir maintenant qu'on peut translater les ondelettes par des facteurs 2<su
 Donc quand j est grand, les échelles sont de plus en plus grande. Et j petit va amener un échantillonnage  de plus en plus fin.
 
 $$
-\begin{align*}
 \left\{ \Psi_{(j,n)}(u)=\frac{1}{\sqrt{2^j}}\Psi \left( \frac{u-2^jn}{2^j} \right) \right\}_{(j, n) \epsilon \Z^2}
-\end{align*}
 $$
 
 sont-elles des bases orthonormales. Ensuite on appliquerait les techniques d'approximations consistant à éliminer les petits coefficients.
