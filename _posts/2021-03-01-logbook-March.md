@@ -86,4 +86,4 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 
 **Tuesday 3/16**
 
-[College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Multirésolutions (lecture 6)
+[College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Multi-résolutions (lecture 6)

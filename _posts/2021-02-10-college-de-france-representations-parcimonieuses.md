@@ -118,7 +118,7 @@ Stéphane Mallat passe un long moment pour nous amener à la construction de ces
 
 
 
-## 3/16/21 - Multirésolutions (lecture 6)
+## 3/16/21 - Multi-résolutions (lecture 6)
 
  On a vu la dernière fois qu'on pouvait construire une base d'ondelette le long des indices de dilatations en 2<sup>j</sup>. 
 
@@ -131,3 +131,11 @@ $$
 $$
 
 sont-elles des bases orthonormales. Ensuite on appliquerait les techniques d'approximations consistant à éliminer les petits coefficients.
+
+Les multi-résolutions sont des espaces linéaires sur lesquels nous allons projeter ces signaux. On va chercher à réduire les dimensions (par ex d'une image) en projetant sur ces espaces emboîtés. Et conserver le maximum d'information.
+
+Un produit scalaire avec une fonction translatée peut toujours s'écrire comme un produit de convolution (Stéphane Mallat répète souvent cette propriété)
+
+Stéphane Mallat fait ensuite le lien avec les algorithmes en bancs de filtre (cascades de filtrage + échantillonnage).
+
+Dans ces opérations il y a sans arrêt des passages du continu au discret. Par exemple si je prends un signal et que je le projette sur ces espaces je me retrouve avec les coordonnées, qui sont les produits scalaires avec mes $$\phi$$<sub>j,n</sub> (car base orthogonale), ce qui revient à filtrer et sous échantillonner.
