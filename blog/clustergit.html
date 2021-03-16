@@ -115,6 +115,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#rename-branches-from-main-to-master">Rename branches from main to master</a></li>
 <li class="toc-entry toc-h2"><a href="#rabbitvcs">RabbitVCS</a></li>
 <li class="toc-entry toc-h2"><a href="#git-nautilus-icons">git-nautilus-icons</a></li>
+<li class="toc-entry toc-h2"><a href="#activate-git-with-globalprotect">Activate git with GlobalProtect</a></li>
 </ul><p>Very basic question to help keep my repo clean.</p>
 
 <h2 id="installation-clustergit">
@@ -236,6 +237,46 @@ git branch <span class="nt">-u</span> origin/master master
 <p>Just to check if it works better than RabbitVCS regarding overlay icon cache issue.</p>
 
 <p>No I didn’t manage to make it work. Back to RabbitVCS.</p>
+
+<h2 id="activate-git-with-globalprotect">
+<a class="anchor" href="#activate-git-with-globalprotect" aria-hidden="true"><span class="octicon octicon-link"></span></a>Activate git with GlobalProtect</h2>
+
+<p><strong>move from ssh to https, keeping password</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote <span class="nt">-v</span>
+origin  git@github.com:castorfou/guillaume_blog.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  git@github.com:castorfou/guillaume_blog.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div></div>
+
+<p>move to https://github.com/castorfou/guillaume_blog.git</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote set-url origin https://github.com/castorfou/guillaume_blog.git
+</code></pre></div></div>
+
+<ul>
+  <li>Make Git store the username and password and it will never ask for them.</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> credential.helper store
+</code></pre></div></div>
+
+<ul>
+  <li>Save the username and password for a session (cache it);</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> credential.helper cache
+</code></pre></div></div>
+
+<p>and to activate trace</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ GIT_TRACE_PACKET</span><span class="o">=</span>1 <span class="nv">GIT_TRACE</span><span class="o">=</span>1 <span class="nv">GIT_CURL_VERBOSE</span><span class="o">=</span>1 git fetch
+</code></pre></div></div>
+
+<p>we can enrich certificates with Global Protect CA</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/anaconda3/ssl<span class="nv">$ </span><span class="nb">sudo cp </span>certPG.pem /etc/ssl/certs/
+</code></pre></div></div>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-16T04:30:50-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-16T09:57:31-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
@@ -112,7 +112,45 @@ git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
 
 &lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
 
-&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
+
+&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and to activate trace&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
