@@ -148,3 +148,48 @@ These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a 
 Just to check if it works better than RabbitVCS regarding overlay icon cache issue.
 
 No I didn't manage to make it work. Back to RabbitVCS.
+
+
+
+## Activate git with GlobalProtect
+
+**move from ssh to https, keeping password**
+
+```bash
+$ git remote -v
+origin  git@github.com:castorfou/guillaume_blog.git (fetch)
+origin  git@github.com:castorfou/guillaume_blog.git (push)
+```
+
+move to https://github.com/castorfou/guillaume_blog.git
+
+```bash
+git remote set-url origin https://github.com/castorfou/guillaume_blog.git
+```
+
+- Make Git store the username and password and it will never ask for them.
+
+```bash
+git config --global credential.helper store
+```
+
+- Save the username and password for a session (cache it);
+
+```bash
+git config --global credential.helper cache
+```
+
+
+
+and to activate trace
+
+```bash
+$ GIT_TRACE_PACKET=1 GIT_TRACE=1 GIT_CURL_VERBOSE=1 git fetch
+```
+
+we can enrich certificates with Global Protect CA
+
+```bash
+~/anaconda3/ssl$ sudo cp certPG.pem /etc/ssl/certs/
+```
+
