@@ -322,3 +322,105 @@ Should follow video and run/update notebook in //.
 
 
 
+## (3/17/21) - Chapter 5: Policy Gradients V1
+
+[Article](https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients), [Video](https://www.youtube.com/watch?v=wLTQRuizVyE)
+
+In policy-based methods, instead of learning a value function that tells us what is the expected sum of rewards given a state and an action, we  learn directly the policy function that maps state to action (select  actions without using a value function).
+
+3 main advantages to use Policy Gradients vs Q learning:
+
+* convergence - have better convergence properties
+* effective in high dimension, or with continuous actions
+* stochastic policy - no need for exploration,/exploitation tradeoff
+
+But can be longer to train.
+
+**Policy search**
+
+We can dfine our policy as the probability distribution of actions (for a given state)
+
+![](https://cdn-media-1.freecodecamp.org/images/0*354cfoILK19WFTWa.)
+
+And how good is this policy? Measured with J($$\theta$$)
+
+![](https://cdn-media-1.freecodecamp.org/images/0*PfUAJaIGoEsvfbCG.)
+
+
+
+We must find $$\theta$$ to maximize J($$\theta$$). How?
+
+2 steps:
+
+- Measure the quality of a π (policy) with a policy score function J(θ)
+- Use policy gradient ascent to find the best parameter θ that improves our π.
+
+**the Policy Score function J(θ)**
+
+3 ways (maybe more)
+
+Calculate the mean of the return from the first time step (G1). This is the cumulative discounted reward for the entire episode.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*tP4l4IrIG3aMLTrMt-1-HA.png)
+
+In a continuous environment, we can use the average value, because we can’t rely on a specific start state. Each state value is now weighted (because some happen more than others) by  the probability of the occurrence of the respected state.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*S-XLkrvPuVUqLrFW1hmIMg.png)
+
+Third, we can use the average reward per time step. The idea here is that we want to get the most reward per time step.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*3SejRRby6vAnThZ8c2UaQg.png)
+
+**Policy gradient ascent**
+
+because we want to maximize our Policy score function
+
+![](https://cdn-media-1.freecodecamp.org/images/0*oh-lF13hYWt2Bd6V.)
+
+The solution will be to use the Policy Gradient Theorem. This provides  an analytic expression for the gradient ∇ of J(θ) (performance) with  respect to policy θ that does not involve the differentiation of the  state distribution. (using [likelihood ratio trick](http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/))
+
+![](https://cdn-media-1.freecodecamp.org/images/1*iKhO5anOAfc3oqJOM2i_8A.png)
+
+
+
+It gives
+
+![](https://cdn-media-1.freecodecamp.org/images/1*zjEh737KfmDUzNECjW4e4w.png)
+
+R($$\tau$$) is like a scalar value score.
+
+
+
+**Implementation**
+
+As with the previous section, this is good to watch the video at the same time.
+
+And now this is the implementation in 
+
+[doom deathmatch notebook](https://github.com/castorfou/Deep_reinforcement_learning_Course/blob/master/Policy%20Gradients/Doom%20Deathmatch/Doom-deathmatch%20REINFORCE%20Monte%20Carlo%20Policy%20gradients.ipynb)
+
+![](https://github.com/castorfou/Deep_reinforcement_learning_Course/raw/master/Policy%20Gradients/Doom%20Deathmatch/assets/doomPG1.png)
+
+as with Pong, we [stack](https://danieltakeshi.github.io/2016/11/25/frame-skipping-and-preprocessing-for-deep-q-networks-on-atari-2600-games/) frames to understand dynamic with deque.
+
+
+
+Even with GPU growth setup, I run an error after the 1st epoch.
+
+```
+==========================================
+Epoch:  1 / 5000
+-----------
+Number of training episodes: 15
+Total reward: 7.0
+Mean Reward of that batch 0.4666666666666667
+Average Reward of all training: 0.4666666666666667
+Max reward for a batch so far: 7.0
+```
+
+```bash
+ResourceExhaustedError: OOM when allocating tensor with shape[5030,32,24,39] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node PGNetwork/train/gradients/PGNetwork/conv2/conv2/Conv2D_grad/Conv2DBackpropInput}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+```
+

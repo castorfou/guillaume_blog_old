@@ -87,3 +87,7 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 **Tuesday 3/16**
 
 [College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Multi-résolutions (lecture 6)
+
+**Wednesday 3/17**
+
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter5) 
