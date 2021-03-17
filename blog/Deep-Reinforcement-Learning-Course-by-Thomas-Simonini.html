@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      12 min read
     
 </span></p>
 
@@ -133,6 +133,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi">(2/24/21) - Step 2 - part 2 - Q-Learning, let’s create an autonomous Taxi</a></li>
 <li class="toc-entry toc-h2"><a href="#3321---back-to-2018---deep-q-learning-with-doom">(3/3/21) - back to 2018 - Deep Q-learning with Doom</a></li>
 <li class="toc-entry toc-h2"><a href="#31021---chapter-4-improvements-in-deep-q-learning-v1">(3/10/21) - Chapter 4: Improvements in Deep Q Learning V1</a></li>
+<li class="toc-entry toc-h2"><a href="#31721---chapter-5-policy-gradients-v1">(3/17/21) - Chapter 5: Policy Gradients V1</a></li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -473,6 +474,103 @@ window.onload = wrap_img;
 <p>Thomas has given a reference to Arthur Juliani who is a senior ML engineer at <a href="https://unity.com/fr/products/machine-learning-agents">Unity</a>. I would like to browse though this reference and see what can be done.</p>
 
 <p>Should follow video and run/update notebook in //.</p>
+
+<h2 id="31721---chapter-5-policy-gradients-v1">
+<a class="anchor" href="#31721---chapter-5-policy-gradients-v1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/17/21) - Chapter 5: Policy Gradients V1</h2>
+
+<p><a href="https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/">Article</a>, <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients">Notebook</a>, <a href="https://www.youtube.com/watch?v=wLTQRuizVyE">Video</a></p>
+
+<p>In policy-based methods, instead of learning a value function that tells us what is the expected sum of rewards given a state and an action, we  learn directly the policy function that maps state to action (select  actions without using a value function).</p>
+
+<p>3 main advantages to use Policy Gradients vs Q learning:</p>
+
+<ul>
+  <li>convergence - have better convergence properties</li>
+  <li>effective in high dimension, or with continuous actions</li>
+  <li>stochastic policy - no need for exploration,/exploitation tradeoff</li>
+</ul>
+
+<p>But can be longer to train.</p>
+
+<p><strong>Policy search</strong></p>
+
+<p>We can dfine our policy as the probability distribution of actions (for a given state)</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/0*354cfoILK19WFTWa." alt=""></p>
+
+<p>And how good is this policy? Measured with J(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span>)</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/0*PfUAJaIGoEsvfbCG." alt=""></p>
+
+<p>We must find <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span> to maximize J(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span>). How?</p>
+
+<p>2 steps:</p>
+
+<ul>
+  <li>Measure the quality of a π (policy) with a policy score function J(θ)</li>
+  <li>Use policy gradient ascent to find the best parameter θ that improves our π.</li>
+</ul>
+
+<p><strong>the Policy Score function J(θ)</strong></p>
+
+<p>3 ways (maybe more)</p>
+
+<p>Calculate the mean of the return from the first time step (G1). This is the cumulative discounted reward for the entire episode.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*tP4l4IrIG3aMLTrMt-1-HA.png" alt=""></p>
+
+<p>In a continuous environment, we can use the average value, because we can’t rely on a specific start state. Each state value is now weighted (because some happen more than others) by  the probability of the occurrence of the respected state.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*S-XLkrvPuVUqLrFW1hmIMg.png" alt=""></p>
+
+<p>Third, we can use the average reward per time step. The idea here is that we want to get the most reward per time step.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*3SejRRby6vAnThZ8c2UaQg.png" alt=""></p>
+
+<p><strong>Policy gradient ascent</strong></p>
+
+<p>because we want to maximize our Policy score function</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/0*oh-lF13hYWt2Bd6V." alt=""></p>
+
+<p>The solution will be to use the Policy Gradient Theorem. This provides  an analytic expression for the gradient ∇ of J(θ) (performance) with  respect to policy θ that does not involve the differentiation of the  state distribution. (using <a href="http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/">likelihood ratio trick</a>)</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*iKhO5anOAfc3oqJOM2i_8A.png" alt=""></p>
+
+<p>It gives</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*zjEh737KfmDUzNECjW4e4w.png" alt=""></p>
+
+<p>R(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span></span></span></span>) is like a scalar value score.</p>
+
+<p><strong>Implementation</strong></p>
+
+<p>As with the previous section, this is good to watch the video at the same time.</p>
+
+<p>And now this is the implementation in</p>
+
+<p><a href="https://github.com/castorfou/Deep_reinforcement_learning_Course/blob/master/Policy%20Gradients/Doom%20Deathmatch/Doom-deathmatch%20REINFORCE%20Monte%20Carlo%20Policy%20gradients.ipynb">doom deathmatch notebook</a></p>
+
+<p><img src="https://github.com/castorfou/Deep_reinforcement_learning_Course/raw/master/Policy%20Gradients/Doom%20Deathmatch/assets/doomPG1.png" alt=""></p>
+
+<p>as with Pong, we <a href="https://danieltakeshi.github.io/2016/11/25/frame-skipping-and-preprocessing-for-deep-q-networks-on-atari-2600-games/">stack</a> frames to understand dynamic with deque.</p>
+
+<p>Even with GPU growth setup, I run an error after the 1st epoch.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>==========================================
+Epoch:  1 / 5000
+-----------
+Number of training episodes: 15
+Total reward: 7.0
+Mean Reward of that batch 0.4666666666666667
+Average Reward of all training: 0.4666666666666667
+Max reward for a batch so far: 7.0
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ResourceExhaustedError: OOM when allocating tensor with shape[5030,32,24,39] and <span class="nb">type </span>float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 <span class="o">[[]]</span>
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions <span class="k">for </span>current allocation info.
+</code></pre></div></div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
