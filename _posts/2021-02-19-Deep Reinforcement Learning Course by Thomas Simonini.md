@@ -424,3 +424,4 @@ ResourceExhaustedError: OOM when allocating tensor with shape[5030,32,24,39] and
 Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
 ```
 
+I have to reduce batch size (to 1000) to make it work.
