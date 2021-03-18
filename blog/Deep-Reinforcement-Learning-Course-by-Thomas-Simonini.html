@@ -574,6 +574,23 @@ Hint: If you want to see a list of allocated tensors when OOM happens, add repor
 
 <p>I have to reduce batch size (to 1000) to make it work.</p>
 
+<p>And I can monitor gpu memory consumption with <code class="language-plaintext highlighter-rouge">watch nvidia-smi</code></p>
+
+<p><img src="../images/watch_nvidia_smi.png" alt=""></p>
+
+<p>or we can use <code class="language-plaintext highlighter-rouge">gpustat -i 2</code></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[0] Quadro RTX 4000</td>
+      <td>59’C,  <strong>34 %</strong>,   39 W</td>
+      <td>7819 /  7982 MB</td>
+      <td>explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)</td>
+    </tr>
+  </tbody>
+</table>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="castorfou/guillaume_blog"

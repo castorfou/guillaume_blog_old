@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-18T02:37:44-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-18T03:38:16-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
@@ -965,7 +965,24 @@ Max reward for a batch so far: 7.0
 Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;current allocation info.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;I have to reduce batch size (to 1000) to make it work.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
+&lt;p&gt;I have to reduce batch size (to 1000) to make it work.&lt;/p&gt;
+
+&lt;p&gt;And I can monitor gpu memory consumption with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;watch nvidia-smi&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/watch_nvidia_smi.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;or we can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpustat -i 2&lt;/code&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[0] Quadro RTX 4000&lt;/td&gt;
+      &lt;td&gt;59’C,  &lt;strong&gt;34 %&lt;/strong&gt;,   39 W&lt;/td&gt;
+      &lt;td&gt;7819 /  7982 MB&lt;/td&gt;
+      &lt;td&gt;explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
