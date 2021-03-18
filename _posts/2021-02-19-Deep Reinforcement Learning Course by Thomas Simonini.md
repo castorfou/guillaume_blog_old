@@ -425,3 +425,11 @@ Hint: If you want to see a list of allocated tensors when OOM happens, add repor
 ```
 
 I have to reduce batch size (to 1000) to make it work.
+
+And I can monitor gpu memory consumption with `watch nvidia-smi`
+
+![](../images/watch_nvidia_smi.png)
+
+or we can use `gpustat -i 2`
+
+[0] Quadro RTX 4000  | 59'C,  **34 %**,   39 W |  7819 /  7982 MB | explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)
