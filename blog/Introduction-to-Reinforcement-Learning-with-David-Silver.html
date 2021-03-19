@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -118,6 +118,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#31021---lecture-2-markov-decision-processes">3/10/21 - Lecture 2: Markov Decision Processes</a></li>
 <li class="toc-entry toc-h2"><a href="#31221---lecture-3-planning-by-dynamic-programming">3/12/21 - Lecture 3: Planning by Dynamic Programming</a></li>
 <li class="toc-entry toc-h2"><a href="#31521---lecture-4-model-free-prediction">3/15/21 - Lecture 4: Model-Free Prediction</a></li>
+<li class="toc-entry toc-h2"><a href="#31821---lecture-5-model-free-control">3/18/21 - Lecture 5: Model-Free Control</a></li>
 </ul><p>This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</p>
 
 <p><a href="https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver">Website with 10 lectures: videos and slides</a></p>
@@ -355,6 +356,51 @@ Cost of backup is constant, independent of n = |S|</p>
 
 <p>David compares perf of MC, TD(0), … using Random Walk example and different values of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>.</p>
 
+<h2 id="31821---lecture-5-model-free-control">
+<a class="anchor" href="#31821---lecture-5-model-free-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/18/21 - Lecture 5: Model-Free Control</h2>
+
+<p>Distinction between on-policy (learning by doing the job) and off-policy (following someone else behavior)</p>
+
+<p><strong>on-policy</strong></p>
+
+<p>In Monte-Carlo approach, we have 2 issues. First is that we don’t have access to model so we should use Q(s, a) instead of v(s). Second is lack of exploration so we should use <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span>-greedy policy.</p>
+
+<p>With GLIE (Greedy in the Limit with Infinite Exploration), we can update Q after each episodes.</p>
+
+<p>We will now use TD:</p>
+
+<p>Natural idea: use TD instead of MC in our control loop</p>
+
+<ul>
+  <li>Apply TD to Q(S, A)</li>
+  <li>Use <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span>-greedy policy improvement</li>
+  <li>Update every time-step</li>
+</ul>
+
+<p>This is SARSA update. Every single time-step we update our diagram.</p>
+
+<p>A generalisation is n-step Sarsa. n=1 is standard Sarsa. n=<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span> is MC.</p>
+
+<p>To get the best of both worlds, we consider Sarsa(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span>). We have a forward version</p>
+
+<p><img src="/home/explore/git/guillaume/blog/images/deepmind_lec5_sarsal.png" alt=""></p>
+
+<p>And a backward version which allows online experience. Thanks to eligibility traces.</p>
+
+<p><strong>off-policy</strong></p>
+
+<p>Why is this important?</p>
+
+<ul>
+  <li>Learn from observing humans or other agents</li>
+  <li>Re-use experience generated from old policies π 1 , π 2 , …, π t−1</li>
+  <li>Learn about optimal policy while following exploratory policy</li>
+  <li>Learn about multiple policies while following one policy</li>
+</ul>
+
+<p>We can apply it in importance sampling for off-policy. With Monte-Carlo it is however useless due to high variance. It is imperative to to TD.</p>
+
+<p>We can apply that to Q-learning. We can use greedy slection on target policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> greedy on behaviour policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span>.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
