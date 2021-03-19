@@ -90,4 +90,13 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 
 **Wednesday 3/17**
 
-[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter5) 
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter5)  - Policy Gradient
+
+**Thursday 3/18**
+
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter5)  - Policy Gradient notebooks
+
+[RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Model-Free Control (lecture 5)
+
+
+

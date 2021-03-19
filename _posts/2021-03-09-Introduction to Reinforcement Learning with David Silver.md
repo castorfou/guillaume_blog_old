@@ -244,3 +244,45 @@ TD target (R<sub>t+1</sub>+$$\gamma$$V<sub>t+1</sub>) is biased estimate of v<su
 
 David compares perf of MC, TD(0), ... using Random Walk example and different values of $$\alpha$$.
 
+## 3/18/21 - Lecture 5: Model-Free Control
+
+Distinction between on-policy (learning by doing the job) and off-policy (following someone else behavior)
+
+**on-policy**
+
+In Monte-Carlo approach, we have 2 issues. First is that we don't have access to model so we should use Q(s, a) instead of v(s). Second is lack of exploration so we should use $$\epsilon$$-greedy policy.
+
+With GLIE (Greedy in the Limit with Infinite Exploration), we can update Q after each episodes. 
+
+We will now use TD:
+
+Natural idea: use TD instead of MC in our control loop
+
+* Apply TD to Q(S, A)
+* Use $$\epsilon$$-greedy policy improvement
+* Update every time-step
+
+This is SARSA update. Every single time-step we update our diagram.
+
+A generalisation is n-step Sarsa. n=1 is standard Sarsa. n=$$\infty$$ is MC.
+
+To get the best of both worlds, we consider Sarsa($$\lambda$$). We have a forward version
+
+![](/home/explore/git/guillaume/blog/images/deepmind_lec5_sarsal.png)
+
+And a backward version which allows online experience. Thanks to eligibility traces.
+
+**off-policy**
+
+Why is this important?
+
+- Learn from observing humans or other agents
+- Re-use experience generated from old policies π 1 , π 2 , ..., π t−1
+- Learn about optimal policy while following exploratory policy
+- Learn about multiple policies while following one policy
+
+
+
+We can apply it in importance sampling for off-policy. With Monte-Carlo it is however useless due to high variance. It is imperative to to TD.
+
+We can apply that to Q-learning. We can use greedy slection on target policy $$\pi$$ and $$\epsilon$$ greedy on behaviour policy $$\mu$$.
