@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-19T05:25:57-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-22T02:08:59-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
@@ -520,7 +520,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;&gt;Interpretable Machine Learning&lt;/a&gt; by Christoph Molnar. &lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/lime.html#lime&quot;&gt;LIME&lt;/a&gt; reading to understand context of local surrogate models. &lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/shap.html&quot;&gt;SHAP&lt;/a&gt; chapter using Janus data.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 chapter 3) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 step 3) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 3/4&lt;/strong&gt;&lt;/p&gt;
 
@@ -548,7 +548,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Wednesday 3/10&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 chapter4) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 step3+) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))&lt;/p&gt;
 
 &lt;p&gt;t-SNE using Janus data.&lt;/p&gt;
 
@@ -576,13 +576,19 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Wednesday 3/17&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 chapter5)  - Policy Gradient&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 Part 4)  - Policy Gradient&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 3/18&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 chapter5)  - Policy Gradient notebooks&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 Part 4)  - Policy Gradient notebooks&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Model-Free Control (lecture 5)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Model-Free Control (lecture 5)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 3/19&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 Part 5)  - Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C)&lt;/p&gt;
+
+&lt;p&gt;College de France - l’apprentissage profond par Yann Lecunn 2016 - &lt;a href=&quot;https://www.college-de-france.fr/site/yann-lecun/course-2016-02-12-14h30.htm&quot;&gt;Pourquoi l’apprentissage profond ?&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 
@@ -804,7 +810,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;There is an exercise to implement a taxi, within this &lt;a href=&quot;https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H&quot;&gt;notebook&lt;/a&gt; at colab google. Taxi V3 is an env from opengym.&lt;/p&gt;
 
-&lt;h2 id=&quot;3321---back-to-2018---deep-q-learning-with-doom&quot;&gt;(3/3/21) - back to 2018 - Deep Q-learning with Doom&lt;/h2&gt;
+&lt;h2 id=&quot;3321---back-to-2018---step-3---deep-q-learning-with-doom&quot;&gt;(3/3/21) - back to 2018 - Step 3 - Deep Q-learning with Doom&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://youtu.be/gCJyVX98KJ4&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -828,7 +834,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;However as Thomas says, I should do it step by step on my own.&lt;/p&gt;
 
-&lt;h2 id=&quot;31021---chapter-4-improvements-in-deep-q-learning-v1&quot;&gt;(3/10/21) - Chapter 4: Improvements in Deep Q Learning V1&lt;/h2&gt;
+&lt;h2 id=&quot;31021---step-3-improvements-in-deep-q-learning-v1&quot;&gt;(3/10/21) - Step 3+: Improvements in Deep Q Learning V1&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=-Ynjw0Vl3i4&amp;amp;feature=emb_title&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -920,7 +926,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;Should follow video and run/update notebook in //.&lt;/p&gt;
 
-&lt;h2 id=&quot;31721---chapter-5-policy-gradients-v1&quot;&gt;(3/17/21) - Chapter 5: Policy Gradients V1&lt;/h2&gt;
+&lt;h2 id=&quot;31721---part-4-policy-gradients-v1&quot;&gt;(3/17/21) - Part 4: Policy Gradients V1&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=wLTQRuizVyE&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -1033,7 +1039,45 @@ Hint: If you want to see a list of allocated tensors when OOM happens, add repor
       &lt;td&gt;explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
+&lt;/table&gt;
+
+&lt;h2 id=&quot;31921---part-5-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1&quot;&gt;(3/19/21) - Part 5: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/A2C%20with%20Sonic%20the%20Hedgehog&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=GCfUdkCL7FQ&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“hybrid method”: &lt;strong&gt;Actor Critic&lt;/strong&gt;. We’ll using two neural networks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;an &lt;strong&gt;Actor&lt;/strong&gt; that controls how our agent behaves (policy-based)&lt;/li&gt;
+  &lt;li&gt;a &lt;strong&gt;Critic&lt;/strong&gt; that measures how good the action taken is (value-based)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*e1N-YzQmJt-5KwUkdUvAHg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Actor is using a &lt;strong&gt;policy&lt;/strong&gt; function 
+&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi(s, a, \theta)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+Critic is using a &lt;strong&gt;value&lt;/strong&gt; function&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;mo stretchy=&quot;true&quot;&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\widehat{q}(s,a,w)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.67056em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;q&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;svg-align&quot; style=&quot;width:calc(100% - 0.16668em);margin-left:0.16668em;top:-3.43056em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;height:0.24em;&quot;&gt;&lt;svg width='100%' height='0.24em' viewBox='0 0 1062 239' preserveAspectRatio='none'&gt;&lt;path d='M529 0h5l519 115c5 1 9 5 9 10 0 1-1 2-1 3l-4 22
+c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.19444em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+Which means 2 sets of weights to be optimized separately &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.69444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and w.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*KlX2-kNXRYLAYpdnI8VPiA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can use advantage function to stabilize learning:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*SvSFYWx5-u5zf38baqBgyQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;two-different-strategies-asynchronous-or-synchronous&quot;&gt;Two different strategies: Asynchronous or Synchronous&lt;/h4&gt;
+
+&lt;p&gt;We have two different strategies to implement an Actor Critic agent:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A2C (aka Advantage Actor Critic)&lt;/li&gt;
+  &lt;li&gt;A3C (aka Asynchronous Advantage Actor Critic)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here we focus on A2C.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################

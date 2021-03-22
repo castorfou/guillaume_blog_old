@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      13 min read
     
 </span></p>
 
@@ -131,9 +131,14 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi">(2/24/21) - Step 2 - part 2 - Q-Learning, let’s create an autonomous Taxi</a></li>
-<li class="toc-entry toc-h2"><a href="#3321---back-to-2018---deep-q-learning-with-doom">(3/3/21) - back to 2018 - Deep Q-learning with Doom</a></li>
-<li class="toc-entry toc-h2"><a href="#31021---chapter-4-improvements-in-deep-q-learning-v1">(3/10/21) - Chapter 4: Improvements in Deep Q Learning V1</a></li>
-<li class="toc-entry toc-h2"><a href="#31721---chapter-5-policy-gradients-v1">(3/17/21) - Chapter 5: Policy Gradients V1</a></li>
+<li class="toc-entry toc-h2"><a href="#3321---back-to-2018---step-3---deep-q-learning-with-doom">(3/3/21) - back to 2018 - Step 3 - Deep Q-learning with Doom</a></li>
+<li class="toc-entry toc-h2"><a href="#31021---step-3-improvements-in-deep-q-learning-v1">(3/10/21) - Step 3+: Improvements in Deep Q Learning V1</a></li>
+<li class="toc-entry toc-h2"><a href="#31721---part-4-policy-gradients-v1">(3/17/21) - Part 4: Policy Gradients V1</a></li>
+<li class="toc-entry toc-h2"><a href="#31921---part-5-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1">(3/19/21) - Part 5: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#two-different-strategies-asynchronous-or-synchronous">Two different strategies: Asynchronous or Synchronous</a></li>
+</ul>
+</li>
 </ul><p>A course by <a href="https://www.simoninithomas.com/">Thomas Simonini</a></p>
 
 <p><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus (from 2018)</a></p>
@@ -355,8 +360,8 @@ window.onload = wrap_img;
 
 <p>There is an exercise to implement a taxi, within this <a href="https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H">notebook</a> at colab google. Taxi V3 is an env from opengym.</p>
 
-<h2 id="3321---back-to-2018---deep-q-learning-with-doom">
-<a class="anchor" href="#3321---back-to-2018---deep-q-learning-with-doom" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/3/21) - back to 2018 - Deep Q-learning with Doom</h2>
+<h2 id="3321---back-to-2018---step-3---deep-q-learning-with-doom">
+<a class="anchor" href="#3321---back-to-2018---step-3---deep-q-learning-with-doom" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/3/21) - back to 2018 - Step 3 - Deep Q-learning with Doom</h2>
 
 <p><a href="https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8">Article</a>, <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb">Notebook</a>, <a href="https://youtu.be/gCJyVX98KJ4">Video</a></p>
 
@@ -380,8 +385,8 @@ window.onload = wrap_img;
 
 <p>However as Thomas says, I should do it step by step on my own.</p>
 
-<h2 id="31021---chapter-4-improvements-in-deep-q-learning-v1">
-<a class="anchor" href="#31021---chapter-4-improvements-in-deep-q-learning-v1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/10/21) - Chapter 4: Improvements in Deep Q Learning V1</h2>
+<h2 id="31021---step-3-improvements-in-deep-q-learning-v1">
+<a class="anchor" href="#31021---step-3-improvements-in-deep-q-learning-v1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/10/21) - Step 3+: Improvements in Deep Q Learning V1</h2>
 
 <p><a href="https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682">Article</a>, <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb">Notebook</a>, <a href="https://www.youtube.com/watch?v=-Ynjw0Vl3i4&amp;feature=emb_title">Video</a></p>
 
@@ -475,8 +480,8 @@ window.onload = wrap_img;
 
 <p>Should follow video and run/update notebook in //.</p>
 
-<h2 id="31721---chapter-5-policy-gradients-v1">
-<a class="anchor" href="#31721---chapter-5-policy-gradients-v1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/17/21) - Chapter 5: Policy Gradients V1</h2>
+<h2 id="31721---part-4-policy-gradients-v1">
+<a class="anchor" href="#31721---part-4-policy-gradients-v1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/17/21) - Part 4: Policy Gradients V1</h2>
 
 <p><a href="https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/">Article</a>, <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients">Notebook</a>, <a href="https://www.youtube.com/watch?v=wLTQRuizVyE">Video</a></p>
 
@@ -590,6 +595,46 @@ Hint: If you want to see a list of allocated tensors when OOM happens, add repor
     </tr>
   </tbody>
 </table>
+
+<h2 id="31921---part-5-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1">
+<a class="anchor" href="#31921---part-5-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3/19/21) - Part 5: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1</h2>
+
+<p><a href="https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/">Article</a>, <a href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/A2C%20with%20Sonic%20the%20Hedgehog">Notebook</a>, <a href="https://www.youtube.com/watch?v=GCfUdkCL7FQ">Video</a></p>
+
+<p>“hybrid method”: <strong>Actor Critic</strong>. We’ll using two neural networks:</p>
+
+<ul>
+  <li>an <strong>Actor</strong> that controls how our agent behaves (policy-based)</li>
+  <li>a <strong>Critic</strong> that measures how good the action taken is (value-based)</li>
+</ul>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*e1N-YzQmJt-5KwUkdUvAHg.png" alt=""></p>
+
+<p>Actor is using a <strong>policy</strong> function 
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo separator="true">,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi(s, a, \theta)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span></span></span></span>
+Critic is using a <strong>value</strong> function</p>
+
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>q</mi><mo stretchy="true">^</mo></mover><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo separator="true">,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\widehat{q}(s,a,w)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.67056em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span><span class="svg-align" style="width:calc(100% - 0.16668em);margin-left:0.16668em;top:-3.43056em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.24em;"><svg width="100%" height="0.24em" viewbox="0 0 1062 239" preserveaspectratio="none"><path d="M529 0h5l519 115c5 1 9 5 9 10 0 1-1 2-1 3l-4 22
+c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mclose">)</span></span></span></span>
+Which means 2 sets of weights to be optimized separately <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span> and w.</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*KlX2-kNXRYLAYpdnI8VPiA.png" alt=""></p>
+
+<p>We can use advantage function to stabilize learning:</p>
+
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*SvSFYWx5-u5zf38baqBgyQ.png" alt=""></p>
+
+<h4 id="two-different-strategies-asynchronous-or-synchronous">
+<a class="anchor" href="#two-different-strategies-asynchronous-or-synchronous" aria-hidden="true"><span class="octicon octicon-link"></span></a>Two different strategies: Asynchronous or Synchronous</h4>
+
+<p>We have two different strategies to implement an Actor Critic agent:</p>
+
+<ul>
+  <li>A2C (aka Advantage Actor Critic)</li>
+  <li>A3C (aka Asynchronous Advantage Actor Critic)</li>
+</ul>
+
+<p>Here we focus on A2C.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
