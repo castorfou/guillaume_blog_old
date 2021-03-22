@@ -210,7 +210,7 @@ Nice and simple manual example with mouse, cheese in a maze. We run Q-learning a
 
 There is an exercise to implement a taxi, within this [notebook](https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H) at colab google. Taxi V3 is an env from opengym.
 
-## (3/3/21) - back to 2018 - Deep Q-learning with Doom
+## (3/3/21) - back to 2018 - Step 3 - Deep Q-learning with Doom
 
 [Article](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb), [Video](https://youtu.be/gCJyVX98KJ4)
 
@@ -234,7 +234,7 @@ I had to switch to tensorflow-gpu 1.13. Manage some cuda memory issue. But then 
 
 However as Thomas says, I should do it step by step on my own.
 
-## (3/10/21) - Chapter 4: Improvements in Deep Q Learning V1
+## (3/10/21) - Step 3+: Improvements in Deep Q Learning V1
 
 [Article](https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb), [Video](https://www.youtube.com/watch?v=-Ynjw0Vl3i4&feature=emb_title)
 
@@ -322,7 +322,7 @@ Should follow video and run/update notebook in //.
 
 
 
-## (3/17/21) - Chapter 5: Policy Gradients V1
+## (3/17/21) - Part 4: Policy Gradients V1
 
 [Article](https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients), [Video](https://www.youtube.com/watch?v=wLTQRuizVyE)
 
@@ -433,3 +433,42 @@ And I can monitor gpu memory consumption with `watch nvidia-smi`
 or we can use `gpustat -i 2`
 
 [0] Quadro RTX 4000  | 59'C,  **34 %**,   39 W |  7819 /  7982 MB | explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)
+
+## (3/19/21) - Part 5: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1
+
+[Article](https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/A2C%20with%20Sonic%20the%20Hedgehog), [Video](https://www.youtube.com/watch?v=GCfUdkCL7FQ)
+
+“hybrid method”: **Actor Critic**. We’ll using two neural networks:
+
+- an **Actor** that controls how our agent behaves (policy-based)
+- a **Critic** that measures how good the action taken is (value-based)
+
+![](https://cdn-media-1.freecodecamp.org/images/1*e1N-YzQmJt-5KwUkdUvAHg.png)
+
+
+
+Actor is using a **policy** function 
+$$
+ \pi(s, a, \theta)
+$$
+Critic is using a **value** function 
+
+$$
+\widehat{q}(s,a,w)
+$$
+Which means 2 sets of weights to be optimized separately $$\theta$$ and w.
+
+![](https://cdn-media-1.freecodecamp.org/images/1*KlX2-kNXRYLAYpdnI8VPiA.png)
+
+We can use advantage function to stabilize learning:
+
+![](https://cdn-media-1.freecodecamp.org/images/1*SvSFYWx5-u5zf38baqBgyQ.png)
+
+#### Two different strategies: Asynchronous or Synchronous
+
+We have two different strategies to implement an Actor Critic agent:
+
+- A2C (aka Advantage Actor Critic)
+- A3C (aka Asynchronous Advantage Actor Critic)
+
+Here we focus on A2C. 

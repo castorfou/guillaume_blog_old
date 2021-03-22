@@ -28,3 +28,11 @@ categories: [reinforcement learning]
 image: images/<my_image_preview>.png
 ```
 
+
+
+# Latex Reference
+
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
+$$
+\widehat{q}
+$$

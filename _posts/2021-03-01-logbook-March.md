@@ -30,7 +30,7 @@ image: images/logbook.jpg
 
 [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. [LIME](https://christophm.github.io/interpretable-ml-book/lime.html#lime) reading to understand context of local surrogate models. [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) chapter using Janus data.
 
-[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter 3) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 step 3) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)
 
 **Thursday 3/4**
 
@@ -60,7 +60,7 @@ Installation of [clustergit](/guillaume_blog/blog/clustergit.html) to detect loc
 
 **Wednesday 3/10**
 
-[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter4) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 step3+) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))
 
 t-SNE using Janus data.
 
@@ -90,13 +90,17 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 
 **Wednesday 3/17**
 
-[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter5)  - Policy Gradient
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 Part 4)  - Policy Gradient
 
 **Thursday 3/18**
 
-[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 chapter5)  - Policy Gradient notebooks
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 Part 4)  - Policy Gradient notebooks
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Model-Free Control (lecture 5)
 
+**Friday 3/19**
 
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 Part 5)  - Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C)
+
+College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'apprentissage profond ?](https://www.college-de-france.fr/site/yann-lecun/course-2016-02-12-14h30.htm)
 
