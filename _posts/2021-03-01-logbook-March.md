@@ -111,3 +111,5 @@ College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'a
 **Monday 3/122**
 
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Evidential Deep Learning and Uncertainty (lecture 7).
+
+[Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 Part 5)  - Advantage Actor Critic (A2C)  - implementation and video

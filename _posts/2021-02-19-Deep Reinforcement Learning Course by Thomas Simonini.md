@@ -472,3 +472,9 @@ We have two different strategies to implement an Actor Critic agent:
 - A3C (aka Asynchronous Advantage Actor Critic)
 
 Here we focus on A2C. 
+
+
+
+**(3/22/21) - Implementation and video**
+
+It is a little bit confusing. I won't run it. I would have liked a more pregressive approach and to understand all steps Thomas did to get to that final implementation.
