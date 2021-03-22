@@ -104,3 +104,10 @@ RL - [Sutton](/guillaume_blog/blog/reinforcement-learning-readings.html) book (p
 
 College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'apprentissage profond ?](https://www.college-de-france.fr/site/yann-lecun/course-2016-02-12-14h30.htm)
 
+
+
+## Week 12 - Mar 21
+
+**Monday 3/122**
+
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Evidential Deep Learning and Uncertainty (lecture 7).

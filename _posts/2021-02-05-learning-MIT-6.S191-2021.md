@@ -277,3 +277,14 @@ I couldn't go through the training of Pong agent due to GPU limitation?
 2021-03-15 10:54:19.479775: W tensorflow/core/framework/op_kernel.cc:1655] OP_REQUIRES failed at conv_grad_input_ops.cc:1254 : Resource exhausted: OOM when allocating tensor with shape[3944,48,10,10] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfcbash
 ```
 
+
+
+## 3/22/21 - Evidential Deep Learning and Uncertainty - lecture 7
+
+![](../images/mit_6S191_lec7_continuous.png)
+
+![](../images/mit_6S191_lec7_likelihood.png)
+
+
+
+![](../images/mit_6S191_lec7_wrapup.png)
