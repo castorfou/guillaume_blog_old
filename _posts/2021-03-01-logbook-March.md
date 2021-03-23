@@ -108,8 +108,12 @@ College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'a
 
 ## Week 12 - Mar 21
 
-**Monday 3/122**
+**Monday 3/22**
 
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Evidential Deep Learning and Uncertainty (lecture 7).
 
 [Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (v1 Part 5)  - Advantage Actor Critic (A2C)  - implementation and video
+
+**Tuesday 3/23**
+
+[College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Bases orthonormales d'ondelettes (lecture 7)
