@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -120,6 +120,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#3221---approximations-non-linéaires-et-réseaux-de-neurones-lecture-4">3/2/21 - Approximations non linéaires et réseaux de neurones (lecture 4)</a></li>
 <li class="toc-entry toc-h2"><a href="#3921---ondelettes-et-échantillonnage-lecture-5">3/9/21 - Ondelettes et échantillonnage (lecture 5)</a></li>
 <li class="toc-entry toc-h2"><a href="#31621---multi-résolutions-lecture-6">3/16/21 - Multi-résolutions (lecture 6)</a></li>
+<li class="toc-entry toc-h2"><a href="#32321---bases-orthonormales-dondelettes-lecture-7">3/23/21 - Bases orthonormales d’ondelettes (lecture 7)</a></li>
 </ul><p>Un exposé en 8 cours au collège de France de Stéphane Mallat sur les <a href="https://www.college-de-france.fr/site/stephane-mallat/course-2020-2021.htm">représentations parcimonieuses - 2021</a>.</p>
 
 <p>Cela donne envie d’aller voir ses autres cours:</p>
@@ -257,6 +258,32 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <p>Stéphane Mallat fait ensuite le lien avec les algorithmes en bancs de filtre (cascades de filtrage + échantillonnage).</p>
 
 <p>Dans ces opérations il y a sans arrêt des passages du continu au discret. Par exemple si je prends un signal et que je le projette sur ces espaces je me retrouve avec les coordonnées, qui sont les produits scalaires avec mes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">ϕ</span></span></span></span><sub>j,n</sub> (car base orthogonale), ce qui revient à filtrer et sous échantillonner.</p>
+
+<h2 id="32321---bases-orthonormales-dondelettes-lecture-7">
+<a class="anchor" href="#32321---bases-orthonormales-dondelettes-lecture-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/23/21 - Bases orthonormales d’ondelettes (lecture 7)</h2>
+
+<p>On repart sur notre triangle. Depuis 2 cours on est sur l’approximation basse dimension.</p>
+
+<p>Stéphane Mallat applique le théorème sur des cas particuliers de la base de Haar, puis de la base de Shannon. Et revient sur la construction d’une base orthonormales avec des ondelettes “optimales”.</p>
+
+<p><img src="../images/cdf_coeff_ondelette.png" alt=""></p>
+
+<p>Quand on prend le produit scalaire de notre signal f avec les ondelettes, on obtient des résultats presque nuls lorsque le signal est régulier. Et plus on a de moments nuls avec nos ondelettes, plus la régularité est ignorée (l’approximation par projection sur un espace vectorielle des monômes à l’ordre n).</p>
+
+<p>On va cascader les projections a<sub>j</sub> (et les détails d<sub>j</sub>), et ça va revenir à cascader les filtres (les coefficients et les ondelettes).</p>
+
+<p>Pour cela on calcule les valeurs des a<sub>j</sub> et d<sub>j</sub> en fonction de a<sub>j-1</sub>. On montre que cela s’obtient en filtrant (respectivement avec les <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>h</mi><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{h}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89444em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.89444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">h</span></span></span><span style="top:-3.81444em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span> et <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>g</mi><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{g}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.825em;vertical-align:-0.19444em;"></span><span class="mord overline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.63056em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span><span style="top:-3.55056em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span></span></span>) puis en sous-échantillonnant. En cascadant on obtient une série de filtrages, sous-échantillonnages, filtrages, sous-échantillonnages, , etc.</p>
+
+<p>Les filtrages sont des convolutions. Si h a un support compact, ça va réduire le temps de calcul.(le nombre d’éléments non nuls correspond à la taille du filtre). Le nombre d’opérations pour passer de a<sub>L</sub> à a<sub>L-1</sub>, d<sub>L-1</sub> est N*2m (où N: nombre de coefficients de a<sub>L</sub> et m est le nombre de moments nuls)</p>
+
+<p>Le nombre d’opérations est linéaire, et la constante correspond à la taille des filtres.</p>
+
+<p>On peut inverser cet algorithmes (car base o.n.) et la structure emboîtée va nous donner algorithme de reconstruction. On va sur-échantillonner (augmenter d’un facteur 2 en intercalant des 0) et appliquer les filtres g et h, et sommer pour obtenir le résultat.</p>
+
+<p>Donc en gardant la base fréquence a<sub>J</sub> et tous les détails {d<sub>j</sub>}, on reconstitue a<sub>L</sub>. (les signaux sur des grilles de plus en plus fines)</p>
+
+<p>Stéphane Mallat finit sur des exemples en 2 dimensions. En 2 dimensions on aura 3 ondelettes à chaque échelle (1 avec les hautes fréquences dans une direction, 1 avec les hautes fréquences dans l’autre direction, et la dernière avec haute fréquence sur les 2 directions (les coins)).</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
