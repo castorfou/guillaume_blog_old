@@ -507,4 +507,20 @@ And the final loss will be:
 
 
 
-Now the [implementation]()
+**Now the [implementation](https://github.com/castorfou/Deep_reinforcement_learning_Course/tree/master/PPO%20with%20Sonic%20the%20Hedgehog)**
+
+By looking at the implementation, I ran into [Stable baselines3](https://github.com/DLR-RM/stable-baselines3). 
+
+This is a major update of Stable Baselines based on pytorch. It seems interesting!
+
+I like this comment from Stable Baselines3 in the [v1.0 blog post](https://araffin.github.io/post/sb3/):
+
+> **Motivation**
+>
+> Deep reinforcement learning (RL) research has grown rapidly in recent years, yet results are often  [difficult to reproduce](https://arxiv.org/abs/1709.06560). A major challenge is that small implementation details can have a substantial effect on performance – often greater than the  [difference between algorithms](https://iclr.cc/virtual_2020/poster_r1etN1rtPB.html). It is particularly important that implementations used as experimental *baselines* are reliable; otherwise, novel algorithms compared to weak baselines lead to inflated estimates of performance improvements.
+>
+> To help with this problem, we present Stable-Baselines3 (SB3), an  open-source framework implementing seven commonly used model-free deep  RL algorithms, relying on the  [OpenAI Gym interface](https://github.com/openai/gym).
+
+I will create a new blog entry about Stable Baselines3.
+
+as for previous notebook, I need to purchase Sonic2-3 to make it worked. Not for now maybe later.
