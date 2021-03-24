@@ -122,3 +122,4 @@ College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'a
 
 [Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (Chapter 7 v1)  - Proximal Policy Optimization PPO
 
+[Stable baselines 3]() - init and 1st tutorial
