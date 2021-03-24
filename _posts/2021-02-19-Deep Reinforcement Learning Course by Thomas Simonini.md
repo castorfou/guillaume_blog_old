@@ -10,7 +10,7 @@ image: images/RL.png
 
 A course by [Thomas Simonini](https://www.simoninithomas.com/)
 
-[Syllabus (from 2018)](https://simoninithomas.github.io/Deep_reinforcement_learning_Course/) 
+[Syllabus (from 2018)](https://simoninithomas.github.io/deep-rl-course/) 
 
 [Course introduction (from 2020)](https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc) 
 
@@ -20,7 +20,7 @@ I appreciate the effort to update examples, and some 2018 implementations became
 
 
 
-## (2/19/21) - [Step 1](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) - An Introduction to Deep Reinforcement Learning?
+## (2/19/21) - [Chapter 1](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c) - An Introduction to Deep Reinforcement Learning?
 
 Previous version from [2018: What is Deep Reinforcement Learning?](https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419) is quite interesting. With 3 parts:
 
@@ -122,7 +122,7 @@ And that we use deep neural networks to estimate the action to take (policy base
 
 
 
-## (2/19/21) - [Step 2 - part 1](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358) - Q-Learning, let’s create an autonomous Taxi
+## (2/19/21) - [Chapter 2 - part 1](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358) - Q-Learning, let’s create an autonomous Taxi
 
 And in [video](https://www.youtube.com/watch?v=230bR2DrbdE&feature=emb_logo) (I like to read + watch the video at the same time)
 
@@ -161,7 +161,7 @@ It was not clear to me that these methods could be used for policy-based approac
 
 
 
-## (2/24/21) - [Step 2 - part 2](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5) - Q-Learning, let’s create an autonomous Taxi
+## (2/24/21) - [Chapter 2 - part 2](https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5) - Q-Learning, let’s create an autonomous Taxi
 
 But the video is not yet available.
 
@@ -210,7 +210,7 @@ Nice and simple manual example with mouse, cheese in a maze. We run Q-learning a
 
 There is an exercise to implement a taxi, within this [notebook](https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H) at colab google. Taxi V3 is an env from opengym.
 
-## (3/3/21) - back to 2018 - Step 3 - Deep Q-learning with Doom
+## (3/3/21) - back to 2018 - Chapter 3 - Deep Q-learning with Doom
 
 [Article](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb), [Video](https://youtu.be/gCJyVX98KJ4)
 
@@ -234,7 +234,7 @@ I had to switch to tensorflow-gpu 1.13. Manage some cuda memory issue. But then 
 
 However as Thomas says, I should do it step by step on my own.
 
-## (3/10/21) - Step 3+: Improvements in Deep Q Learning V1
+## (3/10/21) - Chapter 4: Improvements in Deep Q Learning V1
 
 [Article](https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb), [Video](https://www.youtube.com/watch?v=-Ynjw0Vl3i4&feature=emb_title)
 
@@ -322,7 +322,7 @@ Should follow video and run/update notebook in //.
 
 
 
-## (3/17/21) - Part 4: Policy Gradients V1
+## (3/17/21) - Chapter 5: Policy Gradients V1
 
 [Article](https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients), [Video](https://www.youtube.com/watch?v=wLTQRuizVyE)
 
@@ -434,7 +434,7 @@ or we can use `gpustat -i 2`
 
 [0] Quadro RTX 4000  | 59'C,  **34 %**,   39 W |  7819 /  7982 MB | explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)
 
-## (3/19/21) - Part 5: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1
+## (3/19/21) - Chapter 6: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1
 
 [Article](https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/A2C%20with%20Sonic%20the%20Hedgehog), [Video](https://www.youtube.com/watch?v=GCfUdkCL7FQ)
 
@@ -478,3 +478,33 @@ Here we focus on A2C.
 **(3/22/21) - Implementation and video**
 
 It is a little bit confusing. I won't run it. I would have liked a more pregressive approach and to understand all steps Thomas did to get to that final implementation.
+
+
+
+## (3/24/21) - Chapter 7: Proximal Policy Optimization PPO V1
+
+[Article](https://towardsdatascience.com/proximal-policy-optimization-ppo-with-sonic-the-hedgehog-2-and-3-c9c21dbed5e), [Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/PPO%20with%20Sonic%20the%20Hedgehog)
+
+The central idea of Proximal Policy Optimization is to avoid having too large policy update. (we use a ratio that will tells us the difference between our new and old policy and clip this ratio from 0.8 to 1.2)
+
+**Clipped Surrogate Objective Function**
+
+![](https://miro.medium.com/max/700/0*Ab-_UqHukYN6syxS)
+
+We will penalize changes that lead to a ratio that will away from 1 (in the paper ratio can only vary from 0.8 to 1.2). **By doing that we’ll ensure that not having too large policy update because the new policy can’t be too different from the older one.**
+
+
+
+2 implementations are known TRPO (Trust Region Policy Optimization) and PPO clip. TRPO being complex and costly, we focus on PPO:
+
+![](https://miro.medium.com/max/700/0*Dk8XFEOzI7yaSfLE)
+
+And the final loss will be:
+
+![](https://miro.medium.com/max/700/1*T0D50EPz-oqGDn55uHv9IA.png)
+
+
+
+
+
+Now the [implementation]()

@@ -193,3 +193,22 @@ we can enrich certificates with Global Protect CA
 ~/anaconda3/ssl$ sudo cp certPG.pem /etc/ssl/certs/
 ```
 
+
+
+## Add a ca-certificate in ubuntu
+
+1. Go to `/usr/local/share/ca-certificates/`
+2. Create a new folder, i.e. `sudo mkdir school`
+3. Copy the . crt file into the school folder.
+4. Make sure the permissions are OK (755 for the folder, 644 for the file)
+5. Run `sudo update-ca-certificates`
+
+We should see effects in `/etc/ssl/certs`
+
+```bash
+/etc/ssl/certs$ ll -tr
+[..]
+lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -> /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
+lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -> cert_M_X5C_sase-net-sslfwd-trust-ca.pem
+```
+
