@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Stable baselines 3 - 1st steps | Guillaume’s blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Stable baselines 3 - 1st steps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="installation, 1st experimentations" />
+<meta property="og:description" content="installation, 1st experimentations" />
+<link rel="canonical" href="https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html" />
+<meta property="og:url" content="https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html" />
+<meta property="og:site_name" content="Guillaume’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-24T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html","@type":"BlogPosting","headline":"Stable baselines 3 - 1st steps","dateModified":"2021-03-24T00:00:00-05:00","datePublished":"2021-03-24T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html"},"description":"installation, 1st experimentations","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/guillaume_blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://castorfou.github.io/guillaume_blog/feed.xml" title="Guillaume's blog" /><link rel="shortcut icon" type="image/x-icon" href="/guillaume_blog/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/guillaume_blog/">Guillaume&#39;s blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/guillaume_blog/about/">About Me</a><a class="page-link" href="/guillaume_blog/search/">Search</a><a class="page-link" href="/guillaume_blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Stable baselines 3 - 1st steps</h1><p class="page-description">installation, 1st experimentations</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-24T00:00:00-05:00" itemprop="datePublished">
+        Mar 24, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/guillaume_blog/categories/#reinforcement learning">reinforcement learning</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/guillaume_blog/categories/#pytorch">pytorch</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/guillaume_blog/categories/#sb3">sb3</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#What-is-stable-baselines-3-(sb3)">What is stable baselines 3 (sb3) </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Links">Links </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#My-installation">My installation </a></li>
+<li class="toc-entry toc-h1"><a href="#SB3-tutorials">SB3 tutorials </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-03-24-stable-baselines-3.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-is-stable-baselines-3-(sb3)">
+<a class="anchor" href="#What-is-stable-baselines-3-(sb3)" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is stable baselines 3 (sb3)<a class="anchor-link" href="#What-is-stable-baselines-3-(sb3)"> </a>
+</h1>
+<p>I have just read about this new release. This is a complete rewrite of stable baselines 2, without any reference to tensorflow, and based on pytorch (&gt;1.4+).</p>
+<p>There is a lot of running implementations of RL algorithms, based on gym.
+A very good introduction in this <a href="https://araffin.github.io/post/sb3/">blog entry</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://araffin.github.io/post/sb3/">Stable-Baselines3: Reliable Reinforcement Learning Implementations | Antonin Raffin | Homepage</a></p>
+<blockquote>
+<h2 id="Links">
+<a class="anchor" href="#Links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links<a class="anchor-link" href="#Links"> </a>
+</h2>
+<p>GitHub repository:<a href="https://github.com/DLR-RM/stable-baselines3">https://github.com/DLR-RM/stable-baselines3</a>&gt; &gt; Documentation:<a href="https://stable-baselines3.readthedocs.io/">https://stable-baselines3.readthedocs.io/</a>&gt; &gt; RL Baselines3 Zoo:<a href="https://github.com/DLR-RM/rl-baselines3-zoo">https://github.com/DLR-RM/rl-baselines3-zoo</a>&gt; &gt; Contrib:<a href="https://github.com/Stable-Baselines-Team/stable-baselines3-contrib">https://github.com/Stable-Baselines-Team/stable-baselines3-contrib</a>&gt; &gt; RL Tutorial:<a href="https://github.com/araffin/rl-tutorial-jnrr19">https://github.com/araffin/rl-tutorial-jnrr19</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="My-installation">
+<a class="anchor" href="#My-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>My installation<a class="anchor-link" href="#My-installation"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Standard installation</p>
+<div class="highlight"><pre><span></span>conda create --name stablebaselines3 <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7
+conda activate stablebaselines3
+pip install stable-baselines3<span class="o">[</span>extra<span class="o">]</span>
+conda install -c conda-forge jupyter_contrib_nbextensions
+conda install nb_conda
+</pre></div>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>conda list
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre># packages in environment at /home/explore/miniconda3/envs/stablebaselines3:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+absl-py                   0.12.0                   pypi_0    pypi
+atari-py                  0.2.6                    pypi_0    pypi
+attrs                     20.3.0             pyhd3deb0d_0    conda-forge
+backcall                  0.2.0              pyh9f0ad1d_0    conda-forge
+backports                 1.0                        py_2    conda-forge
+backports.functools_lru_cache 1.6.1                      py_0    conda-forge
+bleach                    3.3.0              pyh44b312d_0    conda-forge
+box2d                     2.3.10                   pypi_0    pypi
+box2d-py                  2.3.8                    pypi_0    pypi
+ca-certificates           2021.1.19            h06a4308_1  
+cachetools                4.2.1                    pypi_0    pypi
+certifi                   2020.12.5        py37h06a4308_0  
+chardet                   4.0.0                    pypi_0    pypi
+cloudpickle               1.6.0                    pypi_0    pypi
+cycler                    0.10.0                   pypi_0    pypi
+decorator                 4.4.2                      py_0    conda-forge
+defusedxml                0.7.1              pyhd8ed1ab_0    conda-forge
+entrypoints               0.3             pyhd8ed1ab_1003    conda-forge
+future                    0.18.2                   pypi_0    pypi
+google-auth               1.28.0                   pypi_0    pypi
+google-auth-oauthlib      0.4.3                    pypi_0    pypi
+grpcio                    1.36.1                   pypi_0    pypi
+gym                       0.18.0                   pypi_0    pypi
+icu                       58.2              hf484d3e_1000    conda-forge
+idna                      2.10                     pypi_0    pypi
+importlib-metadata        3.7.3            py37h89c1867_0    conda-forge
+ipykernel                 5.5.0            py37h888b3d9_1    conda-forge
+ipython                   7.21.0           py37h888b3d9_0    conda-forge
+ipython_genutils          0.2.0                      py_1    conda-forge
+jedi                      0.18.0           py37h89c1867_2    conda-forge
+jinja2                    2.11.3             pyh44b312d_0    conda-forge
+jsonschema                3.2.0              pyhd8ed1ab_3    conda-forge
+jupyter_client            6.1.12             pyhd8ed1ab_0    conda-forge
+jupyter_contrib_core      0.3.3                      py_2    conda-forge
+jupyter_contrib_nbextensions 0.5.1              pyhd8ed1ab_2    conda-forge
+jupyter_core              4.7.1            py37h89c1867_0    conda-forge
+jupyter_highlight_selected_word 0.2.0           py37h89c1867_1002    conda-forge
+jupyter_latex_envs        1.4.6           pyhd8ed1ab_1002    conda-forge
+jupyter_nbextensions_configurator 0.4.1            py37h89c1867_2    conda-forge
+kiwisolver                1.3.1                    pypi_0    pypi
+ld_impl_linux-64          2.33.1               h53a641e_7  
+libffi                    3.3                  he6710b0_2  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libsodium                 1.0.18               h36c2ea0_1    conda-forge
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libxml2                   2.9.10               hb55368b_3  
+libxslt                   1.1.34               hc22bd24_0  
+lxml                      4.6.3            py37h9120a33_0  
+markdown                  3.3.4                    pypi_0    pypi
+markupsafe                1.1.1            py37hb5d75c8_2    conda-forge
+matplotlib                3.3.4                    pypi_0    pypi
+mistune                   0.8.4           py37h4abf009_1002    conda-forge
+nb_conda                  2.2.1                    py37_0  
+nb_conda_kernels          2.3.1            py37h06a4308_0  
+nbconvert                 5.6.1            py37hc8dfbb8_1    conda-forge
+nbformat                  5.1.2              pyhd8ed1ab_1    conda-forge
+ncurses                   6.2                  he6710b0_1  
+notebook                  5.7.10           py37hc8dfbb8_0    conda-forge
+numpy                     1.20.1                   pypi_0    pypi
+oauthlib                  3.1.0                    pypi_0    pypi
+opencv-python             4.5.1.48                 pypi_0    pypi
+openssl                   1.1.1j               h27cfd23_0  
+packaging                 20.9               pyh44b312d_0    conda-forge
+pandas                    1.2.3                    pypi_0    pypi
+pandoc                    2.12                 h7f98852_0    conda-forge
+pandocfilters             1.4.2                      py_1    conda-forge
+parso                     0.8.1              pyhd8ed1ab_0    conda-forge
+pexpect                   4.8.0              pyh9f0ad1d_2    conda-forge
+pickleshare               0.7.5                   py_1003    conda-forge
+pillow                    7.2.0                    pypi_0    pypi
+pip                       21.0.1           py37h06a4308_0  
+prometheus_client         0.9.0              pyhd3deb0d_0    conda-forge
+prompt-toolkit            3.0.18             pyha770c72_0    conda-forge
+protobuf                  3.15.6                   pypi_0    pypi
+psutil                    5.8.0                    pypi_0    pypi
+ptyprocess                0.7.0              pyhd3deb0d_0    conda-forge
+pyasn1                    0.4.8                    pypi_0    pypi
+pyasn1-modules            0.2.8                    pypi_0    pypi
+pyglet                    1.5.0                    pypi_0    pypi
+pygments                  2.8.1              pyhd8ed1ab_0    conda-forge
+pyparsing                 2.4.7              pyh9f0ad1d_0    conda-forge
+pyrsistent                0.17.3           py37h4abf009_1    conda-forge
+python                    3.7.10               hdb3f193_0  
+python-dateutil           2.8.1                      py_0    conda-forge
+python_abi                3.7                     1_cp37m    conda-forge
+pytz                      2021.1                   pypi_0    pypi
+pyyaml                    5.3.1            py37hb5d75c8_1    conda-forge
+pyzmq                     19.0.2           py37hac76be4_2    conda-forge
+readline                  8.1                  h27cfd23_0  
+requests                  2.25.1                   pypi_0    pypi
+requests-oauthlib         1.3.0                    pypi_0    pypi
+rsa                       4.7.2                    pypi_0    pypi
+scipy                     1.6.1                    pypi_0    pypi
+send2trash                1.5.0                      py_0    conda-forge
+setuptools                52.0.0           py37h06a4308_0  
+six                       1.15.0             pyh9f0ad1d_0    conda-forge
+sqlite                    3.35.2               hdfb4753_0  
+stable-baselines3         1.0                      pypi_0    pypi
+tensorboard               2.4.1                    pypi_0    pypi
+tensorboard-plugin-wit    1.8.0                    pypi_0    pypi
+terminado                 0.9.3            py37h89c1867_0    conda-forge
+testpath                  0.4.4                      py_0    conda-forge
+tk                        8.6.10               hbc83047_0  
+torch                     1.8.0                    pypi_0    pypi
+tornado                   6.1              py37h4abf009_0    conda-forge
+traitlets                 5.0.5                      py_0    conda-forge
+typing_extensions         3.7.4.3                    py_0    conda-forge
+urllib3                   1.26.4                   pypi_0    pypi
+wcwidth                   0.2.5              pyh9f0ad1d_2    conda-forge
+webencodings              0.5.1                      py_1    conda-forge
+werkzeug                  1.0.1                    pypi_0    pypi
+wheel                     0.36.2             pyhd3eb1b0_0  
+xz                        5.2.5                h7b6447c_0  
+yaml                      0.2.5                h516909a_0    conda-forge
+zeromq                    4.3.4                h2531618_0  
+zipp                      3.4.1              pyhd8ed1ab_0    conda-forge
+zlib                      1.2.11               h7b6447c_3  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="SB3-tutorials">
+<a class="anchor" href="#SB3-tutorials" aria-hidden="true"><span class="octicon octicon-link"></span></a>SB3 tutorials<a class="anchor-link" href="#SB3-tutorials"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gym</span>
+
+<span class="kn">from</span> <span class="nn">stable_baselines3</span> <span class="kn">import</span> <span class="n">A2C</span>
+<span class="kn">from</span> <span class="nn">stable_baselines3.common.monitor</span> <span class="kn">import</span> <span class="n">Monitor</span>
+<span class="kn">from</span> <span class="nn">stable_baselines3.common.callbacks</span> <span class="kn">import</span> <span class="n">CheckpointCallback</span><span class="p">,</span> <span class="n">EvalCallback</span>
+
+<span class="c1"># Save a checkpoint every 1000 steps</span>
+<span class="n">checkpoint_callback</span> <span class="o">=</span> <span class="n">CheckpointCallback</span><span class="p">(</span><span class="n">save_freq</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span> <span class="n">save_path</span><span class="o">=</span><span class="s2">"./logs/"</span><span class="p">,</span>
+                                         <span class="n">name_prefix</span><span class="o">=</span><span class="s2">"rl_model"</span><span class="p">)</span>
+
+<span class="c1"># Evaluate the model periodically</span>
+<span class="c1"># and auto-save the best model and evaluations</span>
+<span class="c1"># Use a monitor wrapper to properly report episode stats</span>
+<span class="n">eval_env</span> <span class="o">=</span> <span class="n">Monitor</span><span class="p">(</span><span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">"LunarLander-v2"</span><span class="p">))</span>
+<span class="c1"># Use deterministic actions for evaluation</span>
+<span class="n">eval_callback</span> <span class="o">=</span> <span class="n">EvalCallback</span><span class="p">(</span><span class="n">eval_env</span><span class="p">,</span> <span class="n">best_model_save_path</span><span class="o">=</span><span class="s2">"./logs/"</span><span class="p">,</span>
+                             <span class="n">log_path</span><span class="o">=</span><span class="s2">"./logs/"</span><span class="p">,</span> <span class="n">eval_freq</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span>
+                             <span class="n">deterministic</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">render</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Train an agent using A2C on LunarLander-v2</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">A2C</span><span class="p">(</span><span class="s2">"MlpPolicy"</span><span class="p">,</span> <span class="s2">"LunarLander-v2"</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">total_timesteps</span><span class="o">=</span><span class="mi">20000</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_callback</span><span class="p">,</span> <span class="n">eval_callback</span><span class="p">])</span>
+
+<span class="c1"># Retrieve and reset the environment</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_env</span><span class="p">()</span>
+<span class="n">obs</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+<span class="c1"># Query the agent (stochastic action here)</span>
+<span class="n">action</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span> <span class="n">deterministic</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Using cuda device
+Creating environment from the given name 'LunarLander-v2'
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-def125f52da9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     20</span> <span class="ansi-red-fg"># Train an agent using A2C on LunarLander-v2</span>
+<span class="ansi-green-intense-fg ansi-bold">     21</span> model <span class="ansi-blue-fg">=</span> A2C<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"MlpPolicy"</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"LunarLander-v2"</span><span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 22</span><span class="ansi-red-fg"> </span>model<span class="ansi-blue-fg">.</span>learn<span class="ansi-blue-fg">(</span>total_timesteps<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">20000</span><span class="ansi-blue-fg">,</span> callback<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">[</span>checkpoint_callback<span class="ansi-blue-fg">,</span> eval_callback<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     23</span> 
+<span class="ansi-green-intense-fg ansi-bold">     24</span> <span class="ansi-red-fg"># Retrieve and reset the environment</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/a2c/a2c.py</span> in <span class="ansi-cyan-fg">learn</span><span class="ansi-blue-fg">(self, total_timesteps, callback, log_interval, eval_env, eval_freq, n_eval_episodes, tb_log_name, eval_log_path, reset_num_timesteps)</span>
+<span class="ansi-green-intense-fg ansi-bold">    197</span>             tb_log_name<span class="ansi-blue-fg">=</span>tb_log_name<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    198</span>             eval_log_path<span class="ansi-blue-fg">=</span>eval_log_path<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">--&gt; 199</span><span class="ansi-red-fg">             </span>reset_num_timesteps<span class="ansi-blue-fg">=</span>reset_num_timesteps<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    200</span>         )
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/on_policy_algorithm.py</span> in <span class="ansi-cyan-fg">learn</span><span class="ansi-blue-fg">(self, total_timesteps, callback, log_interval, eval_env, eval_freq, n_eval_episodes, tb_log_name, eval_log_path, reset_num_timesteps)</span>
+<span class="ansi-green-intense-fg ansi-bold">    225</span>         <span class="ansi-green-fg">while</span> self<span class="ansi-blue-fg">.</span>num_timesteps <span class="ansi-blue-fg">&lt;</span> total_timesteps<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    226</span> 
+<span class="ansi-green-fg">--&gt; 227</span><span class="ansi-red-fg">             </span>continue_training <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>collect_rollouts<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>env<span class="ansi-blue-fg">,</span> callback<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>rollout_buffer<span class="ansi-blue-fg">,</span> n_rollout_steps<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>n_steps<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    228</span> 
+<span class="ansi-green-intense-fg ansi-bold">    229</span>             <span class="ansi-green-fg">if</span> continue_training <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">False</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/on_policy_algorithm.py</span> in <span class="ansi-cyan-fg">collect_rollouts</span><span class="ansi-blue-fg">(self, env, callback, rollout_buffer, n_rollout_steps)</span>
+<span class="ansi-green-intense-fg ansi-bold">    157</span>                 <span class="ansi-red-fg"># Convert to pytorch tensor</span>
+<span class="ansi-green-intense-fg ansi-bold">    158</span>                 obs_tensor <span class="ansi-blue-fg">=</span> th<span class="ansi-blue-fg">.</span>as_tensor<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_last_obs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>to<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>device<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 159</span><span class="ansi-red-fg">                 </span>actions<span class="ansi-blue-fg">,</span> values<span class="ansi-blue-fg">,</span> log_probs <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>policy<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span>obs_tensor<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    160</span>             actions <span class="ansi-blue-fg">=</span> actions<span class="ansi-blue-fg">.</span>cpu<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>numpy<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    161</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/policies.py</span> in <span class="ansi-cyan-fg">forward</span><span class="ansi-blue-fg">(self, obs, deterministic)</span>
+<span class="ansi-green-intense-fg ansi-bold">    532</span>         <span class="ansi-blue-fg">:</span><span class="ansi-green-fg">return</span><span class="ansi-blue-fg">:</span> action<span class="ansi-blue-fg">,</span> value <span class="ansi-green-fg">and</span> log probability of the action
+<span class="ansi-green-intense-fg ansi-bold">    533</span>         """
+<span class="ansi-green-fg">--&gt; 534</span><span class="ansi-red-fg">         </span>latent_pi<span class="ansi-blue-fg">,</span> latent_vf<span class="ansi-blue-fg">,</span> latent_sde <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_get_latent<span class="ansi-blue-fg">(</span>obs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    535</span>         <span class="ansi-red-fg"># Evaluate the values for the given observations</span>
+<span class="ansi-green-intense-fg ansi-bold">    536</span>         values <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>value_net<span class="ansi-blue-fg">(</span>latent_vf<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/policies.py</span> in <span class="ansi-cyan-fg">_get_latent</span><span class="ansi-blue-fg">(self, obs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    551</span>         <span class="ansi-red-fg"># Preprocess the observation if needed</span>
+<span class="ansi-green-intense-fg ansi-bold">    552</span>         features <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>extract_features<span class="ansi-blue-fg">(</span>obs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 553</span><span class="ansi-red-fg">         </span>latent_pi<span class="ansi-blue-fg">,</span> latent_vf <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>mlp_extractor<span class="ansi-blue-fg">(</span>features<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    554</span> 
+<span class="ansi-green-intense-fg ansi-bold">    555</span>         <span class="ansi-red-fg"># Features for sde</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/module.py</span> in <span class="ansi-cyan-fg">_call_impl</span><span class="ansi-blue-fg">(self, *input, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    887</span>             result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_slow_forward<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>input<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    888</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 889</span><span class="ansi-red-fg">             </span>result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>input<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    890</span>         for hook in itertools.chain(
+<span class="ansi-green-intense-fg ansi-bold">    891</span>                 _global_forward_hooks<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/torch_layers.py</span> in <span class="ansi-cyan-fg">forward</span><span class="ansi-blue-fg">(self, features)</span>
+<span class="ansi-green-intense-fg ansi-bold">    222</span>         """
+<span class="ansi-green-intense-fg ansi-bold">    223</span>         shared_latent <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>shared_net<span class="ansi-blue-fg">(</span>features<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 224</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>policy_net<span class="ansi-blue-fg">(</span>shared_latent<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>value_net<span class="ansi-blue-fg">(</span>shared_latent<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    225</span> 
+<span class="ansi-green-intense-fg ansi-bold">    226</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/module.py</span> in <span class="ansi-cyan-fg">_call_impl</span><span class="ansi-blue-fg">(self, *input, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    887</span>             result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_slow_forward<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>input<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    888</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 889</span><span class="ansi-red-fg">             </span>result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>input<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    890</span>         for hook in itertools.chain(
+<span class="ansi-green-intense-fg ansi-bold">    891</span>                 _global_forward_hooks<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/container.py</span> in <span class="ansi-cyan-fg">forward</span><span class="ansi-blue-fg">(self, input)</span>
+<span class="ansi-green-intense-fg ansi-bold">    117</span>     <span class="ansi-green-fg">def</span> forward<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> input<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    118</span>         <span class="ansi-green-fg">for</span> module <span class="ansi-green-fg">in</span> self<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 119</span><span class="ansi-red-fg">             </span>input <span class="ansi-blue-fg">=</span> module<span class="ansi-blue-fg">(</span>input<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    120</span>         <span class="ansi-green-fg">return</span> input
+<span class="ansi-green-intense-fg ansi-bold">    121</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/module.py</span> in <span class="ansi-cyan-fg">_call_impl</span><span class="ansi-blue-fg">(self, *input, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    887</span>             result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_slow_forward<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>input<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    888</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 889</span><span class="ansi-red-fg">             </span>result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>input<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    890</span>         for hook in itertools.chain(
+<span class="ansi-green-intense-fg ansi-bold">    891</span>                 _global_forward_hooks<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/linear.py</span> in <span class="ansi-cyan-fg">forward</span><span class="ansi-blue-fg">(self, input)</span>
+<span class="ansi-green-intense-fg ansi-bold">     92</span> 
+<span class="ansi-green-intense-fg ansi-bold">     93</span>     <span class="ansi-green-fg">def</span> forward<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> input<span class="ansi-blue-fg">:</span> Tensor<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> Tensor<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 94</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> F<span class="ansi-blue-fg">.</span>linear<span class="ansi-blue-fg">(</span>input<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>weight<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>bias<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     95</span> 
+<span class="ansi-green-intense-fg ansi-bold">     96</span>     <span class="ansi-green-fg">def</span> extra_repr<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> str<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/functional.py</span> in <span class="ansi-cyan-fg">linear</span><span class="ansi-blue-fg">(input, weight, bias)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1751</span>     <span class="ansi-green-fg">if</span> has_torch_function_variadic<span class="ansi-blue-fg">(</span>input<span class="ansi-blue-fg">,</span> weight<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1752</span>         <span class="ansi-green-fg">return</span> handle_torch_function<span class="ansi-blue-fg">(</span>linear<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">(</span>input<span class="ansi-blue-fg">,</span> weight<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> input<span class="ansi-blue-fg">,</span> weight<span class="ansi-blue-fg">,</span> bias<span class="ansi-blue-fg">=</span>bias<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">-&gt; 1753</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> torch<span class="ansi-blue-fg">.</span>_C<span class="ansi-blue-fg">.</span>_nn<span class="ansi-blue-fg">.</span>linear<span class="ansi-blue-fg">(</span>input<span class="ansi-blue-fg">,</span> weight<span class="ansi-blue-fg">,</span> bias<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1754</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1755</span> 
+
+<span class="ansi-red-fg">RuntimeError</span>: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="castorfou/guillaume_blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/guillaume_blog/blog/stable-baselines-3.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/guillaume_blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/guillaume_blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/guillaume_blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Journey for a datascientist</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/castorfou" title="castorfou"><svg class="svg-icon grey"><use xlink:href="/guillaume_blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/GuillaumeRamel1" title="GuillaumeRamel1"><svg class="svg-icon grey"><use xlink:href="/guillaume_blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
