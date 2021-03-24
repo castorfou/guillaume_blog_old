@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-24T02:42:01-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-24T04:07:44-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
 
@@ -150,6 +150,24 @@ origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;
 &lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
+  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
+lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
+lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
@@ -520,7 +538,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;&gt;Interpretable Machine Learning&lt;/a&gt; by Christoph Molnar. &lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/lime.html#lime&quot;&gt;LIME&lt;/a&gt; reading to understand context of local surrogate models. &lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/shap.html&quot;&gt;SHAP&lt;/a&gt; chapter using Janus data.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 step 3) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (Chapter 3 v1) on DQN with temporal limitation using LSTM, and experience replay. (replay buffer)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 3/4&lt;/strong&gt;&lt;/p&gt;
 
@@ -548,7 +566,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Wednesday 3/10&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 step3+) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (Chapter 4 v1) on four strategies to improve DQN (fixed Q-targets, double DQN, dueling DQN (DDQN), Prioritized Experience Replay (PER))&lt;/p&gt;
 
 &lt;p&gt;t-SNE using Janus data.&lt;/p&gt;
 
@@ -576,17 +594,17 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Wednesday 3/17&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 Part 4)  - Policy Gradient&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (Chapter 5 v1)  - Policy Gradient&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 3/18&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 Part 4)  - Policy Gradient notebooks&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (Chapter 5 v1)  - Policy Gradient notebooks&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Model-Free Control (lecture 5)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Friday 3/19&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (v1 Part 5)  - Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (Chapter 6 v1)  - Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C)&lt;/p&gt;
 
 &lt;p&gt;College de France - l’apprentissage profond par Yann Lecunn 2016 - &lt;a href=&quot;https://www.college-de-france.fr/site/yann-lecun/course-2016-02-12-14h30.htm&quot;&gt;Pourquoi l’apprentissage profond ?&lt;/a&gt;&lt;/p&gt;
 
@@ -600,7 +618,11 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Tuesday 3/23&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Bases orthonormales d’ondelettes (lecture 7)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Bases orthonormales d’ondelettes (lecture 7)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 3/24&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt; (Chapter 7 v1)  - Proximal Policy Optimization PPO&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 
@@ -626,7 +648,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;RL - &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;Sutton&lt;/a&gt; book (p200-220) - eligibility traces, and start of planning vs learning&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Deep%20Reinforcement%20Learning%20Course%20by%20Thomas%20Simonini</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/Deep_reinforcement_learning_Course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/deep-rl-course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc&quot;&gt;Course introduction (from 2020)&lt;/a&gt;&lt;/p&gt;
 
@@ -634,7 +656,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;I appreciate the effort to update examples, and some 2018 implementations became obsolete. Historical Atari VC2600 games are now Starcraft 2 or minecraft, and news series on building AI for video games in Unity and Unreal Engine..&lt;/p&gt;
 
-&lt;h2 id=&quot;21921---step-1---an-introduction-to-deep-reinforcement-learning&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c&quot;&gt;Step 1&lt;/a&gt; - An Introduction to Deep Reinforcement Learning?&lt;/h2&gt;
+&lt;h2 id=&quot;21921---chapter-1---an-introduction-to-deep-reinforcement-learning&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c&quot;&gt;Chapter 1&lt;/a&gt; - An Introduction to Deep Reinforcement Learning?&lt;/h2&gt;
 
 &lt;p&gt;Previous version from &lt;a href=&quot;https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419&quot;&gt;2018: What is Deep Reinforcement Learning?&lt;/a&gt; is quite interesting. With 3 parts:&lt;/p&gt;
 
@@ -736,7 +758,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;And that we use deep neural networks to estimate the action to take (policy based) or to estimate the value of a state (value based). Thomas suggests to go further with deep learning with MIT 6.S191, which is the &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html&quot;&gt;one&lt;/a&gt; (version 2021) I follow these days.&lt;/p&gt;
 
-&lt;h2 id=&quot;21921---step-2---part-1---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358&quot;&gt;Step 2 - part 1&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
+&lt;h2 id=&quot;21921---chapter-2---part-1---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358&quot;&gt;Chapter 2 - part 1&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
 
 &lt;p&gt;And in &lt;a href=&quot;https://www.youtube.com/watch?v=230bR2DrbdE&amp;amp;feature=emb_logo&quot;&gt;video&lt;/a&gt; (I like to read + watch the video at the same time)&lt;/p&gt;
 
@@ -771,7 +793,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;It was not clear to me that these methods could be used for policy-based approach. It is now!&lt;/p&gt;
 
-&lt;h2 id=&quot;22421---step-2---part-2---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/24/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5&quot;&gt;Step 2 - part 2&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
+&lt;h2 id=&quot;22421---chapter-2---part-2---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/24/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5&quot;&gt;Chapter 2 - part 2&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
 
 &lt;p&gt;But the video is not yet available.&lt;/p&gt;
 
@@ -822,7 +844,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;There is an exercise to implement a taxi, within this &lt;a href=&quot;https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H&quot;&gt;notebook&lt;/a&gt; at colab google. Taxi V3 is an env from opengym.&lt;/p&gt;
 
-&lt;h2 id=&quot;3321---back-to-2018---step-3---deep-q-learning-with-doom&quot;&gt;(3/3/21) - back to 2018 - Step 3 - Deep Q-learning with Doom&lt;/h2&gt;
+&lt;h2 id=&quot;3321---back-to-2018---chapter-3---deep-q-learning-with-doom&quot;&gt;(3/3/21) - back to 2018 - Chapter 3 - Deep Q-learning with Doom&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://youtu.be/gCJyVX98KJ4&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -846,7 +868,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;However as Thomas says, I should do it step by step on my own.&lt;/p&gt;
 
-&lt;h2 id=&quot;31021---step-3-improvements-in-deep-q-learning-v1&quot;&gt;(3/10/21) - Step 3+: Improvements in Deep Q Learning V1&lt;/h2&gt;
+&lt;h2 id=&quot;31021---chapter-4-improvements-in-deep-q-learning-v1&quot;&gt;(3/10/21) - Chapter 4: Improvements in Deep Q Learning V1&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=-Ynjw0Vl3i4&amp;amp;feature=emb_title&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -938,7 +960,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;Should follow video and run/update notebook in //.&lt;/p&gt;
 
-&lt;h2 id=&quot;31721---part-4-policy-gradients-v1&quot;&gt;(3/17/21) - Part 4: Policy Gradients V1&lt;/h2&gt;
+&lt;h2 id=&quot;31721---chapter-5-policy-gradients-v1&quot;&gt;(3/17/21) - Chapter 5: Policy Gradients V1&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=wLTQRuizVyE&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -1053,7 +1075,7 @@ Hint: If you want to see a list of allocated tensors when OOM happens, add repor
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;31921---part-5-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1&quot;&gt;(3/19/21) - Part 5: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1&lt;/h2&gt;
+&lt;h2 id=&quot;31921---chapter-6-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1&quot;&gt;(3/19/21) - Chapter 6: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/A2C%20with%20Sonic%20the%20Hedgehog&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=GCfUdkCL7FQ&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 
@@ -1093,7 +1115,29 @@ Which means 2 sets of weights to be optimized separately &lt;span class=&quot;ka
 
 &lt;p&gt;&lt;strong&gt;(3/22/21) - Implementation and video&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;It is a little bit confusing. I won’t run it. I would have liked a more pregressive approach and to understand all steps Thomas did to get to that final implementation.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
+&lt;p&gt;It is a little bit confusing. I won’t run it. I would have liked a more pregressive approach and to understand all steps Thomas did to get to that final implementation.&lt;/p&gt;
+
+&lt;h2 id=&quot;32421---chapter-7-proximal-policy-optimization-ppo-v1&quot;&gt;(3/24/21) - Chapter 7: Proximal Policy Optimization PPO V1&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/proximal-policy-optimization-ppo-with-sonic-the-hedgehog-2-and-3-c9c21dbed5e&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/PPO%20with%20Sonic%20the%20Hedgehog&quot;&gt;Notebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The central idea of Proximal Policy Optimization is to avoid having too large policy update. (we use a ratio that will tells us the difference between our new and old policy and clip this ratio from 0.8 to 1.2)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clipped Surrogate Objective Function&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/0*Ab-_UqHukYN6syxS&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We will penalize changes that lead to a ratio that will away from 1 (in the paper ratio can only vary from 0.8 to 1.2). &lt;strong&gt;By doing that we’ll ensure that not having too large policy update because the new policy can’t be too different from the older one.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;2 implementations are known TRPO (Trust Region Policy Optimization) and PPO clip. TRPO being complex and costly, we focus on PPO:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/0*Dk8XFEOzI7yaSfLE&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And the final loss will be:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*T0D50EPz-oqGDn55uHv9IA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now the &lt;a href=&quot;&quot;&gt;implementation&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################

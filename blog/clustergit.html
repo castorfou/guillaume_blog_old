@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -116,6 +116,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#rabbitvcs">RabbitVCS</a></li>
 <li class="toc-entry toc-h2"><a href="#git-nautilus-icons">git-nautilus-icons</a></li>
 <li class="toc-entry toc-h2"><a href="#activate-git-with-globalprotect">Activate git with GlobalProtect</a></li>
+<li class="toc-entry toc-h2"><a href="#add-a-ca-certificate-in-ubuntu">Add a ca-certificate in ubuntu</a></li>
 </ul><p>Very basic question to help keep my repo clean.</p>
 
 <h2 id="installation-clustergit">
@@ -275,6 +276,28 @@ origin  git@github.com:castorfou/guillaume_blog.git <span class="o">(</span>push
 <p>we can enrich certificates with Global Protect CA</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/anaconda3/ssl<span class="nv">$ </span><span class="nb">sudo cp </span>certPG.pem /etc/ssl/certs/
+</code></pre></div></div>
+
+<h2 id="add-a-ca-certificate-in-ubuntu">
+<a class="anchor" href="#add-a-ca-certificate-in-ubuntu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add a ca-certificate in ubuntu</h2>
+
+<ol>
+  <li>Go to <code class="language-plaintext highlighter-rouge">/usr/local/share/ca-certificates/</code>
+</li>
+  <li>Create a new folder, i.e. <code class="language-plaintext highlighter-rouge">sudo mkdir school</code>
+</li>
+  <li>Copy the . crt file into the school folder.</li>
+  <li>Make sure the permissions are OK (755 for the folder, 644 for the file)</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo update-ca-certificates</code>
+</li>
+</ol>
+
+<p>We should see effects in <code class="language-plaintext highlighter-rouge">/etc/ssl/certs</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/ssl/certs<span class="nv">$ </span>ll <span class="nt">-tr</span>
+<span class="o">[</span>..]
+lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
+lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
 </code></pre></div></div>
 
 
