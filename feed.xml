@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T12:14:19-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T12:44:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -163,7 +163,226 @@ systemctl start parprouted dhcp-helper
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;reboot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Done!&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="raspberry pi" /><summary type="html">After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Done!&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="raspberry pi" /><summary type="html">After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.</summary></entry><entry><title type="html">Git - How To Contribute To A Project</title><link href="https://castorfou.github.io/guillaume_blog/blog/contribute-to-a-project-with-git.html" rel="alternate" type="text/html" title="Git - How To Contribute To A Project" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/contribute%20to%20a%20project%20with%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/contribute-to-a-project-with-git.html">&lt;p&gt;Based on http://qpleple.com/how-to-contribute-to-a-project-on-github/&lt;/p&gt;
+
+&lt;h2 id=&quot;using-clustergit-as-an-example&quot;&gt;Using clustergit as an example&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Fork&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Make your own working copy of the project by forking it: go on the project page (https://github.com/mnagel/clustergit) and click “Fork”. You can access you copy at: https://github.com/castorfou/clustergit&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clone&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Clone your fork git repository on your local computer:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:castorfou/clustergit.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Branch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch master-to-main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This is very important, create one branch per patch. And never submit a patch that has been done on the branch &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Develop&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here I want to reflect change from Oct/20 where default branch name in github is now main&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/master/main/g'&lt;/span&gt; clustergit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Commit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;default branch name 'main'&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Push to github&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master-to-main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Create pull request&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Go on your fork page (https://github.com/castorfou/clustergit), then select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;my-awesome-patch&lt;/code&gt; in the branch list and click “Pull Request”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Submit patch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Check the diff, write a message explaining what you have done and why the repository owner should accept your pull request and submit.&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">Based on http://qpleple.com/how-to-contribute-to-a-project-on-github/</summary></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
+git clone git@github.com:mnagel/clustergit.git
+&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+./Deep_reinforcement_learning_Course    : Changes
+./ReinforcementLearning_references      : On branch main, Untracked files
+./blog                                  : Untracked files
+./d059                                  : On branch main, Changes
+./data-scientist-skills                 : Clean
+./deeplearning_specialization           : Clean
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./gan_specialization                    : Clean
+./hello_nbdev                           : Clean
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
+On branch main
+Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+nothing to commit, working tree clean
+
+./squeezebox                            : On branch main, No Changes
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./d059                                  : On branch main, Changes
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
+
+&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
+
+&lt;p&gt;Rename everything from master to main&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
+
+&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
+
+&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Update local clones&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
+git fetch origin
+git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
+
+&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
+
+&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
+
+&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
+
+&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and to activate trace&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
+  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
+lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
+lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
@@ -435,181 +654,7 @@ Cost of backup is constant, independent of n = |S|&lt;/p&gt;
 
 &lt;p&gt;We can apply it in importance sampling for off-policy. With Monte-Carlo it is however useless due to high variance. It is imperative to to TD.&lt;/p&gt;
 
-&lt;p&gt;We can apply that to Q-learning. We can use greedy slection on target policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; greedy on behaviour policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mu&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;μ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
-git clone git@github.com:mnagel/clustergit.git
-&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-./Deep_reinforcement_learning_Course    : Changes
-./ReinforcementLearning_references      : On branch main, Untracked files
-./blog                                  : Untracked files
-./d059                                  : On branch main, Changes
-./data-scientist-skills                 : Clean
-./deeplearning_specialization           : Clean
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./gan_specialization                    : Clean
-./hello_nbdev                           : Clean
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
-On branch main
-Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-
-nothing to commit, working tree clean
-
-./squeezebox                            : On branch main, No Changes
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./d059                                  : On branch main, Changes
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
-
-&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
-
-&lt;p&gt;Rename everything from master to main&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
-
-&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
-
-&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
-
-&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
-
-&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
-
-&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
-
-&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and to activate trace&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
-  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
-lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
-lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We can apply that to Q-learning. We can use greedy slection on target policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; greedy on behaviour policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mu&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;μ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -1797,262 +1842,4 @@ M834 80h400000v40h-400000z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&
 
 &lt;p&gt;Donc en gardant la base fréquence a&lt;sub&gt;J&lt;/sub&gt; et tous les détails {d&lt;sub&gt;j&lt;/sub&gt;}, on reconstitue a&lt;sub&gt;L&lt;/sub&gt;. (les signaux sur des grilles de plus en plus fines)&lt;/p&gt;
 
-&lt;p&gt;Stéphane Mallat finit sur des exemples en 2 dimensions. En 2 dimensions on aura 3 ondelettes à chaque échelle (1 avec les hautes fréquences dans une direction, 1 avec les hautes fréquences dans l’autre direction, et la dernière avec haute fréquence sur les 2 directions (les coins)).&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="math" /><summary type="html">Un exposé en 8 cours au collège de France de Stéphane Mallat sur les représentations parcimonieuses - 2021.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/math.jpeg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/math.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Learning: MIT 6.S191 Introduction to Deep Learning - 2021</title><link href="https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021.html" rel="alternate" type="text/html" title="Learning: MIT 6.S191 Introduction to Deep Learning - 2021" /><published>2021-02-05T00:00:00-06:00</published><updated>2021-02-05T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/learning-MIT-6.S191-2021.html">&lt;p&gt;From &lt;a href=&quot;http://introtodeeplearning.com/&quot;&gt;http://introtodeeplearning.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I keep all content (lectures, notebooks) in &lt;a href=&quot;https://github.com/castorfou/mit_6s191&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is done with google contribution, and therefore all examples are in tensorflow. I will try to adapt notebooks in PyTorch.&lt;/p&gt;
-
-&lt;h2 id=&quot;2521---intro-to-deep-learning---lecture-1&quot;&gt;2/5/21 - Intro to Deep Learning - lecture 1&lt;/h2&gt;
-
-&lt;p&gt;Lecturer: Alexander Amini&lt;/p&gt;
-
-&lt;p&gt;Intro is just jaw-dropping!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/5tvmMX8r_OM?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&amp;amp;t=40&quot;&gt;2020 intro&lt;/a&gt; was top.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/5tvmMX8r_OM?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&amp;amp;t=149&quot;&gt;2021 intro&lt;/a&gt; is just awesome.&lt;/p&gt;
-
-&lt;p&gt;It is a standard overview of simple deep learning concepts: Perceptron, multi-perceptron, dense layers, loss, gradient-descent, backprop, SGD, regularization, dropout, early stoppping&lt;/p&gt;
-
-&lt;h2 id=&quot;21521---deep-sequence-modeling---lecture-2&quot;&gt;2/15/21 - Deep Sequence Modeling - lecture 2&lt;/h2&gt;
-
-&lt;p&gt;New lecturer: Ava Soleimany&lt;/p&gt;
-
-&lt;p&gt;Nice introduction to sequence modeling with Many-to-One, One-to-Many, Many-to-Many.&lt;/p&gt;
-
-&lt;p&gt;RNN and implementation in TensorFlow. And NLP examples: next word problem. (and NLP concepts such as Vocabulary, Indexing, Embedding)&lt;/p&gt;
-
-&lt;p&gt;And what we need for sequence modeling:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;handle variable-length sequences&lt;/li&gt;
-  &lt;li&gt;track long-term dependencies&lt;/li&gt;
-  &lt;li&gt;maintain information about order&lt;/li&gt;
-  &lt;li&gt;share parameters across the sequence&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Backpropagation through time and problem of exploding/vanishing gradients.&lt;/p&gt;
-
-&lt;p&gt;Against exploding: gradient clipping. Against vanishing: 3 ways explained - activation functions, weight init, network arch.&lt;/p&gt;
-
-&lt;p&gt;Gated cell: to control what information is passed through. Ex: LSTM Long Short Term Memory. They support something closed to Forget Store Update Output. Ava explains graphically which part of LSTM cells is providing which function.&lt;/p&gt;
-
-&lt;p&gt;And then examples: Music generation (to generate 4th movement of last symphony from Schubert!), sentiment classification, machine translation (with Attention mechanisms which provide learnable memory access to solve Not long memory), trajectory prediction, environmental modeling.&lt;/p&gt;
-
-&lt;h2 id=&quot;21621---intro-to-tensorflow--music-generation---software-lab-1&quot;&gt;2/16/21 - Intro to TensorFlow;  Music Generation - software lab 1&lt;/h2&gt;
-
-&lt;p&gt;As an exercise I have completed labs in TensorFlow and adapted them in &lt;a href=&quot;https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab1/Part1_TensorFlow_transposed%20to%20PyTorch.ipynb&quot;&gt;PyTorch&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With LSTM, I ran into this error: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UnknownError: Fail to find the dnn implementation. [Op:CudnnRNN]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Which is solved by calling &lt;a href=&quot;https://www.tensorflow.org/api_docs/python/tf/config/experimental/set_memory_growth&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tf.config.experimental.set_memory_growth&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_physical_devices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GPU'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Currently, memory growth needs to be the same across GPUs
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gpu&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;experimental&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_memory_growth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gpu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;logical_gpus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;experimental&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_logical_devices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GPU'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Physical GPUs,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logical_gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Logical GPUs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RuntimeError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Memory growth must be set before GPUs have been initialized
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Music lab is nice to play with. I am not sure I would be able to convert to PyTorch. It would require time!&lt;/p&gt;
-
-&lt;h2 id=&quot;22221---deep-computer-vision---lecture-3&quot;&gt;2/22/21 - Deep Computer Vision - lecture 3&lt;/h2&gt;
-
-&lt;p&gt;I have never been a big fan of computer vision.&lt;/p&gt;
-
-&lt;p&gt;I like the idea developed by Alexander Amini about &lt;strong&gt;hierarchy of features&lt;/strong&gt;. (low level: edges, spots; mid level: eyes, noses)&lt;/p&gt;
-
-&lt;p&gt;And how he explains limitation of FC layers for visual detection, and introduction of spatial structure (feature extraction with convolutions)&lt;/p&gt;
-
-&lt;p&gt;Some nice examples of hand-engineered convolution filters for different needs: sharpen, edge detect, strong edge detect.&lt;/p&gt;
-
-&lt;p&gt;Then classic explanations of CNN with convolution, max pooling.&lt;/p&gt;
-
-&lt;p&gt;I like the way classification problems are broken down between feature learning (convolution+relu, pooling, repeated several times) and classification (flatten, FC, softmax) which is a task learning part.&lt;/p&gt;
-
-&lt;p&gt;The second part (task learning part) can be anything: classification, object detection, segmentation, probabilistic control, …&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec3_cnn_architectures.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Nice explanation of R-CNN to learn region proposals.&lt;/p&gt;
-
-&lt;p&gt;Introduction to Software lab2: de-biaising facial recognition systems.&lt;/p&gt;
-
-&lt;h2 id=&quot;3121---deep-generative-modeling---lecture-4&quot;&gt;3/1/21 - Deep Generative Modeling - lecture 4&lt;/h2&gt;
-
-&lt;p&gt;From pattern discovered from data (underlying structure of the data), generate examples following these patterns.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Autoencoder&lt;/strong&gt;: foundational generative model which builds up latent variable representation by self-encoding the input. To train such network, we create a decoder to go from latent variable to generated output, and then compare input to generated output.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec4_autoencoders.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Variational autoencoder (vae)&lt;/strong&gt;: with vae we try to encode inputs as distributions defined by mean &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mu&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;μ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and variance &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\sigma&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;σ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;. And we want to achieve continuity and completeness:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;continuity: points that are close in latent space –&amp;gt; similar content after decoding&lt;/li&gt;
-  &lt;li&gt;completeness: sampling from latent space –&amp;gt; ‘meaningful’ content after decoding&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Regularization is pushing to get these properties.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec4_vae_regularization.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And the learning process is about minimizing reconstruction loss + a regularization term:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec4_vae_loss.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ava is then explaining the smart trick to allow backpropagation to happen. Indeed by introducing stochastic term in the sampling layer, we are breaking the backpropagation logic.&lt;/p&gt;
-
-&lt;p&gt;We are moving z from a normal distribution to &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mu&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;μ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;+&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\sigma&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;σ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; where &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; follow a normal distribution of mean 0, std 1.&lt;/p&gt;
-
-&lt;p&gt;Explanation then of space disentanglement via &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;β&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\beta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8888799999999999em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05278em;&quot;&gt;β&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;-VAEs. It allows latent variables to be independent.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec4_vae_beta.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then some introduction about &lt;em&gt;*GANs&lt;/em&gt; (Generative Adversarial Network) which are a way to make a generative model by having 2 neural networks (generator and discriminator) compete with each other.&lt;/p&gt;
-
-&lt;p&gt;And share some recent advances on GAN such as StyleGAN(2), conditional GAN, CycleGAN. CycleGAN is famous for turning horses in zebras, but it can be used to transform speech as well (used in the synthesis of Obama’s voice)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec4_generative_summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3121---de-biasing-facial-recognition-systems---software-lab-2&quot;&gt;3/1/21 - De-biasing Facial Recognition Systems - Software Lab 2&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab2/Part1_MNIST.ipynb&quot;&gt;Part 1 MNIST&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;starts with FC layers. With some overfitting but a good accuracy of 96%.&lt;/p&gt;
-
-&lt;p&gt;then move to a CNN architecture. I ran into &lt;a href=&quot;https://github.com/tensorflow/tensorflow/issues/24828&quot;&gt;gpu issues&lt;/a&gt;.  Accuracy is now 99%.&lt;/p&gt;
-
-&lt;p&gt;I didn’t manage to make the last part working. (using tape.gradient)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/mit_6s191/blob/main/introtodeeplearning/lab2/Part2_Debiasing.ipynb&quot;&gt;Part 2 Debiasing&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Fit a CNN model to classify faces based on celebA dataset. And see the bias effect by predicting on Fitzpatrick scale skin type classification system.&lt;/p&gt;
-
-&lt;p&gt;Use VAE to learn latent structure.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/3s4S6Gc/vae.jpg&quot; alt=&quot;The concept of a VAE&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To then debias using DB-VAE model.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/aamini/introtodeeplearning/2019/lab2/img/DB-VAE.png&quot; alt=&quot;DB-VAE&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There is a lack of progressive unit tests to validate each step. Cannot go to the end.&lt;/p&gt;
-
-&lt;p&gt;Would be interested to see how to apply to non computer vision problems.&lt;/p&gt;
-
-&lt;h2 id=&quot;3821---deep-reinforcement-learning---lecture-5&quot;&gt;3/8/21 - Deep Reinforcement Learning - lecture 5&lt;/h2&gt;
-
-&lt;p&gt;Q-function captures the expected total future reward an agent in state &lt;em&gt;s&lt;/em&gt; can receive by executing a certain action &lt;em&gt;a&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Distinction between &lt;strong&gt;Value Learning&lt;/strong&gt; (learn Q function) and &lt;strong&gt;Policy Learning&lt;/strong&gt; (find directly &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(s)).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_pg_dqn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Value Learning or DQN&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_dqn_summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_dqn_downsides.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The key thing is about handling of continuous actions.&lt;/p&gt;
-
-&lt;p&gt;Let’s see how to do it with policy learning:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Policy learning or Policy Gradient (PG)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_pg_key_idea.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec5_pg_training.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Alexanders ends the lecture by discussing about Deepmind progress:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;alphaGo - 2016: with a pretrain in supervised mode then standard DRL&lt;/li&gt;
-  &lt;li&gt;alphaGo Zero - 2017: standard DRL without pretraining&lt;/li&gt;
-  &lt;li&gt;alphaZero - 2018: standard DRL without pretraining and applied to several games (Go, Chess, Shogi)&lt;/li&gt;
-  &lt;li&gt;MuZero - 2020: learns the rules of the game by itself, create unknown dynamics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;31521---limitations-and-new-frontiers---lecture-6&quot;&gt;3/15/21 - Limitations and New Frontiers - lecture 6&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Universal Approximation Theorem&lt;/strong&gt;: A feedforward network with a single layer is sufficient to approximate, to an arbitrary precision, any continuous function.&lt;/p&gt;
-
-&lt;p&gt;Ava emphasizes importance of training data (e.g. for generalization) and mentions a paper called “&lt;a href=&quot;https://arxiv.org/abs/1611.03530&quot;&gt;Understanding Deep Neural Networks Requires Rethinking Generalization&lt;/a&gt;”.&lt;/p&gt;
-
-&lt;p&gt;Some fail examples with dogs colorization (BW -&amp;gt; colors) creating pink zone under the mouth.&lt;/p&gt;
-
-&lt;p&gt;And another one with Tesla autopilot. It motivates working on &lt;strong&gt;uncertainty in Deep Learning&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;we need uncertainty metrics to assess the noise inherent to the data: &lt;em&gt;aleatoric uncertainty&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;we need uncertainty metrics to assess the network’s confidence in its predictions: &lt;em&gt;epistemic uncertainty&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ava cites an example of a real 3D printed turtle designed to fool a classifier from turtle to rifle.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;New frontier: Encoding Structure into Deep Learning.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;CNN is a nice way to extract features from an image. But not all kind of data can express features in an euclidean way. Graphs is used as a structure for representing data in a lot of cases.&lt;/p&gt;
-
-&lt;p&gt;It drives us to &lt;strong&gt;Graph Convolutional Networks&lt;/strong&gt; (GCNs). The graph convolutional operator is going to associate weights with each of the edges and apply the weights across the graph and then the kernel is going to be moved to the next node in the graph extracting information about its local connectivity. That local information is going to be aggregated and the NN is going to then learn a function that encodes that local information into a higher level representation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;New frontier: Automated Machine Learning &amp;amp; AI.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Using a neural architecture search algorithm. At each step the model samples a brand new network. For each layer, defines number of fileters, filet height, width, stride height, width, nbr of fileters, etc. Update RNN controller based on the accuracy of the child network after training.&lt;/p&gt;
-
-&lt;p&gt;From autoML to autoAI: an automated complete pipeline for designing and deploying ML and AI models.&lt;/p&gt;
-
-&lt;h2 id=&quot;31521---pixels-to-control-learning---software-lab-3&quot;&gt;3/15/21 - Pixels-to-Control Learning - Software Lab 3&lt;/h2&gt;
-
-&lt;p&gt;This is about reinforcement learning.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We install (apt) xvfb and python-opengl.&lt;/p&gt;
-
-&lt;p&gt;And will learn with cartpole and pong.&lt;/p&gt;
-
-&lt;p&gt;Still this issue&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;UnknownError:  Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
-	 [[node sequential_8/conv2d_4/Conv2D (defined at &lt;ipython-input-21-f109a85f869a&gt;:19) ]] [Op:__inference_distributed_function_2442603]&lt;/ipython-input-21-f109a85f869a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Solved by running&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_physical_devices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GPU'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;# Currently, memory growth needs to be the same across GPUs
-&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gpu&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;experimental&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_memory_growth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gpu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;logical_gpus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;experimental&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_logical_devices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'GPU'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Physical GPUs,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logical_gpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Logical GPUs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RuntimeError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;# Memory growth must be set before GPUs have been initialized
-&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I couldn’t go through the training of Pong agent due to GPU limitation?&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2021-03-15 10:54:19.479775: W tensorflow/core/framework/op_kernel.cc:1655] OP_REQUIRES failed at conv_grad_input_ops.cc:1254 : Resource exhausted: OOM when allocating tensor with shape[3944,48,10,10] and &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfcbash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;32221---evidential-deep-learning-and-uncertainty---lecture-7&quot;&gt;3/22/21 - Evidential Deep Learning and Uncertainty - lecture 7&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec7_continuous.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec7_likelihood.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/mit_6S191_lec7_wrapup.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="MIT" /><category term="tensorflow" /><summary type="html">From http://introtodeeplearning.com/</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/DL.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/DL.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Stéphane Mallat finit sur des exemples en 2 dimensions. En 2 dimensions on aura 3 ondelettes à chaque échelle (1 avec les hautes fréquences dans une direction, 1 avec les hautes fréquences dans l’autre direction, et la dernière avec haute fréquence sur les 2 directions (les coins)).&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="math" /><summary type="html">Un exposé en 8 cours au collège de France de Stéphane Mallat sur les représentations parcimonieuses - 2021.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/math.jpeg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/math.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
