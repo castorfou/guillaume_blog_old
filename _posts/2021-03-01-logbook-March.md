@@ -122,4 +122,8 @@ College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'a
 
 [Deep Reinforcement Learning by Thomas Simonini](/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html) (Chapter 7 v1)  - Proximal Policy Optimization PPO
 
-[Stable baselines 3]() - init and 1st tutorial
+[Stable baselines 3](/guillaume_blog/blog/stable-baselines-3.html) - init and 1st tutorial
+
+**Thursday 3/25**
+
+setup [headless raspberry pi]() to bridge wifi (tethering from phone) to ethernet (to wifi-router)
