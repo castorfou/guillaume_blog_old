@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T08:39:47-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T09:55:45-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -184,8 +184,19 @@ A very good introduction in this &lt;a href=&quot;https://araffin.github.io/post
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;https://araffin.github.io/post/sb3/&quot;&gt;Stable-Baselines3: Reliable Reinforcement Learning Implementations | Antonin Raffin | Homepage&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 id=&quot;Links&quot;&gt;Links&lt;a class=&quot;anchor-link&quot; href=&quot;#Links&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;GitHub repository:&lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;https://github.com/DLR-RM/stable-baselines3&lt;/a&gt;&amp;gt; Documentation:&lt;a href=&quot;https://stable-baselines3.readthedocs.io/&quot;&gt;https://stable-baselines3.readthedocs.io/&lt;/a&gt;&amp;gt; RL Baselines3 Zoo:&lt;a href=&quot;https://github.com/DLR-RM/rl-baselines3-zoo&quot;&gt;https://github.com/DLR-RM/rl-baselines3-zoo&lt;/a&gt;&amp;gt; Contrib:&lt;a href=&quot;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&quot;&gt;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&lt;/a&gt;&amp;gt; RL Tutorial:&lt;a href=&quot;https://github.com/araffin/rl-tutorial-jnrr19&quot;&gt;https://github.com/araffin/rl-tutorial-jnrr19&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;GitHub repository: &lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;https://github.com/DLR-RM/stable-baselines3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Documentation: &lt;a href=&quot;https://stable-baselines3.readthedocs.io/&quot;&gt;https://stable-baselines3.readthedocs.io/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RL Baselines3 Zoo: &lt;a href=&quot;https://github.com/DLR-RM/rl-baselines3-zoo&quot;&gt;https://github.com/DLR-RM/rl-baselines3-zoo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Contrib: &lt;a href=&quot;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&quot;&gt;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RL Tutorial: &lt;a href=&quot;https://github.com/araffin/rl-tutorial-jnrr19&quot;&gt;https://github.com/araffin/rl-tutorial-jnrr19&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1348,6 +1359,57 @@ Solving environment: done
 &lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;h2 id=&quot;Tips-and-tricks&quot;&gt;Tips and tricks&lt;a class=&quot;anchor-link&quot; href=&quot;#Tips-and-tricks&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;This &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html&quot;&gt;page&lt;/a&gt; covers general advice about RL (where to start, which algorithm to choose, how to evaluate an algorithm, …), as well as tips and tricks when using a custom environment or implementing an RL algorithm.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Be familiar with RL, see &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl.html&quot;&gt;resource&lt;/a&gt; page&lt;/li&gt;
+&lt;li&gt;read SB3 documentation&lt;/li&gt;
+&lt;li&gt;do the &lt;a href=&quot;https://github.com/araffin/rl-tutorial-jnrr19/tree/sb3&quot;&gt;tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Tune hyperparameters&lt;/strong&gt;
+RL zoo is introduced. It contains some hyperparameter optimization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RL evaluation&lt;/strong&gt;
+We suggest you reading &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&gt;Deep Reinforcement Learning that Matters&lt;/a&gt; for a good discussion about RL evaluation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;which algorithm to choose&lt;/strong&gt;
+1st criteria is discrete vs continuous actions. And 2nd is capacity to parallelize training.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html&quot;&gt;Reinforcement Learning Tips and Tricks — Stable Baselines3 1.1.0a1 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;h3 id=&quot;Discrete-Actions&amp;#182;&amp;gt;-&amp;gt;-Note&quot;&gt;Discrete Actions&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions&quot; title=&quot;Permalink to this headline&quot;&gt;&amp;#182;&lt;/a&gt;&amp;gt; &amp;gt; Note&lt;a class=&quot;anchor-link&quot; href=&quot;#Discrete-Actions&amp;#182;&amp;gt;-&amp;gt;-Note&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This covers &lt;code&gt;Discrete&lt;/code&gt;, &lt;code&gt;MultiDiscrete&lt;/code&gt;, &lt;code&gt;Binary&lt;/code&gt; and &lt;code&gt;MultiBinary&lt;/code&gt; spaces&lt;/p&gt;
+&lt;h4 id=&quot;Discrete-Actions---Single-Process&amp;#182;&amp;gt;-&amp;gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-&amp;#8230;)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&amp;gt;-&amp;gt;-####-Discrete-Actions---Multiprocessed&amp;#182;&amp;gt;-&amp;gt;-You-should-give-a-try-to-PPO-or-A2C.&quot;&gt;Discrete Actions - Single Process&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions-single-process&quot; title=&quot;Permalink to this headline&quot;&gt;&amp;#182;&lt;/a&gt;&amp;gt; &amp;gt; &lt;code&gt;DQN&lt;/code&gt; with extensions (double DQN, prioritized replay, &amp;#8230;) are the recommended algorithms. We notably provide &lt;code&gt;QR-DQN&lt;/code&gt; in our &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib&quot;&gt;contrib repo&lt;/a&gt;. &lt;code&gt;DQN&lt;/code&gt; is usually slower to train (regarding wall clock time) but is the most sample efficient (because of its replay buffer).&amp;gt; &amp;gt; #### Discrete Actions - Multiprocessed&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions-multiprocessed&quot; title=&quot;Permalink to this headline&quot;&gt;&amp;#182;&lt;/a&gt;&amp;gt; &amp;gt; You should give a try to &lt;code&gt;PPO&lt;/code&gt; or &lt;code&gt;A2C&lt;/code&gt;.&lt;a class=&quot;anchor-link&quot; href=&quot;#Discrete-Actions---Single-Process&amp;#182;&amp;gt;-&amp;gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-&amp;#8230;)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&amp;gt;-&amp;gt;-####-Discrete-Actions---Multiprocessed&amp;#182;&amp;gt;-&amp;gt;-You-should-give-a-try-to-PPO-or-A2C.&quot;&gt; &lt;/a&gt;&lt;/h4&gt;&lt;h3 id=&quot;Continuous-Actions&amp;#182;&amp;gt;-&amp;gt;-####-Continuous-Actions---Single-Process&amp;#182;&amp;gt;-&amp;gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&amp;gt;-&amp;gt;-####-Continuous-Actions---Multiprocessed&amp;#182;&amp;gt;-&amp;gt;-Take-a-look-at-PPO-or-A2C.-Again,-don&amp;#8217;t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs).&quot;&gt;Continuous Actions&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions&quot; title=&quot;Permalink to this headline&quot;&gt;&amp;#182;&lt;/a&gt;&amp;gt; &amp;gt; #### Continuous Actions - Single Process&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions-single-process&quot; title=&quot;Permalink to this headline&quot;&gt;&amp;#182;&lt;/a&gt;&amp;gt; &amp;gt; Current State Of The Art (SOTA) algorithms are &lt;code&gt;SAC&lt;/code&gt;, &lt;code&gt;TD3&lt;/code&gt; and &lt;code&gt;TQC&lt;/code&gt; (available in our &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib&quot;&gt;contrib repo&lt;/a&gt;). Please use the hyperparameters in the &lt;a href=&quot;https://github.com/DLR-RM/rl-baselines3-zoo&quot;&gt;RL zoo&lt;/a&gt; for best results.&amp;gt; &amp;gt; #### Continuous Actions - Multiprocessed&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions-multiprocessed&quot; title=&quot;Permalink to this headline&quot;&gt;&amp;#182;&lt;/a&gt;&amp;gt; &amp;gt; Take a look at &lt;code&gt;PPO&lt;/code&gt; or &lt;code&gt;A2C&lt;/code&gt;. Again, don&amp;#8217;t forget to take the hyperparameters from the &lt;a href=&quot;https://github.com/DLR-RM/rl-baselines3-zoo&quot;&gt;RL zoo&lt;/a&gt; for continuous actions problems (cf &lt;em&gt;Bullet&lt;/em&gt; envs).&lt;a class=&quot;anchor-link&quot; href=&quot;#Continuous-Actions&amp;#182;&amp;gt;-&amp;gt;-####-Continuous-Actions---Single-Process&amp;#182;&amp;gt;-&amp;gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&amp;gt;-&amp;gt;-####-Continuous-Actions---Multiprocessed&amp;#182;&amp;gt;-&amp;gt;-Take-a-look-at-PPO-or-A2C.-Again,-don&amp;#8217;t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs).&quot;&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Creating a custom env&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;multiple times there are advices about normalizing: observation and action space. A good practice is to rescale your actions to lie in [-1, 1]. This does not limit you as you can easily rescale the action inside the environment&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;tips and tricks to reproduce a RL paper&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html&quot;&gt;Reinforcement Learning Tips and Tricks — Stable Baselines3 1.1.0a1 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;A personal pick (by @araffin) for environments with gradual difficulty in RL with continuous actions:&amp;gt; &amp;gt; 1.  Pendulum (easy to solve)
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;HalfCheetahBullet (medium difficulty with local minima and shaped reward)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;BipedalWalkerHardcore (if it works on that one, then you can have a cookie)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;in RL with discrete actions:&amp;gt; &amp;gt; 1.  CartPole-v1 (easy to be better than random agent, harder to achieve maximal performance)
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;LunarLander&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pong (one of the easiest Atari game)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;other Atari games (e.g. Breakout)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;h2 id=&quot;Resource-page&quot;&gt;Resource page&lt;a class=&quot;anchor-link&quot; href=&quot;#Resource-page&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1355,9 +1417,22 @@ Solving environment: done
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/guide/rl.html&quot;&gt;Reinforcement Learning Resources — Stable Baselines3 1.1.0a1 documentation&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;Stable-Baselines3 assumes that you already understand the basic concepts of Reinforcement Learning (RL).&lt;/p&gt;
-&lt;p&gt;However, if you want to learn about RL, there are several good resources to get started:&amp;gt; &amp;gt; -   &lt;a href=&quot;https://spinningup.openai.com/en/latest/&quot;&gt;OpenAI Spinning Up&lt;/a&gt;&amp;gt; &amp;gt; -   &lt;a href=&quot;http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html&quot;&gt;David Silver’s course&lt;/a&gt;&amp;gt; &amp;gt; -   &lt;a href=&quot;https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html&quot;&gt;Lilian Weng’s blog&lt;/a&gt;&amp;gt; &amp;gt; -   &lt;a href=&quot;https://sites.google.com/view/deep-rl-bootcamp/lectures&quot;&gt;Berkeley’s Deep RL Bootcamp&lt;/a&gt;&amp;gt; &amp;gt; -   &lt;a href=&quot;http://rail.eecs.berkeley.edu/deeprlcourse/&quot;&gt;Berkeley’s Deep Reinforcement Learning course&lt;/a&gt;&amp;gt; &amp;gt; -   &lt;a href=&quot;https://github.com/dennybritz/reinforcement-learning&quot;&gt;More resources&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Stable-Baselines3 assumes that you already understand the basic concepts of Reinforcement Learning (RL).&lt;/p&gt;
+&lt;p&gt;However, if you want to learn about RL, there are several good resources to get started:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://spinningup.openai.com/en/latest/&quot;&gt;OpenAI Spinning Up&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html&quot;&gt;David Silver’s course&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html&quot;&gt;Lilian Weng’s blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://sites.google.com/view/deep-rl-bootcamp/lectures&quot;&gt;Berkeley’s Deep RL Bootcamp&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://rail.eecs.berkeley.edu/deeprlcourse/&quot;&gt;Berkeley’s Deep Reinforcement Learning course&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/dennybritz/reinforcement-learning&quot;&gt;More resources&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1992,7 +2067,9 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Thursday 3/25&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;setup &lt;a href=&quot;/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html&quot;&gt;headless raspberry pi&lt;/a&gt; to bridge wifi (tethering from phone) to ethernet (to wifi-router)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;setup &lt;a href=&quot;/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html&quot;&gt;headless raspberry pi&lt;/a&gt; to bridge wifi (tethering from phone) to ethernet (to wifi-router)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/stable-baselines-3.html&quot;&gt;Stable baselines 3&lt;/a&gt; - finalize init and go through documentation&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 

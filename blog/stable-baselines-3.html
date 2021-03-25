@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      23 min read
+      25 min read
     
 </span></p>
 
@@ -117,11 +117,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#What-is-stable-baselines-3-(sb3)">What is stable baselines 3 (sb3) </a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#Links">Links </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h1"><a href="#What-is-stable-baselines-3-(sb3)">What is stable baselines 3 (sb3) </a></li>
 <li class="toc-entry toc-h1"><a href="#My-installation">My installation </a></li>
 <li class="toc-entry toc-h1"><a href="#SB3-tutorials">SB3 tutorials </a></li>
 <li class="toc-entry toc-h1"><a href="#Issues">Issues </a>
@@ -132,6 +128,16 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Stable-baselines-3-user-guide">Stable baselines 3 user guide </a>
 <ul>
+<li class="toc-entry toc-h2"><a href="#Tips-and-tricks">Tips and tricks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Discrete-Actions¶>->-Note">Discrete Actions¶&gt; &gt; Note </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Discrete-Actions---Single-Process¶>->-DQN-with-extensions-(double-DQN,-prioritized-replay,-…)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).>->-####-Discrete-Actions---Multiprocessed¶>->-You-should-give-a-try-to-PPO-or-A2C.">Discrete Actions - Single Process¶&gt; &gt; DQN with extensions (double DQN, prioritized replay, …) are the recommended algorithms. We notably provide QR-DQN in our contrib repo. DQN is usually slower to train (regarding wall clock time) but is the most sample efficient (because of its replay buffer).&gt; &gt; #### Discrete Actions - Multiprocessed¶&gt; &gt; You should give a try to PPO or A2C. </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Continuous-Actions¶>->-####-Continuous-Actions---Single-Process¶>->-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.>->-####-Continuous-Actions---Multiprocessed¶>->-Take-a-look-at-PPO-or-A2C.-Again,-don’t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs).">Continuous Actions¶&gt; &gt; #### Continuous Actions - Single Process¶&gt; &gt; Current State Of The Art (SOTA) algorithms are SAC, TD3 and TQC (available in our contrib repo). Please use the hyperparameters in the RL zoo for best results.&gt; &gt; #### Continuous Actions - Multiprocessed¶&gt; &gt; Take a look at PPO or A2C. Again, don’t forget to take the hyperparameters from the RL zoo for continuous actions problems (cf Bullet envs). </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Resource-page">Resource page </a></li>
 </ul>
 </li>
@@ -161,12 +167,24 @@ A very good introduction in this <a href="https://araffin.github.io/post/sb3/">b
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://araffin.github.io/post/sb3/">Stable-Baselines3: Reliable Reinforcement Learning Implementations | Antonin Raffin | Homepage</a></p>
-<blockquote>
-<h2 id="Links">
-<a class="anchor" href="#Links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links<a class="anchor-link" href="#Links"> </a>
-</h2>
-<p>GitHub repository:<a href="https://github.com/DLR-RM/stable-baselines3">https://github.com/DLR-RM/stable-baselines3</a>&gt; Documentation:<a href="https://stable-baselines3.readthedocs.io/">https://stable-baselines3.readthedocs.io/</a>&gt; RL Baselines3 Zoo:<a href="https://github.com/DLR-RM/rl-baselines3-zoo">https://github.com/DLR-RM/rl-baselines3-zoo</a>&gt; Contrib:<a href="https://github.com/Stable-Baselines-Team/stable-baselines3-contrib">https://github.com/Stable-Baselines-Team/stable-baselines3-contrib</a>&gt; RL Tutorial:<a href="https://github.com/araffin/rl-tutorial-jnrr19">https://github.com/araffin/rl-tutorial-jnrr19</a></p>
-</blockquote>
+<p><strong>Links</strong></p>
+<ul>
+<li>
+<p>GitHub repository: <a href="https://github.com/DLR-RM/stable-baselines3">https://github.com/DLR-RM/stable-baselines3</a></p>
+</li>
+<li>
+<p>Documentation: <a href="https://stable-baselines3.readthedocs.io/">https://stable-baselines3.readthedocs.io/</a></p>
+</li>
+<li>
+<p>RL Baselines3 Zoo: <a href="https://github.com/DLR-RM/rl-baselines3-zoo">https://github.com/DLR-RM/rl-baselines3-zoo</a></p>
+</li>
+<li>
+<p>Contrib: <a href="https://github.com/Stable-Baselines-Team/stable-baselines3-contrib">https://github.com/Stable-Baselines-Team/stable-baselines3-contrib</a></p>
+</li>
+<li>
+<p>RL Tutorial: <a href="https://github.com/araffin/rl-tutorial-jnrr19">https://github.com/araffin/rl-tutorial-jnrr19</a></p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -1353,6 +1371,77 @@ Solving environment: done
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tips-and-tricks">
+<a class="anchor" href="#Tips-and-tricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tips and tricks<a class="anchor-link" href="#Tips-and-tricks"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This <a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html">page</a> covers general advice about RL (where to start, which algorithm to choose, how to evaluate an algorithm, …), as well as tips and tricks when using a custom environment or implementing an RL algorithm.</p>
+<ul>
+<li>Be familiar with RL, see <a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl.html">resource</a> page</li>
+<li>read SB3 documentation</li>
+<li>do the <a href="https://github.com/araffin/rl-tutorial-jnrr19/tree/sb3">tutorial</a>
+</li>
+</ul>
+<p><strong>Tune hyperparameters</strong>
+RL zoo is introduced. It contains some hyperparameter optimization.</p>
+<p><strong>RL evaluation</strong>
+We suggest you reading <a href="https://arxiv.org/abs/1709.06560">Deep Reinforcement Learning that Matters</a> for a good discussion about RL evaluation.</p>
+<p><strong>which algorithm to choose</strong>
+1st criteria is discrete vs continuous actions. And 2nd is capacity to parallelize training.</p>
+<p><a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html">Reinforcement Learning Tips and Tricks — Stable Baselines3 1.1.0a1 documentation</a></p>
+<blockquote>
+<h3 id="Discrete-Actions¶&gt;-&gt;-Note">
+<a class="anchor" href="#Discrete-Actions%C2%B6&gt;-&gt;-Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Discrete Actions<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions" title="Permalink to this headline">¶</a>&gt; &gt; Note<a class="anchor-link" href="#Discrete-Actions%C2%B6&gt;-&gt;-Note"> </a>
+</h3>
+<p>This covers <code>Discrete</code>, <code>MultiDiscrete</code>, <code>Binary</code> and <code>MultiBinary</code> spaces</p>
+<h4 id="Discrete-Actions---Single-Process¶&gt;-&gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-…)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&gt;-&gt;-####-Discrete-Actions---Multiprocessed¶&gt;-&gt;-You-should-give-a-try-to-PPO-or-A2C.">
+<a class="anchor" href="#Discrete-Actions---Single-Process%C2%B6&gt;-&gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-%E2%80%A6)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&gt;-&gt;-####-Discrete-Actions---Multiprocessed%C2%B6&gt;-&gt;-You-should-give-a-try-to-PPO-or-A2C." aria-hidden="true"><span class="octicon octicon-link"></span></a>Discrete Actions - Single Process<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions-single-process" title="Permalink to this headline">¶</a>&gt; &gt; <code>DQN</code> with extensions (double DQN, prioritized replay, …) are the recommended algorithms. We notably provide <code>QR-DQN</code> in our <a href="https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib">contrib repo</a>. <code>DQN</code> is usually slower to train (regarding wall clock time) but is the most sample efficient (because of its replay buffer).&gt; &gt; #### Discrete Actions - Multiprocessed<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions-multiprocessed" title="Permalink to this headline">¶</a>&gt; &gt; You should give a try to <code>PPO</code> or <code>A2C</code>.<a class="anchor-link" href="#Discrete-Actions---Single-Process%C2%B6&gt;-&gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-%E2%80%A6)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&gt;-&gt;-####-Discrete-Actions---Multiprocessed%C2%B6&gt;-&gt;-You-should-give-a-try-to-PPO-or-A2C."> </a>
+</h4>
+<h3 id="Continuous-Actions¶&gt;-&gt;-####-Continuous-Actions---Single-Process¶&gt;-&gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&gt;-&gt;-####-Continuous-Actions---Multiprocessed¶&gt;-&gt;-Take-a-look-at-PPO-or-A2C.-Again,-don’t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs).">
+<a class="anchor" href="#Continuous-Actions%C2%B6&gt;-&gt;-####-Continuous-Actions---Single-Process%C2%B6&gt;-&gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&gt;-&gt;-####-Continuous-Actions---Multiprocessed%C2%B6&gt;-&gt;-Take-a-look-at-PPO-or-A2C.-Again,-don%E2%80%99t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs)." aria-hidden="true"><span class="octicon octicon-link"></span></a>Continuous Actions<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions" title="Permalink to this headline">¶</a>&gt; &gt; #### Continuous Actions - Single Process<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions-single-process" title="Permalink to this headline">¶</a>&gt; &gt; Current State Of The Art (SOTA) algorithms are <code>SAC</code>, <code>TD3</code> and <code>TQC</code> (available in our <a href="https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib">contrib repo</a>). Please use the hyperparameters in the <a href="https://github.com/DLR-RM/rl-baselines3-zoo">RL zoo</a> for best results.&gt; &gt; #### Continuous Actions - Multiprocessed<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions-multiprocessed" title="Permalink to this headline">¶</a>&gt; &gt; Take a look at <code>PPO</code> or <code>A2C</code>. Again, don’t forget to take the hyperparameters from the <a href="https://github.com/DLR-RM/rl-baselines3-zoo">RL zoo</a> for continuous actions problems (cf <em>Bullet</em> envs).<a class="anchor-link" href="#Continuous-Actions%C2%B6&gt;-&gt;-####-Continuous-Actions---Single-Process%C2%B6&gt;-&gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&gt;-&gt;-####-Continuous-Actions---Multiprocessed%C2%B6&gt;-&gt;-Take-a-look-at-PPO-or-A2C.-Again,-don%E2%80%99t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs)."> </a>
+</h3>
+</blockquote>
+<p><strong>Creating a custom env</strong></p>
+<p>multiple times there are advices about normalizing: observation and action space. A good practice is to rescale your actions to lie in [-1, 1]. This does not limit you as you can easily rescale the action inside the environment</p>
+<p><strong>tips and tricks to reproduce a RL paper</strong></p>
+<p><a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html">Reinforcement Learning Tips and Tricks — Stable Baselines3 1.1.0a1 documentation</a></p>
+<blockquote>
+<p>A personal pick (by @araffin) for environments with gradual difficulty in RL with continuous actions:&gt; &gt; 1.  Pendulum (easy to solve)
+</p>
+<ol>
+<li>
+<p>HalfCheetahBullet (medium difficulty with local minima and shaped reward)</p>
+</li>
+<li>
+<p>BipedalWalkerHardcore (if it works on that one, then you can have a cookie)</p>
+</li>
+</ol>
+<p>in RL with discrete actions:&gt; &gt; 1.  CartPole-v1 (easy to be better than random agent, harder to achieve maximal performance)
+</p>
+<ol>
+<li>
+<p>LunarLander</p>
+</li>
+<li>
+<p>Pong (one of the easiest Atari game)</p>
+</li>
+<li>
+<p>other Atari games (e.g. Breakout)</p>
+</li>
+</ol>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Resource-page">
 <a class="anchor" href="#Resource-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resource page<a class="anchor-link" href="#Resource-page"> </a>
 </h2>
@@ -1363,10 +1452,28 @@ Solving environment: done
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl.html">Reinforcement Learning Resources — Stable Baselines3 1.1.0a1 documentation</a></p>
-<blockquote>
 <p>Stable-Baselines3 assumes that you already understand the basic concepts of Reinforcement Learning (RL).</p>
-<p>However, if you want to learn about RL, there are several good resources to get started:&gt; &gt; -   <a href="https://spinningup.openai.com/en/latest/">OpenAI Spinning Up</a>&gt; &gt; -   <a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html">David Silver’s course</a>&gt; &gt; -   <a href="https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html">Lilian Weng’s blog</a>&gt; &gt; -   <a href="https://sites.google.com/view/deep-rl-bootcamp/lectures">Berkeley’s Deep RL Bootcamp</a>&gt; &gt; -   <a href="http://rail.eecs.berkeley.edu/deeprlcourse/">Berkeley’s Deep Reinforcement Learning course</a>&gt; &gt; -   <a href="https://github.com/dennybritz/reinforcement-learning">More resources</a></p>
-</blockquote>
+<p>However, if you want to learn about RL, there are several good resources to get started:</p>
+<ul>
+<li>
+<p><a href="https://spinningup.openai.com/en/latest/">OpenAI Spinning Up</a></p>
+</li>
+<li>
+<p><a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html">David Silver’s course</a></p>
+</li>
+<li>
+<p><a href="https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html">Lilian Weng’s blog</a></p>
+</li>
+<li>
+<p><a href="https://sites.google.com/view/deep-rl-bootcamp/lectures">Berkeley’s Deep RL Bootcamp</a></p>
+</li>
+<li>
+<p><a href="http://rail.eecs.berkeley.edu/deeprlcourse/">Berkeley’s Deep Reinforcement Learning course</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dennybritz/reinforcement-learning">More resources</a></p>
+</li>
+</ul>
 
 </div>
 </div>
