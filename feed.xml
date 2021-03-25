@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T01:55:21-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi to bridge network</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi to bridge network" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T02:42:42-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+
+&lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Installation on SD from ubuntu&lt;/strong&gt;&lt;/p&gt;
 
@@ -60,15 +62,108 @@ This is a security risk - please login as the '&lt;/span&gt;pi&lt;span class=&qu
 
 &lt;h2 id=&quot;wifi-to-ethernet-bridge&quot;&gt;Wifi to ethernet bridge&lt;/h2&gt;
 
-&lt;p&gt;I will use &lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?t=132674&quot;&gt;How To: Wifi to Ethernet Bridge(Updated for RPi 3)&lt;/a&gt; from raspberrypi.org forum.&lt;/p&gt;
+&lt;p&gt;I will use &lt;a href=&quot;https://willhaley.com/blog/raspberry-pi-wifi-ethernet-bridge/&quot;&gt;https://willhaley.com/blog/raspberry-pi-wifi-ethernet-bridge/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This method works by creating a DHCP server on the Pi’s ethernet  connection  and internally it ‘shares’ the internet access between eth0  and wlan0.  A device connected to the Pi’s ethernet will get an IP  address from the Pi, not the WiFi, but will still have internet access.&lt;/p&gt;
+&lt;p&gt;The only  package that is needed is dnsmasq however from a clean install it is a  good idea to make sure everything is up-to-date:&lt;/p&gt;
 
-&lt;p&gt;I used a jessie light image but it should work with any…  The only  package that is needed is dnsmasq however from a clean install it is a  good idea to make sure everything is up-to-date:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;get up-to-date system&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rpi-update dnsmasq &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rpi-update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="raspberry pi" /><summary type="html">Headless raspberry pi</summary></entry><entry><title type="html">Stable baselines 3 - 1st steps</title><link href="https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html" rel="alternate" type="text/html" title="Stable baselines 3 - 1st steps" /><published>2021-03-24T00:00:00-05:00</published><updated>2021-03-24T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html">&lt;!--
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Option 1 - Same Subnet&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Save this script as a file named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bridge.sh&lt;/code&gt; on your Pi.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$EUID&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ne&lt;/span&gt; 0 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;run as root&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&amp;amp;2 &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;1
+
+&lt;span class=&quot;c&quot;&gt;##########################################################&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You should not need to update anything below this line #&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##########################################################&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# parprouted  - Proxy ARP IP bridging daemon&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dhcp-helper - DHCP/BOOTP relay agent&lt;/span&gt;
+
+apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; parprouted dhcp-helper
+
+systemctl stop dhcp-helper
+systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;dhcp-helper
+
+&lt;span class=&quot;c&quot;&gt;# Enable ipv4 forwarding.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt; s/#net.ipv4.ip_forward&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1/net.ipv4.ip_forward&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1/ /etc/sysctl.conf
+
+&lt;span class=&quot;c&quot;&gt;# Service configuration for standard WiFi connection. Connectivity will&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# be lost if the username and password are incorrect.&lt;/span&gt;
+systemctl restart wpa_supplicant.service
+
+&lt;span class=&quot;c&quot;&gt;# Enable IP forwarding for wlan0 if it's not already enabled.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'^option ip-forwarding 1$'&lt;/span&gt; /etc/dhcpcd.conf &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;option ip-forwarding 1&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /etc/dhcpcd.conf
+
+&lt;span class=&quot;c&quot;&gt;# Disable dhcpcd control of eth0.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'^denyinterfaces eth0$'&lt;/span&gt; /etc/dhcpcd.conf &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;denyinterfaces eth0&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /etc/dhcpcd.conf
+
+&lt;span class=&quot;c&quot;&gt;# Configure dhcp-helper.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /etc/default/dhcp-helper &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+DHCPHELPER_OPTS=&quot;-b wlan0&quot;
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Enable avahi reflector if it's not already enabled.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/#enable-reflector=no/enable-reflector=yes/'&lt;/span&gt; /etc/avahi/avahi-daemon.conf
+&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'^enable-reflector=yes$'&lt;/span&gt; /etc/avahi/avahi-daemon.conf &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;something went wrong...&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Manually set 'enable-reflector=yes in /etc/avahi/avahi-daemon.conf'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# I have to admit, I do not understand ARP and IP forwarding enough to explain&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# exactly what is happening here. I am building off the work of others. In short&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# this is a service to forward traffic from WiFi to Ethernet.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;' &amp;gt;/usr/lib/systemd/system/parprouted.service
+[Unit]
+Description=proxy arp routing service
+Documentation=https://raspberrypi.stackexchange.com/q/88954/79866
+Requires=sys-subsystem-net-devices-wlan0.device dhcpcd.service
+After=sys-subsystem-net-devices-wlan0.device dhcpcd.service
+
+[Service]
+Type=forking
+# Restart until wlan0 gained carrier
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=30
+# clone the dhcp-allocated IP to eth0 so dhcp-helper will relay for the correct subnet
+ExecStartPre=/bin/bash -c '/sbin/ip addr add &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;/sbin/ip &lt;span class=&quot;nt&quot;&gt;-4&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-br&lt;/span&gt; addr show wlan0 | /bin/grep &lt;span class=&quot;nt&quot;&gt;-Po&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;/32 dev eth0'
+ExecStartPre=/sbin/ip link set dev eth0 up
+ExecStartPre=/sbin/ip link set wlan0 promisc on
+ExecStart=-/usr/sbin/parprouted eth0 wlan0
+ExecStopPost=/sbin/ip link set wlan0 promisc off
+ExecStopPost=/sbin/ip link set dev eth0 down
+ExecStopPost=/bin/bash -c '/sbin/ip addr del &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;/sbin/ip &lt;span class=&quot;nt&quot;&gt;-4&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-br&lt;/span&gt; addr show wlan0 | /bin/grep &lt;span class=&quot;nt&quot;&gt;-Po&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;d+&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;/32 dev eth0'
+
+[Install]
+WantedBy=wpa_supplicant.service
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
+
+&lt;/span&gt;systemctl daemon-reload
+systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;parprouted
+systemctl start parprouted dhcp-helper
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Execute the script on your Pi like so.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;bash bridge.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Reboot.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Done!&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="raspberry pi" /><summary type="html">After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.</summary></entry><entry><title type="html">Stable baselines 3 - 1st steps</title><link href="https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html" rel="alternate" type="text/html" title="Stable baselines 3 - 1st steps" /><published>2021-03-24T00:00:00-05:00</published><updated>2021-03-24T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/stable-baselines-3.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -1063,7 +1158,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Thursday 3/25&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;setup &lt;a href=&quot;&quot;&gt;headless raspberry pi&lt;/a&gt; to bridge wifi (tethering from phone) to ethernet (to wifi-router)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;setup &lt;a href=&quot;/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html&quot;&gt;headless raspberry pi&lt;/a&gt; to bridge wifi (tethering from phone) to ethernet (to wifi-router)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 
