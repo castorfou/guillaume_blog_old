@@ -101,6 +101,10 @@ Done
 
 seems related to branch name. If branch is named master, then clean is displayed.
 
+(Mar/25 21) I have just changed clustergit to have `main` as default branch name instead of `master` (github having set `main` as the new standard)
+
+Rename everything from master to main
+
 
 
 **Git pull, push**
