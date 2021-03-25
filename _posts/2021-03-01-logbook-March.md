@@ -126,4 +126,4 @@ College de France - l'apprentissage profond par Yann Lecunn 2016 - [Pourquoi l'a
 
 **Thursday 3/25**
 
-setup [headless raspberry pi]() to bridge wifi (tethering from phone) to ethernet (to wifi-router)
+setup [headless raspberry pi](/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html) to bridge wifi (tethering from phone) to ethernet (to wifi-router)
