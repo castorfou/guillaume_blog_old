@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      25 min read
+      7 min read
     
 </span></p>
 
@@ -128,17 +128,9 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Stable-baselines-3-user-guide">Stable baselines 3 user guide </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Tips-and-tricks">Tips and tricks </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Discrete-Actions¶>->-Note">Discrete Actions¶&gt; &gt; Note </a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#Discrete-Actions---Single-Process¶>->-DQN-with-extensions-(double-DQN,-prioritized-replay,-…)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).>->-####-Discrete-Actions---Multiprocessed¶>->-You-should-give-a-try-to-PPO-or-A2C.">Discrete Actions - Single Process¶&gt; &gt; DQN with extensions (double DQN, prioritized replay, …) are the recommended algorithms. We notably provide QR-DQN in our contrib repo. DQN is usually slower to train (regarding wall clock time) but is the most sample efficient (because of its replay buffer).&gt; &gt; #### Discrete Actions - Multiprocessed¶&gt; &gt; You should give a try to PPO or A2C. </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h3"><a href="#Continuous-Actions¶>->-####-Continuous-Actions---Single-Process¶>->-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.>->-####-Continuous-Actions---Multiprocessed¶>->-Take-a-look-at-PPO-or-A2C.-Again,-don’t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs).">Continuous Actions¶&gt; &gt; #### Continuous Actions - Single Process¶&gt; &gt; Current State Of The Art (SOTA) algorithms are SAC, TD3 and TQC (available in our contrib repo). Please use the hyperparameters in the RL zoo for best results.&gt; &gt; #### Continuous Actions - Multiprocessed¶&gt; &gt; Take a look at PPO or A2C. Again, don’t forget to take the hyperparameters from the RL zoo for continuous actions problems (cf Bullet envs). </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#Tips-and-tricks">Tips and tricks </a></li>
 <li class="toc-entry toc-h2"><a href="#Resource-page">Resource page </a></li>
+<li class="toc-entry toc-h2"><a href="#Examples">Examples </a></li>
 </ul>
 </li>
 </ul><!--
@@ -414,760 +406,6 @@ zlib                      1.2.11               h7b6447c_3
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Using cuda device
-Creating environment from the given name 'LunarLander-v2'
-Wrapping the env with a `Monitor` wrapper
-Wrapping the env in a DummyVecEnv.
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 97.6     |
-|    ep_rew_mean        | -265     |
-| time/                 |          |
-|    fps                | 484      |
-|    iterations         | 100      |
-|    time_elapsed       | 1        |
-|    total_timesteps    | 500      |
-| train/                |          |
-|    entropy_loss       | -1.28    |
-|    explained_variance | -0.0391  |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 99       |
-|    policy_loss        | -5.3     |
-|    value_loss         | 17.3     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 107      |
-|    ep_rew_mean        | -249     |
-| time/                 |          |
-|    fps                | 499      |
-|    iterations         | 200      |
-|    time_elapsed       | 2        |
-|    total_timesteps    | 1000     |
-| train/                |          |
-|    entropy_loss       | -1.19    |
-|    explained_variance | 0.00593  |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 199      |
-|    policy_loss        | 2.79     |
-|    value_loss         | 16.6     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 108      |
-|    ep_rew_mean        | -277     |
-| time/                 |          |
-|    fps                | 502      |
-|    iterations         | 300      |
-|    time_elapsed       | 2        |
-|    total_timesteps    | 1500     |
-| train/                |          |
-|    entropy_loss       | -1.22    |
-|    explained_variance | -0.00474 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 299      |
-|    policy_loss        | -2.79    |
-|    value_loss         | 9.45     |
-------------------------------------
-Eval num_timesteps=2000, episode_reward=-1534.45 +/- 783.96
-Episode length: 184.80 +/- 74.13
-New best mean reward!
--------------------------------------
-| eval/                 |           |
-|    mean_ep_length     | 185       |
-|    mean_reward        | -1.53e+03 |
-| rollout/              |           |
-|    ep_len_mean        | 117       |
-|    ep_rew_mean        | -296      |
-| time/                 |           |
-|    fps                | 414       |
-|    iterations         | 400       |
-|    time_elapsed       | 4         |
-|    total_timesteps    | 2000      |
-| train/                |           |
-|    entropy_loss       | -1.1      |
-|    explained_variance | 0.0118    |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 399       |
-|    policy_loss        | -1.07     |
-|    value_loss         | 5.93      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 131      |
-|    ep_rew_mean        | -299     |
-| time/                 |          |
-|    fps                | 426      |
-|    iterations         | 500      |
-|    time_elapsed       | 5        |
-|    total_timesteps    | 2500     |
-| train/                |          |
-|    entropy_loss       | -1.17    |
-|    explained_variance | 0.00582  |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 499      |
-|    policy_loss        | 2.68     |
-|    value_loss         | 14       |
-------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 133       |
-|    ep_rew_mean        | -309      |
-| time/                 |           |
-|    fps                | 428       |
-|    iterations         | 600       |
-|    time_elapsed       | 6         |
-|    total_timesteps    | 3000      |
-| train/                |           |
-|    entropy_loss       | -0.902    |
-|    explained_variance | -1.94e-05 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 599       |
-|    policy_loss        | -5.9      |
-|    value_loss         | 38.7      |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 133       |
-|    ep_rew_mean        | -286      |
-| time/                 |           |
-|    fps                | 437       |
-|    iterations         | 700       |
-|    time_elapsed       | 7         |
-|    total_timesteps    | 3500      |
-| train/                |           |
-|    entropy_loss       | -1.13     |
-|    explained_variance | -0.000943 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 699       |
-|    policy_loss        | 1.34      |
-|    value_loss         | 5.43      |
--------------------------------------
-Eval num_timesteps=4000, episode_reward=-2461.14 +/- 815.61
-Episode length: 450.40 +/- 58.92
--------------------------------------
-| eval/                 |           |
-|    mean_ep_length     | 450       |
-|    mean_reward        | -2.46e+03 |
-| rollout/              |           |
-|    ep_len_mean        | 137       |
-|    ep_rew_mean        | -276      |
-| time/                 |           |
-|    fps                | 343       |
-|    iterations         | 800       |
-|    time_elapsed       | 11        |
-|    total_timesteps    | 4000      |
-| train/                |           |
-|    entropy_loss       | -0.763    |
-|    explained_variance | -0.00105  |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 799       |
-|    policy_loss        | 1.13      |
-|    value_loss         | 24.1      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 140      |
-|    ep_rew_mean        | -274     |
-| time/                 |          |
-|    fps                | 354      |
-|    iterations         | 900      |
-|    time_elapsed       | 12       |
-|    total_timesteps    | 4500     |
-| train/                |          |
-|    entropy_loss       | -0.87    |
-|    explained_variance | -0.00024 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 899      |
-|    policy_loss        | 11.7     |
-|    value_loss         | 349      |
-------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 151       |
-|    ep_rew_mean        | -270      |
-| time/                 |           |
-|    fps                | 363       |
-|    iterations         | 1000      |
-|    time_elapsed       | 13        |
-|    total_timesteps    | 5000      |
-| train/                |           |
-|    entropy_loss       | -0.949    |
-|    explained_variance | -0.000288 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 999       |
-|    policy_loss        | -3.85     |
-|    value_loss         | 6.77      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 152      |
-|    ep_rew_mean        | -262     |
-| time/                 |          |
-|    fps                | 371      |
-|    iterations         | 1100     |
-|    time_elapsed       | 14       |
-|    total_timesteps    | 5500     |
-| train/                |          |
-|    entropy_loss       | -0.836   |
-|    explained_variance | 0.000152 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 1099     |
-|    policy_loss        | -2.77    |
-|    value_loss         | 4.58     |
-------------------------------------
-Eval num_timesteps=6000, episode_reward=-1441.51 +/- 344.51
-Episode length: 470.00 +/- 216.72
-New best mean reward!
--------------------------------------
-| eval/                 |           |
-|    mean_ep_length     | 470       |
-|    mean_reward        | -1.44e+03 |
-| rollout/              |           |
-|    ep_len_mean        | 154       |
-|    ep_rew_mean        | -246      |
-| time/                 |           |
-|    fps                | 315       |
-|    iterations         | 1200      |
-|    time_elapsed       | 19        |
-|    total_timesteps    | 6000      |
-| train/                |           |
-|    entropy_loss       | -0.655    |
-|    explained_variance | 4.6e-05   |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 1199      |
-|    policy_loss        | -3.96     |
-|    value_loss         | 10        |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 158       |
-|    ep_rew_mean        | -242      |
-| time/                 |           |
-|    fps                | 323       |
-|    iterations         | 1300      |
-|    time_elapsed       | 20        |
-|    total_timesteps    | 6500      |
-| train/                |           |
-|    entropy_loss       | -0.799    |
-|    explained_variance | -0.000516 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 1299      |
-|    policy_loss        | -4.78     |
-|    value_loss         | 91.6      |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 162       |
-|    ep_rew_mean        | -238      |
-| time/                 |           |
-|    fps                | 330       |
-|    iterations         | 1400      |
-|    time_elapsed       | 21        |
-|    total_timesteps    | 7000      |
-| train/                |           |
-|    entropy_loss       | -0.623    |
-|    explained_variance | -0.000611 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 1399      |
-|    policy_loss        | 8.3       |
-|    value_loss         | 88.8      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 171      |
-|    ep_rew_mean        | -227     |
-| time/                 |          |
-|    fps                | 333      |
-|    iterations         | 1500     |
-|    time_elapsed       | 22       |
-|    total_timesteps    | 7500     |
-| train/                |          |
-|    entropy_loss       | -0.956   |
-|    explained_variance | 1.63e-05 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 1499     |
-|    policy_loss        | -3.67    |
-|    value_loss         | 41.2     |
-------------------------------------
-Eval num_timesteps=8000, episode_reward=-684.75 +/- 100.33
-Episode length: 490.60 +/- 85.08
-New best mean reward!
-------------------------------------
-| eval/                 |          |
-|    mean_ep_length     | 491      |
-|    mean_reward        | -685     |
-| rollout/              |          |
-|    ep_len_mean        | 174      |
-|    ep_rew_mean        | -223     |
-| time/                 |          |
-|    fps                | 302      |
-|    iterations         | 1600     |
-|    time_elapsed       | 26       |
-|    total_timesteps    | 8000     |
-| train/                |          |
-|    entropy_loss       | -0.144   |
-|    explained_variance | 0.00724  |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 1599     |
-|    policy_loss        | -0.162   |
-|    value_loss         | 61.2     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 176      |
-|    ep_rew_mean        | -220     |
-| time/                 |          |
-|    fps                | 308      |
-|    iterations         | 1700     |
-|    time_elapsed       | 27       |
-|    total_timesteps    | 8500     |
-| train/                |          |
-|    entropy_loss       | -0.528   |
-|    explained_variance | 9.72e-06 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 1699     |
-|    policy_loss        | 2        |
-|    value_loss         | 7.58     |
-------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 175       |
-|    ep_rew_mean        | -219      |
-| time/                 |           |
-|    fps                | 314       |
-|    iterations         | 1800      |
-|    time_elapsed       | 28        |
-|    total_timesteps    | 9000      |
-| train/                |           |
-|    entropy_loss       | -0.726    |
-|    explained_variance | -0.000773 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 1799      |
-|    policy_loss        | 9.47      |
-|    value_loss         | 243       |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 179       |
-|    ep_rew_mean        | -218      |
-| time/                 |           |
-|    fps                | 320       |
-|    iterations         | 1900      |
-|    time_elapsed       | 29        |
-|    total_timesteps    | 9500      |
-| train/                |           |
-|    entropy_loss       | -0.609    |
-|    explained_variance | -0.000227 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 1899      |
-|    policy_loss        | 2.69      |
-|    value_loss         | 145       |
--------------------------------------
-Eval num_timesteps=10000, episode_reward=-1105.99 +/- 697.41
-Episode length: 859.40 +/- 72.91
--------------------------------------
-| eval/                 |           |
-|    mean_ep_length     | 859       |
-|    mean_reward        | -1.11e+03 |
-| rollout/              |           |
-|    ep_len_mean        | 181       |
-|    ep_rew_mean        | -218      |
-| time/                 |           |
-|    fps                | 270       |
-|    iterations         | 2000      |
-|    time_elapsed       | 37        |
-|    total_timesteps    | 10000     |
-| train/                |           |
-|    entropy_loss       | -1.03     |
-|    explained_variance | -0.11     |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 1999      |
-|    policy_loss        | -3.99     |
-|    value_loss         | 29.9      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 181      |
-|    ep_rew_mean        | -218     |
-| time/                 |          |
-|    fps                | 273      |
-|    iterations         | 2100     |
-|    time_elapsed       | 38       |
-|    total_timesteps    | 10500    |
-| train/                |          |
-|    entropy_loss       | -0.895   |
-|    explained_variance | 0.191    |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 2099     |
-|    policy_loss        | 0.0962   |
-|    value_loss         | 0.102    |
-------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 198       |
-|    ep_rew_mean        | -212      |
-| time/                 |           |
-|    fps                | 278       |
-|    iterations         | 2200      |
-|    time_elapsed       | 39        |
-|    total_timesteps    | 11000     |
-| train/                |           |
-|    entropy_loss       | -0.706    |
-|    explained_variance | -5.46e-05 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2199      |
-|    policy_loss        | 7.79      |
-|    value_loss         | 206       |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 200       |
-|    ep_rew_mean        | -213      |
-| time/                 |           |
-|    fps                | 283       |
-|    iterations         | 2300      |
-|    time_elapsed       | 40        |
-|    total_timesteps    | 11500     |
-| train/                |           |
-|    entropy_loss       | -0.797    |
-|    explained_variance | -0.000233 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2299      |
-|    policy_loss        | -5.37     |
-|    value_loss         | 22.2      |
--------------------------------------
-Eval num_timesteps=12000, episode_reward=-175.07 +/- 257.78
-Episode length: 767.20 +/- 287.16
-New best mean reward!
--------------------------------------
-| eval/                 |           |
-|    mean_ep_length     | 767       |
-|    mean_reward        | -175      |
-| rollout/              |           |
-|    ep_len_mean        | 202       |
-|    ep_rew_mean        | -210      |
-| time/                 |           |
-|    fps                | 253       |
-|    iterations         | 2400      |
-|    time_elapsed       | 47        |
-|    total_timesteps    | 12000     |
-| train/                |           |
-|    entropy_loss       | -0.999    |
-|    explained_variance | -0.000878 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2399      |
-|    policy_loss        | -0.454    |
-|    value_loss         | 3.24      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 208      |
-|    ep_rew_mean        | -210     |
-| time/                 |          |
-|    fps                | 256      |
-|    iterations         | 2500     |
-|    time_elapsed       | 48       |
-|    total_timesteps    | 12500    |
-| train/                |          |
-|    entropy_loss       | -0.0409  |
-|    explained_variance | -0.00201 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 2499     |
-|    policy_loss        | -0.00709 |
-|    value_loss         | 1.45     |
-------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 206       |
-|    ep_rew_mean        | -206      |
-| time/                 |           |
-|    fps                | 262       |
-|    iterations         | 2600      |
-|    time_elapsed       | 49        |
-|    total_timesteps    | 13000     |
-| train/                |           |
-|    entropy_loss       | -0.394    |
-|    explained_variance | -0.000404 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2599      |
-|    policy_loss        | -3.02     |
-|    value_loss         | 27.3      |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 209       |
-|    ep_rew_mean        | -202      |
-| time/                 |           |
-|    fps                | 266       |
-|    iterations         | 2700      |
-|    time_elapsed       | 50        |
-|    total_timesteps    | 13500     |
-| train/                |           |
-|    entropy_loss       | -0.727    |
-|    explained_variance | -0.000365 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2699      |
-|    policy_loss        | 4.28      |
-|    value_loss         | 52.3      |
--------------------------------------
-Eval num_timesteps=14000, episode_reward=-45.13 +/- 159.96
-Episode length: 595.40 +/- 209.59
-New best mean reward!
--------------------------------------
-| eval/                 |           |
-|    mean_ep_length     | 595       |
-|    mean_reward        | -45.1     |
-| rollout/              |           |
-|    ep_len_mean        | 210       |
-|    ep_rew_mean        | -200      |
-| time/                 |           |
-|    fps                | 251       |
-|    iterations         | 2800      |
-|    time_elapsed       | 55        |
-|    total_timesteps    | 14000     |
-| train/                |           |
-|    entropy_loss       | -0.482    |
-|    explained_variance | -3.78e-05 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2799      |
-|    policy_loss        | 8.53      |
-|    value_loss         | 126       |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 213       |
-|    ep_rew_mean        | -199      |
-| time/                 |           |
-|    fps                | 256       |
-|    iterations         | 2900      |
-|    time_elapsed       | 56        |
-|    total_timesteps    | 14500     |
-| train/                |           |
-|    entropy_loss       | -0.692    |
-|    explained_variance | -0.000127 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 2899      |
-|    policy_loss        | -0.475    |
-|    value_loss         | 3.51      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 213      |
-|    ep_rew_mean        | -197     |
-| time/                 |          |
-|    fps                | 260      |
-|    iterations         | 3000     |
-|    time_elapsed       | 57       |
-|    total_timesteps    | 15000    |
-| train/                |          |
-|    entropy_loss       | -0.373   |
-|    explained_variance | 0.0614   |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 2999     |
-|    policy_loss        | 0.592    |
-|    value_loss         | 61.1     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 217      |
-|    ep_rew_mean        | -192     |
-| time/                 |          |
-|    fps                | 263      |
-|    iterations         | 3100     |
-|    time_elapsed       | 58       |
-|    total_timesteps    | 15500    |
-| train/                |          |
-|    entropy_loss       | -0.827   |
-|    explained_variance | 0.000454 |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3099     |
-|    policy_loss        | -4.96    |
-|    value_loss         | 167      |
-------------------------------------
-Eval num_timesteps=16000, episode_reward=-212.05 +/- 90.82
-Episode length: 606.80 +/- 136.16
-------------------------------------
-| eval/                 |          |
-|    mean_ep_length     | 607      |
-|    mean_reward        | -212     |
-| rollout/              |          |
-|    ep_len_mean        | 219      |
-|    ep_rew_mean        | -192     |
-| time/                 |          |
-|    fps                | 250      |
-|    iterations         | 3200     |
-|    time_elapsed       | 63       |
-|    total_timesteps    | 16000    |
-| train/                |          |
-|    entropy_loss       | -0.397   |
-|    explained_variance | -0.0068  |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3199     |
-|    policy_loss        | 0.713    |
-|    value_loss         | 4.8      |
-------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 222       |
-|    ep_rew_mean        | -187      |
-| time/                 |           |
-|    fps                | 253       |
-|    iterations         | 3300      |
-|    time_elapsed       | 65        |
-|    total_timesteps    | 16500     |
-| train/                |           |
-|    entropy_loss       | -0.691    |
-|    explained_variance | -0.000298 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 3299      |
-|    policy_loss        | -3.58     |
-|    value_loss         | 29.9      |
--------------------------------------
--------------------------------------
-| rollout/              |           |
-|    ep_len_mean        | 222       |
-|    ep_rew_mean        | -185      |
-| time/                 |           |
-|    fps                | 257       |
-|    iterations         | 3400      |
-|    time_elapsed       | 66        |
-|    total_timesteps    | 17000     |
-| train/                |           |
-|    entropy_loss       | -0.678    |
-|    explained_variance | -6.87e-05 |
-|    learning_rate      | 0.0007    |
-|    n_updates          | 3399      |
-|    policy_loss        | 4.88      |
-|    value_loss         | 58.4      |
--------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 222      |
-|    ep_rew_mean        | -183     |
-| time/                 |          |
-|    fps                | 260      |
-|    iterations         | 3500     |
-|    time_elapsed       | 67       |
-|    total_timesteps    | 17500    |
-| train/                |          |
-|    entropy_loss       | -0.973   |
-|    explained_variance | -0.46    |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3499     |
-|    policy_loss        | -1.88    |
-|    value_loss         | 100      |
-------------------------------------
-Eval num_timesteps=18000, episode_reward=1.73 +/- 344.63
-Episode length: 609.20 +/- 210.81
-New best mean reward!
-------------------------------------
-| eval/                 |          |
-|    mean_ep_length     | 609      |
-|    mean_reward        | 1.73     |
-| rollout/              |          |
-|    ep_len_mean        | 228      |
-|    ep_rew_mean        | -177     |
-| time/                 |          |
-|    fps                | 245      |
-|    iterations         | 3600     |
-|    time_elapsed       | 73       |
-|    total_timesteps    | 18000    |
-| train/                |          |
-|    entropy_loss       | -0.149   |
-|    explained_variance | 0.0186   |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3599     |
-|    policy_loss        | 0.198    |
-|    value_loss         | 31.9     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 228      |
-|    ep_rew_mean        | -173     |
-| time/                 |          |
-|    fps                | 248      |
-|    iterations         | 3700     |
-|    time_elapsed       | 74       |
-|    total_timesteps    | 18500    |
-| train/                |          |
-|    entropy_loss       | -0.369   |
-|    explained_variance | 0.0153   |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3699     |
-|    policy_loss        | 0.175    |
-|    value_loss         | 2.75     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 228      |
-|    ep_rew_mean        | -171     |
-| time/                 |          |
-|    fps                | 252      |
-|    iterations         | 3800     |
-|    time_elapsed       | 75       |
-|    total_timesteps    | 19000    |
-| train/                |          |
-|    entropy_loss       | -1.09    |
-|    explained_variance | 0.00332  |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3799     |
-|    policy_loss        | -5.61    |
-|    value_loss         | 94.5     |
-------------------------------------
-------------------------------------
-| rollout/              |          |
-|    ep_len_mean        | 228      |
-|    ep_rew_mean        | -172     |
-| time/                 |          |
-|    fps                | 255      |
-|    iterations         | 3900     |
-|    time_elapsed       | 76       |
-|    total_timesteps    | 19500    |
-| train/                |          |
-|    entropy_loss       | -0.441   |
-|    explained_variance | -17.2    |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3899     |
-|    policy_loss        | 0.701    |
-|    value_loss         | 23.8     |
-------------------------------------
-Eval num_timesteps=20000, episode_reward=2.77 +/- 147.98
-Episode length: 394.00 +/- 204.93
-New best mean reward!
-------------------------------------
-| eval/                 |          |
-|    mean_ep_length     | 394      |
-|    mean_reward        | 2.77     |
-| rollout/              |          |
-|    ep_len_mean        | 227      |
-|    ep_rew_mean        | -170     |
-| time/                 |          |
-|    fps                | 250      |
-|    iterations         | 4000     |
-|    time_elapsed       | 79       |
-|    total_timesteps    | 20000    |
-| train/                |          |
-|    entropy_loss       | -0.353   |
-|    explained_variance | 0.221    |
-|    learning_rate      | 0.0007   |
-|    n_updates          | 3999     |
-|    policy_loss        | 0.00796  |
-|    value_loss         | 0.0138   |
-------------------------------------
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1393,19 +631,24 @@ RL zoo is introduced. It contains some hyperparameter optimization.</p>
 We suggest you reading <a href="https://arxiv.org/abs/1709.06560">Deep Reinforcement Learning that Matters</a> for a good discussion about RL evaluation.</p>
 <p><strong>which algorithm to choose</strong>
 1st criteria is discrete vs continuous actions. And 2nd is capacity to parallelize training.</p>
-<p><a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html">Reinforcement Learning Tips and Tricks — Stable Baselines3 1.1.0a1 documentation</a></p>
-<blockquote>
-<h3 id="Discrete-Actions¶&gt;-&gt;-Note">
-<a class="anchor" href="#Discrete-Actions%C2%B6&gt;-&gt;-Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Discrete Actions<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions" title="Permalink to this headline">¶</a>&gt; &gt; Note<a class="anchor-link" href="#Discrete-Actions%C2%B6&gt;-&gt;-Note"> </a>
-</h3>
-<p>This covers <code>Discrete</code>, <code>MultiDiscrete</code>, <code>Binary</code> and <code>MultiBinary</code> spaces</p>
-<h4 id="Discrete-Actions---Single-Process¶&gt;-&gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-…)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&gt;-&gt;-####-Discrete-Actions---Multiprocessed¶&gt;-&gt;-You-should-give-a-try-to-PPO-or-A2C.">
-<a class="anchor" href="#Discrete-Actions---Single-Process%C2%B6&gt;-&gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-%E2%80%A6)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&gt;-&gt;-####-Discrete-Actions---Multiprocessed%C2%B6&gt;-&gt;-You-should-give-a-try-to-PPO-or-A2C." aria-hidden="true"><span class="octicon octicon-link"></span></a>Discrete Actions - Single Process<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions-single-process" title="Permalink to this headline">¶</a>&gt; &gt; <code>DQN</code> with extensions (double DQN, prioritized replay, …) are the recommended algorithms. We notably provide <code>QR-DQN</code> in our <a href="https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib">contrib repo</a>. <code>DQN</code> is usually slower to train (regarding wall clock time) but is the most sample efficient (because of its replay buffer).&gt; &gt; #### Discrete Actions - Multiprocessed<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#discrete-actions-multiprocessed" title="Permalink to this headline">¶</a>&gt; &gt; You should give a try to <code>PPO</code> or <code>A2C</code>.<a class="anchor-link" href="#Discrete-Actions---Single-Process%C2%B6&gt;-&gt;-DQN-with-extensions-(double-DQN,-prioritized-replay,-%E2%80%A6)-are-the-recommended-algorithms.-We-notably-provide-QR-DQN-in-our-contrib-repo.-DQN-is-usually-slower-to-train-(regarding-wall-clock-time)-but-is-the-most-sample-efficient-(because-of-its-replay-buffer).&gt;-&gt;-####-Discrete-Actions---Multiprocessed%C2%B6&gt;-&gt;-You-should-give-a-try-to-PPO-or-A2C."> </a>
-</h4>
-<h3 id="Continuous-Actions¶&gt;-&gt;-####-Continuous-Actions---Single-Process¶&gt;-&gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&gt;-&gt;-####-Continuous-Actions---Multiprocessed¶&gt;-&gt;-Take-a-look-at-PPO-or-A2C.-Again,-don’t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs).">
-<a class="anchor" href="#Continuous-Actions%C2%B6&gt;-&gt;-####-Continuous-Actions---Single-Process%C2%B6&gt;-&gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&gt;-&gt;-####-Continuous-Actions---Multiprocessed%C2%B6&gt;-&gt;-Take-a-look-at-PPO-or-A2C.-Again,-don%E2%80%99t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs)." aria-hidden="true"><span class="octicon octicon-link"></span></a>Continuous Actions<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions" title="Permalink to this headline">¶</a>&gt; &gt; #### Continuous Actions - Single Process<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions-single-process" title="Permalink to this headline">¶</a>&gt; &gt; Current State Of The Art (SOTA) algorithms are <code>SAC</code>, <code>TD3</code> and <code>TQC</code> (available in our <a href="https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib">contrib repo</a>). Please use the hyperparameters in the <a href="https://github.com/DLR-RM/rl-baselines3-zoo">RL zoo</a> for best results.&gt; &gt; #### Continuous Actions - Multiprocessed<a href="https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html#continuous-actions-multiprocessed" title="Permalink to this headline">¶</a>&gt; &gt; Take a look at <code>PPO</code> or <code>A2C</code>. Again, don’t forget to take the hyperparameters from the <a href="https://github.com/DLR-RM/rl-baselines3-zoo">RL zoo</a> for continuous actions problems (cf <em>Bullet</em> envs).<a class="anchor-link" href="#Continuous-Actions%C2%B6&gt;-&gt;-####-Continuous-Actions---Single-Process%C2%B6&gt;-&gt;-Current-State-Of-The-Art-(SOTA)-algorithms-are-SAC,-TD3-and-TQC-(available-in-our-contrib-repo).-Please-use-the-hyperparameters-in-the-RL-zoo-for-best-results.&gt;-&gt;-####-Continuous-Actions---Multiprocessed%C2%B6&gt;-&gt;-Take-a-look-at-PPO-or-A2C.-Again,-don%E2%80%99t-forget-to-take-the-hyperparameters-from-the-RL-zoo-for-continuous-actions-problems-(cf-Bullet-envs)."> </a>
-</h3>
-</blockquote>
+<p><em>Discrete Actions</em></p>
+<ul>
+<li>Discrete Actions - Single Process</li>
+</ul>
+<p><code>DQN</code> with extensions (double DQN, prioritized replay, …) are the recommended algorithms. We notably provide <code>QR-DQN</code> in our <a href="https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib">contrib repo</a>. <code>DQN</code> is usually slower to train (regarding wall clock time) but is the most sample efficient (because of its replay buffer).</p>
+<ul>
+<li>Discrete Actions - Multiprocessed</li>
+</ul>
+<p>You should give a try to <code>PPO</code> or <code>A2C</code>.</p>
+<p><em>Continuous Actions</em></p>
+<ul>
+<li>Continuous Actions - Single Process</li>
+</ul>
+<p>Current State Of The Art (SOTA) algorithms are <code>SAC</code>, <code>TD3</code> and <code>TQC</code> (available in our <a href="https://stable-baselines3.readthedocs.io/en/master/guide/sb3_contrib.html#sb3-contrib">contrib repo</a>). Please use the hyperparameters in the <a href="https://github.com/DLR-RM/rl-baselines3-zoo">RL zoo</a> for best results.</p>
+<ul>
+<li>Continuous Actions - Multiprocessed</li>
+</ul>
+<p>Take a look at <code>PPO</code> or <code>A2C</code>. Again, don’t forget to take the hyperparameters from the <a href="https://github.com/DLR-RM/rl-baselines3-zoo">RL zoo</a> for continuous actions problems (cf <em>Bullet</em> envs).</p>
 <p><strong>Creating a custom env</strong></p>
 <p>multiple times there are advices about normalizing: observation and action space. A good practice is to rescale your actions to lie in [-1, 1]. This does not limit you as you can easily rescale the action inside the environment</p>
 <p><strong>tips and tricks to reproduce a RL paper</strong></p>
@@ -1474,6 +717,42 @@ We suggest you reading <a href="https://arxiv.org/abs/1709.06560">Deep Reinforce
 <p><a href="https://github.com/dennybritz/reinforcement-learning">More resources</a></p>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Examples">
+<a class="anchor" href="#Examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples<a class="anchor-link" href="#Examples"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I will run these examples in <a href="https://github.com/castorfou/handson_stablebaselines3/blob/main/01%20-%20hands-on.ipynb">01 -hands-on.ipynb</a> from <a href="https://github.com/castorfou/handson_stablebaselines3">handson_stablebaselines3</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>DQN lunarlander</strong>
+<img src="/guillaume_blog/images/copied_from_nb/../images/lunar_module.gif" alt=""></p>
+<p>My module is never landing :(</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>PPO with multiprocessing cartpole</strong></p>
+<p><img src="/guillaume_blog/images/copied_from_nb/../images/cartpole_ppo.gif" alt=""></p>
 
 </div>
 </div>
