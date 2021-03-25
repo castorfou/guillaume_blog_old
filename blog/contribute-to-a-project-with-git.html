@@ -130,6 +130,7 @@ window.onload = wrap_img;
 <p><strong>Branch</strong></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch master-to-main
+git checkout master-to-main
 </code></pre></div></div>
 <p>This is very important, create one branch per patch. And never submit a patch that has been done on the branch <code class="language-plaintext highlighter-rouge">master</code> or <code class="language-plaintext highlighter-rouge">main</code>!</p>
 
@@ -153,7 +154,7 @@ git commit <span class="nt">-m</span> <span class="s2">"default branch name 'mai
 
 <p><strong>Create pull request</strong></p>
 
-<p>Go on your fork page (https://github.com/castorfou/clustergit), then select <code class="language-plaintext highlighter-rouge">my-awesome-patch</code> in the branch list and click “Pull Request”.</p>
+<p>Go on your fork page (https://github.com/castorfou/clustergit), then select <code class="language-plaintext highlighter-rouge">master-to-main</code> in the branch list and click “Pull Request”.</p>
 
 <p><strong>Submit patch</strong></p>
 
