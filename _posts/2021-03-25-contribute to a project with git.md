@@ -35,6 +35,7 @@ git clone git@github.com:castorfou/clustergit.git
 
 ```bash
 git branch master-to-main
+git checkout master-to-main
 ```
 This is very important, create one branch per patch. And never submit a patch that has been done on the branch `master` or `main`!
 
@@ -69,7 +70,7 @@ git push origin master-to-main
 
 **Create pull request**
 
-Go on your fork page (https://github.com/castorfou/clustergit), then select `my-awesome-patch` in the branch list and click "Pull Request".
+Go on your fork page (https://github.com/castorfou/clustergit), then select `master-to-main` in the branch list and click "Pull Request".
 
 
 
