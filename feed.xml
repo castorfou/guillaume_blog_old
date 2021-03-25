@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T02:42:42-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-25T03:52:05-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -184,7 +184,7 @@ A very good introduction in this &lt;a href=&quot;https://araffin.github.io/post
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;https://araffin.github.io/post/sb3/&quot;&gt;Stable-Baselines3: Reliable Reinforcement Learning Implementations | Antonin Raffin | Homepage&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 id=&quot;Links&quot;&gt;Links&lt;a class=&quot;anchor-link&quot; href=&quot;#Links&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;GitHub repository:&lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;https://github.com/DLR-RM/stable-baselines3&lt;/a&gt;&amp;gt; &amp;gt; Documentation:&lt;a href=&quot;https://stable-baselines3.readthedocs.io/&quot;&gt;https://stable-baselines3.readthedocs.io/&lt;/a&gt;&amp;gt; &amp;gt; RL Baselines3 Zoo:&lt;a href=&quot;https://github.com/DLR-RM/rl-baselines3-zoo&quot;&gt;https://github.com/DLR-RM/rl-baselines3-zoo&lt;/a&gt;&amp;gt; &amp;gt; Contrib:&lt;a href=&quot;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&quot;&gt;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&lt;/a&gt;&amp;gt; &amp;gt; RL Tutorial:&lt;a href=&quot;https://github.com/araffin/rl-tutorial-jnrr19&quot;&gt;https://github.com/araffin/rl-tutorial-jnrr19&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 id=&quot;Links&quot;&gt;Links&lt;a class=&quot;anchor-link&quot; href=&quot;#Links&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;GitHub repository:&lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;https://github.com/DLR-RM/stable-baselines3&lt;/a&gt;&amp;gt; Documentation:&lt;a href=&quot;https://stable-baselines3.readthedocs.io/&quot;&gt;https://stable-baselines3.readthedocs.io/&lt;/a&gt;&amp;gt; RL Baselines3 Zoo:&lt;a href=&quot;https://github.com/DLR-RM/rl-baselines3-zoo&quot;&gt;https://github.com/DLR-RM/rl-baselines3-zoo&lt;/a&gt;&amp;gt; Contrib:&lt;a href=&quot;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&quot;&gt;https://github.com/Stable-Baselines-Team/stable-baselines3-contrib&lt;/a&gt;&amp;gt; RL Tutorial:&lt;a href=&quot;https://github.com/araffin/rl-tutorial-jnrr19&quot;&gt;https://github.com/araffin/rl-tutorial-jnrr19&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;/div&gt;
@@ -380,7 +380,7 @@ zlib                      1.2.11               h7b6447c_3
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;stable_baselines3.common.callbacks&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CheckpointCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EvalCallback&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# Save a checkpoint every 1000 steps&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;checkpoint_callback&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CheckpointCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;save_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;./logs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;checkpoint_callback&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CheckpointCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;save_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/explore/git/guillaume/stable_baselines_3/logs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
                                          &lt;span class=&quot;n&quot;&gt;name_prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;rl_model&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# Evaluate the model periodically&lt;/span&gt;
@@ -388,8 +388,8 @@ zlib                      1.2.11               h7b6447c_3
 &lt;span class=&quot;c1&quot;&gt;# Use a monitor wrapper to properly report episode stats&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;eval_env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Monitor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gym&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;LunarLander-v2&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# Use deterministic actions for evaluation&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;eval_callback&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EvalCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eval_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;best_model_save_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;./logs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                             &lt;span class=&quot;n&quot;&gt;log_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;./logs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eval_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;eval_callback&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EvalCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eval_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;best_model_save_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/explore/git/guillaume/stable_baselines_3/logs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                             &lt;span class=&quot;n&quot;&gt;log_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/explore/git/guillaume/stable_baselines_3/logs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eval_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
                              &lt;span class=&quot;n&quot;&gt;deterministic&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# Train an agent using A2C on LunarLander-v2&lt;/span&gt;
@@ -418,107 +418,904 @@ zlib                      1.2.11               h7b6447c_3
 Creating environment from the given name &amp;#39;LunarLander-v2&amp;#39;
 Wrapping the env with a `Monitor` wrapper
 Wrapping the env in a DummyVecEnv.
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 97.6     |
+|    ep_rew_mean        | -265     |
+| time/                 |          |
+|    fps                | 484      |
+|    iterations         | 100      |
+|    time_elapsed       | 1        |
+|    total_timesteps    | 500      |
+| train/                |          |
+|    entropy_loss       | -1.28    |
+|    explained_variance | -0.0391  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 99       |
+|    policy_loss        | -5.3     |
+|    value_loss         | 17.3     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 107      |
+|    ep_rew_mean        | -249     |
+| time/                 |          |
+|    fps                | 499      |
+|    iterations         | 200      |
+|    time_elapsed       | 2        |
+|    total_timesteps    | 1000     |
+| train/                |          |
+|    entropy_loss       | -1.19    |
+|    explained_variance | 0.00593  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 199      |
+|    policy_loss        | 2.79     |
+|    value_loss         | 16.6     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 108      |
+|    ep_rew_mean        | -277     |
+| time/                 |          |
+|    fps                | 502      |
+|    iterations         | 300      |
+|    time_elapsed       | 2        |
+|    total_timesteps    | 1500     |
+| train/                |          |
+|    entropy_loss       | -1.22    |
+|    explained_variance | -0.00474 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 299      |
+|    policy_loss        | -2.79    |
+|    value_loss         | 9.45     |
+------------------------------------
+Eval num_timesteps=2000, episode_reward=-1534.45 +/- 783.96
+Episode length: 184.80 +/- 74.13
+New best mean reward!
+-------------------------------------
+| eval/                 |           |
+|    mean_ep_length     | 185       |
+|    mean_reward        | -1.53e+03 |
+| rollout/              |           |
+|    ep_len_mean        | 117       |
+|    ep_rew_mean        | -296      |
+| time/                 |           |
+|    fps                | 414       |
+|    iterations         | 400       |
+|    time_elapsed       | 4         |
+|    total_timesteps    | 2000      |
+| train/                |           |
+|    entropy_loss       | -1.1      |
+|    explained_variance | 0.0118    |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 399       |
+|    policy_loss        | -1.07     |
+|    value_loss         | 5.93      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 131      |
+|    ep_rew_mean        | -299     |
+| time/                 |          |
+|    fps                | 426      |
+|    iterations         | 500      |
+|    time_elapsed       | 5        |
+|    total_timesteps    | 2500     |
+| train/                |          |
+|    entropy_loss       | -1.17    |
+|    explained_variance | 0.00582  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 499      |
+|    policy_loss        | 2.68     |
+|    value_loss         | 14       |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 133       |
+|    ep_rew_mean        | -309      |
+| time/                 |           |
+|    fps                | 428       |
+|    iterations         | 600       |
+|    time_elapsed       | 6         |
+|    total_timesteps    | 3000      |
+| train/                |           |
+|    entropy_loss       | -0.902    |
+|    explained_variance | -1.94e-05 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 599       |
+|    policy_loss        | -5.9      |
+|    value_loss         | 38.7      |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 133       |
+|    ep_rew_mean        | -286      |
+| time/                 |           |
+|    fps                | 437       |
+|    iterations         | 700       |
+|    time_elapsed       | 7         |
+|    total_timesteps    | 3500      |
+| train/                |           |
+|    entropy_loss       | -1.13     |
+|    explained_variance | -0.000943 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 699       |
+|    policy_loss        | 1.34      |
+|    value_loss         | 5.43      |
+-------------------------------------
+Eval num_timesteps=4000, episode_reward=-2461.14 +/- 815.61
+Episode length: 450.40 +/- 58.92
+-------------------------------------
+| eval/                 |           |
+|    mean_ep_length     | 450       |
+|    mean_reward        | -2.46e+03 |
+| rollout/              |           |
+|    ep_len_mean        | 137       |
+|    ep_rew_mean        | -276      |
+| time/                 |           |
+|    fps                | 343       |
+|    iterations         | 800       |
+|    time_elapsed       | 11        |
+|    total_timesteps    | 4000      |
+| train/                |           |
+|    entropy_loss       | -0.763    |
+|    explained_variance | -0.00105  |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 799       |
+|    policy_loss        | 1.13      |
+|    value_loss         | 24.1      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 140      |
+|    ep_rew_mean        | -274     |
+| time/                 |          |
+|    fps                | 354      |
+|    iterations         | 900      |
+|    time_elapsed       | 12       |
+|    total_timesteps    | 4500     |
+| train/                |          |
+|    entropy_loss       | -0.87    |
+|    explained_variance | -0.00024 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 899      |
+|    policy_loss        | 11.7     |
+|    value_loss         | 349      |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 151       |
+|    ep_rew_mean        | -270      |
+| time/                 |           |
+|    fps                | 363       |
+|    iterations         | 1000      |
+|    time_elapsed       | 13        |
+|    total_timesteps    | 5000      |
+| train/                |           |
+|    entropy_loss       | -0.949    |
+|    explained_variance | -0.000288 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 999       |
+|    policy_loss        | -3.85     |
+|    value_loss         | 6.77      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 152      |
+|    ep_rew_mean        | -262     |
+| time/                 |          |
+|    fps                | 371      |
+|    iterations         | 1100     |
+|    time_elapsed       | 14       |
+|    total_timesteps    | 5500     |
+| train/                |          |
+|    entropy_loss       | -0.836   |
+|    explained_variance | 0.000152 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1099     |
+|    policy_loss        | -2.77    |
+|    value_loss         | 4.58     |
+------------------------------------
+Eval num_timesteps=6000, episode_reward=-1441.51 +/- 344.51
+Episode length: 470.00 +/- 216.72
+New best mean reward!
+-------------------------------------
+| eval/                 |           |
+|    mean_ep_length     | 470       |
+|    mean_reward        | -1.44e+03 |
+| rollout/              |           |
+|    ep_len_mean        | 154       |
+|    ep_rew_mean        | -246      |
+| time/                 |           |
+|    fps                | 315       |
+|    iterations         | 1200      |
+|    time_elapsed       | 19        |
+|    total_timesteps    | 6000      |
+| train/                |           |
+|    entropy_loss       | -0.655    |
+|    explained_variance | 4.6e-05   |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 1199      |
+|    policy_loss        | -3.96     |
+|    value_loss         | 10        |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 158       |
+|    ep_rew_mean        | -242      |
+| time/                 |           |
+|    fps                | 323       |
+|    iterations         | 1300      |
+|    time_elapsed       | 20        |
+|    total_timesteps    | 6500      |
+| train/                |           |
+|    entropy_loss       | -0.799    |
+|    explained_variance | -0.000516 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 1299      |
+|    policy_loss        | -4.78     |
+|    value_loss         | 91.6      |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 162       |
+|    ep_rew_mean        | -238      |
+| time/                 |           |
+|    fps                | 330       |
+|    iterations         | 1400      |
+|    time_elapsed       | 21        |
+|    total_timesteps    | 7000      |
+| train/                |           |
+|    entropy_loss       | -0.623    |
+|    explained_variance | -0.000611 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 1399      |
+|    policy_loss        | 8.3       |
+|    value_loss         | 88.8      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 171      |
+|    ep_rew_mean        | -227     |
+| time/                 |          |
+|    fps                | 333      |
+|    iterations         | 1500     |
+|    time_elapsed       | 22       |
+|    total_timesteps    | 7500     |
+| train/                |          |
+|    entropy_loss       | -0.956   |
+|    explained_variance | 1.63e-05 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1499     |
+|    policy_loss        | -3.67    |
+|    value_loss         | 41.2     |
+------------------------------------
+Eval num_timesteps=8000, episode_reward=-684.75 +/- 100.33
+Episode length: 490.60 +/- 85.08
+New best mean reward!
+------------------------------------
+| eval/                 |          |
+|    mean_ep_length     | 491      |
+|    mean_reward        | -685     |
+| rollout/              |          |
+|    ep_len_mean        | 174      |
+|    ep_rew_mean        | -223     |
+| time/                 |          |
+|    fps                | 302      |
+|    iterations         | 1600     |
+|    time_elapsed       | 26       |
+|    total_timesteps    | 8000     |
+| train/                |          |
+|    entropy_loss       | -0.144   |
+|    explained_variance | 0.00724  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1599     |
+|    policy_loss        | -0.162   |
+|    value_loss         | 61.2     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 176      |
+|    ep_rew_mean        | -220     |
+| time/                 |          |
+|    fps                | 308      |
+|    iterations         | 1700     |
+|    time_elapsed       | 27       |
+|    total_timesteps    | 8500     |
+| train/                |          |
+|    entropy_loss       | -0.528   |
+|    explained_variance | 9.72e-06 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1699     |
+|    policy_loss        | 2        |
+|    value_loss         | 7.58     |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 175       |
+|    ep_rew_mean        | -219      |
+| time/                 |           |
+|    fps                | 314       |
+|    iterations         | 1800      |
+|    time_elapsed       | 28        |
+|    total_timesteps    | 9000      |
+| train/                |           |
+|    entropy_loss       | -0.726    |
+|    explained_variance | -0.000773 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 1799      |
+|    policy_loss        | 9.47      |
+|    value_loss         | 243       |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 179       |
+|    ep_rew_mean        | -218      |
+| time/                 |           |
+|    fps                | 320       |
+|    iterations         | 1900      |
+|    time_elapsed       | 29        |
+|    total_timesteps    | 9500      |
+| train/                |           |
+|    entropy_loss       | -0.609    |
+|    explained_variance | -0.000227 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 1899      |
+|    policy_loss        | 2.69      |
+|    value_loss         | 145       |
+-------------------------------------
+Eval num_timesteps=10000, episode_reward=-1105.99 +/- 697.41
+Episode length: 859.40 +/- 72.91
+-------------------------------------
+| eval/                 |           |
+|    mean_ep_length     | 859       |
+|    mean_reward        | -1.11e+03 |
+| rollout/              |           |
+|    ep_len_mean        | 181       |
+|    ep_rew_mean        | -218      |
+| time/                 |           |
+|    fps                | 270       |
+|    iterations         | 2000      |
+|    time_elapsed       | 37        |
+|    total_timesteps    | 10000     |
+| train/                |           |
+|    entropy_loss       | -1.03     |
+|    explained_variance | -0.11     |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 1999      |
+|    policy_loss        | -3.99     |
+|    value_loss         | 29.9      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 181      |
+|    ep_rew_mean        | -218     |
+| time/                 |          |
+|    fps                | 273      |
+|    iterations         | 2100     |
+|    time_elapsed       | 38       |
+|    total_timesteps    | 10500    |
+| train/                |          |
+|    entropy_loss       | -0.895   |
+|    explained_variance | 0.191    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2099     |
+|    policy_loss        | 0.0962   |
+|    value_loss         | 0.102    |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 198       |
+|    ep_rew_mean        | -212      |
+| time/                 |           |
+|    fps                | 278       |
+|    iterations         | 2200      |
+|    time_elapsed       | 39        |
+|    total_timesteps    | 11000     |
+| train/                |           |
+|    entropy_loss       | -0.706    |
+|    explained_variance | -5.46e-05 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2199      |
+|    policy_loss        | 7.79      |
+|    value_loss         | 206       |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 200       |
+|    ep_rew_mean        | -213      |
+| time/                 |           |
+|    fps                | 283       |
+|    iterations         | 2300      |
+|    time_elapsed       | 40        |
+|    total_timesteps    | 11500     |
+| train/                |           |
+|    entropy_loss       | -0.797    |
+|    explained_variance | -0.000233 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2299      |
+|    policy_loss        | -5.37     |
+|    value_loss         | 22.2      |
+-------------------------------------
+Eval num_timesteps=12000, episode_reward=-175.07 +/- 257.78
+Episode length: 767.20 +/- 287.16
+New best mean reward!
+-------------------------------------
+| eval/                 |           |
+|    mean_ep_length     | 767       |
+|    mean_reward        | -175      |
+| rollout/              |           |
+|    ep_len_mean        | 202       |
+|    ep_rew_mean        | -210      |
+| time/                 |           |
+|    fps                | 253       |
+|    iterations         | 2400      |
+|    time_elapsed       | 47        |
+|    total_timesteps    | 12000     |
+| train/                |           |
+|    entropy_loss       | -0.999    |
+|    explained_variance | -0.000878 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2399      |
+|    policy_loss        | -0.454    |
+|    value_loss         | 3.24      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 208      |
+|    ep_rew_mean        | -210     |
+| time/                 |          |
+|    fps                | 256      |
+|    iterations         | 2500     |
+|    time_elapsed       | 48       |
+|    total_timesteps    | 12500    |
+| train/                |          |
+|    entropy_loss       | -0.0409  |
+|    explained_variance | -0.00201 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2499     |
+|    policy_loss        | -0.00709 |
+|    value_loss         | 1.45     |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 206       |
+|    ep_rew_mean        | -206      |
+| time/                 |           |
+|    fps                | 262       |
+|    iterations         | 2600      |
+|    time_elapsed       | 49        |
+|    total_timesteps    | 13000     |
+| train/                |           |
+|    entropy_loss       | -0.394    |
+|    explained_variance | -0.000404 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2599      |
+|    policy_loss        | -3.02     |
+|    value_loss         | 27.3      |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 209       |
+|    ep_rew_mean        | -202      |
+| time/                 |           |
+|    fps                | 266       |
+|    iterations         | 2700      |
+|    time_elapsed       | 50        |
+|    total_timesteps    | 13500     |
+| train/                |           |
+|    entropy_loss       | -0.727    |
+|    explained_variance | -0.000365 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2699      |
+|    policy_loss        | 4.28      |
+|    value_loss         | 52.3      |
+-------------------------------------
+Eval num_timesteps=14000, episode_reward=-45.13 +/- 159.96
+Episode length: 595.40 +/- 209.59
+New best mean reward!
+-------------------------------------
+| eval/                 |           |
+|    mean_ep_length     | 595       |
+|    mean_reward        | -45.1     |
+| rollout/              |           |
+|    ep_len_mean        | 210       |
+|    ep_rew_mean        | -200      |
+| time/                 |           |
+|    fps                | 251       |
+|    iterations         | 2800      |
+|    time_elapsed       | 55        |
+|    total_timesteps    | 14000     |
+| train/                |           |
+|    entropy_loss       | -0.482    |
+|    explained_variance | -3.78e-05 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2799      |
+|    policy_loss        | 8.53      |
+|    value_loss         | 126       |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 213       |
+|    ep_rew_mean        | -199      |
+| time/                 |           |
+|    fps                | 256       |
+|    iterations         | 2900      |
+|    time_elapsed       | 56        |
+|    total_timesteps    | 14500     |
+| train/                |           |
+|    entropy_loss       | -0.692    |
+|    explained_variance | -0.000127 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 2899      |
+|    policy_loss        | -0.475    |
+|    value_loss         | 3.51      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 213      |
+|    ep_rew_mean        | -197     |
+| time/                 |          |
+|    fps                | 260      |
+|    iterations         | 3000     |
+|    time_elapsed       | 57       |
+|    total_timesteps    | 15000    |
+| train/                |          |
+|    entropy_loss       | -0.373   |
+|    explained_variance | 0.0614   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2999     |
+|    policy_loss        | 0.592    |
+|    value_loss         | 61.1     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 217      |
+|    ep_rew_mean        | -192     |
+| time/                 |          |
+|    fps                | 263      |
+|    iterations         | 3100     |
+|    time_elapsed       | 58       |
+|    total_timesteps    | 15500    |
+| train/                |          |
+|    entropy_loss       | -0.827   |
+|    explained_variance | 0.000454 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3099     |
+|    policy_loss        | -4.96    |
+|    value_loss         | 167      |
+------------------------------------
+Eval num_timesteps=16000, episode_reward=-212.05 +/- 90.82
+Episode length: 606.80 +/- 136.16
+------------------------------------
+| eval/                 |          |
+|    mean_ep_length     | 607      |
+|    mean_reward        | -212     |
+| rollout/              |          |
+|    ep_len_mean        | 219      |
+|    ep_rew_mean        | -192     |
+| time/                 |          |
+|    fps                | 250      |
+|    iterations         | 3200     |
+|    time_elapsed       | 63       |
+|    total_timesteps    | 16000    |
+| train/                |          |
+|    entropy_loss       | -0.397   |
+|    explained_variance | -0.0068  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3199     |
+|    policy_loss        | 0.713    |
+|    value_loss         | 4.8      |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 222       |
+|    ep_rew_mean        | -187      |
+| time/                 |           |
+|    fps                | 253       |
+|    iterations         | 3300      |
+|    time_elapsed       | 65        |
+|    total_timesteps    | 16500     |
+| train/                |           |
+|    entropy_loss       | -0.691    |
+|    explained_variance | -0.000298 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 3299      |
+|    policy_loss        | -3.58     |
+|    value_loss         | 29.9      |
+-------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 222       |
+|    ep_rew_mean        | -185      |
+| time/                 |           |
+|    fps                | 257       |
+|    iterations         | 3400      |
+|    time_elapsed       | 66        |
+|    total_timesteps    | 17000     |
+| train/                |           |
+|    entropy_loss       | -0.678    |
+|    explained_variance | -6.87e-05 |
+|    learning_rate      | 0.0007    |
+|    n_updates          | 3399      |
+|    policy_loss        | 4.88      |
+|    value_loss         | 58.4      |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 222      |
+|    ep_rew_mean        | -183     |
+| time/                 |          |
+|    fps                | 260      |
+|    iterations         | 3500     |
+|    time_elapsed       | 67       |
+|    total_timesteps    | 17500    |
+| train/                |          |
+|    entropy_loss       | -0.973   |
+|    explained_variance | -0.46    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3499     |
+|    policy_loss        | -1.88    |
+|    value_loss         | 100      |
+------------------------------------
+Eval num_timesteps=18000, episode_reward=1.73 +/- 344.63
+Episode length: 609.20 +/- 210.81
+New best mean reward!
+------------------------------------
+| eval/                 |          |
+|    mean_ep_length     | 609      |
+|    mean_reward        | 1.73     |
+| rollout/              |          |
+|    ep_len_mean        | 228      |
+|    ep_rew_mean        | -177     |
+| time/                 |          |
+|    fps                | 245      |
+|    iterations         | 3600     |
+|    time_elapsed       | 73       |
+|    total_timesteps    | 18000    |
+| train/                |          |
+|    entropy_loss       | -0.149   |
+|    explained_variance | 0.0186   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3599     |
+|    policy_loss        | 0.198    |
+|    value_loss         | 31.9     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 228      |
+|    ep_rew_mean        | -173     |
+| time/                 |          |
+|    fps                | 248      |
+|    iterations         | 3700     |
+|    time_elapsed       | 74       |
+|    total_timesteps    | 18500    |
+| train/                |          |
+|    entropy_loss       | -0.369   |
+|    explained_variance | 0.0153   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3699     |
+|    policy_loss        | 0.175    |
+|    value_loss         | 2.75     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 228      |
+|    ep_rew_mean        | -171     |
+| time/                 |          |
+|    fps                | 252      |
+|    iterations         | 3800     |
+|    time_elapsed       | 75       |
+|    total_timesteps    | 19000    |
+| train/                |          |
+|    entropy_loss       | -1.09    |
+|    explained_variance | 0.00332  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3799     |
+|    policy_loss        | -5.61    |
+|    value_loss         | 94.5     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 228      |
+|    ep_rew_mean        | -172     |
+| time/                 |          |
+|    fps                | 255      |
+|    iterations         | 3900     |
+|    time_elapsed       | 76       |
+|    total_timesteps    | 19500    |
+| train/                |          |
+|    entropy_loss       | -0.441   |
+|    explained_variance | -17.2    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3899     |
+|    policy_loss        | 0.701    |
+|    value_loss         | 23.8     |
+------------------------------------
+Eval num_timesteps=20000, episode_reward=2.77 +/- 147.98
+Episode length: 394.00 +/- 204.93
+New best mean reward!
+------------------------------------
+| eval/                 |          |
+|    mean_ep_length     | 394      |
+|    mean_reward        | 2.77     |
+| rollout/              |          |
+|    ep_len_mean        | 227      |
+|    ep_rew_mean        | -170     |
+| time/                 |          |
+|    fps                | 250      |
+|    iterations         | 4000     |
+|    time_elapsed       | 79       |
+|    total_timesteps    | 20000    |
+| train/                |          |
+|    entropy_loss       | -0.353   |
+|    explained_variance | 0.221    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3999     |
+|    policy_loss        | 0.00796  |
+|    value_loss         | 0.0138   |
+------------------------------------
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+    
+
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;h1 id=&quot;Issues&quot;&gt;Issues&lt;a class=&quot;anchor-link&quot; href=&quot;#Issues&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;h2 id=&quot;CUDA-error:-CUBLAS_STATUS_INTERNAL_ERROR&quot;&gt;CUDA error: CUBLAS_STATUS_INTERNAL_ERROR&lt;a class=&quot;anchor-link&quot; href=&quot;#CUDA-error:-CUBLAS_STATUS_INTERNAL_ERROR&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;Downgrade pytorch to 1.7.1&lt;/p&gt;
+&lt;p&gt;to avoid &lt;code&gt;RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling cublasCreate(handle)&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install &lt;span class=&quot;nv&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;.7.1
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;h2 id=&quot;RuntimeError:-CUDA-error:-invalid-device-function&quot;&gt;RuntimeError: CUDA error: invalid device function&lt;a class=&quot;anchor-link&quot; href=&quot;#RuntimeError:-CUDA-error:-invalid-device-function&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
+&lt;div class=&quot;input&quot;&gt;
+
+&lt;div class=&quot;inner_cell&quot;&gt;
+    &lt;div class=&quot;input_area&quot;&gt;
+&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;nvidia-smi
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;output_wrapper&quot;&gt;
+&lt;div class=&quot;output&quot;&gt;
+
 &lt;div class=&quot;output_area&quot;&gt;
 
-&lt;div class=&quot;output_subarea output_text output_error&quot;&gt;
-&lt;pre&gt;
-&lt;span class=&quot;ansi-red-fg&quot;&gt;---------------------------------------------------------------------------&lt;/span&gt;
-&lt;span class=&quot;ansi-red-fg&quot;&gt;RuntimeError&lt;/span&gt;                              Traceback (most recent call last)
-&lt;span class=&quot;ansi-green-fg&quot;&gt;&amp;lt;ipython-input-2-def125f52da9&amp;gt;&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;&amp;lt;module&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     20&lt;/span&gt; &lt;span class=&quot;ansi-red-fg&quot;&gt;# Train an agent using A2C on LunarLander-v2&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     21&lt;/span&gt; model &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; A2C&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;&amp;#34;MlpPolicy&amp;#34;&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;&amp;#34;LunarLander-v2&amp;#34;&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; verbose&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;ansi-cyan-fg&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;---&amp;gt; 22&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt; &lt;/span&gt;model&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;learn&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;total_timesteps&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;ansi-cyan-fg&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; callback&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;[&lt;/span&gt;checkpoint_callback&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; eval_callback&lt;span class=&quot;ansi-blue-fg&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     23&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     24&lt;/span&gt; &lt;span class=&quot;ansi-red-fg&quot;&gt;# Retrieve and reset the environment&lt;/span&gt;
+&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
+&lt;pre&gt;Thu Mar 25 09:13:49 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 450.102.04   Driver Version: 450.102.04   CUDA Version: 11.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro RTX 4000     Off  | 00000000:01:00.0  On |                  N/A |
+| N/A   41C    P5    18W /  N/A |   2104MiB /  7982MiB |     32%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1153      G   /usr/lib/xorg/Xorg                162MiB |
+|    0   N/A  N/A      1904      G   /usr/lib/xorg/Xorg                268MiB |
+|    0   N/A  N/A      2076      G   /usr/bin/gnome-shell              403MiB |
+|    0   N/A  N/A      2697      G   ...gAAAAAAAAA --shared-files       54MiB |
+|    0   N/A  N/A      7220      G   ...AAAAAAAAA= --shared-files       84MiB |
+|    0   N/A  N/A     57454      G   /usr/lib/firefox/firefox            2MiB |
+|    0   N/A  N/A     59274      C   ...ablebaselines3/bin/python     1051MiB |
++-----------------------------------------------------------------------------+
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/a2c/a2c.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, total_timesteps, callback, log_interval, eval_env, eval_freq, n_eval_episodes, tb_log_name, eval_log_path, reset_num_timesteps)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    197&lt;/span&gt;             tb_log_name&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;tb_log_name&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    198&lt;/span&gt;             eval_log_path&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;eval_log_path&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 199&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;             &lt;/span&gt;reset_num_timesteps&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;reset_num_timesteps&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    200&lt;/span&gt;         )
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/on_policy_algorithm.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, total_timesteps, callback, log_interval, eval_env, eval_freq, n_eval_episodes, tb_log_name, eval_log_path, reset_num_timesteps)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    225&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;while&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;num_timesteps &lt;span class=&quot;ansi-blue-fg&quot;&gt;&amp;lt;&lt;/span&gt; total_timesteps&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    226&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 227&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;             &lt;/span&gt;continue_training &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;collect_rollouts&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; callback&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;rollout_buffer&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; n_rollout_steps&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;n_steps&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    228&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    229&lt;/span&gt;             &lt;span class=&quot;ansi-green-fg&quot;&gt;if&lt;/span&gt; continue_training &lt;span class=&quot;ansi-green-fg&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ansi-green-fg&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
+&lt;/div&gt;
+    
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/on_policy_algorithm.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;collect_rollouts&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, env, callback, rollout_buffer, n_rollout_steps)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    157&lt;/span&gt;                 &lt;span class=&quot;ansi-red-fg&quot;&gt;# Convert to pytorch tensor&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    158&lt;/span&gt;                 obs_tensor &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; th&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;as_tensor&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_last_obs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;to&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;device&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 159&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;                 &lt;/span&gt;actions&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; values&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; log_probs &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;policy&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;obs_tensor&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    160&lt;/span&gt;             actions &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; actions&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;cpu&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;numpy&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    161&lt;/span&gt; 
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;CUDA version is 11.0 on my workstation.&lt;/p&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/policies.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, obs, deterministic)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    532&lt;/span&gt;         &lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ansi-green-fg&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt; action&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; value &lt;span class=&quot;ansi-green-fg&quot;&gt;and&lt;/span&gt; log probability of the action
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    533&lt;/span&gt;         &amp;#34;&amp;#34;&amp;#34;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 534&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;         &lt;/span&gt;latent_pi&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; latent_vf&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; latent_sde &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_get_latent&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;obs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    535&lt;/span&gt;         &lt;span class=&quot;ansi-red-fg&quot;&gt;# Evaluate the values for the given observations&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    536&lt;/span&gt;         values &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;value_net&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;latent_vf&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
+&lt;div class=&quot;input&quot;&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/policies.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;_get_latent&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, obs)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    551&lt;/span&gt;         &lt;span class=&quot;ansi-red-fg&quot;&gt;# Preprocess the observation if needed&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    552&lt;/span&gt;         features &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;extract_features&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;obs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 553&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;         &lt;/span&gt;latent_pi&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; latent_vf &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;mlp_extractor&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;features&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    554&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    555&lt;/span&gt;         &lt;span class=&quot;ansi-red-fg&quot;&gt;# Features for sde&lt;/span&gt;
+&lt;div class=&quot;inner_cell&quot;&gt;
+    &lt;div class=&quot;input_area&quot;&gt;
+&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;nvcc --version
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/module.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;_call_impl&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, *input, **kwargs)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    887&lt;/span&gt;             result &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_slow_forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;*&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    888&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 889&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;             &lt;/span&gt;result &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;*&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    890&lt;/span&gt;         for hook in itertools.chain(
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    891&lt;/span&gt;                 _global_forward_hooks&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/stable_baselines3/common/torch_layers.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, features)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    222&lt;/span&gt;         &amp;#34;&amp;#34;&amp;#34;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    223&lt;/span&gt;         shared_latent &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;shared_net&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;features&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 224&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;ansi-green-fg&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;policy_net&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;shared_latent&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;value_net&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;shared_latent&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    225&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    226&lt;/span&gt; 
+&lt;div class=&quot;output_wrapper&quot;&gt;
+&lt;div class=&quot;output&quot;&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/module.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;_call_impl&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, *input, **kwargs)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    887&lt;/span&gt;             result &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_slow_forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;*&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    888&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 889&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;             &lt;/span&gt;result &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;*&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    890&lt;/span&gt;         for hook in itertools.chain(
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    891&lt;/span&gt;                 _global_forward_hooks&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt;
+&lt;div class=&quot;output_area&quot;&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/container.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, input)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    117&lt;/span&gt;     &lt;span class=&quot;ansi-green-fg&quot;&gt;def&lt;/span&gt; forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; input&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    118&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;for&lt;/span&gt; module &lt;span class=&quot;ansi-green-fg&quot;&gt;in&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 119&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;             &lt;/span&gt;input &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; module&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    120&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;return&lt;/span&gt; input
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    121&lt;/span&gt; 
+&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
+&lt;pre&gt;nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2019 NVIDIA Corporation
+Built on Sun_Jul_28_19:07:16_PDT_2019
+Cuda compilation tools, release 10.1, V10.1.243
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/module.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;_call_impl&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, *input, **kwargs)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    887&lt;/span&gt;             result &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_slow_forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;*&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    888&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;--&amp;gt; 889&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;             &lt;/span&gt;result &lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;*&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    890&lt;/span&gt;         for hook in itertools.chain(
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;    891&lt;/span&gt;                 _global_forward_hooks&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/modules/linear.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(self, input)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     92&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     93&lt;/span&gt;     &lt;span class=&quot;ansi-green-fg&quot;&gt;def&lt;/span&gt; forward&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; input&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt; Tensor&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;-&amp;gt;&lt;/span&gt; Tensor&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;---&amp;gt; 94&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;ansi-green-fg&quot;&gt;return&lt;/span&gt; F&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;linear&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;weight&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; self&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;bias&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     95&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;     96&lt;/span&gt;     &lt;span class=&quot;ansi-green-fg&quot;&gt;def&lt;/span&gt; extra_repr&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;-&amp;gt;&lt;/span&gt; str&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
+&lt;/div&gt;
+    
 
-&lt;span class=&quot;ansi-green-fg&quot;&gt;~/miniconda3/envs/stablebaselines3/lib/python3.7/site-packages/torch/nn/functional.py&lt;/span&gt; in &lt;span class=&quot;ansi-cyan-fg&quot;&gt;linear&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;(input, weight, bias)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;   1751&lt;/span&gt;     &lt;span class=&quot;ansi-green-fg&quot;&gt;if&lt;/span&gt; has_torch_function_variadic&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; weight&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;   1752&lt;/span&gt;         &lt;span class=&quot;ansi-green-fg&quot;&gt;return&lt;/span&gt; handle_torch_function&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;linear&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; weight&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; weight&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; bias&lt;span class=&quot;ansi-blue-fg&quot;&gt;=&lt;/span&gt;bias&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-fg&quot;&gt;-&amp;gt; 1753&lt;/span&gt;&lt;span class=&quot;ansi-red-fg&quot;&gt;     &lt;/span&gt;&lt;span class=&quot;ansi-green-fg&quot;&gt;return&lt;/span&gt; torch&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_C&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;_nn&lt;span class=&quot;ansi-blue-fg&quot;&gt;.&lt;/span&gt;linear&lt;span class=&quot;ansi-blue-fg&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; weight&lt;span class=&quot;ansi-blue-fg&quot;&gt;,&lt;/span&gt; bias&lt;span class=&quot;ansi-blue-fg&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;   1754&lt;/span&gt; 
-&lt;span class=&quot;ansi-green-intense-fg ansi-bold&quot;&gt;   1755&lt;/span&gt; 
+    
+    
+&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
+&lt;div class=&quot;input&quot;&gt;
 
-&lt;span class=&quot;ansi-red-fg&quot;&gt;RuntimeError&lt;/span&gt;: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`&lt;/pre&gt;
+&lt;div class=&quot;inner_cell&quot;&gt;
+    &lt;div class=&quot;input_area&quot;&gt;
+&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;conda install &lt;span class=&quot;nv&quot;&gt;pytorch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;.7.1 &lt;span class=&quot;nv&quot;&gt;torchvision&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.8.2 &lt;span class=&quot;nv&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;.7.2 &lt;span class=&quot;nv&quot;&gt;cudatoolkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;11&lt;/span&gt;.0 -c pytorch
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;output_wrapper&quot;&gt;
+&lt;div class=&quot;output&quot;&gt;
+
+&lt;div class=&quot;output_area&quot;&gt;
+
+&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
+&lt;pre&gt;Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
