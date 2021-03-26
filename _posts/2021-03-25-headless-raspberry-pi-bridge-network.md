@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [raspberry pi]
-image: https://www.pngjoy.com/pngm/379/7013904_minecraft-inventory-raspberry-pi-3-logo-png-transparent.png
+image: https://my.raspberrypi.org/favicon.ico
 ---
 
 
