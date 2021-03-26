@@ -114,6 +114,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#installation-clustergit">Installation clustergit</a></li>
 <li class="toc-entry toc-h2"><a href="#usage-clustergit">Usage clustergit</a></li>
 <li class="toc-entry toc-h2"><a href="#rename-branches-from-main-to-master">Rename branches from main to master</a></li>
+<li class="toc-entry toc-h2"><a href="#rename-branches-from-master-to-main-i-know">Rename branches from master to main (I know)</a></li>
 <li class="toc-entry toc-h2"><a href="#rabbitvcs">RabbitVCS</a></li>
 <li class="toc-entry toc-h2"><a href="#git-nautilus-icons">git-nautilus-icons</a></li>
 <li class="toc-entry toc-h2"><a href="#activate-git-with-globalprotect">Activate git with GlobalProtect</a></li>
@@ -219,6 +220,22 @@ Done
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-m</span> main master
 git fetch origin
 git branch <span class="nt">-u</span> origin/master master
+</code></pre></div></div>
+
+<h2 id="rename-branches-from-master-to-main-i-know">
+<a class="anchor" href="#rename-branches-from-master-to-main-i-know" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rename branches from master to <em>main</em> (I know)</h2>
+
+<p><a href="https://docs.github.com/en/github/administering-a-repository/renaming-a-branch">Renaming a branch</a> from github website.</p>
+
+<p>Rename branch master to main from github website</p>
+
+<p><img src="https://docs.github.com/assets/images/help/branches/branches-link.png" alt=""></p>
+
+<p>Update local clones</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-m</span> master main
+git fetch origin
+git branch <span class="nt">-u</span> origin/main main
 </code></pre></div></div>
 
 <h2 id="rabbitvcs">
