@@ -132,6 +132,24 @@ git branch -u origin/master master
 
 
 
+## Rename branches from master to *main* (I know)
+
+[Renaming a branch](https://docs.github.com/en/github/administering-a-repository/renaming-a-branch) from github website.
+
+Rename branch master to main from github website 
+
+![](https://docs.github.com/assets/images/help/branches/branches-link.png)
+
+Update local clones
+
+```bash
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+```
+
+
+
 ## RabbitVCS
 
 From this [page](https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/)
