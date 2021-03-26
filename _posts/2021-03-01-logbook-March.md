@@ -131,3 +131,7 @@ setup [headless raspberry pi](/guillaume_blog/blog/headless-raspberry-pi-bridge-
 [Stable baselines 3](/guillaume_blog/blog/stable-baselines-3.html) - finalize init and go through documentation
 
 Create a [patch for a github](/guillaume_blog/blog/contribute-to-a-project-with-git.html) project (by forking and pulling request)
+
+**Friday 3/26**
+
+[Stable baselines 3](/guillaume_blog/blog/stable-baselines-3.html) - Documentation > Examples
