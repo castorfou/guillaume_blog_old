@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-26T02:50:24-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-26T10:26:11-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -847,6 +847,46 @@ We suggest you reading &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;&lt;strong&gt;pybullet&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a SDK to real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics, machine learning etc.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bulletphysics/bullet3/&quot;&gt;https://github.com/bulletphysics/bullet3/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/0f979f7423e65c1bd31659d153b6b2a59d3fd83896bafb96f7c3f80e3f7f1ee1/68747470733a2f2f707962756c6c65742e6f72672f776f726470726573732f77702d636f6e74656e742f75706c6f6164732f323031392f30332f63726f707065642d707962756c6c65742e706e67&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;We need to install it: &lt;code&gt;pip install pybullet&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I don't have rendering capacity when playing with it. Because robotic is far from my need, I will skip on this one&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Hindsight Experience Replay (HER)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;using &lt;a href=&quot;https://github.com/eleurent/highway-env&quot;&gt;Highway-Env&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;installation with &lt;code&gt;pip install highway-env&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After 1h15m of training, some 1st results:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/guillaume_blog/images/copied_from_nb/../images/sb3_parking.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;And after that some technical stuff such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learning Rate Schedule: start with high value and reduce it as learning goes&lt;/li&gt;
+&lt;li&gt;Advanced Saving and Loading: how to easily create a test environment to evaluate an agent periodically, use a policy independently from a model (and how to save it, load it) and save/load a replay buffer.&lt;/li&gt;
+&lt;li&gt;Accessing and modifying model parameters: These functions are useful when you need to e.g. evaluate large set of models with same network structure, visualize different layers of the network or modify parameters manually.&lt;/li&gt;
+&lt;li&gt;Record a video or make a gif&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Make a GIF of a Trained Agent&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pip install imageio&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and this time the lander is getting closer to moon but not at all between flags.
+&lt;img src=&quot;/guillaume_blog/images/copied_from_nb/../images/lander_a2c.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
@@ -1485,7 +1525,11 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/stable-baselines-3.html&quot;&gt;Stable baselines 3&lt;/a&gt; - finalize init and go through documentation&lt;/p&gt;
 
-&lt;p&gt;Create a &lt;a href=&quot;/guillaume_blog/blog/contribute-to-a-project-with-git.html&quot;&gt;patch for a github&lt;/a&gt; project (by forking and pulling request)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
+&lt;p&gt;Create a &lt;a href=&quot;/guillaume_blog/blog/contribute-to-a-project-with-git.html&quot;&gt;patch for a github&lt;/a&gt; project (by forking and pulling request)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 3/26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/stable-baselines-3.html&quot;&gt;Stable baselines 3&lt;/a&gt; - Documentation &amp;gt; Examples&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
 
 &lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
 

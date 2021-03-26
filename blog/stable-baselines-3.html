@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -825,6 +825,49 @@ We suggest you reading <a href="https://arxiv.org/abs/1709.06560">Deep Reinforce
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="/guillaume_blog/images/copied_from_nb/../images/sb3_breakout.gif" alt="sb3_breakout.gif"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>pybullet</strong></p>
+<p>This is a SDK to real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics, machine learning etc.</p>
+<p><a href="https://github.com/bulletphysics/bullet3/">https://github.com/bulletphysics/bullet3/</a></p>
+<p><img src="https://camo.githubusercontent.com/0f979f7423e65c1bd31659d153b6b2a59d3fd83896bafb96f7c3f80e3f7f1ee1/68747470733a2f2f707962756c6c65742e6f72672f776f726470726573732f77702d636f6e74656e742f75706c6f6164732f323031392f30332f63726f707065642d707962756c6c65742e706e67" alt=""></p>
+<p>We need to install it: <code>pip install pybullet</code></p>
+<p>I don't have rendering capacity when playing with it. Because robotic is far from my need, I will skip on this one</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Hindsight Experience Replay (HER)</strong></p>
+<p>using <a href="https://github.com/eleurent/highway-env">Highway-Env</a></p>
+<p>installation with <code>pip install highway-env</code></p>
+<p>After 1h15m of training, some 1st results:</p>
+<p><img src="/guillaume_blog/images/copied_from_nb/../images/sb3_parking.gif" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And after that some technical stuff such as:</p>
+<ul>
+<li>Learning Rate Schedule: start with high value and reduce it as learning goes</li>
+<li>Advanced Saving and Loading: how to easily create a test environment to evaluate an agent periodically, use a policy independently from a model (and how to save it, load it) and save/load a replay buffer.</li>
+<li>Accessing and modifying model parameters: These functions are useful when you need to e.g. evaluate large set of models with same network structure, visualize different layers of the network or modify parameters manually.</li>
+<li>Record a video or make a gif</li>
+</ul>
+<p><strong>Make a GIF of a Trained Agent</strong></p>
+<p><code>pip install imageio</code></p>
+<p>and this time the lander is getting closer to moon but not at all between flags.
+<img src="/guillaume_blog/images/copied_from_nb/../images/lander_a2c.gif" alt=""></p>
 
 </div>
 </div>
