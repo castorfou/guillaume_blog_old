@@ -5,6 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [git]
+image: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
 ---
 
 Very basic question to help keep my repo clean.
