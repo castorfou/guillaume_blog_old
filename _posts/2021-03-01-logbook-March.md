@@ -137,3 +137,12 @@ Create a [patch for a github](/guillaume_blog/blog/contribute-to-a-project-with-
 [Stable baselines 3](/guillaume_blog/blog/stable-baselines-3.html) - Documentation > Examples
 
 [Rename my branches](/guillaume_blog/blog/clustergit.html) named *master* to *main*
+
+
+
+## Week 13 - Mar 21
+
+**Monday 3/29**
+
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Bias and Fairness (lecture 8).
+

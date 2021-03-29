@@ -288,3 +288,46 @@ I couldn't go through the training of Pong agent due to GPU limitation?
 
 
 ![](../images/mit_6S191_lec7_wrapup.png)
+
+
+
+
+
+## 3/29/21 - Bias and Fairness - lecture 8
+
+This starts as a standard lecture about bias. 
+
+I like emphasis about bias that could stand in all stages of AI life cycle:
+
+* data (obviously)
+* model
+* training and deployment
+* evaluation
+* interpretation
+
+Good explanation about biases due to **class imbalance**. It develops my intuition about it.
+
+**Balanced batches** can be the answer.
+
+**Example weighting** is another option using inverse frequency as a weight.
+
+![](../images/mit_6S191_lec8_fairness.png)
+
+Adversarial learning to mitiage Bias.
+
+Application in NLP to complete analogies. He is to she, as doctor is to ?
+
+Same thing with Learned Latent Structure. (can be used to create fair and representative dataset)
+
+
+
+![](../images/mit_6S191_lec8_summary.png)
+
+
+
+
+
+
+
+
+
