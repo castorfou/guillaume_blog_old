@@ -168,131 +168,18 @@ Stéphane Mallat finit sur des exemples en 2 dimensions. En 2 dimensions on aura
 
 
 
+## 3/30/21 - Parcimonie et compression d'images (lecture 8)
 
+Stépahne Mallat propose un survol de tout le cours pour montrer la logique dans laquelle on a évolué.
 
+En reprenant le triangle Regularité - Approximation en basse dimension (au coeur du traitement de donnée) - Représentation parcimonieuse. Les équivalences entre régularité et la construction de représentations parcimonieuses permettent de construire des approximations en basse dimension.
 
+Mais on peut les interpréter différemment :
 
+* d'un point de vue linéaire : on peut construire des approximations linéaires qui vont correspondre à des formes de régularité et certains types de représentations parcimonieuses (en particulier dans la base de Fourrier quand on a des invariants par translation)
+* en prenant un point de vue non linéaire : qui consiste non pas à faire des projections dans des espaces linéaires mais plutôt des projections dans des unions d'espaces linéaires obtenus en sélectionnant de façon libre dans une base orthogonale les plans les plus représentatifs.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Il reprend en détail ce qu'on a vu en repartant de la théorie développée par Fourier (1822 ça ne date pas d'hier). Et reprend les réseaux de neurones à 1 couche cachée. Ces réseaux, en prenant comme non-régularité un cosinus, nous font retomber sur des séries de Fourier. Faire une décomposition avec un réseau de neurone à 1 couche cachée est très similaire à décomposer la fonction dans une base de Fourier. Prendre un relu consisterait à faire un changement de base entre le relu et le cosinus.
 
