@@ -5,7 +5,6 @@ toc: true
 comments: true
 layout: post
 categories: [me]
-image: images/fastpages_posts/actions/actions_logo.png
 ---
 
 ## March 2019
