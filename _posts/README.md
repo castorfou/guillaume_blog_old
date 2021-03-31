@@ -33,6 +33,35 @@ image: images/<my_image_preview>.png
 # Latex Reference
 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+
+
+# Quelques exemples
+
 $$
 \widehat{q}
+\\
+| x-x_M |
+\\
+f_M(x)
+\\
+\displaystyle\sum_{m}
+\\
+\langle{x,w_m}\rangle
+\\
+\| v_m \|
+\\
+\cos
+\\
+\Z^d
+\\
+\infty
+\\
+f \in L^2
+\\
+\implies 
+\\
+\lim\limits_{M \to \infty}
+\\
 $$
+

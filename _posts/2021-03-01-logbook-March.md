@@ -146,6 +146,6 @@ Create a [patch for a github](/guillaume_blog/blog/contribute-to-a-project-with-
 
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Bias and Fairness (lecture 8).
 
-**Tuesday 3/30**
+**Wednesday 3/31**
 
 [College de France](/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html) Parcimonie et compression d'images (lecture 8)
