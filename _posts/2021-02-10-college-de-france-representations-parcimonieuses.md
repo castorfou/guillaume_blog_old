@@ -182,6 +182,8 @@ Mais on peut les interpréter différemment :
 
 
 Il reprend en détail ce qu'on a vu en repartant de la théorie développée par Fourier (1822 ça ne date pas d'hier). Et reprend les réseaux de neurones à 1 couche cachée. 
+
+
 $$
 f_M(x)=\displaystyle\sum_{m}w(m)\rho(\langle{x,w_m}\rangle+b_m)
 $$
@@ -189,33 +191,49 @@ $$
 L'entrée est x en dimension d, dans la première couche on calcule des produits scalaires avec les vecteurs $v_m$ qui sont les colonnes d'un opérateur linéaire $W_1$ et ces M produits scalaires vont être regroupés avec un relu (ou toute autre non-régularité) et un biais, et dans la dernière couche on fait une combinaison linéaire pour construire l'approximation. M est le nombre d'éléments dans la couche cachée, peut-on bien approximer f(x) à partir de cette construction ?
 
 Ces réseaux, en prenant comme non-régularité un cosinus, nous font retomber sur des séries de Fourier. 
+
+
 $$
 f_M(x)=\displaystyle\sum_{\| v_m \|<R}w(m) \cos (\langle{x,w_m}\rangle+b_m)
 $$
+
+
 Faire une décomposition avec un réseau de neurone à 1 couche cachée est très similaire à décomposer la fonction dans une base de Fourier. Prendre un relu consisterait à faire un changement de base entre le relu et le cosinus.
 
 Si on veut approximer une **fonction uniformément régulière**, il va falloir garder les basses fréquences. Mais $x$ n'est pas en dimension 1 mais en dimension $d$. Les fréquences qu'il va falloir prendre ici sont dans $\Z^d$, il va falloir garder toutes les fréquences dans une boule de rayon plus petit que $R$. Mais quand on est en dimension $q$, le nombre d'éléments dans une boule plus petit que $R$ va croître comme $R^q$. Donc il va falloir garder énormément d'éléments.
 
 On a la possibilité d'approximer n'importe quelle fonction dans $L^2$ avec une erreur qui va décroître vers 0 quand le nombre de termes $M$ tend vers $\infty$ parce qu’on a une base orthogonale et donc n'importe quelle fonction peut être représentée à partir de la base
+
+
 $$
 f \in L^2 \implies \lim\limits_{M \to \infty}\| f-f_M \|=0
 $$
+
+
 C'est le théorème d'**approximation universelle**.
 
 Par contre si on a une régularité on peut préciser la vitesse de décroissance de l'erreur et en particulier si ma fonction est $\alpha$ dérivée dans un espace de Sobolev de degré $\alpha$, l'erreur va décroître d'autant plus vite que la régularité est grande, parce que les coefficients de Fourier vont décroître, et la vitesse de décroissance dépend de $\alpha/d$.
+
+
 $$
 f \in H^\alpha \implies \|f-f_M\| = o(M^{-\alpha/d})
 $$
+
+
 C'est la **malédiction de la dimensionnalité**.
 
 Une autre approche consiste à reprendre ce cercle d'un **point de vue non-linéaire**. Au lieu de toujours prendre les mêmes coefficients pour approximer les fonctions qui m'intéressent, je vais adapter les coefficients à la fonction. C'est l'esprit des approximations non-linéaires.
 
 Si je considère les vecteurs de Fourier, et ses coefficients ont une norme $L^p$ qui converge, pour un $p<2$. Alors on a vu que les coefficients vont décroître à une vitesse qui dépend de $p$. Ca veut dire qu'il y a quelques grands coefficients et beaucoup de petits. Si on choisit les grands coefficients alors on va avoir une erreur qui décroît comme $-2/(p+1)$, l'erreur décroît lorsque $M$ augmente, indépendamment de la dimension.
+
+
 $$
 Sparse \quad Fourier \quad coefficients: Barron \quad p<2
 \\
 \displaystyle\sum_{v \in \Z^d} |\langle{f(x), F_v(x)}\rangle|^p < \infty \implies \|f-f_M\|=o(M^{-2/p+1})
 $$
+
+
 **no curse**. Mais résultat tautologique. Pourquoi cette fonction serait approximable avec quelques coefficients de Fourier. Ça n’explique en rien pourquoi on peut améliorer fortement ce résultat en augmentant le nombre de couche. C'est simple mais ça n'explique pas les performances des réseaux de neurones profonds.
 
 D'où l'**approche par ondelettes**.
@@ -228,5 +246,5 @@ I.Daubechies a montré qu'on peut construire des ondelettes à support compact.
 
 Y.Meyer a montré ce que ça donnait en dimension 2 (et c'est généralisable en dimension q) avec 3 ondelettes.
 
-![](../images/cdf_ondelettes_dim2.png){ width=50% }
+![](../images/cdf_ondelettes_dim2.png)
 
