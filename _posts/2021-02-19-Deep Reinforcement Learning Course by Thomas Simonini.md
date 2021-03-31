@@ -410,7 +410,7 @@ Even with GPU growth setup, I run an error after the 1st epoch.
 ```
 ==========================================
 Epoch:  1 / 5000
------------
+
 Number of training episodes: 15
 Total reward: 7.0
 Mean Reward of that batch 0.4666666666666667
