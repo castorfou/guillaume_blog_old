@@ -286,3 +286,7 @@ Why is this important?
 We can apply it in importance sampling for off-policy. With Monte-Carlo it is however useless due to high variance. It is imperative to to TD.
 
 We can apply that to Q-learning. We can use greedy slection on target policy $$\pi$$ and $$\epsilon$$ greedy on behaviour policy $$\mu$$.
+
+## 3/31/21 - Lecture 6: Value Function Approximation
+
+How to scale up value function approach.
