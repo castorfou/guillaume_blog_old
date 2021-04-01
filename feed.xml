@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-03-31T07:36:05-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-01T01:58:55-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -887,196 +891,7 @@ We suggest you reading &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
-git clone git@github.com:mnagel/clustergit.git
-&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-./Deep_reinforcement_learning_Course    : Changes
-./ReinforcementLearning_references      : On branch main, Untracked files
-./blog                                  : Untracked files
-./d059                                  : On branch main, Changes
-./data-scientist-skills                 : Clean
-./deeplearning_specialization           : Clean
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./gan_specialization                    : Clean
-./hello_nbdev                           : Clean
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
-On branch main
-Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-
-nothing to commit, working tree clean
-
-./squeezebox                            : On branch main, No Changes
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./d059                                  : On branch main, Changes
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
-
-&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
-
-&lt;p&gt;Rename everything from master to main&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
-
-&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rename-branches-from-master-to-main-i-know&quot;&gt;Rename branches from master to &lt;em&gt;main&lt;/em&gt; (I know)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch master to main from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master main
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/main main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
-
-&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
-
-&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
-
-&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
-
-&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
-
-&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and to activate trace&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
-  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
-lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
-lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
@@ -1348,7 +1163,200 @@ Cost of backup is constant, independent of n = |S|&lt;/p&gt;
 
 &lt;p&gt;We can apply it in importance sampling for off-policy. With Monte-Carlo it is however useless due to high variance. It is imperative to to TD.&lt;/p&gt;
 
-&lt;p&gt;We can apply that to Q-learning. We can use greedy slection on target policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; greedy on behaviour policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mu&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;μ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We can apply that to Q-learning. We can use greedy slection on target policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; greedy on behaviour policy &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mu&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;μ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;33121---lecture-6-value-function-approximation&quot;&gt;3/31/21 - Lecture 6: Value Function Approximation&lt;/h2&gt;
+
+&lt;p&gt;How to scale up value function approach.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
+git clone git@github.com:mnagel/clustergit.git
+&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+./Deep_reinforcement_learning_Course    : Changes
+./ReinforcementLearning_references      : On branch main, Untracked files
+./blog                                  : Untracked files
+./d059                                  : On branch main, Changes
+./data-scientist-skills                 : Clean
+./deeplearning_specialization           : Clean
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./gan_specialization                    : Clean
+./hello_nbdev                           : Clean
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
+On branch main
+Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+nothing to commit, working tree clean
+
+./squeezebox                            : On branch main, No Changes
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./d059                                  : On branch main, Changes
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
+
+&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
+
+&lt;p&gt;Rename everything from master to main&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
+
+&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
+
+&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Update local clones&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
+git fetch origin
+git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rename-branches-from-master-to-main-i-know&quot;&gt;Rename branches from master to &lt;em&gt;main&lt;/em&gt; (I know)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
+
+&lt;p&gt;Rename branch master to main from github website&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Update local clones&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master main
+git fetch origin
+git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/main main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
+
+&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
+
+&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
+
+&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
+
+&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and to activate trace&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
+  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
+lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
+lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -2089,318 +2097,4 @@ Which means 2 sets of weights to be optimized separately &lt;span class=&quot;ka
 
 &lt;p&gt;I will create a new blog entry about Stable Baselines3.&lt;/p&gt;
 
-&lt;p&gt;as for previous notebook, I need to purchase Sonic2-3 to make it worked. Not for now maybe later.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Conda and jupyter tips</title><link href="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html" rel="alternate" type="text/html" title="Conda and jupyter tips" /><published>2021-02-16T00:00:00-06:00</published><updated>2021-02-16T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/conda-and-jupyter-tips.html">&lt;!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2021-02-16-conda-and-jupyter-tips.ipynb
---&gt;
-
-&lt;div class=&quot;container&quot; id=&quot;notebook-container&quot;&gt;
-        
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Keeping-track-of-python-environments&quot;&gt;Keeping track of python environments&lt;a class=&quot;anchor-link&quot; href=&quot;#Keeping-track-of-python-environments&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;I manage all my python environments with &lt;code&gt;conda&lt;/code&gt; from &lt;code&gt;miniconda&lt;/code&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;manual-way&quot;&gt;manual way&lt;a class=&quot;anchor-link&quot; href=&quot;#manual-way&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;However I don't have a strong process to keep track of my environment specifications. Usually I manually create an &lt;code&gt;env.txt&lt;/code&gt; file under my projects. Keeping all commands I have used to create that environment.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;cat /home/explore/git/guillaume/mit_6S191_Intro_to_deep_learning/env&lt;span class=&quot;se&quot;&gt;\ \ &lt;/span&gt;mit_6S191.txt
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;env_name: mit_6S191
-libraries: python 3.7, tensorflow 2
-
-
-Installation commands:
-conda create -n mit_6S191 python=3.7
-conda activate mit_6S191
-
-conda install tensorflow tensorflow-gpu
-conda install -c conda-forge jupyter_contrib_nbextensions
-conda install matplotlib numpy opencv
-conda install -c pytorch torchvision
-conda install nb_conda
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;What happens if I add packages in that environment. Or want to use that environment in another project. I have to remember the link between env name and project name.&lt;/p&gt;
-&lt;p&gt;That is not robust.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;yml-way&quot;&gt;yml way&lt;a class=&quot;anchor-link&quot; href=&quot;#yml-way&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;Keeping a yml file could be a solution to keep track of environment specifications. It doesn't answer to my last concern though (linking env name and project name)&lt;/p&gt;
-&lt;p&gt;But there is a limitation linked with channels.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;conda env &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt; --from-history
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;name: fastai
-channels:
-  - defaults
-dependencies:
-  - python=3.8
-  - fastai
-  - jupyter
-  - jupyter_contrib_nbextensions
-  - fastbook
-prefix: /home/explore/miniconda3/envs/fastai
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;In that example, &lt;code&gt;fastai&lt;/code&gt; package should come from &lt;code&gt;fastai&lt;/code&gt; channel but conda doesn't keep that information.&lt;/p&gt;
-&lt;p&gt;Using&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;conda install -n my_env rdkit::rdkit
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;could be an option.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;automate-yml-way&quot;&gt;automate yml way&lt;a class=&quot;anchor-link&quot; href=&quot;#automate-yml-way&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;Since conda keeps active environment in env variable &lt;code&gt;CONDA_DEFAULT_ENV&lt;/code&gt;, we can automatically create up-to-date yml file.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$CONDA_DEFAULT_ENV&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;fastai
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;conda env &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt; --from-history &amp;gt; ~/temp/env_&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$CONDA_DEFAULT_ENV&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;.yml
-&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;ls ~/temp/env_&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$CONDA_DEFAULT_ENV&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;.yml
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;/home/explore/temp/env_fastai.yml
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;But for it to be usable, I will have to install package using the &lt;code&gt;&amp;lt;channel&amp;gt;::&amp;lt;package&amp;gt;&lt;/code&gt; way.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;cat /home/explore/git/guillaume/mit_6S191_Intro_to_deep_learning/create_yml.sh
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;#!/bin/bash
-conda env export --from-history &amp;gt; env_`echo $CONDA_DEFAULT_ENV`.yml
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Conda-commands&quot;&gt;Conda commands&lt;a class=&quot;anchor-link&quot; href=&quot;#Conda-commands&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;When managing conda environments, I very often fall on this documentation page which is simply great: &lt;a href=&quot;https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html&quot;&gt;https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Next time I visit this page, I will enter entries here to track my common commands.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Jupyter-installation&quot;&gt;Jupyter installation&lt;a class=&quot;anchor-link&quot; href=&quot;#Jupyter-installation&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Jupyter-extensions&quot;&gt;Jupyter extensions&lt;a class=&quot;anchor-link&quot; href=&quot;#Jupyter-extensions&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;I have already explained how to install jupyter extensions and the one I use.
-&lt;a href=&quot;/guillaume_blog/fastai/jupyter/fastbook/2020/09/24/fastai-book.html#update-jupyter-to-include-extensions-(toc,-...&quot;&gt;update jupyter to include extensions&lt;/a&gt;)&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;nb_conda&quot;&gt;nb_conda&lt;a class=&quot;anchor-link&quot; href=&quot;#nb_conda&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;This is usefull to switch from environment to another without having to stop/restart jupyter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/guillaume_blog/images/copied_from_nb/../images/nb_conda.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="conda" /><category term="jupyter" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://avatars.githubusercontent.com/u/6392739?s=400&amp;v=4" /><media:content medium="image" url="https://avatars.githubusercontent.com/u/6392739?s=400&amp;v=4" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;as for previous notebook, I need to purchase Sonic2-3 to make it worked. Not for now maybe later.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
