@@ -1,8 +1,175 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-01T01:58:55-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-01T02:24:08-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;https://rlvs.aniti.fr/&lt;/p&gt;
+
+&lt;p&gt;Schedule is&lt;/p&gt;
+
+&lt;h2 id=&quot;rlvs-schedule&quot;&gt;RLVS schedule&lt;/h2&gt;
+
+&lt;p&gt;This condensed schedule does not include class breaks and social events. Times are Central European Summer Time (UTC+2).&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Schedule&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;March 25th&lt;/td&gt;
+      &lt;td&gt;9:00-9:10&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/opening.html&quot;&gt;Opening remarks&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/sebastien-gerchinovitz.html&quot;&gt;S. Gerchinovitz&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;9:10-9:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/rlvs-overview.html&quot;&gt;RLVS Overview&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/emmanuel-rachelson.html&quot;&gt;E. Rachelson&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;9:30-13:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/rl-fundamentals.html&quot;&gt;RL fundamentals&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/emmanuel-rachelson.html&quot;&gt;E. Rachelson&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;14:00-16:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/deep-learning.html&quot;&gt;Introduction to Deep Learning&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/dennis-wilson.html&quot;&gt;D. Wilson&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16:30-17:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/human-behavioral-agents.html&quot;&gt;Reward Processing Biases in Humans and RL Agents&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/irina-rish.html&quot;&gt;I. Rish&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;17:45-18:45&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/hierarchical.html&quot;&gt;Introduction to Hierarchical Reinforcement Learning&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/doina-precup.html&quot;&gt;D. Precup&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;March 26th&lt;/td&gt;
+      &lt;td&gt;10:00-12:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/stochastic-bandits.html&quot;&gt;Stochastic bandits&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/tor-lattimore.html&quot;&gt;T. Lattimore&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;14:00-16:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/mcts.html&quot;&gt;Monte Carlo Tree Search&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/tor-lattimore.html&quot;&gt;T. Lattimore&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16:30-17:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/clinical.html&quot;&gt;Multi-armed bandits in clinical trials&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/donald-berry.html&quot;&gt;D. A. Berry&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;April 1st&lt;/td&gt;
+      &lt;td&gt;9:00-15:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/dqn.html&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/bilal-piot.html&quot;&gt;B. Piot&lt;/a&gt;, &lt;a href=&quot;https://rl-vs.github.io/rlvs2021/corentin-tallec.html&quot;&gt;C. Tallec&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;15:15-16:15&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/regularized-mdps.html&quot;&gt;Regularized MDPs&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/matthieu-geist.html&quot;&gt;M. Geist&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16:30-17:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/regret-bound.html&quot;&gt;Regret bounds of model-based reinforcement learning&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/mengdi-wang.html&quot;&gt;M. Wang&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;April 2nd&lt;/td&gt;
+      &lt;td&gt;9:00-12:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/pg.html&quot;&gt;Policy Gradients and Actor Critic methods&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/olivier-sigaud.html&quot;&gt;O. Sigaud&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;14:00-15:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/pg-pitfalls.html&quot;&gt;Pitfalls in Policy Gradient methods&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/olivier-sigaud.html&quot;&gt;O. Sigaud&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;15:30-17:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/exploration.html&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/matteo-pirotta.html&quot;&gt;M. Pirotta&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;April 8th&lt;/td&gt;
+      &lt;td&gt;9:00-11:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/evo-rl.html&quot;&gt;Evolutionary Reinforcement Learning&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/dennis-wilson.html&quot;&gt;D. Wilson&lt;/a&gt;, &lt;a href=&quot;https://rl-vs.github.io/rlvs2021/jean-baptiste-mouret.html&quot;&gt;J.-B. Mouret&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;11:30-12:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/evolving-agents.html&quot;&gt;Evolving Agents that Learn More Like Animals&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/sebastian-risi.html&quot;&gt;S. Risi&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;14:00-16:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/micro-data.html&quot;&gt;Micro-data Policy Search&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/konstantinos-chatzilygeroudis.html&quot;&gt;K. Chatzilygeroudis&lt;/a&gt;, &lt;a href=&quot;https://rl-vs.github.io/rlvs2021/jean-baptiste-mouret.html&quot;&gt;J.-B. Mouret&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16:30-17:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/efficient-motor.html&quot;&gt;Efficient Motor Skills Learning in Robotics&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/dongheui-lee.html&quot;&gt;D. Lee&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;April 9th&lt;/td&gt;
+      &lt;td&gt;9:00-13:00&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/tips-and-tricks.html&quot;&gt;RL tips and tricks&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/antonin-raffin.html&quot;&gt;A. Raffin&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;14:30-15:30&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/symbolic.html&quot;&gt;Symbolic representations and reinforcement learning&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/marta-garnelo.html&quot;&gt;M. Garnelo&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;15:45-16:45&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/model-learning.html&quot;&gt;Leveraging model-learning for extreme generalization&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/leslie-kaelbling.html&quot;&gt;L. P. Kaelbling&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;17:00-18:00&lt;/td&gt;
+      &lt;td&gt;RLVS wrap-up&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rl-vs.github.io/rlvs2021/emmanuel-rachelson.html&quot;&gt;E. Rachelson&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;4121---deep-q-networks-and-its-variants&quot;&gt;(4/1/21) - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Deep Q network as a solution for a practicable control theory.&lt;/p&gt;
+
+&lt;p&gt;Introduction of ALE (Atari Learning Environment)&lt;/p&gt;
+
+&lt;p&gt;DQN is (almost) end-to-end: from raw observations to actions. Bilal explains the preprocessing part (from 160x210x3 to 84x84 + stacking 4 frames + downsampling to 15 Hz)&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -891,7 +1058,196 @@ We suggest you reading &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
+git clone git@github.com:mnagel/clustergit.git
+&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+./Deep_reinforcement_learning_Course    : Changes
+./ReinforcementLearning_references      : On branch main, Untracked files
+./blog                                  : Untracked files
+./d059                                  : On branch main, Changes
+./data-scientist-skills                 : Clean
+./deeplearning_specialization           : Clean
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./gan_specialization                    : Clean
+./hello_nbdev                           : Clean
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
+On branch main
+Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+nothing to commit, working tree clean
+
+./squeezebox                            : On branch main, No Changes
+&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
+Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./d059                                  : On branch main, Changes
+./fastai                                : Changes
+./fastai_experiments                    : Changes
+./fastbook                              : Changes
+./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
+./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
+./pytorch_tutorial                      : On branch main, Changes
+./squeezebox                            : On branch main, No Changes
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
+
+&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
+
+&lt;p&gt;Rename everything from master to main&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
+
+&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
+
+&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Update local clones&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
+git fetch origin
+git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rename-branches-from-master-to-main-i-know&quot;&gt;Rename branches from master to &lt;em&gt;main&lt;/em&gt; (I know)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
+
+&lt;p&gt;Rename branch master to main from github website&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Update local clones&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master main
+git fetch origin
+git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/main main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
+
+&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
+
+&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
+
+&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
+
+&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and to activate trace&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
+  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
+lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
+lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introduction to Reinforcement Learning with David Silver</title><link href="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html" rel="alternate" type="text/html" title="Introduction to Reinforcement Learning with David Silver" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Introduction%20to%20Reinforcement%20Learning%20with%20David%20Silver</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html">&lt;p&gt;This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver&quot;&gt;Website with 10 lectures: videos and slides&lt;/a&gt;&lt;/p&gt;
 
@@ -1167,196 +1523,7 @@ Cost of backup is constant, independent of n = |S|&lt;/p&gt;
 
 &lt;h2 id=&quot;33121---lecture-6-value-function-approximation&quot;&gt;3/31/21 - Lecture 6: Value Function Approximation&lt;/h2&gt;
 
-&lt;p&gt;How to scale up value function approach.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
-git clone git@github.com:mnagel/clustergit.git
-&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-./Deep_reinforcement_learning_Course    : Changes
-./ReinforcementLearning_references      : On branch main, Untracked files
-./blog                                  : Untracked files
-./d059                                  : On branch main, Changes
-./data-scientist-skills                 : Clean
-./deeplearning_specialization           : Clean
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./gan_specialization                    : Clean
-./hello_nbdev                           : Clean
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
-On branch main
-Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-
-nothing to commit, working tree clean
-
-./squeezebox                            : On branch main, No Changes
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./d059                                  : On branch main, Changes
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
-
-&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
-
-&lt;p&gt;Rename everything from master to main&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
-
-&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rename-branches-from-master-to-main-i-know&quot;&gt;Rename branches from master to &lt;em&gt;main&lt;/em&gt; (I know)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch master to main from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master main
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/main main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
-
-&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
-
-&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
-
-&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
-
-&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
-
-&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and to activate trace&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
-  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
-lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
-lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to scale up value function approach.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use of gpg under linux</title><link href="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html" rel="alternate" type="text/html" title="Use of gpg under linux" /><published>2021-03-03T00:00:00-06:00</published><updated>2021-03-03T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/gpg-linux</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/gpg-linux.html">&lt;p&gt;from &lt;a href=&quot;https://www.fosslinux.com/27018/best-ways-to-encrypt-files-in-linux.htm&quot;&gt;best ways to encrypt files on linux&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gpg&quot;&gt;gpg&lt;/h2&gt;
 
@@ -1588,513 +1755,4 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;RL - understood differences between Q-learning and Sarsa algorithms in &lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;end of step2 part2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;RL - &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;Sutton&lt;/a&gt; book (p200-220) - eligibility traces, and start of planning vs learning&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Practicing: Deep Reinforcement Learning Course by Thomas Simonini</title><link href="https://castorfou.github.io/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html" rel="alternate" type="text/html" title="Practicing: Deep Reinforcement Learning Course by Thomas Simonini" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Deep%20Reinforcement%20Learning%20Course%20by%20Thomas%20Simonini</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html">&lt;p&gt;A course by &lt;a href=&quot;https://www.simoninithomas.com/&quot;&gt;Thomas Simonini&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://simoninithomas.github.io/deep-rl-course/&quot;&gt;Syllabus (from 2018)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc&quot;&gt;Course introduction (from 2020)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Everything available in &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I appreciate the effort to update examples, and some 2018 implementations became obsolete. Historical Atari VC2600 games are now Starcraft 2 or minecraft, and news series on building AI for video games in Unity and Unreal Engine..&lt;/p&gt;
-
-&lt;h2 id=&quot;21921---chapter-1---an-introduction-to-deep-reinforcement-learning&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c&quot;&gt;Chapter 1&lt;/a&gt; - An Introduction to Deep Reinforcement Learning?&lt;/h2&gt;
-
-&lt;p&gt;Previous version from &lt;a href=&quot;https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419&quot;&gt;2018: What is Deep Reinforcement Learning?&lt;/a&gt; is quite interesting. With 3 parts:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What Reinforcement Learning is, and how rewards are the central idea&lt;/li&gt;
-  &lt;li&gt;The three approaches of Reinforcement Learning&lt;/li&gt;
-  &lt;li&gt;What the “Deep” in Deep Reinforcement Learning means&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*aKYFRoEmmKkybqJOvLt2JQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Rewards, long-term future reward, discount rate.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*zrzRTXt8rtWF5fX__kZ-yQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Episodic (starting and ending point) vs Continuous (e.g. stock trading) tasks.&lt;/p&gt;
-
-&lt;p&gt;Way of learning: Monte Carlo (MC: rewards collected at the end of an episode) vs Temporal Difference (TD: estimate rewards at each step)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*LLfj11fivpkKZkwQ8uPi3A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Exploration/Exploitation trade off. Will see later different ways to handle that trade-off.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*APLmZ8CVgu0oY3sQBVYIuw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;three-approaches-to-reinforcement-learning&quot;&gt;Three approaches to Reinforcement Learning&lt;/h3&gt;
-
-&lt;p&gt;These are value-based, policy-based, and model-based.&lt;/p&gt;
-
-&lt;h4 id=&quot;value-based&quot;&gt;Value Based&lt;/h4&gt;
-
-&lt;p&gt;In value-based RL, the goal is to optimize the value function &lt;em&gt;V(s)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;The value function is a function that tells us the maximum expected future reward the agent will get at each state.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*2_JRk-4O523bcOcSy1u31g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;policy-based&quot;&gt;Policy Based&lt;/h4&gt;
-
-&lt;p&gt;In policy-based RL, we want to directly optimize the policy function &lt;em&gt;π(s)&lt;/em&gt; without using a value function.&lt;/p&gt;
-
-&lt;p&gt;The policy is what defines the agent behavior at a given time.&lt;/p&gt;
-
-&lt;p&gt;We have two types of policy:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Deterministic: a policy at a given state will always return the same action.&lt;/li&gt;
-  &lt;li&gt;Stochastic: output a distribution probability over actions.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*fii7Z01laRGateAJDvloAQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;model-based&quot;&gt;Model Based&lt;/h4&gt;
-
-&lt;p&gt;In model-based RL, we model the environment. This means we create a model of the behavior of the environment. Not addressed in this course.&lt;/p&gt;
-
-&lt;h3 id=&quot;deep-reinforcement-learning&quot;&gt;Deep Reinforcement Learning&lt;/h3&gt;
-
-&lt;p&gt;In Q-learning, we keep a table of actions to take for each state (based on reward). This can be huge.&lt;/p&gt;
-
-&lt;p&gt;Deep Learning allows to approximate this Q function.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*w5GuxedZ9ivRYqM_MLUxOQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c&quot;&gt;Updated version&lt;/a&gt; from 2020 (and &lt;a href=&quot;https://www.youtube.com/watch?v=q0BiUn5LiBc&quot;&gt;video&lt;/a&gt; version)&lt;/p&gt;
-
-&lt;p&gt;This is a good starting point, well explained.&lt;/p&gt;
-
-&lt;p&gt;Reinforcement Learning is just a &lt;strong&gt;computational approach of learning from action.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;A formal definition&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Reinforcement learning is a framework for solving control tasks (also called decision problems) by building agents that &lt;strong&gt;learn from the environment&lt;/strong&gt; by &lt;strong&gt;interacting with it&lt;/strong&gt; through trial and error and &lt;strong&gt;receiving rewards&lt;/strong&gt; (positive or negative) &lt;strong&gt;as unique feedback.&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Some explanations about &lt;strong&gt;observations&lt;/strong&gt; (partial description) vs &lt;strong&gt;states&lt;/strong&gt; (fully observed envt). Only differs in implementation, all theoretical background stays the same.&lt;/p&gt;
-
-&lt;p&gt;Action space where we can distinguish &lt;strong&gt;discrete&lt;/strong&gt; (e.g. fire, up) actions from &lt;strong&gt;continuous&lt;/strong&gt; (e.g. turn 23deg) ones.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Reward&lt;/strong&gt; part is the same as the one from 2018. With cheese, mouse, maze example.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Episodic&lt;/strong&gt; and &lt;strong&gt;continuous&lt;/strong&gt; tasks part is the same as the one from 2018.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exploration/Exploitation trade-off&lt;/strong&gt; is explained the same way + an additional example taken from &lt;a href=&quot;http://rail.eecs.berkeley.edu/deeprlcourse-fa18/&quot;&gt;berkley - CS 294-112&lt;/a&gt; - Deep Reinforcement Learning course. I want to learn more about this course!&lt;/p&gt;
-
-&lt;p&gt;About &lt;strong&gt;solving RL problems&lt;/strong&gt;, it is now presented as 2 main approaches:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;policy-based&lt;/strong&gt; methods&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;value-based&lt;/strong&gt; methods&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*Vujmmyswrg2wIjmpvSUBfg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And bedore to explain that, nice presentation of what is a &lt;strong&gt;policy $\pi$&lt;/strong&gt;. Solving RL problem is to find that optimal policy: directly with policy-based method, indirectly (through value function) with value-based method.&lt;/p&gt;
-
-&lt;p&gt;There is an explanation about different types of policy: &lt;strong&gt;deterministic&lt;/strong&gt; and &lt;strong&gt;stochastic&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;And that we use deep neural networks to estimate the action to take (policy based) or to estimate the value of a state (value based). Thomas suggests to go further with deep learning with MIT 6.S191, which is the &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/deep%20learning/mit/tensorflow/2021/02/05/learning-MIT-6.S191-2021.html&quot;&gt;one&lt;/a&gt; (version 2021) I follow these days.&lt;/p&gt;
-
-&lt;h2 id=&quot;21921---chapter-2---part-1---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/19/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-1-2-3e8f5e764358&quot;&gt;Chapter 2 - part 1&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
-
-&lt;p&gt;And in &lt;a href=&quot;https://www.youtube.com/watch?v=230bR2DrbdE&amp;amp;feature=emb_logo&quot;&gt;video&lt;/a&gt; (I like to read + watch the video at the same time)&lt;/p&gt;
-
-&lt;p&gt;Here in Step 2 we focus on a value-based method: Q-learning. And what is seen in part 1 and 2:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*2yYWVAXJh4FI2lpsL0ajwQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;value-based-method&quot;&gt;Value-based method&lt;/h4&gt;
-
-&lt;p&gt;Remember what we mean in value-based method&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*jfUUaZuHUa1h61oD6O18KA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;you don’t train your policy, you define a simple function such as greedy function to select the best association State-Action, so the best action.&lt;/p&gt;
-
-&lt;h4 id=&quot;bellman-equation&quot;&gt;&lt;strong&gt;Bellman equation&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;each value as the sum of the expected return, &lt;strong&gt;which is a long process.&lt;/strong&gt; This is equivalent &lt;strong&gt;to the sum of immediate reward + the discounted value of the state that follows.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*FMjoVEELvz0oKcIfmcvGPQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;monte-carlo-vs-temporal-difference&quot;&gt;Monte Carlo vs Temporal Difference&lt;/h4&gt;
-
-&lt;p&gt;And then an explanation about 2 types of method to learn a policy or a value-function:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Monte Carlo&lt;/em&gt;: learning at the end of the episode. With &lt;em&gt;Monte Carlo&lt;/em&gt;, we update the value function from a complete episode and so we &lt;strong&gt;use the actual accurate discounted return of this episode.&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;TD learning&lt;/em&gt;: learning at each step. With &lt;em&gt;TD learning&lt;/em&gt;, we update the value function from a step, so we replace Gt that we don’t have with &lt;strong&gt;an estimated return called TD target.&lt;/strong&gt; (chich is the immediate reward + the discounted value of the next state)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*c8nfnXRu8n1h78bWPEK5vg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It was not clear to me that these methods could be used for policy-based approach. It is now!&lt;/p&gt;
-
-&lt;h2 id=&quot;22421---chapter-2---part-2---q-learning-lets-create-an-autonomous-taxi&quot;&gt;(2/24/21) - &lt;a href=&quot;https://thomassimonini.medium.com/q-learning-lets-create-an-autonomous-taxi-part-2-2-8cbafa19d7f5&quot;&gt;Chapter 2 - part 2&lt;/a&gt; - Q-Learning, let’s create an autonomous Taxi&lt;/h2&gt;
-
-&lt;p&gt;But the video is not yet available.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What is Q-Learning?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Q-Learning is an &lt;strong&gt;off-policy value-based method that uses a TD approach to train its action-value function:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;“Off-policy”&lt;/em&gt;: we’ll talk about that at the end of this chapter.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;“Value-based method”&lt;/em&gt;: it means that it finds its optimal policy indirectly by training a  value-function or action-value function that will tell us what’s &lt;strong&gt;the value of each state or each state-action pair.&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;“Uses a TD approach”&lt;/em&gt;: &lt;strong&gt;updates its action-value function at each step.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Q stands for quality (quality of action). After training we’ll get the optimal Q-function.&lt;/p&gt;
-
-&lt;p&gt;When choosing an action, we have to balance between exploration and exploitation with &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; - greedy:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*AYz65tJDERsWTg2DGEJ35g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But at beginning Q table is not trained yet so we have to increase exploitation. It is done with some decreasing &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*1J2lJN48gdjeuoRBqsO_CA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Q-learning algorithm is a 4-step process:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;step1: Q-Table init&lt;/li&gt;
-  &lt;li&gt;step2: Choose action (&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; - greedy strategy)&lt;/li&gt;
-  &lt;li&gt;step3: Perform action A&lt;sub&gt;t&lt;/sub&gt; and get R&lt;sub&gt;t+1&lt;/sub&gt; and S&lt;sub&gt;t+1&lt;/sub&gt;&lt;/li&gt;
-  &lt;li&gt;step4: Update Q(S&lt;sub&gt;t&lt;/sub&gt;, A&lt;sub&gt;t&lt;/sub&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*teZ5KRfvYjMKZnmhaWTUXg.png&quot; alt=&quot;Update Q(S&amp;lt;sub&amp;gt;t&amp;lt;/sub&amp;gt;, A&amp;lt;sub&amp;gt;t&amp;lt;/sub&amp;gt;)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Why it is called &lt;strong&gt;off-policy&lt;/strong&gt;? Because we don’t have the same logic to select action (&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϵ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\epsilon&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;ϵ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; - greedy) and update Q (greedy).&lt;/p&gt;
-
-&lt;p&gt;With &lt;em&gt;On-policy:&lt;/em&gt; we use the &lt;strong&gt;same policy for acting and updating.&lt;/strong&gt; Sarsa is such an algorithm.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*gVl6V-wbX_hOoNQATx081Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Nice and simple manual example with mouse, cheese in a maze. We run Q-learning and make all calculation by hands.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/500/1*GMuThIF7aNj-V_d6hTRN8A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;todo&gt; &lt;/todo&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;implement with numpy+gym this algorithm should be a nice exercise.&lt;/div&gt;
-
-&lt;p&gt;There is an exercise to implement a taxi, within this &lt;a href=&quot;https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb#scrollTo=20tSdDbxxK_H&quot;&gt;notebook&lt;/a&gt; at colab google. Taxi V3 is an env from opengym.&lt;/p&gt;
-
-&lt;h2 id=&quot;3321---back-to-2018---chapter-3---deep-q-learning-with-doom&quot;&gt;(3/3/21) - back to 2018 - Chapter 3 - Deep Q-learning with Doom&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://youtu.be/gCJyVX98KJ4&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We’ll create an agent that learns to play Doom. Doom is a big  environment with a gigantic state space (millions of different states).  Creating and updating a Q-table for that environment would not be  efficient at all.&lt;/p&gt;
-
-&lt;p&gt;The best idea in this case is to create a &lt;a href=&quot;http://neuralnetworksanddeeplearning.com/&quot;&gt;neural network&lt;/a&gt; that will approximate, given a state, the different Q-values for each action.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*w5GuxedZ9ivRYqM_MLUxOQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*LglEewHrVsuEGpBun8_KTg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Addresses pb of temporal limitation: get multiple frames to have sense of motion.&lt;/p&gt;
-
-&lt;p&gt;Video is nice because it goes from start and follows closely all steps.&lt;/p&gt;
-
-&lt;p&gt;I wil try to implement in my own by creating an environment and running under a clone of Deep_reinforcement_learning_Course &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course&quot;&gt;Thomas’s repo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here at &lt;a href=&quot;https://github.com/castorfou/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb&quot;&gt;Deep Q learning with Doom.ipynb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I had to switch to tensorflow-gpu 1.13. Manage some cuda memory issue. But then was able to run it.&lt;/p&gt;
-
-&lt;p&gt;However as Thomas says, I should do it step by step on my own.&lt;/p&gt;
-
-&lt;h2 id=&quot;31021---chapter-4-improvements-in-deep-q-learning-v1&quot;&gt;(3/10/21) - Chapter 4: Improvements in Deep Q Learning V1&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=-Ynjw0Vl3i4&amp;amp;feature=emb_title&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;four strategies that improve — dramatically — the training and the results of our DQN agents:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;fixed Q-targets&lt;/li&gt;
-  &lt;li&gt;double DQNs&lt;/li&gt;
-  &lt;li&gt;dueling DQN (aka DDQN)&lt;/li&gt;
-  &lt;li&gt;Prioritized Experience Replay (aka PER)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;fixed Q-targets&lt;/strong&gt; to avoid chasing a moving target&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Using a separate network with a fixed parameter (let’s call it w-) for estimating the TD target.&lt;/li&gt;
-  &lt;li&gt;At every &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\Tau&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; step, we copy the parameters from our DQN network to update the target network.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*D9i0I2EO7LKL2aAb2HLfTg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682/&quot;&gt;Improvements in Deep Q Learning: Dueling Double DQN, Prioritized Experience Replay, and fixed…&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Implementation&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Implementing fixed q-targets is pretty straightforward:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;First, we create two networks (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DQNetwork&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TargetNetwork&lt;/code&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Then, we create a function that will take our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DQNetwork&lt;/code&gt; parameters and copy them to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TargetNetwork&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finally, during the training, we calculate the TD target using our target network. We update the target network with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DQNetwork&lt;/code&gt; every &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\Tau&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; step (&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\Tau&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; is an hyper-parameter that we define).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;double DQNs&lt;/strong&gt; to handle overestimating of Q-values (at the beginning of training, taking the maximum q value (which is noisy) as the best action to take can lead to false positives)&lt;/p&gt;
-
-&lt;p&gt;we move from this TD target logic&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*KsQ46R8zyTQlKGv91xi6ww.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;to the use of 2 networks&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;use our DQN network to select what is the best action to take for the next state (the action with the highest Q value).&lt;/li&gt;
-  &lt;li&gt;use our target network to calculate the target Q value of taking that action at the next state.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*g5l4q162gDRZAAsFWtX7Nw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Implementation&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*oyGR6gJ4WyqeKOfq0Cd8iQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Dueling DQN (aka DDQN)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;based on this paper &lt;a href=&quot;https://arxiv.org/pdf/1511.06581.pdf&quot;&gt;Dueling Network Architectures for Deep Reinforcement Learning&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With DDQN, we want to separate the estimator of these two elements, using two new streams:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;one that estimates the &lt;strong&gt;state value V(s)&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;one that estimates the &lt;strong&gt;advantage for each action A(s,a)&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*FkHqwA2eSGixdS-3dvVoMA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and this can be combined with &lt;strong&gt;Prioritized experience replay&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is nicely explained in this &lt;a href=&quot;https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/&quot;&gt;article&lt;/a&gt;. DDQN explanation is clearer than Thomas’.&lt;/p&gt;
-
-&lt;p&gt;The key here is to deal efficiently with experiences. When treating all samples the same,  we are not using the fact that we can learn more from some transitions than from others. Prioritized Experience Replay (PER) is one strategy that tries to leverage this fact by changing the sampling distribution.&lt;/p&gt;
-
-&lt;p&gt;I guess there are several options to manage this prioritization (we would prefer transitions that do not fit well to our current estimate of Q function). And a key aspect is the performance of this selection. One implementation is SumTree.&lt;/p&gt;
-
-&lt;p&gt;I have to see full implementation in the notebook to fully understand the logic.&lt;/p&gt;
-
-&lt;p&gt;About the &lt;strong&gt;video&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Thomas has insisted about the importance to master these architecture (DQN then DDQN, etc) before going further with state of the art architectures (Policy Gradient, PPO…)&lt;/p&gt;
-
-&lt;p&gt;Approach in videos is now different. In previous videos it was about explaining articles. Now it is more turned to implementation details based on notebooks.&lt;/p&gt;
-
-&lt;p&gt;Thomas has given a reference to Arthur Juliani who is a senior ML engineer at &lt;a href=&quot;https://unity.com/fr/products/machine-learning-agents&quot;&gt;Unity&lt;/a&gt;. I would like to browse though this reference and see what can be done.&lt;/p&gt;
-
-&lt;p&gt;Should follow video and run/update notebook in //.&lt;/p&gt;
-
-&lt;h2 id=&quot;31721---chapter-5-policy-gradients-v1&quot;&gt;(3/17/21) - Chapter 5: Policy Gradients V1&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/Policy%20Gradients&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=wLTQRuizVyE&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In policy-based methods, instead of learning a value function that tells us what is the expected sum of rewards given a state and an action, we  learn directly the policy function that maps state to action (select  actions without using a value function).&lt;/p&gt;
-
-&lt;p&gt;3 main advantages to use Policy Gradients vs Q learning:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;convergence - have better convergence properties&lt;/li&gt;
-  &lt;li&gt;effective in high dimension, or with continuous actions&lt;/li&gt;
-  &lt;li&gt;stochastic policy - no need for exploration,/exploitation tradeoff&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But can be longer to train.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Policy search&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We can dfine our policy as the probability distribution of actions (for a given state)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/0*354cfoILK19WFTWa.&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And how good is this policy? Measured with J(&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.69444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/0*PfUAJaIGoEsvfbCG.&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We must find &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.69444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; to maximize J(&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.69444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;). How?&lt;/p&gt;
-
-&lt;p&gt;2 steps:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Measure the quality of a π (policy) with a policy score function J(θ)&lt;/li&gt;
-  &lt;li&gt;Use policy gradient ascent to find the best parameter θ that improves our π.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;the Policy Score function J(θ)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;3 ways (maybe more)&lt;/p&gt;
-
-&lt;p&gt;Calculate the mean of the return from the first time step (G1). This is the cumulative discounted reward for the entire episode.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*tP4l4IrIG3aMLTrMt-1-HA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In a continuous environment, we can use the average value, because we can’t rely on a specific start state. Each state value is now weighted (because some happen more than others) by  the probability of the occurrence of the respected state.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*S-XLkrvPuVUqLrFW1hmIMg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Third, we can use the average reward per time step. The idea here is that we want to get the most reward per time step.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*3SejRRby6vAnThZ8c2UaQg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Policy gradient ascent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;because we want to maximize our Policy score function&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/0*oh-lF13hYWt2Bd6V.&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The solution will be to use the Policy Gradient Theorem. This provides  an analytic expression for the gradient ∇ of J(θ) (performance) with  respect to policy θ that does not involve the differentiation of the  state distribution. (using &lt;a href=&quot;http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/&quot;&gt;likelihood ratio trick&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*iKhO5anOAfc3oqJOM2i_8A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It gives&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*zjEh737KfmDUzNECjW4e4w.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;R(&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;τ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\tau&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.1132em;&quot;&gt;τ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;) is like a scalar value score.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As with the previous section, this is good to watch the video at the same time.&lt;/p&gt;
-
-&lt;p&gt;And now this is the implementation in&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/Deep_reinforcement_learning_Course/blob/master/Policy%20Gradients/Doom%20Deathmatch/Doom-deathmatch%20REINFORCE%20Monte%20Carlo%20Policy%20gradients.ipynb&quot;&gt;doom deathmatch notebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/castorfou/Deep_reinforcement_learning_Course/raw/master/Policy%20Gradients/Doom%20Deathmatch/assets/doomPG1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;as with Pong, we &lt;a href=&quot;https://danieltakeshi.github.io/2016/11/25/frame-skipping-and-preprocessing-for-deep-q-networks-on-atari-2600-games/&quot;&gt;stack&lt;/a&gt; frames to understand dynamic with deque.&lt;/p&gt;
-
-&lt;p&gt;Even with GPU growth setup, I run an error after the 1st epoch.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;==========================================
-Epoch:  1 / 5000
-
-Number of training episodes: 15
-Total reward: 7.0
-Mean Reward of that batch 0.4666666666666667
-Average Reward of all training: 0.4666666666666667
-Max reward for a batch so far: 7.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ResourceExhaustedError: OOM when allocating tensor with shape[5030,32,24,39] and &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
-	 &lt;span class=&quot;o&quot;&gt;[[]]&lt;/span&gt;
-Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;current allocation info.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I have to reduce batch size (to 1000) to make it work.&lt;/p&gt;
-
-&lt;p&gt;And I can monitor gpu memory consumption with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;watch nvidia-smi&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/watch_nvidia_smi.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;or we can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpustat -i 2&lt;/code&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[0] Quadro RTX 4000&lt;/td&gt;
-      &lt;td&gt;59’C,  &lt;strong&gt;34 %&lt;/strong&gt;,   39 W&lt;/td&gt;
-      &lt;td&gt;7819 /  7982 MB&lt;/td&gt;
-      &lt;td&gt;explore(6729M) gdm(162M) explore(388M) explore(282M) explore(86M) explore(89M) explore(3M)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;31921---chapter-6-advantage-actor-critic-a2c-and-asynchronous-advantage-actor-critic-a3c-v1&quot;&gt;(3/19/21) - Chapter 6: Advantage Actor Critic (A2C) and Asynchronous Advantage Actor Critic (A3C) V1&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/A2C%20with%20Sonic%20the%20Hedgehog&quot;&gt;Notebook&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=GCfUdkCL7FQ&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;“hybrid method”: &lt;strong&gt;Actor Critic&lt;/strong&gt;. We’ll using two neural networks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;an &lt;strong&gt;Actor&lt;/strong&gt; that controls how our agent behaves (policy-based)&lt;/li&gt;
-  &lt;li&gt;a &lt;strong&gt;Critic&lt;/strong&gt; that measures how good the action taken is (value-based)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*e1N-YzQmJt-5KwUkdUvAHg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Actor is using a &lt;strong&gt;policy&lt;/strong&gt; function 
-&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\pi(s, a, \theta)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;π&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-Critic is using a &lt;strong&gt;value&lt;/strong&gt; function&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;mo stretchy=&quot;true&quot;&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\widehat{q}(s,a,w)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.67056em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;q&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;svg-align&quot; style=&quot;width:calc(100% - 0.16668em);margin-left:0.16668em;top:-3.43056em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;height:0.24em;&quot;&gt;&lt;svg width='100%' height='0.24em' viewBox='0 0 1062 239' preserveAspectRatio='none'&gt;&lt;path d='M529 0h5l519 115c5 1 9 5 9 10 0 1-1 2-1 3l-4 22
-c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.19444em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-Which means 2 sets of weights to be optimized separately &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.69444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and w.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*KlX2-kNXRYLAYpdnI8VPiA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We can use advantage function to stabilize learning:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-media-1.freecodecamp.org/images/1*SvSFYWx5-u5zf38baqBgyQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;two-different-strategies-asynchronous-or-synchronous&quot;&gt;Two different strategies: Asynchronous or Synchronous&lt;/h4&gt;
-
-&lt;p&gt;We have two different strategies to implement an Actor Critic agent:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A2C (aka Advantage Actor Critic)&lt;/li&gt;
-  &lt;li&gt;A3C (aka Asynchronous Advantage Actor Critic)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here we focus on A2C.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;(3/22/21) - Implementation and video&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;It is a little bit confusing. I won’t run it. I would have liked a more pregressive approach and to understand all steps Thomas did to get to that final implementation.&lt;/p&gt;
-
-&lt;h2 id=&quot;32421---chapter-7-proximal-policy-optimization-ppo-v1&quot;&gt;(3/24/21) - Chapter 7: Proximal Policy Optimization PPO V1&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/proximal-policy-optimization-ppo-with-sonic-the-hedgehog-2-and-3-c9c21dbed5e&quot;&gt;Article&lt;/a&gt;, &lt;a href=&quot;https://github.com/simoninithomas/Deep_reinforcement_learning_Course/tree/master/PPO%20with%20Sonic%20the%20Hedgehog&quot;&gt;Notebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The central idea of Proximal Policy Optimization is to avoid having too large policy update. (we use a ratio that will tells us the difference between our new and old policy and clip this ratio from 0.8 to 1.2)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Clipped Surrogate Objective Function&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/0*Ab-_UqHukYN6syxS&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We will penalize changes that lead to a ratio that will away from 1 (in the paper ratio can only vary from 0.8 to 1.2). &lt;strong&gt;By doing that we’ll ensure that not having too large policy update because the new policy can’t be too different from the older one.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;2 implementations are known TRPO (Trust Region Policy Optimization) and PPO clip. TRPO being complex and costly, we focus on PPO:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/0*Dk8XFEOzI7yaSfLE&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And the final loss will be:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*T0D50EPz-oqGDn55uHv9IA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Now the &lt;a href=&quot;https://github.com/castorfou/Deep_reinforcement_learning_Course/tree/master/PPO%20with%20Sonic%20the%20Hedgehog&quot;&gt;implementation&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;By looking at the implementation, I ran into &lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;Stable baselines3&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is a major update of Stable Baselines based on pytorch. It seems interesting!&lt;/p&gt;
-
-&lt;p&gt;I like this comment from Stable Baselines3 in the &lt;a href=&quot;https://araffin.github.io/post/sb3/&quot;&gt;v1.0 blog post&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Motivation&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;Deep reinforcement learning (RL) research has grown rapidly in recent years, yet results are often  &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&gt;difficult to reproduce&lt;/a&gt;. A major challenge is that small implementation details can have a substantial effect on performance – often greater than the  &lt;a href=&quot;https://iclr.cc/virtual_2020/poster_r1etN1rtPB.html&quot;&gt;difference between algorithms&lt;/a&gt;. It is particularly important that implementations used as experimental &lt;em&gt;baselines&lt;/em&gt; are reliable; otherwise, novel algorithms compared to weak baselines lead to inflated estimates of performance improvements.&lt;/p&gt;
-
-  &lt;p&gt;To help with this problem, we present Stable-Baselines3 (SB3), an  open-source framework implementing seven commonly used model-free deep  RL algorithms, relying on the  &lt;a href=&quot;https://github.com/openai/gym&quot;&gt;OpenAI Gym interface&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I will create a new blog entry about Stable Baselines3.&lt;/p&gt;
-
-&lt;p&gt;as for previous notebook, I need to purchase Sonic2-3 to make it worked. Not for now maybe later.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">A course by Thomas Simonini</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;RL - &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;Sutton&lt;/a&gt; book (p200-220) - eligibility traces, and start of planning vs learning&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
