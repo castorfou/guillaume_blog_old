@@ -48,11 +48,37 @@ This condensed schedule does not include class breaks and social events. Times a
 
 ## (4/1/21) - [Deep Q-Networks and its variants](https://whova.com/embedded/session/rlstc_202011/1416824/?view=)
 
-Deep Q network as a solution for a practicable control theory.
+
+
+Speaker is Bilal Piot.
+
+**Deep Q network** as a solution for a practicable control theory.
 
 Introduction of ALE (Atari Learning Environment)
 
 DQN is (almost) end-to-end: from raw observations to actions. Bilal explains the preprocessing part (from 160x210x3 to 84x84 + stacking 4 frames + downsampling to 15 Hz)
 
+Value Iteration (VI) algorithm: Recurrent algorithm to get Q. $Q_{k+1}=T^*Q$
 
+But it is not practical in a real-world case. What we can do is use interactions with real world. And estimate $Q^*$ using a regression.
+
+Would be interesting to have slides. I like the link between regression notations and VI notation.
+
+From neural Fitted-$Q$ to DQN. Main difference is data collection (in DQN you have updated interactions and it allows exploration, and size of architecture)
+
+With DQN we have acting part and learning part. Acting is the data collection. (using $\epsilon$-greedy policy)
+
+
+
+**hands-on based on DQN tutorial notebook.**
+
+had to  `export LD_LIBRARY_PATH=/home/explore/miniconda3/envs/aniti/lib/`
+
+Nice introduction to JAX and haiku. Haiku is similar modules in pytorch and can turn NN into pure version. Which is useful for Jax.
+
+
+
+**overview of the literature**
+
+![](https://kstatic.googleusercontent.com/files/f6b5f285173d4449285a8e812b8385f45c03f7104e1c41370a73e0c8558ff82d6a69e60962dd91c4972c444fd73bc4f98a06b5487eff5a037a37bc42f97cef3b)
 
