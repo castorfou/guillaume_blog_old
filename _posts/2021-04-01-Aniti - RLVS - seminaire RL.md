@@ -82,3 +82,7 @@ Nice introduction to JAX and haiku. Haiku is similar modules in pytorch and can 
 
 ![](https://kstatic.googleusercontent.com/files/f6b5f285173d4449285a8e812b8385f45c03f7104e1c41370a73e0c8558ff82d6a69e60962dd91c4972c444fd73bc4f98a06b5487eff5a037a37bc42f97cef3b)
 
+
+
+## (4/2/21) - [From Policy Gradients to Actor Critic methods](https://whova.com/embedded/session/rlstc_202011/1416833/?view=)
+

@@ -18,3 +18,8 @@ image: images/logbook.jpg
 
 Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing [Leçon inaugurale](https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm)
 
+
+**Friday 4/2**
+
+[Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [From Policy Gradients to Actor Critic methods](https://whova.com/embedded/session/rlstc_202011/1416833/?view=)
+
