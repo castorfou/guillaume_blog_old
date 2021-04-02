@@ -86,3 +86,6 @@ Nice introduction to JAX and haiku. Haiku is similar modules in pytorch and can 
 
 ## (4/2/21) - [From Policy Gradients to Actor Critic methods](https://whova.com/embedded/session/rlstc_202011/1416833/?view=)
 
+Olivier Sigaud is the speaker.
+
+He has pre-recorded his lecture in videos. I have missed the start so I will have to watch them later. 
