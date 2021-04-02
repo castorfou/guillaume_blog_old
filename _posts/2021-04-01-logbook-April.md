@@ -23,3 +23,8 @@ Collège de France - Algorithmes quantiques : quand la physique quantique défie
 
 [Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [From Policy Gradients to Actor Critic methods](https://whova.com/embedded/session/rlstc_202011/1416833/?view=)
 
+[Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [Policy Gradient in pratice](https://whova.com/embedded/session/rlstc_202011/1416836/?view=)
+
+git to use socks server to github (to go through local firewall)
+
+[Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [Exploration in Deep RL](https://whova.com/embedded/session/rlstc_202011/1416838/?view=#)

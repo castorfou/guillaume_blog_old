@@ -89,3 +89,15 @@ Nice introduction to JAX and haiku. Haiku is similar modules in pytorch and can 
 Olivier Sigaud is the speaker.
 
 He has pre-recorded his lecture in videos. I have missed the start so I will have to watch them later. 
+
+
+
+[Policy Gradient in pratice](https://whova.com/embedded/session/rlstc_202011/1416836/?view=)
+
+Don't become an alchemist ;)
+
+As stochastic policies, squashed gaussian is interesting because it allows continuous variable + bounds.
+
+
+
+[Exploration in Deep RL](https://whova.com/embedded/session/rlstc_202011/1416838/?view=#)
