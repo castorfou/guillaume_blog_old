@@ -1,20 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-02T08:52:39-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-06T03:03:18-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - using SOCKS5 proxy</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html" rel="alternate" type="text/html" title="Git - using SOCKS5 proxy" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git%20avec%20proxy%20socks</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html">&lt;h2 id=&quot;setup-socks5-server&quot;&gt;setup socks5 server&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;using &lt;a href=&quot;https://community.hetzner.com/tutorials/install-and-configure-danted-proxy-socks5&quot;&gt;dante&lt;/a&gt; server&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;dante-server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conf file&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/danted.conf
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
+logoutput: stderr
+internal: enp3s0 port &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1080
+external: enp3s0
+socksmethod: none
+clientmethod: none
+user.privileged: proxy
+user.unprivileged: nobody
+user.libwrap: nobody
+client pass &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: error connect disconnect
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+client block &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: connect error
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+socks pass &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: error connect disconnect
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+socks block &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: connect error
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Start and monitor usage&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service danted restart
+&lt;span class=&quot;nb&quot;&gt;tail&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; /var/log/syslog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-setup&quot;&gt;Git setup&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; .ssh/config
+Host github.com
+IdentityFile ~/.ssh/id_rsa_gmail
+ProxyCommand /bin/nc &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; 5 &lt;span class=&quot;nt&quot;&gt;-x&lt;/span&gt; 192.168.50.202:1080 %h %p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;https://rlvs.aniti.fr/&lt;/p&gt;
 
@@ -217,7 +252,23 @@
 
 &lt;p&gt;As stochastic policies, squashed gaussian is interesting because it allows continuous variable + bounds.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -1779,28 +1830,4 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;&lt;strong&gt;Wednesday 3/31&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Parcimonie et compression d’images (lecture 8)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html" rel="alternate" type="text/html" title="Logbook for February 21" /><published>2021-02-26T00:00:00-06:00</published><updated>2021-02-26T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-Februrary.html">&lt;p&gt;This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.&lt;/p&gt;
-
-&lt;h2 id=&quot;week-8---feb-21&quot;&gt;Week 8 - Feb 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday 2/22&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To develop knowledge about RL, here is my learning process on a weekly basis.&lt;/p&gt;
-
-&lt;p&gt;Monday &lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Tuesday &lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Wednesday &lt;a href=&quot;/guillaume_blog/blog/an-introduction-to-deep-reinforcement-learning.html&quot;&gt;Deep Reinforcement Learning by Thomas Simonini&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Friday &lt;a href=&quot;https://github.com/castorfou/datascience-papers&quot;&gt;RL readings&lt;/a&gt;: papers, books, …&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 2/26&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;blog fastpages - setup automated upgrade (instructions from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_fastpages_docs&lt;/code&gt;) v2.1.42&lt;/p&gt;
-
-&lt;p&gt;blog fastpages - display image preview (update of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;)&lt;/p&gt;
-
-&lt;p&gt;RL - understood differences between Q-learning and Sarsa algorithms in &lt;a href=&quot;/guillaume_blog/blog/Deep-Reinforcement-Learning-Course-by-Thomas-Simonini.html&quot;&gt;end of step2 part2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;RL - &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-readings.html&quot;&gt;Sutton&lt;/a&gt; book (p200-220) - eligibility traces, and start of planning vs learning&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">This is a test. I will try to keep words on a monthly (this page), weekly (per heading), daily basis. Just some short entries with possibly some links to more detailed materials.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/college-de-france-representations-parcimonieuses.html&quot;&gt;College de France&lt;/a&gt; Parcimonie et compression d’images (lecture 8)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 9 - Mar 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
