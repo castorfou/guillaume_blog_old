@@ -28,3 +28,12 @@ Collège de France - Algorithmes quantiques : quand la physique quantique défie
 git to use socks server to github (to go through local firewall)
 
 [Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [Exploration in Deep RL](https://whova.com/embedded/session/rlstc_202011/1416838/?view=#)
+
+
+
+## Week 14 - Apr 21
+
+**Wednesday 4/7**
+
+[tabnet](https://arxiv.org/abs/1908.07442): pytorch (and fastai with Zach Mueller) implementations 
+
