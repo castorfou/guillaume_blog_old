@@ -1,5 +1,5 @@
 ---
-title: "Git - using SOCKS5 proxy"
+title: "using SOCKS5 proxy - with git, apt, pip, ..."
 description: to connect to github behind local firewall
 toc: true
 comments: true
@@ -71,5 +71,39 @@ $ cat .ssh/config
 Host github.com
 IdentityFile ~/.ssh/id_rsa_gmail
 ProxyCommand /bin/nc -X 5 -x 192.168.50.202:1080 %h %p
+```
+
+
+
+## Proxychains
+
+**installation**
+
+```bash
+# to be downloaded from apt mirrors:
+# libproxychains proxychains
+sudo dpkg -i libproxychains3_3.1-7_amd64.deb proxychains_3.1-7_all.deb
+```
+
+**configuration**
+
+```bash
+sudo vi /etc/proxychains.conf
+
+[ProxyList]
+# add proxy here ...
+# meanwile
+# defaults set to "tor"
+socks5          192.168.50.202  1080
+```
+
+**usage**
+
+```bash
+sudo proxychains apt update
+sudo proxychains apt upgrade
+
+proxychains pip install pycaret 
+
 ```
 
