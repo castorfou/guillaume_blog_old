@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-06T03:03:18-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Git - using SOCKS5 proxy</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html" rel="alternate" type="text/html" title="Git - using SOCKS5 proxy" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git%20avec%20proxy%20socks</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html">&lt;h2 id=&quot;setup-socks5-server&quot;&gt;setup socks5 server&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-07T02:20:52-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">using SOCKS5 proxy - with git, apt, pip, …</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html" rel="alternate" type="text/html" title="using SOCKS5 proxy - with git, apt, pip, …" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git%20avec%20proxy%20socks</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html">&lt;h2 id=&quot;setup-socks5-server&quot;&gt;setup socks5 server&lt;/h2&gt;
 
 &lt;p&gt;using &lt;a href=&quot;https://community.hetzner.com/tutorials/install-and-configure-danted-proxy-socks5&quot;&gt;dante&lt;/a&gt; server&lt;/p&gt;
 
@@ -49,6 +49,35 @@ socks block &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 Host github.com
 IdentityFile ~/.ssh/id_rsa_gmail
 ProxyCommand /bin/nc &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; 5 &lt;span class=&quot;nt&quot;&gt;-x&lt;/span&gt; 192.168.50.202:1080 %h %p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;proxychains&quot;&gt;Proxychains&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;installation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# to be downloaded from apt mirrors:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# libproxychains proxychains&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; libproxychains3_3.1-7_amd64.deb proxychains_3.1-7_all.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;configuration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vi /etc/proxychains.conf
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ProxyList]
+&lt;span class=&quot;c&quot;&gt;# add proxy here ...&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# meanwile&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# defaults set to &quot;tor&quot;&lt;/span&gt;
+socks5          192.168.50.202  1080
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;usage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt upgrade
+
+proxychains pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pycaret 
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;https://rlvs.aniti.fr/&lt;/p&gt;
