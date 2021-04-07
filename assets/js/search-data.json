@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Logbook for April 21",
-            "content": "Week 13 - Apr 21 . Thursday 4/1 . Aniti RLVS - Deep Q-Networks and its variants . Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing Leçon inaugurale . Friday 4/2 . Aniti RLVS - From Policy Gradients to Actor Critic methods . Aniti RLVS - Policy Gradient in pratice . git to use socks server to github (to go through local firewall) . Aniti RLVS - Exploration in Deep RL .",
+            "content": "Week 13 - Apr 21 . Thursday 4/1 . Aniti RLVS - Deep Q-Networks and its variants . Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing Leçon inaugurale . Friday 4/2 . Aniti RLVS - From Policy Gradients to Actor Critic methods . Aniti RLVS - Policy Gradient in pratice . git to use socks server to github (to go through local firewall) . Aniti RLVS - Exploration in Deep RL . Week 14 - Apr 21 . Wednesday 4/7 . tabnet: pytorch (and fastai with Zach Mueller) implementations .",
             "url": "https://castorfou.github.io/guillaume_blog/blog/logbook-April.html",
             "relUrl": "/blog/logbook-April.html",
             "date": " • Apr 1, 2021"
