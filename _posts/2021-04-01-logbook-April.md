@@ -42,3 +42,5 @@ git to use socks server to github (to go through local firewall)
 [Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [Evolutionary Reinforcement Learning](https://whova.com/embedded/session/rlstc_202011/1416851/?view=)
 
 Jupyter notebook turned into [slides with RISE](https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/)
+
+[Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [Micro-data Policy Search](https://whova.com/embedded/session/rlstc_202011/1416841/?view=)
