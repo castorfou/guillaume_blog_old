@@ -12,7 +12,7 @@ image: images/RL.png
 
 ![](https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png)
 
-https://rlvs.aniti.fr/
+[https://rlvs.aniti.fr/](https://rlvs.aniti.fr/)
 
 Schedule is 
 
@@ -101,3 +101,11 @@ As stochastic policies, squashed gaussian is interesting because it allows conti
 
 
 [Exploration in Deep RL](https://whova.com/embedded/session/rlstc_202011/1416838/?view=#)
+
+
+
+## (4/8/21) - [Evolutionary Reinforcement Learning](https://whova.com/embedded/session/rlstc_202011/1416851/?view=)
+
+pdf version of the slides are available [here](https://rl-vs.github.io/rlvs2021/class-material/evolutionary/light-virtual_school_neat_hyperneat.pdf)
+
+then [Evolving Agents that Learn More Like Animals](https://whova.com/embedded/session/rlstc_202011/1416848/?view=)

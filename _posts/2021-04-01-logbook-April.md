@@ -37,3 +37,8 @@ git to use socks server to github (to go through local firewall)
 
 [tabnet](https://arxiv.org/abs/1908.07442): pytorch (and fastai with Zach Mueller) implementations 
 
+**Thursday 4/8**
+
+[Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - [Evolutionary Reinforcement Learning](https://whova.com/embedded/session/rlstc_202011/1416851/?view=)
+
+Jupyter notebook turned into [slides with RISE](https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/)
