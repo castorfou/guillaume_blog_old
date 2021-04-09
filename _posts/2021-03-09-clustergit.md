@@ -27,6 +27,20 @@ git clone git@github.com:mnagel/clustergit.git
 source ~.bashrc
 ```
 
+or using `.local/bin`
+
+```bash
+cd ~/Applications/
+git clone git@github.com:castorfou/clustergit.git
+cd ~
+mkdir -p .local/bin
+cd .local/bin/
+ln -s ~/Applications/clustergit/clustergit .
+source .profile
+```
+
+
+
 
 
 ## Usage clustergit
