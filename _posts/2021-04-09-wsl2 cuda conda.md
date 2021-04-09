@@ -34,6 +34,24 @@ sudo proxychains apt-get -y install cuda-toolkit-11-2
 
 
 
+https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/
+
+new version using WSL-ubuntu as distro
+
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=WSLUbuntu&target_version=20&target_type=deblocal
+
+```bash
+proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
+sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
+proxychains wget https://developer.download.nvidia.com/compute/cuda/11.2.2/local_installers/cuda-repo-wsl-ubuntu-11-2-local_11.2.2-1_amd64.deb
+sudo dpkg -i cuda-repo-wsl-ubuntu-11-2-local_11.2.2-1_amd64.deb
+sudo apt-key add /var/cuda-repo-wsl-ubuntu-11-2-local/7fa2af80.pub
+sudo proxychains apt-get update
+sudo proxychains apt-get -y install cuda
+```
+
+
+
 
 
 ## conda
@@ -58,3 +76,16 @@ jupyter contrib nbextensions install --user
 proxychains conda upgrade nbconvert
 
 ```
+
+
+
+## pytorch
+
+```bash
+proxychains conda create -n pytorch python=3.8
+proxychains conda activate pytorch
+proxychains conda install -c pytorch pytorch=1.7.1 torchvision
+proxychains conda install jupyter
+proxychains conda install -c conda-forge jupyter_contrib_nbextensions
+```
+
