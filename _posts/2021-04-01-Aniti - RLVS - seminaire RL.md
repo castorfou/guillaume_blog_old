@@ -121,3 +121,87 @@ Afternoon will be the opposite.
 ## (4/8/21) - [Micro-data Policy Search](https://whova.com/embedded/session/rlstc_202011/1416841/?view=)
 
 Most policy search algorithms require thousands of training episodes to  find an effective policy, which is often infeasible when experiments  takes time or are expensive (for instance, with physical robot or with  an aerodynamics simulator). This class focuses on the extreme other end  of the spectrum: how can an algorithm adapt a policy with only a handful of trials (a dozen) and a few minutes? By analogy with the word  "big-data", we refer to this challenge as "micro-data reinforcement  learning". We will describe two main strategies: (1) leverage prior  knowledge on the policy structure (e.g., dynamic movement primitives),  on the policy parameters (e.g., demonstrations), or on the dynamics  (e.g., simulators), and (2) create data-driven surrogate models of the  expected reward (e.g., Bayesian optimization) or the dynamical model  (e.g., model-based policy search), so that the policy optimizer queries  the model instead of the real system. Most of the examples will be about robotic systems, but the principle apply to any other expensive setup.
+
+all material: [https://rl-vs.github.io/rlvs2021/micro-data.html](https://rl-vs.github.io/rlvs2021/micro-data.html)
+
+
+
+## (4/9/21) - [RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3](https://whova.com/embedded/session/rlstc_202011/1416855/?view=)
+
+
+
+​                        **Abstract:**
+The aim of the session is to  help you do reinforcement learning experiments. The first part covers  general advice about RL, tips and tricks and details three examples  where RL was applied on real robots. The second part will be a practical session using the Stable-Baselines3 library.
+
+**Pre-requisites:**
+Python programming, RL basics, (recommended: Google account for the practical session in order to use Google Colab).
+
+**Additional material:**
+Website: [https://github.com/DLR-RM/stable-baselines3](https://github.com/DLR-RM/stable-baselines3)
+Doc: [https://stable-baselines3.readthedocs.io/en/master/](https://stable-baselines3.readthedocs.io/en/master/)
+
+**Outline:**
+Part I: RL Tips and Tricks / The Challenges of Applying RL to Real Robots
+
+1. Introduction (3 minutes)
+2. RL Tips and tricks (45 minutes)
+   1. General Nuts and Bolts of RL experimentation (10 minutes)
+   2. RL in practice on a custom task (custom environment) (30 minutes)
+   3. Questions? (5 minutes)
+3. The Challenges of Applying RL to Real Robots (45 minutes)
+   1. Learning to control an elastic robot - DLR David Neck Example (15 minutes)
+   2. Learning to drive in minutes and learning to race in hours - Virtual and real racing car (15 minutes)
+   3. Learning to walk with an elastic quadruped robot - DLR bert example (10 minutes)
+   4. Questions? (5 minutes+)
+
+Part II: Practical Session with Stable-Baselines3
+
+1. Stable-Baselines3 Overview (20 minutes)
+2. Questions? (5 minutes)
+3. Practical Session - Code along (1h+)
+
+
+
+*action space*
+
+When using continuous space, you need to normalize! (normalized action space -1, -1)
+
+there is a checker for that in stable baselines 3.
+
+*reward*
+
+start with reward shaping.
+
+*termination condition*
+
+early stopping makes learning faster (and safer for robots)
+
+![](../images/aniti_rl_algo.png)
+
+for hyperparameter tuning, Antonin recommends Optuna.
+
+
+
+about the Henderson paper: [Deep Reinforcement Learning that Matters](https://arxiv.org/abs/1709.06560)
+
+![](../images/aniti_rl_slr.png)
+
+and then the controller will use latent representation / current speed + history as observation space.
+
+Learning to drive takes then 10 min, and to race 2 hours.
+
+
+
+#### handson
+
+slides: [https://araffin.github.io/slides/rlvs-sb3-handson/](https://araffin.github.io/slides/rlvs-sb3-handson/)
+
+notebook: [https://github.com/araffin/rl-handson-rlvs21](https://github.com/araffin/rl-handson-rlvs21)
+
+RL zoo: [https://github.com/DLR-RM/rl-baselines3-zoo](https://github.com/DLR-RM/rl-baselines3-zoo)
+
+documentation for SB3 usefull for completing exercises: [https://stable-baselines3.readthedocs.io/en/master/](https://stable-baselines3.readthedocs.io/en/master/)
+
+
+
+https://excalidraw.com/
