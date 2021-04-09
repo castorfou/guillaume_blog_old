@@ -1,109 +1,60 @@
 ---
-title: "using SOCKS5 proxy - with git, apt, pip, ..."
-description: to connect to github behind local firewall
+title: "setup wsl2 with cuda and conda"
+description: best of breed windows + linux
 toc: true
 comments: true
 layout: post
-categories: [git]
-image: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
+categories: [wsl, cuda, conda]
 ---
 
 
 
-## setup socks5 server
+## wsl2 and network + proxychains
 
-using [dante](https://community.hetzner.com/tutorials/install-and-configure-danted-proxy-socks5) server
+workaround explained in [this blog entry](https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2)
 
-**Installation**
+
+
+## cuda
+
+https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers
+
+install nvidia cuda specific driver for WSL: https://developer.nvidia.com/cuda/wsl on windows. (version 470.14_quadro_win10-dch_64bit_international in my case) 
+
+
 
 ```bash
-sudo apt-get install dante-server
+proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+sudo proxychains add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+sudo proxychains apt-get update
+sudo proxychains apt-get -y install cuda-toolkit-11-2
 ```
 
 
 
-**Conf file**
+
+
+## conda
+
+from https://docs.conda.io/en/latest/miniconda.html
+
+download https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+and install with `./Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda3`
+
+
+
+## pycaret
 
 ```bash
-sudo nano /etc/danted.conf
+conda create --name pycaret python=3.7
+conda activate pycaret3
 
-logoutput: stderr
-internal: enp3s0 port = 1080
-external: enp3s0
-socksmethod: none
-clientmethod: none
-user.privileged: proxy
-user.unprivileged: nobody
-user.libwrap: nobody
-client pass {
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: error connect disconnect
-}
-client block {
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: connect error
-}
-socks pass {
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: error connect disconnect
-}
-socks block {
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: connect error
-}
-```
-
-
-
-**Start and monitor usage**
-
-```bash
-sudo service danted restart
-tail -f /var/log/syslog
-```
-
-
-
-## Git setup 
-
-```bash
-$ cat .ssh/config
-Host github.com
-IdentityFile ~/.ssh/id_rsa_gmail
-ProxyCommand /bin/nc -X 5 -x 192.168.50.202:1080 %h %p
-```
-
-
-
-## Proxychains
-
-**installation**
-
-```bash
-# to be downloaded from apt mirrors:
-# libproxychains proxychains
-sudo dpkg -i libproxychains3_3.1-7_amd64.deb proxychains_3.1-7_all.deb
-```
-
-**configuration**
-
-```bash
-sudo vi /etc/proxychains.conf
-
-[ProxyList]
-# add proxy here ...
-# meanwile
-# defaults set to "tor"
-socks5          192.168.50.202  1080
-```
-
-**usage**
-
-```bash
-sudo proxychains apt update
-sudo proxychains apt upgrade
-
-proxychains pip install pycaret 
+proxychains pip install pycaret shap
+proxychains conda install -c conda-forge  nb_conda jupyter_contrib_nbextensions fire pyfiglet openpyxl
+jupyter contrib nbextensions install --user
+proxychains conda upgrade nbconvert
 
 ```
-
