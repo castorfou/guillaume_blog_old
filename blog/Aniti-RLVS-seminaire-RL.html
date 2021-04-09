@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -116,6 +116,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#4221---from-policy-gradients-to-actor-critic-methods">(4/2/21) - From Policy Gradients to Actor Critic methods</a></li>
 <li class="toc-entry toc-h2"><a href="#4821---evolutionary-reinforcement-learning">(4/8/21) - Evolutionary Reinforcement Learning</a></li>
 <li class="toc-entry toc-h2"><a href="#4821---micro-data-policy-search">(4/8/21) - Micro-data Policy Search</a></li>
+<li class="toc-entry toc-h2"><a href="#4921---rl-in-practice-tips-and-tricks-and-practical-session-with-stable-baselines3">(4/9/21) - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#handson">handson</a></li>
+</ul>
+</li>
 </ul><p><img src="https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png" alt=""></p>
 
 <p><a href="https://rlvs.aniti.fr/">https://rlvs.aniti.fr/</a></p>
@@ -349,6 +354,91 @@ window.onload = wrap_img;
 </h2>
 
 <p>Most policy search algorithms require thousands of training episodes to  find an effective policy, which is often infeasible when experiments  takes time or are expensive (for instance, with physical robot or with  an aerodynamics simulator). This class focuses on the extreme other end  of the spectrum: how can an algorithm adapt a policy with only a handful of trials (a dozen) and a few minutes? By analogy with the word  “big-data”, we refer to this challenge as “micro-data reinforcement  learning”. We will describe two main strategies: (1) leverage prior  knowledge on the policy structure (e.g., dynamic movement primitives),  on the policy parameters (e.g., demonstrations), or on the dynamics  (e.g., simulators), and (2) create data-driven surrogate models of the  expected reward (e.g., Bayesian optimization) or the dynamical model  (e.g., model-based policy search), so that the policy optimizer queries  the model instead of the real system. Most of the examples will be about robotic systems, but the principle apply to any other expensive setup.</p>
+
+<p>all material: <a href="https://rl-vs.github.io/rlvs2021/micro-data.html">https://rl-vs.github.io/rlvs2021/micro-data.html</a></p>
+
+<h2 id="4921---rl-in-practice-tips-and-tricks-and-practical-session-with-stable-baselines3">
+<a class="anchor" href="#4921---rl-in-practice-tips-and-tricks-and-practical-session-with-stable-baselines3" aria-hidden="true"><span class="octicon octicon-link"></span></a>(4/9/21) - <a href="https://whova.com/embedded/session/rlstc_202011/1416855/?view=">RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3</a>
+</h2>
+
+<p>​                        <strong>Abstract:</strong>
+The aim of the session is to  help you do reinforcement learning experiments. The first part covers  general advice about RL, tips and tricks and details three examples  where RL was applied on real robots. The second part will be a practical session using the Stable-Baselines3 library.</p>
+
+<p><strong>Pre-requisites:</strong>
+Python programming, RL basics, (recommended: Google account for the practical session in order to use Google Colab).</p>
+
+<p><strong>Additional material:</strong>
+Website: <a href="https://github.com/DLR-RM/stable-baselines3">https://github.com/DLR-RM/stable-baselines3</a>
+Doc: <a href="https://stable-baselines3.readthedocs.io/en/master/">https://stable-baselines3.readthedocs.io/en/master/</a></p>
+
+<p><strong>Outline:</strong>
+Part I: RL Tips and Tricks / The Challenges of Applying RL to Real Robots</p>
+
+<ol>
+  <li>Introduction (3 minutes)</li>
+  <li>RL Tips and tricks (45 minutes)
+    <ol>
+      <li>General Nuts and Bolts of RL experimentation (10 minutes)</li>
+      <li>RL in practice on a custom task (custom environment) (30 minutes)</li>
+      <li>Questions? (5 minutes)</li>
+    </ol>
+  </li>
+  <li>The Challenges of Applying RL to Real Robots (45 minutes)
+    <ol>
+      <li>Learning to control an elastic robot - DLR David Neck Example (15 minutes)</li>
+      <li>Learning to drive in minutes and learning to race in hours - Virtual and real racing car (15 minutes)</li>
+      <li>Learning to walk with an elastic quadruped robot - DLR bert example (10 minutes)</li>
+      <li>Questions? (5 minutes+)</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Part II: Practical Session with Stable-Baselines3</p>
+
+<ol>
+  <li>Stable-Baselines3 Overview (20 minutes)</li>
+  <li>Questions? (5 minutes)</li>
+  <li>Practical Session - Code along (1h+)</li>
+</ol>
+
+<p><em>action space</em></p>
+
+<p>When using continuous space, you need to normalize! (normalized action space -1, -1)</p>
+
+<p>there is a checker for that in stable baselines 3.</p>
+
+<p><em>reward</em></p>
+
+<p>start with reward shaping.</p>
+
+<p><em>termination condition</em></p>
+
+<p>early stopping makes learning faster (and safer for robots)</p>
+
+<p><img src="../images/aniti_rl_algo.png" alt=""></p>
+
+<p>for hyperparameter tuning, Antonin recommends Optuna.</p>
+
+<p>about the Henderson paper: <a href="https://arxiv.org/abs/1709.06560">Deep Reinforcement Learning that Matters</a></p>
+
+<p><img src="../images/aniti_rl_slr.png" alt=""></p>
+
+<p>and then the controller will use latent representation / current speed + history as observation space.</p>
+
+<p>Learning to drive takes then 10 min, and to race 2 hours.</p>
+
+<h4 id="handson">
+<a class="anchor" href="#handson" aria-hidden="true"><span class="octicon octicon-link"></span></a>handson</h4>
+
+<p>slides: <a href="https://araffin.github.io/slides/rlvs-sb3-handson/">https://araffin.github.io/slides/rlvs-sb3-handson/</a></p>
+
+<p>notebook: <a href="https://github.com/araffin/rl-handson-rlvs21">https://github.com/araffin/rl-handson-rlvs21</a></p>
+
+<p>RL zoo: <a href="https://github.com/DLR-RM/rl-baselines3-zoo">https://github.com/DLR-RM/rl-baselines3-zoo</a></p>
+
+<p>documentation for SB3 usefull for completing exercises: <a href="https://stable-baselines3.readthedocs.io/en/master/">https://stable-baselines3.readthedocs.io/en/master/</a></p>
+
+<p>https://excalidraw.com/</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
