@@ -120,6 +120,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#cuda">cuda</a></li>
 <li class="toc-entry toc-h2"><a href="#conda">conda</a></li>
 <li class="toc-entry toc-h2"><a href="#pycaret">pycaret</a></li>
+<li class="toc-entry toc-h2"><a href="#pytorch">pytorch</a></li>
 </ul><h2 id="wsl2-and-network--proxychains">
 <a class="anchor" href="#wsl2-and-network--proxychains" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl2 and network + proxychains</h2>
 
@@ -138,6 +139,21 @@ window.onload = wrap_img;
 <span class="nb">sudo </span>proxychains add-apt-repository <span class="s2">"deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"</span>
 <span class="nb">sudo </span>proxychains apt-get update
 <span class="nb">sudo </span>proxychains apt-get <span class="nt">-y</span> <span class="nb">install </span>cuda-toolkit-11-2
+</code></pre></div></div>
+
+<p>https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/</p>
+
+<p>new version using WSL-ubuntu as distro</p>
+
+<p>https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=WSLUbuntu&amp;target_version=20&amp;target_type=deblocal</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
+<span class="nb">sudo mv </span>cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
+proxychains wget https://developer.download.nvidia.com/compute/cuda/11.2.2/local_installers/cuda-repo-wsl-ubuntu-11-2-local_11.2.2-1_amd64.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> cuda-repo-wsl-ubuntu-11-2-local_11.2.2-1_amd64.deb
+<span class="nb">sudo </span>apt-key add /var/cuda-repo-wsl-ubuntu-11-2-local/7fa2af80.pub
+<span class="nb">sudo </span>proxychains apt-get update
+<span class="nb">sudo </span>proxychains apt-get <span class="nt">-y</span> <span class="nb">install </span>cuda
 </code></pre></div></div>
 
 <h2 id="conda">
@@ -161,6 +177,17 @@ jupyter contrib nbextensions <span class="nb">install</span> <span class="nt">--
 proxychains conda upgrade nbconvert
 
 </code></pre></div></div>
+
+<h2 id="pytorch">
+<a class="anchor" href="#pytorch" aria-hidden="true"><span class="octicon octicon-link"></span></a>pytorch</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>proxychains conda create <span class="nt">-n</span> pytorch <span class="nv">python</span><span class="o">=</span>3.8
+proxychains conda activate pytorch
+proxychains conda <span class="nb">install</span> <span class="nt">-c</span> pytorch <span class="nv">pytorch</span><span class="o">=</span>1.7.1 torchvision
+proxychains conda <span class="nb">install </span>jupyter
+proxychains conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyter_contrib_nbextensions
+</code></pre></div></div>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
