@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -155,6 +155,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h3"><a href="#execution">execution </a></li>
 <li class="toc-entry toc-h3"><a href="#proxychains">proxychains </a></li>
+<li class="toc-entry toc-h3"><a href="#clean-from-local-deb-install-to-ubuntu-repo">clean from local deb install to ubuntu repo </a></li>
 </ul>
 </li>
 </ul><!--
@@ -841,6 +842,45 @@ sudo ln -s /mnt/c/bin/npiperelay.exe /usr/local/bin/npiperelay.exe
 <a class="anchor" href="#proxychains" aria-hidden="true"><span class="octicon octicon-link"></span></a>proxychains<a class="anchor-link" href="#proxychains"> </a>
 </h3>
 <p>I can now use proxychains and everything works beautifully ;)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="clean-from-local-deb-install-to-ubuntu-repo">
+<a class="anchor" href="#clean-from-local-deb-install-to-ubuntu-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>clean from local deb install to ubuntu repo<a class="anchor-link" href="#clean-from-local-deb-install-to-ubuntu-repo"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span>~/git$ ls *.deb
+genisoimage_1.1.11-3.1ubuntu1_amd64.deb                proxychains_3.1-8.1_all.deb
+libproxychains3_3.1-8.1_amd64.deb                      socat_1.7.3.3-2_amd64.deb
+net-tools_1.60+git20180626.aebd88e-1ubuntu1_amd64.deb  unzip_6.0-25ubuntu1_amd64.deb
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span>sudo apt remove genisoimage  net-tools  socat unzip
+sudo proxychains apt install genisoimage libproxychains3 net-tools proxychains socat unzip
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I don't exactly see how to do it with proxychains.</p>
 
 </div>
 </div>

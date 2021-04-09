@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-09T07:01:07-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">using SOCKS5 proxy - with git, apt, pip, …</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html" rel="alternate" type="text/html" title="using SOCKS5 proxy - with git, apt, pip, …" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git%20avec%20proxy%20socks</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html">&lt;h2 id=&quot;setup-socks5-server&quot;&gt;setup socks5 server&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-09T07:27:36-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">using SOCKS5 proxy - with git, apt, pip, …</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html" rel="alternate" type="text/html" title="using SOCKS5 proxy - with git, apt, pip, …" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git%20avec%20proxy%20socks</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-avec-proxy-socks.html">&lt;h2 id=&quot;setup-socks5-server&quot;&gt;setup socks5 server&lt;/h2&gt;
 
 &lt;p&gt;using &lt;a href=&quot;https://community.hetzner.com/tutorials/install-and-configure-danted-proxy-socks5&quot;&gt;dante&lt;/a&gt; server&lt;/p&gt;
 
@@ -1314,6 +1314,17 @@ We suggest you reading &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&g
 git clone git@github.com:mnagel/clustergit.git
 &lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.local/bin&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications/
+git clone git@github.com:castorfou/clustergit.git
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; .local/bin
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; .local/bin/
+&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; ~/Applications/clustergit/clustergit &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .profile
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;

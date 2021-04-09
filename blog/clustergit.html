@@ -134,6 +134,17 @@ git clone git@github.com:mnagel/clustergit.git
 <span class="nb">source</span> ~.bashrc
 </code></pre></div></div>
 
+<p>or using <code class="language-plaintext highlighter-rouge">.local/bin</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Applications/
+git clone git@github.com:castorfou/clustergit.git
+<span class="nb">cd</span> ~
+<span class="nb">mkdir</span> <span class="nt">-p</span> .local/bin
+<span class="nb">cd</span> .local/bin/
+<span class="nb">ln</span> <span class="nt">-s</span> ~/Applications/clustergit/clustergit <span class="nb">.</span>
+<span class="nb">source</span> .profile
+</code></pre></div></div>
+
 <h2 id="usage-clustergit">
 <a class="anchor" href="#usage-clustergit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage clustergit</h2>
 
