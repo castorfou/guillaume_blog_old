@@ -48,3 +48,5 @@ Jupyter notebook turned into [slides with RISE](https://www.blog.pythonlibrary.o
 **Friday 4/9**
 
 [Aniti RLVS](/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html) - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3
+
+setup [wsl-vpnkit](https://github.com/sakai135/wsl-vpnkit) to workaround wsl2 and network issues (explained [here](/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2))
