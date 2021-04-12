@@ -20,7 +20,7 @@ After my internet provider router stopped unexpectedly yesterday, I had to find 
 
 for a reason, *raspberry pi imager* snap doesn't work (due to a bug linked to QT+wayland).
 
-I download deb ubuntu version (imager_1.6_amd64.deb) from [https://www.raspberry.org/software](https://www.raspberry.org/software) and install with dpkg. (`sudo dpkg -i imager_1.6_amd64.deb`)
+I download deb ubuntu version (imager_1.6_amd64.deb) from [https://www.raspberrypi.org/software](https://www.raspberrypi.org/software) and install with dpkg. (`sudo dpkg -i imager_1.6_amd64.deb`)
 
 With `rpi-imager`, I can install by selecting the default OS (raspberry Pi OS 32-bit), and SD card as storage.
 
