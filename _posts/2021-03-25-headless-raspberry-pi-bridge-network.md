@@ -99,7 +99,7 @@ sudo rpi-update
 
 **Option 1 - Same Subnet**
 
-Save this script as a [file](/guillaume_blog/files/bridge.sh.txt) named `bridge.sh` on your Pi.
+Save this script as a [file](/guillaume_blog/files/bridge.sh) named `bridge.sh` on your Pi.
 
 ```bash
 #!/usr/bin/env bash
