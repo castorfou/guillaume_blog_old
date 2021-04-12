@@ -57,3 +57,5 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
 """
 
 c.FileContentsManager.post_save_hook = script_post_save
+
+c.NotebookApp.use_redirect_file = False
