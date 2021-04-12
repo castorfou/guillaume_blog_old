@@ -83,7 +83,7 @@ and install with `./Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda3`
 
 ```bash
 conda create --name pycaret python=3.7
-conda activate pycaret3
+conda activate pycaret
 
 proxychains pip install pycaret shap
 proxychains conda install -c conda-forge  nb_conda jupyter_contrib_nbextensions fire pyfiglet openpyxl
