@@ -126,12 +126,15 @@ window.onload = wrap_img;
 
 <p>workaround explained in <a href="https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2">this blog entry</a></p>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl <span class="nt">-d</span> Ubuntu-20.04 <span class="nb">sudo</span> ~/Applications/wsl-vpnkit/wsl-vpnkit-main/wsl-vpnkit
+</code></pre></div></div>
+
 <h2 id="cuda">
 <a class="anchor" href="#cuda" aria-hidden="true"><span class="octicon octicon-link"></span></a>cuda</h2>
 
-<p>https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers</p>
+<p><a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers">https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers</a></p>
 
-<p>install nvidia cuda specific driver for WSL: https://developer.nvidia.com/cuda/wsl on windows. (version 470.14_quadro_win10-dch_64bit_international in my case)</p>
+<p>install nvidia cuda specific driver for WSL: <a href="https://developer.nvidia.com/cuda/wsl">https://developer.nvidia.com/cuda/wsl</a> on windows. (version 470.14_quadro_win10-dch_64bit_international in my case)</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 <span class="nb">sudo mv </span>cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -141,11 +144,11 @@ window.onload = wrap_img;
 <span class="nb">sudo </span>proxychains apt-get <span class="nt">-y</span> <span class="nb">install </span>cuda-toolkit-11-2
 </code></pre></div></div>
 
-<p>https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/</p>
+<p><a href="https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/">https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/</a></p>
 
 <p>new version using WSL-ubuntu as distro</p>
 
-<p>https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=WSLUbuntu&amp;target_version=20&amp;target_type=deblocal</p>
+<p><a href="https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/">https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=WSLUbuntu&amp;target_version=20&amp;target_type=deblocal</a></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
 <span class="nb">sudo mv </span>cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -154,6 +157,14 @@ proxychains wget https://developer.download.nvidia.com/compute/cuda/11.2.2/local
 <span class="nb">sudo </span>apt-key add /var/cuda-repo-wsl-ubuntu-11-2-local/7fa2af80.pub
 <span class="nb">sudo </span>proxychains apt-get update
 <span class="nb">sudo </span>proxychains apt-get <span class="nt">-y</span> <span class="nb">install </span>cuda
+</code></pre></div></div>
+
+<p><strong>test cuda</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate pytorch
+ipython
+import torch
+torch.cuda.is_available<span class="o">()</span>
 </code></pre></div></div>
 
 <h2 id="conda">

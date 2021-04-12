@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-12T02:11:30-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-04-12T06:51:18-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
 
 &lt;p&gt;workaround explained in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;this blog entry&lt;/a&gt;&lt;/p&gt;
 
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wsl &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; Ubuntu-20.04 &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ~/Applications/wsl-vpnkit/wsl-vpnkit-main/wsl-vpnkit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;h2 id=&quot;cuda&quot;&gt;cuda&lt;/h2&gt;
 
-&lt;p&gt;https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers&quot;&gt;https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-nvidia-drivers&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;install nvidia cuda specific driver for WSL: https://developer.nvidia.com/cuda/wsl on windows. (version 470.14_quadro_win10-dch_64bit_international in my case)&lt;/p&gt;
+&lt;p&gt;install nvidia cuda specific driver for WSL: &lt;a href=&quot;https://developer.nvidia.com/cuda/wsl&quot;&gt;https://developer.nvidia.com/cuda/wsl&lt;/a&gt; on windows. (version 470.14_quadro_win10-dch_64bit_international in my case)&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 &lt;span class=&quot;nb&quot;&gt;sudo mv &lt;/span&gt;cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -16,11 +19,11 @@
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt-get &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cuda-toolkit-11-2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/&quot;&gt;https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;new version using WSL-ubuntu as distro&lt;/p&gt;
 
-&lt;p&gt;https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;target_distro=WSLUbuntu&amp;amp;target_version=20&amp;amp;target_type=deblocal&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://christianjmills.com/Using-PyTorch-with-CUDA-on-WSL2/&quot;&gt;https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;target_distro=WSLUbuntu&amp;amp;target_version=20&amp;amp;target_type=deblocal&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;proxychains wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
 &lt;span class=&quot;nb&quot;&gt;sudo mv &lt;/span&gt;cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -29,6 +32,14 @@ proxychains wget https://developer.download.nvidia.com/compute/cuda/11.2.2/local
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key add /var/cuda-repo-wsl-ubuntu-11-2-local/7fa2af80.pub
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt-get update
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt-get &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cuda
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;test cuda&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda activate pytorch
+ipython
+import torch
+torch.cuda.is_available&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;conda&quot;&gt;conda&lt;/h2&gt;
