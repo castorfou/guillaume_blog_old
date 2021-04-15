@@ -325,9 +325,14 @@ Same thing with Learned Latent Structure. (can be used to create fair and repres
 
 
 
+## 4/15/21 - Learning for Information Extraction - lecture 9.
 
+Deep CPCFG for Information Extraction 
 
+Lecturer: Nigel Duffy and Freddy Chua, Ernst & Young AI Labs
 
+Focus is about document intelligence (extract info from business documents)
 
+e.g. extract information from semi-structured documents such as tax forms (souvenirs ;))
 
-
+![](../images/mit_6S191_lec9_endtoend_training.png)

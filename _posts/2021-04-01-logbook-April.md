@@ -52,3 +52,12 @@ Jupyter notebook turned into [slides with RISE](https://www.blog.pythonlibrary.o
 setup [wsl-vpnkit](https://github.com/sakai135/wsl-vpnkit) to workaround wsl2 and network issues (explained [here](/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2))
 
 install [wsl2-cuda-conda]()
+
+
+
+## Week 15 - Apr 21
+
+**Thursday 4/15**
+
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Learning for Information Extraction (lecture 9).
+
