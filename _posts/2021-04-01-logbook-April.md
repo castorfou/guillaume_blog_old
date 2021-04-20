@@ -61,3 +61,10 @@ install [wsl2-cuda-conda]()
 
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Learning for Information Extraction (lecture 9).
 
+
+
+## Week 16 - Apr 21
+
+**Tuesday 4/20**
+
+How To run [macOS on KVM / QEMU](https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1)
