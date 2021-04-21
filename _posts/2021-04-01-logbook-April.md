@@ -68,3 +68,7 @@ install [wsl2-cuda-conda]()
 **Tuesday 4/20**
 
 How To run [macOS on KVM / QEMU](https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1)
+
+**Wednesday 4/21**
+
+Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/) by scikit-learn team!
