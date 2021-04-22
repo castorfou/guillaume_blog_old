@@ -72,3 +72,5 @@ How To run [macOS on KVM / QEMU](https://computingforgeeks.com/how-to-run-macos-
 **Wednesday 4/21**
 
 Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/) by scikit-learn team!
+
+[Audio classification](https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c) with pytorch
