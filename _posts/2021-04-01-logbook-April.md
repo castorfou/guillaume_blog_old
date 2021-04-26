@@ -74,3 +74,11 @@ How To run [macOS on KVM / QEMU](https://computingforgeeks.com/how-to-run-macos-
 Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/) by scikit-learn team!
 
 [Audio classification](https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c) with pytorch
+
+
+
+## Week 17 - Apr 21
+
+**Monday 4/26**
+
+[datacamp](https://learn.datacamp.com/courses/bayesian-data-analysis-in-python) - Bayesian Data Analysis in Python, at the end, [Think Bayes 2](http://allendowney.github.io/ThinkBayes2/) by Allen B.Downey

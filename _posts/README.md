@@ -63,5 +63,7 @@ f \in L^2
 \\
 \lim\limits_{M \to \infty}
 \\
+P(A|B) = \frac{P(B|A)*P(A)}{P(B)}
+\\
 $$
 
