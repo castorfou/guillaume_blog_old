@@ -327,7 +327,7 @@ Same thing with Learned Latent Structure. (can be used to create fair and repres
 
 ## 4/15/21 - Learning for Information Extraction - lecture 9.
 
-Deep CPCFG for Information Extraction 
+[Deep CPCFG for Information Extraction ](https://www.youtube.com/watch?v=WkUYsVC3hKI&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=9)
 
 Lecturer: Nigel Duffy and Freddy Chua, Ernst & Young AI Labs
 
@@ -336,3 +336,22 @@ Focus is about document intelligence (extract info from business documents)
 e.g. extract information from semi-structured documents such as tax forms (souvenirs ;))
 
 ![](../images/mit_6S191_lec9_endtoend_training.png)
+
+
+
+## 4/27/21 - Taming Dataset Bias - lecture 10
+
+[video](https://www.youtube.com/watch?v=eS-OHAHOqU0&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=11)
+
+dataset bias and training shift 
+
+(from one city to another (summer vs winter), from simulated to real control, from one culture to another)
+
+Can fix with more data ...(can be very expensive if we want to address all combinations) or use unlabeled data ?
+
+![](../images/mit_6S191_lec10_domain_adaptation.png)
+
+Adversarial approach to fool a domain discriminator. (domain discriminator trained to distinguished source and target domains)
+
+Another approach is pixel alignment.
+

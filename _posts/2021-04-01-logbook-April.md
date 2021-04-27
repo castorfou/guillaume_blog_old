@@ -87,3 +87,5 @@ Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Value Function Approximation (lecture 6)
 
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Taming Dataset Bias (lecture 10)
+
