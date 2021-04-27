@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -119,7 +119,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#31221---lecture-3-planning-by-dynamic-programming">3/12/21 - Lecture 3: Planning by Dynamic Programming</a></li>
 <li class="toc-entry toc-h2"><a href="#31521---lecture-4-model-free-prediction">3/15/21 - Lecture 4: Model-Free Prediction</a></li>
 <li class="toc-entry toc-h2"><a href="#31821---lecture-5-model-free-control">3/18/21 - Lecture 5: Model-Free Control</a></li>
-<li class="toc-entry toc-h2"><a href="#33121---lecture-6-value-function-approximation">3/31/21 - Lecture 6: Value Function Approximation</a></li>
+<li class="toc-entry toc-h2"><a href="#42721---lecture-6-value-function-approximation">4/27/21 - Lecture 6: Value Function Approximation</a></li>
 </ul><p>This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</p>
 
 <p><a href="https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver">Website with 10 lectures: videos and slides</a></p>
@@ -403,10 +403,36 @@ Cost of backup is constant, independent of n = |S|</p>
 
 <p>We can apply that to Q-learning. We can use greedy slection on target policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span> greedy on behaviour policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span>.</p>
 
-<h2 id="33121---lecture-6-value-function-approximation">
-<a class="anchor" href="#33121---lecture-6-value-function-approximation" aria-hidden="true"><span class="octicon octicon-link"></span></a>3/31/21 - Lecture 6: Value Function Approximation</h2>
+<h2 id="42721---lecture-6-value-function-approximation">
+<a class="anchor" href="#42721---lecture-6-value-function-approximation" aria-hidden="true"><span class="octicon octicon-link"></span></a>4/27/21 - Lecture 6: Value Function Approximation</h2>
 
 <p>How to scale up value function approach.</p>
+
+<p><strong>Value Function Approximation</strong></p>
+
+<p>So far we have represented value function by a lookup table
+Every state s has an entry V (s)
+Or every state-action pair s, a has an entry Q(s, a)</p>
+
+<p>Solution for large MDPs:
+Estimate value function with function approximation
+v̂ (s, w) ≈ v π (s)
+or q̂(s, a, w) ≈ q π (s, a)
+Generalise from seen states to unseen states
+Update parameter w using MC or TD learning</p>
+
+<p>There are many function approximators, e.g.</p>
+
+<ul>
+  <li><strong>Linear combinations of features</strong></li>
+  <li><strong>Neural network</strong></li>
+  <li>Decision tree</li>
+  <li>Nearest neighbour</li>
+  <li>Fourier / wavelet bases</li>
+</ul>
+
+<p>We focus on <strong>differentiable</strong> function approximators.</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
