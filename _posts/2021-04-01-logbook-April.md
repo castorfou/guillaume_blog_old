@@ -82,3 +82,8 @@ Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.
 **Monday 4/26**
 
 [datacamp](https://learn.datacamp.com/courses/bayesian-data-analysis-in-python) - Bayesian Data Analysis in Python, at the end, [Think Bayes 2](http://allendowney.github.io/ThinkBayes2/) by Allen B.Downey
+
+**Tuesday 4/27**
+
+[RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Value Function Approximation (lecture 6)
+

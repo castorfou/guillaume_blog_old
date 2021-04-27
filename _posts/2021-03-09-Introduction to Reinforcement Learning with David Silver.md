@@ -287,6 +287,34 @@ We can apply it in importance sampling for off-policy. With Monte-Carlo it is ho
 
 We can apply that to Q-learning. We can use greedy slection on target policy $$\pi$$ and $$\epsilon$$ greedy on behaviour policy $$\mu$$.
 
-## 3/31/21 - Lecture 6: Value Function Approximation
+## 4/27/21 - Lecture 6: Value Function Approximation
 
 How to scale up value function approach.
+
+
+
+**Value Function Approximation**
+
+So far we have represented value function by a lookup table
+Every state s has an entry V (s)
+Or every state-action pair s, a has an entry Q(s, a)
+
+Solution for large MDPs:
+Estimate value function with function approximation
+v̂ (s, w) ≈ v π (s)
+or q̂(s, a, w) ≈ q π (s, a)
+Generalise from seen states to unseen states
+Update parameter w using MC or TD learning
+
+
+
+There are many function approximators, e.g.
+
+- **Linear combinations of features**
+- **Neural network**
+- Decision tree
+- Nearest neighbour
+- Fourier / wavelet bases
+
+We focus on **differentiable** function approximators.
+
