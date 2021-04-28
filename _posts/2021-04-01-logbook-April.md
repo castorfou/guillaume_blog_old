@@ -89,3 +89,6 @@ Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.
 
 [MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Taming Dataset Bias (lecture 10)
 
+**Wednesday 4/28**
+
+[datacamp](https://www.datacamp.com/courses/exploratory-data-analysis-in-python) - Exploratory Data Analysis in Python, by Allen B.Downey (that's why)
