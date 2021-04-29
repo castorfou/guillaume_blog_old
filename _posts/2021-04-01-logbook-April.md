@@ -92,3 +92,8 @@ Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.
 **Wednesday 4/28**
 
 [datacamp](https://www.datacamp.com/courses/exploratory-data-analysis-in-python) - Exploratory Data Analysis in Python, by Allen B.Downey (that's why)
+
+**Thursday 4/29**
+
+[datacamp](https://learn.datacamp.com/courses/working-with-dates-and-times-in-python) - Working with date and time, quite interesting to see timezones considerations.
+
