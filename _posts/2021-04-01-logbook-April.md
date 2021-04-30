@@ -97,3 +97,7 @@ Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.
 
 [datacamp](https://learn.datacamp.com/courses/working-with-dates-and-times-in-python) - Working with date and time, quite interesting to see timezones considerations.
 
+**Friday 4/30**
+
+[datacamp](https://learn.datacamp.com/courses/cleaning-data-in-python) - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)
+
