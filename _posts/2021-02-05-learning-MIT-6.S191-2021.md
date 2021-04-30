@@ -355,3 +355,17 @@ Adversarial approach to fool a domain discriminator. (domain discriminator train
 
 Another approach is pixel alignment.
 
+## 4/30/21 -  Towards AI for 3D Content Creation - lecture 11
+
+[video](https://www.youtube.com/watch?v=lkkFcg9k9ho&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=12)
+
+##### Sanja Fidler; Professor U. of Toronto and Head of AI at NVIDIA
+
+
+
+## 4/30/21 -  AI in Healthcare - lecture 12
+
+[video](https://www.youtube.com/watch?v=cvXVK8oqU4Q&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=13)
+
+##### Katherine Chou; Director of Research and Innovations, Google
+

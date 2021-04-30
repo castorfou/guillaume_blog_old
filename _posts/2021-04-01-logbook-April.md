@@ -101,3 +101,6 @@ Enrolled to [Machine learning in python with scikit-learn](https://www.fun-mooc.
 
 [datacamp](https://learn.datacamp.com/courses/cleaning-data-in-python) - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)
 
+[MIT 6S191](/guillaume_blog/blog/learning-MIT-6.S191-2021.html) Towards AI for 3D Content Creation (lecture 11) and AI in Healthcare (lecture 12) and this is the end of this course
+
+ 
