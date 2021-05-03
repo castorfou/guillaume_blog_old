@@ -14,5 +14,5 @@ image: images/logbook.jpg
 
 **Monday 5/3**
 
-[Reinforcement Learning Specialization]() - enrolled - Coursera (University of Alberta)
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - enrolled - Coursera (University of Alberta)
 

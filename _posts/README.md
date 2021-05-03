@@ -65,5 +65,12 @@ f \in L^2
 \\
 P(A|B) = \frac{P(B|A)*P(A)}{P(B)}
 \\
+\begin{align}
+Q_t(a) &= \frac{\text{sum of rewards when } \mathit{a} \text{ taken prior to }\mathit{t}}{\text{number of times } \mathit{a} \text{ taken prior to }\mathit{t}} \\
+& = \frac{\displaystyle\sum_{i=1}^{t-1} R_i.\mathcal{1}_{A_i=a}}{\displaystyle\sum_{i=1}^{t-1} \mathcal{1}_{A_i=a}}
+\end{align}
+\\
+A_t=\underset{a}{\mathrm{argmax}}{\text{ }Q_t(a)}
+\\
 $$
 
