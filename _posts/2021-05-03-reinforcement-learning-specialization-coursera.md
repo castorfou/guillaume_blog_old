@@ -34,7 +34,7 @@ I have set recommended goals 3 times a week.
 
 
 
-###### week 1 - Sequential Decision Making with Evaluative Feedback
+###### week 1 - An introduction to Sequential Decision-Making
 
 
 
@@ -83,11 +83,11 @@ Starts with reading of RLbook p25-36 (Chapter 2 Multi-armed Bandits)
 It is a stationary case meaning that value of actions are fixed during experiences. If the bandit task were nonstationary, that is, the true values of the actions changed over time. In this case exploration is needed even in the deterministic case to make sure one of the nongreedy actions has not changed to become better than the greedy one.
 
 sample-average action-value estimates
+
+
 $$
-\begin{align}
-Q_t(a) &= \frac{\text{sum of rewards when } \mathit{a} \text{ taken prior to }\mathit{t}}{\text{number of times } \mathit{a} \text{ taken prior to }\mathit{t}} \\
-& = \frac{\displaystyle\sum_{i=1}^{t-1} R_i.\mathcal{1}_{A_i=a}}{\displaystyle\sum_{i=1}^{t-1} \mathcal{1}_{A_i=a}}
-\end{align}
+Q_t(a) = \frac{\text{sum of rewards when } \mathit{a} \text{ taken prior to }\mathit{t}}{\text{number of times } \mathit{a} \text{ taken prior to }\mathit{t}} \\
+Q_t(a)  = \frac{\displaystyle\sum_{i=1}^{t-1} R_i.\mathcal{1}_{A_i=a}}{\displaystyle\sum_{i=1}^{t-1} \mathcal{1}_{A_i=a}}
 $$
 
 
@@ -96,6 +96,8 @@ $\epsilon$-greedy action selection
 $$
 A_t=\underset{a}{\mathrm{argmax}}{\text{ }Q_t(a)}
 $$
+
+
 With nonstationary problem, we want to give more weights to recent rewars. It can be done with
 $$
 Q_{n+1}=Q_n+\alpha[R_n-Q_n]
@@ -104,9 +106,13 @@ Where $$\alpha$$ is a constant step-size parameter, $$\alpha \in [0,1]$$. So it 
 $$
 Q_{n+1}=(1-\alpha)^nQ_1+\displaystyle\sum_{i=1}^{n} \alpha(1-\alpha)^{n-i}R_i
 $$
-weighted average because the sum of the weights is 1.
+. Weighted average because the sum of the weights is 1.
 
 2 other topics are discussed: optimistic initial values (that can push exploration in 1st steps) and upper-confidence-bound (UCB) action selection. With optimistic initial values the idea is too have high initial value for reward so that the 1st actions are disappointing pushing for explorations. With UCB 
+
+
+
+
 $$
 A_t= \underset{a} {\mathrm{argmax}} {\text{ }\bigg[Q_t(a)+c\sqrt{\frac{\ln t}{N_t(a)}}\bigg]}
 $$
