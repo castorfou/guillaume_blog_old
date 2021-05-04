@@ -14,5 +14,9 @@ image: images/logbook.jpg
 
 **Monday 5/3**
 
-[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - enrolled - Coursera (University of Alberta)
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - enrolled - Coursera (University of Alberta) - start of course 1 (Fundamentals of Reinforcement Learning) week 1 (An introduction to Sequential Decision-Making)
+
+**Tuesday 5/4**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - end of assignement for C1W1
 

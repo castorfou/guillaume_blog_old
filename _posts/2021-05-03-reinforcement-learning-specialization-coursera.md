@@ -133,3 +133,4 @@ How do we choose when to explore, and when to exploit? Randomly
 
 implementation of greedy agent, $\epsilon$-greedy agent. Comparisons. Various $\epsilon$ values, various step-sizes (1/N(a), ...)
 
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201)
