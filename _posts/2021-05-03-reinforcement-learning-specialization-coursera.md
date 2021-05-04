@@ -12,7 +12,7 @@ image: images/RL.png
 
 [Syllabus](https://www.coursera.org/specializations/reinforcement-learning)
 
-4 courses on 16 weeks
+4 courses on 16 weeks by Martha White and Adam White.
 
 * [Fundamentals of Reinforcement Learning](https://www.coursera.org/learn/fundamentals-of-reinforcement-learning?specialization=reinforcement-learning)
 
@@ -108,7 +108,7 @@ Q_{n+1}=(1-\alpha)^nQ_1+\displaystyle\sum_{i=1}^{n} \alpha(1-\alpha)^{n-i}R_i
 $$
 . Weighted average because the sum of the weights is 1.
 
-2 other topics are discussed: optimistic initial values (that can push exploration in 1st steps) and upper-confidence-bound (UCB) action selection. With optimistic initial values the idea is too have high initial value for reward so that the 1st actions are disappointing pushing for explorations. With UCB 
+2 other topics are discussed: **optimistic initial values** (that can push exploration in 1st steps) and **upper-confidence-bound (UCB)** action selection. With optimistic initial values the idea is too have high initial value for reward so that the 1st actions are disappointing pushing for explorations. With UCB 
 
 
 
@@ -118,4 +118,18 @@ A_t= \underset{a} {\mathrm{argmax}} {\text{ }\bigg[Q_t(a)+c\sqrt{\frac{\ln t}{N_
 $$
 
 > The idea of this upper confidence bound (UCB) action selection is that the square-root term is a measure of the uncertainty or variance in the estimate of a’s value. The quantity being max’ed over is thus a sort of upper bound on the possible true value of action a, with c determining the confidence level. Each time a is selected the uncertainty is presumably reduced: N t (a) increments, and, as it appears in the denominator, the uncertainty term decreases. On the other hand, each time an action other than a is selected, t increases but N t (a) does not; because t appears in the numerator, the uncertainty estimate increases. The use of the natural logarithm means that the increases get smaller over time, but are unbounded; all actions will eventually be selected, but actions with lower value estimates, or that have already been selected frequently, will be selected with decreasing frequency over time.
+
+
+
+**Exploration vs Exploitation trade-off**
+
+How do we choose when to explore, and when to exploit? Randomly
+
+![](../images/alberta_rl_epsilon_greedy.png)
+
+
+
+**Assignement**
+
+implementation of greedy agent, $\epsilon$-greedy agent. Comparisons. Various $\epsilon$ values, various step-sizes (1/N(a), ...)
 
