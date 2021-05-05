@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -120,6 +120,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#31521---lecture-4-model-free-prediction">3/15/21 - Lecture 4: Model-Free Prediction</a></li>
 <li class="toc-entry toc-h2"><a href="#31821---lecture-5-model-free-control">3/18/21 - Lecture 5: Model-Free Control</a></li>
 <li class="toc-entry toc-h2"><a href="#42721---lecture-6-value-function-approximation">4/27/21 - Lecture 6: Value Function Approximation</a></li>
+<li class="toc-entry toc-h2"><a href="#5421---lecture-7-policy-gradient-methods">5/4/21 - Lecture 7: Policy Gradient Methods</a></li>
 </ul><p>This classic 10 part course, taught by Reinforcement Learning (RL) pioneer David Silver, was recorded in 2015 and remains a popular resource for anyone wanting to understand the fundamentals of RL.</p>
 
 <p><a href="https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver">Website with 10 lectures: videos and slides</a></p>
@@ -432,6 +433,25 @@ Update parameter w using MC or TD learning</p>
 </ul>
 
 <p>We focus on <strong>differentiable</strong> function approximators.</p>
+
+<h2 id="5421---lecture-7-policy-gradient-methods">
+<a class="anchor" href="#5421---lecture-7-policy-gradient-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>5/4/21 - Lecture 7: Policy Gradient Methods</h2>
+
+<p>3 methods:</p>
+
+<ul>
+  <li>finite difference</li>
+  <li>MC policy gradient</li>
+  <li>Actor-Critic Policy Gradient</li>
+</ul>
+
+<p>advantages of policy based RL vs value based RL:</p>
+
+<ul>
+  <li>convergence (w/o oscillation that one can see in value based)</li>
+  <li>effective in continuous action spaces (in some cases taking the max (of q value) can be quite expensive)</li>
+  <li>policy based RL can learn stochastic policies which can be beneficial in some cases (e.g. rock scissor paper) (usually where you don’t fall into MDP with perfect states representation but we get partially observed environments)</li>
+</ul>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
