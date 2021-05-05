@@ -318,3 +318,21 @@ There are many function approximators, e.g.
 
 We focus on **differentiable** function approximators.
 
+
+
+## 5/4/21 - Lecture 7: Policy Gradient Methods
+
+3 methods:
+
+* finite difference
+* MC policy gradient
+* Actor-Critic Policy Gradient
+
+advantages of policy based RL vs value based RL:
+
+* convergence (w/o oscillation that one can see in value based)
+* effective in continuous action spaces (in some cases taking the max (of q value) can be quite expensive)
+* policy based RL can learn stochastic policies which can be beneficial in some cases (e.g. rock scissor paper) (usually where you don't fall into MDP with perfect states representation but we get partially observed environments)
+
+
+
