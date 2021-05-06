@@ -336,3 +336,40 @@ advantages of policy based RL vs value based RL:
 
 
 
+Some examples of policy: softmax policy and gaussian policy.
+
+One-step MDP: terminating after 1 time-step. No sequence. In that case we have 
+$$
+J(\theta)=\mathbb{E}_{\pi_\theta}[r]=\sum_{s \in \mathcal{S}}d(s)\sum_{a \in \mathcal{A}}\pi_\theta(s, a)\mathcal{R}_{s,a}
+\\
+and\\
+\nabla_\theta J(\theta) = \sum_{s \in \mathcal{S}}d(s)\sum_{a \in \mathcal{A}}\pi_\theta(s, a)\nabla_\theta \log\pi_\theta(s, a)\mathcal{R}_{s,a}
+\\
+\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log\pi_\theta(s, a)r]
+$$
+Generalization is to replace instantaneous reward r with long-term value $Q_\pi(s,a)$
+
+
+
+1st algorithm is **Monte-Carlo policy gradient** (REINFORCE) - tend to be slow, very high variance
+
+Where we sample $Q_\pi(s,a)$ in $v_t$ and regularly update $\theta$.
+
+
+
+Reducing variance using a critic.
+
+We use a critic to estimate the action-value function, $Q_w (s, a) ≈ Q_{π_θ} (s, a)$
+Actor-critic algorithms maintain two sets of parameters:
+
+- **Critic** Updates action-value function parameters w
+- **Actor** Updates policy parameters θ, in direction suggested by critic
+
+Actor-critic algorithms follow an approximate policy gradient
+$$
+\nabla_\theta J(\theta) \approx \mathbb{E}_{\pi_\theta}[\nabla_\theta \log\pi_\theta(s, a)Q_w(s, a)]
+\\
+\Delta\theta=\alpha\nabla_\theta\log\pi_\theta(s, a)Q_w(s, a)
+$$
+Critic will use a policy evaluation (several options seen so far: monte-carlo policy evaluation, TD, TD($\lambda$))
+
