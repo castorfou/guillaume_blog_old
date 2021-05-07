@@ -174,12 +174,49 @@ end of C1W1 (course 1 week 1)
 - 3.3 - Returns and Episodes
 
 In a Markov decision process, the probabilities given by p completely characterize the environment’s dynamics. That is, the probability of each possible value for $S_t$ and  $R_t$ depends only on the immediately preceding state and action, $S_{t-1}$ and $A_{t-1}$ , and, given them, not at all on earlier states and actions.
+
+
 $$
 p(s',r|s,a) \doteq Pr\{S_t=s', R_t=r|S_{t-1}=s, A_{t-1}=a\}
 $$
+
+
 The **state** must include information about all aspects of the past agent–environment interaction that make a difference for the future. In general, **actions** can be any decisions we want to learn how to make, and the states can be anything we can know that might be useful in making them.
 
 The **agent–environment** boundary represents the limit of the agent’s absolute control, not of its knowledge.
 
 **Goal** can be well thought of as the maximization of the expected value of the cumulative sum of a received scalar signal (called **reward**). The reward signal is your way of communicating to the agent what you want it to achieve, not how you want it achieved. 
 
+**Expected return** $G_t$ is defined as some specific function of the reward sequence. In the simplest case the return is the sum of the rewards:
+$$
+G_t \doteq R_{t+1}+R_{t+2}+R_{t+3}+...+R_{T}
+$$
+where $T$ is the final time step.
+
+With *continuing* tasks, we can have $T=\infty$, we can then introduce *discounting*. Agent chooses $A_t$ to maximize the expected discounted return:
+$$
+G_t \doteq R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+...=\displaystyle\sum_{k=0}^{\infty} \gamma^k R_{t+k+1}
+$$
+where $\gamma$ is called the *discount rate*.
+$$
+G_t = R_{t+1}+\gamma G_{t+1}
+$$
+**Video MDP** by Martha. By the end of this video: *Understand* **Markov Decision Process (MDP)**, *Describe* how the **dynamics of an MDP** are defined.
+
+Martha highlights differences between k-armed bandit and MDP. The k-armed bandit agent is presented with the same situation at each time and the same action is always optimal. In many problems, different situations call for different responses. The actions we choose now affect the amount of reward we can get into the future.  In particular if state changes, k-armed bandit don't adapt. It is why we need MDP.
+
+**Video examples of MDPs** by Adam . By the end of this video: Gain experience **formalizing decision-making problems as MDPs**, Appreciate the *flexibility* of the MDP formalism.
+
+Adam uses 2 examples: robot recycling cans and robot arm. 
+
+
+
+###### Lesson 2: Goal of Reinforcement Learning
+
+**Video the Goal of Reinforcement Learning** by Adam. By the end of this video: *Describe* how rewards relate to the **goal** of an agent, *Identify* **episodic tasks**.
+
+With MDP, agents can have long-term goals.
+
+**Video the Reward Hypothesis** by Michael Littman.
+
+He gives a nice idea when defining reward hypothesis: a contrast between the simplicity of the idea of rewards with the complexity of the real world.
