@@ -25,3 +25,4 @@ image: images/logbook.jpg
 **Friday 5/7**
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W2 - Markov Decision Process
+

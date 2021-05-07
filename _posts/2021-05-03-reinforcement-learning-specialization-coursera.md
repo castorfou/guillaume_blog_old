@@ -220,3 +220,22 @@ With MDP, agents can have long-term goals.
 **Video the Reward Hypothesis** by Michael Littman.
 
 He gives a nice idea when defining reward hypothesis: a contrast between the simplicity of the idea of rewards with the complexity of the real world.
+
+
+
+###### Lesson 3: Continuing Tasks
+
+**Video Continuing Tasks** by Martha. By the end of this video: *Differentiate* between **episodic** and **continuing tasks**. *Formulate* returns for continuing tasks using **discounting**. *Describe* how **returns at successive time steps** are related to each other.
+
+Adam uses a [link](http://www.incompleteideas.net/book/the-book.html) to Sutton's book., This is a 2020 version of this book.
+
+**Video Examples of Episodic and Continuing Tasks** by Martha. By the end of this video: *Understand* when to formalize a task as **episodic or continuing**.
+
+Martha gives 2 examples: one of an episodic tasks where episode ends when player is touched by an enemy, one of continuous tasks where an agent accepts or rejects tasks depending on priority and servers available (never ending episode).
+
+
+
+Weekly assessment.
+
+This is a quizz and a peer-graded assignment. I had to describe 3 MDPs with all its detail (states actions, rewards).
+
