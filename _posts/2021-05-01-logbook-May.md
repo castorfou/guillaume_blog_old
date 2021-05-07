@@ -22,3 +22,6 @@ image: images/logbook.jpg
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Policy Gradient Methods (lecture 7)
 
+**Friday 5/7**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W2 - Markov Decision Process

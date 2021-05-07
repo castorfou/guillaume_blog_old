@@ -1,6 +1,6 @@
 ---
-title: "Reinforcement Learning Specialization - Coursera"
-description: From University of Alberta. My notes
+title: "Reinforcement Learning Specialization - Coursera - course 1"
+description: From University of Alberta. My notes on course 1 - Fundamentals of Reinforcement Learning
 toc: true
 comments: true
 layout: post
@@ -24,23 +24,23 @@ image: images/RL.png
 
 
 
+**specialization roadmap**
+
+**course 1** - we begin our study with multi-arm bandit problems. Here, we get our first taste of the complexities of **incremental learning**, **exploration**, and **exploitation**. After that, we move onto **Markov decision processes** to broaden the class of problems we can solve with reinforcement learning methods. Here we will learn about **balancing short-term and long-term reward**. We will introduce key ideas like **policies** and **value functions** using almost all RL systems. We conclude Course 1 with classic planning methods called **dynamic programming**. These methods have been used in large industrial control problems and can compute optimal policies given a complete model of the world. 
+
+**course 2** - In Course 2, we built on these ideas and design algorithms for learning **without a model** of the world. We study three classes of methods designed for learning from trial and error interaction. We start with **Monte Carlo** methods and then move on to **temporal difference** learning, including Q learning. We conclude Course 2 with an investigation of methods for **planning** with learned models. 
+
+**course 3** - In Course 3, we leave the relative comfort of small finite MDPs and investigate RL with **function approximation**. Here we will see that the main concepts from Courses 1 and 2 transferred to problems with larger **infinite state spaces**. We will cover **feature construction**, **neural network learning**, **policy gradient methods**, and other particularities of the function approximation setting. 
+
+**course 4** - The final course in this specialization brings everything together in a Capstone project. Throughout this specialization, as in Rich and Andy's book, we stress a rigorous and scientific approach to RL. We conduct numerous experiments designed to carefully compare algorithms. It takes careful planning and a lot of hard work to produce a meaningful empirical results. In the Capstone, we will walk you through each step of this process so that you can conduct your own scientific experiment. We will explore all the stages from problem specification, all the way to publication quality plots. This is not just academic. In real problems, it's important to verify and understand your system. After that, you should be ready to test your own new ideas or tackle a new exciting application of RL in your job. We hope you enjoyed the show half as much as we enjoyed making it for you. 
+
 Alberta is in Canada.
 
 
 
-## 5/3/21 - Fundamentals of Reinforcement Learning
+## 5/3/21 - Course 1 - Week 1 - An introduction to Sequential Decision-Making
 
 I have set recommended goals 3 times a week.
-
-
-
-###### week 1 - An introduction to Sequential Decision-Making
-
-
-
-**Course introduction**
-
-
 
 **about supervised learning, unsupervised learning and RL**
 
@@ -51,18 +51,6 @@ You might wonder what's the difference between supervised learning, unsupervised
 **industrial control**
 
 So I think the place we're really going to see it take off is an industrial control. In industrial control, we have experts that are really looking for ways to improve the optimal- how well their systems work. So we're going to see it do things like reduce energy costs or save on other types of costs that we have in these industrial control systems. In the hands of experts, we can really make these algorithms work well in the near future. So I really see it as a tool that's going to facilitate experts in their work rather than say, doing something like replacing people or automating them away. 
-
-
-
-**specialization roadmap**
-
-**course 1** - we begin our study with multi-arm bandit problems. Here, we get our first taste of the complexities of **incremental learning**, **exploration**, and **exploitation**. After that, we move onto **Markov decision processes** to broaden the class of problems we can solve with reinforcement learning methods. Here we will learn about **balancing short-term and long-term reward**. We will introduce key ideas like **policies** and **value functions** using almost all RL systems. We conclude Course 1 with classic planning methods called **dynamic programming**. These methods have been used in large industrial control problems and can compute optimal policies given a complete model of the world. 
-
-**course 2** - In Course 2, we built on these ideas and design algorithms for learning **without a model** of the world. We study three classes of methods designed for learning from trial and error interaction. We start with **Monte Carlo** methods and then move on to **temporal difference** learning, including Q learning. We conclude Course 2 with an investigation of methods for **planning** with learned models. 
-
-**course 3** - In Course 3, we leave the relative comfort of small finite MDPs and investigate RL with **function approximation**. Here we will see that the main concepts from Courses 1 and 2 transferred to problems with larger **infinite state spaces**. We will cover **feature construction**, **neural network learning**, **policy gradient methods**, and other particularities of the function approximation setting. 
-
-**course 4** - The final course in this specialization brings everything together in a Capstone project. Throughout this specialization, as in Rich and Andy's book, we stress a rigorous and scientific approach to RL. We conduct numerous experiments designed to carefully compare algorithms. It takes careful planning and a lot of hard work to produce a meaningful empirical results. In the Capstone, we will walk you through each step of this process so that you can conduct your own scientific experiment. We will explore all the stages from problem specification, all the way to publication quality plots. This is not just academic. In real problems, it's important to verify and understand your system. After that, you should be ready to test your own new ideas or tackle a new exciting application of RL in your job. We hope you enjoyed the show half as much as we enjoyed making it for you. 
 
 
 
@@ -98,7 +86,7 @@ A_t=\underset{a}{\mathrm{argmax}}{\text{ }Q_t(a)}
 $$
 
 
-With nonstationary problem, we want to give more weights to recent rewars. It can be done with
+With nonstationary problem, we want to give more weights to recent rewards. It can be done with
 $$
 Q_{n+1}=Q_n+\alpha[R_n-Q_n]
 $$
@@ -134,3 +122,64 @@ How do we choose when to explore, and when to exploit? Randomly
 implementation of greedy agent, $\epsilon$-greedy agent. Comparisons. Various $\epsilon$ values, various step-sizes (1/N(a), ...)
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201)
+
+end of C1W1 (course 1 week 1)
+
+
+
+## 5/7/21 - Course 1 - Week 2 - Markov Decision Process
+
+
+
+###### Module 2 Learning Objectives
+
+**Lesson 1: Introduction to Markov Decision Processes**   
+
+- Understand Markov Decision Processes, or MDPs 
+
+- Describe how the dynamics of an MDP are defined 
+
+- Understand the graphical representation of a Markov Decision Process 
+
+- Explain how many diverse processes can be written in terms of the MDP framework  
+
+
+
+**Lesson 2: Goal of Reinforcement Learning**   
+
+- Describe how rewards relate to the goal of an agent 
+
+- Understand episodes and identify episodic tasks  
+
+
+
+**Lesson 3: Continuing Tasks** 
+
+- Formulate returns for continuing tasks using discounting 
+
+- Describe how returns at successive time steps are related to each other 
+
+- Understand when to formalize a task as episodic or continuing 
+
+
+
+###### Lesson 1: Introduction to Markov Decision Processes
+
+**Reading** chapter 3.1 to 3.3 (p47-56) in Sutton's book 
+
+**Finite Markov Decision Processes** 
+
+- 3.1 - the Agent-Environment Interface
+- 3.2 - Goals and Rewards
+- 3.3 - Returns and Episodes
+
+In a Markov decision process, the probabilities given by p completely characterize the environment’s dynamics. That is, the probability of each possible value for $S_t$ and  $R_t$ depends only on the immediately preceding state and action, $S_{t-1}$ and $A_{t-1}$ , and, given them, not at all on earlier states and actions.
+$$
+p(s',r|s,a) \doteq Pr\{S_t=s', R_t=r|S_{t-1}=s, A_{t-1}=a\}
+$$
+The **state** must include information about all aspects of the past agent–environment interaction that make a difference for the future. In general, **actions** can be any decisions we want to learn how to make, and the states can be anything we can know that might be useful in making them.
+
+The **agent–environment** boundary represents the limit of the agent’s absolute control, not of its knowledge.
+
+**Goal** can be well thought of as the maximization of the expected value of the cumulative sum of a received scalar signal (called **reward**). The reward signal is your way of communicating to the agent what you want it to achieve, not how you want it achieved. 
+

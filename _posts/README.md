@@ -72,5 +72,7 @@ Q_t(a) &= \frac{\text{sum of rewards when } \mathit{a} \text{ taken prior to }\m
 \\
 A_t=\underset{a}{\mathrm{argmax}}{\text{ }Q_t(a)}
 \\
+p(s',r|s,a) \doteq Pr\{S_t=s', R_t=r|S_{t-1}=s, A_{t-1}=a\}
+\\
 $$
 
