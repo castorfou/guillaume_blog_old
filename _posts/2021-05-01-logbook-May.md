@@ -26,3 +26,8 @@ image: images/logbook.jpg
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W2 - Markov Decision Process
 
+## Week 19 - May 21
+
+**Monday 5/10**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W3 - Value Functions & Bellman Equations

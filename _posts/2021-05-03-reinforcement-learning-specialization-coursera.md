@@ -239,3 +239,75 @@ Weekly assessment.
 
 This is a quizz and a peer-graded assignment. I had to describe 3 MDPs with all its detail (states actions, rewards).
 
+
+
+## 5/10/21 - Course 1 - Week 3 - Value Functions & Bellman Equations
+
+
+
+###### Module 3 Learning Objectives
+
+**Lesson 1: Policies and Value Functions**
+
+- Recognize that a policy is a distribution over actions for each possible state 
+- Describe the similarities and differences between stochastic and deterministic policies 
+- Identify the characteristics of a well-defined policy 
+- Generate examples of valid policies for a given MDP 
+- Describe the roles of state-value and action-value functions in reinforcement learning 
+- Describe the relationship between value functions and policies 
+- Create examples of valid value functions for a given MDP  
+
+
+
+**Lesson 2: Bellman Equations**
+
+- Derive the Bellman equation for state-value functions 
+- Derive the Bellman equation for action-value functions 
+- Understand how Bellman equations relate current and future values 
+- Use the Bellman equations to compute value functions  
+
+
+
+**Lesson 3: Optimality (Optimal Policies & Value Functions)**
+
+- Define an optimal policy 
+- Understand how a policy can be at least as good as every other policy in every state 
+- Identify an optimal policy for given MDPs 
+- Derive the Bellman optimality equation for state-value functions 
+- Derive the Bellman optimality equation for action-value functions 
+- Understand how the Bellman optimality equations relate to the previously introduced Bellman equations 
+- Understand the connection between the optimal value function and optimal policies 
+- Verify the optimal value function for given MDPs 
+
+
+
+###### Lesson 1: Policies and Value Functions
+
+**Reading** chapter 3.5 to 3.8 (p58-67) in Sutton's book 
+
+Almost all reinforcement learning algorithms involve estimating **value functions**—functions of states (or of state–action pairs) that estimate how good it is for the agent to be in a given state (or how good it is to perform a given action in a given state).
+
+
+
+Searching for additional informations, I have fallen into [ShangtongZhang](https://shangtongzhang.github.io/) page and [repos](https://github.com/ShangtongZhang). Only 2 of them but seem to be great: **[reinforcement-learning-an-introduction](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)** contains implementations in Python of all concepts from Sutton's book. **[DeepRL](https://github.com/ShangtongZhang/DeepRL)** seems to be a pytorch implementations (DQN, A2C, PPO, ...)
+
+
+
+Here we see **Bellman equation** for state-value function $v_\pi(s)$
+$$
+v_\pi(s) \doteq \mathbb{E}[G_t|S_t=s]
+\\
+v_\pi(s) = \displaystyle\sum_{a} \pi(a|s) \displaystyle\sum_{s',r} p(s', r|s, a)\big[r+\gamma.v_\pi(s')\big]
+$$
+
+
+**Bellman equation** for action-value function $q_\pi(s,a)$
+$$
+q_\pi(s,a) \doteq \mathbb{E}[R_{t+1}+\gamma.G_{t+1}|S_t=s, A_t=a]
+\\
+q_\pi(s, a) = \displaystyle\sum_{s',r} p(s', r|s, a) \big[ r + \gamma\displaystyle\sum_{a'} \pi(s', a')q_\pi(s',a') \big]
+$$
+
+
+
+
