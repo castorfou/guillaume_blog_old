@@ -294,6 +294,8 @@ Searching for additional informations, I have fallen into [ShangtongZhang](https
 
 
 Here we see **Bellman equation** for state-value function $v_\pi(s)$
+
+
 $$
 v_\pi(s) \doteq \mathbb{E}[G_t|S_t=s]
 \\
@@ -302,6 +304,8 @@ $$
 
 
 **Bellman equation** for action-value function $q_\pi(s,a)$
+
+
 $$
 q_\pi(s,a) \doteq \mathbb{E}[R_{t+1}+\gamma.G_{t+1}|S_t=s, A_t=a]
 \\
@@ -309,5 +313,61 @@ q_\pi(s, a) = \displaystyle\sum_{s',r} p(s', r|s, a) \big[ r + \gamma\displaysty
 $$
 
 
+**Optimal state-value function $v_*$**: $v_*(s)\doteq \max\limits_{\pi} v_\pi(s), \forall s \in S$
 
+**Optimal action-value function $q_*$**: $q_*(s,a) \doteq \max\limits_{\pi} q_\pi(s,a) = \mathbb{E}[R_{t+1}+\gamma.v_*(S_{t+1})|S_t=s, A_t=a]$
+
+We denote all optimal policies by $\pi_*$
+
+**Bellman optimality equation** for $v_*$
+
+
+$$
+v_*(s) = \max\limits_{a} \displaystyle\sum_{s', r} p(s',r|s, a)\big[ r + \gamma .v_*(s') \big]
+$$
+
+
+**Bellman optimality equation** for $q_*$
+
+
+$$
+q_*(s,a) = \displaystyle\sum_{s',r} p(s', r|s, a) \big[ r + \gamma.\max\limits_{a'} q_*(s',a') \big]
+$$
+
+
+![](/home/explore/git/guillaume/blog/images/alberta_rl-backup-diagrams.png)
+
+
+
+**Video Specifying Policies** by Adam.
+
+By the end of this video, you'll be able to
+
+*Recognize* that a **policy** is a **distribution over actions** for each possible **state**, *describe* the similarities and differences between **stochastic and deterministic policies**, and *generate examples* of **valid policies** for a given MDP or Markup Decision Process. 
+
+
+
+**Video Value Functions** by Adam.
+
+By the end of this video, you'll be able to
+
+*describe the roles* of the **state-value and** **action-value functions** in reinforcement learning, *describe the relationship* between **value-functions** and **policies**, and *create examples* of **value-functions** for a given MDP. 
+
+
+
+**Video Rich Sutton and Andy Barto: A brief History of RL**
+
+
+
+###### Lesson 2: Bellman Equations
+
+
+
+**Video Bellman Equation Derivation** by Martha
+
+By the end of this video, you'll be able to *derive* the **Bellman equation** for **state-value functions**, *derive* the **Bellman equation** for **action-value functions**, and *understand* how **Bellman equations** relate **current** and **future values**. 
+
+
+
+**Video Why Bellman Equations?** by Martha
 

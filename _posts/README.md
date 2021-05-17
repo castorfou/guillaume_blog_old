@@ -74,5 +74,11 @@ A_t=\underset{a}{\mathrm{argmax}}{\text{ }Q_t(a)}
 \\
 p(s',r|s,a) \doteq Pr\{S_t=s', R_t=r|S_{t-1}=s, A_{t-1}=a\}
 \\
+q_\pi(s,a) \doteq \mathbb{E}[R_{t+1}+\gamma.G_{t+1}|S_t=s, A_t=a]
+\\
+v_*(s)\doteq \max\limits_{\pi} v_\pi(s), \forall s \in S
+\\
+q_\pi(s,a) \doteq \mathbb{E}[R_{t+1}+\gamma.G_{t+1}|S_t=s, A_t=a]
+\\
 $$
 
