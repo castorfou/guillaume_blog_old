@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-17T08:31:16-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-17T10:26:57-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;4 courses on 16 weeks by Martha White and Adam White.&lt;/p&gt;
 
@@ -308,7 +308,35 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;derive&lt;/em&gt; the &lt;strong&gt;Bellman equation&lt;/strong&gt; for &lt;strong&gt;state-value functions&lt;/strong&gt;, &lt;em&gt;derive&lt;/em&gt; the &lt;strong&gt;Bellman equation&lt;/strong&gt; for &lt;strong&gt;action-value functions&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; how &lt;strong&gt;Bellman equations&lt;/strong&gt; relate &lt;strong&gt;current&lt;/strong&gt; and &lt;strong&gt;future values&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Video Why Bellman Equations?&lt;/strong&gt; by Martha&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Syllabus</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for May 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html" rel="alternate" type="text/html" title="Logbook for May 21" /><published>2021-05-01T00:00:00-05:00</published><updated>2021-05-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-May</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html">&lt;h2 id=&quot;week-18---may-21&quot;&gt;Week 18 - May 21&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Video Why Bellman Equations?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;use&lt;/em&gt; the &lt;strong&gt;Bellman equations&lt;/strong&gt; to compute &lt;strong&gt;value functions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-optimality-optimal-policies--value-functions&quot;&gt;Lesson 3: Optimality (Optimal Policies &amp;amp; Value Functions)&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Optimal Policies&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;define&lt;/em&gt; an &lt;strong&gt;optimal policy&lt;/strong&gt;, &lt;em&gt;understand&lt;/em&gt; how &lt;strong&gt;policy&lt;/strong&gt; can be at least as good as every other policy in every state, and &lt;em&gt;identify&lt;/em&gt; an &lt;strong&gt;optimal policy&lt;/strong&gt; for a given MDP.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Optimal Value Functions&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;derive&lt;/em&gt; the &lt;strong&gt;Bellman optimality equation&lt;/strong&gt; for the &lt;strong&gt;state-value function&lt;/strong&gt;, &lt;em&gt;derive&lt;/em&gt; the &lt;strong&gt;Bellman optimality equation&lt;/strong&gt; for the &lt;strong&gt;action-value function&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; how the &lt;strong&gt;Bellman optimality equations&lt;/strong&gt; relate to the previously introduced &lt;strong&gt;Bellman equations&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Using Optimal Value Functions to Get Optimal Policies&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;understand&lt;/em&gt; the connection between the &lt;strong&gt;optimal value function&lt;/strong&gt; and &lt;strong&gt;optimal policies&lt;/strong&gt; and &lt;em&gt;verify&lt;/em&gt; the &lt;strong&gt;optimal value function&lt;/strong&gt; for a given MDP&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video week 3 summary&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W3_1_policies.png&quot; alt=&quot;Policies&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W3_2_value_functions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W3_3_bellman_equations.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W3_4_optimal_policies.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W3_5_bellman_optimality_equations.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Syllabus</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for May 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html" rel="alternate" type="text/html" title="Logbook for May 21" /><published>2021-05-01T00:00:00-05:00</published><updated>2021-05-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-May</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html">&lt;h2 id=&quot;week-18---may-21&quot;&gt;Week 18 - May 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 5/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -327,6 +355,12 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 &lt;h2 id=&quot;week-19---may-21&quot;&gt;Week 19 - May 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 5/10&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W3 - Value Functions &amp;amp; Bellman Equations&lt;/p&gt;
+
+&lt;h2 id=&quot;week-20---may-21&quot;&gt;Week 20 - May 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 5/17&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W3 - Value Functions &amp;amp; Bellman Equations&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
 
