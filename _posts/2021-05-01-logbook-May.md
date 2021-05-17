@@ -31,3 +31,14 @@ image: images/logbook.jpg
 **Monday 5/10**
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W3 - Value Functions & Bellman Equations
+
+
+
+## Week 20 - May 21
+
+**Monday 5/17**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W3 - Value Functions & Bellman Equations
+
+
+

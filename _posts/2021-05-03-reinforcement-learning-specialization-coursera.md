@@ -371,3 +371,43 @@ By the end of this video, you'll be able to *derive* the **Bellman equation** fo
 
 **Video Why Bellman Equations?** by Martha
 
+By the end of this video, you'll be able to *use* the **Bellman equations** to compute **value functions**
+
+
+
+###### Lesson 3: Optimality (Optimal Policies & Value Functions)
+
+
+
+**Video Optimal Policies** by Martha
+
+By the end of this video, you will be able to *define* an **optimal policy**, *understand* how **policy** can be at least as good as every other policy in every state, and *identify* an **optimal policy** for a given MDP. 
+
+
+
+**Video Optimal Value Functions** by Martha
+
+By the end of this video, you will be able to *derive* the **Bellman optimality equation** for the **state-value function**, *derive* the **Bellman optimality equation** for the **action-value function**, and *understand* how the **Bellman optimality equations** relate to the previously introduced **Bellman equations**. 
+
+
+
+**Video Using Optimal Value Functions to Get Optimal Policies** by Martha
+
+By the end of this video, you'll be able to *understand* the connection between the **optimal value function** and **optimal policies** and *verify* the **optimal value function** for a given MDP
+
+
+
+**Video week 3 summary** by Adam
+
+![Policies](../images/C1W3_1_policies.png)
+
+![](../images/C1W3_2_value_functions.png)
+
+![](../images/C1W3_3_bellman_equations.png)
+
+![](../images/C1W3_4_optimal_policies.png)
+
+![](../images/C1W3_5_bellman_optimality_equations.png)
+
+
+
