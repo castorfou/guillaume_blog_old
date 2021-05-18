@@ -313,9 +313,18 @@ q_\pi(s, a) = \displaystyle\sum_{s',r} p(s', r|s, a) \big[ r + \gamma\displaysty
 $$
 
 
-**Optimal state-value function $v_*$**: $v_*(s)\doteq \max\limits_{\pi} v_\pi(s), \forall s \in S$
 
-**Optimal action-value function $q_*$**: $q_*(s,a) \doteq \max\limits_{\pi} q_\pi(s,a) = \mathbb{E}[R_{t+1}+\gamma.v_*(S_{t+1})|S_t=s, A_t=a]$
+**Optimal state-value function $v_*$**: 
+
+$$
+v_*(s)\doteq \max\limits_{\pi} v_\pi(s), \forall s \in S
+$$
+
+**Optimal action-value function $q_*$**: 
+$$
+q_*(s,a) \doteq \max\limits_{\pi} q_\pi(s,a) = \mathbb{E}[R_{t+1}+\gamma.v_*(S_{t+1})|S_t=s, A_t=a]
+$$
+
 
 We denote all optimal policies by $\pi_*$
 
