@@ -119,6 +119,7 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h6"><a href="#tabular-data-exploration">Tabular data exploration</a></li>
 <li class="toc-entry toc-h6"><a href="#fitting-a-scikit-learn-model-on-numerical-data">Fitting a scikit-learn model on numerical data</a></li>
+<li class="toc-entry toc-h6"><a href="#handling-categorical-data">Handling categorical data</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -190,6 +191,22 @@ conda activate scikit-learn-course
 
 <p>preprocessing for numerical features: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/02_numerical_pipeline_scaling.ipynb">02_numerical_pipeline_scaling.ipynb</a></p>
 
+<h6 id="handling-categorical-data">
+<a class="anchor" href="#handling-categorical-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Handling categorical data</h6>
+
+<p>Encoding of categorical variables: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/03_categorical_pipeline.ipynb">03_categorical_pipeline.ipynb</a></p>
+
+<blockquote>
+  <p>Thus, in general <code class="language-plaintext highlighter-rouge">OneHotEncoder</code> is the encoding strategy used when the downstream models are <strong>linear models</strong> while <code class="language-plaintext highlighter-rouge">OrdinalEncoder</code> is used with <strong>tree-based models</strong>.</p>
+</blockquote>
+
+<p>Exercise M1.04: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/03_categorical_pipeline_ex_01.ipynb">03_categorical_pipeline_ex_01.ipynb</a></p>
+
+<p>Using numerical and categorical variables together: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/03_categorical_pipeline_column_transformer.ipynb">03_categorical_pipeline_column_transformer.ipynb</a></p>
+
+<p>Exercise M1.05: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/03_categorical_pipeline_ex_02.ipynb">03_categorical_pipeline_ex_02.ipynb</a></p>
+
+<p>next is Wrap-up quiz</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
