@@ -524,7 +524,13 @@ Reading chapter summary **Chapter 4.8, (pages 88-89)**
 
 Optimal Policies with Dynamic Programming
 
-notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201)
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%204)
 
 end of C1W4 (course 1 week 4)
+
+
+
+end of course 1 (and with a [certificate](https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/certificates/course%201.pdf) ;) )
+
+
 

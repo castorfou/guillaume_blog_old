@@ -44,7 +44,11 @@ image: images/logbook.jpg
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W4 - Dynamic Programming
 
-Start of [Machine learning in python with scikit-learn](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info) by Inria, to be followed (not today)
+**Friday 5/21**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W4 - Dynamic Programming - assignment completed and end of course 1 ;)
+
+Start of [Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) by Inria
 
 
 
