@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      14 min read
+      18 min read
     
 </span></p>
 
@@ -129,6 +129,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#lesson-1-policies-and-value-functions">Lesson 1: Policies and Value Functions</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-2-bellman-equations">Lesson 2: Bellman Equations</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-3-optimality-optimal-policies--value-functions">Lesson 3: Optimality (Optimal Policies &amp; Value Functions)</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#51821---course-1---week-4---dynamic-programming">5/18/21 - Course 1 - Week 4 - Dynamic Programming</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-4-learning-objectives">Module 4 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-policy-evaluation-prediction">Lesson 1: Policy Evaluation (Prediction)</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-policy-iteration-control">Lesson 2: Policy Iteration (Control)</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-generalized-policy-iteration">Lesson 3: Generalized Policy Iteration</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment">Assignment</a></li>
 </ul>
 </li>
 </ul><p><a href="https://www.coursera.org/specializations/reinforcement-learning">Syllabus</a></p>
@@ -478,6 +487,107 @@ q_\pi(s, a) = \displaystyle\sum_{s',r} p(s', r|s, a) \big[ r + \gamma\displaysty
 
 <p><img src="../images/C1W3_5_bellman_optimality_equations.png" alt=""></p>
 
+<h2 id="51821---course-1---week-4---dynamic-programming">
+<a class="anchor" href="#51821---course-1---week-4---dynamic-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>5/18/21 - Course 1 - Week 4 - Dynamic Programming</h2>
+
+<h6 id="module-4-learning-objectives">
+<a class="anchor" href="#module-4-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 4 Learning Objectives</h6>
+
+<p><strong>Lesson 1: Policy Evaluation (Prediction)</strong></p>
+
+<ul>
+  <li>Understand the distinction between policy evaluation and control</li>
+  <li>Explain the setting in which dynamic programming can be applied, as well as its limitations</li>
+  <li>Outline the iterative policy evaluation algorithm for estimating state values under a given policy</li>
+  <li>Apply iterative policy evaluation to compute value functions</li>
+</ul>
+
+<p><strong>Lesson 2: Policy Iteration (Control)</strong></p>
+
+<ul>
+  <li>Understand the policy improvement theorem</li>
+  <li>Use a value function for a policy to produce a better policy for a given MDP</li>
+  <li>Outline the policy iteration algorithm for finding the optimal policy</li>
+  <li>Understand “the dance of policy and value”</li>
+  <li>Apply policy iteration to compute optimal policies and optimal value functions</li>
+</ul>
+
+<p><strong>Lesson 3: Generalized Policy Iteration</strong></p>
+
+<ul>
+  <li>Understand the framework of generalized policy iteration</li>
+  <li>Outline value iteration, an important example of generalized policy iteration</li>
+  <li>Understand the distinction between synchronous and asynchronous dynamic programming methods</li>
+  <li>Describe brute force search as an alternative method for searching for an optimal policy</li>
+  <li>Describe Monte Carlo as an alternative method for learning a value function</li>
+  <li>Understand the advantage of Dynamic programming and “bootstrapping” over these alternative strategies for finding the optimal policy</li>
+</ul>
+
+<h6 id="lesson-1-policy-evaluation-prediction">
+<a class="anchor" href="#lesson-1-policy-evaluation-prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 1: Policy Evaluation (Prediction)</h6>
+
+<p><strong>Reading</strong> chapter <strong>4.1, 4.2, 4.3, 4.4, 4.6, 4.7</strong> <strong>(pages 73-88)</strong>  in Sutton’s book (with the help of <a href="https://github.com/LyWangPX/Reinforcement-Learning-2nd-Edition-by-Sutton-Exercise-Solutions/blob/master/Chapter%204/Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf">Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf</a>)</p>
+
+<p>A common way of obtaining approximate solutions for tasks with <strong>continuous states</strong> <strong>and actions</strong> is to <strong>quantize</strong> the state and action spaces and then apply finite-state DP methods.</p>
+
+<p><strong>Video Policy Evaluation vs. Control</strong> by Martha</p>
+
+<p>By the end of this video you will be able to <em>understand</em> the distinction between <strong>policy evaluation</strong> and <strong>control</strong>, and <em>explain</em> the setting in which <strong>dynamic programming</strong> can be applied as well as its limitations.</p>
+
+<p><strong>Video Iterative Policy Evaluation</strong> by Martha</p>
+
+<p>By the end of this video you will be able to <em>outline</em> the <strong>iterative policy evaluation</strong> algorithm for estimating state values for a given policy, and <em>apply</em> iterative policy evaluation to compute value functions.</p>
+
+<p>The magic here is to turn the bellman equation into an iterative evaluation which converges to $v_\pi$.</p>
+
+<p><img src="../images/C1W4_1_iterative_policy_evaluation.png" alt=""></p>
+
+<h6 id="lesson-2-policy-iteration-control">
+<a class="anchor" href="#lesson-2-policy-iteration-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 2: Policy Iteration (Control)</h6>
+
+<p><strong>Video Policy Improvement</strong> by Marta</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> the <strong>policy improvement theorem</strong>, and how it can be used to construct improved policies, and <em>use</em> the value function for a policy to produce a better policy for a given MDP.</p>
+
+<p>Greedified policy is a strict improvement.</p>
+
+<p><img src="../images/C1W4_1_policy_improvement%20theorem.png" alt=""></p>
+
+<p><strong>Video Policy Iteration</strong> by Marta</p>
+
+<p>By the end of this video, you will be able to <em>outline</em> the <strong>policy iteration</strong> algorithm for finding the optimal policy, <em>understand</em> the <strong>dance of policy and value</strong>, how policy iteration reaches the optimal policy by alternating between evaluating policy and improving it, and <em>apply</em> policy iteration to compute optimal policies and optimal value functions.</p>
+
+<p><img src="../images/C1W4_1_policy_iteration.png" alt=""></p>
+
+<p><img src="../images/C1W4_1_policy_iteration_graph.png" alt=""></p>
+
+<h6 id="lesson-3-generalized-policy-iteration">
+<a class="anchor" href="#lesson-3-generalized-policy-iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3: Generalized Policy Iteration</h6>
+
+<p><strong>Video Flexibility of the Policy Iteration Framework</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>understand</em> the framework of <strong>generalized policy iteration</strong>, <em>outline</em> <strong>value iteration</strong> and important special case of generalized policy iteration, and <em>differentiate</em> <strong>synchronous</strong> and <strong>asynchronous</strong> dynamic programming methods.</p>
+
+<p><strong>Video Efficiency of Dynamic Programming</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> <strong>Monte Carlo sampling</strong> as an alternative method for learning a value function. <em>Describe</em> <strong>brute force-search</strong> as an alternative method for finding an optimal policy. And <em>understand</em> the advantages of <strong>dynamic programming</strong> and <strong>bootstrapping</strong> over these alternatives.</p>
+
+<p>The most important takeaway is that bootstrapping can save us from performing a huge amount of unnecessary work by exploiting the connection between the value of a state and its possible successors.</p>
+
+<p><strong>Video Warren Powell: Approximate Dynamic Programming for Fleet Management (Short)</strong></p>
+
+<p><strong>Video Week 4 Summary</strong> by Adam</p>
+
+<p>Reading chapter summary <strong>Chapter 4.8, (pages 88-89)</strong></p>
+
+<h6 id="assignment">
+<a class="anchor" href="#assignment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Optimal Policies with Dynamic Programming</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201">github</a></p>
+
+<p>end of C1W4 (course 1 week 4)</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"

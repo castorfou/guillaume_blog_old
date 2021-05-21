@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-18T00:16:34-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-21T01:12:16-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;4 courses on 16 weeks by Martha White and Adam White.&lt;/p&gt;
 
@@ -332,7 +332,103 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;&lt;img src=&quot;../images/C1W3_4_optimal_policies.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/C1W3_5_bellman_optimality_equations.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Syllabus</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for May 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html" rel="alternate" type="text/html" title="Logbook for May 21" /><published>2021-05-01T00:00:00-05:00</published><updated>2021-05-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-May</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html">&lt;h2 id=&quot;week-18---may-21&quot;&gt;Week 18 - May 21&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;../images/C1W3_5_bellman_optimality_equations.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;51821---course-1---week-4---dynamic-programming&quot;&gt;5/18/21 - Course 1 - Week 4 - Dynamic Programming&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-4-learning-objectives&quot;&gt;Module 4 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Policy Evaluation (Prediction)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the distinction between policy evaluation and control&lt;/li&gt;
+  &lt;li&gt;Explain the setting in which dynamic programming can be applied, as well as its limitations&lt;/li&gt;
+  &lt;li&gt;Outline the iterative policy evaluation algorithm for estimating state values under a given policy&lt;/li&gt;
+  &lt;li&gt;Apply iterative policy evaluation to compute value functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Policy Iteration (Control)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the policy improvement theorem&lt;/li&gt;
+  &lt;li&gt;Use a value function for a policy to produce a better policy for a given MDP&lt;/li&gt;
+  &lt;li&gt;Outline the policy iteration algorithm for finding the optimal policy&lt;/li&gt;
+  &lt;li&gt;Understand “the dance of policy and value”&lt;/li&gt;
+  &lt;li&gt;Apply policy iteration to compute optimal policies and optimal value functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Generalized Policy Iteration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the framework of generalized policy iteration&lt;/li&gt;
+  &lt;li&gt;Outline value iteration, an important example of generalized policy iteration&lt;/li&gt;
+  &lt;li&gt;Understand the distinction between synchronous and asynchronous dynamic programming methods&lt;/li&gt;
+  &lt;li&gt;Describe brute force search as an alternative method for searching for an optimal policy&lt;/li&gt;
+  &lt;li&gt;Describe Monte Carlo as an alternative method for learning a value function&lt;/li&gt;
+  &lt;li&gt;Understand the advantage of Dynamic programming and “bootstrapping” over these alternative strategies for finding the optimal policy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-policy-evaluation-prediction&quot;&gt;Lesson 1: Policy Evaluation (Prediction)&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; chapter &lt;strong&gt;4.1, 4.2, 4.3, 4.4, 4.6, 4.7&lt;/strong&gt; &lt;strong&gt;(pages 73-88)&lt;/strong&gt;  in Sutton’s book (with the help of &lt;a href=&quot;https://github.com/LyWangPX/Reinforcement-Learning-2nd-Edition-by-Sutton-Exercise-Solutions/blob/master/Chapter%204/Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf&quot;&gt;Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;A common way of obtaining approximate solutions for tasks with &lt;strong&gt;continuous states&lt;/strong&gt; &lt;strong&gt;and actions&lt;/strong&gt; is to &lt;strong&gt;quantize&lt;/strong&gt; the state and action spaces and then apply finite-state DP methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Policy Evaluation vs. Control&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will be able to &lt;em&gt;understand&lt;/em&gt; the distinction between &lt;strong&gt;policy evaluation&lt;/strong&gt; and &lt;strong&gt;control&lt;/strong&gt;, and &lt;em&gt;explain&lt;/em&gt; the setting in which &lt;strong&gt;dynamic programming&lt;/strong&gt; can be applied as well as its limitations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Iterative Policy Evaluation&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will be able to &lt;em&gt;outline&lt;/em&gt; the &lt;strong&gt;iterative policy evaluation&lt;/strong&gt; algorithm for estimating state values for a given policy, and &lt;em&gt;apply&lt;/em&gt; iterative policy evaluation to compute value functions.&lt;/p&gt;
+
+&lt;p&gt;The magic here is to turn the bellman equation into an iterative evaluation which converges to $v_\pi$.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W4_1_iterative_policy_evaluation.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-policy-iteration-control&quot;&gt;Lesson 2: Policy Iteration (Control)&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Policy Improvement&lt;/strong&gt; by Marta&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;understand&lt;/em&gt; the &lt;strong&gt;policy improvement theorem&lt;/strong&gt;, and how it can be used to construct improved policies, and &lt;em&gt;use&lt;/em&gt; the value function for a policy to produce a better policy for a given MDP.&lt;/p&gt;
+
+&lt;p&gt;Greedified policy is a strict improvement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W4_1_policy_improvement theorem.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Policy Iteration&lt;/strong&gt; by Marta&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;outline&lt;/em&gt; the &lt;strong&gt;policy iteration&lt;/strong&gt; algorithm for finding the optimal policy, &lt;em&gt;understand&lt;/em&gt; the &lt;strong&gt;dance of policy and value&lt;/strong&gt;, how policy iteration reaches the optimal policy by alternating between evaluating policy and improving it, and &lt;em&gt;apply&lt;/em&gt; policy iteration to compute optimal policies and optimal value functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W4_1_policy_iteration.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C1W4_1_policy_iteration_graph.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-generalized-policy-iteration&quot;&gt;Lesson 3: Generalized Policy Iteration&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Flexibility of the Policy Iteration Framework&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;understand&lt;/em&gt; the framework of &lt;strong&gt;generalized policy iteration&lt;/strong&gt;, &lt;em&gt;outline&lt;/em&gt; &lt;strong&gt;value iteration&lt;/strong&gt; and important special case of generalized policy iteration, and &lt;em&gt;differentiate&lt;/em&gt; &lt;strong&gt;synchronous&lt;/strong&gt; and &lt;strong&gt;asynchronous&lt;/strong&gt; dynamic programming methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Efficiency of Dynamic Programming&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;Monte Carlo sampling&lt;/strong&gt; as an alternative method for learning a value function. &lt;em&gt;Describe&lt;/em&gt; &lt;strong&gt;brute force-search&lt;/strong&gt; as an alternative method for finding an optimal policy. And &lt;em&gt;understand&lt;/em&gt; the advantages of &lt;strong&gt;dynamic programming&lt;/strong&gt; and &lt;strong&gt;bootstrapping&lt;/strong&gt; over these alternatives.&lt;/p&gt;
+
+&lt;p&gt;The most important takeaway is that bootstrapping can save us from performing a huge amount of unnecessary work by exploiting the connection between the value of a state and its possible successors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Warren Powell: Approximate Dynamic Programming for Fleet Management (Short)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 4 Summary&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;Reading chapter summary &lt;strong&gt;Chapter 4.8, (pages 88-89)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Optimal Policies with Dynamic Programming&lt;/p&gt;
+
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;end of C1W4 (course 1 week 4)&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Syllabus</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for May 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html" rel="alternate" type="text/html" title="Logbook for May 21" /><published>2021-05-01T00:00:00-05:00</published><updated>2021-05-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-May</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html">&lt;h2 id=&quot;week-18---may-21&quot;&gt;Week 18 - May 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 5/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -358,7 +454,13 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;&lt;strong&gt;Monday 5/17&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W3 - Value Functions &amp;amp; Bellman Equations&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W3 - Value Functions &amp;amp; Bellman Equations&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday 5/18&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W4 - Dynamic Programming&lt;/p&gt;
+
+&lt;p&gt;Start of &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by Inria, to be followed (not today)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
 
 &lt;p&gt;workaround explained in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;this blog entry&lt;/a&gt;&lt;/p&gt;
 
