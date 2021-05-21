@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-21T02:27:34-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-21T05:43:32-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;7 modules + 1 introductory module&lt;/li&gt;
+    &lt;li&gt;9 video lessons to explain the main machine learning concepts&lt;/li&gt;
+    &lt;li&gt;71 programming notebooks (you don’t have to install anything) to get hands-on skills&lt;/li&gt;
+    &lt;li&gt;27 quizzes, 7 wrap-up quizzes and 23 exercises to train and deepen your practice&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/496272d6f8444957a7014122a4646116/&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Introduction:  Machine Learning concepts, then&lt;/p&gt;
+
+&lt;p&gt;Module 1. The Predictive Modeling Pipeline&lt;/p&gt;
+
+&lt;p&gt;Module 2. Selecting the best model&lt;/p&gt;
+
+&lt;p&gt;Module 3. Hyperparameter tuning&lt;/p&gt;
+
+&lt;p&gt;Module 4. Linear Models&lt;/p&gt;
+
+&lt;p&gt;Module 5. Decision tree models&lt;/p&gt;
+
+&lt;p&gt;Module 6. Ensemble of models&lt;/p&gt;
+
+&lt;p&gt;Module 7. Evaluating model performance&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/INRIA/scikit-learn-mooc&quot;&gt;INRIA github&lt;/a&gt; contains everything of this mooc: slides, datasets, notebooks (not videos)&lt;/p&gt;
+
+&lt;p&gt;I have forked it, and I use local envt for assignments.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/git/guillaume&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git@github.com:castorfou/scikit-learn-mooc.git
+~/git/guillaume&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;scikit-learn-mooc/
+~/git/guillaume/scikit-learn-mooc&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
+conda activate scikit-learn-course
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;introduction---machine-learning-concepts&quot;&gt;Introduction - Machine Learning concepts&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=ml_concepts.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;module-1-the-predictive-modeling-pipeline&quot;&gt;Module 1. The Predictive Modeling Pipeline&lt;/h2&gt;
+
+&lt;h6 id=&quot;tabular-data-exploration&quot;&gt;Tabular data exploration&lt;/h6&gt;
+
+&lt;p&gt;exploration of data: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/01_tabular_data_exploration.ipynb&quot;&gt;01_tabular_data_exploration.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;exercise M1.01: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/01_tabular_data_exploration_ex_01.ipynb&quot;&gt;01_tabular_data_exploration_ex_01.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;fitting-a-scikit-learn-model-on-numerical-data&quot;&gt;Fitting a scikit-learn model on numerical data&lt;/h6&gt;
+
+&lt;p&gt;first model with scikit-learn: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/02_numerical_pipeline_introduction.ipynb&quot;&gt;02_numerical_pipeline_introduction.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;exercise M1.02: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/02_numerical_pipeline_ex_00.ipynb&quot;&gt;02_numerical_pipeline_ex_00.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;working with numerical data: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/02_numerical_pipeline_hands_on.ipynb&quot;&gt;02_numerical_pipeline_hands_on.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;exercise M1.03: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/02_numerical_pipeline_ex_01.ipynb&quot;&gt;02_numerical_pipeline_ex_01.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;preprocessing for numerical features: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/02_numerical_pipeline_scaling.ipynb&quot;&gt;02_numerical_pipeline_scaling.ipynb&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="machine learning" /><category term="scikit-learn" /><summary type="html">This is a MOOC by Inria team, in charge of scikit-learn.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;4 courses on 16 weeks by Martha White and Adam White.&lt;/p&gt;
 
@@ -426,9 +489,11 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;Optimal Policies with Dynamic Programming&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%204&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;end of C1W4 (course 1 week 4)&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Syllabus</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for May 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html" rel="alternate" type="text/html" title="Logbook for May 21" /><published>2021-05-01T00:00:00-05:00</published><updated>2021-05-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-May</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html">&lt;h2 id=&quot;week-18---may-21&quot;&gt;Week 18 - May 21&lt;/h2&gt;
+&lt;p&gt;end of C1W4 (course 1 week 4)&lt;/p&gt;
+
+&lt;p&gt;end of course 1 (and with a &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/certificates/course%201.pdf&quot;&gt;certificate&lt;/a&gt; ;) )&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Syllabus</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for May 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html" rel="alternate" type="text/html" title="Logbook for May 21" /><published>2021-05-01T00:00:00-05:00</published><updated>2021-05-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-May</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-May.html">&lt;h2 id=&quot;week-18---may-21&quot;&gt;Week 18 - May 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 5/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -460,7 +525,11 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W4 - Dynamic Programming&lt;/p&gt;
 
-&lt;p&gt;Start of &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by Inria, to be followed (not today)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Friday 5/21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C1W4 - Dynamic Programming - assignment completed and end of course 1 ;)&lt;/p&gt;
+
+&lt;p&gt;Start of &lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by Inria&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
 
 &lt;p&gt;workaround explained in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;this blog entry&lt;/a&gt;&lt;/p&gt;
 
@@ -611,89 +680,7 @@ socks5          192.168.50.202  1080
 
 proxychains pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pycaret 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;week-14---apr-21&quot;&gt;Week 14 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/7&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1908.07442&quot;&gt;tabnet&lt;/a&gt;: pytorch (and fastai with Zach Mueller) implementations&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/8&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416851/?view=&quot;&gt;Evolutionary Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Jupyter notebook turned into &lt;a href=&quot;https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/&quot;&gt;slides with RISE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416841/?view=&quot;&gt;Micro-data Policy Search&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/9&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3&lt;/p&gt;
-
-&lt;p&gt;setup &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt; to workaround wsl2 and network issues (explained &lt;a href=&quot;/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;install &lt;a href=&quot;&quot;&gt;wsl2-cuda-conda&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;week-15---apr-21&quot;&gt;Week 15 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/15&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Learning for Information Extraction (lecture 9).&lt;/p&gt;
-
-&lt;h2 id=&quot;week-16---apr-21&quot;&gt;Week 16 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday 4/20&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;How To run &lt;a href=&quot;https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1&quot;&gt;macOS on KVM / QEMU&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/21&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Enrolled to &lt;a href=&quot;https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by scikit-learn team!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c&quot;&gt;Audio classification&lt;/a&gt; with pytorch&lt;/p&gt;
-
-&lt;h2 id=&quot;week-17---apr-21&quot;&gt;Week 17 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday 4/26&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/bayesian-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Bayesian Data Analysis in Python, at the end, &lt;a href=&quot;http://allendowney.github.io/ThinkBayes2/&quot;&gt;Think Bayes 2&lt;/a&gt; by Allen B.Downey&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday 4/27&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Value Function Approximation (lecture 6)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Taming Dataset Bias (lecture 10)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/28&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/courses/exploratory-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Exploratory Data Analysis in Python, by Allen B.Downey (that’s why)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/29&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/working-with-dates-and-times-in-python&quot;&gt;datacamp&lt;/a&gt; - Working with date and time, quite interesting to see timezones considerations.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/30&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/cleaning-data-in-python&quot;&gt;datacamp&lt;/a&gt; - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Towards AI for 3D Content Creation (lecture 11) and AI in Healthcare (lecture 12) and this is the end of this course&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://rlvs.aniti.fr/&quot;&gt;https://rlvs.aniti.fr/&lt;/a&gt;&lt;/p&gt;
 
@@ -992,7 +979,89 @@ Part I: RL Tips and Tricks / The Challenges of Applying RL to Real Robots&lt;/p&
 
 &lt;p&gt;documentation for SB3 usefull for completing exercises: &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/&quot;&gt;https://stable-baselines3.readthedocs.io/en/master/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://excalidraw.com/&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
+&lt;p&gt;https://excalidraw.com/&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;week-14---apr-21&quot;&gt;Week 14 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 4/7&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1908.07442&quot;&gt;tabnet&lt;/a&gt;: pytorch (and fastai with Zach Mueller) implementations&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416851/?view=&quot;&gt;Evolutionary Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Jupyter notebook turned into &lt;a href=&quot;https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/&quot;&gt;slides with RISE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416841/?view=&quot;&gt;Micro-data Policy Search&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 4/9&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3&lt;/p&gt;
+
+&lt;p&gt;setup &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt; to workaround wsl2 and network issues (explained &lt;a href=&quot;/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;install &lt;a href=&quot;&quot;&gt;wsl2-cuda-conda&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;week-15---apr-21&quot;&gt;Week 15 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/15&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Learning for Information Extraction (lecture 9).&lt;/p&gt;
+
+&lt;h2 id=&quot;week-16---apr-21&quot;&gt;Week 16 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday 4/20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;How To run &lt;a href=&quot;https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1&quot;&gt;macOS on KVM / QEMU&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 4/21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enrolled to &lt;a href=&quot;https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by scikit-learn team!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c&quot;&gt;Audio classification&lt;/a&gt; with pytorch&lt;/p&gt;
+
+&lt;h2 id=&quot;week-17---apr-21&quot;&gt;Week 17 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 4/26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/bayesian-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Bayesian Data Analysis in Python, at the end, &lt;a href=&quot;http://allendowney.github.io/ThinkBayes2/&quot;&gt;Think Bayes 2&lt;/a&gt; by Allen B.Downey&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday 4/27&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Value Function Approximation (lecture 6)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Taming Dataset Bias (lecture 10)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 4/28&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/courses/exploratory-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Exploratory Data Analysis in Python, by Allen B.Downey (that’s why)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/29&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/working-with-dates-and-times-in-python&quot;&gt;datacamp&lt;/a&gt; - Working with date and time, quite interesting to see timezones considerations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 4/30&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/cleaning-data-in-python&quot;&gt;datacamp&lt;/a&gt; - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Towards AI for 3D Content Creation (lecture 11) and AI in Healthcare (lecture 12) and this is the end of this course&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Headless raspberry pi: create a wifi to ethernet bridge</title><link href="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html" rel="alternate" type="text/html" title="Headless raspberry pi: create a wifi to ethernet bridge" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/headless-raspberry-pi-bridge-network.html">&lt;p&gt;After my internet provider router stopped unexpectedly yesterday, I had to find a solution with internet access from phones and raspberry pi to broadcast internet to full home devices.&lt;/p&gt;
 
 &lt;h2 id=&quot;headless-raspberry-pi&quot;&gt;Headless raspberry pi&lt;/h2&gt;
 
@@ -1881,204 +1950,4 @@ We suggest you reading &lt;a href=&quot;https://arxiv.org/abs/1709.06560&quot;&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How to find all *unpushed* commits for all projects in a directory?</title><link href="https://castorfou.github.io/guillaume_blog/blog/clustergit.html" rel="alternate" type="text/html" title="Git - How to find all *unpushed* commits for all projects in a directory?" /><published>2021-03-09T00:00:00-06:00</published><updated>2021-03-09T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/clustergit</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/clustergit.html">&lt;p&gt;Very basic question to help keep my repo clean.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation-clustergit&quot;&gt;Installation clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mnagel/clustergit&quot;&gt;clustergit&lt;/a&gt; seems a good candidate&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnagel/clustergit/master/doc/clustergit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications
-git clone git@github.com:mnagel/clustergit.git
-&lt;span class=&quot;c&quot;&gt;# add export PATH=&quot;$PATH:$HOME/Applications/clustergit&quot; to ~.bashrc&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;or using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.local/bin&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications/
-git clone git@github.com:castorfou/clustergit.git
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~
-&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; .local/bin
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; .local/bin/
-&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; ~/Applications/clustergit/clustergit &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .profile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;usage-clustergit&quot;&gt;Usage clustergit&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit 
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./Deep-Reinforcement-Learning-Hands-On  : Changesn &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-./Deep_reinforcement_learning_Course    : Changes
-./ReinforcementLearning_references      : On branch main, Untracked files
-./blog                                  : Untracked files
-./d059                                  : On branch main, Changes
-./data-scientist-skills                 : Clean
-./deeplearning_specialization           : Clean
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./gan_specialization                    : Clean
-./hello_nbdev                           : Clean
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_600.2x Introduction to Computational Thinking and Data Science: Clean
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (detailed)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...]
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-running  &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C git status
-On branch main
-Your branch is up to &lt;span class=&quot;nb&quot;&gt;date &lt;/span&gt;with &lt;span class=&quot;s1&quot;&gt;'origin/main'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-
-nothing to commit, working tree clean
-
-./squeezebox                            : On branch main, No Changes
-&lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; ./squeezebox &lt;span class=&quot;nt&quot;&gt;-----------------&lt;/span&gt;
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;clustergit status (less detailed: hide Clean)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;clustergit &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt;
-Scanning sub directories of &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-./d059                                  : On branch main, Changes
-./fastai                                : Changes
-./fastai_experiments                    : Changes
-./fastbook                              : Changes
-./introduction-reinforcement-learning-david-silver: On branch main, Untracked files
-./mit_6S191_Intro_to_deep_learning      : On branch main, No Changes
-./pytorch_tutorial                      : On branch main, Changes
-./squeezebox                            : On branch main, No Changes
-Done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Clean&lt;/strong&gt; vs &lt;strong&gt;On branch main, No Changes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;seems related to branch name. If branch is named master, then clean is displayed.&lt;/p&gt;
-
-&lt;p&gt;(Mar/25 21) I have just changed clustergit to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as default branch name instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (github having set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; as the new standard)&lt;/p&gt;
-
-&lt;p&gt;Rename everything from master to main&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Git pull, push&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I am not sure I will use it. But allows to recursively launch pull commands to update repos (if no local changes)&lt;/p&gt;
-
-&lt;h2 id=&quot;rename-branches-from-main-to-master&quot;&gt;Rename branches from &lt;em&gt;main&lt;/em&gt; to &lt;em&gt;master&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch main to master from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; main master
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/master master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rename-branches-from-master-to-main-i-know&quot;&gt;Rename branches from master to &lt;em&gt;main&lt;/em&gt; (I know)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/administering-a-repository/renaming-a-branch&quot;&gt;Renaming a branch&lt;/a&gt; from github website.&lt;/p&gt;
-
-&lt;p&gt;Rename branch master to main from github website&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.github.com/assets/images/help/branches/branches-link.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update local clones&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master main
-git fetch origin
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/main main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;rabbitvcs&quot;&gt;RabbitVCS&lt;/h2&gt;
-
-&lt;p&gt;From this &lt;a href=&quot;https://www.addictivetips.com/ubuntu-linux-tips/integrate-git-with-gnome-file-manager-on-linux/&quot;&gt;page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rabbitvcs-nautilus
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.addictivetips.com/wp-content/uploads/2018/10/rvcs-update-e1540364222288.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;These overlay icons are not automatically updated (have to hit Ctrl-F5, it is a cache issue?) Which is not a surprise: number of actions are fired based on file modifications, and here status (commited, pushed) is not at all linked to file modifications. The system doesn’t know that overlay icon should be changed because file was not touched.&lt;/p&gt;
-
-&lt;h2 id=&quot;git-nautilus-icons&quot;&gt;git-nautilus-icons&lt;/h2&gt;
-
-&lt;p&gt;Just to check if it works better than RabbitVCS regarding overlay icon cache issue.&lt;/p&gt;
-
-&lt;p&gt;No I didn’t manage to make it work. Back to RabbitVCS.&lt;/p&gt;
-
-&lt;h2 id=&quot;activate-git-with-globalprotect&quot;&gt;Activate git with GlobalProtect&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;move from ssh to https, keeping password&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-origin  git@github.com:castorfou/guillaume_blog.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;move to https://github.com/castorfou/guillaume_blog.git&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin https://github.com/castorfou/guillaume_blog.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make Git store the username and password and it will never ask for them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Save the username and password for a session (cache it);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper cache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and to activate trace&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ GIT_TRACE_PACKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_TRACE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;GIT_CURL_VERBOSE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 git fetch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;we can enrich certificates with Global Protect CA&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/anaconda3/ssl&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;certPG.pem /etc/ssl/certs/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;add-a-ca-certificate-in-ubuntu&quot;&gt;Add a ca-certificate in ubuntu&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/local/share/ca-certificates/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create a new folder, i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir school&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Copy the . crt file into the school folder.&lt;/li&gt;
-  &lt;li&gt;Make sure the permissions are OK (755 for the folder, 644 for the file)&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-ca-certificates&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We should see effects in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/ssl/certs&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll &lt;span class=&quot;nt&quot;&gt;-tr&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;..]
-lrwxrwxrwx 1 root root     86 mars  24 10:02  cert_M_X5C_sase-net-sslfwd-trust-ca.pem -&amp;gt; /usr/local/share/ca-certificates/globalprotect/cert_M_X5C_sase-net-sslfwd-trust-ca.crt
-lrwxrwxrwx 1 root root     39 mars  24 10:02  0dc7de9e.0 -&amp;gt; cert_M_X5C_sase-net-sslfwd-trust-ca.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Very basic question to help keep my repo clean.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" /><media:content medium="image" url="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="pytorch" /><category term="sb3" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" /><media:content medium="image" url="https://stable-baselines3.readthedocs.io/en/master/_static/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
