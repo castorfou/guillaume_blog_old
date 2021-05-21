@@ -40,5 +40,11 @@ image: images/logbook.jpg
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W3 - Value Functions & Bellman Equations
 
+**Tuesday 5/18**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C1W4 - Dynamic Programming
+
+Start of [Machine learning in python with scikit-learn](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info) by Inria, to be followed (not today)
+
 
 

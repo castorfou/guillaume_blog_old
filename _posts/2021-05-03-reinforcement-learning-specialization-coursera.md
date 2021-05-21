@@ -420,3 +420,110 @@ By the end of this video, you'll be able to *understand* the connection between 
 
 
 
+
+
+## 5/18/21 - Course 1 - Week 4 - Dynamic Programming
+
+
+
+###### Module 4 Learning Objectives
+
+**Lesson 1: Policy Evaluation (Prediction)** 
+
+- Understand the distinction between policy evaluation and control 
+- Explain the setting in which dynamic programming can be applied, as well as its limitations 
+- Outline the iterative policy evaluation algorithm for estimating state values under a given policy  
+- Apply iterative policy evaluation to compute value functions   
+
+
+
+**Lesson 2: Policy Iteration (Control)**  
+
+- Understand the policy improvement theorem 
+- Use a value function for a policy to produce a better policy for a given MDP 
+- Outline the policy iteration algorithm for finding the optimal policy 
+- Understand “the dance of policy and value” 
+- Apply policy iteration to compute optimal policies and optimal value functions  
+
+
+
+**Lesson 3: Generalized Policy Iteration** 
+
+- Understand the framework of generalized policy iteration 
+- Outline value iteration, an important example of generalized policy iteration 
+- Understand the distinction between synchronous and asynchronous dynamic programming methods 
+- Describe brute force search as an alternative method for searching for an optimal policy 
+- Describe Monte Carlo as an alternative method for learning a value function 
+- Understand the advantage of Dynamic programming and “bootstrapping” over these alternative strategies for finding the optimal policy 
+
+
+
+###### Lesson 1: Policy Evaluation (Prediction) 
+
+**Reading** chapter **4.1, 4.2, 4.3, 4.4, 4.6, 4.7** **(pages 73-88)**  in Sutton's book (with the help of [Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf](https://github.com/LyWangPX/Reinforcement-Learning-2nd-Edition-by-Sutton-Exercise-Solutions/blob/master/Chapter%204/Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf))
+
+A common way of obtaining approximate solutions for tasks with **continuous states** **and actions** is to **quantize** the state and action spaces and then apply finite-state DP methods.
+
+
+
+**Video Policy Evaluation vs. Control** by Martha
+
+By the end of this video you will be able to *understand* the distinction between **policy evaluation** and **control**, and *explain* the setting in which **dynamic programming** can be applied as well as its limitations. 
+
+**Video Iterative Policy Evaluation** by Martha
+
+By the end of this video you will be able to *outline* the **iterative policy evaluation** algorithm for estimating state values for a given policy, and *apply* iterative policy evaluation to compute value functions. 
+
+The magic here is to turn the bellman equation into an iterative evaluation which converges to $v_\pi$.
+
+![](../images/C1W4_1_iterative_policy_evaluation.png)
+
+###### Lesson 2: Policy Iteration (Control) 
+
+**Video Policy Improvement** by Marta
+
+By the end of this video, you will be able to *understand* the **policy improvement theorem**, and how it can be used to construct improved policies, and *use* the value function for a policy to produce a better policy for a given MDP. 
+
+Greedified policy is a strict improvement.
+
+![](../images/C1W4_1_policy_improvement theorem.png)
+
+**Video Policy Iteration** by Marta
+
+By the end of this video, you will be able to *outline* the **policy iteration** algorithm for finding the optimal policy, *understand* the **dance of policy and value**, how policy iteration reaches the optimal policy by alternating between evaluating policy and improving it, and *apply* policy iteration to compute optimal policies and optimal value functions. 
+
+![](../images/C1W4_1_policy_iteration.png)
+
+![](../images/C1W4_1_policy_iteration_graph.png)
+
+
+
+###### Lesson 3: Generalized Policy Iteration
+
+
+
+**Video Flexibility of the Policy Iteration Framework** by Adam
+
+By the end of this video, you'll be able to *understand* the framework of **generalized policy iteration**, *outline* **value iteration** and important special case of generalized policy iteration, and *differentiate* **synchronous** and **asynchronous** dynamic programming methods. 
+
+**Video Efficiency of Dynamic Programming** by Adam
+
+By the end of this video, you'll be able to *describe* **Monte Carlo sampling** as an alternative method for learning a value function. *Describe* **brute force-search** as an alternative method for finding an optimal policy. And *understand* the advantages of **dynamic programming** and **bootstrapping** over these alternatives. 
+
+The most important takeaway is that bootstrapping can save us from performing a huge amount of unnecessary work by exploiting the connection between the value of a state and its possible successors. 
+
+**Video Warren Powell: Approximate Dynamic Programming for Fleet Management (Short)**
+
+**Video Week 4 Summary** by Adam
+
+
+
+Reading chapter summary **Chapter 4.8, (pages 88-89)**
+
+###### Assignment
+
+Optimal Policies with Dynamic Programming
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%201%20week%201)
+
+end of C1W4 (course 1 week 4)
