@@ -52,3 +52,10 @@ Start of [Machine learning in python with scikit-learn](/guillaume_blog/blog/Mac
 
 
 
+## Week 21 - May 21
+
+**Tuesday 5/25**
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) end of module 1
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html) - C2W1

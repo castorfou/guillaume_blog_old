@@ -102,4 +102,7 @@ Exercise M1.05: [03_categorical_pipeline_ex_02.ipynb](https://github.com/castorf
 
 
 
-next is Wrap-up quiz
+###### Wrap-up quiz
+
+[module 1 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/predictive_modeling_pipeline/module%201%20-%20wrap-up%20quizz.ipynb)
+
