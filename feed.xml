@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-25T03:31:41-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-26T09:41:10-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -12,7 +12,104 @@
 
 &lt;p&gt;Week 4 - Planning, Learning &amp;amp; Acting&lt;/p&gt;
 
-&lt;h2 id=&quot;52521---course-2---week-1---monte-carlo-methods-for-prediction--control&quot;&gt;5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp;amp; Control&lt;/h2&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;h2 id=&quot;52521---course-2---week-1---monte-carlo-methods-for-prediction--control&quot;&gt;5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp;amp; Control&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-1-learning-objectives&quot;&gt;Module 1 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Introduction to Monte-Carlo Methods&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand how Monte-Carlo methods can be used to estimate value functions from sampled interaction&lt;/li&gt;
+  &lt;li&gt;Identify problems that can be solved using Monte-Carlo methods&lt;/li&gt;
+  &lt;li&gt;Use Monte-Carlo prediction to estimate the value function for a given policy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Monte-Carlo for Control&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Estimate action-value functions using Monte-Carlo&lt;/li&gt;
+  &lt;li&gt;Understand the importance of maintaining exploration in Monte-Carlo algorithms&lt;/li&gt;
+  &lt;li&gt;Understand how to use Monte-Carlo methods to implement a GPI algorithm&lt;/li&gt;
+  &lt;li&gt;Apply Monte-Carlo with exploring starts to solve an MDP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Exploration Methods for Monte-Carlo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand why exploring starts can be problematic in real problems&lt;/li&gt;
+  &lt;li&gt;Describe an alternative exploration method for Monte-Carlo control&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 4: Off-policy learning for prediction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand how off-policy learning can help deal with the exploration problem&lt;/li&gt;
+  &lt;li&gt;Produce examples of target policies and examples of behavior policies&lt;/li&gt;
+  &lt;li&gt;Understand importance sampling&lt;/li&gt;
+  &lt;li&gt;Use importance sampling to estimate the expected value of a target distribution using samples from a different distribution&lt;/li&gt;
+  &lt;li&gt;Understand how to use importance sampling to correct returns&lt;/li&gt;
+  &lt;li&gt;Understand how to modify the Monte-Carlo prediction algorithm for off-policy learning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-introduction-to-monte-carlo-methods&quot;&gt;Lesson 1: Introduction to Monte Carlo Methods&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 5.0-5.5 &lt;strong&gt;(pp. 91-104)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Although a model is required, the model need only generate sample transitions, not the complete probability distributions of all possible transitions that is required for dynamic programming (DP).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Video What is Monte Carlo&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will be able to &lt;em&gt;understand&lt;/em&gt; how &lt;strong&gt;Monte Carlo&lt;/strong&gt; methods can be used to estimate value functions from sampled interaction and &lt;em&gt;identify&lt;/em&gt; problems that can be solved using Monte Carlo methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Using Monte Carlo for Prediction&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;use&lt;/em&gt; &lt;strong&gt;Monte Carlo prediction&lt;/strong&gt; to estimate the value function for a given policy.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-monte-carlo-for-control&quot;&gt;Lesson 2: Monte Carlo for Control&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Using Monte Carlo for Action Values&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;estimate&lt;/em&gt; &lt;strong&gt;action-value functions&lt;/strong&gt; using Monte Carlo and &lt;em&gt;understand&lt;/em&gt; the importance of &lt;strong&gt;maintaining exploration&lt;/strong&gt; in Monte Carlo algorithms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Using Monte Carlo methods for generalized policy iteration&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;understand&lt;/em&gt; how to use Monte Carlo methods to implement a &lt;strong&gt;generalized policy iteration&lt;/strong&gt; GPI algorithm.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W1_1_gpi.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Solving the BlackJack Example&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;apply&lt;/em&gt; &lt;strong&gt;Monte Carlo with Exploring Starts&lt;/strong&gt; to solve an example MDP.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-exploration-methods-for-monte-carlo&quot;&gt;Lesson 3: Exploration Methods for Monte Carlo&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Epsilon-soft policies&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will &lt;em&gt;understand&lt;/em&gt; why exploring starts can be problematic in real problems and you will be able to &lt;em&gt;describe&lt;/em&gt; an alternative expiration method to &lt;strong&gt;maintain exploration&lt;/strong&gt; in Monte Carlo control.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-4-off-policy-learning-for-prediction&quot;&gt;Lesson 4: Off-policy Learning for Prediction&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Why does off-policy learning matter?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will be able to &lt;em&gt;understand&lt;/em&gt; how &lt;strong&gt;off policy learning&lt;/strong&gt; can help deal with the expiration problem. You will also be able to &lt;em&gt;produce&lt;/em&gt; examples of Target policies and examples of &lt;strong&gt;behavior policies&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The key points to take away from today are that &lt;strong&gt;off policy learning&lt;/strong&gt; is another way to obtain &lt;em&gt;continual exploration&lt;/em&gt;. The policy that we are &lt;em&gt;learning&lt;/em&gt; is called the &lt;strong&gt;target policy&lt;/strong&gt; and the policy that we are choosing &lt;em&gt;actions&lt;/em&gt; from is the &lt;strong&gt;behavior policy&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Importance Sampling&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;use&lt;/em&gt; &lt;strong&gt;importance sampling&lt;/strong&gt; to estimate the expected value of a target distribution using samples from a different distribution.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Off-Policy Monte Carlo Prediction&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;understand&lt;/em&gt; how to use &lt;strong&gt;important sampling&lt;/strong&gt; to correct returns, and you will &lt;em&gt;understand&lt;/em&gt; how to modify the &lt;strong&gt;Monte Carlo prediction algorithm&lt;/strong&gt; for off-policy learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Emma Brunskill: Batch Reinforcement Learning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 1 Summary&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 5.10 &lt;strong&gt;(pp. 115-116)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;
@@ -569,7 +666,11 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; end of module 1&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W1&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W1 - Monte-Carlo&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 5/25&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W1 - Monte-Carlo - end of week 1&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
 
 &lt;p&gt;workaround explained in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;this blog entry&lt;/a&gt;&lt;/p&gt;
 

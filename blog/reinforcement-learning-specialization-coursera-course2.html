@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -114,7 +114,15 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#52521---course-2---week-1---monte-carlo-methods-for-prediction--control">5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp; Control</a></li>
+<li class="toc-entry toc-h2"><a href="#52521---course-2---week-1---monte-carlo-methods-for-prediction--control">5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp; Control</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-1-learning-objectives">Module 1 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-introduction-to-monte-carlo-methods">Lesson 1: Introduction to Monte Carlo Methods</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-monte-carlo-for-control">Lesson 2: Monte Carlo for Control</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-exploration-methods-for-monte-carlo">Lesson 3: Exploration Methods for Monte Carlo</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-4-off-policy-learning-for-prediction">Lesson 4: Off-policy Learning for Prediction</a></li>
+</ul>
+</li>
 </ul><p>my notes on <a href="/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">course 1</a></p>
 
 <p><strong>specialization roadmap</strong> - course 2 - <strong>Sample-based Learning Methods</strong></p>
@@ -131,6 +139,108 @@ window.onload = wrap_img;
 
 <h2 id="52521---course-2---week-1---monte-carlo-methods-for-prediction--control">
 <a class="anchor" href="#52521---course-2---week-1---monte-carlo-methods-for-prediction--control" aria-hidden="true"><span class="octicon octicon-link"></span></a>5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp; Control</h2>
+
+<h6 id="module-1-learning-objectives">
+<a class="anchor" href="#module-1-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 1 Learning Objectives</h6>
+
+<p><strong>Lesson 1: Introduction to Monte-Carlo Methods</strong></p>
+
+<ul>
+  <li>Understand how Monte-Carlo methods can be used to estimate value functions from sampled interaction</li>
+  <li>Identify problems that can be solved using Monte-Carlo methods</li>
+  <li>Use Monte-Carlo prediction to estimate the value function for a given policy.</li>
+</ul>
+
+<p><strong>Lesson 2: Monte-Carlo for Control</strong></p>
+
+<ul>
+  <li>Estimate action-value functions using Monte-Carlo</li>
+  <li>Understand the importance of maintaining exploration in Monte-Carlo algorithms</li>
+  <li>Understand how to use Monte-Carlo methods to implement a GPI algorithm</li>
+  <li>Apply Monte-Carlo with exploring starts to solve an MDP</li>
+</ul>
+
+<p><strong>Lesson 3: Exploration Methods for Monte-Carlo</strong></p>
+
+<ul>
+  <li>Understand why exploring starts can be problematic in real problems</li>
+  <li>Describe an alternative exploration method for Monte-Carlo control</li>
+</ul>
+
+<p><strong>Lesson 4: Off-policy learning for prediction</strong></p>
+
+<ul>
+  <li>Understand how off-policy learning can help deal with the exploration problem</li>
+  <li>Produce examples of target policies and examples of behavior policies</li>
+  <li>Understand importance sampling</li>
+  <li>Use importance sampling to estimate the expected value of a target distribution using samples from a different distribution</li>
+  <li>Understand how to use importance sampling to correct returns</li>
+  <li>Understand how to modify the Monte-Carlo prediction algorithm for off-policy learning.</li>
+</ul>
+
+<h6 id="lesson-1-introduction-to-monte-carlo-methods">
+<a class="anchor" href="#lesson-1-introduction-to-monte-carlo-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 1: Introduction to Monte Carlo Methods</h6>
+
+<p><strong>Reading</strong> Chapter 5.0-5.5 <strong>(pp. 91-104)</strong>  in the Reinforcement Learning textbook</p>
+
+<blockquote>
+  <p>Although a model is required, the model need only generate sample transitions, not the complete probability distributions of all possible transitions that is required for dynamic programming (DP).</p>
+</blockquote>
+
+<p><strong>Video What is Monte Carlo</strong> by Martha</p>
+
+<p>By the end of this video you will be able to <em>understand</em> how <strong>Monte Carlo</strong> methods can be used to estimate value functions from sampled interaction and <em>identify</em> problems that can be solved using Monte Carlo methods.</p>
+
+<p><strong>Video Using Monte Carlo for Prediction</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>use</em> <strong>Monte Carlo prediction</strong> to estimate the value function for a given policy.</p>
+
+<h6 id="lesson-2-monte-carlo-for-control">
+<a class="anchor" href="#lesson-2-monte-carlo-for-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 2: Monte Carlo for Control</h6>
+
+<p><strong>Video Using Monte Carlo for Action Values</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>estimate</em> <strong>action-value functions</strong> using Monte Carlo and <em>understand</em> the importance of <strong>maintaining exploration</strong> in Monte Carlo algorithms.</p>
+
+<p><strong>Video Using Monte Carlo methods for generalized policy iteration</strong> by Adam</p>
+
+<p>By the end of this video, you will <em>understand</em> how to use Monte Carlo methods to implement a <strong>generalized policy iteration</strong> GPI algorithm.</p>
+
+<p><img src="../images/C2W1_1_gpi.png" alt=""></p>
+
+<p><strong>Video Solving the BlackJack Example</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>apply</em> <strong>Monte Carlo with Exploring Starts</strong> to solve an example MDP.</p>
+
+<h6 id="lesson-3-exploration-methods-for-monte-carlo">
+<a class="anchor" href="#lesson-3-exploration-methods-for-monte-carlo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3: Exploration Methods for Monte Carlo</h6>
+
+<p><strong>Video Epsilon-soft policies</strong> by Adam</p>
+
+<p>By the end of this video you will <em>understand</em> why exploring starts can be problematic in real problems and you will be able to <em>describe</em> an alternative expiration method to <strong>maintain exploration</strong> in Monte Carlo control.</p>
+
+<h6 id="lesson-4-off-policy-learning-for-prediction">
+<a class="anchor" href="#lesson-4-off-policy-learning-for-prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 4: Off-policy Learning for Prediction</h6>
+
+<p><strong>Video Why does off-policy learning matter?</strong> by Martha</p>
+
+<p>By the end of this video you will be able to <em>understand</em> how <strong>off policy learning</strong> can help deal with the expiration problem. You will also be able to <em>produce</em> examples of Target policies and examples of <strong>behavior policies</strong>.</p>
+
+<p>The key points to take away from today are that <strong>off policy learning</strong> is another way to obtain <em>continual exploration</em>. The policy that we are <em>learning</em> is called the <strong>target policy</strong> and the policy that we are choosing <em>actions</em> from is the <strong>behavior policy</strong>.</p>
+
+<p><strong>Video Importance Sampling</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>use</em> <strong>importance sampling</strong> to estimate the expected value of a target distribution using samples from a different distribution.</p>
+
+<p><strong>Video Off-Policy Monte Carlo Prediction</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> how to use <strong>important sampling</strong> to correct returns, and you will <em>understand</em> how to modify the <strong>Monte Carlo prediction algorithm</strong> for off-policy learning.</p>
+
+<p><strong>Video Emma Brunskill: Batch Reinforcement Learning</strong></p>
+
+<p><strong>Video Week 1 Summary</strong> by Martha</p>
+
+<p><strong>Reading</strong> Chapter 5.10 <strong>(pp. 115-116)</strong>  in the Reinforcement Learning textbook</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
