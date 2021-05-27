@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [git]
-image: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
+image: images/git.png
 ---
 
 Based on http://qpleple.com/how-to-contribute-to-a-project-on-github/
