@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -121,6 +121,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#fitting-a-scikit-learn-model-on-numerical-data">Fitting a scikit-learn model on numerical data</a></li>
 <li class="toc-entry toc-h6"><a href="#handling-categorical-data">Handling categorical data</a></li>
 <li class="toc-entry toc-h6"><a href="#wrap-up-quiz">Wrap-up quiz</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#module-2-selecting-the-best-model">Module 2. Selecting the best model</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
+<li class="toc-entry toc-h6"><a href="#validation-and-learning-curves">Validation and learning curves</a></li>
+<li class="toc-entry toc-h6"><a href="#bias-versus-variance-trade-off">Bias versus variance trade-off</a></li>
+<li class="toc-entry toc-h6"><a href="#wrap-up-quiz-1">Wrap-up quiz</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -211,6 +219,51 @@ conda activate scikit-learn-course
 <a class="anchor" href="#wrap-up-quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
 
 <p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/predictive_modeling_pipeline/module%201%20-%20wrap-up%20quizz.ipynb">module 1 - wrap-up quizz.ipynb</a></p>
+
+<h2 id="module-2-selecting-the-best-model">
+<a class="anchor" href="#module-2-selecting-the-best-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 2. Selecting the best model</h2>
+
+<h6 id="overfitting-and-underfitting">
+<a class="anchor" href="#overfitting-and-underfitting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overfitting and Underfitting</h6>
+
+<p>video and <a href="https://inria.github.io/scikit-learn-mooc/slides/?file=overfitting_vs_underfitting.md#1">slides</a></p>
+
+<p>The framework and why do we need it: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_train_test.ipynb">cross_validation_train_test.ipynb</a></p>
+
+<h6 id="validation-and-learning-curves">
+<a class="anchor" href="#validation-and-learning-curves" aria-hidden="true"><span class="octicon octicon-link"></span></a>Validation and learning curves</h6>
+
+<p>video and <a href="https://inria.github.io/scikit-learn-mooc/slides/?file=learning_validation_curves.md#1">slides</a></p>
+
+<p>Overfit-generalization-underfit: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_validation_curve.ipynb">cross_validation_validation_curve.ipynb</a></p>
+
+<p>Effect of the sample size in cross-validation: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_learning_curve.ipynb">cross_validation_learning_curve.ipynb</a></p>
+
+<p>Exercise M2.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_01.ipynb">cross_validation_ex_01.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_sol_01.ipynb">solution</a></p>
+
+<h6 id="bias-versus-variance-trade-off">
+<a class="anchor" href="#bias-versus-variance-trade-off" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bias versus variance trade-off</h6>
+
+<p>video and <a href="https://inria.github.io/scikit-learn-mooc/slides/?file=bias_vs_variance.md#1">slides</a></p>
+
+<p><img src="../images/sklearn_bias_variance.png" alt=""></p>
+
+<h6 id="wrap-up-quiz-1">
+<a class="anchor" href="#wrap-up-quiz-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
+
+<p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/overfit/overfit_wrap_up_quiz.ipynb">module 2 - wrap-up quizz.ipynb</a></p>
+
+<blockquote>
+  <ul>
+    <li>
+<strong>Overfitting</strong> is caused by the <strong>limited size of the training set</strong>, the <strong>noise</strong> in the data, and the <strong>high flexibility</strong> of common machine learning models.</li>
+    <li>
+<strong>Underfitting</strong> happens when the learnt prediction functions suffer from <strong>systematic errors</strong>. This can be caused by a choice of model family and parameters, which leads to a <strong>lack of flexibility</strong> to capture the repeatable structure of the true data generating process.</li>
+    <li>For a fixed training set, the objective is to <strong>minimize the test error</strong> by adjusting the model family and its parameters to find the <strong>best trade-off between overfitting for underfitting</strong>.</li>
+    <li>For a given choice of model family and parameters, <strong>increasing the training set size will decrease overfitting</strong> but can also cause an increase of underfitting.</li>
+    <li>The test error of a model that is neither overfitting nor underfitting can still be high if the variations of the target variable cannot be fully determined by the input features. This irreducible error is caused by what we sometimes call label noise. In practice, this often happens when we do not have access to important features for one reason or another.</li>
+  </ul>
+</blockquote>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
