@@ -131,3 +131,59 @@ By the end of this video, you will be able to *understand* how to use **importan
 
 **Reading** Chapter 5.10 **(pp. 115-116)**  in the Reinforcement Learning textbook
 
+
+
+
+
+## 5/27/21 - Course 2 - Week 2 - Temporal Difference Learning Methods for Prediction
+
+###### Module 2 Learning Objectives
+
+**Lesson 1: Introduction to Temporal Difference Learning** 
+
+- Define temporal-difference learning 
+- Define the temporal-difference error 
+- Understand the TD(0) algorithm
+
+**Lesson 2: Advantages of TD** 
+
+- Understand the benefits of learning online with TD 
+- Identify key advantages of TD methods over Dynamic Programming and Monte Carlo methods 
+- Identify the empirical benefits of TD learning
+
+
+
+###### Lesson 1: Introduction to Temporal Difference Learning
+
+**Reading** Chapter 6-6.3 **(pp. 116-128)**  in the Reinforcement Learning textbook
+
+**Video What is Temporal Difference (TD) learning?** by Adam
+
+By the end of this video, you'll be able to *define* **temporal difference learning**, *define* the **temporal difference error**, and *understand* the **TD(0) algorithm**. 
+
+**Video Rich Sutton: The Importance of TD Learning** by Richard Sutton
+
+
+
+###### Lesson 2: Advantages of TD 
+
+**Video The advantages of temporal difference learning** by Martha
+
+By the end of this video, you will be able to *understand* the benefits of **learning online with TD** and *identify* key advantages of TD methods over dynamic programming and Monte Carlo. 
+
+**Video Comparing TD and Monte Carlo** by Adam
+
+By the end of this video, you'll be able to *identify* the **empirical benefits** of **TD Learning**.
+
+**Video Andy Barto and Rich Sutton: More on the History of RL**
+
+**Video Week 2 Summary** by Adam
+
+
+
+###### Assignment
+
+Policy Evaluation in Cliff Walking Environment
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202)
+
