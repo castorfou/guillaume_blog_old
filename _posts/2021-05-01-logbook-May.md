@@ -60,7 +60,10 @@ Start of [Machine learning in python with scikit-learn](/guillaume_blog/blog/Mac
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html) - C2W1 - Monte-Carlo
 
-**Wednesday 5/25**
+**Wednesday 5/26**
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html) - C2W1 - Monte-Carlo - end of week 1
 
+**Thursday 5/27**
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) start of module 2. Selecting the best model
