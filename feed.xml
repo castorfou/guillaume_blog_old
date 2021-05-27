@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-27T07:21:13-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-27T10:29:12-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -109,7 +109,57 @@
 
 &lt;p&gt;&lt;strong&gt;Video Week 1 Summary&lt;/strong&gt; by Martha&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 5.10 &lt;strong&gt;(pp. 115-116)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 5.10 &lt;strong&gt;(pp. 115-116)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;h2 id=&quot;52721---course-2---week-2---temporal-difference-learning-methods-for-prediction&quot;&gt;5/27/21 - Course 2 - Week 2 - Temporal Difference Learning Methods for Prediction&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-2-learning-objectives&quot;&gt;Module 2 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Introduction to Temporal Difference Learning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Define temporal-difference learning&lt;/li&gt;
+  &lt;li&gt;Define the temporal-difference error&lt;/li&gt;
+  &lt;li&gt;Understand the TD(0) algorithm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Advantages of TD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the benefits of learning online with TD&lt;/li&gt;
+  &lt;li&gt;Identify key advantages of TD methods over Dynamic Programming and Monte Carlo methods&lt;/li&gt;
+  &lt;li&gt;Identify the empirical benefits of TD learning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-introduction-to-temporal-difference-learning&quot;&gt;Lesson 1: Introduction to Temporal Difference Learning&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 6-6.3 &lt;strong&gt;(pp. 116-128)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video What is Temporal Difference (TD) learning?&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;define&lt;/em&gt; &lt;strong&gt;temporal difference learning&lt;/strong&gt;, &lt;em&gt;define&lt;/em&gt; the &lt;strong&gt;temporal difference error&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; the &lt;strong&gt;TD(0) algorithm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Rich Sutton: The Importance of TD Learning&lt;/strong&gt; by Richard Sutton&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-advantages-of-td&quot;&gt;Lesson 2: Advantages of TD&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video The advantages of temporal difference learning&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;understand&lt;/em&gt; the benefits of &lt;strong&gt;learning online with TD&lt;/strong&gt; and &lt;em&gt;identify&lt;/em&gt; key advantages of TD methods over dynamic programming and Monte Carlo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Comparing TD and Monte Carlo&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;identify&lt;/em&gt; the &lt;strong&gt;empirical benefits&lt;/strong&gt; of &lt;strong&gt;TD Learning&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Andy Barto and Rich Sutton: More on the History of RL&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 2 Summary&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Policy Evaluation in Cliff Walking Environment&lt;/p&gt;
+
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;
@@ -712,7 +762,9 @@ q_\pi(s, a) = \displaystyle\sum_{s&amp;#x27;,r} p(s&amp;#x27;, r|s, a) \big[ r +
 
 &lt;p&gt;&lt;strong&gt;Thursday 5/27&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; start of module 2. Selecting the best model&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; start of module 2. Selecting the best model&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W2 - Temporal Difference for Prediction - start&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 18 - May 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">setup wsl2 with cuda and conda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html" rel="alternate" type="text/html" title="setup wsl2 with cuda and conda" /><published>2021-04-09T00:00:00-05:00</published><updated>2021-04-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20cuda%20conda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-cuda-conda.html">&lt;h2 id=&quot;wsl2-and-network--proxychains&quot;&gt;wsl2 and network + proxychains&lt;/h2&gt;
 
 &lt;p&gt;workaround explained in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;this blog entry&lt;/a&gt;&lt;/p&gt;
 
