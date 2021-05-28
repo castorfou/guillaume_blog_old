@@ -77,6 +77,8 @@ By the end of this video you will be able to *understand* how **Monte Carlo** me
 
 By the end of this video, you will be able to *use* **Monte Carlo prediction** to estimate the value function for a given policy. 
 
+![](../images/C2W1_1_mc_algo.png)
+
 
 
 ###### Lesson 2: Monte Carlo for Control
@@ -160,6 +162,8 @@ By the end of this video, you will be able to *understand* how to use **importan
 **Video What is Temporal Difference (TD) learning?** by Adam
 
 By the end of this video, you'll be able to *define* **temporal difference learning**, *define* the **temporal difference error**, and *understand* the **TD(0) algorithm**. 
+
+![](../images/C2W2_1_td0_algo.png)
 
 **Video Rich Sutton: The Importance of TD Learning** by Richard Sutton
 
