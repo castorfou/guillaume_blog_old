@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-27T10:29:12-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-05-28T03:52:37-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -66,6 +66,8 @@
 &lt;p&gt;&lt;strong&gt;Video Using Monte Carlo for Prediction&lt;/strong&gt; by Martha&lt;/p&gt;
 
 &lt;p&gt;By the end of this video, you will be able to &lt;em&gt;use&lt;/em&gt; &lt;strong&gt;Monte Carlo prediction&lt;/strong&gt; to estimate the value function for a given policy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W1_1_mc_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h6 id=&quot;lesson-2-monte-carlo-for-control&quot;&gt;Lesson 2: Monte Carlo for Control&lt;/h6&gt;
 
@@ -138,6 +140,8 @@
 &lt;p&gt;&lt;strong&gt;Video What is Temporal Difference (TD) learning?&lt;/strong&gt; by Adam&lt;/p&gt;
 
 &lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;define&lt;/em&gt; &lt;strong&gt;temporal difference learning&lt;/strong&gt;, &lt;em&gt;define&lt;/em&gt; the &lt;strong&gt;temporal difference error&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; the &lt;strong&gt;TD(0) algorithm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W2_1_td0_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Video Rich Sutton: The Importance of TD Learning&lt;/strong&gt; by Richard Sutton&lt;/p&gt;
 
