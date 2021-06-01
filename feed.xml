@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-01T04:19:48-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-01T04:30:17-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; enf of module 3. Hyperparameter tuning&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; end of module 3. Hyperparameter tuning&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W3 - Temporal Difference for Control - start&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
@@ -212,7 +212,7 @@
 
 &lt;p&gt;&lt;img src=&quot;../images/C2W3_1_sarsa_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/home/explore/git/guillaume/blog/images/C2W3_2_qlearning_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/C2W3_2_qlearning_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Video&lt;/strong&gt; &lt;strong&gt;Sarsa: GPI with TD&lt;/strong&gt; by Martha&lt;/p&gt;
 
@@ -268,9 +268,7 @@
 
 &lt;p&gt;Q-Learning and Expected Sarsa&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;
@@ -440,17 +438,6 @@ conda activate scikit-learn-course
 &lt;h6 id=&quot;wrap-up-quiz-2&quot;&gt;Wrap-up quiz&lt;/h6&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/tuning/tuning_questions.ipynb&quot;&gt;module 3 - wrap-up quizz.ipynb&lt;/a&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[Main take-away&lt;/td&gt;
-      &lt;td&gt;Main take-away&lt;/td&gt;
-      &lt;td&gt;41026 Courseware&lt;/td&gt;
-      &lt;td&gt;FUN-MOOC](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/courseware/6b3b2cc0a9054b9492d498308f22ae6d/9cca82f7bc75480e9a8dbb16352ab98c/)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
 
 &lt;blockquote&gt;
   &lt;ul&gt;
