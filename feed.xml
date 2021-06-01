@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-01T02:58:04-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-01T04:19:48-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; enf of module 3. Hyperparameter tuning&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; enf of module 3. Hyperparameter tuning&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W3 - Temporal Difference for Control - start&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -167,7 +169,108 @@
 
 &lt;p&gt;Policy Evaluation in Cliff Walking Environment&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6121---course-2---week-3---temporal-difference-learning-methods-for-control&quot;&gt;6/1/21 - Course 2 - Week 3 - Temporal Difference Learning Methods for Control&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-3-learning-objectives&quot;&gt;Module 3 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: TD for Control&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Explain how generalized policy iteration can be used with TD to find improved policies&lt;/li&gt;
+  &lt;li&gt;Describe the Sarsa control algorithm&lt;/li&gt;
+  &lt;li&gt;Understand how the Sarsa control algorithm operates in an example MDP&lt;/li&gt;
+  &lt;li&gt;Analyze the performance of a learning algorithm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Off-policy TD Control: Q-learning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describe the Q-learning algorithm&lt;/li&gt;
+  &lt;li&gt;Explain the relationship between Q-learning and the Bellman optimality equations.&lt;/li&gt;
+  &lt;li&gt;Apply Q-learning to an MDP to find the optimal policy&lt;/li&gt;
+  &lt;li&gt;Understand how Q-learning performs in an example MDP&lt;/li&gt;
+  &lt;li&gt;Understand the differences between Q-learning and Sarsa&lt;/li&gt;
+  &lt;li&gt;Understand how Q-learning can be off-policy without using importance sampling&lt;/li&gt;
+  &lt;li&gt;Describe how the on-policy nature of Sarsa and the off-policy nature of Q-learning affect their relative performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Expected Sarsa&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describe the Expected Sarsa algorithm&lt;/li&gt;
+  &lt;li&gt;Describe Expected Sarsa’s behaviour in an example MDP&lt;/li&gt;
+  &lt;li&gt;Understand how Expected Sarsa compares to Sarsa control&lt;/li&gt;
+  &lt;li&gt;Understand how Expected Sarsa can do off-policy learning without using importance sampling&lt;/li&gt;
+  &lt;li&gt;Explain how Expected Sarsa generalizes Q-learning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-td-for-control&quot;&gt;&lt;strong&gt;Lesson 1: TD for Control&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 6.4-6.6 &lt;strong&gt;(pp. 129-134)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W3_1_sarsa_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/home/explore/git/guillaume/blog/images/C2W3_2_qlearning_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video&lt;/strong&gt; &lt;strong&gt;Sarsa: GPI with TD&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how generalized policy iteration can be used with TD to find &lt;strong&gt;improved policies&lt;/strong&gt;, as well as &lt;em&gt;describe&lt;/em&gt; the &lt;strong&gt;Sarsa control algorithm&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Sarsa in the Windy Grid World&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;understand&lt;/em&gt; how the &lt;strong&gt;Sarsa&lt;/strong&gt; control algorithm operates in an example &lt;strong&gt;MDP&lt;/strong&gt;. You will also &lt;em&gt;gain experience&lt;/em&gt; analyzing the &lt;strong&gt;performance&lt;/strong&gt; of a learning algorithm.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-off-policy-td-control-q-learning&quot;&gt;&lt;strong&gt;Lesson 2: Off-policy TD Control: Q-learning&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video What is Q-learning?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;describe&lt;/em&gt; the &lt;strong&gt;Q-learning&lt;/strong&gt; algorithm, and &lt;em&gt;explain&lt;/em&gt; the relationship between &lt;strong&gt;Q-learning&lt;/strong&gt; and the &lt;strong&gt;Bellman optimality equations&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Q-learning in the Windy Grid World&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;gain insight&lt;/em&gt; into how &lt;strong&gt;Q-Learning&lt;/strong&gt; performs in an example &lt;strong&gt;MDP&lt;/strong&gt;. And &lt;em&gt;gain experience&lt;/em&gt; comparing the &lt;strong&gt;performance&lt;/strong&gt; of multiple learning algorithms on a single MDP.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video How is Q-learning off-policy?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;understand&lt;/em&gt; how Q-learning can be &lt;strong&gt;off-policy&lt;/strong&gt; without using &lt;strong&gt;important sampling&lt;/strong&gt; and be able to &lt;em&gt;describe&lt;/em&gt; how learning &lt;strong&gt;on-policy or off-policy&lt;/strong&gt; might affect performance in &lt;strong&gt;control&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-expected-sarsa&quot;&gt;&lt;strong&gt;Lesson 3: Expected Sarsa&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Expected Sarsa&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;explain&lt;/em&gt; the &lt;strong&gt;expected Sarsa&lt;/strong&gt; algorithm.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Expected Sarsa in the Cliff World&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;expected Sarsas&lt;/strong&gt;’s behavior in an example &lt;strong&gt;MDP&lt;/strong&gt; and &lt;em&gt;empirically&lt;/em&gt; compare &lt;strong&gt;expected Sarsa&lt;/strong&gt; and &lt;strong&gt;Sarsa&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Generality of Expected Sarsa&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;understand&lt;/em&gt; how Expected Sarsa can do &lt;strong&gt;off-policy&lt;/strong&gt; learning without using &lt;strong&gt;importance sampling&lt;/strong&gt; and &lt;em&gt;explain&lt;/em&gt; how &lt;strong&gt;Expected Sarsa&lt;/strong&gt; generalizes &lt;strong&gt;Q-learning&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 3 summary&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W3_3_summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sarsa uses a sample based version of the Bellman equation. It learns Q-pi.&lt;/p&gt;
+
+&lt;p&gt;Q-learning uses the Bellman optimality equation. It learns Q-star.&lt;/p&gt;
+
+&lt;p&gt;Expected sarsa uses the same Bellman equation as Sarsa, but samples it differently. It takes an expectation over the next action values.&lt;/p&gt;
+
+&lt;p&gt;What’s the story with on-policy and off-policy learning?&lt;/p&gt;
+
+&lt;p&gt;Sarsa is a on-policy algorithm that learns the action values for the policy it’s currently following. Q-learning is an off-policy algorithm that learns the optimal action values. And Expected Sarsa is both an on-policy and an off-policy algorithm that can learn the action values for any policy.&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment-1&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Q-Learning and Expected Sarsa&lt;/p&gt;
+
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;

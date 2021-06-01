@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -129,6 +129,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#lesson-1-introduction-to-temporal-difference-learning">Lesson 1: Introduction to Temporal Difference Learning</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-2-advantages-of-td">Lesson 2: Advantages of TD</a></li>
 <li class="toc-entry toc-h6"><a href="#assignment">Assignment</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#6121---course-2---week-3---temporal-difference-learning-methods-for-control">6/1/21 - Course 2 - Week 3 - Temporal Difference Learning Methods for Control</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-3-learning-objectives">Module 3 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-td-for-control">Lesson 1: TD for Control</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-off-policy-td-control-q-learning">Lesson 2: Off-policy TD Control: Q-learning</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-expected-sarsa">Lesson 3: Expected Sarsa</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment-1">Assignment</a></li>
 </ul>
 </li>
 </ul><p>my notes on <a href="/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">course 1</a></p>
@@ -309,6 +318,115 @@ window.onload = wrap_img;
 
 <p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202">github</a></p>
 
+<h2 id="6121---course-2---week-3---temporal-difference-learning-methods-for-control">
+<a class="anchor" href="#6121---course-2---week-3---temporal-difference-learning-methods-for-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>6/1/21 - Course 2 - Week 3 - Temporal Difference Learning Methods for Control</h2>
+
+<h6 id="module-3-learning-objectives">
+<a class="anchor" href="#module-3-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 3 Learning Objectives</h6>
+
+<p><strong>Lesson 1: TD for Control</strong></p>
+
+<ul>
+  <li>Explain how generalized policy iteration can be used with TD to find improved policies</li>
+  <li>Describe the Sarsa control algorithm</li>
+  <li>Understand how the Sarsa control algorithm operates in an example MDP</li>
+  <li>Analyze the performance of a learning algorithm</li>
+</ul>
+
+<p><strong>Lesson 2: Off-policy TD Control: Q-learning</strong></p>
+
+<ul>
+  <li>Describe the Q-learning algorithm</li>
+  <li>Explain the relationship between Q-learning and the Bellman optimality equations.</li>
+  <li>Apply Q-learning to an MDP to find the optimal policy</li>
+  <li>Understand how Q-learning performs in an example MDP</li>
+  <li>Understand the differences between Q-learning and Sarsa</li>
+  <li>Understand how Q-learning can be off-policy without using importance sampling</li>
+  <li>Describe how the on-policy nature of Sarsa and the off-policy nature of Q-learning affect their relative performance</li>
+</ul>
+
+<p><strong>Lesson 3: Expected Sarsa</strong></p>
+
+<ul>
+  <li>Describe the Expected Sarsa algorithm</li>
+  <li>Describe Expected Sarsa’s behaviour in an example MDP</li>
+  <li>Understand how Expected Sarsa compares to Sarsa control</li>
+  <li>Understand how Expected Sarsa can do off-policy learning without using importance sampling</li>
+  <li>Explain how Expected Sarsa generalizes Q-learning</li>
+</ul>
+
+<h6 id="lesson-1-td-for-control">
+<a class="anchor" href="#lesson-1-td-for-control" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 1: TD for Control</strong>
+</h6>
+
+<p><strong>Reading</strong> Chapter 6.4-6.6 <strong>(pp. 129-134)</strong>  in the Reinforcement Learning textbook</p>
+
+<p><img src="../images/C2W3_1_sarsa_algo.png" alt=""></p>
+
+<p><img src="/home/explore/git/guillaume/blog/images/C2W3_2_qlearning_algo.png" alt=""></p>
+
+<p><strong>Video</strong> <strong>Sarsa: GPI with TD</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>explain</em> how generalized policy iteration can be used with TD to find <strong>improved policies</strong>, as well as <em>describe</em> the <strong>Sarsa control algorithm</strong></p>
+
+<p><strong>Video Sarsa in the Windy Grid World</strong> by Adam</p>
+
+<p>By the end of this video, you will <em>understand</em> how the <strong>Sarsa</strong> control algorithm operates in an example <strong>MDP</strong>. You will also <em>gain experience</em> analyzing the <strong>performance</strong> of a learning algorithm.</p>
+
+<h6 id="lesson-2-off-policy-td-control-q-learning">
+<a class="anchor" href="#lesson-2-off-policy-td-control-q-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 2: Off-policy TD Control: Q-learning</strong>
+</h6>
+
+<p><strong>Video What is Q-learning?</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>describe</em> the <strong>Q-learning</strong> algorithm, and <em>explain</em> the relationship between <strong>Q-learning</strong> and the <strong>Bellman optimality equations</strong>.</p>
+
+<p><strong>Video Q-learning in the Windy Grid World</strong> by Adam</p>
+
+<p>By the end of this video, you will <em>gain insight</em> into how <strong>Q-Learning</strong> performs in an example <strong>MDP</strong>. And <em>gain experience</em> comparing the <strong>performance</strong> of multiple learning algorithms on a single MDP.</p>
+
+<p><strong>Video How is Q-learning off-policy?</strong> by Martha</p>
+
+<p>By the end of this video, you will <em>understand</em> how Q-learning can be <strong>off-policy</strong> without using <strong>important sampling</strong> and be able to <em>describe</em> how learning <strong>on-policy or off-policy</strong> might affect performance in <strong>control</strong>.</p>
+
+<h6 id="lesson-3-expected-sarsa">
+<a class="anchor" href="#lesson-3-expected-sarsa" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 3: Expected Sarsa</strong>
+</h6>
+
+<p><strong>Video Expected Sarsa</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>explain</em> the <strong>expected Sarsa</strong> algorithm.</p>
+
+<p><strong>Video Expected Sarsa in the Cliff World</strong> by Adam</p>
+
+<p>By the end of this video, you will be able to <em>describe</em> <strong>expected Sarsas</strong>’s behavior in an example <strong>MDP</strong> and <em>empirically</em> compare <strong>expected Sarsa</strong> and <strong>Sarsa</strong>.</p>
+
+<p><strong>Video Generality of Expected Sarsa</strong> by Martha</p>
+
+<p>By the end of this video, you will <em>understand</em> how Expected Sarsa can do <strong>off-policy</strong> learning without using <strong>importance sampling</strong> and <em>explain</em> how <strong>Expected Sarsa</strong> generalizes <strong>Q-learning</strong>.</p>
+
+<p><strong>Video Week 3 summary</strong> by Adam</p>
+
+<p><img src="../images/C2W3_3_summary.png" alt=""></p>
+
+<p>Sarsa uses a sample based version of the Bellman equation. It learns Q-pi.</p>
+
+<p>Q-learning uses the Bellman optimality equation. It learns Q-star.</p>
+
+<p>Expected sarsa uses the same Bellman equation as Sarsa, but samples it differently. It takes an expectation over the next action values.</p>
+
+<p>What’s the story with on-policy and off-policy learning?</p>
+
+<p>Sarsa is a on-policy algorithm that learns the action values for the policy it’s currently following. Q-learning is an off-policy algorithm that learns the optimal action values. And Expected Sarsa is both an on-policy and an off-policy algorithm that can learn the action values for any policy.</p>
+
+<h6 id="assignment-1">
+<a class="anchor" href="#assignment-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Q-Learning and Expected Sarsa</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203">github</a></p>
+
+<p>##</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
