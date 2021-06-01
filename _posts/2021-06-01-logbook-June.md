@@ -16,3 +16,4 @@ image: images/logbook.jpg
 
 [Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) enf of module 3. Hyperparameter tuning
 
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html) - C2W3 - Temporal Difference for Control - start

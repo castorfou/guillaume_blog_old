@@ -191,3 +191,120 @@ Policy Evaluation in Cliff Walking Environment
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202)
 
+## 6/1/21 - Course 2 - Week 3 - Temporal Difference Learning Methods for Control
+
+
+
+###### Module 3 Learning Objectives
+
+**Lesson 1: TD for Control** 
+
+- Explain how generalized policy iteration can be used with TD to find improved policies 
+- Describe the Sarsa control algorithm 
+- Understand how the Sarsa control algorithm operates in an example MDP 
+- Analyze the performance of a learning algorithm 
+
+**Lesson 2: Off-policy TD Control: Q-learning** 
+
+- Describe the Q-learning algorithm 
+- Explain the relationship between Q-learning and the Bellman optimality equations. 
+- Apply Q-learning to an MDP to find the optimal policy 
+- Understand how Q-learning performs in an example MDP 
+- Understand the differences between Q-learning and Sarsa 
+- Understand how Q-learning can be off-policy without using importance sampling 
+- Describe how the on-policy nature of Sarsa and the off-policy nature of Q-learning affect their relative performance 
+
+**Lesson 3: Expected Sarsa** 
+
+- Describe the Expected Sarsa algorithm 
+- Describe Expected Sarsa’s behaviour in an example MDP 
+- Understand how Expected Sarsa compares to Sarsa control 
+- Understand how Expected Sarsa can do off-policy learning without using importance sampling 
+- Explain how Expected Sarsa generalizes Q-learning
+
+
+
+###### **Lesson 1: TD for Control** 
+
+**Reading** Chapter 6.4-6.6 **(pp. 129-134)**  in the Reinforcement Learning textbook
+
+![](../images/C2W3_1_sarsa_algo.png)
+
+![](/home/explore/git/guillaume/blog/images/C2W3_2_qlearning_algo.png)
+
+
+
+**Video** **Sarsa: GPI with TD** by Martha
+
+By the end of this video, you'll be able to *explain* how generalized policy iteration can be used with TD to find **improved policies**, as well as *describe* the **Sarsa control algorithm**
+
+
+
+**Video Sarsa in the Windy Grid World** by Adam
+
+By the end of this video, you will *understand* how the **Sarsa** control algorithm operates in an example **MDP**. You will also *gain experience* analyzing the **performance** of a learning algorithm. 
+
+
+
+###### **Lesson 2: Off-policy TD Control: Q-learning** 
+
+**Video What is Q-learning?** by Martha
+
+By the end of this video, you will be able to *describe* the **Q-learning** algorithm, and *explain* the relationship between **Q-learning** and the **Bellman optimality equations**. 
+
+
+
+**Video Q-learning in the Windy Grid World** by Adam
+
+By the end of this video, you will *gain insight* into how **Q-Learning** performs in an example **MDP**. And *gain experience* comparing the **performance** of multiple learning algorithms on a single MDP.
+
+
+**Video How is Q-learning off-policy?** by Martha
+
+By the end of this video, you will *understand* how Q-learning can be **off-policy** without using **important sampling** and be able to *describe* how learning **on-policy or off-policy** might affect performance in **control**. 
+
+
+
+###### **Lesson 3: Expected Sarsa** 
+
+**Video Expected Sarsa** by Martha
+
+By the end of this video, you will be able to *explain* the **expected Sarsa** algorithm.
+
+
+
+**Video Expected Sarsa in the Cliff World** by Adam
+
+By the end of this video, you will be able to *describe* **expected Sarsas**'s behavior in an example **MDP** and *empirically* compare **expected Sarsa** and **Sarsa**. 
+
+
+
+**Video Generality of Expected Sarsa** by Martha
+
+By the end of this video, you will *understand* how Expected Sarsa can do **off-policy** learning without using **importance sampling** and *explain* how **Expected Sarsa** generalizes **Q-learning**. 
+
+
+
+**Video Week 3 summary** by Adam
+
+![](../images/C2W3_3_summary.png)
+
+Sarsa uses a sample based version of the Bellman equation. It learns Q-pi. 
+
+Q-learning uses the Bellman optimality equation. It learns Q-star. 
+
+Expected sarsa uses the same Bellman equation as Sarsa, but samples it differently. It takes an expectation over the next action values. 
+
+
+
+What's the story with on-policy and off-policy learning? 
+
+Sarsa is a on-policy algorithm that learns the action values for the policy it's currently following. Q-learning is an off-policy algorithm that learns the optimal action values. And Expected Sarsa is both an on-policy and an off-policy algorithm that can learn the action values for any policy. 
+
+###### Assignment
+
+Q-Learning and Expected Sarsa
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203)
+
+## 
