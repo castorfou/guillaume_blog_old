@@ -230,7 +230,7 @@ notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specia
 
 ![](../images/C2W3_1_sarsa_algo.png)
 
-![](/home/explore/git/guillaume/blog/images/C2W3_2_qlearning_algo.png)
+![](../images/C2W3_2_qlearning_algo.png)
 
 
 
@@ -307,4 +307,3 @@ Q-Learning and Expected Sarsa
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203)
 
-## 

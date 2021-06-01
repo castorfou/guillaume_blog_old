@@ -199,10 +199,6 @@ fig.show()
 
 [module 3 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/tuning/tuning_questions.ipynb)
 
-[Main take-away | Main take-away | 41026 Courseware | FUN-MOOC](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/courseware/6b3b2cc0a9054b9492d498308f22ae6d/9cca82f7bc75480e9a8dbb16352ab98c/)
-
-
-
 > - Hyperparameters have an impact on the models’ performance and should be wisely chosen;
 > - The search for the best hyperparameters can be automated with a grid-search approach or a randomized search approach;
 > - A grid-search is expensive and does not scale when the number of hyperparameters to optimize increase. Besides, the combination are sampled only on a regular grid.
