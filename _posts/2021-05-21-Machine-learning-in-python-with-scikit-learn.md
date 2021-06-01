@@ -146,3 +146,65 @@ video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=bias_v
 > - For a given choice of model family and parameters, **increasing the training set size will decrease overfitting** but can also cause an increase of underfitting.
 > - The test error of a model that is neither overfitting nor underfitting can still be high if the variations of the target variable cannot be fully determined by the input features. This irreducible error is caused by what we sometimes call label noise. In practice, this often happens when we do not have access to important features for one reason or another.
 
+
+
+## Module 3. Hyperparameter tuning
+
+###### Manual tuning
+
+Set and get hyperparameters in scikit-learn: [parameter_tuning_manual.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_manual.ipynb)
+
+Exercise M3.01: [parameter_tuning_ex_02.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_ex_02.ipynb)
+
+###### Automated tuning
+
+Hyperparameter tuning by grid-search: [parameter_tuning_grid_search.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_grid_search.ipynb)
+
+Hyperparameter tuning by randomized-search: [parameter_tuning_randomized_search.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_randomized_search.ipynb)
+
+Cross-validation and hyperparameter tuning: [parameter_tuning_nested.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_nested.ipynb)
+
+Exercise M3.01: [parameter_tuning_ex_03.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_ex_03.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_sol_03.ipynb)
+
+![](../images/sklearn_plotly_parallel_ccordinates.png)
+
+Nice to play with interactive plotly parallel_coordinates to identify best params.
+
+```python
+import numpy as np
+import pandas as pd
+import plotly.express as px
+def shorten_param(param_name):
+    if "__" in param_name:
+        return param_name.rsplit("__", 1)[1]
+    return param_name
+cv_results = pd.read_csv("../figures/randomized_search_results.csv",
+                         index_col=0)
+
+fig = px.parallel_coordinates(
+    cv_results.rename(shorten_param, axis=1).apply({
+        "learning_rate": np.log10,
+        "max_leaf_nodes": np.log2,
+        "max_bins": np.log2,
+        "min_samples_leaf": np.log10,
+        "l2_regularization": np.log10,
+        "mean_test_score": lambda x: x}),
+    color="mean_test_score",
+    color_continuous_scale=px.colors.sequential.Viridis,
+)
+fig.show()
+```
+
+###### Wrap-up quiz
+
+[module 3 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/tuning/tuning_questions.ipynb)
+
+[Main take-away | Main take-away | 41026 Courseware | FUN-MOOC](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/courseware/6b3b2cc0a9054b9492d498308f22ae6d/9cca82f7bc75480e9a8dbb16352ab98c/)
+
+
+
+> - Hyperparameters have an impact on the models’ performance and should be wisely chosen;
+> - The search for the best hyperparameters can be automated with a grid-search approach or a randomized search approach;
+> - A grid-search is expensive and does not scale when the number of hyperparameters to optimize increase. Besides, the combination are sampled only on a regular grid.
+> - A randomized-search allows a search with a fixed budget even with an increasing number of hyperparameters. Besides, the combination are sampled on a non-regular grid.
+

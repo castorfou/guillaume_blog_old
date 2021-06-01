@@ -69,3 +69,12 @@ Start of [Machine learning in python with scikit-learn](/guillaume_blog/blog/Mac
 [Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) start of module 2. Selecting the best model
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html) - C2W2 - Temporal Difference for Prediction - start
+
+
+
+## Week 22 - May 21
+
+**Monday 5/31**
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) start of module 3. Hyperparameter tuning
+
