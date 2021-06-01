@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -129,6 +129,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#validation-and-learning-curves">Validation and learning curves</a></li>
 <li class="toc-entry toc-h6"><a href="#bias-versus-variance-trade-off">Bias versus variance trade-off</a></li>
 <li class="toc-entry toc-h6"><a href="#wrap-up-quiz-1">Wrap-up quiz</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#module-3-hyperparameter-tuning">Module 3. Hyperparameter tuning</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#manual-tuning">Manual tuning</a></li>
+<li class="toc-entry toc-h6"><a href="#automated-tuning">Automated tuning</a></li>
+<li class="toc-entry toc-h6"><a href="#wrap-up-quiz-2">Wrap-up quiz</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -262,6 +269,80 @@ conda activate scikit-learn-course
     <li>For a fixed training set, the objective is to <strong>minimize the test error</strong> by adjusting the model family and its parameters to find the <strong>best trade-off between overfitting for underfitting</strong>.</li>
     <li>For a given choice of model family and parameters, <strong>increasing the training set size will decrease overfitting</strong> but can also cause an increase of underfitting.</li>
     <li>The test error of a model that is neither overfitting nor underfitting can still be high if the variations of the target variable cannot be fully determined by the input features. This irreducible error is caused by what we sometimes call label noise. In practice, this often happens when we do not have access to important features for one reason or another.</li>
+  </ul>
+</blockquote>
+
+<h2 id="module-3-hyperparameter-tuning">
+<a class="anchor" href="#module-3-hyperparameter-tuning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 3. Hyperparameter tuning</h2>
+
+<h6 id="manual-tuning">
+<a class="anchor" href="#manual-tuning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manual tuning</h6>
+
+<p>Set and get hyperparameters in scikit-learn: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_manual.ipynb">parameter_tuning_manual.ipynb</a></p>
+
+<p>Exercise M3.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_ex_02.ipynb">parameter_tuning_ex_02.ipynb</a></p>
+
+<h6 id="automated-tuning">
+<a class="anchor" href="#automated-tuning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automated tuning</h6>
+
+<p>Hyperparameter tuning by grid-search: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_grid_search.ipynb">parameter_tuning_grid_search.ipynb</a></p>
+
+<p>Hyperparameter tuning by randomized-search: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_randomized_search.ipynb">parameter_tuning_randomized_search.ipynb</a></p>
+
+<p>Cross-validation and hyperparameter tuning: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_nested.ipynb">parameter_tuning_nested.ipynb</a></p>
+
+<p>Exercise M3.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_ex_03.ipynb">parameter_tuning_ex_03.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/parameter_tuning_sol_03.ipynb">solution</a></p>
+
+<p><img src="../images/sklearn_plotly_parallel_ccordinates.png" alt=""></p>
+
+<p>Nice to play with interactive plotly parallel_coordinates to identify best params.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="n">px</span>
+<span class="k">def</span> <span class="nf">shorten_param</span><span class="p">(</span><span class="n">param_name</span><span class="p">):</span>
+    <span class="k">if</span> <span class="s">"__"</span> <span class="ow">in</span> <span class="n">param_name</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">param_name</span><span class="p">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s">"__"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">param_name</span>
+<span class="n">cv_results</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"../figures/randomized_search_results.csv"</span><span class="p">,</span>
+                         <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="p">.</span><span class="n">parallel_coordinates</span><span class="p">(</span>
+    <span class="n">cv_results</span><span class="p">.</span><span class="n">rename</span><span class="p">(</span><span class="n">shorten_param</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">).</span><span class="nb">apply</span><span class="p">({</span>
+        <span class="s">"learning_rate"</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">log10</span><span class="p">,</span>
+        <span class="s">"max_leaf_nodes"</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">log2</span><span class="p">,</span>
+        <span class="s">"max_bins"</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">log2</span><span class="p">,</span>
+        <span class="s">"min_samples_leaf"</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">log10</span><span class="p">,</span>
+        <span class="s">"l2_regularization"</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">log10</span><span class="p">,</span>
+        <span class="s">"mean_test_score"</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">}),</span>
+    <span class="n">color</span><span class="o">=</span><span class="s">"mean_test_score"</span><span class="p">,</span>
+    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="n">px</span><span class="p">.</span><span class="n">colors</span><span class="p">.</span><span class="n">sequential</span><span class="p">.</span><span class="n">Viridis</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h6 id="wrap-up-quiz-2">
+<a class="anchor" href="#wrap-up-quiz-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
+
+<p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/tuning/tuning_questions.ipynb">module 3 - wrap-up quizz.ipynb</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Main take-away</td>
+      <td>Main take-away</td>
+      <td>41026 Courseware</td>
+      <td>FUN-MOOC](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/courseware/6b3b2cc0a9054b9492d498308f22ae6d/9cca82f7bc75480e9a8dbb16352ab98c/)</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <ul>
+    <li>Hyperparameters have an impact on the models’ performance and should be wisely chosen;</li>
+    <li>The search for the best hyperparameters can be automated with a grid-search approach or a randomized search approach;</li>
+    <li>A grid-search is expensive and does not scale when the number of hyperparameters to optimize increase. Besides, the combination are sampled only on a regular grid.</li>
+    <li>A randomized-search allows a search with a fixed budget even with an increasing number of hyperparameters. Besides, the combination are sampled on a non-regular grid.</li>
   </ul>
 </blockquote>
 
