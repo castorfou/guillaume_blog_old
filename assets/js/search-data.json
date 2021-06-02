@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Logbook for June 21",
-            "content": "Week 22 - June 21 . Tuesday 6/1 . Machine learning in python with scikit-learn end of module 3. Hyperparameter tuning . Reinforcement Learning Specialization - C2W3 - Temporal Difference for Control - start . Wednesday 6/2 . SHAP: An introduction to explainable AI with Shapley values .",
+            "content": "Week 22 - June 21 . Tuesday 6/1 . Machine learning in python with scikit-learn end of module 3. Hyperparameter tuning . Reinforcement Learning Specialization - C2W3 - Temporal Difference for Control - start . Wednesday 6/2 . SHAP: An introduction to explainable AI with Shapley values, Be careful when interpreting predictive models in search of causal insights .",
             "url": "https://castorfou.github.io/guillaume_blog/blog/logbook-June.html",
             "relUrl": "/blog/logbook-June.html",
             "date": " • Jun 1, 2021"
