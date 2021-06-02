@@ -204,3 +204,68 @@ fig.show()
 > - A grid-search is expensive and does not scale when the number of hyperparameters to optimize increase. Besides, the combination are sampled only on a regular grid.
 > - A randomized-search allows a search with a fixed budget even with an increasing number of hyperparameters. Besides, the combination are sampled on a non-regular grid.
 
+
+
+## Module 4. Linear models
+
+###### Intuitions on linear models
+
+video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=linear_models.md#1)
+
+For regression: linear regression
+
+```python
+from sklearn.linear_model import LinearRegression
+linear_regression = LinearRegression()
+linear_regression.fit(X, y)
+```
+
+For classification: logistic regression
+
+```python
+from sklearn.linear_model import LogisticRegression
+log_reg = LogisticRegression()
+log_reg.fit(X, y)
+```
+
+###### Linear regression
+
+Linear regression without scikit-learn: [linear_regression_without_sklearn.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_regression_without_sklearn.ipynb)
+
+Exercise M4.01: [linear_models_ex_01.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_01.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_01.ipynb)
+
+usage of ` np.ravel` in
+
+```python
+def goodness_fit_measure(true_values, predictions):
+    # we compute the error between the true values and the predictions of our model
+    errors = np.ravel(true_values) - np.ravel(predictions)
+    return np.mean(np.abs(errors))
+```
+
+Linear regression using scjkit-learn: [linear_regression_in_sklearn.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_regression_in_sklearn.ipynb)
+
+```python
+from sklearn.metrics import mean_squared_error
+inferred_body_mass = linear_regression.predict(data)
+model_error = mean_squared_error(target, inferred_body_mass)
+print(f"The mean squared error of the optimal model is {model_error:.2f}")
+```
+
+
+
+###### Modeling non-linear features-target relationships
+
+Exercise M4.02: [linear_models_ex_02.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_02.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_02.ipynb)
+
+Linear regression with non-linear link between data and target: [linear_regression_non_linear_link.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_regression_non_linear_link.ipynb)
+
+Exercise M4.03: [linear_models_ex_03.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_03.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_03.ipynb)
+
+
+
+###### Regularization in linear model
+
+video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1)
+
+
