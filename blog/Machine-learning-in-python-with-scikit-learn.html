@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -144,6 +144,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#linear-regression">Linear regression</a></li>
 <li class="toc-entry toc-h6"><a href="#modeling-non-linear-features-target-relationships">Modeling non-linear features-target relationships</a></li>
 <li class="toc-entry toc-h6"><a href="#regularization-in-linear-model">Regularization in linear model</a></li>
+<li class="toc-entry toc-h6"><a href="#linear-model-for-classification">Linear model for classification</a></li>
+<li class="toc-entry toc-h6"><a href="#wrap-up-quiz-3">Wrap-up quiz</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -372,7 +374,7 @@ conda activate scikit-learn-course
 
 <p>Exercise M4.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_01.ipynb">linear_models_ex_01.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_01.ipynb">solution</a></p>
 
-<p>usage of ` np.ravel` in</p>
+<p>usage of <code class="language-plaintext highlighter-rouge">np.ravel</code> in</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">goodness_fit_measure</span><span class="p">(</span><span class="n">true_values</span><span class="p">,</span> <span class="n">predictions</span><span class="p">):</span>
     <span class="c1"># we compute the error between the true values and the predictions of our model
@@ -402,6 +404,50 @@ conda activate scikit-learn-course
 
 <p>video and <a href="https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1">slides</a></p>
 
+<p>Ridge regression</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Ridge</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">).</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>always use <code class="language-plaintext highlighter-rouge">Ridge</code> with a carefully tuned <code class="language-plaintext highlighter-rouge">alpha</code>!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">RidgeCV</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">RidgeCV</span><span class="p">(</span> <span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">alpha_</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Regularization of linear regression model: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_regularization.ipynb">linear_models_regularization.ipynb</a></p>
+
+<p>Exercise M4.04: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_04.ipynb">linear_models_ex_04.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_04.ipynb">solution</a></p>
+
+<h6 id="linear-model-for-classification">
+<a class="anchor" href="#linear-model-for-classification" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linear model for classification</h6>
+
+<p>Linear model for classification: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/logistic_regression.ipynb">logistic_regression.ipynb</a></p>
+
+<p>Exercise M4.05: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_04.ipynb">linear_models_ex_05.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_05.ipynb">solution</a></p>
+
+<p>Beyond linear separation in classification: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/logistic_regression_non_linear.ipynb">logistic_regression_non_linear.ipynb</a></p>
+
+<h6 id="wrap-up-quiz-3">
+<a class="anchor" href="#wrap-up-quiz-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
+
+<p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/linear_models/module%204%20-%20wrap-up-quizz.ipynb">module 4 - wrap-up quizz.ipynb</a></p>
+
+<blockquote>
+  <p>In this module, we saw that:</p>
+
+  <ul>
+    <li>the predictions of a linear model depend on a weighted sum of the values of the input features added to an intercept parameter;</li>
+    <li>fitting a linear model consists in adjusting both the weight coefficients and the intercept to minimize the prediction errors on the training set;</li>
+    <li>to train linear models successfully it is often required to scale the input features approximately to the same dynamic range;</li>
+    <li>regularization can be used to reduce over-fitting: weight coefficients are constrained to stay small when fitting;</li>
+    <li>the regularization hyperparameter needs to be fine-tuned by cross-validation for each new machine learning problem and dataset;</li>
+    <li>linear models can be used on problems where the target variable is not linearly related to the input features but this requires extra feature engineering work to transform the data in order to avoid under-fitting.</li>
+  </ul>
+</blockquote>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
