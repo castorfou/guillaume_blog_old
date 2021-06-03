@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-03T05:01:50-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-03T10:57:21-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -16,7 +16,9 @@
 
 &lt;p&gt;Talk (30’) from Michael Bronstein on &lt;a href=&quot;https://slideslive.com/38956431/invited-talk-michael-bronstein&quot;&gt;Geometric Deep Learning&lt;/a&gt; - permutations invariant is a domain research I could use&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; end of module 4. Linear models&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; end of module 4. Linear models&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W4 - Planning, Learning and Acting - start&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -280,7 +282,75 @@
 
 &lt;p&gt;Q-Learning and Expected Sarsa&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6321---course-2---week-4---planning-learning--acting&quot;&gt;6/3/21 - Course 2 - Week 4 - Planning, Learning &amp;amp; Acting&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-4-learning-objectives&quot;&gt;Module 4 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: What is a model?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describe what a model is and how they can be used&lt;/li&gt;
+  &lt;li&gt;Classify models as distribution models or sample models&lt;/li&gt;
+  &lt;li&gt;Identify when to use a distribution model or sample model&lt;/li&gt;
+  &lt;li&gt;Describe the advantages and disadvantages of sample models and distribution models&lt;/li&gt;
+  &lt;li&gt;Explain why sample models can be represented more compactly than distribution models&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Planning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Explain how planning is used to improve policies&lt;/li&gt;
+  &lt;li&gt;Describe random-sample one-step tabular Q-planning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Dyna as a formalism for planning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Recognize that direct RL updates use experience from the environment to improve a policy or value function&lt;/li&gt;
+  &lt;li&gt;Recognize that planning updates use experience from a model to improve a policy or value function&lt;/li&gt;
+  &lt;li&gt;Describe how both direct RL and planning updates can be combined through the Dyna architecture&lt;/li&gt;
+  &lt;li&gt;Describe the Tabular Dyna-Q algorithm&lt;/li&gt;
+  &lt;li&gt;Identify the direct-RL and planning updates in Tabular Dyna-Q&lt;/li&gt;
+  &lt;li&gt;Identify the model learning and search control components of Tabular Dyna-Q&lt;/li&gt;
+  &lt;li&gt;Describe how learning from both direct and simulated experience impacts performance&lt;/li&gt;
+  &lt;li&gt;Describe how simulated experience can be useful when the model is accurate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 4: Dealing with inaccurate models&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Identify ways in which models can be inaccurate&lt;/li&gt;
+  &lt;li&gt;Explain the effects of planning with an inaccurate model&lt;/li&gt;
+  &lt;li&gt;Describe how Dyna can plan successfully with a partially inaccurate model&lt;/li&gt;
+  &lt;li&gt;Explain how model inaccuracies produce another exploration-exploitation trade-off&lt;/li&gt;
+  &lt;li&gt;Describe how Dyna-Q+ proposes a way to address this trade-off&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 5: Course wrap-up&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-1-what-is-a-model&quot;&gt;&lt;strong&gt;Lesson 1: What is a model?&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 8.1-8.3 &lt;strong&gt;(pp. 159-166)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Model-based methods rely on planning as their primary component, while model-free methods primarily rely on learning.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Video What is a Model?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of the video, you will be able to &lt;em&gt;describe&lt;/em&gt; a &lt;strong&gt;model&lt;/strong&gt; and how it can be used, &lt;em&gt;classify&lt;/em&gt; models as &lt;strong&gt;distribution models&lt;/strong&gt; or &lt;strong&gt;sample models&lt;/strong&gt;, and &lt;em&gt;identify&lt;/em&gt; when to use a &lt;strong&gt;distribution model&lt;/strong&gt; or &lt;strong&gt;sample model&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Comparing Sample and Distribution Models&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;describe&lt;/em&gt; the &lt;strong&gt;advantages and disadvantages&lt;/strong&gt; of &lt;strong&gt;sample models&lt;/strong&gt; and &lt;strong&gt;distribution models&lt;/strong&gt;, and you will also be able to &lt;em&gt;explain&lt;/em&gt; why &lt;strong&gt;sample models&lt;/strong&gt; can be represented &lt;strong&gt;more compactly&lt;/strong&gt; than &lt;strong&gt;distribution models&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-planning&quot;&gt;&lt;strong&gt;Lesson 2: Planning&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Random Tabular Q-planning&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how &lt;strong&gt;planning&lt;/strong&gt; is used to &lt;strong&gt;improve policies&lt;/strong&gt; and &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;random-sample one-step tabular Q-planning&lt;/strong&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;

@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      11 min read
     
 </span></p>
 
@@ -138,6 +138,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#lesson-2-off-policy-td-control-q-learning">Lesson 2: Off-policy TD Control: Q-learning</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-3-expected-sarsa">Lesson 3: Expected Sarsa</a></li>
 <li class="toc-entry toc-h6"><a href="#assignment-1">Assignment</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#6321---course-2---week-4---planning-learning--acting">6/3/21 - Course 2 - Week 4 - Planning, Learning &amp; Acting</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-4-learning-objectives">Module 4 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-what-is-a-model">Lesson 1: What is a model?</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-planning">Lesson 2: Planning</a></li>
 </ul>
 </li>
 </ul><p>my notes on <a href="/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">course 1</a></p>
@@ -425,6 +432,80 @@ window.onload = wrap_img;
 <p>Q-Learning and Expected Sarsa</p>
 
 <p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203">github</a></p>
+
+<h2 id="6321---course-2---week-4---planning-learning--acting">
+<a class="anchor" href="#6321---course-2---week-4---planning-learning--acting" aria-hidden="true"><span class="octicon octicon-link"></span></a>6/3/21 - Course 2 - Week 4 - Planning, Learning &amp; Acting</h2>
+
+<h6 id="module-4-learning-objectives">
+<a class="anchor" href="#module-4-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 4 Learning Objectives</h6>
+
+<p><strong>Lesson 1: What is a model?</strong></p>
+
+<ul>
+  <li>Describe what a model is and how they can be used</li>
+  <li>Classify models as distribution models or sample models</li>
+  <li>Identify when to use a distribution model or sample model</li>
+  <li>Describe the advantages and disadvantages of sample models and distribution models</li>
+  <li>Explain why sample models can be represented more compactly than distribution models</li>
+</ul>
+
+<p><strong>Lesson 2: Planning</strong></p>
+
+<ul>
+  <li>Explain how planning is used to improve policies</li>
+  <li>Describe random-sample one-step tabular Q-planning</li>
+</ul>
+
+<p><strong>Lesson 3: Dyna as a formalism for planning</strong></p>
+
+<ul>
+  <li>Recognize that direct RL updates use experience from the environment to improve a policy or value function</li>
+  <li>Recognize that planning updates use experience from a model to improve a policy or value function</li>
+  <li>Describe how both direct RL and planning updates can be combined through the Dyna architecture</li>
+  <li>Describe the Tabular Dyna-Q algorithm</li>
+  <li>Identify the direct-RL and planning updates in Tabular Dyna-Q</li>
+  <li>Identify the model learning and search control components of Tabular Dyna-Q</li>
+  <li>Describe how learning from both direct and simulated experience impacts performance</li>
+  <li>Describe how simulated experience can be useful when the model is accurate</li>
+</ul>
+
+<p><strong>Lesson 4: Dealing with inaccurate models</strong></p>
+
+<ul>
+  <li>Identify ways in which models can be inaccurate</li>
+  <li>Explain the effects of planning with an inaccurate model</li>
+  <li>Describe how Dyna can plan successfully with a partially inaccurate model</li>
+  <li>Explain how model inaccuracies produce another exploration-exploitation trade-off</li>
+  <li>Describe how Dyna-Q+ proposes a way to address this trade-off</li>
+</ul>
+
+<p><strong>Lesson 5: Course wrap-up</strong></p>
+
+<h6 id="lesson-1-what-is-a-model">
+<a class="anchor" href="#lesson-1-what-is-a-model" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 1: What is a model?</strong>
+</h6>
+
+<p><strong>Reading</strong> Chapter 8.1-8.3 <strong>(pp. 159-166)</strong>  in the Reinforcement Learning textbook</p>
+
+<blockquote>
+  <p>Model-based methods rely on planning as their primary component, while model-free methods primarily rely on learning.</p>
+</blockquote>
+
+<p><strong>Video What is a Model?</strong> by Martha</p>
+
+<p>By the end of the video, you will be able to <em>describe</em> a <strong>model</strong> and how it can be used, <em>classify</em> models as <strong>distribution models</strong> or <strong>sample models</strong>, and <em>identify</em> when to use a <strong>distribution model</strong> or <strong>sample model</strong>.</p>
+
+<p><strong>Video Comparing Sample and Distribution Models</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>describe</em> the <strong>advantages and disadvantages</strong> of <strong>sample models</strong> and <strong>distribution models</strong>, and you will also be able to <em>explain</em> why <strong>sample models</strong> can be represented <strong>more compactly</strong> than <strong>distribution models</strong>.</p>
+
+<h6 id="lesson-2-planning">
+<a class="anchor" href="#lesson-2-planning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 2: Planning</strong>
+</h6>
+
+<p><strong>Video Random Tabular Q-planning</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>explain</em> how <strong>planning</strong> is used to <strong>improve policies</strong> and <em>describe</em> <strong>random-sample one-step tabular Q-planning</strong>.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
