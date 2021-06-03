@@ -307,3 +307,67 @@ Q-Learning and Expected Sarsa
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203)
 
+
+
+## 6/3/21 - Course 2 - Week 4 - Planning, Learning & Acting
+
+###### Module 4 Learning Objectives
+
+**Lesson 1: What is a model?** 
+
+- Describe what a model is and how they can be used 
+- Classify models as distribution models or sample models 
+- Identify when to use a distribution model or sample model 
+- Describe the advantages and disadvantages of sample models and distribution models 
+- Explain why sample models can be represented more compactly than distribution models
+
+**Lesson 2: Planning** 
+
+- Explain how planning is used to improve policies 
+- Describe random-sample one-step tabular Q-planning 
+
+**Lesson 3: Dyna as a formalism for planning** 
+
+- Recognize that direct RL updates use experience from the environment to improve a policy or value function 
+- Recognize that planning updates use experience from a model to improve a policy or value function 
+- Describe how both direct RL and planning updates can be combined through the Dyna architecture 
+- Describe the Tabular Dyna-Q algorithm 
+- Identify the direct-RL and planning updates in Tabular Dyna-Q 
+- Identify the model learning and search control components of Tabular Dyna-Q 
+- Describe how learning from both direct and simulated experience impacts performance 
+- Describe how simulated experience can be useful when the model is accurate 
+
+**Lesson 4: Dealing with inaccurate models** 
+
+- Identify ways in which models can be inaccurate 
+- Explain the effects of planning with an inaccurate model 
+- Describe how Dyna can plan successfully with a partially inaccurate model 
+- Explain how model inaccuracies produce another exploration-exploitation trade-off 
+- Describe how Dyna-Q+ proposes a way to address this trade-off
+
+**Lesson 5: Course wrap-up**
+
+
+
+###### **Lesson 1: What is a model?** 
+
+**Reading** Chapter 8.1-8.3 **(pp. 159-166)**  in the Reinforcement Learning textbook
+
+> Model-based methods rely on planning as their primary component, while model-free methods primarily rely on learning.
+
+**Video What is a Model?** by Martha
+
+By the end of the video, you will be able to *describe* a **model** and how it can be used, *classify* models as **distribution models** or **sample models**, and *identify* when to use a **distribution model** or **sample model**. 
+
+**Video Comparing Sample and Distribution Models** by Martha
+
+By the end of this video, you will be able to *describe* the **advantages and disadvantages** of **sample models** and **distribution models**, and you will also be able to *explain* why **sample models** can be represented **more compactly** than **distribution models**. 
+
+
+
+###### **Lesson 2: Planning** 
+
+**Video Random Tabular Q-planning** by Martha
+
+By the end of this video, you'll be able to *explain* how **planning** is used to **improve policies** and *describe* **random-sample one-step tabular Q-planning**. 
+
