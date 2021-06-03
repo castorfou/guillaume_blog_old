@@ -234,7 +234,7 @@ Linear regression without scikit-learn: [linear_regression_without_sklearn.ipynb
 
 Exercise M4.01: [linear_models_ex_01.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_01.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_01.ipynb)
 
-usage of ` np.ravel` in
+usage of `np.ravel` in
 
 ```python
 def goodness_fit_measure(true_values, predictions):
@@ -268,4 +268,47 @@ Exercise M4.03: [linear_models_ex_03.ipynb](https://github.com/castorfou/scikit-
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1)
 
+Ridge regression
 
+```python
+from sklearn.linear_model import Ridge
+model = Ridge(alpha=0.01).fit(X, y)
+```
+
+always use `Ridge` with a carefully tuned `alpha`!
+
+```python
+from sklearn.linear_model import RidgeCV
+model = RidgeCV( alphas=[0.001, 0.1, 1, 10, 1000] )
+model.fit(X, y)
+print(model.alpha_)
+```
+
+Regularization of linear regression model: [linear_models_regularization.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_regularization.ipynb)
+
+Exercise M4.04: [linear_models_ex_04.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_04.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_04.ipynb)
+
+
+
+###### Linear model for classification
+
+Linear model for classification: [logistic_regression.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/logistic_regression.ipynb)
+
+Exercise M4.05: [linear_models_ex_05.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_ex_04.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/linear_models_sol_05.ipynb)
+
+Beyond linear separation in classification: [logistic_regression_non_linear.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/logistic_regression_non_linear.ipynb)
+
+
+
+###### Wrap-up quiz
+
+[module 4 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/linear_models/module 4 - wrap-up-quizz.ipynb)
+
+> In this module, we saw that:
+>
+> - the predictions of a linear model depend on a weighted sum of the values of the input features added to an intercept parameter;
+> - fitting a linear model consists in adjusting both the weight coefficients and the intercept to minimize the prediction errors on the training set;
+> - to train linear models successfully it is often required to scale the input features approximately to the same dynamic range;
+> - regularization can be used to reduce over-fitting: weight coefficients are constrained to stay small when fitting;
+> - the regularization hyperparameter needs to be fine-tuned by cross-validation for each new machine learning problem and dataset;
+> - linear models can be used on problems where the target variable is not linearly related to the input features but this requires extra feature engineering work to transform the data in order to avoid under-fitting.

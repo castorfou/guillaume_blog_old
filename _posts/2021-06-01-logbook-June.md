@@ -24,3 +24,9 @@ SHAP: [An introduction to explainable AI with Shapley values](https://github.com
 
 [Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 4. Linear models
 
+**Thursday 6/3**
+
+Talk (30') from Michael Bronstein on [Geometric Deep Learning](https://slideslive.com/38956431/invited-talk-michael-bronstein) - permutations invariant is a domain research I could use
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) end of module 4. Linear models
+
