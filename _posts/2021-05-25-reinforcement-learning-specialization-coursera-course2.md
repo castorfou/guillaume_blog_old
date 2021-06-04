@@ -417,3 +417,34 @@ Dyna-Q and Dyna-Q+
 
 notebooks in  [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%204)
 
+
+
+Chapter summary **Chapter 8.12 (pp. 188)**  
+
+![](../images/C2W4_4_planning_learning.png)
+
+> Planning, acting, and model-learning interact in a circular fashion (as in
+> the figure above), each producing what the other needs to improve; no other
+> interaction among them is either required or prohibited.
+
+
+
+> # Text Book Part 1 Summary
+>
+> ------
+>
+> For a summary of what we've covered in the specialization so far, read: **pp. 189-191** in Reinforcement Learning: an introduction .
+
+All of the methods we have explored so far in this book have three key ideas in common:
+first, they all seek to estimate value functions; second, they all operate by backing up
+values along actual or possible state trajectories; and third, they all follow the general
+strategy of generalized policy iteration (GPI), meaning that they maintain an approximate
+value function and an approximate policy, and they continually try to improve each on the
+basis of the other. These three ideas are central to the subjects covered in this book. We
+suggest that value functions, backing up value updates, and GPI are powerful organizing
+principles potentially relevant to any model of intelligence, whether artificial or natural.
+
+
+
+###### Course wrap-up
+

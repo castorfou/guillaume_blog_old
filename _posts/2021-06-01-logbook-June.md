@@ -34,3 +34,5 @@ Talk (30') from Michael Bronstein on [Geometric Deep Learning](https://slidesliv
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html) - C2W4 - Planning, Learning and Acting 
 
+End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html)
+
