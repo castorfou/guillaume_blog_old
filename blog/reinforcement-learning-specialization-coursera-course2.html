@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      12 min read
     
 </span></p>
 
@@ -145,6 +145,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#module-4-learning-objectives">Module 4 Learning Objectives</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-1-what-is-a-model">Lesson 1: What is a model?</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-2-planning">Lesson 2: Planning</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-dyna-as-a-formalism-for-planning">Lesson 3: Dyna as a formalism for planning</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-4-dealing-with-inaccurate-models">Lesson 4: Dealing with inaccurate models</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment-2">Assignment</a></li>
 </ul>
 </li>
 </ul><p>my notes on <a href="/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">course 1</a></p>
@@ -506,6 +509,51 @@ window.onload = wrap_img;
 <p><strong>Video Random Tabular Q-planning</strong> by Martha</p>
 
 <p>By the end of this video, you’ll be able to <em>explain</em> how <strong>planning</strong> is used to <strong>improve policies</strong> and <em>describe</em> <strong>random-sample one-step tabular Q-planning</strong>.</p>
+
+<h6 id="lesson-3-dyna-as-a-formalism-for-planning">
+<a class="anchor" href="#lesson-3-dyna-as-a-formalism-for-planning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 3: Dyna as a formalism for planning</strong>
+</h6>
+
+<p><strong>Video The Dyna Architecture</strong> by Adam</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> how <strong>simulate experience</strong> from the model differs from <strong>interacting with the environment</strong>. You will also <em>understand</em> how the <strong>Dyna architecture</strong> mixes <strong>direct RL</strong> updates and <strong>planning</strong> updates.</p>
+
+<p><img src="../images/C2W4_1_dyna_arch.png" alt=""></p>
+
+<p><strong>Video The Dyna Algorithm</strong> by Adam</p>
+
+<p>By the end of this video, you should be able to <em>describe</em> how <strong>Tabular Dyna-Q</strong> works. You will also be able to <em>identify</em> the <strong>direct-RL</strong>, <strong>planning</strong> updates in <strong>Tabular Dyna-Q</strong>, and identify the <strong>model learning</strong> and <strong>search control</strong> components of <strong>Tabular Dyna-Q</strong>.</p>
+
+<p><img src="../images/C2W4_2_dyna_algo.png" alt=""></p>
+
+<p><strong>Video Dyna &amp; Q-learning in a Simple Maze</strong> by Adam</p>
+
+<p>By the end of this video you will be able to <em>describe</em> how learning from both <strong>environment-real</strong> and <strong>model</strong> experience impacts performance. You will also be able to <em>explain</em> how an <strong>accurate model</strong> allows the agent to learn from <strong>fewer environment interactions</strong>.</p>
+
+<h6 id="lesson-4-dealing-with-inaccurate-models">
+<a class="anchor" href="#lesson-4-dealing-with-inaccurate-models" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 4: Dealing with inaccurate models</strong>
+</h6>
+
+<p><strong>Video What if the model is inaccurate?</strong> by Martha</p>
+
+<p>By the end of this video you will be able to <em>identify</em> ways in which <strong>models</strong> can be <strong>inaccurate</strong>, <em>explain</em> the effects of <strong>planning</strong> with an <strong>inaccurate model</strong>, and <em>describe</em> how <strong>Dyna</strong> can plan  successfully with an <strong>incomplete model</strong>.</p>
+
+<p><strong>Video In-depth with changing environments</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>explain</em> how model inaccuracies produce another <strong>exploration-exploitation trade-off</strong>, and <em>describe</em> how <strong>Dyna-Q+</strong> addresses this trade-off.</p>
+
+<p><img src="../images/C2W4_3_dyna_q_plus_algo.png" alt=""></p>
+
+<p>Video Drew Bagnell: <strong>self-driving, robotics, and Model Based RL</strong></p>
+
+<p><strong>Video week 4 summary</strong> by Martha</p>
+
+<h6 id="assignment-2">
+<a class="anchor" href="#assignment-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Dyna-Q and Dyna-Q+</p>
+
+<p>notebooks in  <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%204">github</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->

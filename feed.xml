@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-03T10:57:21-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-04T03:35:45-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -18,7 +18,9 @@
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; end of module 4. Linear models&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W4 - Planning, Learning and Acting - start&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Friday 6/4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W4 - Planning, Learning and Acting&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -350,7 +352,47 @@
 
 &lt;p&gt;&lt;strong&gt;Video Random Tabular Q-planning&lt;/strong&gt; by Martha&lt;/p&gt;
 
-&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how &lt;strong&gt;planning&lt;/strong&gt; is used to &lt;strong&gt;improve policies&lt;/strong&gt; and &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;random-sample one-step tabular Q-planning&lt;/strong&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how &lt;strong&gt;planning&lt;/strong&gt; is used to &lt;strong&gt;improve policies&lt;/strong&gt; and &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;random-sample one-step tabular Q-planning&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-dyna-as-a-formalism-for-planning&quot;&gt;&lt;strong&gt;Lesson 3: Dyna as a formalism for planning&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video The Dyna Architecture&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;understand&lt;/em&gt; how &lt;strong&gt;simulate experience&lt;/strong&gt; from the model differs from &lt;strong&gt;interacting with the environment&lt;/strong&gt;. You will also &lt;em&gt;understand&lt;/em&gt; how the &lt;strong&gt;Dyna architecture&lt;/strong&gt; mixes &lt;strong&gt;direct RL&lt;/strong&gt; updates and &lt;strong&gt;planning&lt;/strong&gt; updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W4_1_dyna_arch.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video The Dyna Algorithm&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you should be able to &lt;em&gt;describe&lt;/em&gt; how &lt;strong&gt;Tabular Dyna-Q&lt;/strong&gt; works. You will also be able to &lt;em&gt;identify&lt;/em&gt; the &lt;strong&gt;direct-RL&lt;/strong&gt;, &lt;strong&gt;planning&lt;/strong&gt; updates in &lt;strong&gt;Tabular Dyna-Q&lt;/strong&gt;, and identify the &lt;strong&gt;model learning&lt;/strong&gt; and &lt;strong&gt;search control&lt;/strong&gt; components of &lt;strong&gt;Tabular Dyna-Q&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W4_2_dyna_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Dyna &amp;amp; Q-learning in a Simple Maze&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will be able to &lt;em&gt;describe&lt;/em&gt; how learning from both &lt;strong&gt;environment-real&lt;/strong&gt; and &lt;strong&gt;model&lt;/strong&gt; experience impacts performance. You will also be able to &lt;em&gt;explain&lt;/em&gt; how an &lt;strong&gt;accurate model&lt;/strong&gt; allows the agent to learn from &lt;strong&gt;fewer environment interactions&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-4-dealing-with-inaccurate-models&quot;&gt;&lt;strong&gt;Lesson 4: Dealing with inaccurate models&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video What if the model is inaccurate?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you will be able to &lt;em&gt;identify&lt;/em&gt; ways in which &lt;strong&gt;models&lt;/strong&gt; can be &lt;strong&gt;inaccurate&lt;/strong&gt;, &lt;em&gt;explain&lt;/em&gt; the effects of &lt;strong&gt;planning&lt;/strong&gt; with an &lt;strong&gt;inaccurate model&lt;/strong&gt;, and &lt;em&gt;describe&lt;/em&gt; how &lt;strong&gt;Dyna&lt;/strong&gt; can plan  successfully with an &lt;strong&gt;incomplete model&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video In-depth with changing environments&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how model inaccuracies produce another &lt;strong&gt;exploration-exploitation trade-off&lt;/strong&gt;, and &lt;em&gt;describe&lt;/em&gt; how &lt;strong&gt;Dyna-Q+&lt;/strong&gt; addresses this trade-off.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W4_3_dyna_q_plus_algo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Video Drew Bagnell: &lt;strong&gt;self-driving, robotics, and Model Based RL&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video week 4 summary&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment-2&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Dyna-Q and Dyna-Q+&lt;/p&gt;
+
+&lt;p&gt;notebooks in  &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%204&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;
