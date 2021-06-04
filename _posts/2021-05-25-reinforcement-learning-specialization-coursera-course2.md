@@ -371,3 +371,49 @@ By the end of this video, you will be able to *describe* the **advantages and di
 
 By the end of this video, you'll be able to *explain* how **planning** is used to **improve policies** and *describe* **random-sample one-step tabular Q-planning**. 
 
+
+
+###### **Lesson 3: Dyna as a formalism for planning** 
+
+**Video The Dyna Architecture** by Adam
+
+By the end of this video, you will be able to *understand* how **simulate experience** from the model differs from **interacting with the environment**. You will also *understand* how the **Dyna architecture** mixes **direct RL** updates and **planning** updates. 
+
+![](../images/C2W4_1_dyna_arch.png)
+
+**Video The Dyna Algorithm** by Adam
+
+By the end of this video, you should be able to *describe* how **Tabular Dyna-Q** works. You will also be able to *identify* the **direct-RL**, **planning** updates in **Tabular Dyna-Q**, and identify the **model learning** and **search control** components of **Tabular Dyna-Q**. 
+
+![](../images/C2W4_2_dyna_algo.png)
+
+**Video Dyna & Q-learning in a Simple Maze** by Adam
+
+By the end of this video you will be able to *describe* how learning from both **environment-real** and **model** experience impacts performance. You will also be able to *explain* how an **accurate model** allows the agent to learn from **fewer environment interactions**. 
+
+
+
+###### **Lesson 4: Dealing with inaccurate models** 
+
+**Video What if the model is inaccurate?** by Martha
+
+By the end of this video you will be able to *identify* ways in which **models** can be **inaccurate**, *explain* the effects of **planning** with an **inaccurate model**, and *describe* how **Dyna** can plan  successfully with an **incomplete model**. 
+
+**Video In-depth with changing environments** by Adam
+
+By the end of this video, you'll be able to *explain* how model inaccuracies produce another **exploration-exploitation trade-off**, and *describe* how **Dyna-Q+** addresses this trade-off. 
+
+![](../images/C2W4_3_dyna_q_plus_algo.png)
+
+Video Drew Bagnell: **self-driving, robotics, and Model Based RL**
+
+**Video week 4 summary** by Martha
+
+
+
+###### Assignment
+
+Dyna-Q and Dyna-Q+
+
+notebooks in  [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%204)
+
