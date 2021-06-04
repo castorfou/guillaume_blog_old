@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-04T03:35:45-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-04T07:38:02-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -20,7 +20,9 @@
 
 &lt;p&gt;&lt;strong&gt;Friday 6/4&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W4 - Planning, Learning and Acting&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W4 - Planning, Learning and Acting&lt;/p&gt;
+
+&lt;p&gt;End of course 2 of &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -392,7 +394,36 @@
 
 &lt;p&gt;Dyna-Q and Dyna-Q+&lt;/p&gt;
 
-&lt;p&gt;notebooks in  &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%204&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
+&lt;p&gt;notebooks in  &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%204&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Chapter summary &lt;strong&gt;Chapter 8.12 (pp. 188)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C2W4_4_planning_learning.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Planning, acting, and model-learning interact in a circular fashion (as in
+the figure above), each producing what the other needs to improve; no other
+interaction among them is either required or prohibited.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;text-book-part-1-summary&quot;&gt;Text Book Part 1 Summary&lt;/h1&gt;
+
+  &lt;hr /&gt;
+
+  &lt;p&gt;For a summary of what we’ve covered in the specialization so far, read: &lt;strong&gt;pp. 189-191&lt;/strong&gt; in Reinforcement Learning: an introduction .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;All of the methods we have explored so far in this book have three key ideas in common:
+first, they all seek to estimate value functions; second, they all operate by backing up
+values along actual or possible state trajectories; and third, they all follow the general
+strategy of generalized policy iteration (GPI), meaning that they maintain an approximate
+value function and an approximate policy, and they continually try to improve each on the
+basis of the other. These three ideas are central to the subjects covered in this book. We
+suggest that value functions, backing up value updates, and GPI are powerful organizing
+principles potentially relevant to any model of intelligence, whether artificial or natural.&lt;/p&gt;
+
+&lt;h6 id=&quot;course-wrap-up&quot;&gt;Course wrap-up&lt;/h6&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Machine learning in python with scikit-learn</title><link href="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html" rel="alternate" type="text/html" title="Machine learning in python with scikit-learn" /><published>2021-05-21T00:00:00-05:00</published><updated>2021-05-21T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html">&lt;p&gt;This is a &lt;a href=&quot;https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info&quot;&gt;MOOC&lt;/a&gt; by Inria team, in charge of scikit-learn.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;After a fair amount of pedagogical and technical preparation work, we offer you today a practical course with:&lt;/p&gt;
