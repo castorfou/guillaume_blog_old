@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-07T01:15:10-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-07T03:05:35-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 3 - &lt;strong&gt;Prediction and Control with Function Approximation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 3 - &lt;strong&gt;Prediction and Control with Function Approximation&lt;/strong&gt; &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/course%203%20-%20function%20approximation/Course-3_Prediction-and-Control-with-Function-Approximation-Learning-Objectives.pdf&quot;&gt;(syllabus)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;course 3&lt;/strong&gt; - In Course 3, we leave the relative comfort of small finite MDPs and investigate RL with &lt;strong&gt;function approximation&lt;/strong&gt;. Here we will see that the main concepts from Courses 1 and 2 transferred to problems with larger &lt;strong&gt;infinite state spaces&lt;/strong&gt;. We will cover &lt;strong&gt;feature construction&lt;/strong&gt;, &lt;strong&gt;neural network learning&lt;/strong&gt;, &lt;strong&gt;policy gradient methods&lt;/strong&gt;, and other particularities of the function approximation setting.&lt;/p&gt;
 
@@ -12,7 +12,81 @@
 
 &lt;p&gt;Week 4 - Policy Gradient&lt;/p&gt;
 
-&lt;h2 id=&quot;course-3---week-1---on-policy-prediction-with-approximation&quot;&gt;Course 3 - Week 1 - On-policy Prediction with Approximation&lt;/h2&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1 - Fundamentals of Reinforcement Learning, course 2 - Sample-based Learning Methods</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+&lt;h6 id=&quot;course-introduction&quot;&gt;Course introduction&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video by Adam and Martha&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/RL_algo_in_a_tree.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In course 2:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/RL_with_a_table.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In course 3:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/RL_without_a_table.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;course-3---week-1---on-policy-prediction-with-approximation&quot;&gt;Course 3 - Week 1 - On-policy Prediction with Approximation&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-1-learning-objectives&quot;&gt;Module 1 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Estimating Value Functions as Supervised Learning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand how we can use parameterized functions to approximate value functions&lt;/li&gt;
+  &lt;li&gt;Explain the meaning of linear value function approximation&lt;/li&gt;
+  &lt;li&gt;Recognize that the tabular case is a special case of linear value function approximation.&lt;/li&gt;
+  &lt;li&gt;Understand that there are many ways to parameterize an approximate value function&lt;/li&gt;
+  &lt;li&gt;Understand what is meant by generalization and discrimination&lt;/li&gt;
+  &lt;li&gt;Understand how generalization can be beneficial&lt;/li&gt;
+  &lt;li&gt;Explain why we want both generalization and discrimination from our function approximation&lt;/li&gt;
+  &lt;li&gt;Understand how value estimation can be framed as a supervised learning problem&lt;/li&gt;
+  &lt;li&gt;Recognize not all function approximation methods are well suited for reinforcement learning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: The Objective for On-policy Prediction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the mean-squared value error objective for policy evaluation&lt;/li&gt;
+  &lt;li&gt;Explain the role of the state distribution in the objective&lt;/li&gt;
+  &lt;li&gt;Understand the idea behind gradient descent and stochastic gradient descent&lt;/li&gt;
+  &lt;li&gt;Outline the gradient Monte Carlo algorithm for value estimation&lt;/li&gt;
+  &lt;li&gt;Understand how state aggregation can be used to approximate the value function&lt;/li&gt;
+  &lt;li&gt;Apply Gradient Monte-Carlo with state aggregation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: The Objective for TD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the TD-update for function approximation&lt;/li&gt;
+  &lt;li&gt;Highlight the advantages of TD compared to Monte-Carlo&lt;/li&gt;
+  &lt;li&gt;Outline the Semi-gradient TD(0) algorithm for value estimation&lt;/li&gt;
+  &lt;li&gt;Understand that TD converges to a biased value estimate&lt;/li&gt;
+  &lt;li&gt;Understand that TD converges much faster than Gradient Monte Carlo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 4: Linear TD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Derive the TD-update with linear function approximation&lt;/li&gt;
+  &lt;li&gt;Understand that tabular TD(0) is a special case of linear semi-gradient TD(0)&lt;/li&gt;
+  &lt;li&gt;Highlight the advantages of linear value function approximation over nonlinear&lt;/li&gt;
+  &lt;li&gt;Understand the fixed point of linear TD learning&lt;/li&gt;
+  &lt;li&gt;Describe a theoretical guarantee on the mean squared value error at the TD fixed point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-estimating-value-functions-as-supervised-learning&quot;&gt;Lesson 1: Estimating Value Functions as Supervised Learning&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 9.1-9.4 &lt;strong&gt;(pp. 197-209)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In many of the tasks to which we would like to apply reinforcement learning the state space is combinatorial and enormous; the number of possible camera images, for example, is much larger than the number of atoms in the universe.&lt;/p&gt;
+
+  &lt;p&gt;In many of our target tasks, almost every state encountered will never have been seen before. To make sensible decisions in such states it is necessary to generalize from previous encounters with different states that are in some sense similar to the current one. In other words, the key issue is that of &lt;strong&gt;generalization&lt;/strong&gt;. How can experience with a limited subset of the state space be usefully generalized to produce a good approximation over a much larger subset?&lt;/p&gt;
+
+  &lt;p&gt;Fortunately, generalization from examples has already been extensively studied, and
+we do not need to invent totally new methods for use in reinforcement learning. To some extent we need only combine reinforcement learning methods with existing generalization methods. The kind of generalization we require is often called function approximation because it takes examples from a desired function (e.g., a value function) and attempts to generalize from them to construct an approximation of the entire function. Function approximation is an instance of supervised learning, the primary topic studied in machine learning, artificial neural networks, pattern recognition, and statistical curve fitting.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1 - Fundamentals of Reinforcement Learning, course 2 - Sample-based Learning Methods</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -56,7 +130,7 @@
 
 &lt;p&gt;Week 4 - Planning, Learning &amp;amp; Acting&lt;/p&gt;
 
-&lt;h2 id=&quot;52521---course-2---week-1---monte-carlo-methods-for-prediction--control&quot;&gt;5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp;amp; Control&lt;/h2&gt;
+&lt;h2 id=&quot;course-2---week-1---monte-carlo-methods-for-prediction--control&quot;&gt;Course 2 - Week 1 - Monte-Carlo Methods for Prediction &amp;amp; Control&lt;/h2&gt;
 
 &lt;h6 id=&quot;module-1-learning-objectives&quot;&gt;Module 1 Learning Objectives&lt;/h6&gt;
 
@@ -157,7 +231,7 @@
 
 &lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 5.10 &lt;strong&gt;(pp. 115-116)&lt;/strong&gt;  in the Reinforcement Learning textbook&lt;/p&gt;
 
-&lt;h2 id=&quot;52721---course-2---week-2---temporal-difference-learning-methods-for-prediction&quot;&gt;5/27/21 - Course 2 - Week 2 - Temporal Difference Learning Methods for Prediction&lt;/h2&gt;
+&lt;h2 id=&quot;course-2---week-2---temporal-difference-learning-methods-for-prediction&quot;&gt;Course 2 - Week 2 - Temporal Difference Learning Methods for Prediction&lt;/h2&gt;
 
 &lt;h6 id=&quot;module-2-learning-objectives&quot;&gt;Module 2 Learning Objectives&lt;/h6&gt;
 
@@ -209,7 +283,7 @@
 
 &lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;6121---course-2---week-3---temporal-difference-learning-methods-for-control&quot;&gt;6/1/21 - Course 2 - Week 3 - Temporal Difference Learning Methods for Control&lt;/h2&gt;
+&lt;h2 id=&quot;course-2---week-3---temporal-difference-learning-methods-for-control&quot;&gt;Course 2 - Week 3 - Temporal Difference Learning Methods for Control&lt;/h2&gt;
 
 &lt;h6 id=&quot;module-3-learning-objectives&quot;&gt;Module 3 Learning Objectives&lt;/h6&gt;
 
@@ -308,7 +382,7 @@
 
 &lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;6321---course-2---week-4---planning-learning--acting&quot;&gt;6/3/21 - Course 2 - Week 4 - Planning, Learning &amp;amp; Acting&lt;/h2&gt;
+&lt;h2 id=&quot;course-2---week-4---planning-learning--acting&quot;&gt;Course 2 - Week 4 - Planning, Learning &amp;amp; Acting&lt;/h2&gt;
 
 &lt;h6 id=&quot;module-4-learning-objectives&quot;&gt;Module 4 Learning Objectives&lt;/h6&gt;
 
