@@ -96,3 +96,101 @@ In course 3:
 > Fortunately, generalization from examples has already been extensively studied, and
 > we do not need to invent totally new methods for use in reinforcement learning. To some extent we need only combine reinforcement learning methods with existing generalization methods. The kind of generalization we require is often called function approximation because it takes examples from a desired function (e.g., a value function) and attempts to generalize from them to construct an approximation of the entire function. Function approximation is an instance of supervised learning, the primary topic studied in machine learning, artificial neural networks, pattern recognition, and statistical curve fitting.
 
+
+
+**Video Moving to Parameterized Functions** by Adam
+
+By the end of this video, you'll be able to *understand* how we can use **parameterized functions** to approximate values, *explain* **linear value function approximation**, *recognize* that the tabular case is a special case of linear value function approximation, and *understand* that there are many ways to parameterize an approximate value function. 
+
+
+
+**Video Generalization and Discrimination** by Martha
+
+By the end of this video, you will be able to *understand* what is meant by **generalization** and **discrimination**, *understand* how generalization can be beneficial, and *explain* why we want both generalization and discrimination from our function approximation. 
+
+
+
+**Video Framing Value Estimation as Supervised Learning** by Martha
+
+By the end of this video, you will be able to *understand* how value estimation can be framed as a **supervised learning** problem, and *recognize* that not all function approximation methods are well suited for reinforcement learning. 
+
+
+
+###### **Lesson 2: The Objective for On-policy Prediction** 
+
+**Video The Value Error Objective** by Adam
+
+By the end of this video you will be able to *understand* the **Mean Squared Value Error objective** for policy evaluation and *explain* the role of the **state distribution** in the objective. 
+
+
+$$
+\overline{VE}=\displaystyle\sum_{s}\mu(s)[v_\pi(s)-\hat{v}(s,w)]^2
+$$
+This is the **Mean Squared Value Error Objective** where $\mu$ reflects how much we care about each state (a probability distribution)
+
+
+
+**Video Introducing Gradient Descent** by Martha
+
+By the end of this video, you will be able to *understand* the idea of **gradient descent**, and *understand* that gradient descent converges to stationary points. 
+
+
+
+**Video Gradient Monte for Policy Evaluation** by Martha
+
+By the end of this video, you will be able to *understand* how to use gradient descent and **stochastic gradient descent** to minimize value error and *outline* the **Gradient Monte Carlo** algorithm for value estimation. 
+
+![](../images/C3W1_gradient_monte_carlo.png)
+
+
+
+**Video State Aggregation with Monte Carlo** by Adam
+
+By the end of this video, you will be able to *understand* how **state aggregation** can be used to approximate the value function and *apply* gradient Monte Carlo with state aggregation. 
+
+
+
+###### **Lesson 3: The Objective for TD** 
+
+**Video Semi-Gradient TD for Policy Evaluation** by Adam
+
+By the end of this video you will be able to *understand* the **TD update** for function approximation, and *outline* the **semi-gradient TD(0)** algorithm for value estimation. 
+
+![](../images/C3W1_semi_gradient_TD0.png)
+
+
+
+**Video Comparing TD and Monte Carlo with State Aggregation** by Adam
+
+By the end of this video, you'll be able to *understand* that TD converges to a bias value estimate and *understand* that TD can learn faster than Gradient Monte Carlo. 
+
+
+
+**Video Doina Precup: Building Knowledge for AI Agents with Reinforcement Learning**
+
+
+
+###### **Lesson 4: Linear TD** 
+
+**Video The Linear TD Update** by Martha
+
+By the end of this video, you'll be able to *derive* the TD update with linear function approximation, *understand* that tabular TD(0) as a special case of **linear semi gradient TD(0)**, and *understand* why we care about linear TD as a special case. 
+
+
+
+**Video The True Objective for TD** by Martha
+
+By the end of this video, you will be able to *understand* the **fixed point** of linear TD and *describe* a theoretical guarantee on the mean squared value error at the TD fixed point. 
+
+
+
+**Video Week 1 Summary** by Adam
+
+
+
+###### Assignment
+
+TD with State Aggregation
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%201)
+
