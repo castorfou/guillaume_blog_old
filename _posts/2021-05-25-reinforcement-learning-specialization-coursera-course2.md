@@ -26,7 +26,7 @@ Week 4 - Planning, Learning & Acting
 
 
 
-## 5/25/21 - Course 2 - Week 1 - Monte-Carlo Methods for Prediction & Control
+## Course 2 - Week 1 - Monte-Carlo Methods for Prediction & Control
 
 ###### Module 1 Learning Objectives
 
@@ -137,7 +137,7 @@ By the end of this video, you will be able to *understand* how to use **importan
 
 
 
-## 5/27/21 - Course 2 - Week 2 - Temporal Difference Learning Methods for Prediction
+## Course 2 - Week 2 - Temporal Difference Learning Methods for Prediction
 
 ###### Module 2 Learning Objectives
 
@@ -191,7 +191,7 @@ Policy Evaluation in Cliff Walking Environment
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%202%20week%202)
 
-## 6/1/21 - Course 2 - Week 3 - Temporal Difference Learning Methods for Control
+## Course 2 - Week 3 - Temporal Difference Learning Methods for Control
 
 
 
@@ -309,7 +309,7 @@ notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specia
 
 
 
-## 6/3/21 - Course 2 - Week 4 - Planning, Learning & Acting
+## Course 2 - Week 4 - Planning, Learning & Acting
 
 ###### Module 4 Learning Objectives
 
