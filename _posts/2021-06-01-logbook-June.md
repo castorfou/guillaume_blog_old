@@ -36,3 +36,11 @@ Talk (30') from Michael Bronstein on [Geometric Deep Learning](https://slidesliv
 
 End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html)
 
+
+
+## Week 23 - June 21
+
+**Monday 6/7**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W1 - On-policy Prediction with Approximation
+
