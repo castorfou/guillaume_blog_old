@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      6 min read
     
 </span></p>
 
@@ -119,6 +119,10 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h6"><a href="#module-1-learning-objectives">Module 1 Learning Objectives</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-1-estimating-value-functions-as-supervised-learning">Lesson 1: Estimating Value Functions as Supervised Learning</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-the-objective-for-on-policy-prediction">Lesson 2: The Objective for On-policy Prediction</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-the-objective-for-td">Lesson 3: The Objective for TD</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-4-linear-td">Lesson 4: Linear TD</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment">Assignment</a></li>
 </ul>
 </li>
 </ul><p>my notes on <a href="/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">course 1 - Fundamentals of Reinforcement Learning</a>, <a href="/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">course 2 - Sample-based Learning Methods</a></p>
@@ -214,6 +218,80 @@ window.onload = wrap_img;
   <p>Fortunately, generalization from examples has already been extensively studied, and
 we do not need to invent totally new methods for use in reinforcement learning. To some extent we need only combine reinforcement learning methods with existing generalization methods. The kind of generalization we require is often called function approximation because it takes examples from a desired function (e.g., a value function) and attempts to generalize from them to construct an approximation of the entire function. Function approximation is an instance of supervised learning, the primary topic studied in machine learning, artificial neural networks, pattern recognition, and statistical curve fitting.</p>
 </blockquote>
+
+<p><strong>Video Moving to Parameterized Functions</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>understand</em> how we can use <strong>parameterized functions</strong> to approximate values, <em>explain</em> <strong>linear value function approximation</strong>, <em>recognize</em> that the tabular case is a special case of linear value function approximation, and <em>understand</em> that there are many ways to parameterize an approximate value function.</p>
+
+<p><strong>Video Generalization and Discrimination</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> what is meant by <strong>generalization</strong> and <strong>discrimination</strong>, <em>understand</em> how generalization can be beneficial, and <em>explain</em> why we want both generalization and discrimination from our function approximation.</p>
+
+<p><strong>Video Framing Value Estimation as Supervised Learning</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> how value estimation can be framed as a <strong>supervised learning</strong> problem, and <em>recognize</em> that not all function approximation methods are well suited for reinforcement learning.</p>
+
+<h6 id="lesson-2-the-objective-for-on-policy-prediction">
+<a class="anchor" href="#lesson-2-the-objective-for-on-policy-prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 2: The Objective for On-policy Prediction</strong>
+</h6>
+
+<p><strong>Video The Value Error Objective</strong> by Adam</p>
+
+<p>By the end of this video you will be able to <em>understand</em> the <strong>Mean Squared Value Error objective</strong> for policy evaluation and <em>explain</em> the role of the <strong>state distribution</strong> in the objective.</p>
+
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>V</mi><mi>E</mi></mrow><mo stretchy="true">‾</mo></mover><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mi>s</mi></munder><mi>μ</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo><mo stretchy="false">[</mo><msub><mi>v</mi><mi>π</mi></msub><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo><mo>−</mo><mover accent="true"><mi>v</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>w</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">]</mo><mn>2</mn></msup></mstyle></mrow><annotation encoding="application/x-tex">\overline{VE}=\displaystyle\sum_{s}\mu(s)[v_\pi(s)-\hat{v}(s,w)]^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:0em;"></span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.3000100000000003em;vertical-align:-1.250005em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.250005em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">μ</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mopen">[</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.22222em;">^</span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mclose">)</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>
+This is the <strong>Mean Squared Value Error Objective</strong> where $\mu$ reflects how much we care about each state (a probability distribution)</p>
+
+<p><strong>Video Introducing Gradient Descent</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> the idea of <strong>gradient descent</strong>, and <em>understand</em> that gradient descent converges to stationary points.</p>
+
+<p><strong>Video Gradient Monte for Policy Evaluation</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> how to use gradient descent and <strong>stochastic gradient descent</strong> to minimize value error and <em>outline</em> the <strong>Gradient Monte Carlo</strong> algorithm for value estimation.</p>
+
+<p><img src="../images/C3W1_gradient_monte_carlo.png" alt=""></p>
+
+<p><strong>Video State Aggregation with Monte Carlo</strong> by Adam</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> how <strong>state aggregation</strong> can be used to approximate the value function and <em>apply</em> gradient Monte Carlo with state aggregation.</p>
+
+<h6 id="lesson-3-the-objective-for-td">
+<a class="anchor" href="#lesson-3-the-objective-for-td" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 3: The Objective for TD</strong>
+</h6>
+
+<p><strong>Video Semi-Gradient TD for Policy Evaluation</strong> by Adam</p>
+
+<p>By the end of this video you will be able to <em>understand</em> the <strong>TD update</strong> for function approximation, and <em>outline</em> the <strong>semi-gradient TD(0)</strong> algorithm for value estimation.</p>
+
+<p><img src="../images/C3W1_semi_gradient_TD0.png" alt=""></p>
+
+<p><strong>Video Comparing TD and Monte Carlo with State Aggregation</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>understand</em> that TD converges to a bias value estimate and <em>understand</em> that TD can learn faster than Gradient Monte Carlo.</p>
+
+<p><strong>Video Doina Precup: Building Knowledge for AI Agents with Reinforcement Learning</strong></p>
+
+<h6 id="lesson-4-linear-td">
+<a class="anchor" href="#lesson-4-linear-td" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 4: Linear TD</strong>
+</h6>
+
+<p><strong>Video The Linear TD Update</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>derive</em> the TD update with linear function approximation, <em>understand</em> that tabular TD(0) as a special case of <strong>linear semi gradient TD(0)</strong>, and <em>understand</em> why we care about linear TD as a special case.</p>
+
+<p><strong>Video The True Objective for TD</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> the <strong>fixed point</strong> of linear TD and <em>describe</em> a theoretical guarantee on the mean squared value error at the TD fixed point.</p>
+
+<p><strong>Video Week 1 Summary</strong> by Adam</p>
+
+<h6 id="assignment">
+<a class="anchor" href="#assignment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>TD with State Aggregation</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%201">github</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
