@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-04T07:38:02-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-07T01:15:10-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 3 - &lt;strong&gt;Prediction and Control with Function Approximation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;course 3&lt;/strong&gt; - In Course 3, we leave the relative comfort of small finite MDPs and investigate RL with &lt;strong&gt;function approximation&lt;/strong&gt;. Here we will see that the main concepts from Courses 1 and 2 transferred to problems with larger &lt;strong&gt;infinite state spaces&lt;/strong&gt;. We will cover &lt;strong&gt;feature construction&lt;/strong&gt;, &lt;strong&gt;neural network learning&lt;/strong&gt;, &lt;strong&gt;policy gradient methods&lt;/strong&gt;, and other particularities of the function approximation setting.&lt;/p&gt;
+
+&lt;p&gt;Week 1 - On-policy Prediction with Approximation&lt;/p&gt;
+
+&lt;p&gt;Week 2 - Constructing Features for Prediction&lt;/p&gt;
+
+&lt;p&gt;Week 3 - Control with Approximation&lt;/p&gt;
+
+&lt;p&gt;Week 4 - Policy Gradient&lt;/p&gt;
+
+&lt;h2 id=&quot;course-3---week-1---on-policy-prediction-with-approximation&quot;&gt;Course 3 - Week 1 - On-policy Prediction with Approximation&lt;/h2&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">my notes on course 1 - Fundamentals of Reinforcement Learning, course 2 - Sample-based Learning Methods</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -22,7 +36,13 @@
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C2W4 - Planning, Learning and Acting&lt;/p&gt;
 
-&lt;p&gt;End of course 2 of &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;End of course 2 of &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;week-23---june-21&quot;&gt;Week 23 - June 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 6/7&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W1 - On-policy Prediction with Approximation&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -1341,89 +1361,7 @@ socks5          192.168.50.202  1080
 
 proxychains pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pycaret 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;week-14---apr-21&quot;&gt;Week 14 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/7&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1908.07442&quot;&gt;tabnet&lt;/a&gt;: pytorch (and fastai with Zach Mueller) implementations&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/8&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416851/?view=&quot;&gt;Evolutionary Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Jupyter notebook turned into &lt;a href=&quot;https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/&quot;&gt;slides with RISE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416841/?view=&quot;&gt;Micro-data Policy Search&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/9&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3&lt;/p&gt;
-
-&lt;p&gt;setup &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt; to workaround wsl2 and network issues (explained &lt;a href=&quot;/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;install &lt;a href=&quot;&quot;&gt;wsl2-cuda-conda&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;week-15---apr-21&quot;&gt;Week 15 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/15&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Learning for Information Extraction (lecture 9).&lt;/p&gt;
-
-&lt;h2 id=&quot;week-16---apr-21&quot;&gt;Week 16 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday 4/20&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;How To run &lt;a href=&quot;https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1&quot;&gt;macOS on KVM / QEMU&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/21&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Enrolled to &lt;a href=&quot;https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by scikit-learn team!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c&quot;&gt;Audio classification&lt;/a&gt; with pytorch&lt;/p&gt;
-
-&lt;h2 id=&quot;week-17---apr-21&quot;&gt;Week 17 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday 4/26&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/bayesian-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Bayesian Data Analysis in Python, at the end, &lt;a href=&quot;http://allendowney.github.io/ThinkBayes2/&quot;&gt;Think Bayes 2&lt;/a&gt; by Allen B.Downey&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday 4/27&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Value Function Approximation (lecture 6)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Taming Dataset Bias (lecture 10)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/28&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/courses/exploratory-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Exploratory Data Analysis in Python, by Allen B.Downey (that’s why)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/29&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/working-with-dates-and-times-in-python&quot;&gt;datacamp&lt;/a&gt; - Working with date and time, quite interesting to see timezones considerations.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/30&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/cleaning-data-in-python&quot;&gt;datacamp&lt;/a&gt; - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Towards AI for 3D Content Creation (lecture 11) and AI in Healthcare (lecture 12) and this is the end of this course&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ANITI’s first Reinforcement Learning Virtual School</title><link href="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html" rel="alternate" type="text/html" title="ANITI’s first Reinforcement Learning Virtual School" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Aniti%20-%20RLVS%20-%20seminaire%20RL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html">&lt;p&gt;&lt;img src=&quot;https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/img/72947a097165dcd24a6f700e2f28d690.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://rlvs.aniti.fr/&quot;&gt;https://rlvs.aniti.fr/&lt;/a&gt;&lt;/p&gt;
 
@@ -1722,50 +1660,86 @@ Part I: RL Tips and Tricks / The Challenges of Applying RL to Real Robots&lt;/p&
 
 &lt;p&gt;documentation for SB3 usefull for completing exercises: &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/&quot;&gt;https://stable-baselines3.readthedocs.io/en/master/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://excalidraw.com/&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Git - How To Contribute To A Project</title><link href="https://castorfou.github.io/guillaume_blog/blog/contribute-to-a-project-with-git.html" rel="alternate" type="text/html" title="Git - How To Contribute To A Project" /><published>2021-03-25T00:00:00-05:00</published><updated>2021-03-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/contribute%20to%20a%20project%20with%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/contribute-to-a-project-with-git.html">&lt;p&gt;Based on http://qpleple.com/how-to-contribute-to-a-project-on-github/&lt;/p&gt;
+&lt;p&gt;https://excalidraw.com/&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
 
-&lt;h2 id=&quot;using-clustergit-as-an-example&quot;&gt;Using clustergit as an example&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Fork&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Make your own working copy of the project by forking it: go on the project page (https://github.com/mnagel/clustergit) and click “Fork”. You can access you copy at: https://github.com/castorfou/clustergit&lt;/p&gt;
+&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Clone&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Clone your fork git repository on your local computer:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:castorfou/clustergit.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Branch&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch master-to-main
-git checkout master-to-main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This is very important, create one branch per patch. And never submit a patch that has been done on the branch &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Develop&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;week-14---apr-21&quot;&gt;Week 14 - Apr 21&lt;/h2&gt;
 
-&lt;p&gt;Here I want to reflect change from Oct/20 where default branch name in github is now main&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wednesday 4/7&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/master/main/g'&lt;/span&gt; clustergit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1908.07442&quot;&gt;tabnet&lt;/a&gt;: pytorch (and fastai with Zach Mueller) implementations&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Commit&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thursday 4/8&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;default branch name 'main'&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416851/?view=&quot;&gt;Evolutionary Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Push to github&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jupyter notebook turned into &lt;a href=&quot;https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/&quot;&gt;slides with RISE&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master-to-main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416841/?view=&quot;&gt;Micro-data Policy Search&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Create pull request&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Friday 4/9&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Go on your fork page (https://github.com/castorfou/clustergit), then select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master-to-main&lt;/code&gt; in the branch list and click “Pull Request”.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Submit patch&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;setup &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt; to workaround wsl2 and network issues (explained &lt;a href=&quot;/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;Check the diff, write a message explaining what you have done and why the repository owner should accept your pull request and submit.&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">Based on http://qpleple.com/how-to-contribute-to-a-project-on-github/</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;install &lt;a href=&quot;&quot;&gt;wsl2-cuda-conda&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;week-15---apr-21&quot;&gt;Week 15 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/15&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Learning for Information Extraction (lecture 9).&lt;/p&gt;
+
+&lt;h2 id=&quot;week-16---apr-21&quot;&gt;Week 16 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday 4/20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;How To run &lt;a href=&quot;https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1&quot;&gt;macOS on KVM / QEMU&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 4/21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enrolled to &lt;a href=&quot;https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by scikit-learn team!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c&quot;&gt;Audio classification&lt;/a&gt; with pytorch&lt;/p&gt;
+
+&lt;h2 id=&quot;week-17---apr-21&quot;&gt;Week 17 - Apr 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 4/26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/bayesian-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Bayesian Data Analysis in Python, at the end, &lt;a href=&quot;http://allendowney.github.io/ThinkBayes2/&quot;&gt;Think Bayes 2&lt;/a&gt; by Allen B.Downey&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday 4/27&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Value Function Approximation (lecture 6)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Taming Dataset Bias (lecture 10)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 4/28&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/courses/exploratory-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Exploratory Data Analysis in Python, by Allen B.Downey (that’s why)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 4/29&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/working-with-dates-and-times-in-python&quot;&gt;datacamp&lt;/a&gt; - Working with date and time, quite interesting to see timezones considerations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday 4/30&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/cleaning-data-in-python&quot;&gt;datacamp&lt;/a&gt; - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Towards AI for 3D Content Creation (lecture 11) and AI in Healthcare (lecture 12) and this is the end of this course&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
