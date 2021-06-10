@@ -8,6 +8,10 @@ categories: [reinforcement learning, deepmind]
 image: images/RL.png
 ---
 
+Coursera website:  [course 3 - Prediction and Control with Function Approximation](https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome) of [Reinforcement Learning Specialization](https://www.coursera.org/specializations/reinforcement-learning)
+
+
+
 my notes on [course 1 - Fundamentals of Reinforcement Learning](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html), [course 2 - Sample-based Learning Methods](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html)
 
 **specialization roadmap** - course 3 - **Prediction and Control with Function Approximation** [(syllabus)](https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/course%203%20-%20function%20approximation/Course-3_Prediction-and-Control-with-Function-Approximation-Learning-Objectives.pdf)

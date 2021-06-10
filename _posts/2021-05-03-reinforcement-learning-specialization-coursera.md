@@ -8,6 +8,12 @@ categories: [reinforcement learning, deepmind]
 image: images/RL.png
 ---
 
+Coursera website:  [course 1 - Fundamentals of Reinforcement Learning](https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/home/welcome) of [Reinforcement Learning Specialization](https://www.coursera.org/specializations/reinforcement-learning)
+
+
+
+my notes on [course 2 - Sample-based Learning Methods](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html), [course 3 - Prediction and Control with Function Approximation](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html)
+
 
 
 [Syllabus](https://www.coursera.org/specializations/reinforcement-learning)

@@ -8,7 +8,11 @@ categories: [reinforcement learning, deepmind]
 image: images/RL.png
 ---
 
-my notes on [course 1](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html)
+Coursera website:  [course 2 - Sample-based Learning Methods](https://www.coursera.org/learn/sample-based-learning-methods/home/welcome) of [Reinforcement Learning Specialization](https://www.coursera.org/specializations/reinforcement-learning)
+
+
+
+my notes on [course 1 - Fundamentals of Reinforcement Learning](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html), [course 3 - Prediction and Control with Function Approximation](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html)
 
 **specialization roadmap** - course 2 - **Sample-based Learning Methods**
 
