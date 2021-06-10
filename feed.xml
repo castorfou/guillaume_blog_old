@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-10T01:38:08-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-10T07:38:08-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
 
@@ -155,7 +155,100 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;TD with State Aggregation&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%201&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 3 - Prediction and Control with Function Approximation of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%201&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;course-3---week-2---constructing-features-for-prediction&quot;&gt;Course 3 - Week 2 - Constructing Features for Prediction&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-2-learning-objectives&quot;&gt;Module 2 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Feature Construction for Linear Methods&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describe the difference between coarse coding and tabular representations&lt;/li&gt;
+  &lt;li&gt;Explain the trade-off when designing representations between discrimination and generalization&lt;/li&gt;
+  &lt;li&gt;Understand how different coarse coding schemes affect the functions that can be represented&lt;/li&gt;
+  &lt;li&gt;Explain how tile coding is a (computationally?) convenient case of coarse coding&lt;/li&gt;
+  &lt;li&gt;Describe how designing the tilings affects the resultant representation&lt;/li&gt;
+  &lt;li&gt;Understand that tile coding is a computationally efficient implementation of coarse coding&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Neural Networks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Define a neural network&lt;/li&gt;
+  &lt;li&gt;Define activation functions&lt;/li&gt;
+  &lt;li&gt;Define a feedforward architecture&lt;/li&gt;
+  &lt;li&gt;Understand how neural networks are doing feature construction&lt;/li&gt;
+  &lt;li&gt;Understand how neural networks are a non-linear function of state&lt;/li&gt;
+  &lt;li&gt;Understand how deep networks are a composition of layers&lt;/li&gt;
+  &lt;li&gt;Understand the tradeoff between learning capacity and challenges presented by deeper networks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Training Neural Networks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Compute the gradient of a single hidden layer neural network&lt;/li&gt;
+  &lt;li&gt;Understand how to compute the gradient for arbitrarily deep networks&lt;/li&gt;
+  &lt;li&gt;Understand the importance of initialization for neural networks&lt;/li&gt;
+  &lt;li&gt;Describe strategies for initializing neural networks&lt;/li&gt;
+  &lt;li&gt;Describe optimization techniques for training neural networks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-feature-construction-for-linear-methods&quot;&gt;&lt;strong&gt;Lesson 1: Feature Construction for Linear Methods&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 9.4-9.5.0 &lt;strong&gt;(pp. 204-210)&lt;/strong&gt;, 9.5.3-9.5.4 &lt;strong&gt;(pp. 215-222)&lt;/strong&gt; and 9.7 &lt;strong&gt;(pp. 223-228)&lt;/strong&gt; in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Coarse Coding&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;coarse coding&lt;/strong&gt; and &lt;em&gt;describe&lt;/em&gt; how it relates to &lt;strong&gt;state aggregation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W2_coarse_coding.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Generalization Properties of Coarse Coding&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; how &lt;strong&gt;coarse coding parameters&lt;/strong&gt; affect &lt;strong&gt;generalization&lt;/strong&gt; and &lt;strong&gt;discrimination&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; how that affects &lt;strong&gt;learning speed and accuracy&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Tile Coding&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how &lt;strong&gt;tile coding&lt;/strong&gt; achieves both &lt;strong&gt;generalization&lt;/strong&gt; and &lt;strong&gt;discrimination&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; the benefits and limitations of tile coding.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Using Tile Coding in TD&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; how to use &lt;strong&gt;tile coding&lt;/strong&gt; with &lt;strong&gt;TD learning&lt;/strong&gt; and &lt;em&gt;identify&lt;/em&gt; important properties of &lt;strong&gt;tile code representations&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-neural-networks&quot;&gt;&lt;strong&gt;Lesson 2: Neural Networks&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video What is a Neural Network?&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;define&lt;/em&gt; a &lt;strong&gt;neural network&lt;/strong&gt;, &lt;em&gt;define&lt;/em&gt; an &lt;strong&gt;activation function&lt;/strong&gt; and &lt;em&gt;understand&lt;/em&gt; how a neural network is a &lt;strong&gt;parameterized function&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Non-linear Approximation with Neural Networks&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;understand&lt;/em&gt; how neural networks do &lt;strong&gt;feature construction&lt;/strong&gt;, and &lt;em&gt;understand&lt;/em&gt; how neural networks are a &lt;strong&gt;non-linear function&lt;/strong&gt; of state.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Deep Neural Networks&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;understand&lt;/em&gt; how &lt;strong&gt;deep neural networks&lt;/strong&gt; are composed of &lt;strong&gt;many layers&lt;/strong&gt; and &lt;em&gt;understand&lt;/em&gt; that &lt;strong&gt;depth&lt;/strong&gt; can facilitate learning &lt;strong&gt;features&lt;/strong&gt; through &lt;strong&gt;composition&lt;/strong&gt; and &lt;strong&gt;abstraction&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-training-neural-networks&quot;&gt;&lt;strong&gt;Lesson 3: Training Neural Networks&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Gradient Descent for Training Neural Networks&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;derive&lt;/em&gt; the &lt;strong&gt;gradient&lt;/strong&gt; of a neural network and &lt;em&gt;implement&lt;/em&gt; &lt;strong&gt;gradient descent&lt;/strong&gt; on a neural network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Optimization Strategies for NNs&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;understand&lt;/em&gt; the importance of &lt;strong&gt;initialization&lt;/strong&gt; for neural networks and &lt;em&gt;describe&lt;/em&gt; &lt;strong&gt;optimization techniques&lt;/strong&gt; for training neural networks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video David Silver on Deep Learning + RL = AI?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 2 Review&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment-1&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Semi-gradient TD with a Neural Network&lt;/p&gt;
+
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 3 - Prediction and Control with Function Approximation of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -185,7 +278,11 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;&lt;strong&gt;Monday 6/7&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W1 - On-policy Prediction with Approximation&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W1 - On-policy Prediction with Approximation&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 6/10&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W2 - Constructing Features for Prediction&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
 

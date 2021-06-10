@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -123,6 +123,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#lesson-3-the-objective-for-td">Lesson 3: The Objective for TD</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-4-linear-td">Lesson 4: Linear TD</a></li>
 <li class="toc-entry toc-h6"><a href="#assignment">Assignment</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#course-3---week-2---constructing-features-for-prediction">Course 3 - Week 2 - Constructing Features for Prediction</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-2-learning-objectives">Module 2 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-feature-construction-for-linear-methods">Lesson 1: Feature Construction for Linear Methods</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-neural-networks">Lesson 2: Neural Networks</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-training-neural-networks">Lesson 3: Training Neural Networks</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment-1">Assignment</a></li>
 </ul>
 </li>
 </ul><p>Coursera website:  <a href="https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome">course 3 - Prediction and Control with Function Approximation</a> of <a href="https://www.coursera.org/specializations/reinforcement-learning">Reinforcement Learning Specialization</a></p>
@@ -294,6 +303,108 @@ This is the <strong>Mean Squared Value Error Objective</strong> where $\mu$ refl
 <p>TD with State Aggregation</p>
 
 <p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%201">github</a></p>
+
+<h2 id="course-3---week-2---constructing-features-for-prediction">
+<a class="anchor" href="#course-3---week-2---constructing-features-for-prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course 3 - Week 2 - Constructing Features for Prediction</h2>
+
+<h6 id="module-2-learning-objectives">
+<a class="anchor" href="#module-2-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 2 Learning Objectives</h6>
+
+<p><strong>Lesson 1: Feature Construction for Linear Methods</strong></p>
+
+<ul>
+  <li>Describe the difference between coarse coding and tabular representations</li>
+  <li>Explain the trade-off when designing representations between discrimination and generalization</li>
+  <li>Understand how different coarse coding schemes affect the functions that can be represented</li>
+  <li>Explain how tile coding is a (computationally?) convenient case of coarse coding</li>
+  <li>Describe how designing the tilings affects the resultant representation</li>
+  <li>Understand that tile coding is a computationally efficient implementation of coarse coding</li>
+</ul>
+
+<p><strong>Lesson 2: Neural Networks</strong></p>
+
+<ul>
+  <li>Define a neural network</li>
+  <li>Define activation functions</li>
+  <li>Define a feedforward architecture</li>
+  <li>Understand how neural networks are doing feature construction</li>
+  <li>Understand how neural networks are a non-linear function of state</li>
+  <li>Understand how deep networks are a composition of layers</li>
+  <li>Understand the tradeoff between learning capacity and challenges presented by deeper networks</li>
+</ul>
+
+<p><strong>Lesson 3: Training Neural Networks</strong></p>
+
+<ul>
+  <li>Compute the gradient of a single hidden layer neural network</li>
+  <li>Understand how to compute the gradient for arbitrarily deep networks</li>
+  <li>Understand the importance of initialization for neural networks</li>
+  <li>Describe strategies for initializing neural networks</li>
+  <li>Describe optimization techniques for training neural networks</li>
+</ul>
+
+<h6 id="lesson-1-feature-construction-for-linear-methods">
+<a class="anchor" href="#lesson-1-feature-construction-for-linear-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 1: Feature Construction for Linear Methods</strong>
+</h6>
+
+<p><strong>Reading</strong> Chapter 9.4-9.5.0 <strong>(pp. 204-210)</strong>, 9.5.3-9.5.4 <strong>(pp. 215-222)</strong> and 9.7 <strong>(pp. 223-228)</strong> in the Reinforcement Learning textbook</p>
+
+<p><strong>Video Coarse Coding</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> <strong>coarse coding</strong> and <em>describe</em> how it relates to <strong>state aggregation</strong>.</p>
+
+<p><img src="../images/C3W2_coarse_coding.png" alt=""></p>
+
+<p><strong>Video Generalization Properties of Coarse Coding</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> how <strong>coarse coding parameters</strong> affect <strong>generalization</strong> and <strong>discrimination</strong>, and <em>understand</em> how that affects <strong>learning speed and accuracy</strong>.</p>
+
+<p><strong>Video Tile Coding</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>explain</em> how <strong>tile coding</strong> achieves both <strong>generalization</strong> and <strong>discrimination</strong>, and <em>understand</em> the benefits and limitations of tile coding.</p>
+
+<p><strong>Video Using Tile Coding in TD</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>explain</em> how to use <strong>tile coding</strong> with <strong>TD learning</strong> and <em>identify</em> important properties of <strong>tile code representations</strong>.</p>
+
+<h6 id="lesson-2-neural-networks">
+<a class="anchor" href="#lesson-2-neural-networks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 2: Neural Networks</strong>
+</h6>
+
+<p><strong>Video What is a Neural Network?</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>define</em> a <strong>neural network</strong>, <em>define</em> an <strong>activation function</strong> and <em>understand</em> how a neural network is a <strong>parameterized function</strong>.</p>
+
+<p><strong>Video Non-linear Approximation with Neural Networks</strong> by Martha</p>
+
+<p>By the end of this video, you will <em>understand</em> how neural networks do <strong>feature construction</strong>, and <em>understand</em> how neural networks are a <strong>non-linear function</strong> of state.</p>
+
+<p><strong>Video Deep Neural Networks</strong> by Adam</p>
+
+<p>By the end of this video, you will <em>understand</em> how <strong>deep neural networks</strong> are composed of <strong>many layers</strong> and <em>understand</em> that <strong>depth</strong> can facilitate learning <strong>features</strong> through <strong>composition</strong> and <strong>abstraction</strong>.</p>
+
+<h6 id="lesson-3-training-neural-networks">
+<a class="anchor" href="#lesson-3-training-neural-networks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 3: Training Neural Networks</strong>
+</h6>
+
+<p><strong>Video Gradient Descent for Training Neural Networks</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>derive</em> the <strong>gradient</strong> of a neural network and <em>implement</em> <strong>gradient descent</strong> on a neural network.</p>
+
+<p><strong>Video Optimization Strategies for NNs</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>understand</em> the importance of <strong>initialization</strong> for neural networks and <em>describe</em> <strong>optimization techniques</strong> for training neural networks.</p>
+
+<p><strong>Video David Silver on Deep Learning + RL = AI?</strong></p>
+
+<p><strong>Video Week 2 Review</strong> by Adam</p>
+
+<h6 id="assignment-1">
+<a class="anchor" href="#assignment-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Semi-gradient TD with a Neural Network</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202">github</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
