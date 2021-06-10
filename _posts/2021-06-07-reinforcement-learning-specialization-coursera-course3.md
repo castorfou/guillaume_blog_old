@@ -198,3 +198,100 @@ TD with State Aggregation
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%201)
 
+
+
+## Course 3 - Week 2 - Constructing Features for Prediction
+
+###### Module 2 Learning Objectives
+
+**Lesson 1: Feature Construction for Linear Methods** 
+
+- Describe the difference between coarse coding and tabular representations 
+- Explain the trade-off when designing representations between discrimination and generalization 
+- Understand how different coarse coding schemes affect the functions that can be represented 
+- Explain how tile coding is a (computationally?) convenient case of coarse coding 
+- Describe how designing the tilings affects the resultant representation 
+- Understand that tile coding is a computationally efficient implementation of coarse coding 
+
+**Lesson 2: Neural Networks** 
+
+- Define a neural network
+- Define activation functions
+- Define a feedforward architecture 
+- Understand how neural networks are doing feature construction 
+- Understand how neural networks are a non-linear function of state 
+- Understand how deep networks are a composition of layers 
+- Understand the tradeoff between learning capacity and challenges presented by deeper networks 
+
+**Lesson 3: Training Neural Networks** 
+
+- Compute the gradient of a single hidden layer neural network 
+- Understand how to compute the gradient for arbitrarily deep networks 
+- Understand the importance of initialization for neural networks 
+- Describe strategies for initializing neural networks 
+- Describe optimization techniques for training neural networks
+
+
+
+###### **Lesson 1: Feature Construction for Linear Methods** 
+
+**Reading** Chapter 9.4-9.5.0 **(pp. 204-210)**, 9.5.3-9.5.4 **(pp. 215-222)** and 9.7 **(pp. 223-228)** in the Reinforcement Learning textbook
+
+**Video Coarse Coding** by Adam
+
+By the end of this video, you'll be able to *describe* **coarse coding** and *describe* how it relates to **state aggregation**. 
+
+![](../images/C3W2_coarse_coding.png)
+
+**Video Generalization Properties of Coarse Coding** by Martha
+
+By the end of this video, you'll be able to *describe* how **coarse coding parameters** affect **generalization** and **discrimination**, and *understand* how that affects **learning speed and accuracy**. 
+
+**Video Tile Coding** by Adam
+
+By the end of this video, you'll be able to *explain* how **tile coding** achieves both **generalization** and **discrimination**, and *understand* the benefits and limitations of tile coding. 
+
+**Video Using Tile Coding in TD** by Adam
+
+By the end of this video, you'll be able to *explain* how to use **tile coding** with **TD learning** and *identify* important properties of **tile code representations**. 
+
+
+
+###### **Lesson 2: Neural Networks** 
+
+**Video What is a Neural Network?** by Martha
+
+By the end of this video, you'll be able to *define* a **neural network**, *define* an **activation function** and *understand* how a neural network is a **parameterized function**. 
+
+**Video Non-linear Approximation with Neural Networks** by Martha
+
+By the end of this video, you will *understand* how neural networks do **feature construction**, and *understand* how neural networks are a **non-linear function** of state. 
+
+**Video Deep Neural Networks** by Adam
+
+By the end of this video, you will *understand* how **deep neural networks** are composed of **many layers** and *understand* that **depth** can facilitate learning **features** through **composition** and **abstraction**. 
+
+
+
+###### **Lesson 3: Training Neural Networks** 
+
+**Video Gradient Descent for Training Neural Networks** by Martha
+
+By the end of this video, you'll be able to *derive* the **gradient** of a neural network and *implement* **gradient descent** on a neural network. 
+
+**Video Optimization Strategies for NNs** by Martha
+
+By the end of this video, you will be able to *understand* the importance of **initialization** for neural networks and *describe* **optimization techniques** for training neural networks. 
+
+**Video David Silver on Deep Learning + RL = AI?**
+
+**Video Week 2 Review** by Adam
+
+
+
+###### Assignment
+
+Semi-gradient TD with a Neural Network
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202)
+

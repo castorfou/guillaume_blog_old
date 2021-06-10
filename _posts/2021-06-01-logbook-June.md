@@ -44,3 +44,7 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W1 - On-policy Prediction with Approximation
 
+**Thursday 6/10**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W2 - Constructing Features for Prediction
+
