@@ -295,3 +295,74 @@ Semi-gradient TD with a Neural Network
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202)
 
+
+
+## Course 3 - Week 3 - Control with Approximation
+
+###### Module 3 Learning Objectives
+
+**Lesson 1: Episodic Sarsa with Function Approximation** 
+
+- Explain the update for Episodic Sarsa with function approximation 
+- Introduce the feature choices, including passing actions to features or stacking state features 
+- Visualize value function and learning curves 
+- Discuss how this extends to Q-learning easily, since it is a subset of Expected Sarsa 
+
+**Lesson 2: Exploration under Function Approximation** 
+
+- Understanding optimistically initializing your value function as a form of exploration
+
+**Lesson 3: Average Reward** 
+
+- Describe the average reward setting 
+- Explain when average reward optimal policies are different from discounted solutions 
+- Understand how differential value functions are different from discounted value functions
+
+###### **Lesson 1: Episodic Sarsa with Function Approximation** 
+
+**Reading** Chapter 10 **(pp. 243-246)** and 10.3 **(pp. 249-252)** in the Reinforcement Learning textbook
+
+**Video Episodic Sarsa with Function Approximation** by Adam
+
+By the end of this video, you'll be able to *understand* how to construct **action-dependent features** for approximate action values and *explain* how to use **Sarsa** in **episodic tasks** with **function approximation**. 
+
+![](../images/C3W3_episodic_sarsa_appro.png)
+
+**Video Episodic Sarsa in Mountain Car** by Adam
+
+By the end of this video, you will *gain experience* analyzing the performance of an **approximate TD control** method. 
+
+**Video Expected Sarsa with Function Approximation** by Adam
+
+By the end of this video, you'll be able to *explain* the update for **expected Sarsa** with **function approximation**, and *explain* the update for **Q-learning** with **function approximation**. 
+
+![](../images/C3W3_expected_sarsa_q_learning.png)
+
+
+
+###### **Lesson 2: Exploration under Function Approximation** 
+
+**Video Exploration under Function Approximation** by Martha
+
+By the end of this video, you'll be able to *describe* how **optimistic initial values** and **$\epsilon$-greedy** can be used with **function approximation**. 
+
+
+
+###### **Lesson 3: Average Reward** 
+
+**Video Average Reward: A New Way of Formulating Control Problems** by Martha
+
+By the end of this video, you'll be able to *describe* the **average reward** setting, *explain* when **average reward** optimal policies are different from policies obtained under discounting and *understand* **differential value functions**. 
+
+**Satinder Singh on Intrinsic Rewards**
+
+**Video Week 3 Review** by Martha
+
+
+
+###### Assignment
+
+Function Approximation and Control
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203)
+
