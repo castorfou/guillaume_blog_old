@@ -312,3 +312,12 @@ Beyond linear separation in classification: [logistic_regression_non_linear.ipyn
 > - regularization can be used to reduce over-fitting: weight coefficients are constrained to stay small when fitting;
 > - the regularization hyperparameter needs to be fine-tuned by cross-validation for each new machine learning problem and dataset;
 > - linear models can be used on problems where the target variable is not linearly related to the input features but this requires extra feature engineering work to transform the data in order to avoid under-fitting.
+
+
+
+## Module 5. Decision tree models
+
+###### Intuitions on tree-based models
+
+video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1)
+

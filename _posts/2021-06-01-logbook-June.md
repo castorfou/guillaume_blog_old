@@ -48,3 +48,7 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W2 - Constructing Features for Prediction
 
+**Friday 6/11**
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 5. Decision tree models
+
