@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-11T03:38:42-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-11T08:25:09-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
 
@@ -248,7 +248,76 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;Semi-gradient TD with a Neural Network&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 3 - Prediction and Control with Function Approximation of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;course-3---week-3---control-with-approximation&quot;&gt;Course 3 - Week 3 - Control with Approximation&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-3-learning-objectives&quot;&gt;Module 3 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Episodic Sarsa with Function Approximation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Explain the update for Episodic Sarsa with function approximation&lt;/li&gt;
+  &lt;li&gt;Introduce the feature choices, including passing actions to features or stacking state features&lt;/li&gt;
+  &lt;li&gt;Visualize value function and learning curves&lt;/li&gt;
+  &lt;li&gt;Discuss how this extends to Q-learning easily, since it is a subset of Expected Sarsa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Exploration under Function Approximation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understanding optimistically initializing your value function as a form of exploration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Average Reward&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describe the average reward setting&lt;/li&gt;
+  &lt;li&gt;Explain when average reward optimal policies are different from discounted solutions&lt;/li&gt;
+  &lt;li&gt;Understand how differential value functions are different from discounted value functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-episodic-sarsa-with-function-approximation&quot;&gt;&lt;strong&gt;Lesson 1: Episodic Sarsa with Function Approximation&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 10 &lt;strong&gt;(pp. 243-246)&lt;/strong&gt; and 10.3 &lt;strong&gt;(pp. 249-252)&lt;/strong&gt; in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Episodic Sarsa with Function Approximation&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;understand&lt;/em&gt; how to construct &lt;strong&gt;action-dependent features&lt;/strong&gt; for approximate action values and &lt;em&gt;explain&lt;/em&gt; how to use &lt;strong&gt;Sarsa&lt;/strong&gt; in &lt;strong&gt;episodic tasks&lt;/strong&gt; with &lt;strong&gt;function approximation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W3_episodic_sarsa_appro.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Episodic Sarsa in Mountain Car&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will &lt;em&gt;gain experience&lt;/em&gt; analyzing the performance of an &lt;strong&gt;approximate TD control&lt;/strong&gt; method.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Expected Sarsa with Function Approximation&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;explain&lt;/em&gt; the update for &lt;strong&gt;expected Sarsa&lt;/strong&gt; with &lt;strong&gt;function approximation&lt;/strong&gt;, and &lt;em&gt;explain&lt;/em&gt; the update for &lt;strong&gt;Q-learning&lt;/strong&gt; with &lt;strong&gt;function approximation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W3_expected_sarsa_q_learning.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-exploration-under-function-approximation&quot;&gt;&lt;strong&gt;Lesson 2: Exploration under Function Approximation&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Exploration under Function Approximation&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; how &lt;strong&gt;optimistic initial values&lt;/strong&gt; and &lt;strong&gt;$\epsilon$-greedy&lt;/strong&gt; can be used with &lt;strong&gt;function approximation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-average-reward&quot;&gt;&lt;strong&gt;Lesson 3: Average Reward&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Average Reward: A New Way of Formulating Control Problems&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; the &lt;strong&gt;average reward&lt;/strong&gt; setting, &lt;em&gt;explain&lt;/em&gt; when &lt;strong&gt;average reward&lt;/strong&gt; optimal policies are different from policies obtained under discounting and &lt;em&gt;understand&lt;/em&gt; &lt;strong&gt;differential value functions&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Satinder Singh on Intrinsic Rewards&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 3 Review&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment-2&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Function Approximation and Control&lt;/p&gt;
+
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 3 - Prediction and Control with Function Approximation of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -286,7 +355,9 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;&lt;strong&gt;Friday 6/11&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; module 5. Decision tree models&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; module 5. Decision tree models&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W3 - Control with Approximation&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
 

@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      11 min read
     
 </span></p>
 
@@ -132,6 +132,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#lesson-2-neural-networks">Lesson 2: Neural Networks</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-3-training-neural-networks">Lesson 3: Training Neural Networks</a></li>
 <li class="toc-entry toc-h6"><a href="#assignment-1">Assignment</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#course-3---week-3---control-with-approximation">Course 3 - Week 3 - Control with Approximation</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-3-learning-objectives">Module 3 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-episodic-sarsa-with-function-approximation">Lesson 1: Episodic Sarsa with Function Approximation</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-exploration-under-function-approximation">Lesson 2: Exploration under Function Approximation</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-average-reward">Lesson 3: Average Reward</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment-2">Assignment</a></li>
 </ul>
 </li>
 </ul><p>Coursera website:  <a href="https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome">course 3 - Prediction and Control with Function Approximation</a> of <a href="https://www.coursera.org/specializations/reinforcement-learning">Reinforcement Learning Specialization</a></p>
@@ -405,6 +414,84 @@ This is the <strong>Mean Squared Value Error Objective</strong> where $\mu$ refl
 <p>Semi-gradient TD with a Neural Network</p>
 
 <p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%202">github</a></p>
+
+<h2 id="course-3---week-3---control-with-approximation">
+<a class="anchor" href="#course-3---week-3---control-with-approximation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course 3 - Week 3 - Control with Approximation</h2>
+
+<h6 id="module-3-learning-objectives">
+<a class="anchor" href="#module-3-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 3 Learning Objectives</h6>
+
+<p><strong>Lesson 1: Episodic Sarsa with Function Approximation</strong></p>
+
+<ul>
+  <li>Explain the update for Episodic Sarsa with function approximation</li>
+  <li>Introduce the feature choices, including passing actions to features or stacking state features</li>
+  <li>Visualize value function and learning curves</li>
+  <li>Discuss how this extends to Q-learning easily, since it is a subset of Expected Sarsa</li>
+</ul>
+
+<p><strong>Lesson 2: Exploration under Function Approximation</strong></p>
+
+<ul>
+  <li>Understanding optimistically initializing your value function as a form of exploration</li>
+</ul>
+
+<p><strong>Lesson 3: Average Reward</strong></p>
+
+<ul>
+  <li>Describe the average reward setting</li>
+  <li>Explain when average reward optimal policies are different from discounted solutions</li>
+  <li>Understand how differential value functions are different from discounted value functions</li>
+</ul>
+
+<h6 id="lesson-1-episodic-sarsa-with-function-approximation">
+<a class="anchor" href="#lesson-1-episodic-sarsa-with-function-approximation" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 1: Episodic Sarsa with Function Approximation</strong>
+</h6>
+
+<p><strong>Reading</strong> Chapter 10 <strong>(pp. 243-246)</strong> and 10.3 <strong>(pp. 249-252)</strong> in the Reinforcement Learning textbook</p>
+
+<p><strong>Video Episodic Sarsa with Function Approximation</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>understand</em> how to construct <strong>action-dependent features</strong> for approximate action values and <em>explain</em> how to use <strong>Sarsa</strong> in <strong>episodic tasks</strong> with <strong>function approximation</strong>.</p>
+
+<p><img src="../images/C3W3_episodic_sarsa_appro.png" alt=""></p>
+
+<p><strong>Video Episodic Sarsa in Mountain Car</strong> by Adam</p>
+
+<p>By the end of this video, you will <em>gain experience</em> analyzing the performance of an <strong>approximate TD control</strong> method.</p>
+
+<p><strong>Video Expected Sarsa with Function Approximation</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>explain</em> the update for <strong>expected Sarsa</strong> with <strong>function approximation</strong>, and <em>explain</em> the update for <strong>Q-learning</strong> with <strong>function approximation</strong>.</p>
+
+<p><img src="../images/C3W3_expected_sarsa_q_learning.png" alt=""></p>
+
+<h6 id="lesson-2-exploration-under-function-approximation">
+<a class="anchor" href="#lesson-2-exploration-under-function-approximation" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 2: Exploration under Function Approximation</strong>
+</h6>
+
+<p><strong>Video Exploration under Function Approximation</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> how <strong>optimistic initial values</strong> and <strong>$\epsilon$-greedy</strong> can be used with <strong>function approximation</strong>.</p>
+
+<h6 id="lesson-3-average-reward">
+<a class="anchor" href="#lesson-3-average-reward" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 3: Average Reward</strong>
+</h6>
+
+<p><strong>Video Average Reward: A New Way of Formulating Control Problems</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> the <strong>average reward</strong> setting, <em>explain</em> when <strong>average reward</strong> optimal policies are different from policies obtained under discounting and <em>understand</em> <strong>differential value functions</strong>.</p>
+
+<p><strong>Satinder Singh on Intrinsic Rewards</strong></p>
+
+<p><strong>Video Week 3 Review</strong> by Martha</p>
+
+<h6 id="assignment-2">
+<a class="anchor" href="#assignment-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Function Approximation and Control</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203">github</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
