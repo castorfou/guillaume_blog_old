@@ -321,3 +321,81 @@ Beyond linear separation in classification: [logistic_regression_non_linear.ipyn
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1)
 
+
+
+###### Decision tree in classification
+
+Build a classification decision tree: [trees_classification.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_classification.ipynb)
+
+Exercise M5.01: [trees_ex_01.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_ex_01.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_sol_01.ipynb)
+
+
+
+Fit and decision boundaries
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+import seaborn as sns
+
+# create a palette to be used in the scatterplot
+palette = ["tab:red", "tab:blue", "black"]
+
+tree = DecisionTreeClassifier(max_depth=2)
+tree.fit(data_train, target_train)
+
+ax = sns.scatterplot(data=penguins, x=culmen_columns[0], y=culmen_columns[1],
+                     hue=target_column, palette=palette)
+plot_decision_function(tree, range_features, ax=ax)
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+_ = plt.title("Decision boundary using a decision tree")
+```
+
+Decision tree
+
+```python
+from sklearn.tree import plot_tree
+
+_, ax = plt.subplots(figsize=(17, 12))
+_ = plot_tree(tree, feature_names=culmen_columns,
+              class_names=tree.classes_, impurity=False, ax=ax)
+```
+
+Accuracy
+
+```python
+tree.fit(data_train, target_train)
+test_score = tree.score(data_test, target_test)
+print(f"Accuracy of the DecisionTreeClassifier: {test_score:.2f}")
+```
+
+
+
+###### Decision tree in regression
+
+Decision tree for regression: [trees_regression.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_regression.ipynb)
+
+Exercise M5.02: [trees_ex_02.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_ex_02.ipynb) [solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_sol_02.ipynb)
+
+
+
+###### Hyperparameters of decision tree
+
+Importance of decision tree hyperparameters on generalization: [trees_hyperparameters.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_hyperparameters.ipynb)
+
+
+
+###### Wrap-up quiz
+
+[module 5 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/trees/module 5 - wrap-up-quizz.ipynb)
+
+[Main take-away | Main take-away | 41026 Courseware | FUN-MOOC](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/courseware/6565c007789a4812aea0debb1fb22e0f/0ab58cb806034cdba7bd49e8dd784202/)
+
+
+
+> In this module, we presented decision trees in details. We saw that they:
+>
+> - are suited for both regression and classification problems;
+> - are non-parametric models;
+> - are not able to extrapolate;
+> - are sensible to hyperparameter tuning.
+
