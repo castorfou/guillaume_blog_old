@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -151,6 +151,10 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#module-5-decision-tree-models">Module 5. Decision tree models</a>
 <ul>
 <li class="toc-entry toc-h6"><a href="#intuitions-on-tree-based-models">Intuitions on tree-based models</a></li>
+<li class="toc-entry toc-h6"><a href="#decision-tree-in-classification">Decision tree in classification</a></li>
+<li class="toc-entry toc-h6"><a href="#decision-tree-in-regression">Decision tree in regression</a></li>
+<li class="toc-entry toc-h6"><a href="#hyperparameters-of-decision-tree">Hyperparameters of decision tree</a></li>
+<li class="toc-entry toc-h6"><a href="#wrap-up-quiz-4">Wrap-up quiz</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -461,6 +465,86 @@ conda activate scikit-learn-course
 <a class="anchor" href="#intuitions-on-tree-based-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intuitions on tree-based models</h6>
 
 <p>video and <a href="https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1">slides</a></p>
+
+<h6 id="decision-tree-in-classification">
+<a class="anchor" href="#decision-tree-in-classification" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decision tree in classification</h6>
+
+<p>Build a classification decision tree: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_classification.ipynb">trees_classification.ipynb</a></p>
+
+<p>Exercise M5.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_ex_01.ipynb">trees_ex_01.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_sol_01.ipynb">solution</a></p>
+
+<p>Fit and decision boundaries</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+
+<span class="c1"># create a palette to be used in the scatterplot
+</span><span class="n">palette</span> <span class="o">=</span> <span class="p">[</span><span class="s">"tab:red"</span><span class="p">,</span> <span class="s">"tab:blue"</span><span class="p">,</span> <span class="s">"black"</span><span class="p">]</span>
+
+<span class="n">tree</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">tree</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data_train</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="p">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">penguins</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">culmen_columns</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">culmen_columns</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">hue</span><span class="o">=</span><span class="n">target_column</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">palette</span><span class="p">)</span>
+<span class="n">plot_decision_function</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">range_features</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s">'upper left'</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Decision boundary using a decision tree"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Decision tree</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">plot_tree</span>
+
+<span class="n">_</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">plot_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">culmen_columns</span><span class="p">,</span>
+              <span class="n">class_names</span><span class="o">=</span><span class="n">tree</span><span class="p">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">impurity</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Accuracy</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tree</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data_train</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+<span class="n">test_score</span> <span class="o">=</span> <span class="n">tree</span><span class="p">.</span><span class="n">score</span><span class="p">(</span><span class="n">data_test</span><span class="p">,</span> <span class="n">target_test</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f"Accuracy of the DecisionTreeClassifier: </span><span class="si">{</span><span class="n">test_score</span><span class="p">:.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h6 id="decision-tree-in-regression">
+<a class="anchor" href="#decision-tree-in-regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decision tree in regression</h6>
+
+<p>Decision tree for regression: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_regression.ipynb">trees_regression.ipynb</a></p>
+
+<p>Exercise M5.02: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_ex_02.ipynb">trees_ex_02.ipynb</a> <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_sol_02.ipynb">solution</a></p>
+
+<h6 id="hyperparameters-of-decision-tree">
+<a class="anchor" href="#hyperparameters-of-decision-tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hyperparameters of decision tree</h6>
+
+<p>Importance of decision tree hyperparameters on generalization: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/trees_hyperparameters.ipynb">trees_hyperparameters.ipynb</a></p>
+
+<h6 id="wrap-up-quiz-4">
+<a class="anchor" href="#wrap-up-quiz-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
+
+<p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/trees/module%205%20-%20wrap-up-quizz.ipynb">module 5 - wrap-up quizz.ipynb</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Main take-away</td>
+      <td>Main take-away</td>
+      <td>41026 Courseware</td>
+      <td>FUN-MOOC](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/courseware/6565c007789a4812aea0debb1fb22e0f/0ab58cb806034cdba7bd49e8dd784202/)</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>In this module, we presented decision trees in details. We saw that they:</p>
+
+  <ul>
+    <li>are suited for both regression and classification problems;</li>
+    <li>are non-parametric models;</li>
+    <li>are not able to extrapolate;</li>
+    <li>are sensible to hyperparameter tuning.</li>
+  </ul>
+</blockquote>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
