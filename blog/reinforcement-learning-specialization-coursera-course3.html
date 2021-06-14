@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      14 min read
     
 </span></p>
 
@@ -141,6 +141,16 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#lesson-2-exploration-under-function-approximation">Lesson 2: Exploration under Function Approximation</a></li>
 <li class="toc-entry toc-h6"><a href="#lesson-3-average-reward">Lesson 3: Average Reward</a></li>
 <li class="toc-entry toc-h6"><a href="#assignment-2">Assignment</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#course-3---week-4---policy-gradient">Course 3 - Week 4 - Policy Gradient</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-4-learning-objectives">Module 4 Learning Objectives</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-1-learning-parameterized-policies">Lesson 1: Learning Parameterized Policies</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-2-policy-gradient-for-continuing-tasks">Lesson 2: Policy Gradient for Continuing Tasks</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-3-actor-critic-for-continuing-tasks">Lesson 3: Actor-Critic for Continuing Tasks</a></li>
+<li class="toc-entry toc-h6"><a href="#lesson-4-policy-parameterizations">Lesson 4: Policy Parameterizations</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment-3">Assignment</a></li>
 </ul>
 </li>
 </ul><p>Coursera website:  <a href="https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome">course 3 - Prediction and Control with Function Approximation</a> of <a href="https://www.coursera.org/specializations/reinforcement-learning">Reinforcement Learning Specialization</a></p>
@@ -492,6 +502,119 @@ This is the <strong>Mean Squared Value Error Objective</strong> where $\mu$ refl
 <p>Function Approximation and Control</p>
 
 <p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203">github</a></p>
+
+<h2 id="course-3---week-4---policy-gradient">
+<a class="anchor" href="#course-3---week-4---policy-gradient" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course 3 - Week 4 - Policy Gradient</h2>
+
+<h6 id="module-4-learning-objectives">
+<a class="anchor" href="#module-4-learning-objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 4 Learning Objectives</h6>
+
+<p><strong>Lesson 1: Learning Parameterized Policies</strong></p>
+
+<ul>
+  <li>Understand how to define policies as parameterized functions</li>
+  <li>Define one class of parameterized policies based on the softmax function</li>
+  <li>Understand the advantages of using parameterized policies over action-value based methods</li>
+</ul>
+
+<p><strong>Lesson 2: Policy Gradient for Continuing Tasks</strong></p>
+
+<ul>
+  <li>Describe the objective for policy gradient algorithms</li>
+  <li>Describe the results of the policy gradient theorem</li>
+  <li>Understand the importance of the policy gradient theorem</li>
+</ul>
+
+<p><strong>Lesson 3: Actor-Critic for Continuing Tasks</strong></p>
+
+<ul>
+  <li>Derive a sample-based estimate for the gradient of the average reward objective</li>
+  <li>Describe the actor-critic algorithm for control with function approximation, for continuing tasks</li>
+</ul>
+
+<p><strong>Lesson 4: Policy Parameterizations</strong></p>
+
+<ul>
+  <li>Derive the actor-critic update for a softmax policy with linear action preferences</li>
+  <li>Implement this algorithm</li>
+  <li>Design concrete function approximators for an average reward actor-critic algorithm</li>
+  <li>Analyze the performance of an average reward agent</li>
+  <li>Derive the actor-critic update for a gaussian policy</li>
+  <li>Apply average reward actor-critic with a gaussian policy to a particular task with continuous actions</li>
+</ul>
+
+<h6 id="lesson-1-learning-parameterized-policies">
+<a class="anchor" href="#lesson-1-learning-parameterized-policies" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 1: Learning Parameterized Policies</strong>
+</h6>
+
+<p><strong>Reading</strong> Chapter 13 <strong>(pp. 321-336)</strong> in the Reinforcement Learning textbook</p>
+
+<p><strong>Video Learning Policies Directly</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>understand</em> how to define policies as <strong>parameterized functions</strong> and <em>define</em> one class of parametrized policies based on the <strong>softmax</strong> function.</p>
+
+<p><strong>Video Advantages of Policy Parameterization</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>understand</em> some of the advantages of using parameterized policies.</p>
+
+<h6 id="lesson-2-policy-gradient-for-continuing-tasks">
+<a class="anchor" href="#lesson-2-policy-gradient-for-continuing-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 2: Policy Gradient for Continuing Tasks</strong>
+</h6>
+
+<p><strong>Video The Objective for Learning Policies</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> the objective for <strong>policy gradient algorithms</strong>.</p>
+
+<p><img src="../images/C3W4_objective_policy_gradient.png" alt=""></p>
+
+<p><strong>Video The Policy Gradient Theorem</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>describe</em> the result of the <strong>policy gradient theorem</strong> and <em>understand</em> the importance of the policy gradient theorem.</p>
+
+<p><img src="../images/C3W4_policy_gradient_theorem.png" alt=""></p>
+
+<h6 id="lesson-3-actor-critic-for-continuing-tasks">
+<a class="anchor" href="#lesson-3-actor-critic-for-continuing-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 3: Actor-Critic for Continuing Tasks</strong>
+</h6>
+
+<p><strong>Video Estimating the Policy Gradient</strong> by Martha</p>
+
+<p>By the end of this video, you will be able to <em>derive</em> a <strong>sample-based estimate</strong> for the gradient of the average reward objective.</p>
+
+<p><img src="../images/C3W4_stochastic_gradient_ascent.png" alt=""></p>
+
+<p><strong>Video Actor-Critic Algorithm</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>describe</em> the <strong>actor-critic algorithm</strong> for control with function approximation for continuing tasks.</p>
+
+<p><img src="../images/C3W4_actor_critic_algorithm.png" alt=""></p>
+
+<h6 id="lesson-4-policy-parameterizations">
+<a class="anchor" href="#lesson-4-policy-parameterizations" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Lesson 4: Policy Parameterizations</strong>
+</h6>
+
+<p><strong>Video Actor-Critic with Softmax Policies</strong> by Adam</p>
+
+<p>By the end of this video you’ll be able to <em>derive</em> the actor critic update for a Softmax policy with linear action preferences and <em>implement</em> this algorithm.</p>
+
+<p><strong>Video Demonstration with Actor-Critic</strong> by Adam</p>
+
+<p>By the end of this video, you’ll be able to <em>design</em> a function approximator for an average reward actor-critic algorithm and <em>analyze</em> the performance of an average reward agent.</p>
+
+<p><strong>Video Gaussian Policies for Continuous Actions</strong> by Martha</p>
+
+<p>By the end of this video, you’ll be able to <em>derive</em> the actor-critic update for a <strong>Gaussian policy</strong> and <em>apply</em> average reward actor-critic with a Gaussian policy to task with continuous actions.</p>
+
+<p><strong>Video Week 4 Summary</strong> by Martha</p>
+
+<p><img src="../images/C3W4_actor_critic_actions.png" alt=""></p>
+
+<h6 id="assignment-3">
+<a class="anchor" href="#assignment-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Average Reward Softmax Actor-Critic using Tile-coding</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204">github</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->

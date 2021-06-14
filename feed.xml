@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-11T08:25:09-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-14T03:57:39-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
 
@@ -317,7 +317,109 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;Function Approximation and Control&lt;/p&gt;
 
-&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 3 - Prediction and Control with Function Approximation of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;course-3---week-4---policy-gradient&quot;&gt;Course 3 - Week 4 - Policy Gradient&lt;/h2&gt;
+
+&lt;h6 id=&quot;module-4-learning-objectives&quot;&gt;Module 4 Learning Objectives&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 1: Learning Parameterized Policies&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand how to define policies as parameterized functions&lt;/li&gt;
+  &lt;li&gt;Define one class of parameterized policies based on the softmax function&lt;/li&gt;
+  &lt;li&gt;Understand the advantages of using parameterized policies over action-value based methods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 2: Policy Gradient for Continuing Tasks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describe the objective for policy gradient algorithms&lt;/li&gt;
+  &lt;li&gt;Describe the results of the policy gradient theorem&lt;/li&gt;
+  &lt;li&gt;Understand the importance of the policy gradient theorem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 3: Actor-Critic for Continuing Tasks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Derive a sample-based estimate for the gradient of the average reward objective&lt;/li&gt;
+  &lt;li&gt;Describe the actor-critic algorithm for control with function approximation, for continuing tasks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 4: Policy Parameterizations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Derive the actor-critic update for a softmax policy with linear action preferences&lt;/li&gt;
+  &lt;li&gt;Implement this algorithm&lt;/li&gt;
+  &lt;li&gt;Design concrete function approximators for an average reward actor-critic algorithm&lt;/li&gt;
+  &lt;li&gt;Analyze the performance of an average reward agent&lt;/li&gt;
+  &lt;li&gt;Derive the actor-critic update for a gaussian policy&lt;/li&gt;
+  &lt;li&gt;Apply average reward actor-critic with a gaussian policy to a particular task with continuous actions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;lesson-1-learning-parameterized-policies&quot;&gt;&lt;strong&gt;Lesson 1: Learning Parameterized Policies&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Reading&lt;/strong&gt; Chapter 13 &lt;strong&gt;(pp. 321-336)&lt;/strong&gt; in the Reinforcement Learning textbook&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Learning Policies Directly&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;understand&lt;/em&gt; how to define policies as &lt;strong&gt;parameterized functions&lt;/strong&gt; and &lt;em&gt;define&lt;/em&gt; one class of parametrized policies based on the &lt;strong&gt;softmax&lt;/strong&gt; function.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Advantages of Policy Parameterization&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;understand&lt;/em&gt; some of the advantages of using parameterized policies.&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-2-policy-gradient-for-continuing-tasks&quot;&gt;&lt;strong&gt;Lesson 2: Policy Gradient for Continuing Tasks&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video The Objective for Learning Policies&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; the objective for &lt;strong&gt;policy gradient algorithms&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W4_objective_policy_gradient.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video The Policy Gradient Theorem&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;describe&lt;/em&gt; the result of the &lt;strong&gt;policy gradient theorem&lt;/strong&gt; and &lt;em&gt;understand&lt;/em&gt; the importance of the policy gradient theorem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W4_policy_gradient_theorem.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-3-actor-critic-for-continuing-tasks&quot;&gt;&lt;strong&gt;Lesson 3: Actor-Critic for Continuing Tasks&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Estimating the Policy Gradient&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you will be able to &lt;em&gt;derive&lt;/em&gt; a &lt;strong&gt;sample-based estimate&lt;/strong&gt; for the gradient of the average reward objective.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W4_stochastic_gradient_ascent.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Actor-Critic Algorithm&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;describe&lt;/em&gt; the &lt;strong&gt;actor-critic algorithm&lt;/strong&gt; for control with function approximation for continuing tasks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W4_actor_critic_algorithm.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;lesson-4-policy-parameterizations&quot;&gt;&lt;strong&gt;Lesson 4: Policy Parameterizations&lt;/strong&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Actor-Critic with Softmax Policies&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video you’ll be able to &lt;em&gt;derive&lt;/em&gt; the actor critic update for a Softmax policy with linear action preferences and &lt;em&gt;implement&lt;/em&gt; this algorithm.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Demonstration with Actor-Critic&lt;/strong&gt; by Adam&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;design&lt;/em&gt; a function approximator for an average reward actor-critic algorithm and &lt;em&gt;analyze&lt;/em&gt; the performance of an average reward agent.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Gaussian Policies for Continuous Actions&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;By the end of this video, you’ll be able to &lt;em&gt;derive&lt;/em&gt; the actor-critic update for a &lt;strong&gt;Gaussian policy&lt;/strong&gt; and &lt;em&gt;apply&lt;/em&gt; average reward actor-critic with a Gaussian policy to task with continuous actions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Week 4 Summary&lt;/strong&gt; by Martha&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C3W4_actor_critic_actions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;assignment-3&quot;&gt;Assignment&lt;/h6&gt;
+
+&lt;p&gt;Average Reward Softmax Actor-Critic using Tile-coding&lt;/p&gt;
+
+&lt;p&gt;notebooks in &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 3 - Prediction and Control with Function Approximation of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for June 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html" rel="alternate" type="text/html" title="Logbook for June 21" /><published>2021-06-01T00:00:00-05:00</published><updated>2021-06-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-June</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-June.html">&lt;h2 id=&quot;week-22---june-21&quot;&gt;Week 22 - June 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday 6/1&lt;/strong&gt;&lt;/p&gt;
 
@@ -357,7 +459,13 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; module 5. Decision tree models&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W3 - Control with Approximation&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W3 - Control with Approximation&lt;/p&gt;
+
+&lt;h2 id=&quot;week-24---june-21&quot;&gt;Week 24 - June 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 6/14&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W4 - Policy Gradient&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
 
