@@ -62,5 +62,5 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W4 - Policy Gradient
 
-[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W1 - start of course 4. A Complete Reinforcement Learning System (Capstone)
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W1 - start of course 4. A Complete Reinforcement Learning System (Capstone) - week 1 to week 4
 
