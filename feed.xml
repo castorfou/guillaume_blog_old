@@ -1,6 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-14T03:57:39-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-14T06:37:40-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 4 - &lt;strong&gt;A Complete Reinforcement Learning System (Capstone)&lt;/strong&gt; &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/course%204%20-%20complete%20reinforcement%20learning%20system/A-Complete-Reinforcement-Learning-System-Capstone-_-Learning-Objectives.pdf&quot;&gt;(syllabus)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Week 1 - Welcome to the Course
+Week 2 - Formalize Word Problem as MDP
+Week 3 - Choosing The Right Algorithm
+Week 4 - Identify Key Performance Parameters
+Week 5 - Implement Your Agent
+Week 6 - Submit Your Parameter Study!&lt;/p&gt;
+
+&lt;h2 id=&quot;course-4---week-2---formalize-word-problem-as-mdp&quot;&gt;Course 4 - Week 2 - Formalize Word Problem as MDP&lt;/h2&gt;
+
+&lt;h6 id=&quot;final-project-milestone-1&quot;&gt;Final Project: Milestone 1&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Initial Project Meeting with Martha: Formalizing the Problem&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/C4W2_reward_function.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="deepmind" /><summary type="html">Coursera website: course 4 - A Complete Reinforcement Learning System (Capstone) of Reinforcement Learning Specialization</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation" /><published>2021-06-07T00:00:00-05:00</published><updated>2021-06-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/prediction-control-function-approximation/home/welcome&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 3 - &lt;strong&gt;Prediction and Control with Function Approximation&lt;/strong&gt; &lt;a href=&quot;https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/course%203%20-%20function%20approximation/Course-3_Prediction-and-Control-with-Function-Approximation-Learning-Objectives.pdf&quot;&gt;(syllabus)&lt;/a&gt;&lt;/p&gt;
 
@@ -465,9 +484,11 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;&lt;strong&gt;Monday 6/14&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W4 - Policy Gradient&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C3W4 - Policy Gradient&lt;/p&gt;
 
-&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; - C4W1 - start of course 4. A Complete Reinforcement Learning System (Capstone)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;specialization roadmap&lt;/strong&gt; - course 2 - &lt;strong&gt;Sample-based Learning Methods&lt;/strong&gt;&lt;/p&gt;
 
@@ -1225,9 +1246,9 @@ conda activate scikit-learn-course
     &lt;li&gt;are not able to extrapolate;&lt;/li&gt;
     &lt;li&gt;are sensible to hyperparameter tuning.&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="machine learning" /><category term="scikit-learn" /><summary type="html">This is a MOOC by Inria team, in charge of scikit-learn.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/home/welcome&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="machine learning" /><category term="scikit-learn" /><summary type="html">This is a MOOC by Inria team, in charge of scikit-learn.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1 - Fundamentals of Reinforcement Learning</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1 - Fundamentals of Reinforcement Learning" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/home/welcome&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
 
@@ -2171,86 +2192,4 @@ Part I: RL Tips and Tricks / The Challenges of Applying RL to Real Robots&lt;/p&
 
 &lt;p&gt;documentation for SB3 usefull for completing exercises: &lt;a href=&quot;https://stable-baselines3.readthedocs.io/en/master/&quot;&gt;https://stable-baselines3.readthedocs.io/en/master/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://excalidraw.com/&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for April 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html" rel="alternate" type="text/html" title="Logbook for April 21" /><published>2021-04-01T00:00:00-05:00</published><updated>2021-04-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-April</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-April.html">&lt;h2 id=&quot;week-13---apr-21&quot;&gt;Week 13 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416824/?view=#&quot;&gt;Deep Q-Networks and its variants&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Collège de France - Algorithmes quantiques : quand la physique quantique défie la thèse de Church-Turing &lt;a href=&quot;https://www.college-de-france.fr/site/frederic-magniez/inaugural-lecture-2020-2021.htm&quot;&gt;Leçon inaugurale&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416833/?view=&quot;&gt;From Policy Gradients to Actor Critic methods&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416836/?view=&quot;&gt;Policy Gradient in pratice&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;git to use socks server to github (to go through local firewall)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416838/?view=#&quot;&gt;Exploration in Deep RL&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;week-14---apr-21&quot;&gt;Week 14 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/7&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1908.07442&quot;&gt;tabnet&lt;/a&gt;: pytorch (and fastai with Zach Mueller) implementations&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/8&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416851/?view=&quot;&gt;Evolutionary Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Jupyter notebook turned into &lt;a href=&quot;https://www.blog.pythonlibrary.org/2018/09/25/creating-presentations-with-jupyter-notebook/&quot;&gt;slides with RISE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - &lt;a href=&quot;https://whova.com/embedded/session/rlstc_202011/1416841/?view=&quot;&gt;Micro-data Policy Search&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/9&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Aniti-RLVS-seminaire-RL.html&quot;&gt;Aniti RLVS&lt;/a&gt; - RL in Practice: Tips and Tricks and Practical Session With Stable-Baselines3&lt;/p&gt;
-
-&lt;p&gt;setup &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt; to workaround wsl2 and network issues (explained &lt;a href=&quot;/guillaume_blog/blog/Windows10-fastai-wsl2-cuda.html#Workaround-network-issue-with-WSL2&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;install &lt;a href=&quot;&quot;&gt;wsl2-cuda-conda&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;week-15---apr-21&quot;&gt;Week 15 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/15&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Learning for Information Extraction (lecture 9).&lt;/p&gt;
-
-&lt;h2 id=&quot;week-16---apr-21&quot;&gt;Week 16 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday 4/20&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;How To run &lt;a href=&quot;https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/#ex1&quot;&gt;macOS on KVM / QEMU&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/21&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Enrolled to &lt;a href=&quot;https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; by scikit-learn team!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/audio-classification-with-pytorchs-ecosystem-tools-5de2b66e640c&quot;&gt;Audio classification&lt;/a&gt; with pytorch&lt;/p&gt;
-
-&lt;h2 id=&quot;week-17---apr-21&quot;&gt;Week 17 - Apr 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday 4/26&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/bayesian-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Bayesian Data Analysis in Python, at the end, &lt;a href=&quot;http://allendowney.github.io/ThinkBayes2/&quot;&gt;Think Bayes 2&lt;/a&gt; by Allen B.Downey&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday 4/27&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Value Function Approximation (lecture 6)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Taming Dataset Bias (lecture 10)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 4/28&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/courses/exploratory-data-analysis-in-python&quot;&gt;datacamp&lt;/a&gt; - Exploratory Data Analysis in Python, by Allen B.Downey (that’s why)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 4/29&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/working-with-dates-and-times-in-python&quot;&gt;datacamp&lt;/a&gt; - Working with date and time, quite interesting to see timezones considerations.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday 4/30&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.datacamp.com/courses/cleaning-data-in-python&quot;&gt;datacamp&lt;/a&gt; - Cleaning data. Impressed by fuzzywuzzy and recordlinkage packages. End of this track (Data Scientist - new version)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/learning-MIT-6.S191-2021.html&quot;&gt;MIT 6S191&lt;/a&gt; Towards AI for 3D Content Creation (lecture 11) and AI in Healthcare (lecture 12) and this is the end of this course&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 13 - Apr 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;https://excalidraw.com/&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/RL.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/RL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
