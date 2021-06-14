@@ -54,3 +54,11 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W3 - Control with Approximation
 
+
+
+## Week 24 - June 21
+
+**Monday 6/14**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html) - C3W4 - Policy Gradient
+

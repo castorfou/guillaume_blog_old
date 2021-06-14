@@ -366,3 +366,106 @@ Function Approximation and Control
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%203)
 
+
+
+## Course 3 - Week 4 - Policy Gradient
+
+###### Module 4 Learning Objectives
+
+**Lesson 1: Learning Parameterized Policies** 
+
+- Understand how to define policies as parameterized functions 
+- Define one class of parameterized policies based on the softmax function 
+- Understand the advantages of using parameterized policies over action-value based methods 
+
+**Lesson 2: Policy Gradient for Continuing Tasks** 
+
+- Describe the objective for policy gradient algorithms 
+- Describe the results of the policy gradient theorem 
+- Understand the importance of the policy gradient theorem 
+
+**Lesson 3: Actor-Critic for Continuing Tasks** 
+
+- Derive a sample-based estimate for the gradient of the average reward objective 
+- Describe the actor-critic algorithm for control with function approximation, for continuing tasks 
+
+**Lesson 4: Policy Parameterizations** 
+
+- Derive the actor-critic update for a softmax policy with linear action preferences 
+- Implement this algorithm 
+- Design concrete function approximators for an average reward actor-critic algorithm 
+- Analyze the performance of an average reward agent 
+- Derive the actor-critic update for a gaussian policy 
+- Apply average reward actor-critic with a gaussian policy to a particular task with continuous actions
+
+
+
+###### **Lesson 1: Learning Parameterized Policies** 
+
+**Reading** Chapter 13 **(pp. 321-336)** in the Reinforcement Learning textbook
+
+**Video Learning Policies Directly** by Adam
+
+By the end of this video, you'll be able to *understand* how to define policies as **parameterized functions** and *define* one class of parametrized policies based on the **softmax** function.
+
+**Video Advantages of Policy Parameterization** by Adam
+
+By the end of this video, you'll be able to *understand* some of the advantages of using parameterized policies. 
+
+
+
+###### **Lesson 2: Policy Gradient for Continuing Tasks** 
+
+**Video The Objective for Learning Policies** by Martha
+
+By the end of this video, you'll be able to *describe* the objective for **policy gradient algorithms**. 
+
+![](../images/C3W4_objective_policy_gradient.png)
+
+**Video The Policy Gradient Theorem** by Martha
+
+By the end of this video, you will be able to *describe* the result of the **policy gradient theorem** and *understand* the importance of the policy gradient theorem. 
+
+![](../images/C3W4_policy_gradient_theorem.png)
+
+###### **Lesson 3: Actor-Critic for Continuing Tasks** 
+
+**Video Estimating the Policy Gradient** by Martha
+
+By the end of this video, you will be able to *derive* a **sample-based estimate** for the gradient of the average reward objective. 
+
+![](../images/C3W4_stochastic_gradient_ascent.png)
+
+**Video Actor-Critic Algorithm** by Adam
+
+By the end of this video, you'll be able to *describe* the **actor-critic algorithm** for control with function approximation for continuing tasks. 
+
+![](../images/C3W4_actor_critic_algorithm.png)
+
+
+
+###### **Lesson 4: Policy Parameterizations** 
+
+**Video Actor-Critic with Softmax Policies** by Adam
+
+By the end of this video you'll be able to *derive* the actor critic update for a Softmax policy with linear action preferences and *implement* this algorithm. 
+
+**Video Demonstration with Actor-Critic** by Adam
+
+By the end of this video, you'll be able to *design* a function approximator for an average reward actor-critic algorithm and *analyze* the performance of an average reward agent. 
+
+**Video Gaussian Policies for Continuous Actions** by Martha
+
+By the end of this video, you'll be able to *derive* the actor-critic update for a **Gaussian policy** and *apply* average reward actor-critic with a Gaussian policy to task with continuous actions. 
+
+**Video Week 4 Summary** by Martha
+
+![](../images/C3W4_actor_critic_actions.png)
+
+###### Assignment
+
+Average Reward Softmax Actor-Critic using Tile-coding
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
+
+
