@@ -35,3 +35,28 @@ Week 6 - Submit Your Parameter Study!
 
 
 
+**Video Andy Barto on What are Eligibility Traces and Why are they so named?**
+
+By the end of this video, you'll *understand* the **origin** of the idea of **eligibility traces** and you'll actually *see* that you've been **using a variant of eligibility traces** all along. 
+
+![](../images/C4W2_actor_critic_architecture.png)
+
+###### Project Resources
+
+**Video Let's Review: Markov Decision Processes**
+
+By the end of this video, you'll be able to *understand* **Markov decision processes or MDPs** and *describe* how the **dynamics of MDP** are defined. 
+
+**Video Let's Review: Examples of Episodic and Continuing Tasks**
+
+By the end of this video, you will be able to *understand* when to formalize a task as **episodic or continuing**. 
+
+
+
+###### Assignment
+
+MoonShot Technologies
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
+
+
