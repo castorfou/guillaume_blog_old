@@ -60,3 +60,28 @@ MoonShot Technologies
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
 
 
+
+## Course 4 - Week 3 - Choosing The Right Algorithm
+
+######  Weekly Learning Goals
+
+**Video Meeting with Niko: Choosing the Learning Algorithm**
+
+![](../images/C4W3_expected_sarsa.png)
+
+###### Project Resources
+
+**Video Let's Review: Expected Sarsa**
+
+![](../images/C2W3_3_summary.png)
+
+**Video Let's Review: What is Q-learning?**
+
+**Video Let's Review: Average Reward- A New Way of Formulating Control Problems**
+
+**Video Let's Review: Actor-Critic Algorithm**
+
+**Video Csaba Szepesvari on Problem Landscape**
+
+**Video Andy and Rich: Advice for Students**
+
