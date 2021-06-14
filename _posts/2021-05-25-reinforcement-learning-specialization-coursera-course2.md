@@ -1,6 +1,6 @@
 ---
 title: "Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods"
-description: From University of Alberta. My notes on course 2 - Fundamentals of Reinforcement Learning
+description: From University of Alberta. My notes on course 2.
 toc: true
 comments: true
 layout: post
@@ -12,7 +12,7 @@ Coursera website:  [course 2 - Sample-based Learning Methods](https://www.course
 
 
 
-my notes on [course 1 - Fundamentals of Reinforcement Learning](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html), [course 3 - Prediction and Control with Function Approximation](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html)
+my notes on [course 1 - Fundamentals of Reinforcement Learning](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html), [course 3 - Prediction and Control with Function Approximation](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html), [course 4 - A Complete Reinforcement Learning System (Capstone)](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html)
 
 **specialization roadmap** - course 2 - **Sample-based Learning Methods**
 

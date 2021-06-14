@@ -1,6 +1,6 @@
 ---
 title: "Reinforcement Learning Specialization - Coursera - course 3 - Prediction and Control with Function Approximation"
-description: From University of Alberta. My notes on course 3 - Fundamentals of Reinforcement Learning
+description: From University of Alberta. My notes on course 3.
 toc: true
 comments: true
 layout: post
@@ -12,7 +12,7 @@ Coursera website:  [course 3 - Prediction and Control with Function Approximatio
 
 
 
-my notes on [course 1 - Fundamentals of Reinforcement Learning](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html), [course 2 - Sample-based Learning Methods](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html)
+my notes on [course 1 - Fundamentals of Reinforcement Learning](/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html), [course 2 - Sample-based Learning Methods](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html), [course 4 - A Complete Reinforcement Learning System (Capstone)](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html)
 
 **specialization roadmap** - course 3 - **Prediction and Control with Function Approximation** [(syllabus)](https://github.com/castorfou/Reinforcement-Learning-specialization/blob/main/course%203%20-%20function%20approximation/Course-3_Prediction-and-Control-with-Function-Approximation-Learning-Objectives.pdf)
 
@@ -467,5 +467,4 @@ By the end of this video, you'll be able to *derive* the actor-critic update for
 Average Reward Softmax Actor-Critic using Tile-coding
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
-
 
