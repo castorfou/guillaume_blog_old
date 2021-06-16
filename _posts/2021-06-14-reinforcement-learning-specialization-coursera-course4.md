@@ -101,3 +101,65 @@ Now, let's discuss the meta parameter choices that you will have to make to full
 
 **Video Let's Review: Non-linear Approximation with Neural Networks**
 
+By the end of this video, you will *understand* how neural networks do **feature construction**, and you will *understand* how neural networks are a **non-linear function** of state. 
+
+**Video Drew Bagnell on System ID + Optimal Control**
+
+**Video Susan Murphy on RL in Mobile Health**
+
+
+
+## Course 4 - Week 5 - Implement your agent
+
+###### Weekly Learning Goals
+
+**Video Meeting with Adam: Getting the Agent Details Right**
+
+
+
+###### Project Resources
+
+**Video Let's Review: Optimization Strategies for NNs**
+
+By the end of this video, you will be able to *understand* the importance of **initialization** for neural networks and *describe* **optimization techniques** for training neural networks. 
+
+
+
+One simple yet effective initialization strategy, is to randomly sample the initial weights from a normal distribution with small variance. This way, each neuron has a different output from other neurons within its layer. This provides a more diverse set of potential features. By keeping the variants small, we ensure that the output of each neuron is within the same range as its neighbors. One downside to this strategy is that, as we add more inputs to a neuron, the variance of the output grows. We can get around this issue by scaling the variance of the weights, by one over the square root of the number of inputs. 
+
+![](../images/C4W4_weight_initialization.png)
+
+Here's the stochastic gradient descent update rule and here's the update modified to include momentum. Notice, it is similar to the regular stochastic gradient descent update plus an extra term called the momentum M. The momentum term summarizes the history of the gradients using a decaying sum of gradients with decay rate Lambda. If recent gradients have all been in similar directions, then we gained momentum in that direction. This means, we make a large step in that direction. If recent updates have conflicting directions, then it kills the momentum. The momentum term will have little impact on the update and we will make a regular gradient descent step. Momentum provably accelerates learning, meaning it gets to a stationary point more quickly. 
+
+![](../images/C4W4_update_momentum.png)
+
+So far, we have only talked about a global scalar step size. This is well-known to be problematic because this can result in updates that are too big for some weights and too small for other weights. Adapting the step sizes for each weight, based on statistics about the learning process in practice results in much better performance. Now, how does the update change? The change is very simple. Instead of updating with a scalar Alpha, there's a vector of step sizes indexed by t to indicate that it can change on each time-step. Each dimension of the gradient, is scaled by its corresponding step size instead of the global step size. There are a variety of methods to adapt a vector of step sizes. You'll get to implement one in your assignment. 
+
+![](../images/C4W4_vector_step_sizes.png)
+
+
+
+**Video Let's Review: Expected Sarsa with Function Approximation**
+
+By the end of this video, you'll be able to *explain* the update for **expected Sarsa** with **function approximation**, and *explain* the update for **Q-learning** with **function approximation**. 
+
+![](../images/C4W4_expected_sarsa_function_approximation.png)
+
+![](../images/C4W4_q_learning_function_approximation.png)
+
+**Video Let's Review: Dyna & Q-learning in a Simple Maze**
+
+By the end of this video you will be able to *describe* how learning from both **real** and **model** experience impacts performance. You will also be able to *explain* how a model allows the agent to learn from **fewer interactions with the environment**. 
+
+**Video Meeting with Martha: In-depth on Experience Replay**
+
+In Course 3, the agents you implemented update the value function or policy only once with each sample. But this is likely not the most sample efficient way to use our data. You have actually seen a smarter approach in Course 2 where we talked about Dyna as a way to be more sample efficient. But we only talked about Dyna for the tabular setting. 
+
+In this video, we will talk about how to make your agent more sample efficient when using function approximation. We will discuss a simple method called **experience replay** and how it relates to Dyna. To get some intuition for experience replay, let's first remember a method that we know well, Dyna-Q. The idea is to learn a model using sample experience. Then simulated experience can be obtained from this model to update the values. This procedure of using simulated experience to improve the value estimates is called planning. 
+
+Experience replay is a simple method for trying to get the advantages of Dyna. The basic idea is to save a buffer of experience and let the data be the model. We sample experience from this buffer and update the value function with those samples similarly to how we sample from the model and update the values in Dyna. 
+
+![](../images/C4W4_experience_replay.png)
+
+**Video Martin Riedmiller on The 'Collect and Infer' framework for data-efficient RL**
+

@@ -64,3 +64,7 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W1 - start of course 4. A Complete Reinforcement Learning System (Capstone) - week 1 to week 4
 
+**Wednesday 6/16**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W4 - Milestone 3: Identify Key Performance Parameters, C4W5 - Milestone 4: Implement your agent
+
