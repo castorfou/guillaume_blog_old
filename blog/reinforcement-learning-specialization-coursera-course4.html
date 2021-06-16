@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -137,6 +137,7 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h6"><a href="#weekly-learning-goals-2">Weekly Learning Goals</a></li>
 <li class="toc-entry toc-h6"><a href="#project-resources-3">Project Resources</a></li>
+<li class="toc-entry toc-h6"><a href="#assignment-1">Assignment</a></li>
 </ul>
 </li>
 </ul><p>Coursera website:  <a href="https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning">course 4 - A Complete Reinforcement Learning System (Capstone)</a> of <a href="https://www.coursera.org/specializations/reinforcement-learning">Reinforcement Learning Specialization</a></p>
@@ -284,6 +285,25 @@ Week 6 - Submit Your Parameter Study!</p>
 <p><img src="../images/C4W4_experience_replay.png" alt=""></p>
 
 <p><strong>Video Martin Riedmiller on The ‘Collect and Infer’ framework for data-efficient RL</strong></p>
+
+<p>Martin Riedmiller, head of the control team at Deepmind has been working for more than 20 years on New Reinforcement Learning Agents for the control of dynamical systems.</p>
+
+<p>The control of dynamical systems is an attractive application area for reinforcement learning controllers. They all share the same principle feedback control structure, a controller gets the observation, computes an action and applies it to the environment. Classical control theory would first model the process as a set of differential equations for which then a control law must be analytically derived. A tedious job in particular if the systems are complex or highly nonlinear. Reinforcement learning in contrast promises to be able to learn the controller autonomously. If only the overall control goal is specified. This is typically done by defining the immediate reward. The RL controller optimizes the expected cumulated sum of rewards over time.</p>
+
+<p><img src="../images/C4W4_infer.png" alt=""></p>
+
+<p>These two steps together build the so-called collecting and infer framework of reinforcement learning. This perspective keeps us focused on the two main question of data efficient RL. Infer, which means squeezing out the most of a given set of transition data. And collect, which means sampling the most formative data from the environment.</p>
+
+<p><img src="../images/C4W4_collect_infer.png" alt=""></p>
+
+<p><img src="../images/C4W4_nfq_dqn.png" alt=""></p>
+
+<h6 id="assignment-1">
+<a class="anchor" href="#assignment-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment</h6>
+
+<p>Implement your agent</p>
+
+<p>notebooks in <a href="https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204">github</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
