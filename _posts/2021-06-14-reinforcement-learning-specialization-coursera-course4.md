@@ -163,3 +163,25 @@ Experience replay is a simple method for trying to get the advantages of Dyna. T
 
 **Video Martin Riedmiller on The 'Collect and Infer' framework for data-efficient RL**
 
+Martin Riedmiller, head of the control team at Deepmind has been working for more than 20 years on New Reinforcement Learning Agents for the control of dynamical systems. 
+
+The control of dynamical systems is an attractive application area for reinforcement learning controllers. They all share the same principle feedback control structure, a controller gets the observation, computes an action and applies it to the environment. Classical control theory would first model the process as a set of differential equations for which then a control law must be analytically derived. A tedious job in particular if the systems are complex or highly nonlinear. Reinforcement learning in contrast promises to be able to learn the controller autonomously. If only the overall control goal is specified. This is typically done by defining the immediate reward. The RL controller optimizes the expected cumulated sum of rewards over time. 
+
+![](../images/C4W4_infer.png)
+
+
+
+These two steps together build the so-called collecting and infer framework of reinforcement learning. This perspective keeps us focused on the two main question of data efficient RL. Infer, which means squeezing out the most of a given set of transition data. And collect, which means sampling the most formative data from the environment. 
+
+![](../images/C4W4_collect_infer.png)
+
+![](../images/C4W4_nfq_dqn.png)
+
+
+
+###### Assignment
+
+Implement your agent
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
+
