@@ -95,3 +95,9 @@ notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specia
 
 Now, let's discuss the meta parameter choices that you will have to make to fully implement the agent. This means we need to decide on the **function approximator**, choices in the optimizer for **updating the action values**, and how to **do exploration**. 
 
+
+
+###### Project Resources
+
+**Video Let's Review: Non-linear Approximation with Neural Networks**
+
