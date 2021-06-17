@@ -57,7 +57,7 @@ By the end of this video, you will be able to *understand* when to formalize a t
 
 MoonShot Technologies
 
-notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%204%20week%202)
 
 
 
@@ -183,5 +183,5 @@ These two steps together build the so-called collecting and infer framework of r
 
 Implement your agent
 
-notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%203%20week%204)
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%204%20week%205)
 
