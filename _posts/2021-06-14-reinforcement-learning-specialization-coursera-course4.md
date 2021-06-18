@@ -185,3 +185,37 @@ Implement your agent
 
 notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%204%20week%205)
 
+
+
+## Course 4 - Week 6 - Submit your Parameter Study!
+
+###### Weekly Learning Goals
+
+**Video Meeting with Adam: Parameter Studies in RL**
+
+
+
+###### Project Resources
+
+**Video Let's Review: Comparing TD and Monte Carlo**
+
+**Video Joelle Pineau about RL that Matters**
+
+
+
+###### Assignment
+
+Completing the parameter study
+
+notebooks in [github](https://github.com/castorfou/Reinforcement-Learning-specialization/tree/main/assignements/course%204%20week%206)
+
+
+
+###### Congratulations!
+
+**Video Meeting with Martha: Discussing Your Results**
+
+**Video Course Wrap-up**
+
+**Video Specialization Wrap-up**
+

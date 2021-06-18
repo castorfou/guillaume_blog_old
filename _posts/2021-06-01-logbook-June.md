@@ -68,3 +68,12 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W4 - Milestone 3: Identify Key Performance Parameters, C4W5 - Milestone 4: Implement your agent
 
+**Thursday 6/17**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - end of C4W5 - Milestone 4: Implement your agent
+
+**Friday 6/18**
+
+[Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W6 - Milestone 5: Submit your Parameter Study!
+
+End of Specialization
