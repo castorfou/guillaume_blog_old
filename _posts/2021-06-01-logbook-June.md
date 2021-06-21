@@ -77,3 +77,12 @@ End of course 2 of [Reinforcement Learning Specialization](/guillaume_blog/blog/
 [Reinforcement Learning Specialization](/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html) - C4W6 - Milestone 5: Submit your Parameter Study!
 
 End of Specialization
+
+
+
+## Week 25 - June 21
+
+**Monday 6/21**
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 6. Ensemble of models
+

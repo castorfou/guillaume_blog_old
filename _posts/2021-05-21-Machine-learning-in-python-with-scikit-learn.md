@@ -399,3 +399,16 @@ Importance of decision tree hyperparameters on generalization: [trees_hyperparam
 > - are not able to extrapolate;
 > - are sensible to hyperparameter tuning.
 
+
+
+## Module 6. Ensemble of models
+
+###### Intuitions on ensemble of tree-based models
+
+video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=ensemble.md#1)
+
+
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=ensemble.md#p" width="800" height="500" frameborder="0">
+</iframe>
+
+
