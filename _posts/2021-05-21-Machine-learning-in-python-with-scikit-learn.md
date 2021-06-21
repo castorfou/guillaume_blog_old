@@ -62,6 +62,10 @@ conda activate scikit-learn-course
 
 [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=ml_concepts.md#1)
 
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=ml_concepts.md#1" width="800" height="500" frameborder="0">
+</iframe>
+
+
 ## Module 1. The Predictive Modeling Pipeline 
 
 
@@ -114,6 +118,9 @@ Exercise M1.05: [03_categorical_pipeline_ex_02.ipynb](https://github.com/castorf
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=overfitting_vs_underfitting.md#1)
 
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=overfitting_vs_underfitting.md#1" width="800" height="500" frameborder="0">
+</iframe>
+
 The framework and why do we need it: [cross_validation_train_test.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_train_test.ipynb)
 
 
@@ -121,6 +128,9 @@ The framework and why do we need it: [cross_validation_train_test.ipynb](https:/
 ###### Validation and learning curves
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=learning_validation_curves.md#1)
+
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=learning_validation_curves.md#1" width="800" height="500" frameborder="0">
+</iframe>
 
 Overfit-generalization-underfit: [cross_validation_validation_curve.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_validation_curve.ipynb)
 
@@ -133,6 +143,9 @@ Exercise M2.01: [cross_validation_ex_01.ipynb](https://github.com/castorfou/scik
 ###### Bias versus variance trade-off
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=bias_vs_variance.md#1)
+
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=bias_vs_variance.md#1" width="800" height="500" frameborder="0">
+</iframe>
 
 ![](../images/sklearn_bias_variance.png)
 
@@ -212,6 +225,9 @@ fig.show()
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=linear_models.md#1)
 
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=linear_models.md#1" width="800" height="500" frameborder="0">
+</iframe>
+
 For regression: linear regression
 
 ```python
@@ -268,6 +284,9 @@ Exercise M4.03: [linear_models_ex_03.ipynb](https://github.com/castorfou/scikit-
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1)
 
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1" width="800" height="500" frameborder="0">
+</iframe>
+
 Ridge regression
 
 ```python
@@ -321,7 +340,8 @@ Beyond linear separation in classification: [logistic_regression_non_linear.ipyn
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1)
 
-
+<iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1" width="800" height="500" frameborder="0">
+</iframe>
 
 ###### Decision tree in classification
 
