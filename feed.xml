@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-21T01:04:33-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-21T01:18:52-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
 
@@ -1110,6 +1110,9 @@ conda activate scikit-learn-course
 
 &lt;p&gt;&lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=ml_concepts.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
 
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=ml_concepts.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+
 &lt;h2 id=&quot;module-1-the-predictive-modeling-pipeline&quot;&gt;Module 1. The Predictive Modeling Pipeline&lt;/h2&gt;
 
 &lt;h6 id=&quot;tabular-data-exploration&quot;&gt;Tabular data exploration&lt;/h6&gt;
@@ -1154,11 +1157,17 @@ conda activate scikit-learn-course
 
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=overfitting_vs_underfitting.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
 
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=overfitting_vs_underfitting.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+
 &lt;p&gt;The framework and why do we need it: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_train_test.ipynb&quot;&gt;cross_validation_train_test.ipynb&lt;/a&gt;&lt;/p&gt;
 
 &lt;h6 id=&quot;validation-and-learning-curves&quot;&gt;Validation and learning curves&lt;/h6&gt;
 
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=learning_validation_curves.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=learning_validation_curves.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
 
 &lt;p&gt;Overfit-generalization-underfit: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_validation_curve.ipynb&quot;&gt;cross_validation_validation_curve.ipynb&lt;/a&gt;&lt;/p&gt;
 
@@ -1169,6 +1178,9 @@ conda activate scikit-learn-course
 &lt;h6 id=&quot;bias-versus-variance-trade-off&quot;&gt;Bias versus variance trade-off&lt;/h6&gt;
 
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=bias_vs_variance.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=bias_vs_variance.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
 
 &lt;p&gt;&lt;img src=&quot;../images/sklearn_bias_variance.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -1251,6 +1263,9 @@ conda activate scikit-learn-course
 
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=linear_models.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
 
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=linear_models.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+
 &lt;p&gt;For regression: linear regression&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.linear_model&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LinearRegression&lt;/span&gt;
@@ -1298,6 +1313,9 @@ conda activate scikit-learn-course
 &lt;h6 id=&quot;regularization-in-linear-model&quot;&gt;Regularization in linear model&lt;/h6&gt;
 
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=regularized_linear_models.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
 
 &lt;p&gt;Ridge regression&lt;/p&gt;
 
@@ -1347,6 +1365,9 @@ conda activate scikit-learn-course
 &lt;h6 id=&quot;intuitions-on-tree-based-models&quot;&gt;Intuitions on tree-based models&lt;/h6&gt;
 
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
 
 &lt;h6 id=&quot;decision-tree-in-classification&quot;&gt;Decision tree in classification&lt;/h6&gt;
 
