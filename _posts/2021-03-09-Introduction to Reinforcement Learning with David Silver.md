@@ -373,3 +373,37 @@ $$
 $$
 Critic will use a policy evaluation (several options seen so far: monte-carlo policy evaluation, TD, TD($\lambda$))
 
+
+
+## 6/21/21 - Lecture 8: Integrating Learning and Planning
+
+3 parts in this lecture:
+
+* model based reinforcement learning
+* integrated architecture
+* simulation-based search
+
+
+
+Learn by model. What we mean by the model is 2 parts: understand transitions (how one state will transition to another state) and reward. If the agent has this understanding, then one can plan with that.
+
+
+
+Model-Free RL
+
+- No model
+- Learn value function (and/or policy) from experience
+
+Model-Based RL
+
+- Learn a model from experience
+- Plan value function (and/or policy) from model
+
+Model-Based RL (using Sample-Based Planning)
+
+- Learn a model from real experience
+- Plan value function (and/or policy) from simulated experience
+
+
+
+Dyna-Q is a way to combine real experience with simulation.

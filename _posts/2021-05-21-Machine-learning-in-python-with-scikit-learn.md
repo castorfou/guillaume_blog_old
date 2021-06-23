@@ -430,5 +430,101 @@ video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=ensemb
 
 <iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=ensemble.md#p" width="800" height="500" frameborder="0">
 </iframe>
+"Bagging" stands for Bootstrap AGGregatING. It uses bootstrap resampling (random sampling with replacement) to learn several models on random variations of the training set. At predict time, the predictions of each learner are aggregated to give the final predictions.
 
+```python
+from sklearn.ensemble import BaggingClassifier
+from sklearn.ensemble import RandomForestClassifier
+```
+
+**Random Forests** are bagged *randomized* decision trees
+
+- At each split: a random subset of features are selected
+- The best split is taken among the restricted subset
+- Extra randomization decorrelates the prediction errors
+- Uncorrelated errors make bagging work better
+
+**Gradient Boosting** 
+
+
+- Each base model predicts the **negative error** of previous models
+- `sklearn` use decision trees as the base model
+
+```python
+from sklearn.ensemble import GradientBoostingClassifier
+```
+
+- Implementation of the traditional (exact) method
+- Fine for small data sets
+- Too slow for `n_samples` > 10,000
+
+```python
+from sklearn.ensemble import HistGradientBoostingClassifier
+```
+
+- Discretize numerical features (256 levels)
+- Efficient multi core implementation
+- **Much, much faster** when `n_samples` is large
+
+
+
+**Take away**
+
+- **Bagging** and **random forests** fit trees **independently**
+  - each **deep tree overfits** individually
+  - averaging the tree predictions **reduces overfitting**
+- (Gradient) **boosting** fits trees **sequentially**
+  - each **shallow tree underfits** individually
+  - sequentially adding trees **reduces underfitting**
+- **Gradient boosting** tends to perform slightly better than **bagging** and **random forest** and furthermore shallow trees predict faster.
+
+
+
+Introductory example to ensemble models: [ensemble_introduction.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_introduction.ipynb)
+
+
+
+###### Ensemble method using bootstrapping
+
+Bagging: [ensemble_bagging.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_bagging.ipynb)
+
+Wikipedia reference to [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)) in statistics.
+
+Exercise M6.01: [ensemble_ex_01.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_01.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_01.ipynb))
+
+Random Forest: [ensemble_random_forest.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_random_forest.ipynb)
+
+Exercise M6.01: [ensemble_ex_02.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_02.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_02.ipynb))
+
+
+
+###### Ensemble method using boosting
+
+Adaptive Boosting (AdaBoost): [ensemble_adaboost.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_adaboost.ipynb)
+
+Exercise M6.03: [ensemble_ex_03.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_03.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_03.ipynb))
+
+Gradient-boosting decision tree (GBDT): [ensemble_gradient_boosting.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_gradient_boosting.ipynb)
+
+Exercise M6.04: [ensemble_ex_04.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_04.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_04.ipynb))
+
+Speeding-up gradient-boosting:  [ensemble_hist_gradient_boosting.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hist_gradient_boosting.ipynb)
+
+
+
+###### Hyperparameter tuning with ensemble methods
+
+Hyperparameter tuning: : [ensemble_hyperparameters.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb)
+
+Exercise M6.05: [ensemble_ex_05.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_05.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_05.ipynb))
+
+
+
+###### Wrap-up quiz
+
+[module 6 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/ensemble/module 6 - wrap-up-quizz.ipynb)
+
+
+
+Use of [Imbalanced-learn](https://imbalanced-learn.org/stable/) library relying on scikit-learn and provides methods to deal with classification with imbalanced classes.
 
