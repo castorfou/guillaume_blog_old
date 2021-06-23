@@ -407,3 +407,28 @@ Model-Based RL (using Sample-Based Planning)
 
 
 Dyna-Q is a way to combine real experience with simulation.
+
+
+
+Simulation-Based Search
+
+- Forward search paradigm using sample-based planning
+- Simulate episodes of experience from now with the model
+- Apply model-free RL to simulated episodes
+
+Simulate episodes of experience from now with the model
+
+
+$$
+\Big\{ S_t^k, A_t^k, R_{t+1}^k, ..., S_T^k \Big\}_{k=1}^K \sim \mathcal{M}_v
+$$
+
+
+
+
+Apply model-free RL to simulated episodes
+
+- Monte-Carlo control → Monte-Carlo search
+- Sarsa → TD search
+
+![](../images/silver_mc_search.png)
