@@ -432,3 +432,5 @@ Apply model-free RL to simulated episodes
 - Sarsa → TD search
 
 ![](../images/silver_mc_search.png)
+
+![](../images/silver_td_search.png)
