@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -160,6 +160,10 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#module-6-ensemble-of-models">Module 6. Ensemble of models</a>
 <ul>
 <li class="toc-entry toc-h6"><a href="#intuitions-on-ensemble-of-tree-based-models">Intuitions on ensemble of tree-based models</a></li>
+<li class="toc-entry toc-h6"><a href="#ensemble-method-using-bootstrapping">Ensemble method using bootstrapping</a></li>
+<li class="toc-entry toc-h6"><a href="#ensemble-method-using-boosting">Ensemble method using boosting</a></li>
+<li class="toc-entry toc-h6"><a href="#hyperparameter-tuning-with-ensemble-methods">Hyperparameter tuning with ensemble methods</a></li>
+<li class="toc-entry toc-h6"><a href="#wrap-up-quiz-5">Wrap-up quiz</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -582,6 +586,111 @@ conda activate scikit-learn-course
 
 <iframe title="Slides" marginheight="0" src="https://inria.github.io/scikit-learn-mooc/slides/?file=ensemble.md#p" width="800" height="500" frameborder="0">
 </iframe>
+<p>“Bagging” stands for Bootstrap AGGregatING. It uses bootstrap resampling (random sampling with replacement) to learn several models on random variations of the training set. At predict time, the predictions of each learner are aggregated to give the final predictions.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+</code></pre></div></div>
+
+<p><strong>Random Forests</strong> are bagged <em>randomized</em> decision trees</p>
+
+<ul>
+  <li>At each split: a random subset of features are selected</li>
+  <li>The best split is taken among the restricted subset</li>
+  <li>Extra randomization decorrelates the prediction errors</li>
+  <li>Uncorrelated errors make bagging work better</li>
+</ul>
+
+<p><strong>Gradient Boosting</strong></p>
+
+<ul>
+  <li>Each base model predicts the <strong>negative error</strong> of previous models</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">sklearn</code> use decision trees as the base model</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">GradientBoostingClassifier</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Implementation of the traditional (exact) method</li>
+  <li>Fine for small data sets</li>
+  <li>Too slow for <code class="language-plaintext highlighter-rouge">n_samples</code> &gt; 10,000</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">HistGradientBoostingClassifier</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Discretize numerical features (256 levels)</li>
+  <li>Efficient multi core implementation</li>
+  <li>
+<strong>Much, much faster</strong> when <code class="language-plaintext highlighter-rouge">n_samples</code> is large</li>
+</ul>
+
+<p><strong>Take away</strong></p>
+
+<ul>
+  <li>
+<strong>Bagging</strong> and <strong>random forests</strong> fit trees <strong>independently</strong>
+    <ul>
+      <li>each <strong>deep tree overfits</strong> individually</li>
+      <li>averaging the tree predictions <strong>reduces overfitting</strong>
+</li>
+    </ul>
+  </li>
+  <li>(Gradient) <strong>boosting</strong> fits trees <strong>sequentially</strong>
+    <ul>
+      <li>each <strong>shallow tree underfits</strong> individually</li>
+      <li>sequentially adding trees <strong>reduces underfitting</strong>
+</li>
+    </ul>
+  </li>
+  <li>
+<strong>Gradient boosting</strong> tends to perform slightly better than <strong>bagging</strong> and <strong>random forest</strong> and furthermore shallow trees predict faster.</li>
+</ul>
+
+<p>Introductory example to ensemble models: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_introduction.ipynb">ensemble_introduction.ipynb</a></p>
+
+<h6 id="ensemble-method-using-bootstrapping">
+<a class="anchor" href="#ensemble-method-using-bootstrapping" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ensemble method using bootstrapping</h6>
+
+<p>Bagging: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_bagging.ipynb">ensemble_bagging.ipynb</a></p>
+
+<p>Wikipedia reference to <a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)">bootstrapping</a> in statistics.</p>
+
+<p>Exercise M6.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_01.ipynb">ensemble_ex_01.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_01.ipynb">solution</a>)</p>
+
+<p>Random Forest: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_random_forest.ipynb">ensemble_random_forest.ipynb</a></p>
+
+<p>Exercise M6.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_02.ipynb">ensemble_ex_02.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_02.ipynb">solution</a>)</p>
+
+<h6 id="ensemble-method-using-boosting">
+<a class="anchor" href="#ensemble-method-using-boosting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ensemble method using boosting</h6>
+
+<p>Adaptive Boosting (AdaBoost): <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_adaboost.ipynb">ensemble_adaboost.ipynb</a></p>
+
+<p>Exercise M6.03: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_03.ipynb">ensemble_ex_03.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_03.ipynb">solution</a>)</p>
+
+<p>Gradient-boosting decision tree (GBDT): <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_gradient_boosting.ipynb">ensemble_gradient_boosting.ipynb</a></p>
+
+<p>Exercise M6.04: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_04.ipynb">ensemble_ex_04.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_04.ipynb">solution</a>)</p>
+
+<p>Speeding-up gradient-boosting:  <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hist_gradient_boosting.ipynb">ensemble_hist_gradient_boosting.ipynb</a></p>
+
+<h6 id="hyperparameter-tuning-with-ensemble-methods">
+<a class="anchor" href="#hyperparameter-tuning-with-ensemble-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hyperparameter tuning with ensemble methods</h6>
+
+<p>Hyperparameter tuning: : <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb">ensemble_hyperparameters.ipynb</a></p>
+
+<p>Exercise M6.05: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_05.ipynb">ensemble_ex_05.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_05.ipynb">solution</a>)</p>
+
+<h6 id="wrap-up-quiz-5">
+<a class="anchor" href="#wrap-up-quiz-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
+
+<p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/ensemble/module%206%20-%20wrap-up-quizz.ipynb">module 6 - wrap-up quizz.ipynb</a></p>
+
+<p>Use of <a href="https://imbalanced-learn.org/stable/">Imbalanced-learn</a> library relying on scikit-learn and provides methods to deal with classification with imbalanced classes.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->

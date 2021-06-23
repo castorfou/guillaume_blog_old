@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-21T01:18:52-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-06-23T07:53:22-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 4 - A Complete Reinforcement Learning System (Capstone)" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;&lt;/p&gt;
 
@@ -662,7 +662,9 @@ This is the &lt;strong&gt;Mean Squared Value Error Objective&lt;/strong&gt; wher
 
 &lt;p&gt;&lt;strong&gt;Monday 6/21&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; module 6. Ensemble of models&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html&quot;&gt;Machine learning in python with scikit-learn&lt;/a&gt; module 6. Ensemble of models&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html&quot;&gt;RL Course by David Silver&lt;/a&gt; Integrating learning and planning (lecture 8)&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 22 - June 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 2 - Sample-based Learning Methods" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/sample-based-learning-methods/home/welcome&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt;&lt;/p&gt;
 
@@ -1452,7 +1454,102 @@ conda activate scikit-learn-course
 &lt;p&gt;video and &lt;a href=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=ensemble.md#1&quot;&gt;slides&lt;/a&gt;&lt;/p&gt;
 
 &lt;iframe title=&quot;Slides&quot; marginheight=&quot;0&quot; src=&quot;https://inria.github.io/scikit-learn-mooc/slides/?file=ensemble.md#p&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;
-&lt;/iframe&gt;</content><author><name></name></author><category term="machine learning" /><category term="scikit-learn" /><summary type="html">This is a MOOC by Inria team, in charge of scikit-learn.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1 - Fundamentals of Reinforcement Learning</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1 - Fundamentals of Reinforcement Learning" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/home/welcome&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
+&lt;/iframe&gt;
+&lt;p&gt;“Bagging” stands for Bootstrap AGGregatING. It uses bootstrap resampling (random sampling with replacement) to learn several models on random variations of the training set. At predict time, the predictions of each learner are aggregated to give the final predictions.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BaggingClassifier&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestClassifier&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Random Forests&lt;/strong&gt; are bagged &lt;em&gt;randomized&lt;/em&gt; decision trees&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At each split: a random subset of features are selected&lt;/li&gt;
+  &lt;li&gt;The best split is taken among the restricted subset&lt;/li&gt;
+  &lt;li&gt;Extra randomization decorrelates the prediction errors&lt;/li&gt;
+  &lt;li&gt;Uncorrelated errors make bagging work better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Gradient Boosting&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Each base model predicts the &lt;strong&gt;negative error&lt;/strong&gt; of previous models&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sklearn&lt;/code&gt; use decision trees as the base model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GradientBoostingClassifier&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Implementation of the traditional (exact) method&lt;/li&gt;
+  &lt;li&gt;Fine for small data sets&lt;/li&gt;
+  &lt;li&gt;Too slow for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n_samples&lt;/code&gt; &amp;gt; 10,000&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HistGradientBoostingClassifier&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Discretize numerical features (256 levels)&lt;/li&gt;
+  &lt;li&gt;Efficient multi core implementation&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Much, much faster&lt;/strong&gt; when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n_samples&lt;/code&gt; is large&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Take away&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Bagging&lt;/strong&gt; and &lt;strong&gt;random forests&lt;/strong&gt; fit trees &lt;strong&gt;independently&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;each &lt;strong&gt;deep tree overfits&lt;/strong&gt; individually&lt;/li&gt;
+      &lt;li&gt;averaging the tree predictions &lt;strong&gt;reduces overfitting&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;(Gradient) &lt;strong&gt;boosting&lt;/strong&gt; fits trees &lt;strong&gt;sequentially&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;each &lt;strong&gt;shallow tree underfits&lt;/strong&gt; individually&lt;/li&gt;
+      &lt;li&gt;sequentially adding trees &lt;strong&gt;reduces underfitting&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Gradient boosting&lt;/strong&gt; tends to perform slightly better than &lt;strong&gt;bagging&lt;/strong&gt; and &lt;strong&gt;random forest&lt;/strong&gt; and furthermore shallow trees predict faster.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Introductory example to ensemble models: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_introduction.ipynb&quot;&gt;ensemble_introduction.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;ensemble-method-using-bootstrapping&quot;&gt;Ensemble method using bootstrapping&lt;/h6&gt;
+
+&lt;p&gt;Bagging: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_bagging.ipynb&quot;&gt;ensemble_bagging.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Wikipedia reference to &lt;a href=&quot;https://en.wikipedia.org/wiki/Bootstrapping_(statistics)&quot;&gt;bootstrapping&lt;/a&gt; in statistics.&lt;/p&gt;
+
+&lt;p&gt;Exercise M6.01: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_01.ipynb&quot;&gt;ensemble_ex_01.ipynb&lt;/a&gt; (&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_01.ipynb&quot;&gt;solution&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Random Forest: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_random_forest.ipynb&quot;&gt;ensemble_random_forest.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Exercise M6.01: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_02.ipynb&quot;&gt;ensemble_ex_02.ipynb&lt;/a&gt; (&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_02.ipynb&quot;&gt;solution&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h6 id=&quot;ensemble-method-using-boosting&quot;&gt;Ensemble method using boosting&lt;/h6&gt;
+
+&lt;p&gt;Adaptive Boosting (AdaBoost): &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_adaboost.ipynb&quot;&gt;ensemble_adaboost.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Exercise M6.03: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_03.ipynb&quot;&gt;ensemble_ex_03.ipynb&lt;/a&gt; (&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_03.ipynb&quot;&gt;solution&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Gradient-boosting decision tree (GBDT): &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_gradient_boosting.ipynb&quot;&gt;ensemble_gradient_boosting.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Exercise M6.04: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_04.ipynb&quot;&gt;ensemble_ex_04.ipynb&lt;/a&gt; (&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_04.ipynb&quot;&gt;solution&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Speeding-up gradient-boosting:  &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hist_gradient_boosting.ipynb&quot;&gt;ensemble_hist_gradient_boosting.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;hyperparameter-tuning-with-ensemble-methods&quot;&gt;Hyperparameter tuning with ensemble methods&lt;/h6&gt;
+
+&lt;p&gt;Hyperparameter tuning: : &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb&quot;&gt;ensemble_hyperparameters.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Exercise M6.05: &lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_05.ipynb&quot;&gt;ensemble_ex_05.ipynb&lt;/a&gt; (&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_05.ipynb&quot;&gt;solution&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h6 id=&quot;wrap-up-quiz-5&quot;&gt;Wrap-up quiz&lt;/h6&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/ensemble/module 6 - wrap-up-quizz.ipynb&quot;&gt;module 6 - wrap-up quizz.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Use of &lt;a href=&quot;https://imbalanced-learn.org/stable/&quot;&gt;Imbalanced-learn&lt;/a&gt; library relying on scikit-learn and provides methods to deal with classification with imbalanced classes.&lt;/p&gt;</content><author><name></name></author><category term="machine learning" /><category term="scikit-learn" /><summary type="html">This is a MOOC by Inria team, in charge of scikit-learn.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/langfr-220px-Scikit_learn_logo_small.svg.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reinforcement Learning Specialization - Coursera - course 1 - Fundamentals of Reinforcement Learning</title><link href="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html" rel="alternate" type="text/html" title="Reinforcement Learning Specialization - Coursera - course 1 - Fundamentals of Reinforcement Learning" /><published>2021-05-03T00:00:00-05:00</published><updated>2021-05-03T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/reinforcement-learning-specialization-coursera.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/fundamentals-of-reinforcement-learning/home/welcome&quot;&gt;course 1 - Fundamentals of Reinforcement Learning&lt;/a&gt; of &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;my notes on &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course2.html&quot;&gt;course 2 - Sample-based Learning Methods&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course3.html&quot;&gt;course 3 - Prediction and Control with Function Approximation&lt;/a&gt;, &lt;a href=&quot;/guillaume_blog/blog/reinforcement-learning-specialization-coursera-course4.html&quot;&gt;course 4 - A Complete Reinforcement Learning System (Capstone)&lt;/a&gt;&lt;/p&gt;
 
