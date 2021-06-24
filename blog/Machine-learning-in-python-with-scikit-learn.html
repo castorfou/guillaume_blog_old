@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -117,6 +117,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#introduction---machine-learning-concepts">Introduction - Machine Learning concepts</a></li>
 <li class="toc-entry toc-h2"><a href="#module-1-the-predictive-modeling-pipeline">Module 1. The Predictive Modeling Pipeline</a>
 <ul>
+<li class="toc-entry toc-h6"><a href="#module-overview">Module overview</a></li>
 <li class="toc-entry toc-h6"><a href="#tabular-data-exploration">Tabular data exploration</a></li>
 <li class="toc-entry toc-h6"><a href="#fitting-a-scikit-learn-model-on-numerical-data">Fitting a scikit-learn model on numerical data</a></li>
 <li class="toc-entry toc-h6"><a href="#handling-categorical-data">Handling categorical data</a></li>
@@ -125,6 +126,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#module-2-selecting-the-best-model">Module 2. Selecting the best model</a>
 <ul>
+<li class="toc-entry toc-h6"><a href="#module-overview-1">Module overview</a></li>
 <li class="toc-entry toc-h6"><a href="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
 <li class="toc-entry toc-h6"><a href="#validation-and-learning-curves">Validation and learning curves</a></li>
 <li class="toc-entry toc-h6"><a href="#bias-versus-variance-trade-off">Bias versus variance trade-off</a></li>
@@ -133,6 +135,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#module-3-hyperparameter-tuning">Module 3. Hyperparameter tuning</a>
 <ul>
+<li class="toc-entry toc-h6"><a href="#module-overview-2">Module overview</a></li>
 <li class="toc-entry toc-h6"><a href="#manual-tuning">Manual tuning</a></li>
 <li class="toc-entry toc-h6"><a href="#automated-tuning">Automated tuning</a></li>
 <li class="toc-entry toc-h6"><a href="#wrap-up-quiz-2">Wrap-up quiz</a></li>
@@ -140,6 +143,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#module-4-linear-models">Module 4. Linear models</a>
 <ul>
+<li class="toc-entry toc-h6"><a href="#module-overview-3">Module overview</a></li>
 <li class="toc-entry toc-h6"><a href="#intuitions-on-linear-models">Intuitions on linear models</a></li>
 <li class="toc-entry toc-h6"><a href="#linear-regression">Linear regression</a></li>
 <li class="toc-entry toc-h6"><a href="#modeling-non-linear-features-target-relationships">Modeling non-linear features-target relationships</a></li>
@@ -150,6 +154,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#module-5-decision-tree-models">Module 5. Decision tree models</a>
 <ul>
+<li class="toc-entry toc-h6"><a href="#module-overview-4">Module overview</a></li>
 <li class="toc-entry toc-h6"><a href="#intuitions-on-tree-based-models">Intuitions on tree-based models</a></li>
 <li class="toc-entry toc-h6"><a href="#decision-tree-in-classification">Decision tree in classification</a></li>
 <li class="toc-entry toc-h6"><a href="#decision-tree-in-regression">Decision tree in regression</a></li>
@@ -159,11 +164,17 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#module-6-ensemble-of-models">Module 6. Ensemble of models</a>
 <ul>
+<li class="toc-entry toc-h6"><a href="#module-overview-5">Module overview</a></li>
 <li class="toc-entry toc-h6"><a href="#intuitions-on-ensemble-of-tree-based-models">Intuitions on ensemble of tree-based models</a></li>
 <li class="toc-entry toc-h6"><a href="#ensemble-method-using-bootstrapping">Ensemble method using bootstrapping</a></li>
 <li class="toc-entry toc-h6"><a href="#ensemble-method-using-boosting">Ensemble method using boosting</a></li>
 <li class="toc-entry toc-h6"><a href="#hyperparameter-tuning-with-ensemble-methods">Hyperparameter tuning with ensemble methods</a></li>
 <li class="toc-entry toc-h6"><a href="#wrap-up-quiz-5">Wrap-up quiz</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#module-7-evaluating-model-performance">Module 7. Evaluating model performance</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#module-overview-6">Module overview</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -218,6 +229,19 @@ conda activate scikit-learn-course
 <h2 id="module-1-the-predictive-modeling-pipeline">
 <a class="anchor" href="#module-1-the-predictive-modeling-pipeline" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 1. The Predictive Modeling Pipeline</h2>
 
+<h6 id="module-overview">
+<a class="anchor" href="#module-overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>The objective in the module are the following:</p>
+
+  <ul>
+    <li>build intuitions regarding an unknown dataset;</li>
+    <li>identify and differentiate numerical and categorical features;</li>
+    <li>create an advanced predictive pipeline with scikit-learn.</li>
+  </ul>
+</blockquote>
+
 <h6 id="tabular-data-exploration">
 <a class="anchor" href="#tabular-data-exploration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tabular data exploration</h6>
 
@@ -260,6 +284,19 @@ conda activate scikit-learn-course
 
 <h2 id="module-2-selecting-the-best-model">
 <a class="anchor" href="#module-2-selecting-the-best-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 2. Selecting the best model</h2>
+
+<h6 id="module-overview-1">
+<a class="anchor" href="#module-overview-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>The objective in the module are the following:</p>
+
+  <ul>
+    <li>understand the concept of overfitting and underfitting;</li>
+    <li>understand the concept of generalization;</li>
+    <li>understand the general cross-validation framework used to evaluate a model.</li>
+  </ul>
+</blockquote>
 
 <h6 id="overfitting-and-underfitting">
 <a class="anchor" href="#overfitting-and-underfitting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overfitting and Underfitting</h6>
@@ -314,6 +351,20 @@ conda activate scikit-learn-course
 
 <h2 id="module-3-hyperparameter-tuning">
 <a class="anchor" href="#module-3-hyperparameter-tuning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 3. Hyperparameter tuning</h2>
+
+<h6 id="module-overview-2">
+<a class="anchor" href="#module-overview-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>The objective in the module are the following:</p>
+
+  <ul>
+    <li>understand what is a model hyperparameter;</li>
+    <li>understand how to get and set the value an hyperparameter of a scikit-learn model;</li>
+    <li>be able to fine tune a full predictive modeling pipeline;</li>
+    <li>understand and visualize the combination of parameters that improves the performance of a model.</li>
+  </ul>
+</blockquote>
 
 <h6 id="manual-tuning">
 <a class="anchor" href="#manual-tuning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manual tuning</h6>
@@ -377,6 +428,21 @@ conda activate scikit-learn-course
 
 <h2 id="module-4-linear-models">
 <a class="anchor" href="#module-4-linear-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 4. Linear models</h2>
+
+<h6 id="module-overview-3">
+<a class="anchor" href="#module-overview-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>In this module, your objectives are to:</p>
+
+  <ul>
+    <li>understand the linear models parametrization;</li>
+    <li>understand the implication of linear models in both regression and classification;</li>
+    <li>get intuitions of linear models applied in higher dimensional dataset;</li>
+    <li>understand the effect of regularization and how to set it;</li>
+    <li>understand how linear models can be used even with data showing non-linear relationship with the target to be predicted.</li>
+  </ul>
+</blockquote>
 
 <h6 id="intuitions-on-linear-models">
 <a class="anchor" href="#intuitions-on-linear-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intuitions on linear models</h6>
@@ -488,6 +554,18 @@ conda activate scikit-learn-course
 <h2 id="module-5-decision-tree-models">
 <a class="anchor" href="#module-5-decision-tree-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 5. Decision tree models</h2>
 
+<h6 id="module-overview-4">
+<a class="anchor" href="#module-overview-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>The objective in the module are the following:</p>
+
+  <ul>
+    <li>understand how decision trees are working in classification and regression;</li>
+    <li>check which tree parameters are important and their influences.</li>
+  </ul>
+</blockquote>
+
 <h6 id="intuitions-on-tree-based-models">
 <a class="anchor" href="#intuitions-on-tree-based-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intuitions on tree-based models</h6>
 
@@ -578,6 +656,19 @@ conda activate scikit-learn-course
 
 <h2 id="module-6-ensemble-of-models">
 <a class="anchor" href="#module-6-ensemble-of-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 6. Ensemble of models</h2>
+
+<h6 id="module-overview-5">
+<a class="anchor" href="#module-overview-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>The objective in the module are the following:</p>
+
+  <ul>
+    <li>understanding the principles behind bootstrapping and boosting;</li>
+    <li>get intuitions with specific models such as random forest and gradient boosting;</li>
+    <li>identify the important hyperparameters of random forest and gradient boosting decision trees as well as their typical values.</li>
+  </ul>
+</blockquote>
 
 <h6 id="intuitions-on-ensemble-of-tree-based-models">
 <a class="anchor" href="#intuitions-on-ensemble-of-tree-based-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intuitions on ensemble of tree-based models</h6>
@@ -692,6 +783,25 @@ conda activate scikit-learn-course
 
 <p>Use of <a href="https://imbalanced-learn.org/stable/">Imbalanced-learn</a> library relying on scikit-learn and provides methods to deal with classification with imbalanced classes.</p>
 
+<h2 id="module-7-evaluating-model-performance">
+<a class="anchor" href="#module-7-evaluating-model-performance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 7. Evaluating model performance</h2>
+
+<h6 id="module-overview-6">
+<a class="anchor" href="#module-overview-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module overview</h6>
+
+<blockquote>
+  <p>The objective in the module are the following:</p>
+
+  <ul>
+    <li>understand the necessity of using an appropriate cross-validation strategy depending on the data;</li>
+    <li>get the intuitions behind comparing a model with some basic models that can be used as baseline;</li>
+    <li>understand the principles behind using nested cross-validation when the model needs to be evaluated as well as optimized;</li>
+    <li>understand the differences between regression and classification metrics;</li>
+    <li>understand the differences between metrics.</li>
+  </ul>
+</blockquote>
+
+<p>video and [slides](</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
