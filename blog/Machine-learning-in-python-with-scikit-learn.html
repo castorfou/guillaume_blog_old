@@ -175,6 +175,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#module-7-evaluating-model-performance">Module 7. Evaluating model performance</a>
 <ul>
 <li class="toc-entry toc-h6"><a href="#module-overview-6">Module overview</a></li>
+<li class="toc-entry toc-h6"><a href="#comparing-a-model-with-simple-baselines">Comparing a model with simple baselines</a></li>
+<li class="toc-entry toc-h6"><a href="#choice-of-cross-validation">Choice of cross-validation</a></li>
+<li class="toc-entry toc-h6"><a href="#nested-cross-validation">Nested cross-validation</a></li>
+<li class="toc-entry toc-h6"><a href="#introduction-of-the-evaluation-metrics-classification-metrics">Introduction of the evaluation metrics: Classification metrics</a></li>
+<li class="toc-entry toc-h6"><a href="#introduction-of-the-evaluation-metrics-regression-metrics">Introduction of the evaluation metrics: Regression metrics</a></li>
+<li class="toc-entry toc-h6"><a href="#wrap-up-quiz-6">Wrap-up quiz</a></li>
 </ul>
 </li>
 </ul><p>This is a <a href="https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session01/info">MOOC</a> by Inria team, in charge of scikit-learn.</p>
@@ -772,7 +778,7 @@ conda activate scikit-learn-course
 <h6 id="hyperparameter-tuning-with-ensemble-methods">
 <a class="anchor" href="#hyperparameter-tuning-with-ensemble-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hyperparameter tuning with ensemble methods</h6>
 
-<p>Hyperparameter tuning: : <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb">ensemble_hyperparameters.ipynb</a></p>
+<p>Hyperparameter tuning: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb">ensemble_hyperparameters.ipynb</a></p>
 
 <p>Exercise M6.05: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_05.ipynb">ensemble_ex_05.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_05.ipynb">solution</a>)</p>
 
@@ -801,7 +807,53 @@ conda activate scikit-learn-course
   </ul>
 </blockquote>
 
-<p>video and [slides](</p>
+<h6 id="comparing-a-model-with-simple-baselines">
+<a class="anchor" href="#comparing-a-model-with-simple-baselines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparing a model with simple baselines</h6>
+
+<p>Comparing results with baseline and chance level: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_baseline.ipynb">cross_validation_baseline.ipynb</a></p>
+
+<p>Exercise M7.01: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_02.ipynb">cross_validation_ex_02.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_sol_02.ipynb">solution</a>)</p>
+
+<h6 id="choice-of-cross-validation">
+<a class="anchor" href="#choice-of-cross-validation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Choice of cross-validation</h6>
+
+<p>Introductory exercise regarding stratification: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_03.ipynb">cross_validation_ex_03.ipynb</a></p>
+
+<p>Stratification: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_stratification.ipynb">cross_validation_stratification.ipynb</a></p>
+
+<p>Introductory exercise for sample grouping: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_04.ipynb">cross_validation_ex_04.ipynb</a></p>
+
+<p>Sample grouping: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_grouping.ipynb">cross_validation_grouping.ipynb</a></p>
+
+<p>Introductory exercise for non i.i.d. data:  <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_05.ipynb">cross_validation_ex_05.ipynb</a></p>
+
+<p>Non i.i.d. data:  <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_time.ipynb">cross_validation_time.ipynb</a></p>
+
+<h6 id="nested-cross-validation">
+<a class="anchor" href="#nested-cross-validation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nested cross-validation</h6>
+
+<p>Nested cross-validation:  <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_nested.ipynb">cross_validation_nested.ipynb</a></p>
+
+<h6 id="introduction-of-the-evaluation-metrics-classification-metrics">
+<a class="anchor" href="#introduction-of-the-evaluation-metrics-classification-metrics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction of the evaluation metrics: Classification metrics</h6>
+
+<p>Classification:  <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_classification.ipynb">metrics_classification.ipynb</a></p>
+
+<p>Exercise M7.02: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_ex_01.ipynb">metrics_ex_01.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_sol_01.ipynb">solution</a>)</p>
+
+<h6 id="introduction-of-the-evaluation-metrics-regression-metrics">
+<a class="anchor" href="#introduction-of-the-evaluation-metrics-regression-metrics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction of the evaluation metrics: Regression metrics</h6>
+
+<p>Regression:  <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_regression.ipynb">metrics_regression.ipynb</a></p>
+
+<p>Exercise M7.03: <a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_ex_02.ipynb">metrics_ex_02.ipynb</a> (<a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_sol_02.ipynb">solution</a>)</p>
+
+<h6 id="wrap-up-quiz-6">
+<a class="anchor" href="#wrap-up-quiz-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrap-up quiz</h6>
+
+<p><a href="https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/evaluation/module%207%20-%20wrap-up-quizz.ipynb">module 7 - wrap-up quizz.ipynb</a></p>
+
+<p>And this completes the course</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
