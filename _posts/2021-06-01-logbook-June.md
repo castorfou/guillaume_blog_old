@@ -90,5 +90,5 @@ End of Specialization
 
 **Thursday 6/24**
 
-[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 7. Evaluating model performance
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 7. Evaluating model performance -End of this course
 

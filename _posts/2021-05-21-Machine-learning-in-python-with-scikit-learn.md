@@ -562,7 +562,7 @@ Speeding-up gradient-boosting:  [ensemble_hist_gradient_boosting.ipynb](https://
 
 ###### Hyperparameter tuning with ensemble methods
 
-Hyperparameter tuning: : [ensemble_hyperparameters.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb)
+Hyperparameter tuning: [ensemble_hyperparameters.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_hyperparameters.ipynb)
 
 Exercise M6.05: [ensemble_ex_05.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_ex_05.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/ensemble_sol_05.ipynb))
 
@@ -590,6 +590,49 @@ Use of [Imbalanced-learn](https://imbalanced-learn.org/stable/) library relying 
 > - understand the differences between regression and classification metrics;
 > - understand the differences between metrics.
 
+###### Comparing a model with simple baselines
+
+Comparing results with baseline and chance level: [cross_validation_baseline.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_baseline.ipynb)
+
+Exercise M7.01: [cross_validation_ex_02.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_02.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_sol_02.ipynb))
+
+###### Choice of cross-validation
+
+Introductory exercise regarding stratification: [cross_validation_ex_03.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_03.ipynb) 
+
+Stratification: [cross_validation_stratification.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_stratification.ipynb)
+
+Introductory exercise for sample grouping: [cross_validation_ex_04.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_04.ipynb) 
+
+Sample grouping: [cross_validation_grouping.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_grouping.ipynb)
+
+Introductory exercise for non i.i.d. data:  [cross_validation_ex_05.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_ex_05.ipynb) 
+
+Non i.i.d. data:  [cross_validation_time.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_time.ipynb) 
 
 
-video and [slides](
+###### Nested cross-validation
+
+Nested cross-validation:  [cross_validation_nested.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/cross_validation_nested.ipynb) 
+
+
+
+###### Introduction of the evaluation metrics: Classification metrics
+
+Classification:  [metrics_classification.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_classification.ipynb) 
+
+Exercise M7.02: [metrics_ex_01.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_ex_01.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_sol_01.ipynb))
+
+###### Introduction of the evaluation metrics: Regression metrics
+
+Regression:  [metrics_regression.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_regression.ipynb) 
+
+Exercise M7.03: [metrics_ex_02.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_ex_02.ipynb) ([solution](https://github.com/castorfou/scikit-learn-mooc/blob/master/notebooks/metrics_sol_02.ipynb))
+
+###### Wrap-up quiz
+
+[module 7 - wrap-up quizz.ipynb](https://github.com/castorfou/scikit-learn-mooc/blob/master/jupyter-book/evaluation/module 7 - wrap-up-quizz.ipynb)
+
+
+
+And this completes the course
