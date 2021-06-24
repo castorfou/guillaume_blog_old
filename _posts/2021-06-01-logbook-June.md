@@ -88,3 +88,7 @@ End of Specialization
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Integrating learning and planning (lecture 8)
 
+**Thursday 6/24**
+
+[Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 7. Evaluating model performance
+

@@ -68,7 +68,13 @@ conda activate scikit-learn-course
 
 ## Module 1. The Predictive Modeling Pipeline 
 
+###### Module overview
 
+> The objective in the module are the following:
+>
+> - build intuitions regarding an unknown dataset;
+> - identify and differentiate numerical and categorical features;
+> - create an advanced predictive pipeline with scikit-learn.
 
 ###### Tabular data exploration
 
@@ -113,6 +119,14 @@ Exercise M1.05: [03_categorical_pipeline_ex_02.ipynb](https://github.com/castorf
 
 
 ## Module 2. Selecting the best model
+
+###### Module overview
+
+> The objective in the module are the following:
+>
+> - understand the concept of overfitting and underfitting;
+> - understand the concept of generalization;
+> - understand the general cross-validation framework used to evaluate a model.
 
 ###### Overfitting and Underfitting
 
@@ -162,6 +176,15 @@ video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=bias_v
 
 
 ## Module 3. Hyperparameter tuning
+
+###### Module overview
+
+> The objective in the module are the following:
+>
+> - understand what is a model hyperparameter;
+> - understand how to get and set the value an hyperparameter of a scikit-learn model;
+> - be able to fine tune a full predictive modeling pipeline;
+> - understand and visualize the combination of parameters that improves the performance of a model.
 
 ###### Manual tuning
 
@@ -220,6 +243,16 @@ fig.show()
 
 
 ## Module 4. Linear models
+
+###### Module overview
+
+> In this module, your objectives are to:
+>
+> - understand the linear models parametrization;
+> - understand the implication of linear models in both regression and classification;
+> - get intuitions of linear models applied in higher dimensional dataset;
+> - understand the effect of regularization and how to set it;
+> - understand how linear models can be used even with data showing non-linear relationship with the target to be predicted.
 
 ###### Intuitions on linear models
 
@@ -336,6 +369,13 @@ Beyond linear separation in classification: [logistic_regression_non_linear.ipyn
 
 ## Module 5. Decision tree models
 
+###### Module overview
+
+> The objective in the module are the following:
+>
+> - understand how decision trees are working in classification and regression;
+> - check which tree parameters are important and their influences.
+
 ###### Intuitions on tree-based models
 
 video and [slides](https://inria.github.io/scikit-learn-mooc/slides/?file=trees.md#1)
@@ -422,6 +462,14 @@ Importance of decision tree hyperparameters on generalization: [trees_hyperparam
 
 
 ## Module 6. Ensemble of models
+
+###### Module overview
+
+> The objective in the module are the following:
+>
+> - understanding the principles behind bootstrapping and boosting;
+> - get intuitions with specific models such as random forest and gradient boosting;
+> - identify the important hyperparameters of random forest and gradient boosting decision trees as well as their typical values.
 
 ###### Intuitions on ensemble of tree-based models
 
@@ -528,3 +576,20 @@ Exercise M6.05: [ensemble_ex_05.ipynb](https://github.com/castorfou/scikit-learn
 
 Use of [Imbalanced-learn](https://imbalanced-learn.org/stable/) library relying on scikit-learn and provides methods to deal with classification with imbalanced classes.
 
+
+
+## Module 7. Evaluating model performance
+
+###### Module overview
+
+> The objective in the module are the following:
+>
+> - understand the necessity of using an appropriate cross-validation strategy depending on the data;
+> - get the intuitions behind comparing a model with some basic models that can be used as baseline;
+> - understand the principles behind using nested cross-validation when the model needs to be evaluated as well as optimized;
+> - understand the differences between regression and classification metrics;
+> - understand the differences between metrics.
+
+
+
+video and [slides](
