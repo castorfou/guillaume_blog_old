@@ -92,3 +92,13 @@ End of Specialization
 
 [Machine learning in python with scikit-learn](/guillaume_blog/blog/Machine-learning-in-python-with-scikit-learn.html) module 7. Evaluating model performance -End of this course
 
+
+
+
+
+## Week 26 - June 21
+
+**Monday 6/28**
+
+Paper reviewed on arxiv about local post-hoc explanations for predictive process monitoring in manufacturing. [arXiv:2009.10513v2](https://arxiv.org/abs/2009.10513v2). SHAP, ICE and why this approach makes sense in manufacturing domains.
+
