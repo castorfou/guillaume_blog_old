@@ -100,5 +100,9 @@ End of Specialization
 
 **Monday 6/28**
 
-Paper reviewed on arxiv about local post-hoc explanations for predictive process monitoring in manufacturing. [arXiv:2009.10513v2](https://arxiv.org/abs/2009.10513v2). SHAP, ICE and why this approach makes sense in manufacturing domains.
+Paper reviewed on arxiv about **local post-hoc explanations for predictive process monitoring in manufacturing**. [arXiv:2009.10513v2](https://arxiv.org/abs/2009.10513v2). SHAP, ICE and why this approach makes sense in manufacturing domains.
+
+**Wednesday 6/30**
+
+Survey Paper reviewed on Journal of Manufacturing Systems about **Deep learning for smart manufacturing: Methods and applications**. [j.jmsy.2018.01.003](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwic59u3yL_xAhVFCxoKHSGXBekQFjAOegQIGBAD&url=http%3A%2F%2Fganj-ie.iust.ac.ir%3A8081%2Fimages%2Fb%2Fb8%2F2018_DeeplearningforsmartmanufacturingMethodsandapplications_JMSY.pdf&usg=AOvVaw2nUjIUaW8qJimfi8kfvQDW). Review use of deep learning algorithms:  CNN, RBM, auto encoders, RNN and applications for smart manufacturing: quality inspection, fault assessment, defect prognosis (RUL). Unfortunately prescriptive usage are missing. Points to multiple references origins of these algorithms and applications. Great survey paper!
 
