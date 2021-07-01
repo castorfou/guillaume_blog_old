@@ -434,3 +434,6 @@ Apply model-free RL to simulated episodes
 ![](../images/silver_mc_search.png)
 
 ![](../images/silver_td_search.png)
+
+## 7/1/21 - Lecture 9: Exploration and exploitation
+
