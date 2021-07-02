@@ -437,3 +437,17 @@ Apply model-free RL to simulated episodes
 
 ## 7/1/21 - Lecture 9: Exploration and exploitation
 
+David starts with a multi-armed bandit case. We can think about it as a one-step MDP.
+
+But in that case we don't have states anymore.
+
+Definition of regret as the total opportunity loss (how far we are from the best value). And maximizing cumulative reward is the same as minimizing total regret.
+
+Greedy and $\epsilon$-greedy have linear total regret.
+
+**Optimism in face of uncertainty**: don't play the one with best mean value but play the one with best potential (characterized with the highest tail) = select action maximising Upper Confidence Bound (UCB)
+
+$\epsilon$-greedy is behaving right when properly tuned or can be a disaster otherwise. UCB is comparable to properly tuned $\epsilon$-greedy.
+
+thesis from a French guy about thompson sampling in optimisation control problems: [Exploration-Exploitation with Thompson Sampling in Linear](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiUiqCfh8TxAhUG14UKHXK1C_AQFjACegQIBxAD&url=https%3A%2F%2Ftel.archives-ouvertes.fr%2Ftel-01816069%2Fdocument&usg=AOvVaw3hFUV24uDy-3nKFtTUW7Ea)
+
