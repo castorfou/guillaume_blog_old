@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      12 min read
     
 </span></p>
 
@@ -549,6 +549,20 @@ Critic will use a policy evaluation (several options seen so far: monte-carlo po
 
 <h2 id="7121---lecture-9-exploration-and-exploitation">
 <a class="anchor" href="#7121---lecture-9-exploration-and-exploitation" aria-hidden="true"><span class="octicon octicon-link"></span></a>7/1/21 - Lecture 9: Exploration and exploitation</h2>
+
+<p>David starts with a multi-armed bandit case. We can think about it as a one-step MDP.</p>
+
+<p>But in that case we don’t have states anymore.</p>
+
+<p>Definition of regret as the total opportunity loss (how far we are from the best value). And maximizing cumulative reward is the same as minimizing total regret.</p>
+
+<p>Greedy and $\epsilon$-greedy have linear total regret.</p>
+
+<p><strong>Optimism in face of uncertainty</strong>: don’t play the one with best mean value but play the one with best potential (characterized with the highest tail) = select action maximising Upper Confidence Bound (UCB)</p>
+
+<p>$\epsilon$-greedy is behaving right when properly tuned or can be a disaster otherwise. UCB is comparable to properly tuned $\epsilon$-greedy.</p>
+
+<p>thesis from a French guy about thompson sampling in optimisation control problems: <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiUiqCfh8TxAhUG14UKHXK1C_AQFjACegQIBxAD&amp;url=https%3A%2F%2Ftel.archives-ouvertes.fr%2Ftel-01816069%2Fdocument&amp;usg=AOvVaw3hFUV24uDy-3nKFtTUW7Ea">Exploration-Exploitation with Thompson Sampling in Linear</a></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
