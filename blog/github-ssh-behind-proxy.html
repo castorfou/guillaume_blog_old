@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -121,6 +121,7 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Revert-socks5-for-git">Revert socks5 for git </a></li>
 <li class="toc-entry toc-h2"><a href="#from-git-ssh-to-git-https">from git ssh to git https </a></li>
+<li class="toc-entry toc-h2"><a href="#Github-token-to-access-passwordless-using-https">Github token to access passwordless using https </a></li>
 </ul>
 </li>
 </ul><!--
@@ -342,6 +343,48 @@ origin  https://github.com/castorfou/mit_600.2x.git <span class="o">(</span>push
 <div class="highlight"><pre><span></span>git fetch
 git pull
 </pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Lastly to setup passwordless access to github</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Github-token-to-access-passwordless-using-https">
+<a class="anchor" href="#Github-token-to-access-passwordless-using-https" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github token to access passwordless using https<a class="anchor-link" href="#Github-token-to-access-passwordless-using-https"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>From <a href="https://clarusway.com/passwordless-usage-of-private-git-repositories/">https://clarusway.com/passwordless-usage-of-private-git-repositories/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To Generate token in github:</p>
+<ul>
+<li>(profile &gt; Settings &gt; Developer settings &gt; Personal access tokens)</li>
+<li>Generate new token</li>
+<li>Select repo section</li>
+</ul>
+<p>Integrate into git config:</p>
+<ul>
+<li>copy token into <code>.git/config</code> remote url ( from <code>url = https://github.com/castorfou/guillaume_blog.git</code> to <code>url = https://mytoken@github.com/castorfou/guillaume_blog.git</code>)</li>
+</ul>
 
 </div>
 </div>
