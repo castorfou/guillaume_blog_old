@@ -18,3 +18,12 @@ Paper reviewed on *arxiv* about **revisiting Deep Learning Models for Tabular Da
 
 [RL Course by David Silver](/guillaume_blog/blog/Introduction-to-Reinforcement-Learning-with-David-Silver.html) Exploration and Exploitation (lecture 9)
 
+
+
+## Week 27 - July 21
+
+
+
+**Wednesday 7/7**
+
+Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) on Coursera by IBM.
