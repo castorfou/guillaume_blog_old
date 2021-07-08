@@ -4,7 +4,7 @@ description: From University of Alberta. My notes on course 3.
 toc: true
 comments: true
 layout: post
-categories: [reinforcement learning, deepmind]
+categories: [reinforcement learning, deepmind, coursera]
 image: images/RL.png
 ---
 

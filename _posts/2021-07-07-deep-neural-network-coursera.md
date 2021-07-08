@@ -1,11 +1,11 @@
 ---
-title: "Deep Neural Network - Coursera"
+title: "Deep Neural Network with PyTorch - Coursera"
 description: From IBM
 toc: true
 comments: true
 layout: post
-categories: [pytorch]
-
+categories: [pytorch, coursera]
+image: https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png
 ---
 
 Coursera website:  [Deep Neural Networks with PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome)
