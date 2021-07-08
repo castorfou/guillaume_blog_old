@@ -179,5 +179,56 @@ C
 
 
 
-#### Derivative in Pytorch
+#### Derivatives in Pytorch
+
+###### Derivatives
+
+using $y(x)=x^2$
+
+```python
+x = torch.tensor(2., requires_grad=True)
+y = x ** 2
+
+#calculate derivative df/dx
+y.backward()
+#evaluate at x : df/dx(x)
+x.grad
+>> tensor(4.)
+```
+
+using $z(x)=x^2+2x+1$
+
+```python
+x = torch.tensor(2., requires_grad=True)
+z = x**2 + 2*x + 1
+z.backward()
+x.grad
+>> tensor(6.)
+```
+
+Note: in my version of pytorch (1.7.1), I cannot use torch.int dtypes.
+
+
+
+###### Partial derivatives
+
+using $f(u, v)=uv+u^2$, $\frac{\partial f(u,v)}{\partial u} = v+2u$, $\frac{\partial f(u,v)}{\partial v} = u$
+
+```python
+u = torch.tensor(1., requires_grad=True)
+v = torch.tensor(2., requires_grad=True)
+
+f = u*v + u**2
+
+#calculate all partial derivatives df/du and df/dv
+f.backward()
+#evaluate partial derivative df/du at u, v : df/du(u, v)
+u.grad
+>> tensor(4.)
+#evaluate partial derivative df/dv at u, v : df/dv(u, v)
+v.grad
+>> tensor(1.)
+```
+
+
 
