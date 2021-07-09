@@ -1008,48 +1008,48 @@ window.onload = wrap_img;
 
 <p>Dataset to generate train_data and val_data</p>
 
-<pre><code class="language-pytorch">from torch.utils.data import Dataset, DataLoader
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">DataLoader</span>
 
-class Data(Dataset):
-    def __init__(self, train = True):
-        self.x = torch.arange(-3, 3, 0.1).view(-1, 1)
-        self.f = -3*self.x+1
-        self.y = self.f+0.1*torch.randn(self.x.size())
-        self.len = self.x.shape[0]
-        if train == True:
-            self.y[0] = 0
-            self.y[50:55] = 20
-        else:
-            pass
+<span class="k">class</span> <span class="nc">Data</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">train</span> <span class="o">=</span> <span class="bp">True</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">).</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">f</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="bp">self</span><span class="p">.</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">f</span><span class="o">+</span><span class="mf">0.1</span><span class="o">*</span><span class="n">torch</span><span class="p">.</span><span class="n">randn</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">size</span><span class="p">())</span>
+        <span class="bp">self</span><span class="p">.</span><span class="nb">len</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">train</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">55</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">pass</span>
         
-    def __getitem__(self, index):
-        return self.x[index], self.y[index]
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="bp">self</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
     
-    def __len__(self):
-        return self.len
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="nb">len</span>
                 
         
-train_data = Data()
-val_data = Data(train=False)
-</code></pre>
+<span class="n">train_data</span> <span class="o">=</span> <span class="n">Data</span><span class="p">()</span>
+<span class="n">val_data</span> <span class="o">=</span> <span class="n">Data</span><span class="p">(</span><span class="n">train</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>LR model</p>
 
-<pre><code class="language-pytorch">import torch.nn as nn
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="n">nn</span>
 
-class LR(nn.Module):
-    def __init__(self, input_size, output_size):
-        super(LR, self).__init__()
-        self.linear = nn.Linear(input_size, output_size)
-    def forward(self, x):
-        out=self.linear(x)
-        return out
-</code></pre>
+<span class="k">class</span> <span class="nc">LR</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">LR</span><span class="p">,</span> <span class="bp">self</span><span class="p">).</span><span class="n">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">out</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">linear</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">out</span>
+</code></pre></div></div>
 
-<pre><code class="language-pytorch">criterion = nn.MSELoss()
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">MSELoss</span><span class="p">()</span>
 
-trainloader = DataLoader(dataset=train_data, batch_size=1)
-</code></pre>
+<span class="n">trainloader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">dataset</span><span class="o">=</span><span class="n">train_data</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">learning_rates</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
