@@ -869,7 +869,7 @@ standard explanation about Train, Validation, Test
 
 Dataset to generate train_data and val_data
 
-```pytorch
+```python
 from torch.utils.data import Dataset, DataLoader
 
 class Data(Dataset):
@@ -897,7 +897,7 @@ val_data = Data(train=False)
 
 LR model
 
-```pytorch
+```python
 import torch.nn as nn
 
 class LR(nn.Module):
@@ -909,7 +909,7 @@ class LR(nn.Module):
         return out
 ```
 
-```pytorch
+```python
 criterion = nn.MSELoss()
 
 trainloader = DataLoader(dataset=train_data, batch_size=1)
