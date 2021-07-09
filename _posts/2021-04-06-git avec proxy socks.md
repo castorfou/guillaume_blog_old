@@ -1,6 +1,6 @@
 ---
-title: "git ignore large files"
-description: gitlab doesn't like >100MB files
+title: "using SOCKS5 proxy - with git, apt, pip, ..."
+description: to connect to github behind local firewall
 toc: true
 comments: true
 layout: post
@@ -10,71 +10,99 @@ image: images/git.png
 
 
 
-## files used
+## setup socks5 server
+
+using [dante](https://community.hetzner.com/tutorials/install-and-configure-danted-proxy-socks5) server
+
+**Installation**
 
 ```bash
-$ ll .gitignore* update_git_ignore.sh
- .gitignore
- .gitignore_bigfiles
- .gitignore_static
- update_git_ignore.sh
+sudo apt-get install dante-server
 ```
 
 
 
-#### .gitignore_static
-
-Here is my standard entries for `.gitignore`
+**Conf file**
 
 ```bash
-$ cat .gitignore_static
-*.history
-*/.ipynb_checkpoints/*
-.ipynb_checkpoints/*
-mlflow/*
-mlruns/*
+sudo nano /etc/danted.conf
+
+logoutput: stderr
+internal: enp3s0 port = 1080
+external: enp3s0
+socksmethod: none
+clientmethod: none
+user.privileged: proxy
+user.unprivileged: nobody
+user.libwrap: nobody
+client pass {
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: error connect disconnect
+}
+client block {
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: connect error
+}
+socks pass {
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: error connect disconnect
+}
+socks block {
+        from: 0.0.0.0/0 to: 0.0.0.0/0
+        log: connect error
+}
 ```
 
 
 
-#### .gitignore_bigfiles, .gitignore
-
-Those are filed created by `update_git_ignore.sh`
-
-
-
-###### update_git_ignore.sh
-
-add all files > 100MB in `.gitignore_bigfiles`
-
-merge  `.gitignore_static` and `.gitignore_bigfiles` as `.gitignore`
-
-display `.gitignore`
+**Start and monitor usage**
 
 ```bash
-$ cat update_git_ignore.sh
-#!/bin/bash
-
-#update gitignore_bigfiles
-find . -size +100M -not -path "./.git*"| sed 's|^\./||g' | cat > .gitignore_bigfiles
-
-# create gitignore as concat of gitingore_static and gitignore_bigfiles
-cat .gitignore_static .gitignore_bigfiles > .gitignore
-
-# print content of .gitignore_bigfiles
-cat .gitignore_bigfiles
+sudo service danted restart
+tail -f /var/log/syslog
 ```
 
 
 
-## Usage
-
-Launch `./update_git_ignore.sh`before adding files to `git`
+## Git setup 
 
 ```bash
-$ ./update_git_ignore.sh
-mlflow/1/5699a81e1a6a44ef8afecd98fff987fc/artifacts/Data Profile.html
-$ git add .
-$ git commit -m 'example without large files'
+$ cat .ssh/config
+Host github.com
+IdentityFile ~/.ssh/id_rsa_gmail
+ProxyCommand /bin/nc -X 5 -x 192.168.50.202:1080 %h %p
 ```
 
+
+
+## Proxychains
+
+**installation**
+
+```bash
+# to be downloaded from apt mirrors:
+# libproxychains proxychains
+sudo dpkg -i libproxychains3_3.1-7_amd64.deb proxychains_3.1-7_all.deb
+```
+
+**configuration**
+
+```bash
+sudo vi /etc/proxychains.conf
+
+[ProxyList]
+# add proxy here ...
+# meanwile
+# defaults set to "tor"
+socks5          192.168.50.202  1080
+```
+
+**usage**
+
+```bash
+sudo proxychains apt update
+sudo proxychains apt upgrade
+
+proxychains pip install pycaret 
+
+```
