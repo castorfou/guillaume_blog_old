@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -137,6 +137,23 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h6"><a href="#derivatives">Derivatives</a></li>
 <li class="toc-entry toc-h6"><a href="#partial-derivatives">Partial derivatives</a></li>
+<li class="toc-entry toc-h6"><a href="#ungraded-lab-2">Ungraded lab</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h4"><a href="#simple-dataset">Simple Dataset</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#build-a-dataset-class-and-object">Build a Dataset Class and Object</a></li>
+<li class="toc-entry toc-h6"><a href="#build-a-dataset-transform-eg-normalize-or-standardize">Build a Dataset Transform (e.g. normalize or standardize)</a></li>
+<li class="toc-entry toc-h6"><a href="#compose-transforms">Compose Transforms</a></li>
+<li class="toc-entry toc-h6"><a href="#ungraded-lab-3">Ungraded lab</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h4"><a href="#dataset">Dataset</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#dataset-class-for-images">Dataset Class for Images</a></li>
+<li class="toc-entry toc-h6"><a href="#torch-vision-transforms">Torch Vision Transforms</a></li>
+<li class="toc-entry toc-h6"><a href="#torch-vision-datasets">Torch Vision Datasets</a></li>
+<li class="toc-entry toc-h6"><a href="#ungraded-lab-4">Ungraded lab</a></li>
 </ul>
 </li>
 </ul>
@@ -329,6 +346,15 @@ window.onload = wrap_img;
 
 <p>Note: in my version of pytorch (1.7.1), I cannot use torch.int dtypes.</p>
 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">---------------------------------------------------------------------------</span>
+<span class="nb">RuntimeError</span>                              <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">92</span><span class="o">-</span><span class="mi">979</span><span class="n">d0f10c1e7</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">----&gt;</span> <span class="mi">3</span> <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">requires_grad</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+      <span class="mi">4</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+      <span class="mi">5</span> <span class="n">z</span><span class="p">.</span><span class="n">backward</span><span class="p">()</span>
+<span class="nb">RuntimeError</span><span class="p">:</span> <span class="n">Only</span> <span class="n">Tensors</span> <span class="n">of</span> <span class="n">floating</span> <span class="n">point</span> <span class="ow">and</span> <span class="nb">complex</span> <span class="n">dtype</span> <span class="n">can</span> <span class="n">require</span> <span class="n">gradients</span>
+</code></pre></div></div>
+
 <h6 id="partial-derivatives">
 <a class="anchor" href="#partial-derivatives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Partial derivatives</h6>
 
@@ -341,14 +367,170 @@ window.onload = wrap_img;
 
 <span class="c1">#calculate all partial derivatives df/du and df/dv
 </span><span class="n">f</span><span class="p">.</span><span class="n">backward</span><span class="p">()</span>
-<span class="c1">#evaluate partial derivative df/du at u, v : df/du(u, v)
+<span class="c1">#evaluate partial derivative with respect to u df/du at u, v : df/du(u, v)
 </span><span class="n">u</span><span class="p">.</span><span class="n">grad</span>
 <span class="o">&gt;&gt;</span> <span class="n">tensor</span><span class="p">(</span><span class="mf">4.</span><span class="p">)</span>
-<span class="c1">#evaluate partial derivative df/dv at u, v : df/dv(u, v)
+<span class="c1">#evaluate partial derivative with respect to v df/dv at u, v : df/dv(u, v)
 </span><span class="n">v</span><span class="p">.</span><span class="n">grad</span>
 <span class="o">&gt;&gt;</span> <span class="n">tensor</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span>
 </code></pre></div></div>
 
+<h6 id="ungraded-lab-2">
+<a class="anchor" href="#ungraded-lab-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ungraded lab</h6>
+
+<p><a href="https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.2derivativesandGraphsinPytorch_v2.ipynb">1.2derivativesandGraphsinPytorch_v2.ipynb</a></p>
+
+<p>With some explanation about <code class="language-plaintext highlighter-rouge">.detach()</code> pointing to <a href="https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html">torch.autograd documentation</a>. In this page, there is a link to <a href="https://www.youtube.com/watch?v=tIeHLnjs5U8">walkthrough of backprop</a> video.</p>
+
+<p>Will have to go back to <code class="language-plaintext highlighter-rouge">.detach()</code></p>
+
+<h4 id="simple-dataset">
+<a class="anchor" href="#simple-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Dataset</h4>
+
+<h6 id="build-a-dataset-class-and-object">
+<a class="anchor" href="#build-a-dataset-class-and-object" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build a Dataset Class and Object</h6>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
+
+<span class="k">class</span> <span class="nc">toy_set</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">torch</span><span class="p">.</span><span class="n">ones</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">ones</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="nb">len</span> <span class="o">=</span> <span class="n">length</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">transform</span> <span class="o">=</span> <span class="n">transform</span>
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="n">sample</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="bp">self</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">transform</span><span class="p">:</span>
+            <span class="n">sample</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">transform</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sample</span>
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="nb">len</span>
+    
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">toy_set</span><span class="p">()</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+<span class="o">&gt;&gt;</span> <span class="mi">100</span>
+<span class="n">dataset</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="p">(</span><span class="n">tensor</span><span class="p">([</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]),</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">1.</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h6 id="build-a-dataset-transform-eg-normalize-or-standardize">
+<a class="anchor" href="#build-a-dataset-transform-eg-normalize-or-standardize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build a Dataset Transform (e.g. normalize or standardize)</h6>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">add_mult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">addx</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">muly</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">addx</span> <span class="o">=</span> <span class="n">addx</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">muly</span> <span class="o">=</span> <span class="n">muly</span>
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span><span class="p">):</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">sample</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">sample</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="bp">self</span><span class="p">.</span><span class="n">addx</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="o">*</span><span class="bp">self</span><span class="p">.</span><span class="n">muly</span>
+        <span class="n">sample</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+        <span class="k">return</span> <span class="n">sample</span>
+    
+    
+<span class="c1"># automatically apply the transform
+</span><span class="n">a_m</span> <span class="o">=</span> <span class="n">add_mult</span><span class="p">()</span>
+<span class="n">dataset_</span> <span class="o">=</span> <span class="n">toy_set</span><span class="p">(</span><span class="n">transform</span><span class="o">=</span><span class="n">a_m</span><span class="p">)</span>
+<span class="n">dataset_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">tensor</span><span class="p">([</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">]),</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">1.</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h6 id="compose-transforms">
+<a class="anchor" href="#compose-transforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compose Transforms</h6>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">mult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mul</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">mul</span> <span class="o">=</span> <span class="n">mul</span>
+
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="bp">self</span><span class="p">.</span><span class="n">mul</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="bp">self</span><span class="p">.</span><span class="n">mul</span>
+        <span class="n">sample</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+        <span class="k">return</span> <span class="n">sample</span>
+    
+<span class="kn">from</span> <span class="nn">torchvision</span> <span class="kn">import</span> <span class="n">transforms</span>
+<span class="n">data_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="p">.</span><span class="n">Compose</span><span class="p">([</span><span class="n">add_mult</span><span class="p">(),</span> <span class="n">mult</span><span class="p">()])</span>
+
+<span class="c1"># automatically apply the composed transform
+</span><span class="n">dataset_tr</span> <span class="o">=</span> <span class="n">toy_set</span><span class="p">(</span><span class="n">transform</span><span class="o">=</span><span class="n">data_transform</span><span class="p">)</span>
+<span class="n">dataset_tr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">tensor</span><span class="p">([</span><span class="mf">300.</span><span class="p">,</span> <span class="mf">300.</span><span class="p">]),</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">100.</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h6 id="ungraded-lab-3">
+<a class="anchor" href="#ungraded-lab-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ungraded lab</h6>
+
+<p><a href="https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.1_simple_data_set_v2.ipynb">1.3.1_simple_data_set_v2.ipynb</a></p>
+
+<h4 id="dataset">
+<a class="anchor" href="#dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dataset</h4>
+
+<h6 id="dataset-class-for-images">
+<a class="anchor" href="#dataset-class-for-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dataset Class for Images</h6>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">imshow</span>
+<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">DataLoader</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Dataset</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">csv_file</span><span class="p">,</span> <span class="n">data_dir</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">transform</span> <span class="o">=</span> <span class="n">transform</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">data_dir</span> <span class="o">=</span> <span class="n">data_dir</span>
+        <span class="n">data_dir_csv_file</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">csv_file</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">data_name</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir_csv_file</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="nb">len</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">data_name</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="nb">len</span>
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">):</span>
+        <span class="n">img_name</span><span class="o">=</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">data_dir</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">data_name</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">img_name</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">data_name</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">transform</span><span class="p">:</span>
+            <span class="n">image</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">transform</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">image</span><span class="p">,</span> <span class="n">y</span>
+    
+<span class="k">def</span> <span class="nf">show_data</span><span class="p">(</span><span class="n">data_sample</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)):</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data_sample</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">numpy</span><span class="p">().</span><span class="n">reshape</span><span class="p">(</span><span class="n">shape</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">'y = '</span> <span class="o">+</span> <span class="n">data_sample</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="n">csv_file</span><span class="o">=</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">data_dir</span><span class="o">=</span><span class="n">directory</span><span class="p">)</span>
+<span class="n">show_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h6 id="torch-vision-transforms">
+<a class="anchor" href="#torch-vision-transforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Torch Vision Transforms</h6>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">torchvision.transforms</span> <span class="k">as</span> <span class="n">transforms</span>
+<span class="n">transforms</span><span class="p">.</span><span class="n">CenterCrop</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">transforms</span><span class="p">.</span><span class="n">ToTensor</span><span class="p">()</span>
+<span class="n">croptensor_data_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="p">.</span><span class="n">Compose</span><span class="p">(</span> <span class="p">[</span> <span class="n">transforms</span><span class="p">.</span><span class="n">CenterCrop</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span> <span class="n">transforms</span><span class="p">.</span><span class="n">ToTensor</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="n">csv_file</span><span class="o">=</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">data_dir</span><span class="o">=</span><span class="n">directory</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">croptensor_data_transform</span><span class="p">)</span>
+<span class="n">dataset</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">].</span><span class="n">shape</span>
+<span class="o">&gt;&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h6 id="torch-vision-datasets">
+<a class="anchor" href="#torch-vision-datasets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Torch Vision Datasets</h6>
+
+<p>MNIST example</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">torchvision.datasets</span> <span class="k">as</span> <span class="n">dsets</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">dsets</span><span class="p">.</span><span class="n">MNIST</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s">'./data'</span><span class="p">,</span> <span class="n">train</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">download</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="p">.</span><span class="n">ToTensor</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h6 id="ungraded-lab-4">
+<a class="anchor" href="#ungraded-lab-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ungraded lab</h6>
+
+<p><a href="https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.2_Datasets_and_transforms.ipynb">1.3.2_Datasets_and_transforms.ipynb</a></p>
+
+<p><a href="https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.3_pre-Built%20Datasets_and_transforms_v2.ipynb">1.3.3_pre-Built Datasets_and_transforms_v2.ipynb</a></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
