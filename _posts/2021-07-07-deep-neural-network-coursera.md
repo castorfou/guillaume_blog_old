@@ -695,3 +695,80 @@ for epoch in range(15):
 
 
 
+#### Stochastic Gradient Descent and the Data Loader
+
+
+
+###### Stochastic Gradient Descent in PyTorch
+
+```python
+w = torch.tensor(-15.0, requires_grad=True)
+b = torch.tensor(-10.0, requires_grad=True)
+X = torch.arange(-3, 3, 0.1).view(-1, 1)
+f = -3*X
+Y=f+0.1*torch.randn(X.size())
+
+def forward(x):
+    y=w*x+b
+    return y
+def criterion(yhat, y):
+    return torch.mean((yhat-y)**2)
+```
+
+
+
+```python
+lr = 0.1
+for epoch in range(4):
+    for x, y in zip(X, Y):
+        yhat=forward(x)
+        loss=criterion(yhat, y)
+        loss.backward()
+        w.data=w.data-lr*w.grad.data
+        w.grad.data.zero_()
+        b.data=b.data-lr*b.grad.data
+        b.grad.data.zero_()
+```
+
+###### Stochastic Gradient Descent DataLoader
+
+dataset
+
+```python
+from torch.utils.data import Dataset
+
+class Data(Dataset):
+    def __init__(self):
+        self.x = torch.arange(-3, 3, 0.1).view(-1, 1)
+        self.y = -3*X+1
+        self.len = self.x.shape[0]
+    def __getitem__(self, index):
+        return self.x[index], self.y[index]
+    def __len__(self):
+        return self.len
+    
+dataset = Data()
+```
+
+dataloader
+
+```python
+from torch.utils.data import DataLoader
+
+dataset=Data()
+trainloader = DataLoader(dataset=dataset, batch_size=1)
+```
+
+stochastic gradient descent
+
+```pytorch
+for x, y in trainloader:
+    yhat = forward(x)
+    loss = criterion(yhat, y)
+    loss.backward()
+    w.data=w.data-lr*w.grad.data
+    b.data=b.data-lr*b.grad.data
+    w.grad.data.zero_()
+    b.grad.data.zero_()
+```
+
