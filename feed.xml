@@ -1,84 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-07-09T02:55:17-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">using SOCKS5 proxy - with git, apt, pip, …</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html" rel="alternate" type="text/html" title="using SOCKS5 proxy - with git, apt, pip, …" /><published>2021-07-09T00:00:00-05:00</published><updated>2021-07-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html">&lt;h2 id=&quot;setup-socks5-server&quot;&gt;setup socks5 server&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-07-09T03:03:24-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">git ignore large files</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html" rel="alternate" type="text/html" title="git ignore large files" /><published>2021-07-09T00:00:00-05:00</published><updated>2021-07-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html">&lt;h2 id=&quot;files-used&quot;&gt;files used&lt;/h2&gt;
 
-&lt;p&gt;using &lt;a href=&quot;https://community.hetzner.com/tutorials/install-and-configure-danted-proxy-socks5&quot;&gt;dante&lt;/a&gt; server&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;dante-server
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll .gitignore&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; update_git_ignore.sh
+ .gitignore
+ .gitignore_bigfiles
+ .gitignore_static
+ update_git_ignore.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Conf file&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;gitignore_static&quot;&gt;.gitignore_static&lt;/h4&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/danted.conf
+&lt;p&gt;Here is my standard entries for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
 
-logoutput: stderr
-internal: enp3s0 port &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1080
-external: enp3s0
-socksmethod: none
-clientmethod: none
-user.privileged: proxy
-user.unprivileged: nobody
-user.libwrap: nobody
-client pass &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: error connect disconnect
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-client block &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: connect error
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-socks pass &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: error connect disconnect
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-socks block &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        from: 0.0.0.0/0 to: 0.0.0.0/0
-        log: connect error
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; .gitignore_static
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.history
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/.ipynb_checkpoints/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+.ipynb_checkpoints/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+mlflow/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+mlruns/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Start and monitor usage&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;gitignore_bigfiles-gitignore&quot;&gt;.gitignore_bigfiles, .gitignore&lt;/h4&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service danted restart
-&lt;span class=&quot;nb&quot;&gt;tail&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; /var/log/syslog
+&lt;p&gt;Those are filed created by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update_git_ignore.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;update_git_ignoresh&quot;&gt;update_git_ignore.sh&lt;/h6&gt;
+
+&lt;p&gt;add all files &amp;gt; 100MB in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore_bigfiles&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;merge  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore_static&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore_bigfiles&lt;/code&gt; as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;display &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;update_git_ignore.sh
+&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#update gitignore_bigfiles&lt;/span&gt;
+find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-size&lt;/span&gt; +100M &lt;span class=&quot;nt&quot;&gt;-not&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-path&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./.git*&quot;&lt;/span&gt;| &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s|^\./||g'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; .gitignore_bigfiles
+
+&lt;span class=&quot;c&quot;&gt;# create gitignore as concat of gitingore_static and gitignore_bigfiles&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; .gitignore_static .gitignore_bigfiles &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; .gitignore
+
+&lt;span class=&quot;c&quot;&gt;# print content of .gitignore_bigfiles&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; .gitignore_bigfiles
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;git-setup&quot;&gt;Git setup&lt;/h2&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; .ssh/config
-Host github.com
-IdentityFile ~/.ssh/id_rsa_gmail
-ProxyCommand /bin/nc &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; 5 &lt;span class=&quot;nt&quot;&gt;-x&lt;/span&gt; 192.168.50.202:1080 %h %p
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Launch &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./update_git_ignore.sh&lt;/code&gt;before adding files to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;proxychains&quot;&gt;Proxychains&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# to be downloaded from apt mirrors:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# libproxychains proxychains&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; libproxychains3_3.1-7_amd64.deb proxychains_3.1-7_all.deb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;configuration&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vi /etc/proxychains.conf
-
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ProxyList]
-&lt;span class=&quot;c&quot;&gt;# add proxy here ...&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# meanwile&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# defaults set to &quot;tor&quot;&lt;/span&gt;
-socks5          192.168.50.202  1080
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;usage&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;proxychains apt upgrade
-
-proxychains pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pycaret 
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">setup socks5 server</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deep Neural Network with PyTorch - Coursera</title><link href="https://castorfou.github.io/guillaume_blog/blog/deep-neural-network-coursera.html" rel="alternate" type="text/html" title="Deep Neural Network with PyTorch - Coursera" /><published>2021-07-07T00:00:00-05:00</published><updated>2021-07-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/deep-neural-network-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/deep-neural-network-coursera.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome&quot;&gt;Deep Neural Networks with PyTorch&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./update_git_ignore.sh
+mlflow/1/5699a81e1a6a44ef8afecd98fff987fc/artifacts/Data Profile.html
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'example without large files'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">files used</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deep Neural Network with PyTorch - Coursera</title><link href="https://castorfou.github.io/guillaume_blog/blog/deep-neural-network-coursera.html" rel="alternate" type="text/html" title="Deep Neural Network with PyTorch - Coursera" /><published>2021-07-07T00:00:00-05:00</published><updated>2021-07-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/deep-neural-network-coursera</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/deep-neural-network-coursera.html">&lt;p&gt;Coursera website:  &lt;a href=&quot;https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome&quot;&gt;Deep Neural Networks with PyTorch&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;week-1---tensor-dand-datasets&quot;&gt;Week 1 - Tensor dand Datasets&lt;/h1&gt;
 
