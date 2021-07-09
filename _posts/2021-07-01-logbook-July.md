@@ -27,3 +27,9 @@ Paper reviewed on *arxiv* about **revisiting Deep Learning Models for Tabular Da
 **Wednesday 7/7**
 
 Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) on Coursera by IBM.
+
+
+
+**Friday 7/9**
+
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - start of week 2 - linear regression

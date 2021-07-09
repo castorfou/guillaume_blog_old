@@ -12,7 +12,7 @@ Coursera website:  [Deep Neural Networks with PyTorch](https://www.coursera.org/
 
 
 
-# Week 1 - Tensor dand Datasets
+# Week 1 - Tensor and Datasets
 
 #### Learning Objectives
 
@@ -411,3 +411,112 @@ dataset = dsets.MNIST(root='./data', train = False, download = True, transform =
 [1.3.2_Datasets_and_transforms.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.2_Datasets_and_transforms.ipynb)
 
 [1.3.3_pre-Built Datasets_and_transforms_v2.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.3_pre-Built Datasets_and_transforms_v2.ipynb)
+
+
+
+# Week 2 - Linear Regression
+
+#### 
+
+#### Linear Regression in 1D - Prediction
+
+###### Simple linear regression - prediction
+
+```python
+import torch
+w = torch.tensor(2.0, requires_grad=True)
+b = torch.tensor(-1.0, requires_grad=True)
+def forward(x):
+    y=w*x+b
+    return y
+```
+
+```python
+x=torch.tensor([1.0])
+yhat=forward(x)
+yhat
+>> tensor([1.], grad_fn=<AddBackward0>)
+x=torch.tensor([[1.0],[2.0]])
+forward(x)  
+>> tensor([[1.],
+        [3.]], grad_fn=<AddBackward0>)
+```
+
+###### PyTorch - Class Linear
+
+```python
+from torch.nn import Linear
+torch.manual_seed(1)
+model = Linear(in_features=1, out_features=1)
+list(model.parameters())
+>> [Parameter containing:
+     tensor([[0.5153]], requires_grad=True),
+     Parameter containing:
+     tensor([-0.4414], requires_grad=True)]
+```
+
+```python
+x=torch.tensor([[1.0],[2.0]])
+model(x)
+>> tensor([[0.0739],
+        [0.5891]], grad_fn=<AddmmBackward>)
+```
+
+###### PyTorch - Custom Modules
+
+```python
+import torch.nn as nn
+
+class LR(nn.Module):
+    def __init__(self, in_size, output_size):
+        super(LR, self).__init__()
+        self.linear = nn.Linear(in_size, output_size)
+    def forward(self, x):
+        out = self.linear(x)
+        return out
+```
+
+```python
+model = LR(1, 1)
+list(model.parameters())
+>> [Parameter containing:
+     tensor([[-0.9414]], requires_grad=True),
+     Parameter containing:
+     tensor([0.5997], requires_grad=True)]
+```
+
+```python
+x=torch.tensor([[1.0],[2.0]])
+model(x)
+>> tensor([[-0.3417],
+        [-1.2832]], grad_fn=<AddmmBackward>)
+```
+
+**Model state_dict()** 
+
+this returns a python dictionary. We will use it as our models get more complex. One Function is to map the relationship of the linear layers to its parameters. we can print out the keys and values. 
+
+```python
+model.state_dict()
+>> OrderedDict([('linear.weight', tensor([[-0.9414]])),
+             ('linear.bias', tensor([0.5997]))])
+```
+
+###### Ungraded lab
+
+[2.1Prediction1Dregression_v3.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/2.1Prediction1Dregression_v3.ipynb)
+
+
+
+#### Linear Regression Training
+
+
+
+loss function presented is **mean squared error**
+
+ $l(w,b)=\frac{1}{N}\displaystyle\sum_{n=1}^{N}(y_n-(wx_n+b))^2$
+
+
+
+#### Gradient Descent and cost
+
