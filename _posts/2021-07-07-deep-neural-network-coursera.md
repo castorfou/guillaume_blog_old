@@ -208,6 +208,16 @@ x.grad
 
 Note: in my version of pytorch (1.7.1), I cannot use torch.int dtypes.
 
+```python
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+<ipython-input-92-979d0f10c1e7> in <module>
+----> 3 x = torch.tensor(2, requires_grad=True)
+      4 z = x**2 + 2*x + 1
+      5 z.backward()
+RuntimeError: Only Tensors of floating point and complex dtype can require gradients
+```
+
 
 
 ###### Partial derivatives
@@ -222,13 +232,182 @@ f = u*v + u**2
 
 #calculate all partial derivatives df/du and df/dv
 f.backward()
-#evaluate partial derivative df/du at u, v : df/du(u, v)
+#evaluate partial derivative with respect to u df/du at u, v : df/du(u, v)
 u.grad
 >> tensor(4.)
-#evaluate partial derivative df/dv at u, v : df/dv(u, v)
+#evaluate partial derivative with respect to v df/dv at u, v : df/dv(u, v)
 v.grad
 >> tensor(1.)
 ```
 
 
 
+###### Ungraded lab
+
+[1.2derivativesandGraphsinPytorch_v2.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.2derivativesandGraphsinPytorch_v2.ipynb)
+
+With some explanation about `.detach()` pointing to [torch.autograd documentation](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html). In this page, there is a link to [walkthrough of backprop](https://www.youtube.com/watch?v=tIeHLnjs5U8) video.
+
+Will have to go back to `.detach()`
+
+
+
+#### Simple Dataset
+
+
+
+###### Build a Dataset Class and Object
+
+```python
+from torch.utils.data import Dataset
+
+class toy_set(Dataset):
+    def __init__(self, length=100, transform=None):
+        self.x = 2*torch.ones(length, 2)
+        self.y = torch.ones(length, 1)
+        self.len = length
+        self.transform = transform
+    def __getitem__(self, index):
+        sample=self.x[index], self.y[index]
+        if self.transform:
+            sample = self.transform(sample)
+        return sample
+    def __len__(self):
+        return self.len
+    
+dataset = toy_set()
+len(dataset)
+>> 100
+dataset[0]
+(tensor([2., 2.]), tensor([1.]))
+```
+
+
+
+###### Build a Dataset Transform (e.g. normalize or standardize)
+
+```python
+class add_mult(object):
+    def __init__(self, addx=1, muly=1):
+        self.addx = addx
+        self.muly = muly
+    def __call__(self, sample):
+        x=sample[0]
+        y=sample[1]
+        x=x+self.addx
+        y=y*self.muly
+        sample=x, y
+        return sample
+    
+    
+# automatically apply the transform
+a_m = add_mult()
+dataset_ = toy_set(transform=a_m)
+dataset_[0]
+>> (tensor([3., 3.]), tensor([1.]))
+```
+
+
+
+###### Compose Transforms
+
+```python
+class mult(object):
+    def __init__(self, mul=100):
+        self.mul = mul
+
+    def __call__(self, sample):
+        x = sample[0]
+        y = sample[1]
+        x = x * self.mul
+        y = y * self.mul
+        sample = x, y
+        return sample
+    
+from torchvision import transforms
+data_transform = transforms.Compose([add_mult(), mult()])
+
+# automatically apply the composed transform
+dataset_tr = toy_set(transform=data_transform)
+dataset_tr[0]
+>> (tensor([300., 300.]), tensor([100.]))
+```
+
+###### Ungraded lab
+
+[1.3.1_simple_data_set_v2.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.1_simple_data_set_v2.ipynb)
+
+
+
+#### Dataset
+
+###### Dataset Class for Images
+
+```python
+from PIL import Image
+import pandas as pd
+import os
+from matplotlib.pyplot import imshow
+from torch.utils.data import Dataset, DataLoader
+```
+
+```python
+class Dataset(Dataset):
+    def __init__(self, csv_file, data_dir, transform=None):
+        self.transform = transform
+        self.data_dir = data_dir
+        data_dir_csv_file = os.path.join(self.data_dir, csv_file)
+        self.data_name = pd.read_csv(data_dir_csv_file)
+        self.len = self.data_name.shape[0]
+    def __len__(self):
+        return self.len
+    def __getitem__(self, idx):
+        img_name=os.path.join(self.data_dir, self.data_name.iloc[idx, 1])
+        image = Image.open(img_name)
+        y = self.data_name.iloc[idx, 0]
+        if self.transform:
+            image = self.transform(image)
+        return image, y
+    
+def show_data(data_sample, shape = (28, 28)):
+    plt.imshow(data_sample[0].numpy().reshape(shape), cmap='gray')
+    plt.title('y = ' + data_sample[1])
+```
+
+```python
+dataset = Dataset(csv_file=csv_file, data_dir=directory)
+show_data(dataset[0])
+```
+
+
+
+###### Torch Vision Transforms
+
+```python
+import torchvision.transforms as transforms
+transforms.CenterCrop(20)
+transforms.ToTensor()
+croptensor_data_transform = transforms.Compose( [ transforms.CenterCrop(20), transforms.ToTensor() ] )
+dataset = Dataset(csv_file=csv_file, data_dir=directory, transform=croptensor_data_transform)
+dataset[0][0].shape
+>> torch.Size([1, 20, 20])
+```
+
+
+
+###### Torch Vision Datasets
+
+MNIST example
+
+```python
+import torchvision.datasets as dsets
+dataset = dsets.MNIST(root='./data', train = False, download = True, transform = transforms.ToTensor())
+```
+
+
+
+###### Ungraded lab
+
+[1.3.2_Datasets_and_transforms.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.2_Datasets_and_transforms.ipynb)
+
+[1.3.3_pre-Built Datasets_and_transforms_v2.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/1.3.3_pre-Built Datasets_and_transforms_v2.ipynb)
