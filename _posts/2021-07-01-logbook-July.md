@@ -28,7 +28,7 @@ Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-ne
 
 **Friday 7/9**
 
-[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - start of week 2 - linear regression
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 2 - linear regression
 
 
 
@@ -36,5 +36,7 @@ Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-ne
 
 **Monday 7/12**
 
-[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - start of week 3 - multiple input output linear regression, logistic regression for classification
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 3 - multiple input output linear regression, logistic regression for classification
+
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 4 - softmax regression
 
