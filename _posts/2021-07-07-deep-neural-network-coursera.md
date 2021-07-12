@@ -1327,9 +1327,17 @@ $$l(\theta) = \ln(p(Y|\theta))=\displaystyle\sum_{n=1}^{N}y_n \ln(\theta)+(1-y_n
 
 
 
-Note: We want to get $$\hat\theta = argmax_\theta(P(Y|\theta))$$
+Note: We want to get 
 
-where $$P(Y|\theta) = \displaystyle\prod_{n=1}^{N}\theta^{y_n}(1-\theta)^{1-y_n}$$
+$$\hat\theta = argmax_\theta(P(Y|\theta))$$
+
+
+
+where 
+
+$$P(Y|\theta) = \displaystyle\prod_{n=1}^{N}\theta^{y_n}(1-\theta)^{1-y_n}$$
+
+
 
 #### Logistic Regression Cross Entropy Loss
 
