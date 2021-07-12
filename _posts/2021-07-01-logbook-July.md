@@ -22,14 +22,19 @@ Paper reviewed on *arxiv* about **revisiting Deep Learning Models for Tabular Da
 
 ## Week 27 - July 21
 
-
-
 **Wednesday 7/7**
 
 Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) on Coursera by IBM.
 
-
-
 **Friday 7/9**
 
 [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - start of week 2 - linear regression
+
+
+
+## Week 28 - July 21
+
+**Monday 7/12**
+
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - start of week 3 - multiple input output linear regression, logistic regression for classification
+

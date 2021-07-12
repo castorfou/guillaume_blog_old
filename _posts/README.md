@@ -80,5 +80,9 @@ v_*(s)\doteq \max\limits_{\pi} v_\pi(s), \forall s \in S
 \\
 q_\pi(s,a) \doteq \mathbb{E}[R_{t+1}+\gamma.G_{t+1}|S_t=s, A_t=a]
 \\
+l(w,b)=\frac{1}{N}\displaystyle\sum_{n=1}^{N}(y_n-(x_nw+b))^2
+\\
+\nabla l(w,b) = \begin{bmatrix}\frac{\partial l(w,b)}{\partial w_1}\\ \vdots \\\frac{\partial l(w,b)}{\partial w_d}\end{bmatrix}
+\\
 $$
 
