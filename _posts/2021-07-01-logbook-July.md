@@ -44,3 +44,5 @@ Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-ne
 
 [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 4 - shallow neural networks
 
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 5 - deep neural networks
+
