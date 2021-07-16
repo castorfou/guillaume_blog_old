@@ -46,3 +46,22 @@ Start of [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-ne
 
 [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 5 - deep neural networks
 
+**Friday 7/16**
+
+Deep Learning with PyTorch [book](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi4_Yu-hOfxAhXryIUKHaHZC5sQFnoECB4QAA&url=https%3A%2F%2Fpytorch.org%2Fassets%2Fdeep-learning%2FDeep-Learning-with-PyTorch.pdf&usg=AOvVaw2yUdDoHS2F0LQYGQdxD-1P) 
+
+![img](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmS4vhRpkZ3EneLvckE51ROEP4IVNNzrh23xU5bwB8&usqp=CAE&s)
+
+[PyTorch Ecosystem day 2021](https://pytorch.org/ecosystem/pted/2021): 
+
+* [lightning](https://assets.pytorch.org/pted2021/posters/E4.png) to remove boilerplate code - to be tested!
+* [torchstudio](https://assets.pytorch.org/pted2021/posters/F4.png) to visualize dataset and models
+* [pytorch-ignite](https://assets.pytorch.org/pted2021/posters/G4.png) from my colleague Sylvain - high-level library to help training evaluating NN
+* [pytorchts](https://assets.pytorch.org/pted2021/posters/A2.png) to play with timeseries
+* [multitask RL](https://assets.pytorch.org/pted2021/posters/C2.png) environments and baselines for RL
+* [rlstructures](https://assets.pytorch.org/pted2021/posters/D2.png) python library for RL research
+* [mbrl-lib](https://assets.pytorch.org/pted2021/posters/D3.png) to write model-based RL algorithms
+* [pystiche](https://assets.pytorch.org/pted2021/posters/D7.png) framework for style transfer
+
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 6 - convolutional neural networks - even if I don't need it
+
