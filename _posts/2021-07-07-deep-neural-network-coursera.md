@@ -2281,7 +2281,7 @@ class Net(nn.Module):
 
 ###### using nn.Sequential
 
-```pyth
+```python
 input_dim = 2
 hidden_dim1 = 6
 hidden_dim2 = 4
@@ -2650,4 +2650,24 @@ torch.nn.init.kaiming_uniform_(linear.weight, nonlinearity='relu')
 
 
 #### Gradient Descent with Momentum
+
+###### PyTorch implementation
+
+In PyTorch, this is just defined at optim level
+
+```python
+optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum = 0.4)
+```
+
+###### Ungraded lab - momentum with different polynomial
+
+[8.4.1_MomentumwithPolynomialFunctions_v2.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.4.1_MomentumwithPolynomialFunctions_v2.ipynb)
+
+###### Ungraded lab - Neural Network momentum
+
+[8.4.2_NeuralNetworkswithMomentum_v2.ipynb](https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.4.2_NeuralNetworkswithMomentum_v2.ipynb)
+
+###### 
+
+#### Batch Normalization
 
