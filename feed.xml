@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-07-15T09:02:14-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">git ignore large files</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html" rel="alternate" type="text/html" title="git ignore large files" /><published>2021-07-09T00:00:00-05:00</published><updated>2021-07-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html">&lt;h2 id=&quot;files-used&quot;&gt;files used&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-07-16T01:55:26-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">git ignore large files</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html" rel="alternate" type="text/html" title="git ignore large files" /><published>2021-07-09T00:00:00-05:00</published><updated>2021-07-09T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-ignore-large-files.html">&lt;h2 id=&quot;files-used&quot;&gt;files used&lt;/h2&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll .gitignore&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; update_git_ignore.sh
  .gitignore
@@ -2054,18 +2054,18 @@ can call like a function. In contrast, &lt;code class=&quot;language-plaintext h
 
 &lt;h6 id=&quot;using-nnsequential-3&quot;&gt;using nn.Sequential&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-pyth&quot;&gt;input_dim = 2
-hidden_dim1 = 6
-hidden_dim2 = 4
-output_dim = 3
-model = nn.Sequential(
-    nn.Linear(input_dim, hidden_dim1),
-    nn.Sigmoid(),
-    nn.Linear(hidden_dim1, hidden_dim2),
-    nn.Sigmoid(),    
-    nn.Linear(hidden_dim2, output_dim)
-)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;input_dim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hidden_dim1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hidden_dim2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;output_dim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sequential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Linear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hidden_dim1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Linear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hidden_dim1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hidden_dim2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;    
+    &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Linear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hidden_dim2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h6 id=&quot;training-1&quot;&gt;training&lt;/h6&gt;
 
@@ -2394,7 +2394,26 @@ model = nn.Sequential(
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.3.3.He_Initialization_v2.ipynb&quot;&gt;8.3.3.He_Initialization_v2.ipynb&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;gradient-descent-with-momentum&quot;&gt;Gradient Descent with Momentum&lt;/h4&gt;</content><author><name></name></author><category term="pytorch" /><category term="coursera" /><summary type="html">Coursera website: Deep Neural Networks with PyTorch</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for July 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-July.html" rel="alternate" type="text/html" title="Logbook for July 21" /><published>2021-07-01T00:00:00-05:00</published><updated>2021-07-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-July</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-July.html">&lt;h2 id=&quot;week-26---july-21&quot;&gt;Week 26 - July 21&lt;/h2&gt;
+&lt;h4 id=&quot;gradient-descent-with-momentum&quot;&gt;Gradient Descent with Momentum&lt;/h4&gt;
+
+&lt;h6 id=&quot;pytorch-implementation&quot;&gt;PyTorch implementation&lt;/h6&gt;
+
+&lt;p&gt;In PyTorch, this is just defined at optim level&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;optimizer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SGD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;momentum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h6 id=&quot;ungraded-lab---momentum-with-different-polynomial&quot;&gt;Ungraded lab - momentum with different polynomial&lt;/h6&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.4.1_MomentumwithPolynomialFunctions_v2.ipynb&quot;&gt;8.4.1_MomentumwithPolynomialFunctions_v2.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;ungraded-lab---neural-network-momentum&quot;&gt;Ungraded lab - Neural Network momentum&lt;/h6&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.4.2_NeuralNetworkswithMomentum_v2.ipynb&quot;&gt;8.4.2_NeuralNetworkswithMomentum_v2.ipynb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;######&lt;/p&gt;
+
+&lt;h4 id=&quot;batch-normalization&quot;&gt;Batch Normalization&lt;/h4&gt;</content><author><name></name></author><category term="pytorch" /><category term="coursera" /><summary type="html">Coursera website: Deep Neural Networks with PyTorch</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" /><media:content medium="image" url="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for July 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-July.html" rel="alternate" type="text/html" title="Logbook for July 21" /><published>2021-07-01T00:00:00-05:00</published><updated>2021-07-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-July</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-July.html">&lt;h2 id=&quot;week-26---july-21&quot;&gt;Week 26 - July 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 7/1&lt;/strong&gt;&lt;/p&gt;
 

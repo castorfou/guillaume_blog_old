@@ -358,7 +358,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#ungraded-lab---he-initialization">Ungraded lab - He initialization</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h4"><a href="#gradient-descent-with-momentum">Gradient Descent with Momentum</a></li>
+<li class="toc-entry toc-h4"><a href="#gradient-descent-with-momentum">Gradient Descent with Momentum</a>
+<ul>
+<li class="toc-entry toc-h6"><a href="#pytorch-implementation">PyTorch implementation</a></li>
+<li class="toc-entry toc-h6"><a href="#ungraded-lab---momentum-with-different-polynomial">Ungraded lab - momentum with different polynomial</a></li>
+<li class="toc-entry toc-h6"><a href="#ungraded-lab---neural-network-momentum">Ungraded lab - Neural Network momentum</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h4"><a href="#batch-normalization">Batch Normalization</a></li>
 </ul>
 </li>
 </ul><p>Coursera website:  <a href="https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome">Deep Neural Networks with PyTorch</a></p>
@@ -2488,18 +2495,18 @@ can call like a function. In contrast, <code class="language-plaintext highlight
 <h6 id="using-nnsequential-3">
 <a class="anchor" href="#using-nnsequential-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>using nn.Sequential</h6>
 
-<pre><code class="language-pyth">input_dim = 2
-hidden_dim1 = 6
-hidden_dim2 = 4
-output_dim = 3
-model = nn.Sequential(
-    nn.Linear(input_dim, hidden_dim1),
-    nn.Sigmoid(),
-    nn.Linear(hidden_dim1, hidden_dim2),
-    nn.Sigmoid(),    
-    nn.Linear(hidden_dim2, output_dim)
-)
-</code></pre>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">input_dim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">hidden_dim1</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">hidden_dim2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">output_dim</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">Sequential</span><span class="p">(</span>
+    <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">hidden_dim1</span><span class="p">),</span>
+    <span class="n">nn</span><span class="p">.</span><span class="n">Sigmoid</span><span class="p">(),</span>
+    <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">hidden_dim1</span><span class="p">,</span> <span class="n">hidden_dim2</span><span class="p">),</span>
+    <span class="n">nn</span><span class="p">.</span><span class="n">Sigmoid</span><span class="p">(),</span>    
+    <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">hidden_dim2</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
 
 <h6 id="training-1">
 <a class="anchor" href="#training-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>training</h6>
@@ -2849,6 +2856,29 @@ model = nn.Sequential(
 
 <h4 id="gradient-descent-with-momentum">
 <a class="anchor" href="#gradient-descent-with-momentum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gradient Descent with Momentum</h4>
+
+<h6 id="pytorch-implementation">
+<a class="anchor" href="#pytorch-implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>PyTorch implementation</h6>
+
+<p>In PyTorch, this is just defined at optim level</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">optim</span><span class="p">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">momentum</span> <span class="o">=</span> <span class="mf">0.4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h6 id="ungraded-lab---momentum-with-different-polynomial">
+<a class="anchor" href="#ungraded-lab---momentum-with-different-polynomial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ungraded lab - momentum with different polynomial</h6>
+
+<p><a href="https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.4.1_MomentumwithPolynomialFunctions_v2.ipynb">8.4.1_MomentumwithPolynomialFunctions_v2.ipynb</a></p>
+
+<h6 id="ungraded-lab---neural-network-momentum">
+<a class="anchor" href="#ungraded-lab---neural-network-momentum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ungraded lab - Neural Network momentum</h6>
+
+<p><a href="https://github.com/castorfou/pytorch_tutorial/blob/main/coursera_deep_neural_network/8.4.2_NeuralNetworkswithMomentum_v2.ipynb">8.4.2_NeuralNetworkswithMomentum_v2.ipynb</a></p>
+
+<p>######</p>
+
+<h4 id="batch-normalization">
+<a class="anchor" href="#batch-normalization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Batch Normalization</h4>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
