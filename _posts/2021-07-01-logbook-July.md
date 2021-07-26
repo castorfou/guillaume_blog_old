@@ -73,3 +73,9 @@ Deep Learning with PyTorch [book](https://www.google.com/url?sa=t&rct=j&q=&esrc=
 
 [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 7 - fashion mnist
 
+Reading of some papers:
+
+* [Deep Reinforcement Learning Approaches for Process Control by Steven Spielberg Pon Kumar](https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0361156) - thesis, UBC 2017
+* [A Deep Learning Architecture for Predictive Control](https://reader.elsevier.com/reader/sd/pii/S2405896318320597?token=81E4343EA16F5A00E913090437498E4B30330A646B0C8ED2D721CD6B8480FE13697F30AC50CB69FC2D3AC119091C7C1F&originRegion=eu-west-1&originCreation=20210726140612) by Steven Spielberg Pon Kumar - ScienceDirect 2018
+* [Deep Reinforcement Learning for Process Control: A Primer for Beginners](https://arxiv.org/pdf/2004.05490.pdf) by Steven Spielberg et al. 2004
+* [Reinforcement Learning for Statistical Process Control in Manufacturing](https://www.imeko.org/publications/tc10-2020/IMEKO-TC10-2020-032.pdf) - by Zsolt János Viharos 2020
