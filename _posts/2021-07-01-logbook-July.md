@@ -65,3 +65,11 @@ Deep Learning with PyTorch [book](https://www.google.com/url?sa=t&rct=j&q=&esrc=
 
 [Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 6 - convolutional neural networks - even if I don't need it
 
+
+
+## Week 30 - July 21
+
+**Monday 7/26**
+
+[Deep Neural Networks with PyTorch](/guillaume_blog/blog/deep-neural-network-coursera.html) - week 7 - fashion mnist
+
