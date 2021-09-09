@@ -23,3 +23,8 @@ Paper reviewed on *arxiv* about **Continuous Control With Deep Reinforcement Lea
 Install of [barrier](https://github.com/debauchee/barrier/releases) to share keyboard/mouse between linux and windows
 
 Move wsl to another drive with [move-wsl](https://github.com/pxlrbt/move-wsl)
+
+**Wednesday 9/9**
+
+Creation of [custom gym environment](https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb) and optimization using DQN, then DDPG with [stable baselines 3](https://github.com/DLR-RM/stable-baselines3). Takes around 50,000 steps to optimize a ultra simple grid problem... No success with DDPG, something missing?
+
