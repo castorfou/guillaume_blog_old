@@ -24,7 +24,11 @@ Install of [barrier](https://github.com/debauchee/barrier/releases) to share key
 
 Move wsl to another drive with [move-wsl](https://github.com/pxlrbt/move-wsl)
 
-**Wednesday 9/9**
+**Wednesday 9/8**
 
 Creation of [custom gym environment](https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb) and optimization using DQN, then DDPG with [stable baselines 3](https://github.com/DLR-RM/stable-baselines3). Takes around 50,000 steps to optimize a ultra simple grid problem... No success with DDPG, something missing?
+
+**Thursday 9/9**
+
+Still [playing](https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb) with gym and stable baselines 3. A2C, PPO and SAC are working but DDPG and TD3 are not (and I don't know why)
 
