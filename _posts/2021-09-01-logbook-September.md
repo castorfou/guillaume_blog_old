@@ -32,3 +32,11 @@ Creation of [custom gym environment](https://github.com/castorfou/handson_stable
 
 Still [playing](https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb) with gym and stable baselines 3. A2C, PPO and SAC are working but DDPG and TD3 are not (and I don't know why)
 
+## Week 38 - September 21
+
+**Monday 9/20**
+
+Back to Antivi [RL virtual school](https://rlvs.aniti.fr/rl-fundamentals.html). Looking for material to be used to explain RL to my colleagues, and how to properly describe the experience I am running with gym.
+
+Certainly will start lectures from deepming: [2021 DeepMind x UCL RL Lecture Series](https://www.youtube.com/watch?v=TCCjZe0y4Qc)
+
