@@ -36,7 +36,7 @@ Still [playing](https://github.com/castorfou/handson_stablebaselines3/blob/main/
 
 **Monday 9/20**
 
-Back to Antivi [RL virtual school](https://rlvs.aniti.fr/rl-fundamentals.html). Looking for material to be used to explain RL to my colleagues, and how to properly describe the experience I am running with gym.
+Back to Aniti [RL virtual school](https://rlvs.aniti.fr/rl-fundamentals.html). Looking for material to be used to explain RL to my colleagues, and how to properly describe the experience I am running with gym.
 
 Certainly will start lectures from deepming: [2021 DeepMind x UCL RL Lecture Series](https://www.youtube.com/watch?v=TCCjZe0y4Qc)
 
