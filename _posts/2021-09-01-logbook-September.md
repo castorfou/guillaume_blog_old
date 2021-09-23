@@ -40,3 +40,7 @@ Back to Aniti [RL virtual school](https://rlvs.aniti.fr/rl-fundamentals.html). L
 
 Certainly will start lectures from deepming: [2021 DeepMind x UCL RL Lecture Series](https://www.youtube.com/watch?v=TCCjZe0y4Qc)
 
+**Thursday 9/23**
+
+Start [plotly course](https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python) from datacamp. I need basic interactivity and 3d plots to illustrate reward functions
+
