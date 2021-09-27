@@ -42,5 +42,5 @@ Certainly will start lectures from deepming: [2021 DeepMind x UCL RL Lecture Ser
 
 **Thursday 9/23**
 
-Start [plotly course](https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python) from datacamp. I need basic interactivity and 3d plots to illustrate reward functions
+Start [plotly course](https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python) from datacamp using my [datacamp learning process](/guillaume_blog/blog/Datacamp.html). I need basic interactivity and 3d plots to illustrate reward functions.
 
