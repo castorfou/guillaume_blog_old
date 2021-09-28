@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [jupyter]
-image: images/git.png
+image: https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg
 
 ---
 
