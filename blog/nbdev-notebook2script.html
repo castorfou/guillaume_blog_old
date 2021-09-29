@@ -121,6 +121,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Export-your-module-my_great_module">Export your module my_great_module </a></li>
 <li class="toc-entry toc-h2"><a href="#Exported-module">Exported module </a></li>
 <li class="toc-entry toc-h2"><a href="#Python-library-needed:-fire">Python library needed: fire </a></li>
+<li class="toc-entry toc-h2"><a href="#Combine-with-pdoc-to-generate-documentation">Combine with pdoc to generate documentation </a></li>
 </ul>
 </li>
 </ul><!--
@@ -491,6 +492,38 @@ Executing transaction: done
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Combine-with-pdoc-to-generate-documentation">
+<a class="anchor" href="#Combine-with-pdoc-to-generate-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Combine with pdoc to generate documentation<a class="anchor-link" href="#Combine-with-pdoc-to-generate-documentation"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!python notebook2script.py "00D059_init_and_import.ipynb"</span>
+
+<span class="n">library_name</span> <span class="o">=</span> <span class="s2">"janus_rl"</span>
+
+<span class="o">!</span>python notebook2script.py --fnameout<span class="o">=</span><span class="nv">$library_name</span><span class="s2">".py"</span>  <span class="s2">"04 - refactoring Janus and gym.ipynb"</span>
+
+<span class="o">!</span>pdoc --html --output-dir exp/html --force exp/<span class="nv">$library_name</span><span class="s2">".py"</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
