@@ -20,7 +20,7 @@ Paper reviewed on *arxiv* about **Continuous Control With Deep Reinforcement Lea
 
 **Monday 9/6**
 
-Install of [barrier](https://github.com/debauchee/barrier/releases) to share keyboard/mouse between linux and windows
+Install of [barrier](https://github.com/debauchee/barrier/releases) to share keyboard/mouse between linux and windows. Nice combinaison with [KVM usb switch](https://www.amazon.fr/gp/product/B08NSXXY1L/).
 
 Move wsl to another drive with [move-wsl](https://github.com/pxlrbt/move-wsl)
 
