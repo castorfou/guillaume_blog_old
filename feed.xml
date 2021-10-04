@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-10-04T05:06:12-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for October 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html" rel="alternate" type="text/html" title="Logbook for October 21" /><published>2021-10-01T00:00:00-05:00</published><updated>2021-10-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-October</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html">&lt;h2 id=&quot;week-40---october-21&quot;&gt;Week 40 - October 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-10-04T05:09:08-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for October 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html" rel="alternate" type="text/html" title="Logbook for October 21" /><published>2021-10-01T00:00:00-05:00</published><updated>2021-10-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-October</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html">&lt;h2 id=&quot;week-40---october-21&quot;&gt;Week 40 - October 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 10/4&lt;/strong&gt;&lt;/p&gt;
 
@@ -442,7 +442,7 @@ Executing transaction: done
 
 &lt;p&gt;&lt;strong&gt;Monday 9/6&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Install of &lt;a href=&quot;https://github.com/debauchee/barrier/releases&quot;&gt;barrier&lt;/a&gt; to share keyboard/mouse between linux and windows&lt;/p&gt;
+&lt;p&gt;Install of &lt;a href=&quot;https://github.com/debauchee/barrier/releases&quot;&gt;barrier&lt;/a&gt; to share keyboard/mouse between linux and windows. Nice combinaison with &lt;a href=&quot;https://www.amazon.fr/gp/product/B08NSXXY1L/&quot;&gt;KVM usb switch&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Move wsl to another drive with &lt;a href=&quot;https://github.com/pxlrbt/move-wsl&quot;&gt;move-wsl&lt;/a&gt;&lt;/p&gt;
 
