@@ -1,36 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-10-04T02:59:25-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for September 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html" rel="alternate" type="text/html" title="Logbook for September 21" /><published>2021-10-01T00:00:00-05:00</published><updated>2021-10-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-October</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html">&lt;h2 id=&quot;week-35---september-21&quot;&gt;Week 35 - September 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-10-04T03:36:04-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for October 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html" rel="alternate" type="text/html" title="Logbook for October 21" /><published>2021-10-01T00:00:00-05:00</published><updated>2021-10-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-October</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html">&lt;h2 id=&quot;week-40---october-21&quot;&gt;Week 40 - October 21&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Thursday 9/2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Monday 10/4&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Paper reviewed on &lt;em&gt;arxiv&lt;/em&gt; about &lt;strong&gt;Continuous Control With Deep Reinforcement Learning&lt;/strong&gt;. (Lillicrap et. al - 2015) &lt;a href=&quot;https://arxiv.org/abs/1509.02971&quot;&gt;arXiv:1509.02971&lt;/a&gt;. This is about DDPG. Initial &lt;a href=&quot;http://proceedings.mlr.press/v32/silver14.html&quot;&gt;paper&lt;/a&gt; comes from David Silver: &lt;em&gt;Deterministic policy gradient algorithms&lt;/em&gt; in ICML 2014, but is not easy to read. Here is a &lt;a href=&quot;https://towardsdatascience.com/deep-deterministic-policy-gradients-explained-2d94655a9b7b&quot;&gt;review from towardsdatascience&lt;/a&gt;, in which the Deep Deterministic Policy  Gradients (DDPG) is presented, and is written for people who wish to  understand the DDPG algorithm.&lt;/p&gt;
-
-&lt;h2 id=&quot;week-36---september-21&quot;&gt;Week 36 - September 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday 9/6&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Install of &lt;a href=&quot;https://github.com/debauchee/barrier/releases&quot;&gt;barrier&lt;/a&gt; to share keyboard/mouse between linux and windows&lt;/p&gt;
-
-&lt;p&gt;Move wsl to another drive with &lt;a href=&quot;https://github.com/pxlrbt/move-wsl&quot;&gt;move-wsl&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday 9/8&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Creation of &lt;a href=&quot;https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb&quot;&gt;custom gym environment&lt;/a&gt; and optimization using DQN, then DDPG with &lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;stable baselines 3&lt;/a&gt;. Takes around 50,000 steps to optimize a ultra simple grid problem… No success with DDPG, something missing?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 9/9&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Still &lt;a href=&quot;https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb&quot;&gt;playing&lt;/a&gt; with gym and stable baselines 3. A2C, PPO and SAC are working but DDPG and TD3 are not (and I don’t know why)&lt;/p&gt;
-
-&lt;h2 id=&quot;week-38---september-21&quot;&gt;Week 38 - September 21&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday 9/20&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Back to Aniti &lt;a href=&quot;https://rlvs.aniti.fr/rl-fundamentals.html&quot;&gt;RL virtual school&lt;/a&gt;. Looking for material to be used to explain RL to my colleagues, and how to properly describe the experience I am running with gym.&lt;/p&gt;
-
-&lt;p&gt;Certainly will start lectures from deepming: &lt;a href=&quot;https://www.youtube.com/watch?v=TCCjZe0y4Qc&quot;&gt;2021 DeepMind x UCL RL Lecture Series&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday 9/23&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Start &lt;a href=&quot;https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python&quot;&gt;plotly course&lt;/a&gt; from datacamp using my &lt;a href=&quot;/guillaume_blog/blog/Datacamp.html&quot;&gt;datacamp learning process&lt;/a&gt;. I need basic interactivity and 3d plots to illustrate reward functions.&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 35 - September 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Generate python modules from jupyter notebooks</title><link href="https://castorfou.github.io/guillaume_blog/blog/nbdev-notebook2script.html" rel="alternate" type="text/html" title="Generate python modules from jupyter notebooks" /><published>2021-09-29T00:00:00-05:00</published><updated>2021-09-29T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/nbdev-notebook2script</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/nbdev-notebook2script.html">&lt;!--
+&lt;p&gt;Jupyter Lab is now packages as a &lt;a href=&quot;https://github.com/jupyterlab/jupyterlab_app&quot;&gt;desktop app&lt;/a&gt;. Gave a try 2 minutes but &lt;a href=&quot;https://github.com/jupyterlab/jupyterlab_app/issues/228&quot;&gt;issue&lt;/a&gt; with my running environment&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 40 - October 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Generate python modules from jupyter notebooks</title><link href="https://castorfou.github.io/guillaume_blog/blog/nbdev-notebook2script.html" rel="alternate" type="text/html" title="Generate python modules from jupyter notebooks" /><published>2021-09-29T00:00:00-05:00</published><updated>2021-09-29T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/nbdev-notebook2script</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/nbdev-notebook2script.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -456,11 +428,39 @@ Executing transaction: done
             &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_cell_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
     &lt;span class=&quot;n&quot;&gt;nbf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntbk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ipath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jupyter" /><summary type="html">subject is explained in https://github.com/jupyter/notebook/issues/6001</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" /><media:content medium="image" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for October 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-September.html" rel="alternate" type="text/html" title="Logbook for October 21" /><published>2021-09-01T00:00:00-05:00</published><updated>2021-09-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-September</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-September.html">&lt;h2 id=&quot;week-40---october-21&quot;&gt;Week 40 - October 21&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jupyter" /><summary type="html">subject is explained in https://github.com/jupyter/notebook/issues/6001</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" /><media:content medium="image" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for September 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-September.html" rel="alternate" type="text/html" title="Logbook for September 21" /><published>2021-09-01T00:00:00-05:00</published><updated>2021-09-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-September</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-September.html">&lt;h2 id=&quot;week-35---september-21&quot;&gt;Week 35 - September 21&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Monday 10/4&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thursday 9/2&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Jupyter Lab is now packages as a &lt;a href=&quot;https://github.com/jupyterlab/jupyterlab_app&quot;&gt;desktop app&lt;/a&gt;. Gave a try 2 minutes but &lt;a href=&quot;https://github.com/jupyterlab/jupyterlab_app/issues/228&quot;&gt;issue&lt;/a&gt; with my running environment&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 40 - October 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">git clean repo with bfg</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html" rel="alternate" type="text/html" title="git clean repo with bfg" /><published>2021-07-29T00:00:00-05:00</published><updated>2021-07-29T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html">&lt;p&gt;&lt;a href=&quot;https://rtyley.github.io/bfg-repo-cleaner/&quot;&gt;bfg website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Paper reviewed on &lt;em&gt;arxiv&lt;/em&gt; about &lt;strong&gt;Continuous Control With Deep Reinforcement Learning&lt;/strong&gt;. (Lillicrap et. al - 2015) &lt;a href=&quot;https://arxiv.org/abs/1509.02971&quot;&gt;arXiv:1509.02971&lt;/a&gt;. This is about DDPG. Initial &lt;a href=&quot;http://proceedings.mlr.press/v32/silver14.html&quot;&gt;paper&lt;/a&gt; comes from David Silver: &lt;em&gt;Deterministic policy gradient algorithms&lt;/em&gt; in ICML 2014, but is not easy to read. Here is a &lt;a href=&quot;https://towardsdatascience.com/deep-deterministic-policy-gradients-explained-2d94655a9b7b&quot;&gt;review from towardsdatascience&lt;/a&gt;, in which the Deep Deterministic Policy  Gradients (DDPG) is presented, and is written for people who wish to  understand the DDPG algorithm.&lt;/p&gt;
+
+&lt;h2 id=&quot;week-36---september-21&quot;&gt;Week 36 - September 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 9/6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Install of &lt;a href=&quot;https://github.com/debauchee/barrier/releases&quot;&gt;barrier&lt;/a&gt; to share keyboard/mouse between linux and windows&lt;/p&gt;
+
+&lt;p&gt;Move wsl to another drive with &lt;a href=&quot;https://github.com/pxlrbt/move-wsl&quot;&gt;move-wsl&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday 9/8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Creation of &lt;a href=&quot;https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb&quot;&gt;custom gym environment&lt;/a&gt; and optimization using DQN, then DDPG with &lt;a href=&quot;https://github.com/DLR-RM/stable-baselines3&quot;&gt;stable baselines 3&lt;/a&gt;. Takes around 50,000 steps to optimize a ultra simple grid problem… No success with DDPG, something missing?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 9/9&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Still &lt;a href=&quot;https://github.com/castorfou/handson_stablebaselines3/blob/main/gym_handson/01%20-%20Create%20custom%20gym%20environments%20from%20scratch%20.ipynb&quot;&gt;playing&lt;/a&gt; with gym and stable baselines 3. A2C, PPO and SAC are working but DDPG and TD3 are not (and I don’t know why)&lt;/p&gt;
+
+&lt;h2 id=&quot;week-38---september-21&quot;&gt;Week 38 - September 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday 9/20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Back to Aniti &lt;a href=&quot;https://rlvs.aniti.fr/rl-fundamentals.html&quot;&gt;RL virtual school&lt;/a&gt;. Looking for material to be used to explain RL to my colleagues, and how to properly describe the experience I am running with gym.&lt;/p&gt;
+
+&lt;p&gt;Certainly will start lectures from deepming: &lt;a href=&quot;https://www.youtube.com/watch?v=TCCjZe0y4Qc&quot;&gt;2021 DeepMind x UCL RL Lecture Series&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday 9/23&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Start &lt;a href=&quot;https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python&quot;&gt;plotly course&lt;/a&gt; from datacamp using my &lt;a href=&quot;/guillaume_blog/blog/Datacamp.html&quot;&gt;datacamp learning process&lt;/a&gt;. I need basic interactivity and 3d plots to illustrate reward functions.&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 35 - September 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">git clean repo with bfg</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html" rel="alternate" type="text/html" title="git clean repo with bfg" /><published>2021-07-29T00:00:00-05:00</published><updated>2021-07-29T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html">&lt;p&gt;&lt;a href=&quot;https://rtyley.github.io/bfg-repo-cleaner/&quot;&gt;bfg website&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;general-usage&quot;&gt;General usage&lt;/h2&gt;
 
