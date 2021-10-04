@@ -14,5 +14,5 @@ image: images/logbook.jpg
 
 **Monday 10/4**
 
-Jupyter Lab is now packages as a [desktop app](https://github.com/jupyterlab/jupyterlab_app). Gave a try 2 minutes but [issue](https://github.com/jupyterlab/jupyterlab_app/issues/228) with my running environment 
+Jupyter Lab is now packaged as a [desktop app](https://github.com/jupyterlab/jupyterlab_app). Gave a try 2 minutes but [issue](https://github.com/jupyterlab/jupyterlab_app/issues/228) with my running environment 
 
