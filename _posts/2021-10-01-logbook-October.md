@@ -19,3 +19,10 @@ Jupyter Lab is now packaged as a [desktop app](https://github.com/jupyterlab/jup
 To do: read and handson [Understanding Variational Autoencoders (VAEs)](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 
 To do: reand and handson [Patsy: Build Powerful Features with Arbitrary Python Code](https://towardsdatascience.com/patsy-build-powerful-features-with-arbitrary-python-code-bb4bb98db67a)
+
+**Thursday 10/7**
+
+> Deep learning seems unstoppable! I'm particularly impressed by the recent progress of deep learning on tabular data. This new survey paper provides an overview of the SOTA deep learning methods on tabular data. A great read for students and practitioners. 
+>
+> [Deep Neural Networks and Tabular Data: A Survey - arxiv 2110.01889](https://arxiv.org/abs/2110.01889)
+
