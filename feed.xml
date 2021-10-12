@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-10-07T00:57:17-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for October 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html" rel="alternate" type="text/html" title="Logbook for October 21" /><published>2021-10-01T00:00:00-05:00</published><updated>2021-10-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-October</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html">&lt;h2 id=&quot;week-40---october-21&quot;&gt;Week 40 - October 21&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2021-10-12T03:34:20-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for October 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html" rel="alternate" type="text/html" title="Logbook for October 21" /><published>2021-10-01T00:00:00-05:00</published><updated>2021-10-01T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-October</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-October.html">&lt;h2 id=&quot;week-40---october-21&quot;&gt;Week 40 - October 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 10/4&lt;/strong&gt;&lt;/p&gt;
 
@@ -379,11 +379,12 @@ Executing transaction: done
     &lt;div class=&quot;input_area&quot;&gt;
 &lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;#!python notebook2script.py &amp;quot;00D059_init_and_import.ipynb&amp;quot;&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;library_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;janus_rl&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;library_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;dataprophet&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;notebook_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;00 - dataprophet library - dataprophet&amp;quot;&lt;/span&gt;
 
-&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;python notebook2script.py --fnameout&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$library_name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;.py&amp;quot;&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&amp;quot;04 - refactoring Janus and gym.ipynb&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;python notebook2script.py --fnameout&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;{library_name}.py&amp;quot;&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&amp;quot;{notebook_name}.ipynb&amp;quot;&lt;/span&gt;
 
-&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;pdoc --html --output-dir exp/html --force exp/&lt;span class=&quot;nv&quot;&gt;$library_name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;.py&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;pdoc --html --output-dir exp/html --force &lt;span class=&quot;s2&quot;&gt;&amp;quot;exp/{library_name}.py&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -393,6 +394,13 @@ Executing transaction: done
 &lt;/div&gt;
     
 
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;Note the {} notation which allows to use ipython variables as arguments to bash commands&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;h1 id=&quot;Proper-docstring&quot;&gt;Proper docstring&lt;a class=&quot;anchor-link&quot; href=&quot;#Proper-docstring&quot;&gt; &lt;/a&gt;&lt;/h1&gt;

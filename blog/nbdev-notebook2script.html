@@ -518,11 +518,12 @@ Executing transaction: done
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!python notebook2script.py "00D059_init_and_import.ipynb"</span>
 
-<span class="n">library_name</span> <span class="o">=</span> <span class="s2">"janus_rl"</span>
+<span class="n">library_name</span> <span class="o">=</span> <span class="s2">"dataprophet"</span>
+<span class="n">notebook_name</span> <span class="o">=</span> <span class="s2">"00 - dataprophet library - dataprophet"</span>
 
-<span class="o">!</span>python notebook2script.py --fnameout<span class="o">=</span><span class="nv">$library_name</span><span class="s2">".py"</span>  <span class="s2">"04 - refactoring Janus and gym.ipynb"</span>
+<span class="o">!</span>python notebook2script.py --fnameout<span class="o">=</span><span class="s2">"{library_name}.py"</span>  <span class="s2">"{notebook_name}.ipynb"</span>
 
-<span class="o">!</span>pdoc --html --output-dir exp/html --force exp/<span class="nv">$library_name</span><span class="s2">".py"</span>
+<span class="o">!</span>pdoc --html --output-dir exp/html --force <span class="s2">"exp/{library_name}.py"</span>
 </pre></div>
 
     </div>
@@ -532,6 +533,14 @@ Executing transaction: done
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note the {} notation which allows to use ipython variables as arguments to bash commands</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
