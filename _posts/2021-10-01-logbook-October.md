@@ -36,4 +36,4 @@ Using [fastai forums](https://forums.fast.ai/search?q=vae) to get inspirational 
 >
 > Yann LeCunn
 
-And this one ([Intuitively Understanding Variational Autoencoders](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf?gi=3eb2b735d1d4)) mentioned by Jeremy Howard
+And [Intuitively Understanding Variational Autoencoders](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf?gi=3eb2b735d1d4) mentioned by Jeremy Howard
