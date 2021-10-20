@@ -31,3 +31,7 @@ To do: reand and handson [Patsy: Build Powerful Features with Arbitrary Python C
 **Wednesday 10/20**
 
 Using [fastai forums](https://forums.fast.ai/search?q=vae) to get inspirational content for VAE with tabular data. This one sounds good: [Adversarial Autoencoders (with Pytorch)](https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/). And this talk [demystifying bayesian](https://www.youtube.com/watch?v=s0S6HFdPtlA&ab_channel=PyData) stuff.
+
+> "Most of human and animal learning is unsupervised learning. If intelligence was a cake, unsupervised learning would be the cake [base], supervised learning would be the icing on the cake, and reinforcement learning would be the cherry on the cake. We know how to make the icing and the cherry, but we don't know how to make the cake."
+>
+> Yann LeCunn
