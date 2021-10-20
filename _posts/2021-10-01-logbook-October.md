@@ -35,3 +35,5 @@ Using [fastai forums](https://forums.fast.ai/search?q=vae) to get inspirational 
 > "Most of human and animal learning is unsupervised learning. If intelligence was a cake, unsupervised learning would be the cake [base], supervised learning would be the icing on the cake, and reinforcement learning would be the cherry on the cake. We know how to make the icing and the cherry, but we don't know how to make the cake."
 >
 > Yann LeCunn
+
+And this one ([Intuitively Understanding Variational Autoencoders](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf?gi=3eb2b735d1d4)) mentioned by Jeremy Howard
