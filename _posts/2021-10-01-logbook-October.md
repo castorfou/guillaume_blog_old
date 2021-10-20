@@ -26,3 +26,8 @@ To do: reand and handson [Patsy: Build Powerful Features with Arbitrary Python C
 >
 > [Deep Neural Networks and Tabular Data: A Survey - arxiv 2110.01889](https://arxiv.org/abs/2110.01889)
 
+## Week 42 - October 21
+
+**Wednesday 10/20**
+
+Using [fastai forums](https://forums.fast.ai/search?q=vae) to get inspirational content for VAE with tabular data. This one sounds good: [Adversarial Autoencoders (with Pytorch)](https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/). And this talk [demystifying bayesian](https://www.youtube.com/watch?v=s0S6HFdPtlA&ab_channel=PyData) stuff.
