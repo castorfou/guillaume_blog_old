@@ -32,6 +32,14 @@ image: images/<my_image_preview>.png
 
 
 
+here are some images
+
+![image-20211021101737326](/home/explore/.config/Typora/typora-user-images/image-20211021101737326.png)
+
+
+
+
+
 # Latex Reference
 
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
