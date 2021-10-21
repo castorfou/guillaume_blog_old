@@ -1,3 +1,5 @@
+
+
 # Auto-convert markdown files To Posts
 
 [`fastpages`](https://github.com/fastai/fastpages) will automatically convert markdown files saved into this directory as blog posts!
@@ -86,3 +88,12 @@ l(w,b)=\frac{1}{N}\displaystyle\sum_{n=1}^{N}(y_n-(x_nw+b))^2
 \\
 $$
 
+
+
+# Link to local image
+
+`![](../images/mit_6S191_lec3_cnn_architectures.png)`
+
+
+
+![](../images/mit_6S191_lec3_cnn_architectures.png)
