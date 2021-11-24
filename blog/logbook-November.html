@@ -119,6 +119,18 @@ window.onload = wrap_img;
 
 <p>back after a nice vacation break + some catchup to do for work.</p>
 
+<p><strong>Wednesday 11/24</strong></p>
+
+<p>getting this message when pushing to gitlab: remote: GitLab: File <my_large_file>  is larger than the allowed size of 100 MB</my_large_file></p>
+
+<p>if from the most recent commit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">rm</span> <span class="nt">--cached</span> &lt;my large file&gt;
+git commit <span class="nt">--amend</span> <span class="nt">-C</span> HEAD
+</code></pre></div></div>
+
+<p>otherwise follow <a href="https://medium.com/analytics-vidhya/tutorial-removing-large-files-from-git-78dbf4cf83a">Tutorial: Removing Large Files from Git</a> on medium (or <a href="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html">git clean repo with BFG</a> on this blog)</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
