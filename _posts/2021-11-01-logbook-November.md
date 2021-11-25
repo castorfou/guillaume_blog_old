@@ -29,3 +29,13 @@ git commit --amend -C HEAD
 
 otherwise follow [Tutorial: Removing Large Files from Git](https://medium.com/analytics-vidhya/tutorial-removing-large-files-from-git-78dbf4cf83a) on medium (or [git clean repo with BFG](https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html) on this blog)
 
+**Thursday 11/25**
+
+when exporting notebooks with plotly graphs, it can help to use
+
+```python
+import plotly
+plotly.offline.init_notebook_mode()
+```
+
+exporting to html will integrate these plotly graphs (but not exporting to pdf)
