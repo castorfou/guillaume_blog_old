@@ -131,6 +131,15 @@ git commit <span class="nt">--amend</span> <span class="nt">-C</span> HEAD
 
 <p>otherwise follow <a href="https://medium.com/analytics-vidhya/tutorial-removing-large-files-from-git-78dbf4cf83a">Tutorial: Removing Large Files from Git</a> on medium (or <a href="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html">git clean repo with BFG</a> on this blog)</p>
 
+<p><strong>Thursday 11/25</strong></p>
+
+<p>when exporting notebooks with plotly graphs, it can help to use</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">plotly</span>
+<span class="n">plotly</span><span class="p">.</span><span class="n">offline</span><span class="p">.</span><span class="n">init_notebook_mode</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>exporting to html will integrate these plotly graphs (but not exporting to pdf)</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
