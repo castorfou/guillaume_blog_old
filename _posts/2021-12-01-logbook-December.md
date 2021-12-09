@@ -14,7 +14,7 @@ image: images/logbook.jpg
 
 **Thursday 12/9**
 
-A deep learning course using PyTorch including Transformers, Generative models and self-supervised learning: [https://deeplearning.neuromatch.io/tutorials/intro.html](https://deeplearning.neuromatch.io/tutorials/intro.html) - to be tested!
+A deep learning course using PyTorch including Transformers, Generative models and self-supervised learning: [https://deeplearning.neuromatch.io/tutorials/intro.html](https://deeplearning.neuromatch.io/tutorials/intro.html) - [W1D1 - Gradient Descent and AutoGrad](https://colab.research.google.com/github/NeuromatchAcademy/course-content-dl/blob/main/tutorials/W1D2_LinearDeepLearning/student/W1D2_Tutorial1.ipynb) done
 
 NeurIPS workshop on RL next Monday. [https://sites.google.com/view/deep-rl-workshop-neurips2021](https://sites.google.com/view/deep-rl-workshop-neurips2021). List of posters is just impressive.
 
