@@ -16,6 +16,8 @@ image: images/logbook.jpg
 
 back after a nice vacation break + some catchup to do for work.
 
+to use iphone as a webcam on linux or windows: https://www.iriun.com/ (but not detected as a webcam in linux)
+
 **Wednesday 11/24**
 
 getting this message when pushing to gitlab: remote: GitLab: File <my_large_file>  is larger than the allowed size of 100 MB
