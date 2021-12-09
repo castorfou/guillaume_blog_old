@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Logbook for December 21",
-            "content": "Week 49 - December 21 . Thursday 12/9 . A deep learning course using PyTorch including Transformers, Generative models and self-supervised learning: https://deeplearning.neuromatch.io/tutorials/intro.html - to be tested! . NeurIPS workshop on RL next Monday. https://sites.google.com/view/deep-rl-workshop-neurips2021. List of posters is just impressive. . And best fastai sources compiled by Tanishq Mathew Abraham. . From @paperswithcode, Deep learning models for tabular data continue to improve. What are the latest methods and recent progress? https://twitter.com/paperswithcode/status/1458433653269205002 .",
+            "content": "Week 49 - December 21 . Thursday 12/9 . A deep learning course using PyTorch including Transformers, Generative models and self-supervised learning: https://deeplearning.neuromatch.io/tutorials/intro.html - W1D1 - Gradient Descent and AutoGrad done . NeurIPS workshop on RL next Monday. https://sites.google.com/view/deep-rl-workshop-neurips2021. List of posters is just impressive. . And best fastai sources compiled by Tanishq Mathew Abraham. . From @paperswithcode, Deep learning models for tabular data continue to improve. What are the latest methods and recent progress? https://twitter.com/paperswithcode/status/1458433653269205002 .",
             "url": "https://castorfou.github.io/guillaume_blog/blog/logbook-December.html",
             "relUrl": "/blog/logbook-December.html",
             "date": " • Dec 1, 2021"
