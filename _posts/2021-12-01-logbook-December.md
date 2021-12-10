@@ -22,3 +22,6 @@ And [best fastai sources](https://github.com/tmabraham/awesome-fastai) compiled 
 
 From @paperswithcode, Deep learning models for tabular data continue to improve. What are the latest methods and recent progress? [https://twitter.com/paperswithcode/status/1458433653269205002](https://twitter.com/paperswithcode/status/1458433653269205002)
 
+**Friday 12/10**
+
+Registration for [neurips 2021](https://nips.cc/virtual/2021/index.html) taken. Specially interested by [RL workshop](https://sites.google.com/view/deep-rl-workshop-neurips2021) on Monday.
