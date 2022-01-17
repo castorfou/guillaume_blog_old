@@ -112,6 +112,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#week-1---january-22">Week 1 - January 22</a></li>
+<li class="toc-entry toc-h2"><a href="#week-2---january-22">Week 2 - January 22</a></li>
 </ul><h2 id="week-1---january-22">
 <a class="anchor" href="#week-1---january-22" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 1 - January 22</h2>
 
@@ -125,6 +126,22 @@ window.onload = wrap_img;
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log 00<span class="se">\ </span>-<span class="se">\ </span>my_lib.ipynb
 git checkout f97406b026bfdf529d2dc4de96224bdfbaa576a8 00<span class="se">\ </span>-<span class="se">\ </span>my_lib.ipynb
+</code></pre></div></div>
+
+<h2 id="week-2---january-22">
+<a class="anchor" href="#week-2---january-22" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 2 - January 22</h2>
+
+<p><strong>Monday 1/17</strong></p>
+
+<p>To update fastai from an existing envt under windows</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda update <span class="nt">-n</span> base <span class="nt">-c</span> defaults conda <span class="o">(</span>from base<span class="o">)</span>
+conda update fastai <span class="nt">-c</span> fastai <span class="nt">-c</span> pytorch <span class="nt">-c</span> conda-forge <span class="nt">-c</span> nvidia <span class="o">(</span>from fastai<span class="o">)</span>
+</code></pre></div></div>
+
+<p>To install <a href="https://github.com/mamba-org/mamba">mamba</a> under WSL2</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge <span class="o">(</span>from base<span class="o">)</span>
 </code></pre></div></div>
 
 
