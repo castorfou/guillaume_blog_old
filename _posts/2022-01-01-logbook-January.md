@@ -40,5 +40,21 @@ To install [mamba](https://github.com/mamba-org/mamba) under WSL2
 
 ```bash
 conda install mamba -n base -c conda-forge (from base)
+
+then
+
+mamba init
+```
+
+To use system CA certificate in WSL2
+
+```bash
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+```
+
+To install fastai in WSL2 using mamba
+
+```python
+mamba install -c fastchan fastai
 ```
 
