@@ -25,3 +25,20 @@ git log 00\ -\ my_lib.ipynb
 git checkout f97406b026bfdf529d2dc4de96224bdfbaa576a8 00\ -\ my_lib.ipynb
 ```
 
+## Week 2 - January 22
+
+**Monday 1/17**
+
+To update fastai from an existing envt under windows
+
+```bash
+conda update -n base -c defaults conda (from base)
+conda update fastai -c fastai -c pytorch -c conda-forge -c nvidia (from fastai)
+```
+
+To install [mamba](https://github.com/mamba-org/mamba) under WSL2
+
+```bash
+conda install mamba -n base -c conda-forge (from base)
+```
+
