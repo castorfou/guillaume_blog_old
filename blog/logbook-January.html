@@ -142,6 +142,20 @@ conda update fastai <span class="nt">-c</span> fastai <span class="nt">-c</span>
 <p>To install <a href="https://github.com/mamba-org/mamba">mamba</a> under WSL2</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge <span class="o">(</span>from base<span class="o">)</span>
+
+<span class="k">then
+
+</span>mamba init
+</code></pre></div></div>
+
+<p>To use system CA certificate in WSL2</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">REQUESTS_CA_BUNDLE</span><span class="o">=</span>/etc/ssl/certs/ca-certificates.crt
+</code></pre></div></div>
+
+<p>To install fastai in WSL2 using mamba</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">fastchan</span> <span class="n">fastai</span>
 </code></pre></div></div>
 
 

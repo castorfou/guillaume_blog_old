@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-01-17T11:26:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for January 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html" rel="alternate" type="text/html" title="Logbook for January 22" /><published>2022-01-01T00:00:00-06:00</published><updated>2022-01-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-January</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html">&lt;h2 id=&quot;week-1---january-22&quot;&gt;Week 1 - January 22&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-01-17T12:18:29-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for January 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html" rel="alternate" type="text/html" title="Logbook for January 22" /><published>2022-01-01T00:00:00-06:00</published><updated>2022-01-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-January</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html">&lt;h2 id=&quot;week-1---january-22&quot;&gt;Week 1 - January 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 1/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -25,6 +25,20 @@ conda update fastai &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; fastai &lt;
 &lt;p&gt;To install &lt;a href=&quot;https://github.com/mamba-org/mamba&quot;&gt;mamba&lt;/a&gt; under WSL2&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mamba &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; base &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;from base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;then
+
+&lt;/span&gt;mamba init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To use system CA certificate in WSL2&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;REQUESTS_CA_BUNDLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/etc/ssl/certs/ca-certificates.crt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To install fastai in WSL2 using mamba&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mamba&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fastchan&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fastai&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 1 - January 22</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for December 21</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-December.html" rel="alternate" type="text/html" title="Logbook for December 21" /><published>2021-12-01T00:00:00-06:00</published><updated>2021-12-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-December</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-December.html">&lt;h2 id=&quot;week-49---december-21&quot;&gt;Week 49 - December 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 12/9&lt;/strong&gt;&lt;/p&gt;
