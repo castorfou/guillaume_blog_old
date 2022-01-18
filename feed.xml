@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-01-17T12:18:29-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for January 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html" rel="alternate" type="text/html" title="Logbook for January 22" /><published>2022-01-01T00:00:00-06:00</published><updated>2022-01-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-January</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html">&lt;h2 id=&quot;week-1---january-22&quot;&gt;Week 1 - January 22&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-01-18T02:36:39-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 conda mamba and cuda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html" rel="alternate" type="text/html" title="setup wsl2 conda mamba and cuda" /><published>2022-01-18T00:00:00-06:00</published><updated>2022-01-18T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20conda%20mamba%20cuda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html">&lt;h2 id=&quot;wsl2-installation-and-configuration&quot;&gt;wsl2 installation and configuration&lt;/h2&gt;
+
+&lt;p&gt;most of it is explained in an &lt;a href=&quot;https://developers.michelin.com/details/wsl2/wsl2_fundamentals.html&quot;&gt;internal blog entry&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To display windows version: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;winver.exe&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I use version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20H2 build 19042.1415&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;installation&quot;&gt;installation&lt;/h4&gt;
+
+&lt;p&gt;It is now as easy as to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl --install&lt;/code&gt; in powershell as admin.&lt;/p&gt;
+
+&lt;p&gt;Full detail at &lt;a href=&quot;https://docs.microsoft.com/fr-fr/windows/wsl/install&quot;&gt;MS WSL doc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Other commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# list all wsl distributions installed and their WSL version&lt;/span&gt;
+wsl &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--verbose&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# list all distributions available&lt;/span&gt;
+wsl &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--online&lt;/span&gt;
+Voici la liste des distributions valides qui peuvent être installées.
+Installer à l’aide de « wsl &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;Distribution&amp;gt; ».
+
+NAME            FRIENDLY NAME
+Ubuntu          Ubuntu
+Debian          Debian GNU/Linux
+kali-linux      Kali Linux Rolling
+openSUSE-42     openSUSE Leap 42
+SLES-12         SUSE Linux Enterprise Server v12
+Ubuntu-16.04    Ubuntu 16.04 LTS
+Ubuntu-18.04    Ubuntu 18.04 LTS
+Ubuntu-20.04    Ubuntu 20.04 LTS
+
+&lt;span class=&quot;c&quot;&gt;# install Linux distributions&lt;/span&gt;
+wsl &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;Distribution Name&amp;gt;
+
+&lt;span class=&quot;c&quot;&gt;# shutdown wsl: shutdown all &lt;/span&gt;
+wsl &lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;configuration&quot;&gt;configuration&lt;/h4&gt;
+
+&lt;h5 id=&quot;wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/h5&gt;
+
+&lt;p&gt;Is is nicely explained in the Michelin blog entry. DNS resolution is kind of broken (I think due to internal protections we use on our corporate PC)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/moby/vpnkit&quot;&gt;vpnkit&lt;/a&gt; provides a secured solution to make it work. And sakai135 has packaged it for wsl: &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The steps to install wsl-vpn kit are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a working directory on your windows workspace and download this &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit/releases/download/v0.2.3/wsl-vpnkit.tar.gz&quot;&gt;packaging of wsl-vpnkit&lt;/a&gt; inside.&lt;/li&gt;
+  &lt;li&gt;Now, open a powershell and go to the location of wsl-vpnkit.tar.gz, downloaded during the previous step&lt;/li&gt;
+  &lt;li&gt;On your powershell terminal, launch:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c&quot;&gt;#/!\ in powserhsell&lt;/span&gt;
+  wsl &lt;span class=&quot;nt&quot;&gt;--import&lt;/span&gt; wsl-vpnkit &lt;span class=&quot;nv&quot;&gt;$env&lt;/span&gt;:USERPROFILE&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;sl-vpnkit wsl-vpnkit.tar.gz
+  wsl &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; wsl-vpnkit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can now exit your powershell&lt;/li&gt;
+  &lt;li&gt;For the last step, to ensure all wsl reboot good communication, we will write in .profile file of your ubuntu user wsl-vpnkit initialization command:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.profile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Relaunch your WSL terminal&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="wsl" /><category term="cuda" /><category term="conda" /><summary type="html">wsl2 installation and configuration</summary></entry><entry><title type="html">Logbook for January 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html" rel="alternate" type="text/html" title="Logbook for January 22" /><published>2022-01-01T00:00:00-06:00</published><updated>2022-01-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-January</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html">&lt;h2 id=&quot;week-1---january-22&quot;&gt;Week 1 - January 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 1/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -585,42 +657,4 @@ Executing transaction: done
 
 &lt;p&gt;&lt;strong&gt;Thursday 9/23&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Start &lt;a href=&quot;https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python&quot;&gt;plotly course&lt;/a&gt; from datacamp using my &lt;a href=&quot;/guillaume_blog/blog/Datacamp.html&quot;&gt;datacamp learning process&lt;/a&gt;. I need basic interactivity and 3d plots to illustrate reward functions.&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 35 - September 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">git clean repo with bfg</title><link href="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html" rel="alternate" type="text/html" title="git clean repo with bfg" /><published>2021-07-29T00:00:00-05:00</published><updated>2021-07-29T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/git-clean-large-files.html">&lt;p&gt;&lt;a href=&quot;https://rtyley.github.io/bfg-repo-cleaner/&quot;&gt;bfg website&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;general-usage&quot;&gt;General usage&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications/bfg
-
-&lt;span class=&quot;c&quot;&gt;#we clone and we will work on that one&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;local_clone
-&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; ~/git/d059-vld-ic &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;d059-vld-ic
-git status
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;remove-big-files&quot;&gt;Remove big files&lt;/h2&gt;
-
-&lt;p&gt;no need to create a clone, we can directly work on our repo&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications/bfg
-java &lt;span class=&quot;nt&quot;&gt;-jar&lt;/span&gt; bfg-1.13.0.jar &lt;span class=&quot;nt&quot;&gt;--strip-blobs-bigger-than&lt;/span&gt; 100M ~/git/d059-vld-ic
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/git/d059-vld-ic
-git reflog expire &lt;span class=&quot;nt&quot;&gt;--expire&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;now &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git gc &lt;span class=&quot;nt&quot;&gt;--prune&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;now &lt;span class=&quot;nt&quot;&gt;--aggressive&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note: if you get a message &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?&lt;/code&gt;, you have to launch &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git gc&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;remove-forbidden-files-such-as-mp3-targz&quot;&gt;Remove forbidden files such as .mp3, .tar.gz&lt;/h2&gt;
-
-&lt;p&gt;need to create a clone, we can directly work on our repo&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Applications/bfg
-java &lt;span class=&quot;nt&quot;&gt;-jar&lt;/span&gt; bfg-1.13.0.jar &lt;span class=&quot;nt&quot;&gt;--delete-files&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.mp3'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-blob-protection&lt;/span&gt; ~/git/data-scientist-skills
-java &lt;span class=&quot;nt&quot;&gt;-jar&lt;/span&gt; bfg-1.13.0.jar &lt;span class=&quot;nt&quot;&gt;--delete-files&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.tar.gz'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-blob-protection&lt;/span&gt; ~/git/data-scientist-skills
-
-git reflog expire &lt;span class=&quot;nt&quot;&gt;--expire&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;now &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git gc &lt;span class=&quot;nt&quot;&gt;--prune&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;now &lt;span class=&quot;nt&quot;&gt;--aggressive&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;improve-gitignore&quot;&gt;Improve .gitignore&lt;/h2&gt;
-
-&lt;p&gt;see &lt;a href=&quot;/guillaume_blog/blog/git-ignore-large-files.html&quot;&gt;git ignore large files&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">bfg website</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Start &lt;a href=&quot;https://learn.datacamp.com/courses/introduction-to-data-visualization-with-plotly-in-python&quot;&gt;plotly course&lt;/a&gt; from datacamp using my &lt;a href=&quot;/guillaume_blog/blog/Datacamp.html&quot;&gt;datacamp learning process&lt;/a&gt;. I need basic interactivity and 3d plots to illustrate reward functions.&lt;/p&gt;</content><author><name></name></author><category term="logbook" /><summary type="html">Week 35 - September 21</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/logbook.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
