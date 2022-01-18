@@ -196,10 +196,12 @@ conda install mamba -n base -c conda-forge
 mamba init
 ```
 
-#### installation jupyter - nb_kernels
+#### installation jupyter notebook, nb_conda_kernels, jupyter lab 
 
 ```bash
 mamba install nb_conda_kernels
+mamba install -c conda-forge jupyterlab
+mamba install -c conda-forge jupyterlab-git
 ```
 
 #### create conda envt - fastai (v2.5.3) (optional)
@@ -211,3 +213,8 @@ mamba install -c fastai -c pytorch fastai
 mamba install ipykernel
 ```
 
+## Jupyter
+
+Start jupyter (lab or notebook) from base environment.
+
+We can now switch to python environment that we need.
