@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -135,10 +135,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#conda-installation">conda installation</a></li>
 <li class="toc-entry toc-h4"><a href="#conda-configuration">conda configuration</a></li>
 <li class="toc-entry toc-h4"><a href="#mamba-installation">mamba installation</a></li>
-<li class="toc-entry toc-h4"><a href="#installation-jupyter---nb_kernels">installation jupyter - nb_kernels</a></li>
+<li class="toc-entry toc-h4"><a href="#installation-jupyter-notebook-nb_conda_kernels-jupyter-lab">installation jupyter notebook, nb_conda_kernels, jupyter lab</a></li>
 <li class="toc-entry toc-h4"><a href="#create-conda-envt---fastai-v253-optional">create conda envt - fastai (v2.5.3) (optional)</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#jupyter">Jupyter</a></li>
 </ul><h2 id="wsl2---installation-and-configuration">
 <a class="anchor" href="#wsl2---installation-and-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl2 - installation and configuration</h2>
 
@@ -322,10 +323,12 @@ bash Miniconda3-latest-Linux-x86_64.sh <span class="nt">-p</span> <span class="n
 mamba init
 </code></pre></div></div>
 
-<h4 id="installation-jupyter---nb_kernels">
-<a class="anchor" href="#installation-jupyter---nb_kernels" aria-hidden="true"><span class="octicon octicon-link"></span></a>installation jupyter - nb_kernels</h4>
+<h4 id="installation-jupyter-notebook-nb_conda_kernels-jupyter-lab">
+<a class="anchor" href="#installation-jupyter-notebook-nb_conda_kernels-jupyter-lab" aria-hidden="true"><span class="octicon octicon-link"></span></a>installation jupyter notebook, nb_conda_kernels, jupyter lab</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mamba <span class="nb">install </span>nb_conda_kernels
+mamba <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab
+mamba <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab-git
 </code></pre></div></div>
 
 <h4 id="create-conda-envt---fastai-v253-optional">
@@ -337,6 +340,12 @@ mamba <span class="nb">install</span> <span class="nt">-c</span> fastai <span cl
 mamba <span class="nb">install </span>ipykernel
 </code></pre></div></div>
 
+<h2 id="jupyter">
+<a class="anchor" href="#jupyter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jupyter</h2>
+
+<p>Start jupyter (lab or notebook) from base environment.</p>
+
+<p>We can now switch to python environment that we need.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
