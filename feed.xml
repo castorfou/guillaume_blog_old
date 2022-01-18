@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-01-18T02:36:39-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 conda mamba and cuda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html" rel="alternate" type="text/html" title="setup wsl2 conda mamba and cuda" /><published>2022-01-18T00:00:00-06:00</published><updated>2022-01-18T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20conda%20mamba%20cuda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html">&lt;h2 id=&quot;wsl2-installation-and-configuration&quot;&gt;wsl2 installation and configuration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-01-18T07:41:38-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 conda mamba and cuda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html" rel="alternate" type="text/html" title="setup wsl2 conda mamba and cuda" /><published>2022-01-18T00:00:00-06:00</published><updated>2022-01-18T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20conda%20mamba%20cuda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html">&lt;h2 id=&quot;wsl2---installation-and-configuration&quot;&gt;wsl2 - installation and configuration&lt;/h2&gt;
 
 &lt;p&gt;most of it is explained in an &lt;a href=&quot;https://developers.michelin.com/details/wsl2/wsl2_fundamentals.html&quot;&gt;internal blog entry&lt;/a&gt;.&lt;/p&gt;
 
@@ -37,13 +37,16 @@ wsl &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; &lt;span class=&quot
 
 &lt;span class=&quot;c&quot;&gt;# shutdown wsl: shutdown all &lt;/span&gt;
 wsl &lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt; 
+
+&lt;span class=&quot;c&quot;&gt;# define default wsl distribution to use with wsl&lt;/span&gt;
+wsl &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;DistributionName&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;configuration&quot;&gt;configuration&lt;/h4&gt;
 
 &lt;h5 id=&quot;wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/h5&gt;
 
-&lt;p&gt;Is is nicely explained in the Michelin blog entry. DNS resolution is kind of broken (I think due to internal protections we use on our corporate PC)&lt;/p&gt;
+&lt;p&gt;It is nicely explained in the Michelin blog entry. DNS resolution is kind of broken (I think due to internal protections we use on our corporate PC)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/moby/vpnkit&quot;&gt;vpnkit&lt;/a&gt; provides a secured solution to make it work. And sakai135 has packaged it for wsl: &lt;a href=&quot;https://github.com/sakai135/wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/a&gt;&lt;/p&gt;
 
@@ -70,7 +73,114 @@ wsl &lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Relaunch your WSL terminal&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="wsl" /><category term="cuda" /><category term="conda" /><summary type="html">wsl2 installation and configuration</summary></entry><entry><title type="html">Logbook for January 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html" rel="alternate" type="text/html" title="Logbook for January 22" /><published>2022-01-01T00:00:00-06:00</published><updated>2022-01-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-January</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html">&lt;h2 id=&quot;week-1---january-22&quot;&gt;Week 1 - January 22&lt;/h2&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;git-configuration&quot;&gt;git configuration&lt;/h5&gt;
+
+&lt;p&gt;create a SSH key pair under your distribution&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;my SSH key pair for gitlab&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Integrate into gitlab using &lt;a href=&quot;https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account&quot;&gt;gitlab doc&lt;/a&gt;.  (copy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; into gitlab &amp;gt; preferences &amp;gt; SSH Keys)&lt;/p&gt;
+
+&lt;h5 id=&quot;add-corporate-ca-certificates&quot;&gt;Add corporate CA certificates&lt;/h5&gt;
+
+&lt;p&gt;Michelin SI is behind an ssl proxy with his proper PKI for certificates delivering. That is why, your subsystem must add this pki in her recognized authorities.&lt;/p&gt;
+
+&lt;p&gt;To do this, we will clone a repository with the certificates in the subsystem and copy them to ca-certificates:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /tmp/devops_environment/certs/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; /usr/local/share/ca-certificates/
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-ca-certificates
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If everything is ok, terminal notify you that certificates has been added.&lt;/p&gt;
+
+&lt;p&gt;You can now clean the temp working folder:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/devops_environment
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;configure-apt&quot;&gt;Configure APT&lt;/h5&gt;
+
+&lt;p&gt;The last step, to have a subsystem ready to use, is to have an apt with Michelin trusted sources configured. Ubuntu based package repositories can’t be used behind Michelin proxy.&lt;/p&gt;
+
+&lt;p&gt;Michelin offers its own apt server with artifactory. To configure apt to use artifactory, launch these commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s@^\(deb \)http://archive.ubuntu.com/ubuntu/\( focal\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &amp;amp;@'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s@^\(deb \)http://security.ubuntu.com/ubuntu/\( focal\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &amp;amp;@'&lt;/span&gt; /etc/apt/sources.list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;check-if-your-wsl-distribution-is-working-correctly&quot;&gt;Check if your WSL distribution is working correctly&lt;/h5&gt;
+
+&lt;p&gt;To verify if everything is OK on your distribution:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This command must return google ip:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  host google.fr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This command must return artifactory ip:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  host artifactory.michelin.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You are able to update your distribution without error:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update
+  sudo apt upgrade -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conda-mamba---installation-and-configuration&quot;&gt;Conda Mamba - installation and configuration&lt;/h2&gt;
+
+&lt;h4 id=&quot;conda-installation&quot;&gt;conda installation&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;tmpdir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mktemp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmpdir&lt;/span&gt;
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; +x Miniconda3-latest-Linux-x86_64.sh
+&lt;span class=&quot;c&quot;&gt;# answer yes to question Do you wish the installer to initialize Miniconda3 by running conda init?&lt;/span&gt;
+bash Miniconda3-latest-Linux-x86_64.sh &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/miniconda3
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&amp;gt;&lt;/span&gt; For changes to take effect, close and re-open your current shell. &amp;lt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this configuration, conda will be activate at startup. If you’d prefer that conda’s base environment not be activated on startup,   set the auto_activate_base parameter to false: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda config --set auto_activate_base false&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;conda-configuration&quot;&gt;conda configuration&lt;/h4&gt;
+
+&lt;p&gt;As we have in-house CA certificates, and conda uses its own CA certificates (in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/miniconda3/ssl&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;We have to change this behaviour and ask conda to use system CA certifcates.&lt;/p&gt;
+
+&lt;p&gt;At the end of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bash_rc&lt;/code&gt;, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;mamba-installation&quot;&gt;mamba installation&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mamba &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; base &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge
+mamba init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;installation-jupyter---nb_kernels&quot;&gt;installation jupyter - nb_kernels&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mamba &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nb_conda_kernels
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;create-conda-envt---fastai-v253-optional&quot;&gt;create conda envt - fastai (v2.5.3) (optional)&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mamba create &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; fastai
+mamba activate fastai
+mamba &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; fastai &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; pytorch fastai
+mamba &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ipykernel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="wsl" /><category term="cuda" /><category term="conda" /><summary type="html">wsl2 - installation and configuration</summary></entry><entry><title type="html">Logbook for January 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html" rel="alternate" type="text/html" title="Logbook for January 22" /><published>2022-01-01T00:00:00-06:00</published><updated>2022-01-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-January</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-January.html">&lt;h2 id=&quot;week-1---january-22&quot;&gt;Week 1 - January 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday 1/3&lt;/strong&gt;&lt;/p&gt;
 

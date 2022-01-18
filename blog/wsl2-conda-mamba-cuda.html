@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -116,18 +116,31 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#wsl2-installation-and-configuration">wsl2 installation and configuration</a>
+<li class="toc-entry toc-h2"><a href="#wsl2---installation-and-configuration">wsl2 - installation and configuration</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#installation">installation</a></li>
 <li class="toc-entry toc-h4"><a href="#configuration">configuration</a>
 <ul>
 <li class="toc-entry toc-h5"><a href="#wsl-vpnkit">wsl-vpnkit</a></li>
+<li class="toc-entry toc-h5"><a href="#git-configuration">git configuration</a></li>
+<li class="toc-entry toc-h5"><a href="#add-corporate-ca-certificates">Add corporate CA certificates</a></li>
+<li class="toc-entry toc-h5"><a href="#configure-apt">Configure APT</a></li>
+<li class="toc-entry toc-h5"><a href="#check-if-your-wsl-distribution-is-working-correctly">Check if your WSL distribution is working correctly</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul><h2 id="wsl2-installation-and-configuration">
-<a class="anchor" href="#wsl2-installation-and-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl2 installation and configuration</h2>
+<li class="toc-entry toc-h2"><a href="#conda-mamba---installation-and-configuration">Conda Mamba - installation and configuration</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#conda-installation">conda installation</a></li>
+<li class="toc-entry toc-h4"><a href="#conda-configuration">conda configuration</a></li>
+<li class="toc-entry toc-h4"><a href="#mamba-installation">mamba installation</a></li>
+<li class="toc-entry toc-h4"><a href="#installation-jupyter---nb_kernels">installation jupyter - nb_kernels</a></li>
+<li class="toc-entry toc-h4"><a href="#create-conda-envt---fastai-v253-optional">create conda envt - fastai (v2.5.3) (optional)</a></li>
+</ul>
+</li>
+</ul><h2 id="wsl2---installation-and-configuration">
+<a class="anchor" href="#wsl2---installation-and-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl2 - installation and configuration</h2>
 
 <p>most of it is explained in an <a href="https://developers.michelin.com/details/wsl2/wsl2_fundamentals.html">internal blog entry</a>.</p>
 
@@ -167,6 +180,9 @@ wsl <span class="nt">--install</span> <span class="nt">-d</span> &lt;Distributio
 
 <span class="c"># shutdown wsl: shutdown all </span>
 wsl <span class="nt">--shutdown</span> 
+
+<span class="c"># define default wsl distribution to use with wsl</span>
+wsl <span class="nt">-s</span> &lt;DistributionName&gt;
 </code></pre></div></div>
 
 <h4 id="configuration">
@@ -175,7 +191,7 @@ wsl <span class="nt">--shutdown</span>
 <h5 id="wsl-vpnkit">
 <a class="anchor" href="#wsl-vpnkit" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl-vpnkit</h5>
 
-<p>Is is nicely explained in the Michelin blog entry. DNS resolution is kind of broken (I think due to internal protections we use on our corporate PC)</p>
+<p>It is nicely explained in the Michelin blog entry. DNS resolution is kind of broken (I think due to internal protections we use on our corporate PC)</p>
 
 <p><a href="https://github.com/moby/vpnkit">vpnkit</a> provides a secured solution to make it work. And sakai135 has packaged it for wsl: <a href="https://github.com/sakai135/wsl-vpnkit">wsl-vpnkit</a></p>
 
@@ -203,6 +219,124 @@ wsl <span class="nt">--shutdown</span>
 <ul>
   <li>Relaunch your WSL terminal</li>
 </ul>
+
+<h5 id="git-configuration">
+<a class="anchor" href="#git-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>git configuration</h5>
+
+<p>create a SSH key pair under your distribution</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"my SSH key pair for gitlab"</span>
+</code></pre></div></div>
+
+<p>Integrate into gitlab using <a href="https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account">gitlab doc</a>.  (copy <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> into gitlab &gt; preferences &gt; SSH Keys)</p>
+
+<h5 id="add-corporate-ca-certificates">
+<a class="anchor" href="#add-corporate-ca-certificates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add corporate CA certificates</h5>
+
+<p>Michelin SI is behind an ssl proxy with his proper PKI for certificates delivering. That is why, your subsystem must add this pki in her recognized authorities.</p>
+
+<p>To do this, we will clone a repository with the certificates in the subsystem and copy them to ca-certificates:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+<span class="nb">sudo cp</span> /tmp/devops_environment/certs/<span class="k">*</span> /usr/local/share/ca-certificates/
+<span class="nb">sudo </span>update-ca-certificates
+</code></pre></div></div>
+
+<p>If everything is ok, terminal notify you that certificates has been added.</p>
+
+<p>You can now clean the temp working folder:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /tmp/devops_environment
+</code></pre></div></div>
+
+<h5 id="configure-apt">
+<a class="anchor" href="#configure-apt" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure APT</h5>
+
+<p>The last step, to have a subsystem ready to use, is to have an apt with Michelin trusted sources configured. Ubuntu based package repositories can’t be used behind Michelin proxy.</p>
+
+<p>Michelin offers its own apt server with artifactory. To configure apt to use artifactory, launch these commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s@^\(deb \)http://archive.ubuntu.com/ubuntu/\( focal\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &amp;@'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s@^\(deb \)http://security.ubuntu.com/ubuntu/\( focal\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &amp;@'</span> /etc/apt/sources.list
+</code></pre></div></div>
+
+<h5 id="check-if-your-wsl-distribution-is-working-correctly">
+<a class="anchor" href="#check-if-your-wsl-distribution-is-working-correctly" aria-hidden="true"><span class="octicon octicon-link"></span></a>Check if your WSL distribution is working correctly</h5>
+
+<p>To verify if everything is OK on your distribution:</p>
+
+<ul>
+  <li>This command must return google ip:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  host google.fr
+</code></pre></div></div>
+
+<ul>
+  <li>This command must return artifactory ip:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  host artifactory.michelin.com
+</code></pre></div></div>
+
+<ul>
+  <li>You are able to update your distribution without error:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt update
+  sudo apt upgrade -y
+</code></pre></div></div>
+
+<h2 id="conda-mamba---installation-and-configuration">
+<a class="anchor" href="#conda-mamba---installation-and-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conda Mamba - installation and configuration</h2>
+
+<h4 id="conda-installation">
+<a class="anchor" href="#conda-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>conda installation</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">tmpdir</span><span class="o">=</span><span class="si">$(</span><span class="nb">mktemp</span> <span class="nt">-d</span><span class="si">)</span>
+<span class="nb">cd</span> <span class="nv">$tmpdir</span>
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+<span class="nb">chmod</span> +x Miniconda3-latest-Linux-x86_64.sh
+<span class="c"># answer yes to question Do you wish the installer to initialize Miniconda3 by running conda init?</span>
+bash Miniconda3-latest-Linux-x86_64.sh <span class="nt">-p</span> <span class="nv">$HOME</span>/miniconda3
+
+<span class="o">&gt;&gt;</span> <span class="o">==&gt;</span> For changes to take effect, close and re-open your current shell. &lt;<span class="o">==</span>
+</code></pre></div></div>
+
+<p>With this configuration, conda will be activate at startup. If you’d prefer that conda’s base environment not be activated on startup,   set the auto_activate_base parameter to false: <code class="language-plaintext highlighter-rouge">conda config --set auto_activate_base false</code></p>
+
+<h4 id="conda-configuration">
+<a class="anchor" href="#conda-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>conda configuration</h4>
+
+<p>As we have in-house CA certificates, and conda uses its own CA certificates (in <code class="language-plaintext highlighter-rouge">~/miniconda3/ssl</code>)</p>
+
+<p>We have to change this behaviour and ask conda to use system CA certifcates.</p>
+
+<p>At the end of <code class="language-plaintext highlighter-rouge">.bash_rc</code>, add <code class="language-plaintext highlighter-rouge">export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt</code></p>
+
+<h4 id="mamba-installation">
+<a class="anchor" href="#mamba-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>mamba installation</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge
+mamba init
+</code></pre></div></div>
+
+<h4 id="installation-jupyter---nb_kernels">
+<a class="anchor" href="#installation-jupyter---nb_kernels" aria-hidden="true"><span class="octicon octicon-link"></span></a>installation jupyter - nb_kernels</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mamba <span class="nb">install </span>nb_conda_kernels
+</code></pre></div></div>
+
+<h4 id="create-conda-envt---fastai-v253-optional">
+<a class="anchor" href="#create-conda-envt---fastai-v253-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>create conda envt - fastai (v2.5.3) (optional)</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mamba create <span class="nt">--name</span> fastai
+mamba activate fastai
+mamba <span class="nb">install</span> <span class="nt">-c</span> fastai <span class="nt">-c</span> pytorch fastai
+mamba <span class="nb">install </span>ipykernel
+</code></pre></div></div>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
