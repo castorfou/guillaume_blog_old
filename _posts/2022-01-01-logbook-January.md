@@ -58,3 +58,7 @@ To install fastai in WSL2 using mamba
 mamba install -c fastchan fastai
 ```
 
+**Thursday 1/20**
+
+Stephane Mallat - collège de France - https://www.college-de-france.fr/site/stephane-mallat/course-2022-01-19-09h30.htm
+
