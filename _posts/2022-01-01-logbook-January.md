@@ -60,5 +60,7 @@ mamba install -c fastchan fastai
 
 **Thursday 1/20**
 
-Stephane Mallat - collège de France - https://www.college-de-france.fr/site/stephane-mallat/course-2022-01-19-09h30.htm
+Stephane Mallat - collège de France - [Information et complexité](https://www.college-de-france.fr/site/stephane-mallat/course-2022-01-19-09h30.htm) but unfortunately video is not yet available.
+
+Re-read of arXiv:2110.01889 Deep Neural Networks and Tabular Data: A Survey (here on [zotero](https://www.zotero.org/guillaumeramelet/collections/S9YLK8K9/items/V6LWTC5E/collection))
 
