@@ -64,3 +64,8 @@ Stephane Mallat - collège de France - [Information et complexité](https://www.
 
 Re-read of arXiv:2110.01889 Deep Neural Networks and Tabular Data: A Survey (here on [zotero](https://www.zotero.org/guillaumeramelet/collections/S9YLK8K9/items/V6LWTC5E/collection))
 
+## Week 3 - January 22
+
+**Tuesday 1/26**
+
+Video of 1st lecture of Stephane Mallat 2022 is now available.
