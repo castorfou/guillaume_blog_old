@@ -54,6 +54,10 @@ wsl --shutdown
 wsl -s <DistributionName>
 ```
 
+
+
+#### installation in a non-system drive
+
 and [here](https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive) is a more advanced config to install in a non system drive (D: instead of C:)
 
 ```bash
@@ -64,6 +68,47 @@ Set-Location D:\WSL\Ubuntu-20.04
 #list+link of distributions in https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu-20.04.appx -UseBasicParsing
 
+Rename-Item .\Ubuntu-20.04.appx Ubuntu-20.04.zip
+Expand-Archive .\Ubuntu-20.04.zip -Verbose
+# and then run Ubuntu_2004.2021.825.0_x64.appx
+```
+
+I don't know yet where the WSL disk is located (is it a .vhdx file?)
+
+Disks are located at `%USERPROFILE%\AppData\Local\Packages\[distro name]`
+
+2 ditros used: 
+
+* wsl1 ubuntu 18.04: CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc
+
+* wsl2 ubuntu 20.04: CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc
+
+So disks are still in C:\
+
+Guess I have to use move-wsl.
+
+```bash
+Set-Location 'D:\Program Files (x86)\move-wsl\'
+.\move-wsl.ps1
+
+PS D:\Program Files (x86)\move-wsl> .\move-wsl.ps1
+Getting distros...
+Select distro to move:
+1: Ubuntu-18.04
+2: Ubuntu
+2
+Enter WSL target directory:
+D:\wsl\Ubuntu-20.04
+Move Ubuntu to "D:\wsl\Ubuntu-20.04"? (Y|n): Y
+Exporting VHDX to "D:\wsl\Ubuntu-20.04\Ubuntu.tar" ...
+```
+
+And after that, have to create file`/etc/wsl.conf`
+
+```bash
+guillaume@LL11LPC0PQARQ:~$ cat /etc/wsl.conf
+[user]
+default=guillaume
 ```
 
 
@@ -108,10 +153,10 @@ The steps to install wsl-vpn kit are:
 create a SSH key pair under your distribution
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "my SSH key pair for gitlab"
+ssh-keygen -t rsa -b 4096 -C "WSL2"
 ```
 
-Integrate into gitlab using [gitlab doc](https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account).  (copy `id_rsa.pub` into gitlab > preferences > SSH Keys)
+Integrate into gitlab using [gitlab doc](https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account).  (copy `id_rsa.pub` into gitlab > preferences > SSH Keys)cat .s	
 
 
 
