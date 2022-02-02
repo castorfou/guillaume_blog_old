@@ -229,4 +229,4 @@ mamba install ipykernel
 
 Start jupyter (lab or notebook) from base environment.
 
-We can now switch to python environment that we need.
+We can now switch to desired python environment.
