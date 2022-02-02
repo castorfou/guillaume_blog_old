@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -140,7 +140,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#create-conda-envt---fastai-v253-optional">create conda envt - fastai (v2.5.3) (optional)</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#jupyter">Jupyter</a></li>
+<li class="toc-entry toc-h2"><a href="#jupyter">Jupyter</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#modify-jupyter-config">modify jupyter config</a></li>
+</ul>
+</li>
 </ul><h2 id="wsl2---installation-and-configuration">
 <a class="anchor" href="#wsl2---installation-and-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl2 - installation and configuration</h2>
 
@@ -402,6 +406,15 @@ mamba <span class="nb">install </span>ipykernel
 <a class="anchor" href="#jupyter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jupyter</h2>
 
 <p>Start jupyter (lab or notebook) from base environment, and switch to desired python environment.</p>
+
+<h4 id="modify-jupyter-config">
+<a class="anchor" href="#modify-jupyter-config" aria-hidden="true"><span class="octicon octicon-link"></span></a>modify jupyter config</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#create jupyter config file in ~.jupyter</span>
+jupyter notebook <span class="nt">--generate-config</span>
+</code></pre></div></div>
+
+<p>And activate jupyter config file to change <code class="language-plaintext highlighter-rouge">#c.NotebookApp.use_redirect_file = True</code> to <code class="language-plaintext highlighter-rouge">c.NotebookApp.use_redirect_file = False</code></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
