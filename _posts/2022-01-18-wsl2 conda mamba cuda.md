@@ -272,3 +272,12 @@ mamba install ipykernel
 ## Jupyter
 
 Start jupyter (lab or notebook) from base environment, and switch to desired python environment.
+
+#### modify jupyter config
+
+```bash
+#create jupyter config file in ~.jupyter
+jupyter notebook --generate-config
+```
+
+And activate jupyter config file to change `#c.NotebookApp.use_redirect_file = True` to `c.NotebookApp.use_redirect_file = False`
