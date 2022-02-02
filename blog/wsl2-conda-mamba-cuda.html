@@ -119,6 +119,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#wsl2---installation-and-configuration">wsl2 - installation and configuration</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#installation">installation</a></li>
+<li class="toc-entry toc-h4"><a href="#installation-in-a-non-system-drive">installation in a non-system drive</a></li>
 <li class="toc-entry toc-h4"><a href="#configuration">configuration</a>
 <ul>
 <li class="toc-entry toc-h5"><a href="#wsl-vpnkit">wsl-vpnkit</a></li>
@@ -186,6 +187,9 @@ wsl <span class="nt">--shutdown</span>
 wsl <span class="nt">-s</span> &lt;DistributionName&gt;
 </code></pre></div></div>
 
+<h4 id="installation-in-a-non-system-drive">
+<a class="anchor" href="#installation-in-a-non-system-drive" aria-hidden="true"><span class="octicon octicon-link"></span></a>installation in a non-system drive</h4>
+
 <p>and <a href="https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive">here</a> is a more advanced config to install in a non system drive (D: instead of C:)</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#from powershell</span>
@@ -195,6 +199,50 @@ Set-Location D:<span class="se">\W</span>SL<span class="se">\U</span>buntu-20.04
 <span class="c">#list+link of distributions in https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions</span>
 Invoke-WebRequest <span class="nt">-Uri</span> https://aka.ms/wslubuntu2004 <span class="nt">-OutFile</span> Ubuntu-20.04.appx <span class="nt">-UseBasicParsing</span>
 
+Rename-Item .<span class="se">\U</span>buntu-20.04.appx Ubuntu-20.04.zip
+Expand-Archive .<span class="se">\U</span>buntu-20.04.zip <span class="nt">-Verbose</span>
+<span class="c"># and then run Ubuntu_2004.2021.825.0_x64.appx</span>
+</code></pre></div></div>
+
+<p>I don’t know yet where the WSL disk is located (is it a .vhdx file?)</p>
+
+<p>Disks are located at <code class="language-plaintext highlighter-rouge">%USERPROFILE%\AppData\Local\Packages\[distro name]</code></p>
+
+<p>2 ditros used:</p>
+
+<ul>
+  <li>
+    <p>wsl1 ubuntu 18.04: CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc</p>
+  </li>
+  <li>
+    <p>wsl2 ubuntu 20.04: CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc</p>
+  </li>
+</ul>
+
+<p>So disks are still in C:\</p>
+
+<p>Guess I have to use move-wsl.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-Location <span class="s1">'D:\Program Files (x86)\move-wsl\'</span>
+.<span class="se">\m</span>ove-wsl.ps1
+
+PS D:<span class="se">\P</span>rogram Files <span class="o">(</span>x86<span class="o">)</span><span class="se">\m</span>ove-wsl&gt; .<span class="se">\m</span>ove-wsl.ps1
+Getting distros...
+Select distro to move:
+1: Ubuntu-18.04
+2: Ubuntu
+2
+Enter WSL target directory:
+D:<span class="se">\w</span>sl<span class="se">\U</span>buntu-20.04
+Move Ubuntu to <span class="s2">"D:</span><span class="se">\w</span><span class="s2">sl</span><span class="se">\U</span><span class="s2">buntu-20.04"</span>? <span class="o">(</span>Y|n<span class="o">)</span>: Y
+Exporting VHDX to <span class="s2">"D:</span><span class="se">\w</span><span class="s2">sl</span><span class="se">\U</span><span class="s2">buntu-20.04</span><span class="se">\U</span><span class="s2">buntu.tar"</span> ...
+</code></pre></div></div>
+
+<p>And after that, have to create file<code class="language-plaintext highlighter-rouge">/etc/wsl.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>guillaume@LL11LPC0PQARQ:~<span class="nv">$ </span><span class="nb">cat</span> /etc/wsl.conf
+<span class="o">[</span>user]
+<span class="nv">default</span><span class="o">=</span>guillaume
 </code></pre></div></div>
 
 <h4 id="configuration">
@@ -237,10 +285,10 @@ Invoke-WebRequest <span class="nt">-Uri</span> https://aka.ms/wslubuntu2004 <spa
 
 <p>create a SSH key pair under your distribution</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"my SSH key pair for gitlab"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"WSL2"</span>
 </code></pre></div></div>
 
-<p>Integrate into gitlab using <a href="https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account">gitlab doc</a>.  (copy <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> into gitlab &gt; preferences &gt; SSH Keys)</p>
+<p>Integrate into gitlab using <a href="https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account">gitlab doc</a>.  (copy <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> into gitlab &gt; preferences &gt; SSH Keys)cat .s</p>
 
 <h5 id="add-corporate-ca-certificates">
 <a class="anchor" href="#add-corporate-ca-certificates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add corporate CA certificates</h5>

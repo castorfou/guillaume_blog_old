@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-02-02T03:08:04-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 conda mamba and cuda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html" rel="alternate" type="text/html" title="setup wsl2 conda mamba and cuda" /><published>2022-01-18T00:00:00-06:00</published><updated>2022-01-18T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20conda%20mamba%20cuda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html">&lt;h2 id=&quot;wsl2---installation-and-configuration&quot;&gt;wsl2 - installation and configuration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-02-02T08:21:43-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">setup wsl2 conda mamba and cuda</title><link href="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html" rel="alternate" type="text/html" title="setup wsl2 conda mamba and cuda" /><published>2022-01-18T00:00:00-06:00</published><updated>2022-01-18T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/wsl2%20conda%20mamba%20cuda</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html">&lt;h2 id=&quot;wsl2---installation-and-configuration&quot;&gt;wsl2 - installation and configuration&lt;/h2&gt;
 
 &lt;p&gt;most of it is explained in an &lt;a href=&quot;https://developers.michelin.com/details/wsl2/wsl2_fundamentals.html&quot;&gt;internal blog entry&lt;/a&gt;.&lt;/p&gt;
 
@@ -42,6 +42,8 @@ wsl &lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt;
 wsl &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;DistributionName&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h4 id=&quot;installation-in-a-non-system-drive&quot;&gt;installation in a non-system drive&lt;/h4&gt;
+
 &lt;p&gt;and &lt;a href=&quot;https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive&quot;&gt;here&lt;/a&gt; is a more advanced config to install in a non system drive (D: instead of C:)&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#from powershell&lt;/span&gt;
@@ -51,6 +53,50 @@ Set-Location D:&lt;span class=&quot;se&quot;&gt;\W&lt;/span&gt;SL&lt;span class=
 &lt;span class=&quot;c&quot;&gt;#list+link of distributions in https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions&lt;/span&gt;
 Invoke-WebRequest &lt;span class=&quot;nt&quot;&gt;-Uri&lt;/span&gt; https://aka.ms/wslubuntu2004 &lt;span class=&quot;nt&quot;&gt;-OutFile&lt;/span&gt; Ubuntu-20.04.appx &lt;span class=&quot;nt&quot;&gt;-UseBasicParsing&lt;/span&gt;
 
+Rename-Item .&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;buntu-20.04.appx Ubuntu-20.04.zip
+Expand-Archive .&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;buntu-20.04.zip &lt;span class=&quot;nt&quot;&gt;-Verbose&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# and then run Ubuntu_2004.2021.825.0_x64.appx&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I don’t know yet where the WSL disk is located (is it a .vhdx file?)&lt;/p&gt;
+
+&lt;p&gt;Disks are located at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%USERPROFILE%\AppData\Local\Packages\[distro name]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2 ditros used:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;wsl1 ubuntu 18.04: CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;wsl2 ubuntu 20.04: CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So disks are still in C:\&lt;/p&gt;
+
+&lt;p&gt;Guess I have to use move-wsl.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Set-Location &lt;span class=&quot;s1&quot;&gt;'D:\Program Files (x86)\move-wsl\'&lt;/span&gt;
+.&lt;span class=&quot;se&quot;&gt;\m&lt;/span&gt;ove-wsl.ps1
+
+PS D:&lt;span class=&quot;se&quot;&gt;\P&lt;/span&gt;rogram Files &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;x86&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\m&lt;/span&gt;ove-wsl&amp;gt; .&lt;span class=&quot;se&quot;&gt;\m&lt;/span&gt;ove-wsl.ps1
+Getting distros...
+Select distro to move:
+1: Ubuntu-18.04
+2: Ubuntu
+2
+Enter WSL target directory:
+D:&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;sl&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;buntu-20.04
+Move Ubuntu to &lt;span class=&quot;s2&quot;&gt;&quot;D:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;sl&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;buntu-20.04&quot;&lt;/span&gt;? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Y|n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Y
+Exporting VHDX to &lt;span class=&quot;s2&quot;&gt;&quot;D:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;sl&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;buntu-20.04&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;buntu.tar&quot;&lt;/span&gt; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And after that, have to create file&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/wsl.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;guillaume@LL11LPC0PQARQ:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /etc/wsl.conf
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user]
+&lt;span class=&quot;nv&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;guillaume
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;configuration&quot;&gt;configuration&lt;/h4&gt;
@@ -90,10 +136,10 @@ Invoke-WebRequest &lt;span class=&quot;nt&quot;&gt;-Uri&lt;/span&gt; https://aka
 
 &lt;p&gt;create a SSH key pair under your distribution&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;my SSH key pair for gitlab&quot;&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;WSL2&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Integrate into gitlab using &lt;a href=&quot;https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account&quot;&gt;gitlab doc&lt;/a&gt;.  (copy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; into gitlab &amp;gt; preferences &amp;gt; SSH Keys)&lt;/p&gt;
+&lt;p&gt;Integrate into gitlab using &lt;a href=&quot;https://docs.gitlab.com/ee/ssh/#add-an-ssh-key-to-your-gitlab-account&quot;&gt;gitlab doc&lt;/a&gt;.  (copy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; into gitlab &amp;gt; preferences &amp;gt; SSH Keys)cat .s&lt;/p&gt;
 
 &lt;h5 id=&quot;add-corporate-ca-certificates&quot;&gt;Add corporate CA certificates&lt;/h5&gt;
 
