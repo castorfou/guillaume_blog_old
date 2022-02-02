@@ -54,6 +54,18 @@ wsl --shutdown
 wsl -s <DistributionName>
 ```
 
+and [here](https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive) is a more advanced config to install in a non system drive (D: instead of C:)
+
+```bash
+#from powershell
+New-Item D:\WSL\Ubuntu-20.04 -ItemType Directory
+Set-Location D:\WSL\Ubuntu-20.04
+
+#list+link of distributions in https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions
+Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu-20.04.appx -UseBasicParsing
+
+```
+
 
 
 #### configuration
