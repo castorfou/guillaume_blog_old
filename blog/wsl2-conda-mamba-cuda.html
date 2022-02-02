@@ -186,6 +186,17 @@ wsl <span class="nt">--shutdown</span>
 wsl <span class="nt">-s</span> &lt;DistributionName&gt;
 </code></pre></div></div>
 
+<p>and <a href="https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive">here</a> is a more advanced config to install in a non system drive (D: instead of C:)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#from powershell</span>
+New-Item D:<span class="se">\W</span>SL<span class="se">\U</span>buntu-20.04 <span class="nt">-ItemType</span> Directory
+Set-Location D:<span class="se">\W</span>SL<span class="se">\U</span>buntu-20.04
+
+<span class="c">#list+link of distributions in https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions</span>
+Invoke-WebRequest <span class="nt">-Uri</span> https://aka.ms/wslubuntu2004 <span class="nt">-OutFile</span> Ubuntu-20.04.appx <span class="nt">-UseBasicParsing</span>
+
+</code></pre></div></div>
+
 <h4 id="configuration">
 <a class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>configuration</h4>
 
