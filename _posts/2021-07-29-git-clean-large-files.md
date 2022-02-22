@@ -54,15 +54,7 @@ $ source .bashrc
 
 ## General usage
 
-```bash
-$ cd ~/Applications/bfg
-
-#we clone and we will work on that one
-cd local_clone
-cp -R ~/git/d059-vld-ic .
-cd d059-vld-ic
-git status
-```
+We will fix `~/git/d059-vld-ic`
 
 
 
@@ -71,8 +63,7 @@ git status
 no need to create a clone, we can directly work on our repo
 
 ```bash
-$ cd ~/Applications/bfg
-java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M ~/git/d059-vld-ic
+bfg --strip-blobs-bigger-than 100M ~/git/d059-vld-ic
 cd ~/git/d059-vld-ic
 git reflog expire --expire=now --all && git gc --prune=now --aggressive
 ```
@@ -80,6 +71,28 @@ git reflog expire --expire=now --all && git gc --prune=now --aggressive
 
 
 Note: if you get a message `Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?`, you have to launch `git gc`
+
+
+
+## Remove big files from protected commits
+
+```bash
+Protected commits
+-----------------
+
+These are your protected commits, and so their contents will NOT be altered:
+
+ * commit d914f24e (protected by 'HEAD')
+```
+
+In that case it is even easier, no need of bfg: 
+
+```bash
+git rm --cached <my large file>
+git commit --amend -C HEAD
+```
+
+
 
 
 
