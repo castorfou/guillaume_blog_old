@@ -24,4 +24,7 @@ Stephane Mallat - collège de France - [Information et complexité](https://www.
 
 Stephane Mallat - collège de France - [Information et complexité](https://www.college-de-france.fr/site/stephane-mallat/course-2022-02-02-09h30.htm) video n°3: Optimisation et modèles exponentiels
 
-​			
+**Tuesday 2/22**
+
+Antonin Raffin (Stable Baselines 3 author) explains how to better evaluate RL agents using (Rliable)[https://araffin.github.io/post/rliable/]. Would like to test that.
+
