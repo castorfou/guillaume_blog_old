@@ -12,6 +12,46 @@ image: images/git.png
 
 [bfg website](https://rtyley.github.io/bfg-repo-cleaner/)
 
+
+
+## bfg installation from scratch
+
+install java8
+
+```bash
+sudo apt install openjdk-8-jre-headless
+java -version
+>> openjdk version "1.8.0_312"
+>> OpenJDK Runtime Environment (build 1.8.0_312-8u312-b07-0ubuntu1~20.04-b07)
+>> OpenJDK 64-Bit Server VM (build 25.312-b07, mixed mode)
+```
+
+
+
+download bfg.jar
+
+```bash
+cd ~
+mkdir -p Applications/bfg
+cd Applications/bfg
+# link from https://rtyley.github.io/bfg-repo-cleaner/
+wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
+```
+
+
+
+and add an alias to `.bashrc`
+
+```bash
+$ grep -n -s bfg .*
+.bashrc:95:alias bfg='java -jar ~/Applications/bfg/bfg-1.14.0.jar'
+$ source .bashrc
+```
+
+
+
+
+
 ## General usage
 
 ```bash
