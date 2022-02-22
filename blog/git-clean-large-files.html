@@ -114,6 +114,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#bfg-installation-from-scratch">bfg installation from scratch</a></li>
 <li class="toc-entry toc-h2"><a href="#general-usage">General usage</a></li>
 <li class="toc-entry toc-h2"><a href="#remove-big-files">Remove big files</a></li>
+<li class="toc-entry toc-h2"><a href="#remove-big-files-from-protected-commits">Remove big files from protected commits</a></li>
 <li class="toc-entry toc-h2"><a href="#remove-forbidden-files-such-as-mp3-targz">Remove forbidden files such as .mp3, .tar.gz</a></li>
 <li class="toc-entry toc-h2"><a href="#improve-gitignore">Improve .gitignore</a></li>
 </ul><p><a href="https://rtyley.github.io/bfg-repo-cleaner/">bfg website</a></p>
@@ -149,27 +150,36 @@ wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
 <h2 id="general-usage">
 <a class="anchor" href="#general-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>General usage</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> ~/Applications/bfg
-
-<span class="c">#we clone and we will work on that one</span>
-<span class="nb">cd </span>local_clone
-<span class="nb">cp</span> <span class="nt">-R</span> ~/git/d059-vld-ic <span class="nb">.</span>
-<span class="nb">cd </span>d059-vld-ic
-git status
-</code></pre></div></div>
+<p>We will fix <code class="language-plaintext highlighter-rouge">~/git/d059-vld-ic</code></p>
 
 <h2 id="remove-big-files">
 <a class="anchor" href="#remove-big-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove big files</h2>
 
 <p>no need to create a clone, we can directly work on our repo</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> ~/Applications/bfg
-java <span class="nt">-jar</span> bfg-1.13.0.jar <span class="nt">--strip-blobs-bigger-than</span> 100M ~/git/d059-vld-ic
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bfg <span class="nt">--strip-blobs-bigger-than</span> 100M ~/git/d059-vld-ic
 <span class="nb">cd</span> ~/git/d059-vld-ic
 git reflog expire <span class="nt">--expire</span><span class="o">=</span>now <span class="nt">--all</span> <span class="o">&amp;&amp;</span> git gc <span class="nt">--prune</span><span class="o">=</span>now <span class="nt">--aggressive</span>
 </code></pre></div></div>
 
 <p>Note: if you get a message <code class="language-plaintext highlighter-rouge">Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?</code>, you have to launch <code class="language-plaintext highlighter-rouge">git gc</code></p>
+
+<h2 id="remove-big-files-from-protected-commits">
+<a class="anchor" href="#remove-big-files-from-protected-commits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove big files from protected commits</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Protected commits
+<span class="nt">-----------------</span>
+
+These are your protected commits, and so their contents will NOT be altered:
+
+ <span class="k">*</span> commit d914f24e <span class="o">(</span>protected by <span class="s1">'HEAD'</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>In that case it is even easier, no need of bfg:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">rm</span> <span class="nt">--cached</span> &lt;my large file&gt;
+git commit <span class="nt">--amend</span> <span class="nt">-C</span> HEAD
+</code></pre></div></div>
 
 <h2 id="remove-forbidden-files-such-as-mp3-targz">
 <a class="anchor" href="#remove-forbidden-files-such-as-mp3-targz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove forbidden files such as .mp3, .tar.gz</h2>
