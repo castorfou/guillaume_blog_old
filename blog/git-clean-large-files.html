@@ -111,11 +111,40 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#bfg-installation-from-scratch">bfg installation from scratch</a></li>
 <li class="toc-entry toc-h2"><a href="#general-usage">General usage</a></li>
 <li class="toc-entry toc-h2"><a href="#remove-big-files">Remove big files</a></li>
 <li class="toc-entry toc-h2"><a href="#remove-forbidden-files-such-as-mp3-targz">Remove forbidden files such as .mp3, .tar.gz</a></li>
 <li class="toc-entry toc-h2"><a href="#improve-gitignore">Improve .gitignore</a></li>
 </ul><p><a href="https://rtyley.github.io/bfg-repo-cleaner/">bfg website</a></p>
+
+<h2 id="bfg-installation-from-scratch">
+<a class="anchor" href="#bfg-installation-from-scratch" aria-hidden="true"><span class="octicon octicon-link"></span></a>bfg installation from scratch</h2>
+
+<p>install java8</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>openjdk-8-jre-headless
+java <span class="nt">-version</span>
+<span class="o">&gt;&gt;</span> openjdk version <span class="s2">"1.8.0_312"</span>
+<span class="o">&gt;&gt;</span> OpenJDK Runtime Environment <span class="o">(</span>build 1.8.0_312-8u312-b07-0ubuntu1~20.04-b07<span class="o">)</span>
+<span class="o">&gt;&gt;</span> OpenJDK 64-Bit Server VM <span class="o">(</span>build 25.312-b07, mixed mode<span class="o">)</span>
+</code></pre></div></div>
+
+<p>download bfg.jar</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~
+<span class="nb">mkdir</span> <span class="nt">-p</span> Applications/bfg
+<span class="nb">cd </span>Applications/bfg
+<span class="c"># link from https://rtyley.github.io/bfg-repo-cleaner/</span>
+wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
+</code></pre></div></div>
+
+<p>and add an alias to <code class="language-plaintext highlighter-rouge">.bashrc</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">grep</span> <span class="nt">-n</span> <span class="nt">-s</span> bfg .<span class="k">*</span>
+.bashrc:95:alias <span class="nv">bfg</span><span class="o">=</span><span class="s1">'java -jar ~/Applications/bfg/bfg-1.14.0.jar'</span>
+<span class="nv">$ </span><span class="nb">source</span> .bashrc
+</code></pre></div></div>
 
 <h2 id="general-usage">
 <a class="anchor" href="#general-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>General usage</h2>
