@@ -26,5 +26,5 @@ Stephane Mallat - collège de France - [Information et complexité](https://www.
 
 **Tuesday 2/22**
 
-Antonin Raffin (Stable Baselines 3 author) explains how to better evaluate RL agents using (Rliable)[https://araffin.github.io/post/rliable/]. Would like to test that.
+Antonin Raffin (Stable Baselines 3 author) explains how to better evaluate RL agents using [Rliable](https://araffin.github.io/post/rliable/). Would like to test that.
 
