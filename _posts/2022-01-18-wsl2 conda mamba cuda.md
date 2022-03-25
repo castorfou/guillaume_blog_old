@@ -182,6 +182,32 @@ rm -rf /tmp/devops_environment
 
 
 
+we can have similar approach to update CA certifcates for Python. 1st step is to locate cacert.pem of your active python environment.
+
+```python
+import certifi
+certifi.where() 
+>> '/home/guillaume/miniconda3/envs/fastai/lib/python3.9/site-packages/certifi/cacert.pem'
+```
+
+
+
+**TO BE FIXED**
+
+After having run `update-ca-certifcates`, there is an updated ca file at `/etc/ssl/certs/ca-certificates.crt`. Let's concatenate it to our `cacert.pem`.
+
+```bash
+cp /etc/ssl/certs/ca-certificates.crt /tmp/ca-certificates.crt
+openssl x509 -in /tmp/ca-certificates.crt -out /tmp/ca-certificates.pem -outform PEM
+cat /tmp/ca-certificates.pem | tee -a /home/guillaume/miniconda3/envs/fastai/lib/python3.9/site-packages/certifi/cacert.pem
+```
+
+
+
+
+
+
+
 ##### Configure APT
 
 The last step, to have a subsystem ready to use, is to have an apt with Michelin trusted sources configured. Ubuntu based package repositories can’t be used behind Michelin proxy.
