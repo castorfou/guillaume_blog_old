@@ -313,6 +313,22 @@ Exporting VHDX to <span class="s2">"D:</span><span class="se">\w</span><span cla
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /tmp/devops_environment
 </code></pre></div></div>
 
+<p>we can have similar approach to update CA certifcates for Python. 1st step is to locate cacert.pem of your active python environment.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">certifi</span>
+<span class="n">certifi</span><span class="p">.</span><span class="n">where</span><span class="p">()</span> 
+<span class="o">&gt;&gt;</span> <span class="s">'/home/guillaume/miniconda3/envs/fastai/lib/python3.9/site-packages/certifi/cacert.pem'</span>
+</code></pre></div></div>
+
+<p><strong>TO BE FIXED</strong></p>
+
+<p>After having run <code class="language-plaintext highlighter-rouge">update-ca-certifcates</code>, there is an updated ca file at <code class="language-plaintext highlighter-rouge">/etc/ssl/certs/ca-certificates.crt</code>. Let’s concatenate it to our <code class="language-plaintext highlighter-rouge">cacert.pem</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp</span> /etc/ssl/certs/ca-certificates.crt /tmp/ca-certificates.crt
+openssl x509 <span class="nt">-in</span> /tmp/ca-certificates.crt <span class="nt">-out</span> /tmp/ca-certificates.pem <span class="nt">-outform</span> PEM
+<span class="nb">cat</span> /tmp/ca-certificates.pem | <span class="nb">tee</span> <span class="nt">-a</span> /home/guillaume/miniconda3/envs/fastai/lib/python3.9/site-packages/certifi/cacert.pem
+</code></pre></div></div>
+
 <h5 id="configure-apt">
 <a class="anchor" href="#configure-apt" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure APT</h5>
 

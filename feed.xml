@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-02-22T10:51:46-06:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-03-25T02:22:32-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 2/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -171,6 +171,22 @@ Exporting VHDX to &lt;span class=&quot;s2&quot;&gt;&quot;D:&lt;/span&gt;&lt;span
 &lt;p&gt;You can now clean the temp working folder:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/devops_environment
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we can have similar approach to update CA certifcates for Python. 1st step is to locate cacert.pem of your active python environment.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;certifi&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;certifi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/home/guillaume/miniconda3/envs/fastai/lib/python3.9/site-packages/certifi/cacert.pem'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;TO BE FIXED&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After having run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update-ca-certifcates&lt;/code&gt;, there is an updated ca file at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ssl/certs/ca-certificates.crt&lt;/code&gt;. Let’s concatenate it to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cacert.pem&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; /etc/ssl/certs/ca-certificates.crt /tmp/ca-certificates.crt
+openssl x509 &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; /tmp/ca-certificates.crt &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; /tmp/ca-certificates.pem &lt;span class=&quot;nt&quot;&gt;-outform&lt;/span&gt; PEM
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /tmp/ca-certificates.pem | &lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; /home/guillaume/miniconda3/envs/fastai/lib/python3.9/site-packages/certifi/cacert.pem
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h5 id=&quot;configure-apt&quot;&gt;Configure APT&lt;/h5&gt;
