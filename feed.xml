@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-03-25T02:22:32-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-07T06:57:19-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+
+&lt;p&gt;as &lt;a href=&quot;https://www.atlassian.com/git/tutorials/dotfiles&quot;&gt;pointed&lt;/a&gt; by Jeremy Howard.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-setup-it&quot;&gt;How to setup it&lt;/h2&gt;
+
+&lt;h4 id=&quot;prerequisites&quot;&gt;prerequisites&lt;/h4&gt;
+
+&lt;p&gt;I consider I already have a git repo with my dotfiles from other machines.&lt;/p&gt;
+
+&lt;p&gt;Repo: git@&lt;your_gitlab_address&gt;:&lt;your_id&gt;/dotfiles.git&lt;/your_id&gt;&lt;/your_gitlab_address&gt;&lt;/p&gt;
+
+&lt;p&gt;I keep one separate branch per machine. Current branches: master (empty), and WSL2.&lt;/p&gt;
+
+&lt;p&gt;I am going to add a machine called iolab.&lt;/p&gt;
+
+&lt;h4 id=&quot;from-iolab&quot;&gt;from iolab&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init &lt;span class=&quot;nt&quot;&gt;--bare&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.cfg
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'&lt;/span&gt;
+config config &lt;span class=&quot;nt&quot;&gt;--local&lt;/span&gt; status.showUntrackedFiles no
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;alias config='/usr/bin/git --git-dir=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.cfg/ --work-tree=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.bash_aliases
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And we can now run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config status&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 09:53:56 &lt;span class=&quot;o&quot;&gt;][&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;: ~ &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config status
+&lt;span class=&quot;c&quot;&gt;# On branch master&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Initial commit&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+nothing to commit &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;create/copy files and use &lt;span class=&quot;s2&quot;&gt;&quot;git add&quot;&lt;/span&gt; to track&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;but now we would like to create a new branch, and push all this to our central repo.&lt;/p&gt;
+
+&lt;p&gt;First we have to set this central repo.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config remote add origin git@&amp;lt;your_gitlab_address&amp;gt;:&amp;lt;your_id&amp;gt;/dotfiles.git
+config fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Before creating our branch, we have to commit something (to really create our local branch master)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config add .bashrc
+config commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'init with .bashrc'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And then only we can create our branch iolab&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config branch iolab
+config checkout iolab
+config push &lt;span class=&quot;nt&quot;&gt;--set-upstream&lt;/span&gt; origin iolab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we are now ready to use it&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use-it&quot;&gt;How to use it&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config add .bash_aliases
+config commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bash aliases'&lt;/span&gt;
+config push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">source of inspiration</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 2/3&lt;/strong&gt;&lt;/p&gt;
 
@@ -819,32 +881,4 @@ Executing transaction: done
 
 &lt;p&gt;in my case it refers to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stablebaselines3&lt;/code&gt; conda environment.&lt;/p&gt;
 
-&lt;p&gt;I just rename &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pythoncom37.dll&lt;/code&gt;to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pythoncom37.dll.old&lt;/code&gt; in &lt;home_user&gt;\AppData\Local\Continuum\anaconda3\envs\stablebaselines3\Library\bin&lt;/home_user&gt;&lt;/p&gt;</content><author><name></name></author><category term="jupyter" /><category term="conda" /><summary type="html">when having this popup</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" /><media:content medium="image" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Fix non-unique cell issue in Jupyter Notebook</title><link href="https://castorfou.github.io/guillaume_blog/blog/Fix-non-unique-cell-issue-in-Jupyter-Notebook.html" rel="alternate" type="text/html" title="Fix non-unique cell issue in Jupyter Notebook" /><published>2021-09-16T00:00:00-05:00</published><updated>2021-09-16T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/Fix-non-unique-cell-issue-in-Jupyter-Notebook</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/Fix-non-unique-cell-issue-in-Jupyter-Notebook.html">&lt;p&gt;subject is explained in &lt;a href=&quot;https://github.com/jupyter/notebook/issues/6001&quot;&gt;https://github.com/jupyter/notebook/issues/6001&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;nbformat&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nbf&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;glob&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glob&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;uuid&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_cell_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uuid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uuid4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;hex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# your notebook name/keyword
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nb_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'04 - data analysis from dataprophet - W34.ipynb'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;notebooks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nb_name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./*.ipynb&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;recursive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# iterate over notebooks
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ipath&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notebooks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# load notebook
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;ntbk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nbf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ipath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nbf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NO_CONVERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;cell_ids&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ntbk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cells&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cell_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# reset cell ids if there are duplicates
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cell_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cell_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt; 
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ntbk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cells&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_cell_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;nbf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntbk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ipath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jupyter" /><summary type="html">subject is explained in https://github.com/jupyter/notebook/issues/6001</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" /><media:content medium="image" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;I just rename &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pythoncom37.dll&lt;/code&gt;to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pythoncom37.dll.old&lt;/code&gt; in &lt;home_user&gt;\AppData\Local\Continuum\anaconda3\envs\stablebaselines3\Library\bin&lt;/home_user&gt;&lt;/p&gt;</content><author><name></name></author><category term="jupyter" /><category term="conda" /><summary type="html">when having this popup</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" /><media:content medium="image" url="https://jupyter.readthedocs.io/en/latest/_static/jupyter.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
