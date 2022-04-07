@@ -10,7 +10,7 @@ image: images/git.png
 
 ## source of inspiration
 
-as [pointed](https://www.atlassian.com/git/tutorials/dotfiles) by Jeremy Howard
+as [pointed](https://www.atlassian.com/git/tutorials/dotfiles) by Jeremy Howard.
 
 
 
