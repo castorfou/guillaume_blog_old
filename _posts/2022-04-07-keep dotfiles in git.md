@@ -1,6 +1,6 @@
 ---
 title: "keep dotfiles in git"
-description: as [pointed](https://www.atlassian.com/git/tutorials/dotfiles) by Jeremy Howard 
+description: as pointed by Jeremy Howard 
 toc: true
 comments: true
 layout: post
