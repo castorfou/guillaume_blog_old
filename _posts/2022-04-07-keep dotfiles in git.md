@@ -20,7 +20,7 @@ as [pointed](https://www.atlassian.com/git/tutorials/dotfiles) by Jeremy Howard.
 
 I consider I already have a git repo with my dotfiles from other machines.
 
-Repo: git@<your_gitlab_address>:<your_id>/dotfiles.git
+Repo: `git@<your_gitlab_address>:<your_id>/dotfiles.git`
 
 I keep one separate branch per machine. Current branches: master (empty), and WSL2.
 
