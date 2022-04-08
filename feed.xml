@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-07T07:09:46-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-08T01:59:28-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;as &lt;a href=&quot;https://www.atlassian.com/git/tutorials/dotfiles&quot;&gt;pointed&lt;/a&gt; by Jeremy Howard.&lt;/p&gt;
 
@@ -8,7 +8,7 @@
 
 &lt;p&gt;I consider I already have a git repo with my dotfiles from other machines.&lt;/p&gt;
 
-&lt;p&gt;Repo: git@&lt;your_gitlab_address&gt;:&lt;your_id&gt;/dotfiles.git&lt;/your_id&gt;&lt;/your_gitlab_address&gt;&lt;/p&gt;
+&lt;p&gt;Repo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git@&amp;lt;your_gitlab_address&amp;gt;:&amp;lt;your_id&amp;gt;/dotfiles.git&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I keep one separate branch per machine. Current branches: master (empty), and WSL2.&lt;/p&gt;
 
