@@ -10,3 +10,4 @@ _notebooks/.ipynb_checkpoints
 *.py
 *.txt
 publish.sh
+.ipynb_checkpoints
