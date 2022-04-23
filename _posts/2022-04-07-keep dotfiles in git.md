@@ -110,5 +110,20 @@ $ config remote set-url --add --push origin https://github.com/castorfou/dotfile
 $ config push origin GR_WSL2
 ```
 
+I have to get a token from github to access in https
 
+To generate a token:
 
+1. Log into **GitHub**
+2. Click on your name / Avatar in the upper right corner and select **Settings**
+3. On the left, click **Developer settings**
+4. Select **Personal access tokens** and click **Generate new token**
+5. Give the token a description/name and select the scope of the token
+   - I selected **repo** only to facilitate pull, push, clone, and commit actions
+   - Click the link **Read more about OAuth scopes** for details about the permission sets
+6. Click **Generate token**
+7. Copy the token – this is your new password!
+
+Lastly, to ensure the local computer remembers the token, we can  enable caching of the credentials. This configures the computer to  remember the complex token so that we dont have too.
+
+`git config --global credential.helper cache`
