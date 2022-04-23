@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -210,6 +210,33 @@ origin	git@gitlab.michelin.com:janus/dotfiles.git <span class="o">(</span>push<s
 <span class="nv">$ </span>config push origin GR_WSL2
 </code></pre></div></div>
 
+<p>I have to get a token from github to access in https</p>
+
+<p>To generate a token:</p>
+
+<ol>
+  <li>Log into <strong>GitHub</strong>
+</li>
+  <li>Click on your name / Avatar in the upper right corner and select <strong>Settings</strong>
+</li>
+  <li>On the left, click <strong>Developer settings</strong>
+</li>
+  <li>Select <strong>Personal access tokens</strong> and click <strong>Generate new token</strong>
+</li>
+  <li>Give the token a description/name and select the scope of the token
+    <ul>
+      <li>I selected <strong>repo</strong> only to facilitate pull, push, clone, and commit actions</li>
+      <li>Click the link <strong>Read more about OAuth scopes</strong> for details about the permission sets</li>
+    </ul>
+  </li>
+  <li>Click <strong>Generate token</strong>
+</li>
+  <li>Copy the token – this is your new password!</li>
+</ol>
+
+<p>Lastly, to ensure the local computer remembers the token, we can  enable caching of the credentials. This configures the computer to  remember the complex token so that we dont have too.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git config --global credential.helper cache</code></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"

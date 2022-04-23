@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-23T10:05:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-23T11:35:36-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;as &lt;a href=&quot;https://www.atlassian.com/git/tutorials/dotfiles&quot;&gt;pointed&lt;/a&gt; by Jeremy Howard.&lt;/p&gt;
 
@@ -80,7 +80,30 @@ origin	git@gitlab.michelin.com:janus/dotfiles.git &lt;span class=&quot;o&quot;&g
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config remote set-url &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--push&lt;/span&gt; origin git@gitlab.michelin.com:janus/dotfiles.git
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config remote set-url &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--push&lt;/span&gt; origin https://github.com/castorfou/dotfiles.git
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config push origin GR_WSL2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">source of inspiration</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I have to get a token from github to access in https&lt;/p&gt;
+
+&lt;p&gt;To generate a token:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Log into &lt;strong&gt;GitHub&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Click on your name / Avatar in the upper right corner and select &lt;strong&gt;Settings&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;On the left, click &lt;strong&gt;Developer settings&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;strong&gt;Personal access tokens&lt;/strong&gt; and click &lt;strong&gt;Generate new token&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Give the token a description/name and select the scope of the token
+    &lt;ul&gt;
+      &lt;li&gt;I selected &lt;strong&gt;repo&lt;/strong&gt; only to facilitate pull, push, clone, and commit actions&lt;/li&gt;
+      &lt;li&gt;Click the link &lt;strong&gt;Read more about OAuth scopes&lt;/strong&gt; for details about the permission sets&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;Generate token&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the token – this is your new password!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Lastly, to ensure the local computer remembers the token, we can  enable caching of the credentials. This configures the computer to  remember the complex token so that we dont have too.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git config --global credential.helper cache&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">source of inspiration</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 2/3&lt;/strong&gt;&lt;/p&gt;
 
