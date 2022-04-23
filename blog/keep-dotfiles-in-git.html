@@ -119,6 +119,7 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#how-to-use-it">How to use it</a></li>
+<li class="toc-entry toc-h2"><a href="#how-to-setup-2-remote-repo">How to setup 2 remote repo</a></li>
 </ul><h2 id="source-of-inspiration">
 <a class="anchor" href="#source-of-inspiration" aria-hidden="true"><span class="octicon octicon-link"></span></a>source of inspiration</h2>
 
@@ -186,6 +187,27 @@ config push <span class="nt">--set-upstream</span> origin iolab
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config add .bash_aliases
 config commit <span class="nt">-m</span><span class="s1">'bash aliases'</span>
 config push
+</code></pre></div></div>
+
+<h2 id="how-to-setup-2-remote-repo">
+<a class="anchor" href="#how-to-setup-2-remote-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to setup 2 remote repo</h2>
+
+<p>There is a nice explanation abut how to work with multiple repos in <a href="https://jigarius.com/blog/multiple-git-remote-repositories">https://jigarius.com/blog/multiple-git-remote-repositories</a>.</p>
+
+<p>To follow that, I will configure my dotfile repo from WSL2 to push to 2 remotes, one on gitlab (internal) and one on github.</p>
+
+<p>For the moment it is only connected to gitlab.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>config remote <span class="nt">-v</span>
+origin	git@gitlab.michelin.com:janus/dotfiles.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	git@gitlab.michelin.com:janus/dotfiles.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div></div>
+
+<p>My github repo is at: https://github.com/castorfou/dotfiles.git (I use https, because of my local firewall)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>config remote set-url <span class="nt">--add</span> <span class="nt">--push</span> origin git@gitlab.michelin.com:janus/dotfiles.git
+<span class="nv">$ </span>config remote set-url <span class="nt">--add</span> <span class="nt">--push</span> origin https://github.com/castorfou/dotfiles.git
+<span class="nv">$ </span>config push origin GR_WSL2
 </code></pre></div></div>
 
 

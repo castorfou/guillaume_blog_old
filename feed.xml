@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-23T02:49:24-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-23T10:05:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">keep dotfiles in git</title><link href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html" rel="alternate" type="text/html" title="keep dotfiles in git" /><published>2022-04-07T00:00:00-05:00</published><updated>2022-04-07T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/keep%20dotfiles%20in%20git</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;as &lt;a href=&quot;https://www.atlassian.com/git/tutorials/dotfiles&quot;&gt;pointed&lt;/a&gt; by Jeremy Howard.&lt;/p&gt;
 
@@ -60,6 +60,26 @@ config push &lt;span class=&quot;nt&quot;&gt;--set-upstream&lt;/span&gt; origin 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config add .bash_aliases
 config commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bash aliases'&lt;/span&gt;
 config push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;how-to-setup-2-remote-repo&quot;&gt;How to setup 2 remote repo&lt;/h2&gt;
+
+&lt;p&gt;There is a nice explanation abut how to work with multiple repos in &lt;a href=&quot;https://jigarius.com/blog/multiple-git-remote-repositories&quot;&gt;https://jigarius.com/blog/multiple-git-remote-repositories&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To follow that, I will configure my dotfile repo from WSL2 to push to 2 remotes, one on gitlab (internal) and one on github.&lt;/p&gt;
+
+&lt;p&gt;For the moment it is only connected to gitlab.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+origin	git@gitlab.michelin.com:janus/dotfiles.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+origin	git@gitlab.michelin.com:janus/dotfiles.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;My github repo is at: https://github.com/castorfou/dotfiles.git (I use https, because of my local firewall)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config remote set-url &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--push&lt;/span&gt; origin git@gitlab.michelin.com:janus/dotfiles.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config remote set-url &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--push&lt;/span&gt; origin https://github.com/castorfou/dotfiles.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;config push origin GR_WSL2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">source of inspiration</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://castorfou.github.io/guillaume_blog/images/git.png" /><media:content medium="image" url="https://castorfou.github.io/guillaume_blog/images/git.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Logbook for February 22</title><link href="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html" rel="alternate" type="text/html" title="Logbook for February 22" /><published>2022-02-01T00:00:00-06:00</published><updated>2022-02-01T00:00:00-06:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/logbook-February</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/logbook-February.html">&lt;h2 id=&quot;week-5---february-22&quot;&gt;Week 5 - February 22&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Thursday 2/3&lt;/strong&gt;&lt;/p&gt;
