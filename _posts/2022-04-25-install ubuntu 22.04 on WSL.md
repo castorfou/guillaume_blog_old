@@ -1,8 +1,6 @@
 ---
-
-
 title: "install ubuntu 22.04 on WSL"
-description: and can be used as a way to create a 2nd instance of WSL
+description: even if not available in Windows Store
 toc: true
 comments: true
 layout: post
@@ -218,7 +216,11 @@ sudo sed -i 's@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?
 
 ## Automatic setup
 
-copy these 2 scripts in /root/
+copy these 2 scripts in /root/ (given they are in `D:\wsl\ubuntu-22.04\download`)
+
+```bash
+cp /mnt/d/wsl/Ubuntu-22.04/download/setup_wsl_* .
+```
 
 
 
@@ -239,16 +241,18 @@ echo "1. create user and add in sudo"
 #adduser --disabled-password --gecos "" $user_name
 adduser --gecos "" $user_name
 usermod -aG sudo $user_name
+echo
 
-echo "1. create wsl.conf file"
+echo "2. create wsl.conf file"
 rm -rf /etc/wsl.conf
 tee /etc/wsl.conf << EOF
 # Set the user when launching a distribution with WSL.
 [user]
 default=$user_name
 EOF
+echo
 
-echo "2. prepare setup by user"
+echo "3. prepare setup by user"
 cp setup_wsl_user.sh /home/$user_name
 chown $user_name:users /home/$user_name/setup_wsl_user.sh
 chmod 750  /home/$user_name/setup_wsl_user.sh
@@ -258,6 +262,7 @@ if [ ! -e ".wsl_configured" ]; then
         touch .wsl_configured
 fi
 EOF
+echo
 
 echo "end of configuration for root"
 echo "stop wsl instance by running 'wsl --shutdown <distroname>' from powershell"
