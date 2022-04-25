@@ -236,6 +236,7 @@ read user_name
 
 echo Configuration for user [$user_name]
 echo of distribution $DISTRIB_CODENAME
+echo
 
 echo "1. create user and add in sudo"
 #adduser --disabled-password --gecos "" $user_name
@@ -307,8 +308,10 @@ echo
 
 echo "4. update apt sources with artifactory"
 echo 'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };' | sudo tee /etc/apt/apt.conf.d/90globalprotectconf
-sudo sed -i 's,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp' /etc/apt/sources.list
-sudo sed -i 's,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp' /etc/apt/sources.list
+sudo sed -i 's,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g' /etc/apt/sources.list
+sudo sed -i 's,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g' /etc/apt/sources.list
+sudo apt update
+sudo apt upgrade -y
 echo
 ```
 
@@ -337,7 +340,7 @@ but to manage the whole filesystem.
 
 ```bash
 sudo mkdir -p /.cfg
-sudo chown guillaume:users /.cfg
+sudo chown $USER:users /.cfg
 git init --bare /.cfg
 alias config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
 config config --local status.showUntrackedFiles no
@@ -346,7 +349,12 @@ cd
 source .bashrc
 ```
 
+#### git default identity (if needed)
 
+```bash
+git config --global user.email "guillaume.ramelet@michelin.com"
+git config --global user.name "guillaume"
+```
 
 #### setup branch and push to central repo
 
