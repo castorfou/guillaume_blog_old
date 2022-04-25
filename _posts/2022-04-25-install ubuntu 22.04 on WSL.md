@@ -1,5 +1,5 @@
 ---
-title: "install ubuntu 22.04 on WLS"
+title: "install ubuntu 22.04 on WSL"
 description: and can be used as a way to create a 2nd instance of WSL
 toc: true
 comments: true
@@ -131,3 +131,11 @@ wsl --shutdown ubuntu-22.04
 
 
 and when starting `wsl -d ubuntu-22.04`, you reach your username.
+
+
+
+#### use Windows Terminal as a launcher
+
+Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)
+
+![windows terminal](../images/windows_terminal.jpg)
