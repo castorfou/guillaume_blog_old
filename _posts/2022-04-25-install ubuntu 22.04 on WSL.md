@@ -1,4 +1,6 @@
 ---
+
+
 title: "install ubuntu 22.04 on WSL"
 description: and can be used as a way to create a 2nd instance of WSL
 toc: true
@@ -14,7 +16,7 @@ image: images/icons/wsl2.jpeg
 
 
 
-## How to setup it manually
+## Installation
 
 #### uninstall image (if needed)
 
@@ -80,9 +82,23 @@ then to run it
 wsl -d ubuntu-22.04
 ```
 
+or
+
+#### use Windows Terminal as a launcher
+
+Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)
+
+![windows terminal](../images/windows_terminal.jpg)
+
+It can be installed even with limited windows store access by clicking install in [Installer le Terminal Windows et commencer à le configurer](https://docs.microsoft.com/fr-fr/windows/terminal/install)
+
+Automatically all wsl instances appear in Settings.
 
 
-###### basic setup
+
+## Manual setup (skip if to follow automatic setup)
+
+#### basic setup
 
 With this way to install, you don't have any user, you don't have any launcher within Windows.
 
@@ -104,7 +120,7 @@ su guillaume
 
 
 
-###### launch distro with yourusername - update `wsl.conf`
+#### launch distro with yourusername - update `wsl.conf`
 
 Manually you can now start your distro with your username from powershell
 
@@ -139,29 +155,7 @@ It is now setup. You can now shutdown this instance from powershell.
 wsl --shutdown ubuntu-22.04
 ```
 
-
-
 and when starting `wsl -d ubuntu-22.04`, you reach your username.
-
-
-
-#### use Windows Terminal as a launcher
-
-Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)
-
-![windows terminal](../images/windows_terminal.jpg)
-
-It can be installed even with limited windows store access by clicking install in [Installer le Terminal Windows et commencer à le configurer](https://docs.microsoft.com/fr-fr/windows/terminal/install)
-
-Automatically all wsl instances appear in Settings.
-
-
-
-## Setup with wsl-vpnkit
-
-as detailed in [setup wsl2 conda mamba and cuda](https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html)
-
-
 
 #### wsl-vpnkit
 
@@ -219,6 +213,112 @@ sudo sed -i 's@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?
   sudo apt update
   sudo apt upgrade -y
 ```
+
+
+
+## Automatic setup
+
+copy these 2 scripts in /root/
+
+
+
+`setup_wsl_root.sh`
+
+```bash
+#!/bin/bash
+
+echo "0. get username: "
+read user_name
+
+. /etc/lsb-release
+
+echo Configuration for user [$user_name]
+echo of distribution $DISTRIB_CODENAME
+
+echo "1. create user and add in sudo"
+#adduser --disabled-password --gecos "" $user_name
+adduser --gecos "" $user_name
+usermod -aG sudo $user_name
+
+echo "1. create wsl.conf file"
+rm -rf /etc/wsl.conf
+tee /etc/wsl.conf << EOF
+# Set the user when launching a distribution with WSL.
+[user]
+default=$user_name
+EOF
+
+echo "2. prepare setup by user"
+cp setup_wsl_user.sh /home/$user_name
+chown $user_name:users /home/$user_name/setup_wsl_user.sh
+chmod 750  /home/$user_name/setup_wsl_user.sh
+tee -a /home/$user_name/.bashrc << EOF
+if [ ! -e ".wsl_configured" ]; then
+		./setup_wsl_user.sh
+        touch .wsl_configured
+fi
+EOF
+
+echo "end of configuration for root"
+echo "stop wsl instance by running 'wsl --shutdown <distroname>' from powershell"
+echo "and start from Windows Terminal"
+```
+
+`setup_wsl_user.sh`
+
+```bash
+
+#!/bin/bash
+
+echo "1. setup wsl-vpnkit"
+if grep -Fxq "wsl-vpnkit" ~/.profile
+then
+    # code if found
+	echo "   wsl-vpnkit already setup"
+else
+    # code if not found
+	echo 'wsl.exe -d wsl-vpnkit service wsl-vpnkit start' >> ~/.profile
+fi
+wsl.exe -d wsl-vpnkit service wsl-vpnkit start
+source ./.bashrc
+echo
+
+echo "2. create ssh key to copy to gitlab"
+. /etc/lsb-release
+if [ ! -e ".ssh/id_rsa.pub" ]; then
+		ssh-keygen -t rsa -b 4096 -C "WSL2 ubuntu $DISTRIB_RELEASE"
+		cat .ssh/id_rsa.pub
+		echo "copy this content to gitlab > preferences > SSH Keys"
+		read -p "Press any key to resume ..."
+fi
+echo
+
+echo "3. update certificates"
+git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+sudo cp /tmp/devops_environment/certs/* /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+rm -rf /tmp/devops_environment
+echo
+
+echo "4. update apt sources with artifactory"
+echo 'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };' | sudo tee /etc/apt/apt.conf.d/90globalprotectconf
+sudo sed -i 's,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp' /etc/apt/sources.list
+sudo sed -i 's,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp' /etc/apt/sources.list
+echo
+```
+
+Then 
+
+```bash
+chmod +x setup_wsl_root.sh
+./setup_wsl_root.sh
+```
+
+As explained shutdown and restart distro.
+
+It restarts from your user 
+
+
 
 
 
