@@ -112,8 +112,9 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#source-of-inspiration">source of inspiration</a></li>
-<li class="toc-entry toc-h2"><a href="#how-to-setup-it">How to setup it</a>
+<li class="toc-entry toc-h2"><a href="#how-to-setup-it-manually">How to setup it manually</a>
 <ul>
+<li class="toc-entry toc-h4"><a href="#uninstall-image-if-needed">uninstall image (if needed)</a></li>
 <li class="toc-entry toc-h4"><a href="#download-images">download images</a></li>
 <li class="toc-entry toc-h4"><a href="#install-and-setup-from-powershell">install and setup from powershell</a>
 <ul>
@@ -144,8 +145,15 @@ window.onload = wrap_img;
 
 <p><a href="https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11">How to install Ubuntu 21.10 on WSL for Windows 10 and 11</a></p>
 
-<h2 id="how-to-setup-it">
-<a class="anchor" href="#how-to-setup-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to setup it</h2>
+<h2 id="how-to-setup-it-manually">
+<a class="anchor" href="#how-to-setup-it-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to setup it manually</h2>
+
+<h4 id="uninstall-image-if-needed">
+<a class="anchor" href="#uninstall-image-if-needed" aria-hidden="true"><span class="octicon octicon-link"></span></a>uninstall image (if needed)</h4>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wsl --unregister &lt;distroName&gt;</span><span class="w">
+</span><span class="nf">wsl</span><span class="w"> </span><span class="nt">--unregister</span><span class="w"> </span><span class="nx">ubuntu-22.04</span><span class="w">
+</span></code></pre></div></div>
 
 <h4 id="download-images">
 <a class="anchor" href="#download-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>download images</h4>
