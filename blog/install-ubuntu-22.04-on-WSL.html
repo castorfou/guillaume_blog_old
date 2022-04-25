@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -112,21 +112,18 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#source-of-inspiration">source of inspiration</a></li>
-<li class="toc-entry toc-h2"><a href="#how-to-setup-it-manually">How to setup it manually</a>
+<li class="toc-entry toc-h2"><a href="#installation">Installation</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#uninstall-image-if-needed">uninstall image (if needed)</a></li>
 <li class="toc-entry toc-h4"><a href="#download-images">download images</a></li>
-<li class="toc-entry toc-h4"><a href="#install-and-setup-from-powershell">install and setup from powershell</a>
-<ul>
-<li class="toc-entry toc-h6"><a href="#basic-setup">basic setup</a></li>
-<li class="toc-entry toc-h6"><a href="#launch-distro-with-yourusername---update-wslconf">launch distro with yourusername - update wsl.conf</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h4"><a href="#install-and-setup-from-powershell">install and setup from powershell</a></li>
 <li class="toc-entry toc-h4"><a href="#use-windows-terminal-as-a-launcher">use Windows Terminal as a launcher</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#setup-with-wsl-vpnkit">Setup with wsl-vpnkit</a>
+<li class="toc-entry toc-h2"><a href="#manual-setup-skip-if-to-follow-automatic-setup">Manual setup (skip if to follow automatic setup)</a>
 <ul>
+<li class="toc-entry toc-h4"><a href="#basic-setup">basic setup</a></li>
+<li class="toc-entry toc-h4"><a href="#launch-distro-with-yourusername---update-wslconf">launch distro with yourusername - update wsl.conf</a></li>
 <li class="toc-entry toc-h4"><a href="#wsl-vpnkit">wsl-vpnkit</a></li>
 <li class="toc-entry toc-h4"><a href="#gitlab">gitlab</a></li>
 <li class="toc-entry toc-h4"><a href="#corporate-ca-certificates">corporate CA certificates</a></li>
@@ -134,6 +131,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#check-everything-is-ok">check everything is ok</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#automatic-setup">Automatic setup</a></li>
 <li class="toc-entry toc-h2"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#init-local-repo">init local repo</a></li>
@@ -145,8 +143,8 @@ window.onload = wrap_img;
 
 <p><a href="https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11">How to install Ubuntu 21.10 on WSL for Windows 10 and 11</a></p>
 
-<h2 id="how-to-setup-it-manually">
-<a class="anchor" href="#how-to-setup-it-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to setup it manually</h2>
+<h2 id="installation">
+<a class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <h4 id="uninstall-image-if-needed">
 <a class="anchor" href="#uninstall-image-if-needed" aria-hidden="true"><span class="octicon octicon-link"></span></a>uninstall image (if needed)</h4>
@@ -200,8 +198,24 @@ window.onload = wrap_img;
 </span><span class="nf">wsl</span><span class="w"> </span><span class="nt">-d</span><span class="w"> </span><span class="nx">ubuntu-22.04</span><span class="w">
 </span></code></pre></div></div>
 
-<h6 id="basic-setup">
-<a class="anchor" href="#basic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>basic setup</h6>
+<p>or</p>
+
+<h4 id="use-windows-terminal-as-a-launcher">
+<a class="anchor" href="#use-windows-terminal-as-a-launcher" aria-hidden="true"><span class="octicon octicon-link"></span></a>use Windows Terminal as a launcher</h4>
+
+<p>Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)</p>
+
+<p><img src="../images/windows_terminal.jpg" alt="windows terminal"></p>
+
+<p>It can be installed even with limited windows store access by clicking install in <a href="https://docs.microsoft.com/fr-fr/windows/terminal/install">Installer le Terminal Windows et commencer à le configurer</a></p>
+
+<p>Automatically all wsl instances appear in Settings.</p>
+
+<h2 id="manual-setup-skip-if-to-follow-automatic-setup">
+<a class="anchor" href="#manual-setup-skip-if-to-follow-automatic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manual setup (skip if to follow automatic setup)</h2>
+
+<h4 id="basic-setup">
+<a class="anchor" href="#basic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>basic setup</h4>
 
 <p>With this way to install, you don’t have any user, you don’t have any launcher within Windows.</p>
 
@@ -219,9 +233,9 @@ usermod <span class="nt">-aG</span> <span class="nb">sudo </span>guillaume
 su guillaume
 </code></pre></div></div>
 
-<h6 id="launch-distro-with-yourusername---update-wslconf">
+<h4 id="launch-distro-with-yourusername---update-wslconf">
 <a class="anchor" href="#launch-distro-with-yourusername---update-wslconf" aria-hidden="true"><span class="octicon octicon-link"></span></a>launch distro with yourusername - update <code class="language-plaintext highlighter-rouge">wsl.conf</code>
-</h6>
+</h4>
 
 <p>Manually you can now start your distro with your username from powershell</p>
 
@@ -249,22 +263,6 @@ su guillaume
 </span></code></pre></div></div>
 
 <p>and when starting <code class="language-plaintext highlighter-rouge">wsl -d ubuntu-22.04</code>, you reach your username.</p>
-
-<h4 id="use-windows-terminal-as-a-launcher">
-<a class="anchor" href="#use-windows-terminal-as-a-launcher" aria-hidden="true"><span class="octicon octicon-link"></span></a>use Windows Terminal as a launcher</h4>
-
-<p>Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)</p>
-
-<p><img src="../images/windows_terminal.jpg" alt="windows terminal"></p>
-
-<p>It can be installed even with limited windows store access by clicking install in <a href="https://docs.microsoft.com/fr-fr/windows/terminal/install">Installer le Terminal Windows et commencer à le configurer</a></p>
-
-<p>Automatically all wsl instances appear in Settings.</p>
-
-<h2 id="setup-with-wsl-vpnkit">
-<a class="anchor" href="#setup-with-wsl-vpnkit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup with wsl-vpnkit</h2>
-
-<p>as detailed in <a href="https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html">setup wsl2 conda mamba and cuda</a></p>
 
 <h4 id="wsl-vpnkit">
 <a class="anchor" href="#wsl-vpnkit" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl-vpnkit</h4>
@@ -326,6 +324,104 @@ su guillaume
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>apt update
   <span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
 </code></pre></div></div>
+
+<h2 id="automatic-setup">
+<a class="anchor" href="#automatic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automatic setup</h2>
+
+<p>copy these 2 scripts in /root/</p>
+
+<p><code class="language-plaintext highlighter-rouge">setup_wsl_root.sh</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"0. get username: "</span>
+<span class="nb">read </span>user_name
+
+<span class="nb">.</span> /etc/lsb-release
+
+<span class="nb">echo </span>Configuration <span class="k">for </span>user <span class="o">[</span><span class="nv">$user_name</span><span class="o">]</span>
+<span class="nb">echo </span>of distribution <span class="nv">$DISTRIB_CODENAME</span>
+
+<span class="nb">echo</span> <span class="s2">"1. create user and add in sudo"</span>
+<span class="c">#adduser --disabled-password --gecos "" $user_name</span>
+adduser <span class="nt">--gecos</span> <span class="s2">""</span> <span class="nv">$user_name</span>
+usermod <span class="nt">-aG</span> <span class="nb">sudo</span> <span class="nv">$user_name</span>
+
+<span class="nb">echo</span> <span class="s2">"1. create wsl.conf file"</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> /etc/wsl.conf
+<span class="nb">tee</span> /etc/wsl.conf <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+# Set the user when launching a distribution with WSL.
+[user]
+default=</span><span class="nv">$user_name</span><span class="sh">
+</span><span class="no">EOF
+
+</span><span class="nb">echo</span> <span class="s2">"2. prepare setup by user"</span>
+<span class="nb">cp </span>setup_wsl_user.sh /home/<span class="nv">$user_name</span>
+<span class="nb">chown</span> <span class="nv">$user_name</span>:users /home/<span class="nv">$user_name</span>/setup_wsl_user.sh
+<span class="nb">chmod </span>750  /home/<span class="nv">$user_name</span>/setup_wsl_user.sh
+<span class="nb">tee</span> <span class="nt">-a</span> /home/<span class="nv">$user_name</span>/.bashrc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+if [ ! -e ".wsl_configured" ]; then
+		./setup_wsl_user.sh
+        touch .wsl_configured
+fi
+</span><span class="no">EOF
+
+</span><span class="nb">echo</span> <span class="s2">"end of configuration for root"</span>
+<span class="nb">echo</span> <span class="s2">"stop wsl instance by running 'wsl --shutdown &lt;distroname&gt;' from powershell"</span>
+<span class="nb">echo</span> <span class="s2">"and start from Windows Terminal"</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">setup_wsl_user.sh</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"1. setup wsl-vpnkit"</span>
+<span class="k">if </span><span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"wsl-vpnkit"</span> ~/.profile
+<span class="k">then</span>
+    <span class="c"># code if found</span>
+	<span class="nb">echo</span> <span class="s2">"   wsl-vpnkit already setup"</span>
+<span class="k">else</span>
+    <span class="c"># code if not found</span>
+	<span class="nb">echo</span> <span class="s1">'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'</span> <span class="o">&gt;&gt;</span> ~/.profile
+<span class="k">fi
+</span>wsl.exe <span class="nt">-d</span> wsl-vpnkit service wsl-vpnkit start
+<span class="nb">source</span> ./.bashrc
+<span class="nb">echo
+
+echo</span> <span class="s2">"2. create ssh key to copy to gitlab"</span>
+<span class="nb">.</span> /etc/lsb-release
+<span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">".ssh/id_rsa.pub"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+		</span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"WSL2 ubuntu </span><span class="nv">$DISTRIB_RELEASE</span><span class="s2">"</span>
+		<span class="nb">cat</span> .ssh/id_rsa.pub
+		<span class="nb">echo</span> <span class="s2">"copy this content to gitlab &gt; preferences &gt; SSH Keys"</span>
+		<span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"Press any key to resume ..."</span>
+<span class="k">fi
+</span><span class="nb">echo
+
+echo</span> <span class="s2">"3. update certificates"</span>
+git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+<span class="nb">sudo cp</span> /tmp/devops_environment/certs/<span class="k">*</span> /usr/local/share/ca-certificates/
+<span class="nb">sudo </span>update-ca-certificates
+<span class="nb">rm</span> <span class="nt">-rf</span> /tmp/devops_environment
+<span class="nb">echo
+
+echo</span> <span class="s2">"4. update apt sources with artifactory"</span>
+<span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'</span> /etc/apt/sources.list
+<span class="nb">echo</span>
+</code></pre></div></div>
+
+<p>Then</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x setup_wsl_root.sh
+./setup_wsl_root.sh
+</code></pre></div></div>
+
+<p>As explained shutdown and restart distro.</p>
+
+<p>It restarts from your user</p>
 
 <h2 id="setup-config-dotfiles-with-whole-filesystem-">
 <a class="anchor" href="#setup-config-dotfiles-with-whole-filesystem-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup config dotfiles with whole filesystem (/)</h2>

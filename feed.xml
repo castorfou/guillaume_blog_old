@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-25T04:16:19-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-25T08:20:39-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11&quot;&gt;How to install Ubuntu 21.10 on WSL for Windows 10 and 11&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;how-to-setup-it-manually&quot;&gt;How to setup it manually&lt;/h2&gt;
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
 &lt;h4 id=&quot;uninstall-image-if-needed&quot;&gt;uninstall image (if needed)&lt;/h4&gt;
 
@@ -53,7 +53,21 @@
 &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;wsl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ubuntu-22.04&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h6 id=&quot;basic-setup&quot;&gt;basic setup&lt;/h6&gt;
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;h4 id=&quot;use-windows-terminal-as-a-launcher&quot;&gt;use Windows Terminal as a launcher&lt;/h4&gt;
+
+&lt;p&gt;Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/windows_terminal.jpg&quot; alt=&quot;windows terminal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It can be installed even with limited windows store access by clicking install in &lt;a href=&quot;https://docs.microsoft.com/fr-fr/windows/terminal/install&quot;&gt;Installer le Terminal Windows et commencer à le configurer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Automatically all wsl instances appear in Settings.&lt;/p&gt;
+
+&lt;h2 id=&quot;manual-setup-skip-if-to-follow-automatic-setup&quot;&gt;Manual setup (skip if to follow automatic setup)&lt;/h2&gt;
+
+&lt;h4 id=&quot;basic-setup&quot;&gt;basic setup&lt;/h4&gt;
 
 &lt;p&gt;With this way to install, you don’t have any user, you don’t have any launcher within Windows.&lt;/p&gt;
 
@@ -71,7 +85,7 @@ usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;n
 su guillaume
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h6 id=&quot;launch-distro-with-yourusername---update-wslconf&quot;&gt;launch distro with yourusername - update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl.conf&lt;/code&gt;&lt;/h6&gt;
+&lt;h4 id=&quot;launch-distro-with-yourusername---update-wslconf&quot;&gt;launch distro with yourusername - update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl.conf&lt;/code&gt;&lt;/h4&gt;
 
 &lt;p&gt;Manually you can now start your distro with your username from powershell&lt;/p&gt;
 
@@ -99,20 +113,6 @@ su guillaume
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;and when starting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl -d ubuntu-22.04&lt;/code&gt;, you reach your username.&lt;/p&gt;
-
-&lt;h4 id=&quot;use-windows-terminal-as-a-launcher&quot;&gt;use Windows Terminal as a launcher&lt;/h4&gt;
-
-&lt;p&gt;Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/windows_terminal.jpg&quot; alt=&quot;windows terminal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It can be installed even with limited windows store access by clicking install in &lt;a href=&quot;https://docs.microsoft.com/fr-fr/windows/terminal/install&quot;&gt;Installer le Terminal Windows et commencer à le configurer&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Automatically all wsl instances appear in Settings.&lt;/p&gt;
-
-&lt;h2 id=&quot;setup-with-wsl-vpnkit&quot;&gt;Setup with wsl-vpnkit&lt;/h2&gt;
-
-&lt;p&gt;as detailed in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/wsl2-conda-mamba-cuda.html&quot;&gt;setup wsl2 conda mamba and cuda&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/h4&gt;
 
@@ -169,6 +169,103 @@ su guillaume
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
   &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;automatic-setup&quot;&gt;Automatic setup&lt;/h2&gt;
+
+&lt;p&gt;copy these 2 scripts in /root/&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup_wsl_root.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0. get username: &quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;user_name
+
+&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; /etc/lsb-release
+
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;Configuration &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;user &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;of distribution &lt;span class=&quot;nv&quot;&gt;$DISTRIB_CODENAME&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1. create user and add in sudo&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#adduser --disabled-password --gecos &quot;&quot; $user_name&lt;/span&gt;
+adduser &lt;span class=&quot;nt&quot;&gt;--gecos&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;
+usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1. create wsl.conf file&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /etc/wsl.conf
+&lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; /etc/wsl.conf &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+# Set the user when launching a distribution with WSL.
+[user]
+default=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
+
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2. prepare setup by user&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cp &lt;/span&gt;setup_wsl_user.sh /home/&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;chown&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;:users /home/&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;/setup_wsl_user.sh
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;750  /home/&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;/setup_wsl_user.sh
+&lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; /home/&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;/.bashrc &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+if [ ! -e &quot;.wsl_configured&quot; ]; then
+		./setup_wsl_user.sh
+        touch .wsl_configured
+fi
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
+
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;end of configuration for root&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;stop wsl instance by running 'wsl --shutdown &amp;lt;distroname&amp;gt;' from powershell&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;and start from Windows Terminal&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup_wsl_user.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1. setup wsl-vpnkit&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Fxq&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;wsl-vpnkit&quot;&lt;/span&gt; ~/.profile
+&lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# code if found&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;   wsl-vpnkit already setup&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# code if not found&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.profile
+&lt;span class=&quot;k&quot;&gt;fi
+&lt;/span&gt;wsl.exe &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; wsl-vpnkit service wsl-vpnkit start
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ./.bashrc
+&lt;span class=&quot;nb&quot;&gt;echo
+
+echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2. create ssh key to copy to gitlab&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; /etc/lsb-release
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.ssh/id_rsa.pub&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+		&lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;WSL2 ubuntu &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$DISTRIB_RELEASE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+		&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; .ssh/id_rsa.pub
+		&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;copy this content to gitlab &amp;gt; preferences &amp;gt; SSH Keys&quot;&lt;/span&gt;
+		&lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Press any key to resume ...&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo
+
+echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;3. update certificates&quot;&lt;/span&gt;
+git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /tmp/devops_environment/certs/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; /usr/local/share/ca-certificates/
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-ca-certificates
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/devops_environment
+&lt;span class=&quot;nb&quot;&gt;echo
+
+echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;4. update apt sources with artifactory&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; +x setup_wsl_root.sh
+./setup_wsl_root.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As explained shutdown and restart distro.&lt;/p&gt;
+
+&lt;p&gt;It restarts from your user&lt;/p&gt;
 
 &lt;h2 id=&quot;setup-config-dotfiles-with-whole-filesystem-&quot;&gt;Setup config dotfiles with whole filesystem (/)&lt;/h2&gt;
 
