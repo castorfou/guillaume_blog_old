@@ -14,7 +14,18 @@ image: images/icons/wsl2.jpeg
 
 
 
-## How to setup it
+## How to setup it manually
+
+#### uninstall image (if needed)
+
+```powershell
+# wsl --unregister <distroName>
+wsl --unregister ubuntu-22.04
+```
+
+
+
+
 
 #### download images
 
