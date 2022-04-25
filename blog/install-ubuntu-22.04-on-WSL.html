@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>install ubuntu 22.04 on WLS | Guillaume’s blog</title>
+<title>install ubuntu 22.04 on WSL | Guillaume’s blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="install ubuntu 22.04 on WLS" />
+<meta property="og:title" content="install ubuntu 22.04 on WSL" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="and can be used as a way to create a 2nd instance of WSL" />
 <meta property="og:description" content="and can be used as a way to create a 2nd instance of WSL" />
-<link rel="canonical" href="https://castorfou.github.io/guillaume_blog/blog/.html" />
-<meta property="og:url" content="https://castorfou.github.io/guillaume_blog/blog/.html" />
+<link rel="canonical" href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" />
+<meta property="og:url" content="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" />
 <meta property="og:site_name" content="Guillaume’s blog" />
 <meta property="og:image" content="https://castorfou.github.io/guillaume_blog/images/icons/wsl2.jpeg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-04-25T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://castorfou.github.io/guillaume_blog/blog/.html","@type":"BlogPosting","headline":"install ubuntu 22.04 on WLS","dateModified":"2022-04-25T00:00:00-05:00","datePublished":"2022-04-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://castorfou.github.io/guillaume_blog/blog/.html"},"image":"https://castorfou.github.io/guillaume_blog/images/icons/wsl2.jpeg","description":"and can be used as a way to create a 2nd instance of WSL","@context":"https://schema.org"}</script>
+{"url":"https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html","@type":"BlogPosting","headline":"install ubuntu 22.04 on WSL","dateModified":"2022-04-25T00:00:00-05:00","datePublished":"2022-04-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html"},"image":"https://castorfou.github.io/guillaume_blog/images/icons/wsl2.jpeg","description":"and can be used as a way to create a 2nd instance of WSL","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/guillaume_blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://castorfou.github.io/guillaume_blog/feed.xml" title="Guillaume's blog" /><link rel="shortcut icon" type="image/x-icon" href="/guillaume_blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -88,7 +88,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">install ubuntu 22.04 on WLS</h1><p class="page-description">and can be used as a way to create a 2nd instance of WSL</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-25T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">install ubuntu 22.04 on WSL</h1><p class="page-description">and can be used as a way to create a 2nd instance of WSL</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-25T00:00:00-05:00" itemprop="datePublished">
         Apr 25, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -121,6 +121,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h6"><a href="#launch-distro-with-yourusername---update-wslconf">launch distro with yourusername - update wsl.conf</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h4"><a href="#use-windows-terminal-as-a-launcher">use Windows Terminal as a launcher</a></li>
 </ul>
 </li>
 </ul><h2 id="source-of-inspiration">
@@ -226,6 +227,13 @@ su guillaume
 
 <p>and when starting <code class="language-plaintext highlighter-rouge">wsl -d ubuntu-22.04</code>, you reach your username.</p>
 
+<h4 id="use-windows-terminal-as-a-launcher">
+<a class="anchor" href="#use-windows-terminal-as-a-launcher" aria-hidden="true"><span class="octicon octicon-link"></span></a>use Windows Terminal as a launcher</h4>
+
+<p>Windows Terminal is a smart way to group all terminals (powershell, and all your wsl instances)</p>
+
+<p><img src="../images/windows_terminal.jpg" alt="windows terminal"></p>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="castorfou/guillaume_blog"
@@ -234,7 +242,7 @@ su guillaume
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/guillaume_blog/blog/.html" hidden></a>
+</script><a class="u-url" href="/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
