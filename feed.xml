@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-25T08:33:18-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-25T08:56:26-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11&quot;&gt;How to install Ubuntu 21.10 on WSL for Windows 10 and 11&lt;/a&gt;&lt;/p&gt;
 
@@ -188,8 +188,9 @@ su guillaume
 
 &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;Configuration &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;user &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;of distribution &lt;span class=&quot;nv&quot;&gt;$DISTRIB_CODENAME&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo
 
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1. create user and add in sudo&quot;&lt;/span&gt;
+echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1. create user and add in sudo&quot;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#adduser --disabled-password --gecos &quot;&quot; $user_name&lt;/span&gt;
 adduser &lt;span class=&quot;nt&quot;&gt;--gecos&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;
 usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$user_name&lt;/span&gt;
@@ -258,8 +259,10 @@ git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/
 
 echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;4. update apt sources with artifactory&quot;&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
-&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'&lt;/span&gt; /etc/apt/sources.list
-&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -282,13 +285,19 @@ echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;4. update apt sources w
 &lt;h4 id=&quot;init-local-repo&quot;&gt;init local repo&lt;/h4&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /.cfg
-&lt;span class=&quot;nb&quot;&gt;sudo chown &lt;/span&gt;guillaume:users /.cfg
+&lt;span class=&quot;nb&quot;&gt;sudo chown&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;:users /.cfg
 git init &lt;span class=&quot;nt&quot;&gt;--bare&lt;/span&gt; /.cfg
 &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/usr/bin/git --git-dir=/.cfg/ --work-tree=/'&lt;/span&gt;
 config config &lt;span class=&quot;nt&quot;&gt;--local&lt;/span&gt; status.showUntrackedFiles no
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;alias config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.bash_aliases
 &lt;span class=&quot;nb&quot;&gt;cd
 source&lt;/span&gt; .bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;git-default-identity-if-needed&quot;&gt;git default identity (if needed)&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;guillaume.ramelet@michelin.com&quot;&lt;/span&gt;
+git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;guillaume&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;setup-branch-and-push-to-central-repo&quot;&gt;setup branch and push to central repo&lt;/h4&gt;

@@ -135,6 +135,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#init-local-repo">init local repo</a></li>
+<li class="toc-entry toc-h4"><a href="#git-default-identity-if-needed">git default identity (if needed)</a></li>
 <li class="toc-entry toc-h4"><a href="#setup-branch-and-push-to-central-repo">setup branch and push to central repo</a></li>
 </ul>
 </li>
@@ -344,8 +345,9 @@ su guillaume
 
 <span class="nb">echo </span>Configuration <span class="k">for </span>user <span class="o">[</span><span class="nv">$user_name</span><span class="o">]</span>
 <span class="nb">echo </span>of distribution <span class="nv">$DISTRIB_CODENAME</span>
+<span class="nb">echo
 
-<span class="nb">echo</span> <span class="s2">"1. create user and add in sudo"</span>
+echo</span> <span class="s2">"1. create user and add in sudo"</span>
 <span class="c">#adduser --disabled-password --gecos "" $user_name</span>
 adduser <span class="nt">--gecos</span> <span class="s2">""</span> <span class="nv">$user_name</span>
 usermod <span class="nt">-aG</span> <span class="nb">sudo</span> <span class="nv">$user_name</span>
@@ -414,8 +416,10 @@ git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/
 
 echo</span> <span class="s2">"4. update apt sources with artifactory"</span>
 <span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'</span> /etc/apt/sources.list
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,gp'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
 <span class="nb">echo</span>
 </code></pre></div></div>
 
@@ -440,13 +444,20 @@ echo</span> <span class="s2">"4. update apt sources with artifactory"</span>
 <a class="anchor" href="#init-local-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>init local repo</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /.cfg
-<span class="nb">sudo chown </span>guillaume:users /.cfg
+<span class="nb">sudo chown</span> <span class="nv">$USER</span>:users /.cfg
 git init <span class="nt">--bare</span> /.cfg
 <span class="nb">alias </span><span class="nv">config</span><span class="o">=</span><span class="s1">'/usr/bin/git --git-dir=/.cfg/ --work-tree=/'</span>
 config config <span class="nt">--local</span> status.showUntrackedFiles no
 <span class="nb">echo</span> <span class="s2">"alias config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'"</span> <span class="o">&gt;&gt;</span> <span class="nv">$HOME</span>/.bash_aliases
 <span class="nb">cd
 source</span> .bashrc
+</code></pre></div></div>
+
+<h4 id="git-default-identity-if-needed">
+<a class="anchor" href="#git-default-identity-if-needed" aria-hidden="true"><span class="octicon octicon-link"></span></a>git default identity (if needed)</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.email <span class="s2">"guillaume.ramelet@michelin.com"</span>
+git config <span class="nt">--global</span> user.name <span class="s2">"guillaume"</span>
 </code></pre></div></div>
 
 <h4 id="setup-branch-and-push-to-central-repo">
