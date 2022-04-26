@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -381,8 +381,7 @@ echo</span> <span class="s2">"end of configuration for root"</span>
 
 <p><code class="language-plaintext highlighter-rouge">setup_wsl_user.sh</code></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="c">#!/bin/bash</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
 <span class="nb">echo</span> <span class="s2">"1. setup wsl-vpnkit"</span>
 <span class="k">if </span><span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"wsl-vpnkit"</span> ~/.profile
@@ -420,7 +419,66 @@ echo</span> <span class="s2">"4. update apt sources with artifactory"</span>
 <span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
 <span class="nb">sudo </span>apt update
 <span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
-<span class="nb">echo</span>
+<span class="nb">echo
+
+echo</span> <span class="s2">"5. automount secured vbox"</span>
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> autofs
+<span class="nb">mkdir</span> <span class="nt">-p</span> ~/vbox
+<span class="k">if</span> <span class="o">!</span> <span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"vbox"</span> /etc/auto.master
+<span class="k">then
+</span><span class="nb">sudo tee</span> <span class="nt">-a</span> /etc/auto.master <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+/home/</span><span class="nv">$USER</span><span class="sh">/vbox            /etc/vbox.autofs        --timeout=30 browse
+</span><span class="no">EOF
+</span><span class="k">fi
+if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">"/etc/vbox.autofs"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+</span><span class="nb">sudo tee</span> /etc/vbox.autofs <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+janus   -fstype=drvfs,uid=1000,gid=1000 :Z:
+cho     -fstype=drvfs,uid=1000,gid=1000 :Y:
+</span><span class="no">EOF
+</span><span class="nb">echo</span> <span class="s2">"</span><span class="sb">`</span><span class="nb">whoami</span><span class="sb">`</span><span class="s2"> ALL=(ALL) NOPASSWD: /usr/sbin/service"</span> | <span class="nb">sudo tee</span> /etc/sudoers.d/<span class="sb">`</span><span class="nb">whoami</span><span class="sb">`</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo chmod </span>0440 /etc/sudoers.d/<span class="sb">`</span><span class="nb">whoami</span><span class="sb">`</span>
+<span class="k">fi
+</span><span class="nb">sudo </span>service autofs start
+<span class="k">if</span> <span class="o">!</span> <span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"autofs"</span> ~/.bashrc
+<span class="k">then
+</span><span class="nb">echo</span> <span class="s1">'sudo /usr/sbin/service autofs start'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="k">fi
+</span><span class="nb">echo
+
+echo</span> <span class="s2">"6. install conda and configure base"</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$DISTRIB_RELEASE</span> <span class="o">==</span> <span class="s2">"22.04"</span> <span class="o">]</span>
+<span class="k">then
+</span><span class="nb">echo</span> <span class="s1">'bug SSL with ubuntu 22.04 - https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1963834/comments/7'</span>
+<span class="nb">sudo tee</span> <span class="nt">-a</span> /etc/ssl/openssl.cnf <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+[openssl_init]
+ssl_conf = ssl_sect
+
+[ssl_sect]
+system_default = system_default_sect
+
+[system_default_sect]
+Options = UnsafeLegacyRenegotiation
+</span><span class="no">EOF
+</span><span class="k">fi
+if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">"~/.condarc"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+</span><span class="nv">tmp_dir</span><span class="o">=</span><span class="si">$(</span><span class="nb">mktemp</span> <span class="nt">-d</span> <span class="si">)</span>
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-P</span> <span class="nv">$tmp_dir</span>
+<span class="nb">sudo </span>bash <span class="nv">$tmp_dir</span>/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-f</span> <span class="nt">-b</span> <span class="nt">-p</span> ~/miniconda
+~/miniconda/bin/conda init
+<span class="c"># create a config file</span>
+<span class="nb">tee</span> ~/.condarc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+ssl_verify: false
+shortcuts: false
+report_errors: false
+</span><span class="no">EOF
+</span><span class="nb">source</span> ./.bashrc
+conda <span class="nb">install </span>mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge
+mamba init
+mamba <span class="nb">install </span>nb_conda_kernels
+mamba <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab jupyterlab-git
+<span class="nb">tee</span> <span class="nt">-a</span> ~/.bashrc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+</span><span class="no">EOF
+</span><span class="k">fi</span>
 </code></pre></div></div>
 
 <p>Then</p>
