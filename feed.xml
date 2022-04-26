@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-26T15:21:17-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-26T15:39:37-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11&quot;&gt;How to install Ubuntu 21.10 on WSL for Windows 10 and 11&lt;/a&gt;&lt;/p&gt;
 
@@ -305,7 +305,7 @@ Options = UnsafeLegacyRenegotiation
 if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~/.condarc&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
 &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tmp_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mktemp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_dir&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;bash &lt;span class=&quot;nv&quot;&gt;$tmp_dir&lt;/span&gt;/Miniconda3-latest-Linux-x86_64.sh &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; ~/miniconda
+bash &lt;span class=&quot;nv&quot;&gt;$tmp_dir&lt;/span&gt;/Miniconda3-latest-Linux-x86_64.sh &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; ~/miniconda
 ~/miniconda/bin/conda init
 &lt;span class=&quot;c&quot;&gt;# create a config file&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; ~/.condarc &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
@@ -314,10 +314,11 @@ shortcuts: false
 report_errors: false
 &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
 &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ./.bashrc
-conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mamba &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; base &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge
+conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; mamba &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; base &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge
 mamba init
-mamba &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nb_conda_kernels
-mamba &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge jupyterlab jupyterlab-git
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ./.bashrc
+mamba &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; nb_conda_kernels
+mamba &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge jupyterlab jupyterlab-git
 &lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; ~/.bashrc &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF

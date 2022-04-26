@@ -462,7 +462,7 @@ Options = UnsafeLegacyRenegotiation
 if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">"~/.condarc"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
 </span><span class="nv">tmp_dir</span><span class="o">=</span><span class="si">$(</span><span class="nb">mktemp</span> <span class="nt">-d</span> <span class="si">)</span>
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-P</span> <span class="nv">$tmp_dir</span>
-<span class="nb">sudo </span>bash <span class="nv">$tmp_dir</span>/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-f</span> <span class="nt">-b</span> <span class="nt">-p</span> ~/miniconda
+bash <span class="nv">$tmp_dir</span>/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-f</span> <span class="nt">-b</span> <span class="nt">-p</span> ~/miniconda
 ~/miniconda/bin/conda init
 <span class="c"># create a config file</span>
 <span class="nb">tee</span> ~/.condarc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
@@ -471,10 +471,11 @@ shortcuts: false
 report_errors: false
 </span><span class="no">EOF
 </span><span class="nb">source</span> ./.bashrc
-conda <span class="nb">install </span>mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge
+conda <span class="nb">install</span> <span class="nt">-y</span> mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge
 mamba init
-mamba <span class="nb">install </span>nb_conda_kernels
-mamba <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab jupyterlab-git
+<span class="nb">source</span> ./.bashrc
+mamba <span class="nb">install</span> <span class="nt">-y</span> nb_conda_kernels
+mamba <span class="nb">install</span> <span class="nt">-y</span> <span class="nt">-c</span> conda-forge jupyterlab jupyterlab-git
 <span class="nb">tee</span> <span class="nt">-a</span> ~/.bashrc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 </span><span class="no">EOF
