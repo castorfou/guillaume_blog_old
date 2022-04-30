@@ -94,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -132,6 +132,12 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#automatic-setup">Automatic setup</a></li>
+<li class="toc-entry toc-h2"><a href="#and-now-we-can-install-other-parts">And now we can install other parts</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#automount-secured-vbox">automount secured vbox</a></li>
+<li class="toc-entry toc-h4"><a href="#python-with-conda-and-configure-base-environment">python with conda and configure base environment</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#init-local-repo">init local repo</a></li>
@@ -411,40 +417,6 @@ git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/
 <span class="nb">sudo cp</span> /tmp/devops_environment/certs/<span class="k">*</span> /usr/local/share/ca-certificates/
 <span class="nb">sudo </span>update-ca-certificates
 <span class="nb">rm</span> <span class="nt">-rf</span> /tmp/devops_environment
-<span class="nb">echo
-
-echo</span> <span class="s2">"4. update apt sources with artifactory"</span>
-<span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
-<span class="nb">sudo </span>apt update
-<span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
-<span class="nb">echo
-
-echo</span> <span class="s2">"5. automount secured vbox"</span>
-<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> autofs
-<span class="nb">mkdir</span> <span class="nt">-p</span> ~/vbox
-<span class="k">if</span> <span class="o">!</span> <span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"vbox"</span> /etc/auto.master
-<span class="k">then
-</span><span class="nb">sudo tee</span> <span class="nt">-a</span> /etc/auto.master <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
-/home/</span><span class="nv">$USER</span><span class="sh">/vbox            /etc/vbox.autofs        --timeout=30 browse
-</span><span class="no">EOF
-</span><span class="k">fi
-if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">"/etc/vbox.autofs"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
-</span><span class="nb">sudo tee</span> /etc/vbox.autofs <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
-janus   -fstype=drvfs,uid=1000,gid=1000 :Z:
-cho     -fstype=drvfs,uid=1000,gid=1000 :Y:
-</span><span class="no">EOF
-</span><span class="nb">echo</span> <span class="s2">"</span><span class="sb">`</span><span class="nb">whoami</span><span class="sb">`</span><span class="s2"> ALL=(ALL) NOPASSWD: /usr/sbin/service"</span> | <span class="nb">sudo tee</span> /etc/sudoers.d/<span class="sb">`</span><span class="nb">whoami</span><span class="sb">`</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo chmod </span>0440 /etc/sudoers.d/<span class="sb">`</span><span class="nb">whoami</span><span class="sb">`</span>
-<span class="k">fi
-</span><span class="nb">sudo </span>service autofs start
-<span class="k">if</span> <span class="o">!</span> <span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"autofs"</span> ~/.bashrc
-<span class="k">then
-</span><span class="nb">echo</span> <span class="s1">'sudo /usr/sbin/service autofs start'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
-<span class="k">fi
-</span><span class="nb">echo
-
-echo</span> <span class="s2">"6. install conda and configure base"</span>
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$DISTRIB_RELEASE</span> <span class="o">==</span> <span class="s2">"22.04"</span> <span class="o">]</span>
 <span class="k">then
 </span><span class="nb">echo</span> <span class="s1">'bug SSL with ubuntu 22.04 - https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1963834/comments/7'</span>
@@ -459,27 +431,15 @@ system_default = system_default_sect
 Options = UnsafeLegacyRenegotiation
 </span><span class="no">EOF
 </span><span class="k">fi
-if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">"~/.condarc"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
-</span><span class="nv">tmp_dir</span><span class="o">=</span><span class="si">$(</span><span class="nb">mktemp</span> <span class="nt">-d</span> <span class="si">)</span>
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-P</span> <span class="nv">$tmp_dir</span>
-bash <span class="nv">$tmp_dir</span>/Miniconda3-latest-Linux-x86_64.sh <span class="nt">-f</span> <span class="nt">-b</span> <span class="nt">-p</span> ~/miniconda
-~/miniconda/bin/conda init
-<span class="c"># create a config file</span>
-<span class="nb">tee</span> ~/.condarc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
-ssl_verify: false
-shortcuts: false
-report_errors: false
-</span><span class="no">EOF
-</span><span class="nb">source</span> ./.bashrc
-conda <span class="nb">install</span> <span class="nt">-y</span> mamba <span class="nt">-n</span> base <span class="nt">-c</span> conda-forge
-mamba init
-<span class="nb">source</span> ./.bashrc
-mamba <span class="nb">install</span> <span class="nt">-y</span> nb_conda_kernels
-mamba <span class="nb">install</span> <span class="nt">-y</span> <span class="nt">-c</span> conda-forge jupyterlab jupyterlab-git
-<span class="nb">tee</span> <span class="nt">-a</span> ~/.bashrc <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
-export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-</span><span class="no">EOF
-</span><span class="k">fi</span>
+</span><span class="nb">echo
+
+echo</span> <span class="s2">"4. update apt sources with artifactory"</span>
+<span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'</span> /etc/apt/sources.list
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
+<span class="nb">echo</span>
 </code></pre></div></div>
 
 <p>Then</p>
@@ -490,7 +450,29 @@ export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 <p>As explained shutdown and restart distro.</p>
 
-<p>It restarts from your user</p>
+<p>It restarts from your user and it will install:</p>
+
+<ul>
+  <li>setup wsl-vpnkit</li>
+  <li>create ssh key to copy to gitlab</li>
+  <li>update certificates</li>
+  <li>update apt sources with artifactory</li>
+</ul>
+
+<h2 id="and-now-we-can-install-other-parts">
+<a class="anchor" href="#and-now-we-can-install-other-parts" aria-hidden="true"><span class="octicon octicon-link"></span></a>And now we can install other parts</h2>
+
+<h4 id="automount-secured-vbox">
+<a class="anchor" href="#automount-secured-vbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>automount secured vbox</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
+</code></pre></div></div>
+
+<h4 id="python-with-conda-and-configure-base-environment">
+<a class="anchor" href="#python-with-conda-and-configure-base-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>python with conda and configure base environment</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda.sh | bash
+</code></pre></div></div>
 
 <h2 id="setup-config-dotfiles-with-whole-filesystem-">
 <a class="anchor" href="#setup-config-dotfiles-with-whole-filesystem-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup config dotfiles with whole filesystem (/)</h2>

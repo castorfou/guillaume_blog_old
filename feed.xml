@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-30T02:49:32-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-30T02:52:01-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11&quot;&gt;How to install Ubuntu 21.10 on WSL for Windows 10 and 11&lt;/a&gt;&lt;/p&gt;
 
@@ -254,40 +254,6 @@ git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/
 &lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /tmp/devops_environment/certs/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; /usr/local/share/ca-certificates/
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-ca-certificates
 &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/devops_environment
-&lt;span class=&quot;nb&quot;&gt;echo
-
-echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;4. update apt sources with artifactory&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
-&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'&lt;/span&gt; /etc/apt/sources.list
-&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'&lt;/span&gt; /etc/apt/sources.list
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo
-
-echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;5. automount secured vbox&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; autofs
-&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; ~/vbox
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Fxq&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;vbox&quot;&lt;/span&gt; /etc/auto.master
-&lt;span class=&quot;k&quot;&gt;then
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; /etc/auto.master &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
-/home/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;/vbox            /etc/vbox.autofs        --timeout=30 browse
-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fi
-if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/etc/vbox.autofs&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/vbox.autofs &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
-janus   -fstype=drvfs,uid=1000,gid=1000 :Z:
-cho     -fstype=drvfs,uid=1000,gid=1000 :Y:
-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; ALL=(ALL) NOPASSWD: /usr/sbin/service&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/sudoers.d/&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo chmod &lt;/span&gt;0440 /etc/sudoers.d/&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;fi
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service autofs start
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Fxq&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;autofs&quot;&lt;/span&gt; ~/.bashrc
-&lt;span class=&quot;k&quot;&gt;then
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sudo /usr/sbin/service autofs start'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc
-&lt;span class=&quot;k&quot;&gt;fi
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo
-
-echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;6. install conda and configure base&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$DISTRIB_RELEASE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;22.04&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;then
 &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bug SSL with ubuntu 22.04 - https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1963834/comments/7'&lt;/span&gt;
@@ -302,27 +268,15 @@ system_default = system_default_sect
 Options = UnsafeLegacyRenegotiation
 &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fi
-if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~/.condarc&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tmp_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mktemp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_dir&lt;/span&gt;
-bash &lt;span class=&quot;nv&quot;&gt;$tmp_dir&lt;/span&gt;/Miniconda3-latest-Linux-x86_64.sh &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; ~/miniconda
-~/miniconda/bin/conda init
-&lt;span class=&quot;c&quot;&gt;# create a config file&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; ~/.condarc &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
-ssl_verify: false
-shortcuts: false
-report_errors: false
-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ./.bashrc
-conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; mamba &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; base &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge
-mamba init
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ./.bashrc
-mamba &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; nb_conda_kernels
-mamba &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge jupyterlab jupyterlab-git
-&lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; ~/.bashrc &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
-export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo
+
+echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;4. update apt sources with artifactory&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then&lt;/p&gt;
@@ -333,7 +287,26 @@ export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 &lt;p&gt;As explained shutdown and restart distro.&lt;/p&gt;
 
-&lt;p&gt;It restarts from your user&lt;/p&gt;
+&lt;p&gt;It restarts from your user and it will install:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;setup wsl-vpnkit&lt;/li&gt;
+  &lt;li&gt;create ssh key to copy to gitlab&lt;/li&gt;
+  &lt;li&gt;update certificates&lt;/li&gt;
+  &lt;li&gt;update apt sources with artifactory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;and-now-we-can-install-other-parts&quot;&gt;And now we can install other parts&lt;/h2&gt;
+
+&lt;h4 id=&quot;automount-secured-vbox&quot;&gt;automount secured vbox&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;python-with-conda-and-configure-base-environment&quot;&gt;python with conda and configure base environment&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda.sh | bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;setup-config-dotfiles-with-whole-filesystem-&quot;&gt;Setup config dotfiles with whole filesystem (/)&lt;/h2&gt;
 
