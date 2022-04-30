@@ -6,4 +6,3 @@ mamba install -c conda-forge jupyterlab jupyterlab-git
 tee -a ~/.bashrc << EOF
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 EOF
-fi
