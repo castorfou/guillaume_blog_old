@@ -16,7 +16,7 @@ image: images/icons/wsl2.jpeg
 
 ## Installation
 
-#### uninstall image (if needed)
+### uninstall image (if needed)
 
 ```powershell
 # wsl --unregister <distroName>
@@ -27,7 +27,7 @@ wsl --unregister ubuntu-22.04
 
 
 
-#### download images
+### download images
 
 From [cloud images ubuntu](https://cloud-images.ubuntu.com/jammy/current/) (cloud-images > jammy > current), now there are wsl images:
 
@@ -37,7 +37,7 @@ I just have to download the last jammy (22.04) image `jammy-server-cloudimg-amd6
 
 
 
-#### install and setup from powershell
+### install and setup from powershell
 
 I have downloaded this ubuntu image to `D:\wsl\ubuntu-22.04\download`
 
@@ -96,7 +96,7 @@ Automatically all wsl instances appear in Settings.
 
 ## Manual setup (skip if to follow automatic setup)
 
-#### basic setup
+### basic setup
 
 With this way to install, you don't have any user, you don't have any launcher within Windows.
 
@@ -118,7 +118,7 @@ su guillaume
 
 
 
-#### launch distro with yourusername - update `wsl.conf`
+### launch distro with yourusername - update `wsl.conf`
 
 Manually you can now start your distro with your username from powershell
 
@@ -155,7 +155,7 @@ wsl --shutdown ubuntu-22.04
 
 and when starting `wsl -d ubuntu-22.04`, you reach your username.
 
-#### wsl-vpnkit
+### wsl-vpnkit
 
 As wsl-vpnkit is already installed, I just have to
 
@@ -164,7 +164,7 @@ echo 'wsl.exe -d wsl-vpnkit service wsl-vpnkit start' >> ~/.profile
 source .bashrc
 ```
 
-#### gitlab
+### gitlab
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "WSL2 ubuntu 22.04"
@@ -172,7 +172,7 @@ ssh-keygen -t rsa -b 4096 -C "WSL2 ubuntu 22.04"
 
 and copy `id_rsa.pub` into gitlab > preferences > SSH Keys
 
-#### corporate CA certificates
+### corporate CA certificates
 
 ```bash
 git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
@@ -181,7 +181,7 @@ sudo update-ca-certificates
 rm -rf /tmp/devops_environment
 ```
 
-#### apt sources
+### apt sources
 
 had to replace focal (20.04) to jammy (22.04)
 
@@ -191,7 +191,7 @@ sudo sed -i 's@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.
 sudo sed -i 's@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &@' /etc/apt/sources.list
 ```
 
-#### check everything is ok
+### check everything is ok
 
 - This command must return google ip:
 
@@ -351,13 +351,13 @@ It restarts from your user and it will install:
 
 
 
-#### automount secured vbox
+### automount secured vbox
 
 ```bash
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
 ```
 
-#### python with conda and configure base environment
+### python with conda and configure base environment
 
 ```bash
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda.sh | bash
@@ -373,7 +373,7 @@ as detailed in [keep dotfiles in git](https://castorfou.github.io/guillaume_blog
 
 but to manage the whole filesystem.
 
-#### init local repo
+### init local repo
 
 ```bash
 sudo mkdir -p /.cfg
@@ -386,14 +386,14 @@ cd
 source .bashrc
 ```
 
-#### git default identity (if needed)
+### git default identity (if needed)
 
 ```bash
 git config --global user.email "guillaume.ramelet@michelin.com"
 git config --global user.name "guillaume"
 ```
 
-#### setup branch and push to central repo
+### setup branch and push to central repo
 
 ```bash
 config remote add origin git@gitlab.michelin.com:janus/dotfiles.git
