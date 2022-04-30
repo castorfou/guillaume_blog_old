@@ -94,126 +94,6 @@ Automatically all wsl instances appear in Settings.
 
 
 
-## Manual setup (skip if to follow automatic setup)
-
-### basic setup
-
-With this way to install, you don't have any user, you don't have any launcher within Windows.
-
-Create a user and add it to sudo:
-
-```bash
-# adduser <yourusername>
-# usermod -aG sudo <yourusername>
-adduser guillaume
-usermod -aG sudo guillaume
-```
-
-and I can switch to this user simply with
-
-```bash
-# su <yourusername>
-su guillaume
-```
-
-
-
-### launch distro with yourusername - update `wsl.conf`
-
-Manually you can now start your distro with your username from powershell
-
-```powershell
-# wsl -d <distroname> -u <yourusername>
-wsl -d ubuntu-22.04 -u guillaume
-```
-
-Or from another wsl (huge avantage to run in linux terminal instead of powershell)
-
-```bash
-wsl.exe -d ubuntu-22.04 -u guillaume
-```
-
-
-
-but you can better keep this username setting by updating `wsl.conf`
-
-```bash
-# /etc/wsl.conf
-# Set the user when launching a distribution with WSL.
-[user]
-default=YourUserName
-```
-
-
-
-It is now setup. You can now shutdown this instance from powershell.
-
-```powershell
-# wsl --shutdown <distroname>
-wsl --shutdown ubuntu-22.04
-```
-
-and when starting `wsl -d ubuntu-22.04`, you reach your username.
-
-### wsl-vpnkit
-
-As wsl-vpnkit is already installed, I just have to
-
-```bash
-echo 'wsl.exe -d wsl-vpnkit service wsl-vpnkit start' >> ~/.profile
-source .bashrc
-```
-
-### gitlab
-
-```bash
-ssh-keygen -t rsa -b 4096 -C "WSL2 ubuntu 22.04"
-```
-
-and copy `id_rsa.pub` into gitlab > preferences > SSH Keys
-
-### corporate CA certificates
-
-```bash
-git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
-sudo cp /tmp/devops_environment/certs/* /usr/local/share/ca-certificates/
-sudo update-ca-certificates
-rm -rf /tmp/devops_environment
-```
-
-### apt sources
-
-had to replace focal (20.04) to jammy (22.04)
-
-```bash
-echo 'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };' | sudo tee /etc/apt/apt.conf.d/90globalprotectconf
-sudo sed -i 's@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &@' /etc/apt/sources.list
-sudo sed -i 's@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &@' /etc/apt/sources.list
-```
-
-### check everything is ok
-
-- This command must return google ip:
-
-```bash
-  host google.fr
-```
-
-- This command must return artifactory ip:
-
-```bash
-  host artifactory.michelin.com
-```
-
-- You are able to update your distribution without error:
-
-```bash
-  sudo apt update
-  sudo apt upgrade -y
-```
-
-
-
 ## Automatic setup
 
 copy these 2 [scripts](https://github.com/castorfou/guillaume_blog/tree/master/files) in /root/ (given they are in `D:\wsl\ubuntu-22.04\download`)
@@ -372,13 +252,134 @@ wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/file
 ```
 
 
-## Setup config dotfiles with whole filesystem (/)
+
+## Manual setup (skip if to follow automatic setup)
+
+### basic setup
+
+With this way to install, you don't have any user, you don't have any launcher within Windows.
+
+Create a user and add it to sudo:
+
+```bash
+# adduser <yourusername>
+# usermod -aG sudo <yourusername>
+adduser guillaume
+usermod -aG sudo guillaume
+```
+
+and I can switch to this user simply with
+
+```bash
+# su <yourusername>
+su guillaume
+```
+
+
+
+### launch distro with yourusername - update `wsl.conf`
+
+Manually you can now start your distro with your username from powershell
+
+```powershell
+# wsl -d <distroname> -u <yourusername>
+wsl -d ubuntu-22.04 -u guillaume
+```
+
+Or from another wsl (huge avantage to run in linux terminal instead of powershell)
+
+```bash
+wsl.exe -d ubuntu-22.04 -u guillaume
+```
+
+
+
+but you can better keep this username setting by updating `wsl.conf`
+
+```bash
+# /etc/wsl.conf
+# Set the user when launching a distribution with WSL.
+[user]
+default=YourUserName
+```
+
+
+
+It is now setup. You can now shutdown this instance from powershell.
+
+```powershell
+# wsl --shutdown <distroname>
+wsl --shutdown ubuntu-22.04
+```
+
+and when starting `wsl -d ubuntu-22.04`, you reach your username.
+
+### wsl-vpnkit
+
+As wsl-vpnkit is already installed, I just have to
+
+```bash
+echo 'wsl.exe -d wsl-vpnkit service wsl-vpnkit start' >> ~/.profile
+source .bashrc
+```
+
+### gitlab
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "WSL2 ubuntu 22.04"
+```
+
+and copy `id_rsa.pub` into gitlab > preferences > SSH Keys
+
+### corporate CA certificates
+
+```bash
+git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+sudo cp /tmp/devops_environment/certs/* /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+rm -rf /tmp/devops_environment
+```
+
+### apt sources
+
+had to replace focal (20.04) to jammy (22.04)
+
+```bash
+echo 'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };' | sudo tee /etc/apt/apt.conf.d/90globalprotectconf
+sudo sed -i 's@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &@' /etc/apt/sources.list
+sudo sed -i 's@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &@' /etc/apt/sources.list
+```
+
+### check everything is ok
+
+- This command must return google ip:
+
+```bash
+  host google.fr
+```
+
+- This command must return artifactory ip:
+
+```bash
+  host artifactory.michelin.com
+```
+
+- You are able to update your distribution without error:
+
+```bash
+  sudo apt update
+  sudo apt upgrade -y
+```
+
+
+
+### Setup config dotfiles with whole filesystem (/)
 
 as detailed in [keep dotfiles in git](https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html)
 
 but to manage the whole filesystem.
 
-### init local repo
+#### init local repo
 
 ```bash
 sudo mkdir -p /.cfg
@@ -391,14 +392,14 @@ cd
 source .bashrc
 ```
 
-### git default identity (if needed)
+#### git default identity (if needed)
 
 ```bash
 config config --global user.email "guillaume.ramelet@michelin.com"
 config config --global user.name "guillaume"
 ```
 
-### setup branch and push to central repo
+#### setup branch and push to central repo
 
 ```bash
 config remote add origin git@gitlab.michelin.com:janus/dotfiles.git
