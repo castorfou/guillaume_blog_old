@@ -224,7 +224,7 @@ cp /mnt/d/wsl/Ubuntu-22.04/download/setup_wsl_* .
 
 
 
-`setup_wsl_root.sh`
+`setup_wsl_root.sh` [download](../files/setup_wsl_root.sh)
 
 ```bash
 #!/bin/bash
@@ -270,7 +270,7 @@ echo "stop wsl instance by running 'wsl --shutdown <distroname>' from powershell
 echo "and start from Windows Terminal"
 ```
 
-`setup_wsl_user.sh`
+`setup_wsl_user.sh` [download](../files/setup_wsl_user.sh)
 
 ```bash
 #!/bin/bash
