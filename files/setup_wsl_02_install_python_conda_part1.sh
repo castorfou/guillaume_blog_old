@@ -10,3 +10,4 @@ ssl_verify: false
 shortcuts: false
 report_errors: false
 EOF
+fi
