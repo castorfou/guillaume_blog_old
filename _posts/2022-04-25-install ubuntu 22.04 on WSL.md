@@ -303,40 +303,6 @@ git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/
 sudo cp /tmp/devops_environment/certs/* /usr/local/share/ca-certificates/
 sudo update-ca-certificates
 rm -rf /tmp/devops_environment
-echo
-
-echo "4. update apt sources with artifactory"
-echo 'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };' | sudo tee /etc/apt/apt.conf.d/90globalprotectconf
-sudo sed -i 's,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g' /etc/apt/sources.list
-sudo sed -i 's,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g' /etc/apt/sources.list
-sudo apt update
-sudo apt upgrade -y
-echo
-
-echo "5. automount secured vbox"
-sudo apt install -y autofs
-mkdir -p ~/vbox
-if ! grep -Fxq "vbox" /etc/auto.master
-then
-sudo tee -a /etc/auto.master << EOF
-/home/$USER/vbox            /etc/vbox.autofs        --timeout=30 browse
-EOF
-fi
-if [ ! -e "/etc/vbox.autofs" ]; then
-sudo tee /etc/vbox.autofs << EOF
-janus   -fstype=drvfs,uid=1000,gid=1000 :Z:
-cho     -fstype=drvfs,uid=1000,gid=1000 :Y:
-EOF
-echo "`whoami` ALL=(ALL) NOPASSWD: /usr/sbin/service" | sudo tee /etc/sudoers.d/`whoami` && sudo chmod 0440 /etc/sudoers.d/`whoami`
-fi
-sudo service autofs start
-if ! grep -Fxq "autofs" ~/.bashrc
-then
-echo 'sudo /usr/sbin/service autofs start' >> ~/.bashrc
-fi
-echo
-
-echo "6. install conda and configure base"
 if [ $DISTRIB_RELEASE == "22.04" ]
 then
 echo 'bug SSL with ubuntu 22.04 - https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1963834/comments/7'
@@ -351,27 +317,15 @@ system_default = system_default_sect
 Options = UnsafeLegacyRenegotiation
 EOF
 fi
-if [ ! -e "~/.condarc" ]; then
-tmp_dir=$(mktemp -d )
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P $tmp_dir
-bash $tmp_dir/Miniconda3-latest-Linux-x86_64.sh -f -b -p ~/miniconda
-~/miniconda/bin/conda init
-# create a config file
-tee ~/.condarc << EOF
-ssl_verify: false
-shortcuts: false
-report_errors: false
-EOF
-source ./.bashrc
-conda install -y mamba -n base -c conda-forge
-mamba init
-source ./.bashrc
-mamba install -y nb_conda_kernels
-mamba install -y -c conda-forge jupyterlab jupyterlab-git
-tee -a ~/.bashrc << EOF
-export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-EOF
-fi
+echo
+
+echo "4. update apt sources with artifactory"
+echo 'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };' | sudo tee /etc/apt/apt.conf.d/90globalprotectconf
+sudo sed -i 's,http://archive.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g' /etc/apt/sources.list
+sudo sed -i 's,http://security.ubuntu.com/ubuntu,https://artifactory.michelin.com/artifactory/ubuntu-archive-remote,g' /etc/apt/sources.list
+sudo apt update
+sudo apt upgrade -y
+echo
 ```
 
 Then 
@@ -383,7 +337,30 @@ chmod +x setup_wsl_root.sh
 
 As explained shutdown and restart distro.
 
-It restarts from your user 
+It restarts from your user and it will install:
+
+* setup wsl-vpnkit
+* create ssh key to copy to gitlab
+* update certificates
+* update apt sources with artifactory
+
+
+
+## And now we can install other parts
+
+
+
+#### automount secured vbox
+
+```bash
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
+```
+
+#### python with conda and configure base environment
+
+```bash
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda.sh | bash
+```
 
 
 
