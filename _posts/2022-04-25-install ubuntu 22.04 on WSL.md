@@ -349,26 +349,26 @@ It restarts from your user and it will install:
 
 ## And now we can install other parts
 
+### 00 - keep config files in git
 
+```bash
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_00_config_files_in_git.sh | bash
+source .bashrc
+```
 
-### automount secured vbox
+### 01 - automount secured vbox
 
 ```bash
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
 ```
 
-### python with conda and configure base environment (jupyterlab, mamba)
+### 02 - python with conda and configure base environment (jupyterlab, mamba)
 
 ```bash
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part1.sh | bash
 cd 
 source .bashrc
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
-```
-
-### keep config files in git
-```bash
-wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_03_config_files_in_git.sh | bash
 ```
 
 
