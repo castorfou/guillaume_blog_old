@@ -216,7 +216,7 @@ sudo sed -i 's@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?
 
 ## Automatic setup
 
-copy these 2 scripts in /root/ (given they are in `D:\wsl\ubuntu-22.04\download`)
+copy these 2 [scripts](https://github.com/castorfou/guillaume_blog/tree/master/files) in /root/ (given they are in `D:\wsl\ubuntu-22.04\download`)
 
 ```bash
 cp /mnt/d/wsl/Ubuntu-22.04/download/setup_wsl_* .
