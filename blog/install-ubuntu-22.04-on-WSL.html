@@ -138,7 +138,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#and-now-we-can-install-other-parts">And now we can install other parts</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#automount-secured-vbox">automount secured vbox</a></li>
-<li class="toc-entry toc-h3"><a href="#python-with-conda-and-configure-base-environment">python with conda and configure base environment</a></li>
+<li class="toc-entry toc-h3"><a href="#python-with-conda-and-configure-base-environment-jupyterlab-mamba">python with conda and configure base environment (jupyterlab, mamba)</a></li>
+<li class="toc-entry toc-h3"><a href="#keep-config-files-in-git">keep config files in git</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
@@ -472,13 +473,18 @@ and start from Windows Terminal</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
 </code></pre></div></div>
 
-<h3 id="python-with-conda-and-configure-base-environment">
-<a class="anchor" href="#python-with-conda-and-configure-base-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>python with conda and configure base environment</h3>
+<h3 id="python-with-conda-and-configure-base-environment-jupyterlab-mamba">
+<a class="anchor" href="#python-with-conda-and-configure-base-environment-jupyterlab-mamba" aria-hidden="true"><span class="octicon octicon-link"></span></a>python with conda and configure base environment (jupyterlab, mamba)</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part1.sh | bash
 <span class="nb">cd 
 source</span> .bashrc
 wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
+</code></pre></div></div>
+
+<h3 id="keep-config-files-in-git">
+<a class="anchor" href="#keep-config-files-in-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>keep config files in git</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_03_config_files_in_git.sh | bash
 </code></pre></div></div>
 
 <h2 id="setup-config-dotfiles-with-whole-filesystem-">
@@ -504,8 +510,8 @@ source</span> .bashrc
 <h3 id="git-default-identity-if-needed">
 <a class="anchor" href="#git-default-identity-if-needed" aria-hidden="true"><span class="octicon octicon-link"></span></a>git default identity (if needed)</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.email <span class="s2">"guillaume.ramelet@michelin.com"</span>
-git config <span class="nt">--global</span> user.name <span class="s2">"guillaume"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config config <span class="nt">--global</span> user.email <span class="s2">"guillaume.ramelet@michelin.com"</span>
+config config <span class="nt">--global</span> user.name <span class="s2">"guillaume"</span>
 </code></pre></div></div>
 
 <h3 id="setup-branch-and-push-to-central-repo">
