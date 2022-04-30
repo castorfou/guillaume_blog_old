@@ -137,9 +137,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#automatic-setup">Automatic setup</a></li>
 <li class="toc-entry toc-h2"><a href="#and-now-we-can-install-other-parts">And now we can install other parts</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#automount-secured-vbox">automount secured vbox</a></li>
-<li class="toc-entry toc-h3"><a href="#python-with-conda-and-configure-base-environment-jupyterlab-mamba">python with conda and configure base environment (jupyterlab, mamba)</a></li>
-<li class="toc-entry toc-h3"><a href="#keep-config-files-in-git">keep config files in git</a></li>
+<li class="toc-entry toc-h3"><a href="#00---keep-config-files-in-git">00 - keep config files in git</a></li>
+<li class="toc-entry toc-h3"><a href="#01---automount-secured-vbox">01 - automount secured vbox</a></li>
+<li class="toc-entry toc-h3"><a href="#02---python-with-conda-and-configure-base-environment-jupyterlab-mamba">02 - python with conda and configure base environment (jupyterlab, mamba)</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
@@ -467,24 +467,26 @@ and start from Windows Terminal</p>
 <h2 id="and-now-we-can-install-other-parts">
 <a class="anchor" href="#and-now-we-can-install-other-parts" aria-hidden="true"><span class="octicon octicon-link"></span></a>And now we can install other parts</h2>
 
-<h3 id="automount-secured-vbox">
-<a class="anchor" href="#automount-secured-vbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>automount secured vbox</h3>
+<h3 id="00---keep-config-files-in-git">
+<a class="anchor" href="#00---keep-config-files-in-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>00 - keep config files in git</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_00_config_files_in_git.sh | bash
+<span class="nb">source</span> .bashrc
+</code></pre></div></div>
+
+<h3 id="01---automount-secured-vbox">
+<a class="anchor" href="#01---automount-secured-vbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>01 - automount secured vbox</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
 </code></pre></div></div>
 
-<h3 id="python-with-conda-and-configure-base-environment-jupyterlab-mamba">
-<a class="anchor" href="#python-with-conda-and-configure-base-environment-jupyterlab-mamba" aria-hidden="true"><span class="octicon octicon-link"></span></a>python with conda and configure base environment (jupyterlab, mamba)</h3>
+<h3 id="02---python-with-conda-and-configure-base-environment-jupyterlab-mamba">
+<a class="anchor" href="#02---python-with-conda-and-configure-base-environment-jupyterlab-mamba" aria-hidden="true"><span class="octicon octicon-link"></span></a>02 - python with conda and configure base environment (jupyterlab, mamba)</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part1.sh | bash
 <span class="nb">cd 
 source</span> .bashrc
 wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
-</code></pre></div></div>
-
-<h3 id="keep-config-files-in-git">
-<a class="anchor" href="#keep-config-files-in-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>keep config files in git</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_03_config_files_in_git.sh | bash
 </code></pre></div></div>
 
 <h2 id="setup-config-dotfiles-with-whole-filesystem-">
