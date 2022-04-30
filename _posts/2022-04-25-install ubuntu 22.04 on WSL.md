@@ -251,6 +251,13 @@ source .bashrc
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
 ```
 
+### 03 - bat cat
+
+```bash
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_03_install_batcat.sh | bash
+source .bashrc
+```
+
 
 
 ## Manual setup (skip if to follow automatic setup)
