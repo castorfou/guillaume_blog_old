@@ -335,7 +335,8 @@ chmod +x setup_wsl_root.sh
 ./setup_wsl_root.sh
 ```
 
-As explained shutdown and restart distro.
+As explained stop wsl instance by running `wsl --shutdown ubuntu-22.04` from powershell
+and start from Windows Terminal
 
 It restarts from your user and it will install:
 
