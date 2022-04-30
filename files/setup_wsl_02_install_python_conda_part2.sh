@@ -1,4 +1,4 @@
-echo "configure base"
+echo "configure base v1"
 conda install -y mamba -n base -c conda-forge
 mamba init
 mamba install -y nb_conda_kernels
