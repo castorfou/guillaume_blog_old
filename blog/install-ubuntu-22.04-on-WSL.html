@@ -123,6 +123,14 @@ window.onload = wrap_img;
 </li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#automatic-setup">Automatic setup</a></li>
+<li class="toc-entry toc-h2"><a href="#and-now-we-can-install-other-parts">And now we can install other parts</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#00---keep-config-files-in-git">00 - keep config files in git</a></li>
+<li class="toc-entry toc-h3"><a href="#01---automount-secured-vbox">01 - automount secured vbox</a></li>
+<li class="toc-entry toc-h3"><a href="#02---python-with-conda-and-configure-base-environment-jupyterlab-mamba">02 - python with conda and configure base environment (jupyterlab, mamba)</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#manual-setup-skip-if-to-follow-automatic-setup">Manual setup (skip if to follow automatic setup)</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#basic-setup">basic setup</a></li>
@@ -132,21 +140,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#corporate-ca-certificates">corporate CA certificates</a></li>
 <li class="toc-entry toc-h3"><a href="#apt-sources">apt sources</a></li>
 <li class="toc-entry toc-h3"><a href="#check-everything-is-ok">check everything is ok</a></li>
+<li class="toc-entry toc-h3"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#init-local-repo">init local repo</a></li>
+<li class="toc-entry toc-h4"><a href="#git-default-identity-if-needed">git default identity (if needed)</a></li>
+<li class="toc-entry toc-h4"><a href="#setup-branch-and-push-to-central-repo">setup branch and push to central repo</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#automatic-setup">Automatic setup</a></li>
-<li class="toc-entry toc-h2"><a href="#and-now-we-can-install-other-parts">And now we can install other parts</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#00---keep-config-files-in-git">00 - keep config files in git</a></li>
-<li class="toc-entry toc-h3"><a href="#01---automount-secured-vbox">01 - automount secured vbox</a></li>
-<li class="toc-entry toc-h3"><a href="#02---python-with-conda-and-configure-base-environment-jupyterlab-mamba">02 - python with conda and configure base environment (jupyterlab, mamba)</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#setup-config-dotfiles-with-whole-filesystem-">Setup config dotfiles with whole filesystem (/)</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#init-local-repo">init local repo</a></li>
-<li class="toc-entry toc-h3"><a href="#git-default-identity-if-needed">git default identity (if needed)</a></li>
-<li class="toc-entry toc-h3"><a href="#setup-branch-and-push-to-central-repo">setup branch and push to central repo</a></li>
 </ul>
 </li>
 </ul><h2 id="source-of-inspiration">
@@ -221,120 +221,6 @@ window.onload = wrap_img;
 <p>It can be installed even with limited windows store access by clicking install in <a href="https://docs.microsoft.com/fr-fr/windows/terminal/install">Installer le Terminal Windows et commencer à le configurer</a></p>
 
 <p>Automatically all wsl instances appear in Settings.</p>
-
-<h2 id="manual-setup-skip-if-to-follow-automatic-setup">
-<a class="anchor" href="#manual-setup-skip-if-to-follow-automatic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manual setup (skip if to follow automatic setup)</h2>
-
-<h3 id="basic-setup">
-<a class="anchor" href="#basic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>basic setup</h3>
-
-<p>With this way to install, you don’t have any user, you don’t have any launcher within Windows.</p>
-
-<p>Create a user and add it to sudo:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># adduser &lt;yourusername&gt;</span>
-<span class="c"># usermod -aG sudo &lt;yourusername&gt;</span>
-adduser guillaume
-usermod <span class="nt">-aG</span> <span class="nb">sudo </span>guillaume
-</code></pre></div></div>
-
-<p>and I can switch to this user simply with</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># su &lt;yourusername&gt;</span>
-su guillaume
-</code></pre></div></div>
-
-<h3 id="launch-distro-with-yourusername---update-wslconf">
-<a class="anchor" href="#launch-distro-with-yourusername---update-wslconf" aria-hidden="true"><span class="octicon octicon-link"></span></a>launch distro with yourusername - update <code class="language-plaintext highlighter-rouge">wsl.conf</code>
-</h3>
-
-<p>Manually you can now start your distro with your username from powershell</p>
-
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wsl -d &lt;distroname&gt; -u &lt;yourusername&gt;</span><span class="w">
-</span><span class="nf">wsl</span><span class="w"> </span><span class="nt">-d</span><span class="w"> </span><span class="nx">ubuntu-22.04</span><span class="w"> </span><span class="nt">-u</span><span class="w"> </span><span class="nx">guillaume</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Or from another wsl (huge avantage to run in linux terminal instead of powershell)</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl.exe <span class="nt">-d</span> ubuntu-22.04 <span class="nt">-u</span> guillaume
-</code></pre></div></div>
-
-<p>but you can better keep this username setting by updating <code class="language-plaintext highlighter-rouge">wsl.conf</code></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># /etc/wsl.conf</span>
-<span class="c"># Set the user when launching a distribution with WSL.</span>
-<span class="o">[</span>user]
-<span class="nv">default</span><span class="o">=</span>YourUserName
-</code></pre></div></div>
-
-<p>It is now setup. You can now shutdown this instance from powershell.</p>
-
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wsl --shutdown &lt;distroname&gt;</span><span class="w">
-</span><span class="nf">wsl</span><span class="w"> </span><span class="nt">--shutdown</span><span class="w"> </span><span class="nx">ubuntu-22.04</span><span class="w">
-</span></code></pre></div></div>
-
-<p>and when starting <code class="language-plaintext highlighter-rouge">wsl -d ubuntu-22.04</code>, you reach your username.</p>
-
-<h3 id="wsl-vpnkit">
-<a class="anchor" href="#wsl-vpnkit" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl-vpnkit</h3>
-
-<p>As wsl-vpnkit is already installed, I just have to</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'</span> <span class="o">&gt;&gt;</span> ~/.profile
-<span class="nb">source</span> .bashrc
-</code></pre></div></div>
-
-<h3 id="gitlab">
-<a class="anchor" href="#gitlab" aria-hidden="true"><span class="octicon octicon-link"></span></a>gitlab</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"WSL2 ubuntu 22.04"</span>
-</code></pre></div></div>
-
-<p>and copy <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> into gitlab &gt; preferences &gt; SSH Keys</p>
-
-<h3 id="corporate-ca-certificates">
-<a class="anchor" href="#corporate-ca-certificates" aria-hidden="true"><span class="octicon octicon-link"></span></a>corporate CA certificates</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
-<span class="nb">sudo cp</span> /tmp/devops_environment/certs/<span class="k">*</span> /usr/local/share/ca-certificates/
-<span class="nb">sudo </span>update-ca-certificates
-<span class="nb">rm</span> <span class="nt">-rf</span> /tmp/devops_environment
-</code></pre></div></div>
-
-<h3 id="apt-sources">
-<a class="anchor" href="#apt-sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>apt sources</h3>
-
-<p>had to replace focal (20.04) to jammy (22.04)</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &amp;@'</span> /etc/apt/sources.list
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &amp;@'</span> /etc/apt/sources.list
-</code></pre></div></div>
-
-<h3 id="check-everything-is-ok">
-<a class="anchor" href="#check-everything-is-ok" aria-hidden="true"><span class="octicon octicon-link"></span></a>check everything is ok</h3>
-
-<ul>
-  <li>This command must return google ip:</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  host google.fr
-</code></pre></div></div>
-
-<ul>
-  <li>This command must return artifactory ip:</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  host artifactory.michelin.com
-</code></pre></div></div>
-
-<ul>
-  <li>You are able to update your distribution without error:</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>apt update
-  <span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
-</code></pre></div></div>
 
 <h2 id="automatic-setup">
 <a class="anchor" href="#automatic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automatic setup</h2>
@@ -489,15 +375,129 @@ source</span> .bashrc
 wget <span class="nt">-O</span> - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
 </code></pre></div></div>
 
-<h2 id="setup-config-dotfiles-with-whole-filesystem-">
-<a class="anchor" href="#setup-config-dotfiles-with-whole-filesystem-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup config dotfiles with whole filesystem (/)</h2>
+<h2 id="manual-setup-skip-if-to-follow-automatic-setup">
+<a class="anchor" href="#manual-setup-skip-if-to-follow-automatic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manual setup (skip if to follow automatic setup)</h2>
+
+<h3 id="basic-setup">
+<a class="anchor" href="#basic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>basic setup</h3>
+
+<p>With this way to install, you don’t have any user, you don’t have any launcher within Windows.</p>
+
+<p>Create a user and add it to sudo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># adduser &lt;yourusername&gt;</span>
+<span class="c"># usermod -aG sudo &lt;yourusername&gt;</span>
+adduser guillaume
+usermod <span class="nt">-aG</span> <span class="nb">sudo </span>guillaume
+</code></pre></div></div>
+
+<p>and I can switch to this user simply with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># su &lt;yourusername&gt;</span>
+su guillaume
+</code></pre></div></div>
+
+<h3 id="launch-distro-with-yourusername---update-wslconf">
+<a class="anchor" href="#launch-distro-with-yourusername---update-wslconf" aria-hidden="true"><span class="octicon octicon-link"></span></a>launch distro with yourusername - update <code class="language-plaintext highlighter-rouge">wsl.conf</code>
+</h3>
+
+<p>Manually you can now start your distro with your username from powershell</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wsl -d &lt;distroname&gt; -u &lt;yourusername&gt;</span><span class="w">
+</span><span class="nf">wsl</span><span class="w"> </span><span class="nt">-d</span><span class="w"> </span><span class="nx">ubuntu-22.04</span><span class="w"> </span><span class="nt">-u</span><span class="w"> </span><span class="nx">guillaume</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Or from another wsl (huge avantage to run in linux terminal instead of powershell)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl.exe <span class="nt">-d</span> ubuntu-22.04 <span class="nt">-u</span> guillaume
+</code></pre></div></div>
+
+<p>but you can better keep this username setting by updating <code class="language-plaintext highlighter-rouge">wsl.conf</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># /etc/wsl.conf</span>
+<span class="c"># Set the user when launching a distribution with WSL.</span>
+<span class="o">[</span>user]
+<span class="nv">default</span><span class="o">=</span>YourUserName
+</code></pre></div></div>
+
+<p>It is now setup. You can now shutdown this instance from powershell.</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wsl --shutdown &lt;distroname&gt;</span><span class="w">
+</span><span class="nf">wsl</span><span class="w"> </span><span class="nt">--shutdown</span><span class="w"> </span><span class="nx">ubuntu-22.04</span><span class="w">
+</span></code></pre></div></div>
+
+<p>and when starting <code class="language-plaintext highlighter-rouge">wsl -d ubuntu-22.04</code>, you reach your username.</p>
+
+<h3 id="wsl-vpnkit">
+<a class="anchor" href="#wsl-vpnkit" aria-hidden="true"><span class="octicon octicon-link"></span></a>wsl-vpnkit</h3>
+
+<p>As wsl-vpnkit is already installed, I just have to</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'</span> <span class="o">&gt;&gt;</span> ~/.profile
+<span class="nb">source</span> .bashrc
+</code></pre></div></div>
+
+<h3 id="gitlab">
+<a class="anchor" href="#gitlab" aria-hidden="true"><span class="octicon octicon-link"></span></a>gitlab</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"WSL2 ubuntu 22.04"</span>
+</code></pre></div></div>
+
+<p>and copy <code class="language-plaintext highlighter-rouge">id_rsa.pub</code> into gitlab &gt; preferences &gt; SSH Keys</p>
+
+<h3 id="corporate-ca-certificates">
+<a class="anchor" href="#corporate-ca-certificates" aria-hidden="true"><span class="octicon octicon-link"></span></a>corporate CA certificates</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+<span class="nb">sudo cp</span> /tmp/devops_environment/certs/<span class="k">*</span> /usr/local/share/ca-certificates/
+<span class="nb">sudo </span>update-ca-certificates
+<span class="nb">rm</span> <span class="nt">-rf</span> /tmp/devops_environment
+</code></pre></div></div>
+
+<h3 id="apt-sources">
+<a class="anchor" href="#apt-sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>apt sources</h3>
+
+<p>had to replace focal (20.04) to jammy (22.04)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'Acquire { http::User-Agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7"; };'</span> | <span class="nb">sudo tee</span> /etc/apt/apt.conf.d/90globalprotectconf
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &amp;@'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &amp;@'</span> /etc/apt/sources.list
+</code></pre></div></div>
+
+<h3 id="check-everything-is-ok">
+<a class="anchor" href="#check-everything-is-ok" aria-hidden="true"><span class="octicon octicon-link"></span></a>check everything is ok</h3>
+
+<ul>
+  <li>This command must return google ip:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  host google.fr
+</code></pre></div></div>
+
+<ul>
+  <li>This command must return artifactory ip:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  host artifactory.michelin.com
+</code></pre></div></div>
+
+<ul>
+  <li>You are able to update your distribution without error:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>apt update
+  <span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
+</code></pre></div></div>
+
+<h3 id="setup-config-dotfiles-with-whole-filesystem-">
+<a class="anchor" href="#setup-config-dotfiles-with-whole-filesystem-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup config dotfiles with whole filesystem (/)</h3>
 
 <p>as detailed in <a href="https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html">keep dotfiles in git</a></p>
 
 <p>but to manage the whole filesystem.</p>
 
-<h3 id="init-local-repo">
-<a class="anchor" href="#init-local-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>init local repo</h3>
+<h4 id="init-local-repo">
+<a class="anchor" href="#init-local-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>init local repo</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /.cfg
 <span class="nb">sudo chown</span> <span class="nv">$USER</span>:users /.cfg
@@ -509,15 +509,15 @@ config config <span class="nt">--local</span> status.showUntrackedFiles no
 source</span> .bashrc
 </code></pre></div></div>
 
-<h3 id="git-default-identity-if-needed">
-<a class="anchor" href="#git-default-identity-if-needed" aria-hidden="true"><span class="octicon octicon-link"></span></a>git default identity (if needed)</h3>
+<h4 id="git-default-identity-if-needed">
+<a class="anchor" href="#git-default-identity-if-needed" aria-hidden="true"><span class="octicon octicon-link"></span></a>git default identity (if needed)</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config config <span class="nt">--global</span> user.email <span class="s2">"guillaume.ramelet@michelin.com"</span>
 config config <span class="nt">--global</span> user.name <span class="s2">"guillaume"</span>
 </code></pre></div></div>
 
-<h3 id="setup-branch-and-push-to-central-repo">
-<a class="anchor" href="#setup-branch-and-push-to-central-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>setup branch and push to central repo</h3>
+<h4 id="setup-branch-and-push-to-central-repo">
+<a class="anchor" href="#setup-branch-and-push-to-central-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>setup branch and push to central repo</h4>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config remote add origin git@gitlab.michelin.com:janus/dotfiles.git
 config fetch

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-30T08:40:05-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-04-30T08:41:46-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11&quot;&gt;How to install Ubuntu 21.10 on WSL for Windows 10 and 11&lt;/a&gt;&lt;/p&gt;
 
@@ -64,111 +64,6 @@
 &lt;p&gt;It can be installed even with limited windows store access by clicking install in &lt;a href=&quot;https://docs.microsoft.com/fr-fr/windows/terminal/install&quot;&gt;Installer le Terminal Windows et commencer à le configurer&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Automatically all wsl instances appear in Settings.&lt;/p&gt;
-
-&lt;h2 id=&quot;manual-setup-skip-if-to-follow-automatic-setup&quot;&gt;Manual setup (skip if to follow automatic setup)&lt;/h2&gt;
-
-&lt;h3 id=&quot;basic-setup&quot;&gt;basic setup&lt;/h3&gt;
-
-&lt;p&gt;With this way to install, you don’t have any user, you don’t have any launcher within Windows.&lt;/p&gt;
-
-&lt;p&gt;Create a user and add it to sudo:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# adduser &amp;lt;yourusername&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# usermod -aG sudo &amp;lt;yourusername&amp;gt;&lt;/span&gt;
-adduser guillaume
-usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;guillaume
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and I can switch to this user simply with&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# su &amp;lt;yourusername&amp;gt;&lt;/span&gt;
-su guillaume
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;launch-distro-with-yourusername---update-wslconf&quot;&gt;launch distro with yourusername - update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl.conf&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Manually you can now start your distro with your username from powershell&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# wsl -d &amp;lt;distroname&amp;gt; -u &amp;lt;yourusername&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;wsl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ubuntu-22.04&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;guillaume&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Or from another wsl (huge avantage to run in linux terminal instead of powershell)&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wsl.exe &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; ubuntu-22.04 &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; guillaume
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;but you can better keep this username setting by updating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl.conf&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# /etc/wsl.conf&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Set the user when launching a distribution with WSL.&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user]
-&lt;span class=&quot;nv&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;YourUserName
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It is now setup. You can now shutdown this instance from powershell.&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# wsl --shutdown &amp;lt;distroname&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;wsl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ubuntu-22.04&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and when starting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl -d ubuntu-22.04&lt;/code&gt;, you reach your username.&lt;/p&gt;
-
-&lt;h3 id=&quot;wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/h3&gt;
-
-&lt;p&gt;As wsl-vpnkit is already installed, I just have to&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.profile
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;gitlab&quot;&gt;gitlab&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;WSL2 ubuntu 22.04&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and copy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; into gitlab &amp;gt; preferences &amp;gt; SSH Keys&lt;/p&gt;
-
-&lt;h3 id=&quot;corporate-ca-certificates&quot;&gt;corporate CA certificates&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
-&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /tmp/devops_environment/certs/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; /usr/local/share/ca-certificates/
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-ca-certificates
-&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/devops_environment
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;apt-sources&quot;&gt;apt sources&lt;/h3&gt;
-
-&lt;p&gt;had to replace focal (20.04) to jammy (22.04)&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
-&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &amp;amp;@'&lt;/span&gt; /etc/apt/sources.list
-&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &amp;amp;@'&lt;/span&gt; /etc/apt/sources.list
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;check-everything-is-ok&quot;&gt;check everything is ok&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This command must return google ip:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  host google.fr
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This command must return artifactory ip:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  host artifactory.michelin.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You are able to update your distribution without error:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;automatic-setup&quot;&gt;Automatic setup&lt;/h2&gt;
 
@@ -318,13 +213,118 @@ source&lt;/span&gt; .bashrc
 wget &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;setup-config-dotfiles-with-whole-filesystem-&quot;&gt;Setup config dotfiles with whole filesystem (/)&lt;/h2&gt;
+&lt;h2 id=&quot;manual-setup-skip-if-to-follow-automatic-setup&quot;&gt;Manual setup (skip if to follow automatic setup)&lt;/h2&gt;
+
+&lt;h3 id=&quot;basic-setup&quot;&gt;basic setup&lt;/h3&gt;
+
+&lt;p&gt;With this way to install, you don’t have any user, you don’t have any launcher within Windows.&lt;/p&gt;
+
+&lt;p&gt;Create a user and add it to sudo:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# adduser &amp;lt;yourusername&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# usermod -aG sudo &amp;lt;yourusername&amp;gt;&lt;/span&gt;
+adduser guillaume
+usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;guillaume
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and I can switch to this user simply with&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# su &amp;lt;yourusername&amp;gt;&lt;/span&gt;
+su guillaume
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;launch-distro-with-yourusername---update-wslconf&quot;&gt;launch distro with yourusername - update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl.conf&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Manually you can now start your distro with your username from powershell&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# wsl -d &amp;lt;distroname&amp;gt; -u &amp;lt;yourusername&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;wsl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ubuntu-22.04&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;guillaume&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or from another wsl (huge avantage to run in linux terminal instead of powershell)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wsl.exe &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; ubuntu-22.04 &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; guillaume
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;but you can better keep this username setting by updating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# /etc/wsl.conf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Set the user when launching a distribution with WSL.&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user]
+&lt;span class=&quot;nv&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;YourUserName
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is now setup. You can now shutdown this instance from powershell.&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# wsl --shutdown &amp;lt;distroname&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;wsl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ubuntu-22.04&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and when starting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl -d ubuntu-22.04&lt;/code&gt;, you reach your username.&lt;/p&gt;
+
+&lt;h3 id=&quot;wsl-vpnkit&quot;&gt;wsl-vpnkit&lt;/h3&gt;
+
+&lt;p&gt;As wsl-vpnkit is already installed, I just have to&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'wsl.exe -d wsl-vpnkit service wsl-vpnkit start'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.profile
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;gitlab&quot;&gt;gitlab&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;WSL2 ubuntu 22.04&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and copy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; into gitlab &amp;gt; preferences &amp;gt; SSH Keys&lt;/p&gt;
+
+&lt;h3 id=&quot;corporate-ca-certificates&quot;&gt;corporate CA certificates&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@gitlab.michelin.com:devops-foundation/devops_environment.git /tmp/devops_environment
+&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /tmp/devops_environment/certs/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; /usr/local/share/ca-certificates/
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-ca-certificates
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/devops_environment
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;apt-sources&quot;&gt;apt sources&lt;/h3&gt;
+
+&lt;p&gt;had to replace focal (20.04) to jammy (22.04)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Acquire { http::User-Agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.37) Gecko/20100101 Firefox/31.33.7&quot;; };'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/apt.conf.d/90globalprotectconf
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s@^\(deb \)http://archive.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-archive-remote\2\n# &amp;amp;@'&lt;/span&gt; /etc/apt/sources.list
+&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s@^\(deb \)http://security.ubuntu.com/ubuntu/\( jammy\(-updates\)\?.*\)$@\1https://artifactory.michelin.com/artifactory/ubuntu-security-remote\2\n# &amp;amp;@'&lt;/span&gt; /etc/apt/sources.list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;check-everything-is-ok&quot;&gt;check everything is ok&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This command must return google ip:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  host google.fr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This command must return artifactory ip:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  host artifactory.michelin.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You are able to update your distribution without error:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;setup-config-dotfiles-with-whole-filesystem-&quot;&gt;Setup config dotfiles with whole filesystem (/)&lt;/h3&gt;
 
 &lt;p&gt;as detailed in &lt;a href=&quot;https://castorfou.github.io/guillaume_blog/blog/keep-dotfiles-in-git.html&quot;&gt;keep dotfiles in git&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;but to manage the whole filesystem.&lt;/p&gt;
 
-&lt;h3 id=&quot;init-local-repo&quot;&gt;init local repo&lt;/h3&gt;
+&lt;h4 id=&quot;init-local-repo&quot;&gt;init local repo&lt;/h4&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /.cfg
 &lt;span class=&quot;nb&quot;&gt;sudo chown&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;:users /.cfg
@@ -336,13 +336,13 @@ config config &lt;span class=&quot;nt&quot;&gt;--local&lt;/span&gt; status.showU
 source&lt;/span&gt; .bashrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;git-default-identity-if-needed&quot;&gt;git default identity (if needed)&lt;/h3&gt;
+&lt;h4 id=&quot;git-default-identity-if-needed&quot;&gt;git default identity (if needed)&lt;/h4&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;guillaume.ramelet@michelin.com&quot;&lt;/span&gt;
 config config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;guillaume&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;setup-branch-and-push-to-central-repo&quot;&gt;setup branch and push to central repo&lt;/h3&gt;
+&lt;h4 id=&quot;setup-branch-and-push-to-central-repo&quot;&gt;setup branch and push to central repo&lt;/h4&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config remote add origin git@gitlab.michelin.com:janus/dotfiles.git
 config fetch
