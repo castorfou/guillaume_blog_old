@@ -357,7 +357,7 @@ It restarts from your user and it will install:
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_01_automount_secured_vbox.sh | bash
 ```
 
-### python with conda and configure base environment
+### python with conda and configure base environment (jupyterlab, mamba)
 
 ```bash
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part1.sh | bash
@@ -366,8 +366,10 @@ source .bashrc
 wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
 ```
 
-
-
+### keep config files in git
+```bash
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_03_config_files_in_git.sh | bash
+```
 
 
 ## Setup config dotfiles with whole filesystem (/)
@@ -392,8 +394,8 @@ source .bashrc
 ### git default identity (if needed)
 
 ```bash
-git config --global user.email "guillaume.ramelet@michelin.com"
-git config --global user.name "guillaume"
+config config --global user.email "guillaume.ramelet@michelin.com"
+config config --global user.name "guillaume"
 ```
 
 ### setup branch and push to central repo
