@@ -258,6 +258,16 @@ wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/file
 source .bashrc
 ```
 
+### 04 - git access
+
+```bash
+ln -s /mnt/d/git/ ~/
+```
+
+
+
+
+
 
 
 ## Manual setup (skip if to follow automatic setup)
