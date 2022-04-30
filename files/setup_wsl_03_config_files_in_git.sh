@@ -1,4 +1,4 @@
-echo "config files in git v2"
+echo "config files in git v3"
 sudo mkdir -p /.cfg
 sudo chown $USER:users /.cfg
 git init --bare /.cfg
