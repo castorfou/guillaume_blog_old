@@ -1,4 +1,4 @@
-echo "automount secured vbox v1"
+echo "automount secured vbox v2"
 sudo apt install -y autofs
 mkdir -p ~/vbox
 if ! grep -Fxq "vbox" /etc/auto.master
@@ -22,10 +22,11 @@ fi
 echo
 
 if [ -e "/.cfg" ]; then
-		config add ~/.bashrc
-		config commit -m'start autofs service at boot'
-		config add /etc/auto.master
-		config add /etc/vbox.autofs
-		config commit -m'configure autofs for vbox'
-		config push		
+		config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
+		$config add ~/.bashrc
+		$config commit -m'start autofs service at boot'
+		$config add /etc/auto.master
+		$config add /etc/vbox.autofs
+		$config commit -m'configure autofs for vbox'
+		$config push		
 fi

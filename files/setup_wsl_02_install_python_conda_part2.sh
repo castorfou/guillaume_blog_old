@@ -1,4 +1,4 @@
-echo "configure base v2"
+echo "configure base v3"
 conda install -y mamba -n base -c conda-forge
 mamba init
 mamba install -y nb_conda_kernels
@@ -8,7 +8,8 @@ export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 EOF
 
 if [ -e "/.cfg" ]; then
-		config add ~/.bashrc
-		config commit -m'export certificates for conda'
-		config push		
+		config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
+		$config add ~/.bashrc
+		$config commit -m'export certificates for conda'
+		$config push		
 fi
