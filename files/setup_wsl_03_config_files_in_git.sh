@@ -2,8 +2,8 @@ echo "config files in git v1"
 sudo mkdir -p /.cfg
 sudo chown $USER:users /.cfg
 git init --bare /.cfg
-alias config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
-config config --local status.showUntrackedFiles no
+config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
+$config config --local status.showUntrackedFiles no
 echo "alias config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'" >> $HOME/.bash_aliases
 cd
 source .bashrc
