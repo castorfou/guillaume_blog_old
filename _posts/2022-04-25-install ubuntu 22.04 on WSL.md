@@ -360,7 +360,10 @@ wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/file
 ### python with conda and configure base environment
 
 ```bash
-wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda.sh | bash
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part1.sh | bash
+cd 
+source .bashrc
+wget -O - https://raw.githubusercontent.com/castorfou/guillaume_blog/master/files/setup_wsl_02_install_python_conda_part2.sh | bash
 ```
 
 
