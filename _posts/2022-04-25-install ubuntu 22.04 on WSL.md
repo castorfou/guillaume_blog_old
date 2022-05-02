@@ -264,11 +264,15 @@ source .bashrc
 ln -s /mnt/d/git/ ~/
 ```
 
+### 05 - X access with GWSL
 
+[GWSL Homepage](https://opticos.github.io/gwsl/)
 
+if you have access to [Windows Store](https://apps.microsoft.com/store/detail/gwsl/9NL6KD1H33V3?hl=fr-fr&gl=FR), it is available.
 
+Or alternate download are possible.
 
-
+![](..\images\GWSL_Dashboard.jpg)
 
 ## Manual setup (skip if to follow automatic setup)
 
