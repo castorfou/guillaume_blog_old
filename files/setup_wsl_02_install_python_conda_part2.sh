@@ -14,6 +14,13 @@ mamba "$@";
 export -f conda
 EOF
 
+sudo apt install -y nodejs npm
+
+# to launch browser after starting jupyter
+jupyter notebook --generate-config
+echo 'c.NotebookApp.use_redirect_file = False' >> ~/.jupyter/jupyter_notebook_config.py
+
+
 if [ -e "/.cfg" ]; then
 		config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
 		$config add ~/.bashrc
