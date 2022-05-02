@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-05-02T01:16:27-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://castorfou.github.io/guillaume_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://castorfou.github.io/guillaume_blog/" rel="alternate" type="text/html" /><updated>2022-05-02T01:32:58-05:00</updated><id>https://castorfou.github.io/guillaume_blog/feed.xml</id><title type="html">Guillaume’s blog</title><subtitle>Journey for a datascientist</subtitle><entry><title type="html">install ubuntu 22.04 on WSL</title><link href="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html" rel="alternate" type="text/html" title="install ubuntu 22.04 on WSL" /><published>2022-04-25T00:00:00-05:00</published><updated>2022-04-25T00:00:00-05:00</updated><id>https://castorfou.github.io/guillaume_blog/blog/install%20ubuntu%2022.04%20on%20WSL</id><content type="html" xml:base="https://castorfou.github.io/guillaume_blog/blog/install-ubuntu-22.04-on-WSL.html">&lt;h2 id=&quot;source-of-inspiration&quot;&gt;source of inspiration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.windowscentral.com/how-install-ubuntu-2110-wsl-windows-10-and-11&quot;&gt;How to install Ubuntu 21.10 on WSL for Windows 10 and 11&lt;/a&gt;&lt;/p&gt;
 
@@ -223,6 +223,16 @@ wget &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; - https://raw.githubuserco
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /mnt/d/git/ ~/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;05---x-access-with-gwsl&quot;&gt;05 - X access with GWSL&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://opticos.github.io/gwsl/&quot;&gt;GWSL Homepage&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;if you have access to &lt;a href=&quot;https://apps.microsoft.com/store/detail/gwsl/9NL6KD1H33V3?hl=fr-fr&amp;amp;gl=FR&quot;&gt;Windows Store&lt;/a&gt;, it is available.&lt;/p&gt;
+
+&lt;p&gt;Or alternate download are possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;..\images\GWSL_Dashboard.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;manual-setup-skip-if-to-follow-automatic-setup&quot;&gt;Manual setup (skip if to follow automatic setup)&lt;/h2&gt;
 
