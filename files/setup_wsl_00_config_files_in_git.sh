@@ -5,6 +5,9 @@ git init --bare /.cfg
 config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'
 $config config --local status.showUntrackedFiles no
 echo "alias config='/usr/bin/git --git-dir=/.cfg/ --work-tree=/'" >> $HOME/.bash_aliases
+
+echo 'config status' >> ~/.bashrc
+
 cd
 $config config --global user.email "guillaume.ramelet@michelin.com"
 $config config --global user.name "guillaume"
